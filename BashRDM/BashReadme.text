@@ -1,0 +1,26 @@
+1.ls ===> list content in a dir
+2.cd ===> Move into that folder
+3.mkdir ===> make a dir
+3.pwd ===> list the current dir
+4.rmdir ===> Remove dir
+5...  ====> Go to the prvious dir
+6.use audioSpeak ===> say "the word you want"
+7.Voice  ===> say -f fileName -v(voiceType) Actual vioce
+8.echo/cat ===> show the file content
+9.read ===> takes the input.(read "varName"
+10.echo ===> $varName
+11. afplay ===> Playes music
+12. use yt-dlp or 
+
+Homebre on a Computer I do not own.
+-Visit==>https://brew.sh/
+-click installation option.
+-mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip-components 1 -C homebrew
+-Go to the Homebrew folder then bin folder then start installing what you want ./brew install "the prgame you want"
+-To run the progam, run ./"programe you installed"
+
+
+Using Nano:
+1.Type nano
+2.ctrl o to save what you have written in the file (on a mac it will prompt you to confriem the file name at the bottom then hit enter to complete the process.
+
