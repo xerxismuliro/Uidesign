@@ -24,3 +24,8 @@ Using Nano:
 1.Type nano
 2.ctrl o to save what you have written in the file (on a mac it will prompt you to confriem the file name at the bottom then hit enter to complete the process.
 
+Some Git commands
+1.git add .
+2.git commit""
+git push
+3.brew install

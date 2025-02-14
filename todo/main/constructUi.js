@@ -132,7 +132,7 @@ function createMiddleDiv() {
     middleDiv.className = 'middleDiv';
 
     const savedEventsDataTypes = document.createElement('div');
-    savedEventsDataTypes.className = 'savedEventsDataTypes';
+    savedEventsDataTypes.className = 'allINtopBar';
     savedEventsDataTypes.innerHTML = `
        <!--  <div id="Events-saved-via-Terminal" data-target="terminalEventsContent">Events saved via Terminal</div> -->
         <div id="Events-saved-via-Browser" data-target="browserEventsContent">View saved Events</div>
@@ -144,6 +144,13 @@ function createMiddleDiv() {
 
     return middleDiv;
 }
+
+
+
+
+
+
+
 
 function createContentDivs() {
     return `

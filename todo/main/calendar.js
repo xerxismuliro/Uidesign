@@ -171,7 +171,7 @@ function loadBrowserEvents(db) {
 }
 
 function setupSectionNavigation(db) {
-    const sections = document.querySelectorAll('.left-apps .section > div, .savedEventsDataTypes > div');
+    const sections = document.querySelectorAll('.left-apps .section > div, .allINtopBar > div');
     const contentDivs = document.querySelectorAll('.middleDiv .contentDiv');
 
     sections.forEach(section => {

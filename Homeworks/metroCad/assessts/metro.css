@@ -1,0 +1,156 @@
+
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+
+#metroCad {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-top: 10vh;
+
+}
+
+.ActualmCad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #1c2842;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+
+#metroCad p {
+    font-size: 30px;
+
+}
+
+#amountp{
+    display: inline;
+    font-size: 20px;
+    color: #000000;
+}
+
+.metroCad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px 5px #313131;
+    margin-top: 5px;
+}
+
+.mCadmenuHeader {
+    height: 50px;
+    padding: 10px 5px;
+    background-color: #ffa600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.mCadmenuHeader::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mCadAll {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.mCadAll div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #d8ad13;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;    
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mCadAll div:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.mCadActionButts{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    font-size: 24px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.mCadActionButts div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* width: 10%; */
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #d8ad13;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Cancel{
+    color: red;
+}
+
+.mCadActionButts div:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+@media (min-width: 600px) {
+    .mCadAll {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mCadAll div {
+        width: 30%;
+    }
+
+    
+    .mCadActionButts div {
+        width: 20%;
+    }
+
+
+
+
+
+}
