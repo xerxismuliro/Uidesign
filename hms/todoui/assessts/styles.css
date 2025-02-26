@@ -1,0 +1,520 @@
+
+ :root {
+	--background-color: #ffffff;
+    --allINtopBarborderbotAndTop: #151515;
+    /* --allINtopBarborderbotAndTop: #9b9b9b; */
+}
+
+/* Define dark theme colors */
+[data-theme="dark"] {
+	--background-color: #424242;
+    --allINtopBarborderbotAndTop: #151515;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.leftSidebarDiv, .middleDiv, .rightSidebarDiv {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.leftSidebarDiv {
+    display: flex;
+    flex-direction: column;
+    width: 220px; 
+    padding: 0px;
+    background-color: #303030b4;
+    border-right: 1px solid rgb(57, 56, 56);
+    border-top:  1px solid var(--allINtopBarborderbotAndTop);
+}
+
+.middleDiv {
+    flex: 1; 
+    color: white;
+    padding: 0px;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow: hidden; /
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.rightSidebarDiv {
+    width: 210px; 
+    background-color: #30303088;
+    /* border-left: 1px solid rgb(57, 56, 56); */
+    border-top: 1px solid var(--allINtopBarborderbotAndTop);
+    padding: 0px 0px;
+}
+
+.allINtopBar,.RightSideDivtopBar {
+    position: sticky; 
+    top: 0; 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+    border-top: 1px solid var(--allINtopBarborderbotAndTop);
+    gap: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box; 
+}
+
+.allINtopBar{
+    background-color: #303030b4;
+    justify-content: space-between; 
+}
+
+.RightSideDivtopBar{
+    justify-content: flex-end; 
+}
+
+.usericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #1a2a46a8;
+    color: #3772de;
+    font-size: 20px;
+}
+
+#Events-saved-via-Terminal, #Events-saved-via-Browser {
+    padding: 8px;
+    color: wheat;
+    border-radius: 8px;
+    background-color: #1a2a46c6; 
+}
+
+#Events-saved-via-Terminal:hover, #Events-saved-via-Browser:hover {
+    background-color: #2a5dbd; 
+    color: white; 
+}
+
+
+
+/* Add this to your existing styles.css file */
+#searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+#searchInput input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: #3772de;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #2a5dbd;
+}
+
+#searchInput input::placeholder {
+    color: #3772de;
+}
+
+/* Add this to your existing styles.css file */
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.todo-table th, .todo-table td {
+    border: 1px solid #2a5dbd;
+    padding: 10px;
+    text-align: left;
+}
+
+.todo-table th {
+    background-color: #1a2a46a8;
+    color: #3772de;
+}
+
+.todo-row:nth-child(even) {
+    background-color: #232324a8;
+}
+
+.todo-date, .todo-time, .todo-item {
+    color: #fff;
+}
+
+.todo-date{
+    color: green;
+    width: 100px;
+}
+
+
+
+
+/* Add this to your existing styles.css file */
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20% 5px 10px 5px;
+}
+
+.month {
+    width: 200px;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    border: 1px solid #2a5dbd;
+    color: #3772de;
+    text-align: center;
+}
+
+.month h3 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.day {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #fff;
+}
+.current-day {
+    background-color: #ff6347; /* Highlight color */
+    color: #fff;
+    border-radius: 50%;
+}
+
+.phighlights{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #1a2a46d0; 
+    color: yellow; 
+}
+
+
+.MonthsWthEvents-leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(167, 163, 163);
+    box-sizing: border-box;
+}
+
+.indexedDBMonths, .terminalMonths {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #1a2a46a8;
+    border: 1px solid #2a5dbd;
+    margin-bottom: 10px;
+}
+
+.pfortemOrBr{
+    font-size: 14px;
+    color: white;
+    margin: 5px 0; 
+}
+
+.indexedDBMonths div i, .terminalMonths div i {
+    margin-right: 10px; 
+    color: #007bff; 
+}
+
+
+#eventDescription {
+	flex-grow: 1;
+	width: 98%;
+	padding: 10px 50px 10px 10px;
+	min-height: 20px;
+	max-height: 200px;
+	resize: vertical;
+	transition: all 0.3s ease;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--custom-tool-content);
+	outline: none;
+	overflow: auto;
+	resize: none;
+}
+
+
+
+
+
+
+/* Add this to your existing styles.css file */
+.left-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section > div i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.section > div span {
+    font-size: 10px;
+    text-align: center;
+}
+
+.calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
+    background-color: #1a2a46a8;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.calendar-view {
+    background-color: #1a2a46a8; /* Original color */
+}
+
+.statistics {
+    background-color: #2a3b56a8; /* Unique color */
+}
+
+.reminders {
+    background-color: #3a4c66a8; /* Unique color */
+}
+
+.help-support {
+    background-color: #4a5d76a8; /* Unique color */
+}
+
+.settings {
+    background-color: #5a6e86a8; /* Unique color */
+}
+
+.upcoming {
+    background-color: #6a7f96a8; /* Unique color */
+}
+
+.add-event {
+    background-color: #7a90a6a8; /* Unique color */
+}
+
+.add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
+    background-color: #1a2a46d0; 
+}
+
+
+#addTodoButton, #settingsButton, #logoutButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.icon-settings {
+    color: #4CAF50; /* Green */
+}
+
+.icon-upcoming {
+    color: #2196F3; /* Blue */
+}
+
+.icon-add-event {
+    color: #FFEB3B; /* Yellow */
+}
+
+.icon-calendar-view {
+    color: #FF9800; /* Orange */
+}
+
+.icon-statistics {
+    color: #9C27B0; /* Purple */
+}
+
+.icon-reminders {
+    color: #F44336; /* Red */
+}
+
+.icon-help-support {
+    color: #00BCD4; /* Cyan */
+}
+
+
+
+
+/* Add this to your existing styles.css file */
+#todoContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(167, 163, 163);
+    margin-top: 20px;
+}
+
+
+#helpSupportContentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(167, 163, 163);
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+}
+
+
+/* styles for the createAddEventContent function */
+#addEventSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+    color: rgb(167, 163, 163);
+}
+
+#addEventForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formGroupParent1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.formGroup1, .formGroup2, .formGroup3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#addEventForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#addEventForm input, #addEventForm textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+    color: white; 
+    /* border: none; */
+    outline: none;
+}
+
+#addEventForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #064485;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addEventForm button:hover {
+    /* background-color: #0056b3; */
+    background-color: green;
+}
+
+
+
