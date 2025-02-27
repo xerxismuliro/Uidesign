@@ -50,6 +50,7 @@ body {
 }
 
 .middleDiv {
+    position: relative;
     flex: 1; 
     color: white;
     padding: 0px;
@@ -512,9 +513,22 @@ body {
 }
 
 #addEventForm button:hover {
-    /* background-color: #0056b3; */
-    background-color: green;
+    background-color: #0056b3;
 }
 
+
+.noticeMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1a1a1ba8;
+    color: rgb(167, 163, 163);
+    border: 1px solid #343333;
+    font-size: 16px;
+    margin-top: 10px; 
+}
 
 
