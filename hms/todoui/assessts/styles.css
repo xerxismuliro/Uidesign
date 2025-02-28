@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 20%; 
-    padding: 0px;
+    padding: 8px;
     margin: 0px;
     background-color: #303030b4;
     border-right: 1px solid rgb(57, 56, 56);
@@ -256,13 +256,22 @@ body {
 .MonthsWthEvents-leftDiv {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 47%;
     width: 100%;
     gap: 5px;
     padding: 10px;
     border-radius: 8px;
-    color: rgb(167, 163, 163);
+    /* background-color: #1a1a1ba8; */
+    border: 1px solid #3b3a3a; 
     box-sizing: border-box;
 }
+
+#Pcolor{
+    color: #3772de;
+}
+
 
 .indexedDBMonths, .terminalMonths {
     display: flex;
@@ -316,7 +325,7 @@ body {
     color: white;
     gap: 10px;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -500,9 +509,9 @@ body {
     transform: translate(-50%, -50%);
     padding: 10px;
     border-radius: 8px;
-    background-color: #1a1a1ba8;
-    color: rgb(167, 163, 163);
-    border: 1px solid #343333;
+    background-color: #1a2a46a8;
+    /* border: 1px solid #1c438b; */
+    color: #275fc6;
     font-size: 16px;
     margin-top: 10px; 
 }
