@@ -2,7 +2,6 @@
  :root {
 	--background-color: #ffffff;
     --allINtopBarborderbotAndTop: #151515;
-    /* --allINtopBarborderbotAndTop: #9b9b9b; */
 }
 
 /* Define dark theme colors */
@@ -108,7 +107,6 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    /* background-color: #1a2a46a8; */
     color: #3772de;
     font-size: 30px;
 }
@@ -126,8 +124,6 @@ body {
 }
 
 
-
-/* Add this to your existing styles.css file */
 #searchInput {
     display: flex;
     justify-content: center;
@@ -156,7 +152,6 @@ body {
     color: #3772de;
 }
 
-/* Add this to your existing styles.css file */
 .event-header {
     display: flex;
     justify-content: space-between;
@@ -197,9 +192,6 @@ body {
 }
 
 
-
-
-/* Add this to your existing styles.css file */
 #calendar {
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +232,7 @@ body {
     color: #fff;
 }
 .current-day {
-    background-color: #ff6347; /* Highlight color */
+    background-color: #ff6347; 
     color: #fff;
     border-radius: 50%;
 }
@@ -263,7 +255,6 @@ body {
     gap: 5px;
     padding: 10px;
     border-radius: 8px;
-    /* background-color: #1a1a1ba8; */
     border: 1px solid #3b3a3a; 
     box-sizing: border-box;
 }
@@ -314,10 +305,6 @@ body {
 
 
 
-
-
-
-/* Add this to your existing styles.css file */
 .left-apps {
     display: flex;
     flex-direction: column;
@@ -329,6 +316,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 .section {
     display: flex;
     flex-direction: row;
@@ -339,12 +328,15 @@ body {
     box-sizing: border-box;
 }
 
+
 .section > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+    flex: 1; 
 }
+
 
 .section > div i {
     font-size: 20px;
@@ -384,37 +376,34 @@ body {
 }
 
 .icon-settings {
-    color: #4CAF50; /* Green */
+    color: #4CAF50;
 }
 
 .icon-upcoming {
-    color: #2196F3; /* Blue */
+    color: #2196F3; 
 }
 
 .icon-add-event {
-    color: #FFEB3B; /* Yellow */
+    color: #FFEB3B; 
 }
 
 .icon-calendar-view {
-    color: #FF9800; /* Orange */
+    color: #FF9800; 
 }
 
 .icon-statistics {
-    color: #4279b5; /* Purple */
+    color: #4279b5; 
 }
 
 .icon-reminders {
-    color: #F44336; /* Red */
+    color: #F44336; 
 }
 
 .icon-help-support {
-    color: #00BCD4; /* Cyan */
+    color: #00BCD4; 
 }
 
 
-
-
-/* Add this to your existing styles.css file */
 #todoContent{
     display: flex;
     flex-direction: column;
@@ -510,10 +499,42 @@ body {
     padding: 10px;
     border-radius: 8px;
     background-color: #1a2a46a8;
-    /* border: 1px solid #1c438b; */
     color: #275fc6;
     font-size: 16px;
     margin-top: 10px; 
 }
 
 
+
+
+/* Media query for screens smaller than 1200px (e.g., large tablets and small desktops) */
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: row; /* Keep divs in a row */
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+    }
+    .section > div {
+        flex: 1 1 45%; /* Each div takes up 45% of the container width */
+    }
+}
+
+/* Media query for screens smaller than 992px (e.g., tablets) */
+@media (max-width: 992px) {
+    .section {
+        flex-direction: row; /* Keep divs in a row */
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+    }
+    .section > div {
+        flex: 1 1 100%; /* Each div takes up 100% of the container width */
+    }
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* Stack divs vertically */
+    }
+    .section > div {
+        flex: 1 1 auto; /* Reset flex properties */
+    }
+}
