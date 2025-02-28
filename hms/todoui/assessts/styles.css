@@ -20,7 +20,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #000000;
+    background-color: #000000f1;
     overflow: hidden;
 }
 
@@ -35,15 +35,17 @@ body {
     height: 100%;
     width: 100%;
     padding: 10px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
 .leftSidebarDiv {
     display: flex;
     flex-direction: column;
-    width: 220px; 
+    width: 20%; 
     padding: 0px;
+    margin: 0px;
     background-color: #303030b4;
     border-right: 1px solid rgb(57, 56, 56);
     border-top:  1px solid var(--allINtopBarborderbotAndTop);
@@ -71,7 +73,6 @@ body {
 .rightSidebarDiv {
     width: 210px; 
     background-color: #30303088;
-    /* border-left: 1px solid rgb(57, 56, 56); */
     border-top: 1px solid var(--allINtopBarborderbotAndTop);
     padding: 0px 0px;
 }
@@ -107,9 +108,9 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #1a2a46a8;
+    /* background-color: #1a2a46a8; */
     color: #3772de;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #Events-saved-via-Terminal, #Events-saved-via-Browser {
@@ -342,44 +343,20 @@ body {
 }
 
 .section > div span {
-    font-size: 10px;
+    font-size: 12px;
+    color: #e8e5e5;
+    font-weight: bold;
     text-align: center;
 }
 
 .calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
-    background-color: #1a2a46a8;
+    background-color: #3a4c66a8;
     padding: 8px;
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
 }
-.calendar-view {
-    background-color: #1a2a46a8; /* Original color */
-}
 
-.statistics {
-    background-color: #2a3b56a8; /* Unique color */
-}
-
-.reminders {
-    background-color: #3a4c66a8; /* Unique color */
-}
-
-.help-support {
-    background-color: #4a5d76a8; /* Unique color */
-}
-
-.settings {
-    background-color: #5a6e86a8; /* Unique color */
-}
-
-.upcoming {
-    background-color: #6a7f96a8; /* Unique color */
-}
-
-.add-event {
-    background-color: #7a90a6a8; /* Unique color */
-}
 
 .add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
     background-color: #1a2a46d0; 
@@ -414,7 +391,7 @@ body {
 }
 
 .icon-statistics {
-    color: #9C27B0; /* Purple */
+    color: #4279b5; /* Purple */
 }
 
 .icon-reminders {
@@ -498,7 +475,6 @@ body {
     background-color: #1a1a1ba8;
     border: 1px solid #343333;
     color: white; 
-    /* border: none; */
     outline: none;
 }
 
