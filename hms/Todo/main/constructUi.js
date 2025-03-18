@@ -312,7 +312,7 @@ function createBrowserEventsContent() {
 function createTodoContent() {
     return `
         <div id="todoContent" class="contentDiv">
-            <h1>To-Do List 🕰️</h1>
+            // <h1>To-Do List 🕰️</h1>
             <table class="todo-table">
                 <thead>
                     <tr><th>Event Date</th><th>Event Time</th><th>Event</th><th>Time Created</th></tr>

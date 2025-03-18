@@ -316,8 +316,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
 .section {
     display: flex;
     flex-direction: row;
@@ -328,7 +326,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .section > div {
     display: flex;
     flex-direction: column;
@@ -336,7 +333,6 @@ body {
     margin-bottom: 10px;
     flex: 1; 
 }
-
 
 .section > div i {
     font-size: 20px;
@@ -350,7 +346,7 @@ body {
     text-align: center;
 }
 
-.calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
+/* .calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
     background-color: #3a4c66a8;
     padding: 8px;
     border-radius: 8px;
@@ -361,8 +357,23 @@ body {
 
 .add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
     background-color: #1a2a46d0; 
+} */
+
+.icon-box {
+    background-color: #3a4c66a8;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
+.icon-box:hover {
+    background-color: #1a2a46d0; 
+}
 
 #addTodoButton, #settingsButton, #logoutButton {
     padding: 10px;
@@ -407,7 +418,7 @@ body {
 #todoContent{
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 14px;
     gap: 10px;
     padding: 10px;
     border-radius: 8px;
@@ -482,14 +493,13 @@ body {
     border-radius: 8px;
     background-color: #064485;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 #addEventForm button:hover {
     background-color: #0056b3;
 }
-
 
 .noticeMessage {
     position: absolute;
@@ -505,9 +515,113 @@ body {
 }
 
 
-
-
 /* Media query for screens smaller than 1200px (e.g., large tablets and small desktops) */
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+    .section > div {
+        flex: 1 1 45%;
+    }
+}
+
+/* Media query for screens smaller than 992px (e.g., tablets) */
+@media (max-width: 992px) {
+    .section {
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    .section > div {
+        flex: 1 1 100%; 
+    }
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; 
+    }
+    .section > div {
+        flex: 1 1 auto; 
+    }
+}
+
+
+
+
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+#hamburger-menu {
+    background-color: transparent;
+    color: #3772de;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar overlay for mobile */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+/* Mobile search container - conditionally displayed via JavaScript */
+.mobile-search-container {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--allINtopBarborderbotAndTop);
+    display: none; 
+}
+
+.mobile-search-container .searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.mobile-search-container .searchInput input {
+    width: 100%;
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: #3772de;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #2a5dbd;
+}
+
+.mobile-search-container .searchInput input::placeholder {
+    color: #3772de;
+}
+
+/* Enhanced media queries for better responsive layout */
 @media (max-width: 1200px) {
     .section {
         flex-direction: row; /* Keep divs in a row */
@@ -516,9 +630,12 @@ body {
     .section > div {
         flex: 1 1 45%; /* Each div takes up 45% of the container width */
     }
+    
+    .rightSidebarDiv {
+        width: 180px;
+    }
 }
 
-/* Media query for screens smaller than 992px (e.g., tablets) */
 @media (max-width: 992px) {
     .section {
         flex-direction: row; /* Keep divs in a row */
@@ -527,18 +644,186 @@ body {
     .section > div {
         flex: 1 1 100%; /* Each div takes up 100% of the container width */
     }
+    
+    .leftSidebarDiv {
+        width: 25%;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .rightSidebarDiv {
+        width: 160px;
+    }
 }
 
-/* Media query for screens smaller than 768px (e.g., tablets and phones) */
 @media (max-width: 768px) {
-    .section {
-        flex-direction: column; /* Stack divs vertically */
+    body, html {
+        overflow: auto;
     }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .leftSidebarDiv {
+        position: fixed;
+        left: -100%;
+        width: 80%;
+        z-index: 99;
+        transition: left 0.3s ease;
+        height: 100vh;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .leftSidebarDiv.active {
+        left: 0;
+    }
+    
+    .middleDiv {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rightSidebarDiv {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
+    /* Hide the search bar in the sidebar on mobile */
+    .leftSidebarDiv #searchInput {
+        display: none;
+    }
+    
+    /* Top bar position */
+    .allINtopBar {
+        padding-left: 50px; /* Make room for the hamburger menu */
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .formGroupParent1 {
+        flex-direction: column;
+    }
+    
+    .section {
+        flex-direction: column;
+    }
+    
     .section > div {
-        flex: 1 1 auto; /* Reset flex properties */
+        flex: 1 1 auto;
+    }
+    
+    .todo-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Default content positioning */
+    .contentDiv {
+        margin-top: 10px;
+    }
+    
+    /* Special handling for browser events content */
+    #browserEventsContent {
+        padding-top: 15px;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+    
+    .MonthsWthEvents-leftDiv {
+        height: auto;
+        max-height: 30vh;
+    }
+    
+    /* Optimize calendar for mobile */
+    .month {
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    /* Ensure form inputs are large enough for touch */
+    input, textarea, select, button {
+        min-height: 44px; /* Recommended touch target size */
+    }
+    
+    /* Make icons more tappable */
+    .section > div {
+        padding: 12px 8px;
+    }
+    
+    #addEventForm input,
+    #addEventForm textarea,
+    #addEventForm button {
+        font-size: 16px; /* Minimum font size for inputs on mobile */
+        padding: 12px;
     }
 }
 
-.me{
-   background-color:#1d2837a8;
+@media (max-width: 480px) {
+    .section > div i {
+        font-size: 16px;
+    }
+    
+    .section > div span {
+        font-size: 11px;
+    }
+    
+    #addEventForm input, 
+    #addEventForm textarea {
+        font-size: 14px;
+    }
+    
+    .todo-table th, 
+    .todo-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    #searchInput input,
+    #mobileSearchBox {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .allINtopBar {
+        padding: 5px 5px 5px 50px;
+    }
+    
+    #Events-saved-via-Browser {
+        font-size: 14px;
+    }
+    
+    .usericon {
+        width: 20px;
+        height: 20px;
+        font-size: 24px;
+    }
+    
+    .mobile-search-container {
+        padding: 5px;
+    }
 }
+
+
