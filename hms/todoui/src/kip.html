@@ -201,3 +201,864 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+:root {
+	--background-color: #ffffff;
+    --allINtopBarborderbotAndTop: #151515;
+}
+
+/* Define dark theme colors */
+[data-theme="dark"] {
+	--background-color: #424242;
+    --allINtopBarborderbotAndTop: #151515;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000f1;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.leftSidebarDiv, .middleDiv, .rightSidebarDiv {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.leftSidebarDiv {
+    display: flex;
+    flex-direction: column;
+    width: 20%; 
+    padding: 8px;
+    margin: 0px;
+    background-color: #303030b4;
+    border-right: 1px solid rgb(57, 56, 56);
+    border-top:  1px solid var(--allINtopBarborderbotAndTop);
+}
+
+.middleDiv {
+    position: relative;
+    flex: 1; 
+    color: white;
+    padding: 0px;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow: hidden; /
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.rightSidebarDiv {
+    width: 210px; 
+    background-color: #30303088;
+    border-top: 1px solid var(--allINtopBarborderbotAndTop);
+    padding: 0px 0px;
+}
+
+.allINtopBar,.RightSideDivtopBar {
+    position: sticky; 
+    top: 0; 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+    border-top: 1px solid var(--allINtopBarborderbotAndTop);
+    gap: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box; 
+}
+
+.allINtopBar{
+    background-color: #303030b4;
+    justify-content: space-between; 
+}
+
+.RightSideDivtopBar{
+    justify-content: flex-end; 
+}
+
+.usericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #3772de;
+    font-size: 30px;
+}
+
+#Events-saved-via-Terminal, #Events-saved-via-Browser {
+    padding: 8px;
+    color: wheat;
+    border-radius: 8px;
+}
+
+#Events-saved-via-Terminal:hover, #Events-saved-via-Browser:hover {
+    background-color: #2a5dbd; 
+    color: white; 
+}
+
+
+#searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+#searchInput input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: #3772de;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #2a5dbd;
+}
+
+#searchInput input::placeholder {
+    color: #3772de;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.todo-table th, .todo-table td {
+    border: 1px solid #2a5dbd;
+    padding: 10px;
+    text-align: left;
+}
+
+.todo-table th {
+    background-color: #1a2a46a8;
+    color: #3772de;
+}
+
+.todo-row:nth-child(even) {
+    background-color: #232324a8;
+}
+
+.todo-date, .todo-time, .todo-item {
+    color: #fff;
+}
+
+.todo-date{
+    color: green;
+    width: 100px;
+}
+
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20% 5px 10px 5px;
+}
+
+.month {
+    width: 200px;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    border: 1px solid #2a5dbd;
+    color: #3772de;
+    text-align: center;
+}
+
+.month h3 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.day {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #fff;
+}
+.current-day {
+    background-color: #ff6347; 
+    color: #fff;
+    border-radius: 50%;
+}
+
+.phighlights{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #1a2a46d0; 
+    color: yellow; 
+}
+
+
+.MonthsWthEvents-leftDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 47%;
+    width: 100%;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #3b3a3a; 
+    box-sizing: border-box;
+}
+
+#Pcolor{
+    color: #3772de;
+}
+
+
+.indexedDBMonths, .terminalMonths {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #1a2a46a8;
+    border: 1px solid #2a5dbd;
+    margin-bottom: 10px;
+}
+
+.pfortemOrBr{
+    font-size: 14px;
+    color: white;
+    margin: 5px 0; 
+}
+
+.indexedDBMonths div i, .terminalMonths div i {
+    margin-right: 10px; 
+    color: #007bff; 
+}
+
+
+#eventDescription {
+	flex-grow: 1;
+	width: 98%;
+	padding: 10px 50px 10px 10px;
+	min-height: 20px;
+	max-height: 200px;
+	resize: vertical;
+	transition: all 0.3s ease;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--custom-tool-content);
+	outline: none;
+	overflow: auto;
+	resize: none;
+}
+
+
+
+.left-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 10px;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* .section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: 1; 
+} */
+
+/* Make sections allow items to wrap to next line */
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Add this to enable wrapping */
+    width: 100%;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Control the width of each item so they wrap appropriately */
+.section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: calc(33.33% - 8px); /* Make 3 items per row with gap consideration */
+    min-width: 70px; /* Minimum width to prevent squeezing */
+    flex: 0 0 auto; /* Don't grow or shrink, use the width defined */
+}
+
+.section > div i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.section > div span {
+    font-size: 12px;
+    color: #e8e5e5;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* .calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
+    background-color: #3a4c66a8;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}  */
+
+/* .add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
+    background-color: #1a2a46d0; 
+}  */
+
+.icon-box {
+    background-color: #3a4c66a8;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box:hover {
+    background-color: #1a2a46d0; 
+}
+
+#addTodoButton, #settingsButton, #logoutButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.icon-settings {
+    color: #4CAF50;
+}
+
+.icon-upcoming {
+    color: #2196F3; 
+}
+
+.icon-add-event {
+    color: #FFEB3B; 
+}
+
+.icon-calendar-view {
+    color: #FF9800; 
+}
+
+.icon-statistics {
+    color: #4279b5; 
+}
+
+.icon-reminders {
+    color: #F44336; 
+}
+
+.icon-help-support {
+    color: #00BCD4; 
+}
+
+
+#todoContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(167, 163, 163);
+    margin-top: 20px;
+}
+
+
+#helpSupportContentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(167, 163, 163);
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+}
+
+
+/* styles for the createAddEventContent function */
+#addEventSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+    color: rgb(167, 163, 163);
+}
+
+#addEventForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formGroupParent1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.formGroup1, .formGroup2, .formGroup3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#addEventForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#addEventForm input, #addEventForm textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1a1a1ba8;
+    border: 1px solid #343333;
+    color: white; 
+    outline: none;
+}
+
+#addEventForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #064485;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#addEventForm button:hover {
+    background-color: #0056b3;
+}
+
+.noticeMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1a2a46a8;
+    color: #275fc6;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+
+/* Media query for screens smaller than 1200px (e.g., large tablets and small desktops) */
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+    .section > div {
+        flex: 1 1 45%;
+    }
+}
+
+/* Media query for screens smaller than 992px (e.g., tablets) */
+@media (max-width: 992px) {
+    .section {
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    .section > div {
+        flex: 1 1 100%; 
+    }
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; 
+    }
+    .section > div {
+        flex: 1 1 auto; 
+    }
+}
+
+
+
+
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    display: none;
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+#hamburger-menu {
+    background-color: transparent;
+    color: #3772de;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar overlay for mobile */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+/* Mobile search container - conditionally displayed via JavaScript */
+.mobile-search-container {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--allINtopBarborderbotAndTop);
+    display: none; 
+}
+
+.mobile-search-container .searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.mobile-search-container .searchInput input {
+    width: 100%;
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a46a8;
+    color: #3772de;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #2a5dbd;
+}
+
+.mobile-search-container .searchInput input::placeholder {
+    color: #3772de;
+}
+
+/* Enhanced media queries for better responsive layout */
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: row; /* Keep divs in a row */
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+    }
+    .section > div {
+        flex: 1 1 45%; /* Each div takes up 45% of the container width */
+    }
+    
+    .rightSidebarDiv {
+        width: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        flex-direction: row; /* Keep divs in a row */
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+    }
+    .section > div {
+        flex: 1 1 100%; /* Each div takes up 100% of the container width */
+    }
+    
+    .leftSidebarDiv {
+        width: 25%;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .rightSidebarDiv {
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .leftSidebarDiv {
+        position: fixed;
+        left: -100%;
+        width: 80%;
+        z-index: 99;
+        transition: left 0.3s ease;
+        height: 100vh;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .leftSidebarDiv.active {
+        left: 0;
+    }
+    
+    .middleDiv {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rightSidebarDiv {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
+    /* Hide the search bar in the sidebar on mobile */
+    .leftSidebarDiv #searchInput {
+        display: none;
+    }
+    
+    /* Top bar position */
+    .allINtopBar {
+        padding-left: 50px; /* Make room for the hamburger menu */
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .formGroupParent1 {
+        flex-direction: column;
+    }
+    
+    .section {
+        flex-direction: column;
+    }
+    
+    .section > div {
+        flex: 1 1 auto;
+    }
+    
+    .todo-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Default content positioning */
+    .contentDiv {
+        margin-top: 10px;
+    }
+    
+    /* Special handling for browser events content */
+    #browserEventsContent {
+        padding-top: 15px;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+    
+    .MonthsWthEvents-leftDiv {
+        height: auto;
+        max-height: 30vh;
+    }
+    
+    /* Optimize calendar for mobile */
+    .month {
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    /* Ensure form inputs are large enough for touch */
+    input, textarea, select, button {
+        min-height: 44px; /* Recommended touch target size */
+    }
+    
+    /* Make icons more tappable */
+    .section > div {
+        padding: 12px 8px;
+    }
+    
+    #addEventForm input,
+    #addEventForm textarea,
+    #addEventForm button {
+        font-size: 16px; /* Minimum font size for inputs on mobile */
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section > div i {
+        font-size: 16px;
+    }
+    
+    .section > div span {
+        font-size: 11px;
+    }
+    
+    #addEventForm input, 
+    #addEventForm textarea {
+        font-size: 14px;
+    }
+    
+    .todo-table th, 
+    .todo-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    #searchInput input,
+    #mobileSearchBox {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .allINtopBar {
+        padding: 5px 5px 5px 50px;
+    }
+    
+    #Events-saved-via-Browser {
+        font-size: 14px;
+    }
+    
+    .usericon {
+        width: 20px;
+        height: 20px;
+        font-size: 24px;
+    }
+    
+    .mobile-search-container {
+        padding: 5px;
+    }
+}
+
+ -->

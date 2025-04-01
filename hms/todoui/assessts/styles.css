@@ -1,12 +1,11 @@
-
- :root {
-	--background-color: #ffffff;
+:root {
+    --background-color: #ffffff;
     --allINtopBarborderbotAndTop: #151515;
 }
 
 /* Define dark theme colors */
 [data-theme="dark"] {
-	--background-color: #424242;
+    --background-color: #424242;
     --allINtopBarborderbotAndTop: #151515;
 }
 
@@ -57,7 +56,7 @@ body {
     padding: 0px;
     background-color: transparent;
     box-sizing: border-box;
-    overflow: hidden; /
+    overflow: hidden; 
 }
 
 .contentDiv {
@@ -115,14 +114,12 @@ body {
     padding: 8px;
     color: wheat;
     border-radius: 8px;
-    /* background-color: #1a2a46c6;  */
 }
 
 #Events-saved-via-Terminal:hover, #Events-saved-via-Browser:hover {
     background-color: #2a5dbd; 
     color: white; 
 }
-
 
 #searchInput {
     display: flex;
@@ -160,7 +157,6 @@ body {
     margin-top: 10px;
 }
 
-
 .todo-table {
     width: 100%;
     border-collapse: collapse;
@@ -190,7 +186,6 @@ body {
     color: green;
     width: 100px;
 }
-
 
 #calendar {
     display: flex;
@@ -244,7 +239,6 @@ body {
     color: yellow; 
 }
 
-
 .MonthsWthEvents-leftDiv {
     display: flex;
     flex-direction: column;
@@ -262,7 +256,6 @@ body {
 #Pcolor{
     color: #3772de;
 }
-
 
 .indexedDBMonths, .terminalMonths {
     display: flex;
@@ -286,39 +279,39 @@ body {
     color: #007bff; 
 }
 
-
 #eventDescription {
-	flex-grow: 1;
-	width: 98%;
-	padding: 10px 50px 10px 10px;
-	min-height: 20px;
-	max-height: 200px;
-	resize: vertical;
-	transition: all 0.3s ease;
-	border: none;
-	border-radius: 5px;
-	background-color: var(--custom-tool-content);
-	outline: none;
-	overflow: auto;
-	resize: none;
+    flex-grow: 1;
+    width: 98%;
+    padding: 10px 50px 10px 10px;
+    min-height: 20px;
+    max-height: 200px;
+    resize: vertical;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--custom-tool-content);
+    outline: none;
+    overflow: auto;
+    resize: none;
 }
 
-
-
+/* Left sidebar navigation styles */
 .left-apps {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: white;
-    gap: 10px;
+    /* gap: 10px; */
     width: 100%;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Section container for app icons */
 .section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Enable wrapping to next line */
     width: 100%;
     padding: 8px;
     gap: 8px;
@@ -326,12 +319,20 @@ body {
     box-sizing: border-box;
 }
 
+/* Individual app icon containers */
 .section > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    flex: 1; 
+    background-color: #3a4c66a8;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Width calculation for 3 items per row with gap */
+    width: calc(33.33% - 8px);
+    box-sizing: border-box;
 }
 
 .section > div i {
@@ -342,22 +343,11 @@ body {
 .section > div span {
     font-size: 12px;
     color: #e8e5e5;
-    font-weight: bold;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
-/* .calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
-    background-color: #3a4c66a8;
-    padding: 8px;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-.add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
-    background-color: #1a2a46d0; 
-} */
 
 .icon-box {
     background-color: #3a4c66a8;
@@ -414,7 +404,6 @@ body {
     color: #00BCD4; 
 }
 
-
 #todoContent{
     display: flex;
     flex-direction: column;
@@ -426,7 +415,6 @@ body {
     margin-top: 20px;
 }
 
-
 #helpSupportContentDiv {
     display: flex;
     flex-direction: column;
@@ -437,7 +425,6 @@ body {
     background-color: #1a1a1ba8;
     border: 1px solid #343333;
 }
-
 
 /* styles for the createAddEventContent function */
 #addEventSection {
@@ -514,42 +501,140 @@ body {
     margin-top: 10px; 
 }
 
-
 /* Media query for screens smaller than 1200px (e.g., large tablets and small desktops) */
 @media (max-width: 1200px) {
-    .section {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-    }
     .section > div {
-        flex: 1 1 45%;
+        width: calc(50% - 8px); /* 2 items per row on medium screens */
     }
 }
 
 /* Media query for screens smaller than 992px (e.g., tablets) */
 @media (max-width: 992px) {
-    .section {
-        flex-direction: row; 
-        flex-wrap: wrap;
+    .leftSidebarDiv {
+        width: 25%;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
     }
-    .section > div {
-        flex: 1 1 100%; 
+    
+    .rightSidebarDiv {
+        width: 160px;
     }
 }
 
 /* Media query for screens smaller than 768px (e.g., tablets and phones) */
 @media (max-width: 768px) {
-    .section {
-        flex-direction: column; 
+    body, html {
+        overflow-x: hidden;
+        overflow-y: auto;
     }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .leftSidebarDiv {
+        position: fixed;
+        left: -100%;
+        width: 80%;
+        z-index: 99;
+        transition: left 0.3s ease;
+        height: 100vh;
+        margin-top: 12%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .leftSidebarDiv.active {
+        left: 0;
+    }
+    
+    .middleDiv {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rightSidebarDiv {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
+    /* Hide the search bar in the sidebar on mobile */
+    .leftSidebarDiv #searchInput {
+        display: none;
+    }
+    
+    /* Top bar position */
+    .allINtopBar {
+        padding-left: 50px; /* Make room for the hamburger menu */
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .formGroupParent1 {
+        flex-direction: column;
+    }
+    
     .section > div {
-        flex: 1 1 auto; 
+        width: 100%; /* Full width on mobile */
+    }
+    
+    .todo-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Default content positioning */
+    .contentDiv {
+        margin-top: 10px;
+    }
+    
+    /* Special handling for browser events content */
+    #browserEventsContent {
+        padding-top: 15px;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+    
+    .MonthsWthEvents-leftDiv {
+        height: auto;
+        max-height: 30vh;
+    }
+    
+    /* Optimize calendar for mobile */
+    .month {
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    /* Ensure form inputs are large enough for touch */
+    input, textarea, select, button {
+        min-height: 44px; /* Recommended touch target size */
+    }
+    
+    /* Make icons more tappable */
+    .section > div {
+        padding: 12px 8px;
+    }
+    
+    #addEventForm input,
+    #addEventForm textarea,
+    #addEventForm button {
+        font-size: 16px; /* Minimum font size for inputs on mobile */
+        padding: 12px;
     }
 }
-
-
-
-
 
 /* Mobile Navigation Styles */
 .mobile-nav {
@@ -621,159 +706,6 @@ body {
     color: #3772de;
 }
 
-/* Enhanced media queries for better responsive layout */
-@media (max-width: 1200px) {
-    .section {
-        flex-direction: row; /* Keep divs in a row */
-        flex-wrap: wrap; /* Allow wrapping to the next line */
-    }
-    .section > div {
-        flex: 1 1 45%; /* Each div takes up 45% of the container width */
-    }
-    
-    .rightSidebarDiv {
-        width: 180px;
-    }
-}
-
-@media (max-width: 992px) {
-    .section {
-        flex-direction: row; /* Keep divs in a row */
-        flex-wrap: wrap; /* Allow wrapping to the next line */
-    }
-    .section > div {
-        flex: 1 1 100%; /* Each div takes up 100% of the container width */
-    }
-    
-    .leftSidebarDiv {
-        width: 25%;
-        margin-top: 12%;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-    }
-    
-    .rightSidebarDiv {
-        width: 160px;
-    }
-}
-
-@media (max-width: 768px) {
-    body, html {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    
-    .flex-container {
-        flex-direction: column;
-    }
-    
-    .leftSidebarDiv {
-        position: fixed;
-        left: -100%;
-        width: 80%;
-        z-index: 99;
-        transition: left 0.3s ease;
-        height: 100vh;
-        margin-top: 12%;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-    }
-    
-    .leftSidebarDiv.active {
-        left: 0;
-    }
-    
-    .middleDiv {
-        width: 100%;
-        margin-left: 0;
-        padding-top: 0;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .rightSidebarDiv {
-        display: none;
-    }
-    
-    .mobile-nav {
-        display: block;
-    }
-    
-    /* Hide the search bar in the sidebar on mobile */
-    .leftSidebarDiv #searchInput {
-        display: none;
-    }
-    
-    /* Top bar position */
-    .allINtopBar {
-        padding-left: 50px; /* Make room for the hamburger menu */
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    
-    .formGroupParent1 {
-        flex-direction: column;
-    }
-    
-    .section {
-        flex-direction: column;
-    }
-    
-    .section > div {
-        flex: 1 1 auto;
-    }
-    
-    .todo-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    
-    /* Default content positioning */
-    .contentDiv {
-        margin-top: 10px;
-    }
-    
-    /* Special handling for browser events content */
-    #browserEventsContent {
-        padding-top: 15px;
-    }
-    
-    .sidebar-overlay.active {
-        display: block;
-    }
-    
-    .MonthsWthEvents-leftDiv {
-        height: auto;
-        max-height: 30vh;
-    }
-    
-    /* Optimize calendar for mobile */
-    .month {
-        width: 90%;
-        margin: 5px 0;
-    }
-    
-    /* Ensure form inputs are large enough for touch */
-    input, textarea, select, button {
-        min-height: 44px; /* Recommended touch target size */
-    }
-    
-    /* Make icons more tappable */
-    .section > div {
-        padding: 12px 8px;
-    }
-    
-    #addEventForm input,
-    #addEventForm textarea,
-    #addEventForm button {
-        font-size: 16px; /* Minimum font size for inputs on mobile */
-        padding: 12px;
-    }
-}
-
 @media (max-width: 480px) {
     .section > div i {
         font-size: 16px;
@@ -826,5 +758,3 @@ body {
         padding: 5px;
     }
 }
-
-
