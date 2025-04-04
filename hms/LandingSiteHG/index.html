@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isaac Muliro Portfolio</title>
+        <!-- <link rel="stylesheet" href="assessts/styles.css"> -->
+        <link rel="stylesheet" href="assessts/trial.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+<body class="holy-grail">
+    <!-- <canvas id="particles-canvas"></canvas>
+    <div class="gradient-overlay"></div> -->
+     
+    <!-- Header -->
+    <header class="header">
+        <div class="topbar-title">
+            <div class="title-main">Isaac Muliro!</div>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+    </header>
+
+    <!-- Holy Grail Layout -->
+    <div class="holy-grail-body">
+        <!-- Left Sidebar / Navigation -->
+        <nav class="nav-sidebar">
+            <div class="profile-summary">
+                <div class="profile-image-small">
+                    <img src="assessts/images/ime.jpg" alt="Isaac Muliro">
+                </div>
+                <h3>Isaac Muliro</h3>
+                <p>UI/UX Designer & Developer</p>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#projects" class="nav-item active"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#about" class="nav-item"><i class="fas fa-user"></i> About Me</a>
+                <a href="#skills" class="nav-item"><i class="fas fa-tools"></i> Skills</a>
+                <a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i> Education</a>
+                <a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            
+            <div class="social-links-sidebar">
+                <a href="https://github.com/XerxisMuliro" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/isaacmuliro" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:contact@isaacmuliro.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://twitter.com/isaacmuliro" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="projects" class="projects-section">
+                <h2>UI/UX & Web Development Projects</h2>
+                <div class="btn-container">
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/todoui/')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <span>Todo App</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/metroCad/')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <span>Metrocard</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/imuliro/')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <span>Latex</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/subversive%20website/subversive.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span>Subversive Site</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/clcok/clock.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span>Word Clock</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/weather%20app/weather.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <span>Weather App</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/Radio/radio.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <span>Radio Stream</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/AudioRed/audio.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <span>Text-to-Speech</span>
+                    </div>
+
+                    <div class="btn-item" onclick="navigateTo('https://xerxisfy.com')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span>Mobile Apps</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/web-apps/')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span>Web Apps</span>
+                    </div>
+
+
+                    
+                    <div class="btn-item" onclick="navigateTo('settings.html')">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <span>Settings</span>
+                    </div>
+                    
+                    <div class="btn-item" onclick="navigateTo('https://github.com/XerxisMuliro')">
+                        <div class="icon-wrapper">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="about-section">
+                <h2>About Me</h2>
+                
+                <div class="about-container">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="assessts/images/ime.jpg" alt="Isaac Muliro">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Isaac Muliro</h3>
+                            <p class="title">UI/UX Designer & Web Developer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bio-section">
+                        <p>I'm a passionate UI/UX designer and web developer focused on creating intuitive, engaging digital experiences. With a background in design and programming, I bring a unique perspective to solving user interface challenges.</p>
+                        <p>My work combines creative design thinking with technical implementation to deliver solutions that are both beautiful and functional.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="skills-container">
+                <h3>Skills & Expertise</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>UI Design</h4>
+                        <p>Creating visually stunning and intuitive user interfaces</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>UX Design</h4>
+                        <p>Designing seamless user experiences with a focus on usability</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Web Development</h4>
+                        <p>Building responsive and dynamic web applications</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Design</h4>
+                        <p>Creating interfaces optimized for mobile experiences</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Desktop Apps</h4>
+                        <p>Creating powerful cross-platform desktop applications</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Apps</h4>
+                        <p>Developing native and hybrid apps for iOS and Android</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h4>Server Management</h4>
+                        <p>Configuring and maintaining secure, scalable server infrastructure</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Database Management</h4>
+                        <p>Managing and optimizing databases for performance</p>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section id="education" class="education-experience">
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Master's in Interactive Media Design</h4>
+                            <p class="institution">New York University</p>
+                            <p class="year">2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Bachelor's in Computer Science</h4>
+                            <p class="institution">University of Technology</p>
+                            <p class="year">2018 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>UI/UX Designer</h4>
+                            <p class="institution">Digital Creatives Agency</p>
+                            <p class="year">2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Web Developer Intern</h4>
+                            <p class="institution">TechStart Solutions</p>
+                            <p class="year">2021 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="contact-section">
+                <h3>Get In Touch</h3>
+                <p>Interested in collaborating or have questions about my work? Feel free to reach out!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@isaacmuliro.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (123) 456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New York, NY</span>
+                    </div>
+                </div>
+                <a href="#" class="contact-button">Send Message</a>
+            </section>
+        </main>
+        
+        <!-- Right Sidebar / Supplementary Content -->
+        <aside class="right-sidebar">
+            <div class="sidebar-widget">
+                <h3>Latest Updates</h3>
+                <div class="widget-content">
+                    <div class="update-item">
+                        <span class="update-date">Oct 15, 2023</span>
+                        <p>Launched new Weather App with enhanced UI</p>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-date">Sep 28, 2023</span>
+                        <p>Published article on modern UI design patterns</p>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-date">Aug 12, 2023</span>
+                        <p>Released Metro Card app with real-time tracking</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Technologies</h3>
+                <div class="widget-content">
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">SASS</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+
+                    <h3>Baas,DB and Hosting</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Google Cloud</span>
+                </div>
+
+
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Download Resume</h3>
+                <div class="widget-content">
+                    <a href="#" class="download-button">
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Isaac Muliro. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main/canva.js"></script>
+    <script src="main/script.js"></script>
+   
+</body>
+</html>

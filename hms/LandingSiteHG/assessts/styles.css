@@ -454,6 +454,10 @@ main {
 [data-theme="dark"] .skill-card:nth-child(3) { background: var(--btn3-gradient); }
 [data-theme="dark"] .skill-card:nth-child(4) { background: var(--btn4-gradient); }
 
+[data-theme="dark"] .skill-card:nth-child(5) { background: var(--btn2-gradient); }
+[data-theme="dark"] .skill-card:nth-child(6) { background: var(--btn3-gradient); }
+[data-theme="dark"] .skill-card:nth-child(7) { background: var(--btn4-gradient); }
+
 .skill-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px var(--hover-shadow);
@@ -469,6 +473,11 @@ main {
 [data-theme="dark"] .skill-card:nth-child(2) i { color: var(--icon2-color); }
 [data-theme="dark"] .skill-card:nth-child(3) i { color: var(--icon3-color); }
 [data-theme="dark"] .skill-card:nth-child(4) i { color: var(--icon4-color); }
+
+[data-theme="dark"] .skill-card:nth-child(5) i { color: var(--icon2-color); }
+[data-theme="dark"] .skill-card:nth-child(6) i { color: var(--icon3-color); }
+[data-theme="dark"] .skill-card:nth-child(7) i { color: var(--icon4-color); }
+
 
 .skill-card h4 {
     font-size: 1.2rem;
