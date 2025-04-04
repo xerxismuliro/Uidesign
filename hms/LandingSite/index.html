@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isaac Muliro Portfolio</title>
+        <link rel="stylesheet" href="assessts/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+<body>
+    <div class="topbar">
+        <div class="topbar-title">
+            <div class="title-main">Isaac Muliro!</div>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+    </div>
+    
+    <main>
+        <div class="title-sub">UI/UX & Web Development Projects</div>
+        <div class="btn-container">
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/todoui/')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <span>Todo App</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/metroCad/')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-subway"></i>
+                </div>
+                <span>Metrocard</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/imuliro/')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-file-code"></i>
+                </div>
+                <span>Latex</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/subversive%20website/subversive.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <span>Subversive Site</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/clcok/clock.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <span>Word Clock</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/weather%20app/weather.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <span>Weather App</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/Radio/radio.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <span>Radio Stream</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/AudioRed/audio.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <span>Text-to-Speech</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('settings.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <span>Settings</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('https://github.com/XerxisMuliro')">
+                <div class="icon-wrapper">
+                    <i class="fab fa-github"></i>
+                </div>
+                <span>GitHub</span>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <script>
+        function navigateTo(url) {
+            window.open(url, '_blank');
+        }
+        
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>imuliro</title>
+        <link rel="stylesheet" href="assessts/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+<body>
+    <div class="topbar">
+        <div class="topbar-title">
+            <div class="title-main">Isaac Muliro!</div>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+    </div>
+    
+    <main>
+        <div class="btn-container">
+            <div class="btn-item" onclick="navigateTo('events.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <span>Events</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('tickets.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <span>Tickets</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('venues.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <span>Venues</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('schedule.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <span>Schedule</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('speakers.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <span>Speakers</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('attendees.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-users"></i>
+                </div>
+                <span>Attendees</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('sponsors.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <span>Sponsors</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('analytics.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <span>Analytics</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('settings.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <span>Settings</span>
+            </div>
+            
+            <div class="btn-item" onclick="navigateTo('help.html')">
+                <div class="icon-wrapper">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <span>Help</span>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>
+ -->
+
+

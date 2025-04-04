@@ -178,13 +178,17 @@ async function scrapeYouTube(options = {}) {
                     
                     const channel = channelElement ? channelElement.innerText.trim() : "";
                     
-                    // Get video duration (if available)
+                    // Get video duration (if available) - using more specific selectors
                     const durationElement = 
-                        video.querySelector('.ytd-thumbnail-overlay-time-status-renderer') || 
+                        video.querySelector('#overlays #text.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('#overlays span.ytd-thumbnail-overlay-time-status-renderer') ||
                         video.querySelector('span.ytd-thumbnail-overlay-time-status-renderer') ||
-                        video.querySelector('.ytp-time-duration');
+                        video.querySelector('#text.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('.ytp-time-duration') ||
+                        video.querySelector('[id*="time-status"]');
                     
-                    const duration = durationElement ? durationElement.innerText.trim() : "";
+                    const duration = durationElement ? durationElement.innerText.trim() : "Unknown";
                     
                     // Get view count and age if available
                     const metaElements = Array.from(video.querySelectorAll('#metadata-line span, .ytd-video-meta-block span'));

@@ -340,6 +340,7 @@ Examples:
 
 
 // Advanced version of the script with more features and options like category filtering and output formats
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -402,7 +403,7 @@ async function scrapeYouTube(options = {}) {
         await page.setUserAgent(randomUserAgent);
         
         // Set viewport for better rendering
-        await page.setViewport({ width: 1280, height: 800 });
+        await page.setViewport({ width: 1200, height: 800 });
 
         // Enable debug logging
         if (config.debug) {
@@ -519,13 +520,17 @@ async function scrapeYouTube(options = {}) {
                     
                     const channel = channelElement ? channelElement.innerText.trim() : "";
                     
-                    // Get video duration (if available)
+                    // Get video duration (if available) - using more specific selectors
                     const durationElement = 
-                        video.querySelector('.ytd-thumbnail-overlay-time-status-renderer') || 
+                        video.querySelector('#overlays #text.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('#overlays span.ytd-thumbnail-overlay-time-status-renderer') ||
                         video.querySelector('span.ytd-thumbnail-overlay-time-status-renderer') ||
-                        video.querySelector('.ytp-time-duration');
+                        video.querySelector('#text.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('.ytd-thumbnail-overlay-time-status-renderer') ||
+                        video.querySelector('.ytp-time-duration') ||
+                        video.querySelector('[id*="time-status"]');
                     
-                    const duration = durationElement ? durationElement.innerText.trim() : "";
+                    const duration = durationElement ? durationElement.innerText.trim() : "Unknown";
                     
                     // Get view count and age if available
                     const metaElements = Array.from(video.querySelectorAll('#metadata-line span, .ytd-video-meta-block span'));
