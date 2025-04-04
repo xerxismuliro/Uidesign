@@ -9,6 +9,12 @@
     </head>
     
 <body>
+ 
+    <!-- <canvas id="particles-canvas"></canvas> -->
+
+    <canvas id="particles-canvas"></canvas>
+    <div class="gradient-overlay"></div>
+     
     <div class="topbar">
         <div class="topbar-title">
             <div class="title-main">Isaac Muliro!</div>
@@ -95,24 +101,8 @@
         
     </main>
 
-    <script>
-        function navigateTo(url) {
-            window.open(url, '_blank');
-        }
-        
-        function toggleTheme() {
-            const html = document.documentElement;
-            const themeIcon = document.getElementById('theme-icon');
-            
-            if (html.getAttribute('data-theme') === 'light') {
-                html.setAttribute('data-theme', 'dark');
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-            } else {
-                html.setAttribute('data-theme', 'light');
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
-            }
-        }
-    </script>
+    <script src="main/canva.js"></script>
+    <script src="main/script.js"></script>
 
 </body>
 </html>
