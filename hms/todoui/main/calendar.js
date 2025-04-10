@@ -8,32 +8,98 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// function initializeCalendar() {
+//     const calendarDiv = document.getElementById('calendar');
+//     const currentDate = new Date();
+//     const currentYear = currentDate.getFullYear();
+
+//     for (let month = 0; month < 12; month++) {
+//         const monthDiv = document.createElement('div');
+//         monthDiv.className = 'month';
+//         const monthName = new Date(currentYear, month).toLocaleString('default', { month: 'long' });
+//         monthDiv.innerHTML = `<h3>${monthName}</h3>`;
+
+//         const daysDiv = document.createElement('div');
+//         daysDiv.className = 'days';
+
+//         const daysInMonth = new Date(currentYear, month + 1, 0).getDate();
+//         for (let day = 1; day <= daysInMonth; day++) {
+//             const dayDiv = document.createElement('div');
+//             dayDiv.className = 'day';
+//             dayDiv.textContent = day;
+//             dayDiv.dataset.date = `${currentYear}-${month + 1}-${day}`;
+
+//             daysDiv.appendChild(dayDiv);
+//         }
+
+//         monthDiv.appendChild(daysDiv);
+//         calendarDiv.appendChild(monthDiv);
+
 function initializeCalendar() {
     const calendarDiv = document.getElementById('calendar');
     const currentDate = new Date();
+    const currentMonth = currentDate.getMonth();
+    const currentDay = currentDate.getDate();
     const currentYear = currentDate.getFullYear();
-
+    
+    // Clear existing calendar
+    calendarDiv.innerHTML = '';
+    
+    // Day names abbreviated
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    
+    // Generate calendar for all 12 months
     for (let month = 0; month < 12; month++) {
         const monthDiv = document.createElement('div');
         monthDiv.className = 'month';
+        
+        // Get month name
         const monthName = new Date(currentYear, month).toLocaleString('default', { month: 'long' });
         monthDiv.innerHTML = `<h3>${monthName}</h3>`;
-
+        
+        // Create container for days
         const daysDiv = document.createElement('div');
         daysDiv.className = 'days';
-
+        
+        // Add day name headers
+        dayNames.forEach(day => {
+            const dayNameDiv = document.createElement('div');
+            dayNameDiv.className = 'day day-name';
+            dayNameDiv.textContent = day;
+            daysDiv.appendChild(dayNameDiv);
+        });
+        
+        // Get number of days in month and first day of month
         const daysInMonth = new Date(currentYear, month + 1, 0).getDate();
+        const firstDayOfMonth = new Date(currentYear, month, 1).getDay();
+        
+        // Add empty cells for days before the 1st of the month
+        for (let i = 0; i < firstDayOfMonth; i++) {
+            const emptyDay = document.createElement('div');
+            emptyDay.className = 'day empty';
+            daysDiv.appendChild(emptyDay);
+        }
+        
+        // Add days of the month
         for (let day = 1; day <= daysInMonth; day++) {
             const dayDiv = document.createElement('div');
             dayDiv.className = 'day';
+            
+            // Highlight current day
+            if (month === currentMonth && day === currentDay) {
+                dayDiv.classList.add('current-day');
+            }
+            
             dayDiv.textContent = day;
-            dayDiv.dataset.date = `${currentYear}-${month + 1}-${day}`;
-
+            dayDiv.dataset.date = `${currentYear}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
             daysDiv.appendChild(dayDiv);
         }
-
+        
         monthDiv.appendChild(daysDiv);
         calendarDiv.appendChild(monthDiv);
+
+
+
     }
 
     // Function to highlight the current day
@@ -261,21 +327,21 @@ function displayMonthsWithEvents(db) {
     };
 }
 
-function getTerminalEvents() {
-    const terminalEventsContentDiv = document.querySelector('#terminalEventsContent tbody');
-    const rows = terminalEventsContentDiv.querySelectorAll('tr');
-    const events = [];
+// function getTerminalEvents() {
+//     const terminalEventsContentDiv = document.querySelector('#terminalEventsContent tbody');
+//     const rows = terminalEventsContentDiv.querySelectorAll('tr');
+//     const events = [];
 
-    rows.forEach(row => {
-        const dateCell = row.querySelector('.todo-date');
-        if (dateCell) {
-            const eventDate = dateCell.textContent.trim();
-            events.push({ date: eventDate });
-        }
-    });
+//     rows.forEach(row => {
+//         const dateCell = row.querySelector('.todo-date');
+//         if (dateCell) {
+//             const eventDate = dateCell.textContent.trim();
+//             events.push({ date: eventDate });
+//         }
+//     });
 
-    return events;
-}
+//     return events;
+// }
 
 
 

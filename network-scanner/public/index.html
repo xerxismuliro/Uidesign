@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="holy-grail">
+    <!-- Background effects -->
+    <div class="gradient-overlay"></div>
+    
+    <!-- Header -->
+    <div class="header">
+        <div class="header-title">
+            <h1><i class="fas fa-network-wired"></i> Network Scanner</h1>
+        </div>
+
+        <!-- To this: -->
+<div class="theme-toggle">
+    <i class="fas fa-moon" id="theme-icon"></i>
+</div>
+
+
+    </div>
+
+    <!-- Holy Grail Layout Body -->
+    <div class="holy-grail-body">
+        <!-- Left Sidebar / Navigation -->
+        <div class="nav-sidebar">
+            <div class="nav-controls">
+
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchBox" placeholder="Search IP or hostname..." onkeyup="filterDevices()">
+                </div>
+
+                <button class="btn btn-scan" onclick="scan()">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Scan Network</span>
+                </button>
+                <button class="btn btn-export" onclick="exportJSON()">
+                    <i class="fas fa-file-export"></i>
+                    <span>Export Results</span>
+                </button>
+                <button class="btn btn-history" onclick="loadHistory()">
+                    <i class="fas fa-history"></i>
+                    <span>View History</span>
+                </button>
+               
+            </div>
+            
+            <div class="nav-info">
+                <div class="info-title">Quick Help</div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Click on any device for details</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Scan refreshes device list</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-file-export"></i>
+                        <span>Export saves results as JSON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content" id="output">
+            <div class="welcome-message">
+                <i class="fas fa-radar fa-3x"></i>
+                <div class="welcome-title">Welcome to Network Scanner</div>
+                <div class="welcome-text">Click "Scan Network" to detect devices on your network</div>
+            </div>
+            <!-- Device results will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Right Sidebar / Information -->
+        <div class="right-sidebar">
+            <div class="sidebar-widget info-widget">
+                <div class="widget-header">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Information</span>
+                </div>
+                <div class="widget-content">
+                    <div class="widget-text">This tool scans your local network for active devices using nmap.</div>
+                    <div class="widget-text">Detected information may include:</div>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fas fa-circle-dot"></i>
+                            <span>Device IP addresses</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-circle-dot"></i>
+                            <span>MAC addresses</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-circle-dot"></i>
+                            <span>Hostnames when available</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-circle-dot"></i>
+                            <span>Open ports and services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-widget stats-widget">
+                <div class="widget-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Network Statistics</span>
+                </div>
+                <div class="widget-content" id="network-stats">
+                    <div class="widget-text">Run a scan to view statistics</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-widget history-widget">
+                <div class="widget-header">
+                    <i class="fas fa-clock"></i>
+                    <span>Scan History</span>
+                </div>
+                <div class="widget-content" id="scan-history">
+                    <div class="widget-text">No recent scans</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">&copy; 2025 Network Scanner Tool | Built with <i class="fas fa-heart"></i> and Node.js</div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal()">&times;</div>
+            <div class="modal-header">
+                <i class="fas fa-server"></i>
+                <span id="modal-title">Device Details</span>
+            </div>
+            <div class="modal-body" id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="theme.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->

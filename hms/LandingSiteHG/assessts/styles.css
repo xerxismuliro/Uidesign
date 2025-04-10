@@ -1,4 +1,5 @@
-:root[data-theme="light"] {
+:root {
+    /* Light theme variables (default) */
     --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
     --text-color: #333;
     --topbar-gradient: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
@@ -12,13 +13,19 @@
     --btn-hover-gradient: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
     --section-bg: rgba(255, 255, 255, 0.05);
     --section-shadow: rgba(0, 0, 0, 0.1);
-    --contacta-bg:linear-gradient(145deg, #f5f7fa 0%, #e4efe9 100%);
+    --contacta-bg: linear-gradient(145deg, #f5f7fa 0%, #e4efe9 100%);
     --sidebar-bg: rgba(255, 255, 255, 0.1);
     --active-nav: rgba(74, 109, 229, 0.1);
-    --border-right:rgba(255, 0, 0, 0.828);
+    --border-right: rgba(255, 0, 0, 0.828);
+    
+    /* Gradient overlay */
+    --gradient-overlay: radial-gradient(circle at top right, rgba(255, 255, 255, 0.8), rgba(240, 244, 248, 0.5)),
+                       radial-gradient(circle at bottom left, rgba(210, 235, 255, 0.5), rgba(255, 255, 255, 0.3));
+    --gradient-blend-mode: overlay;
 }
 
-:root[data-theme="dark"] {
+/* Dark theme variables */
+:root.dark {
     --bg-gradient: linear-gradient(135deg, #121e27 0%, #11242b 100%);
     --text-color: #f8f9fa;
     --topbar-gradient: linear-gradient(90deg, #0f184a 0%, #094140 100%);
@@ -27,11 +34,61 @@
     --hover-shadow: rgba(0, 0, 0, 0.4);
     --section-bg: rgba(20, 30, 50, 0.2);
     --section-shadow: rgba(0, 0, 0, 0.3);
-    --contacta-bg:linear-gradient(145deg, #3d2348 0%, #311a43 100%);
+    --contacta-bg: linear-gradient(145deg, #3d2348 0%, #311a43 100%);
     --sidebar-bg: rgba(15, 20, 40, 0.4);
     --active-nav: rgba(71, 118, 230, 0.3);
-    --border-right:rgba(255, 0, 0, 0.828);
+    --border-right: rgba(255, 0, 0, 0.828);
     
+    /* Button gradients in dark mode */
+    --btn-gradient: linear-gradient(145deg, #1e2a38 0%, #2a3a4a 100%);
+    --btn-text: #f8f9fa;
+    --icon-gradient: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+    --icon-color: #8f94fb;
+    
+    /* Class-specific gradients for dark mode */
+    --btn-purple: var(--purple-gradient);
+    --btn-pink: var(--pink-gradient);
+    --btn-rose: var(--rose-gradient);
+    --btn-violet: var(--violet-gradient);
+    --btn-green: var(--green-gradient);
+    --btn-orange: var(--orange-gradient);
+    --btn-blue: var(--blue-gradient);
+    --btn-navy: var(--navy-gradient);
+    --btn-red: var(--red-gradient);
+    --btn-teal: var(--teal-gradient);
+    
+    /* Icon specifics for dark mode */
+    --icon-blue: var(--blue-icon-gradient);
+    --icon-pink: var(--pink-icon-gradient);
+    --icon-purple: var(--purple-icon-gradient);
+    --icon-lavender: var(--lavender-icon-gradient);
+    --icon-green: var(--green-icon-gradient);
+    --icon-peach: var(--peach-icon-gradient);
+    --icon-sky: var(--sky-icon-gradient);
+    --icon-azure: var(--azure-icon-gradient);
+    --icon-coral: var(--coral-icon-gradient);
+    --icon-lime: var(--lime-icon-gradient);
+    
+    /* Icon colors for dark mode */
+    --icon-blue-color: var(--blue-icon);
+    --icon-pink-color: var(--pink-icon);
+    --icon-purple-color: var(--purple-icon);
+    --icon-lavender-color: var(--lavender-icon);
+    --icon-green-color: var(--green-icon);
+    --icon-peach-color: var(--peach-icon);
+    --icon-sky-color: var(--sky-icon);
+    --icon-azure-color: var(--azure-icon);
+    --icon-coral-color: var(--coral-icon);
+    --icon-lime-color: var(--lime-icon);
+    
+    /* Gradient overlay for dark mode */
+    --gradient-overlay: radial-gradient(circle at top right, rgba(20, 30, 60, 0.8), rgba(10, 15, 30, 0.5)),
+                       radial-gradient(circle at bottom left, rgba(70, 10, 80, 0.5), rgba(10, 15, 30, 0.3));
+    --gradient-blend-mode: soft-light;
+}
+
+/* Define these specific gradients only once */
+:root {
     /* Button gradients for easy reference */
     --purple-gradient: linear-gradient(145deg, #5614B0 0%, #3B2667 100%);
     --pink-gradient: linear-gradient(145deg, #B24592 0%, #4B2450 100%);
@@ -122,20 +179,6 @@ body {
     height: 100%;
     z-index: -1;
     pointer-events: none; /* Allow clicks to pass through */
-}
-
-/* Light theme gradient overlay */
-html[data-theme="light"] .gradient-overlay {
-    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.8), rgba(240, 244, 248, 0.5)),
-    radial-gradient(circle at bottom left, rgba(210, 235, 255, 0.5), rgba(255, 255, 255, 0.3));
-    mix-blend-mode: overlay;
-}
-
-/* Dark theme gradient overlay */
-html[data-theme="dark"] .gradient-overlay {
-    background: radial-gradient(circle at top right, rgba(20, 30, 60, 0.8), rgba(10, 15, 30, 0.5)),
-    radial-gradient(circle at bottom left, rgba(70, 10, 80, 0.5), rgba(10, 15, 30, 0.3));
-    mix-blend-mode: soft-light;
 }
 
 /* Holy Grail Layout */
@@ -257,46 +300,24 @@ main {
     z-index: 1;
 }
 
-/* Explicit button styles for dark mode */
-[data-theme="dark"] .btn-purple {
-    background: var(--purple-gradient);
+/* Apply button styles */
+.btn-purple {
+    background: var(--btn-purple, var(--btn-gradient)); /* Use --btn-purple in dark mode, default to --btn-gradient */
 }
 
-[data-theme="dark"] .btn-pink {
-    background: var(--pink-gradient);
+.btn-pink {
+    background: var(--btn-pink, var(--btn-gradient));
 }
 
-[data-theme="dark"] .btn-rose {
-    background: var(--rose-gradient);
+/* Apply icon styles */
+.icon-blue {
+    background: var(--icon-blue, var(--icon-gradient));
 }
 
-[data-theme="dark"] .btn-violet {
-    background: var(--violet-gradient);
+.icon-blue i {
+    color: var(--icon-blue-color, var(--icon-color));
 }
 
-[data-theme="dark"] .btn-green {
-    background: var(--green-gradient);
-}
-
-[data-theme="dark"] .btn-orange {
-    background: var(--orange-gradient);
-}
-
-[data-theme="dark"] .btn-blue {
-    background: var(--blue-gradient);
-}
-
-[data-theme="dark"] .btn-navy {
-    background: var(--navy-gradient);
-}
-
-[data-theme="dark"] .btn-red {
-    background: var(--red-gradient);
-}
-
-[data-theme="dark"] .btn-teal {
-    background: var(--teal-gradient);
-}
 
 .btn-item:hover {
     transform: translateY(-5px);
@@ -328,46 +349,6 @@ main {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Explicit icon styles for dark mode */
-[data-theme="dark"] .icon-blue {
-    background: var(--blue-icon-gradient);
-}
-
-[data-theme="dark"] .icon-pink {
-    background: var(--pink-icon-gradient);
-}
-
-[data-theme="dark"] .icon-purple {
-    background: var(--purple-icon-gradient);
-}
-
-[data-theme="dark"] .icon-lavender {
-    background: var(--lavender-icon-gradient);
-}
-
-[data-theme="dark"] .icon-green {
-    background: var(--green-icon-gradient);
-}
-
-[data-theme="dark"] .icon-peach {
-    background: var(--peach-icon-gradient);
-}
-
-[data-theme="dark"] .icon-sky {
-    background: var(--sky-icon-gradient);
-}
-
-[data-theme="dark"] .icon-azure {
-    background: var(--azure-icon-gradient);
-}
-
-[data-theme="dark"] .icon-coral {
-    background: var(--coral-icon-gradient);
-}
-
-[data-theme="dark"] .icon-lime {
-    background: var(--lime-icon-gradient);
-}
 
 .btn-item:hover .icon-wrapper {
     transform: scale(1.05);
@@ -377,47 +358,6 @@ main {
     font-size: 24px;
     color: var(--icon-color);
     transition: all 0.3s ease;
-}
-
-/* Explicit icon color styles for dark mode */
-[data-theme="dark"] .icon-blue i {
-    color: var(--blue-icon);
-}
-
-[data-theme="dark"] .icon-pink i {
-    color: var(--pink-icon);
-}
-
-[data-theme="dark"] .icon-purple i {
-    color: var(--purple-icon);
-}
-
-[data-theme="dark"] .icon-lavender i {
-    color: var(--lavender-icon);
-}
-
-[data-theme="dark"] .icon-green i {
-    color: var(--green-icon);
-}
-
-[data-theme="dark"] .icon-peach i {
-    color: var(--peach-icon);
-}
-
-[data-theme="dark"] .icon-sky i {
-    color: var(--sky-icon);
-}
-
-[data-theme="dark"] .icon-azure i {
-    color: var(--azure-icon);
-}
-
-[data-theme="dark"] .icon-coral i {
-    color: var(--coral-icon);
-}
-
-[data-theme="dark"] .icon-lime i {
-    color: var(--lime-icon);
 }
 
 .btn-item:hover i {
@@ -432,10 +372,6 @@ main {
     margin-top: 5px;
 }
 
-[data-theme="dark"] .btn-item span {
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
 
 /* About Section Styling */
 .about-section {
@@ -574,34 +510,6 @@ main {
     transition: all 0.3s ease;
 }
 
-/* Explicit classes for skill cards */
-[data-theme="dark"] .skill-purple {
-    background: var(--purple-gradient);
-}
-
-[data-theme="dark"] .skill-pink {
-    background: var(--pink-gradient);
-}
-
-[data-theme="dark"] .skill-rose {
-    background: var(--rose-gradient);
-}
-
-[data-theme="dark"] .skill-violet {
-    background: var(--violet-gradient);
-}
-
-[data-theme="dark"] .skill-green {
-    background: var(--green-gradient);
-}
-
-[data-theme="dark"] .skill-orange {
-    background: var(--orange-gradient);
-}
-
-[data-theme="dark"] .skill-blue {
-    background: var(--blue-gradient);
-}
 
 .skill-card:hover {
     transform: translateY(-5px);
@@ -614,35 +522,6 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Explicit classes for skill card icons */
-[data-theme="dark"] .skill-purple i {
-    color: var(--blue-icon);
-}
-
-[data-theme="dark"] .skill-pink i {
-    color: var(--pink-icon);
-}
-
-[data-theme="dark"] .skill-rose i {
-    color: var(--purple-icon);
-}
-
-[data-theme="dark"] .skill-violet i {
-    color: var(--lavender-icon);
-}
-
-[data-theme="dark"] .skill-green i {
-    color: var(--green-icon);
-}
-
-[data-theme="dark"] .skill-orange i {
-    color: var(--peach-icon);
-}
-
-[data-theme="dark"] .skill-blue i {
-    color: var(--sky-icon);
-}
-
 .skill-card h4 {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
@@ -651,13 +530,6 @@ main {
 .skill-card p {
     font-size: 0.9rem;
     line-height: 1.5;
-}
-
-[data-theme="dark"] .skill-card span,
-[data-theme="dark"] .skill-card p,
-[data-theme="dark"] .skill-card h4 {
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .education-experience {
@@ -855,10 +727,6 @@ main {
     box-shadow: 0 2px 8px var(--section-shadow);
 }
 
-[data-theme="dark"] .nav-item.active {
-    background: var(--purple-gradient);
-    color: white;
-}
 
 .social-links-sidebar {
     margin-top: auto;
@@ -889,17 +757,6 @@ main {
     overflow-y: auto;
     padding: 2rem;
 }
-
-/* .right-sidebar {
-    width: 280px;
-    padding: 2rem 1rem;
-    background: var(--sidebar-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    flex-shrink: 0;
-    overflow-y: auto;
-} */
 
 .sidebar-widget {
     margin-bottom: 2rem;
@@ -943,10 +800,6 @@ main {
     display: inline-block;
 }
 
-[data-theme="dark"] .tech-tag {
-    background: var(--rose-gradient);
-    color: white;
-}
 
 .download-button {
     display: flex;
