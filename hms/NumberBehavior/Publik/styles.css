@@ -165,7 +165,7 @@ footer {
   min-height: 50px; /* Set a minimum height */
 }
 
-h1, h2, h3 {
+h1, h2, h3,h4{
   margin-bottom: 1rem;
   color: var(--accent-color);
 }
@@ -345,7 +345,7 @@ body.dark-theme .error {
 
 .indicator {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 0;
   right: 0;
   font-size: 10px;

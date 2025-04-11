@@ -741,8 +741,8 @@ function digitalRoot(n) {
     
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 7: Digital Root Pattern Detection</h3>
-        <p>We analyze how digital roots cycle over larger scale factors.</p>
+        <h3>Digital Root Pattern Detection</h3>
+        <p>I analyze how digital roots cycle over larger scale factors.</p>
         
         <div class="cycle-analysis">
     `);
@@ -777,7 +777,7 @@ function digitalRoot(n) {
     
     resultHTML.push(`
           <h4>Digital Root Cycle Analysis</h4>
-          <p>After analyzing the first ${scaleRange} scale factors, we found that the digital roots repeat in a cycle of length ${cycleLength}.</p>
+          <p>After analyzing the first ${scaleRange} scale factors, I found that the digital roots repeat in a cycle of length ${cycleLength}.</p>
           <div class="cycle-pattern">
             <p>Pattern: ${digitalRootValues.slice(0, cycleLength).join(' → ')} → (repeats)</p>
           </div>
@@ -813,7 +813,7 @@ function digitalRoot(n) {
   function addComparisonTool() {
     return `
       <div class="analysis-step">
-        <h3>Step 8: Number Comparison Tool</h3>
+        <h4>Number Comparison Tool</h4>
         <p>Compare the properties of any two numbers.</p>
         
         <div class="comparison-tool">
@@ -840,7 +840,7 @@ function digitalRoot(n) {
   function addPrimeFactorAnalysis() {
     return `
       <div class="analysis-step">
-        <h3>Step 9: Prime Factor Analysis</h3>
+        <h4>Prime Factor Analysis</h4>
         <p>This section analyzes the prime factors of our important sums.</p>
         
         <div class="prime-factors">
@@ -882,7 +882,7 @@ function digitalRoot(n) {
     const resultHTML = [];
     
     resultHTML.push(`<div class="intro">
-      <h3>Chromatic Number Analysis</h3>
+      <h4>Chromatic Number Analysis</h4>
       <p>This analysis explores number patterns based on digital roots and the relationships between parent and child nodes.</p>
     </div>`);
   
@@ -890,8 +890,8 @@ function digitalRoot(n) {
     const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 1: Chromatic Roots</h3>
-        <p>Chromatic roots are defined as numbers from 1 to 9. These form the foundation of our analysis.</p>
+        <h4>Chromatic Roots</h4>
+        <p>Chromatic roots are defined as numbers from 1 to 9. These form the foundation of my analysis.</p>
         <div class="number-display">
           ${chromaticRoots.map(n => `<span class="number">${n}</span>`).join('')}
         </div>
@@ -902,7 +902,7 @@ function digitalRoot(n) {
     const parentNodes = chromaticRoots.filter(n => n % 3 === 0);
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 2: Parent Nodes</h3>
+        <h4> Parent Nodes</h4>
         <p>Parent nodes are identified as multiples of 3 among the chromatic roots.</p>
         <div class="number-display">
           ${chromaticRoots.map(n => `
@@ -921,7 +921,7 @@ function digitalRoot(n) {
   
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 3: Child Nodes</h3>
+        <h4>Child Nodes</h4>
         <p>Each parent node generates child nodes by subtracting 1 and 2 (representing right-to-left steps).</p>
     `);
   
@@ -958,7 +958,7 @@ function digitalRoot(n) {
   
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 4: Sums and Digital Roots</h3>
+        <h4>Sums and Digital Roots</h4>
         
         <div class="calculation">
           <p>Sum of Chromatic Roots: ${chromaticRoots.join(' + ')} = ${sumCR}</p>
@@ -980,8 +980,8 @@ function digitalRoot(n) {
     // Step 5: Factorials and digit sums
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 5: Factorials and Digit Sums</h3>
-        <p>We now calculate the factorials of our sums and analyze their digital properties.</p>
+        <h4>Factorials and Digit Sums</h4>
+        <p>I now calculate the factorials of our sums and analyze their digital properties.</p>
     `);
   
     // Calculate factorials
@@ -1035,8 +1035,8 @@ function digitalRoot(n) {
     // Step 6: Scales (chromatic roots × scale factors)
     resultHTML.push(`
       <div class="analysis-step">
-        <h3>Step 6: Scaling Chromatic Roots</h3>
-        <p>We multiply each chromatic root by scale factors to observe patterns.</p>
+        <h4>Scaling Chromatic Roots</h4>
+        <p>I multiply each chromatic root by scale factors to observe patterns.</p>
         
         <div class="scale-input-container">
           <h4>Explore Custom Scales</h4>
@@ -1070,9 +1070,10 @@ function digitalRoot(n) {
     // Add a conclusion section
     resultHTML.push(`
       <div class="conclusion">
-        <h3>Conclusion</h3>
+        <h4>Isaac Muliro (The Xerxis Observation)</h4>
         <p>The analysis reveals numerical patterns across different scales and operations. 
-           Notice how digital roots cycle in predictable patterns, revealing the underlying mathematical structure.</p>
+          Notice how digital roots cycle in predictable patterns, revealing the underlying mathematical structure. I personally studied this for days everywhere i walked I was thinking partterns😁 
+          In my conclusion 9 is the mother of all numbers you can dispose and build your own proof, Once you have a 9, You can get any number you want. I am still contemplating this thought further. I believe there is a hidden mystery in 9 as a digit with relation to 3 and 6. </p>
       </div>
     `);
     
@@ -1124,7 +1125,7 @@ function digitalRoot(n) {
           const scaleContainer = document.createElement('div');
           scaleContainer.className = 'custom-scale';
           scaleContainer.innerHTML = `
-            <h3>Custom Scale ${scale}×</h3>
+            <h4>Custom Scale ${scale}×</h4>
             ${analyzeScale(scale, chromaticRoots)}
           `;
           
@@ -1211,7 +1212,7 @@ function digitalRoot(n) {
             const visualSection = document.createElement('div');
             visualSection.className = 'visualization-section';
             visualSection.innerHTML = `
-              <h3>Pattern Visualization</h3>
+              <h4>Pattern Visualization</h4>
               <p>This graph shows the digital roots across different scales:</p>
               <div class="chart-container">
                 <canvas id="digitalRootChart"></canvas>
