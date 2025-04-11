@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Number Behavior Analyzer</title>
+  <title>iMath9</title>
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -13,20 +13,32 @@
 <body>
   <div class="container">
     <header>
-      <h1><i class="fas fa-calculator"></i> Number Behavior Analyzer</h1>
-      <button id="theme-toggle">
+
+      <h3><i class="fas fa-calculator"></i>   iMath9</h3>
+
+    <!-- Update the search container structure -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search...">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+      <p>iMath9 designed to analyze the behavior of numbers.</p>
+
+      <div id="theme-toggle" class="theme-toggle">
         <i class="fas fa-moon" id="theme-icon-dark"></i>
         <i class="fas fa-sun" id="theme-icon-light" style="display: none;"></i>
-        <!-- <span id="theme-text">Toggle Dark Mode</span> -->
-      </button>
+      </div>
+
+      
+
+
     </header>
     
     <nav class="sidebar left">
-      <h3><i class="fas fa-bars"></i> Navigation</h3>
       <div class="scrollable">
         <ul>
-          <li><a href="#chromatic"><i class="fas fa-chart-line"></i> Chromatic Analysis</a></li>
           <li><a href="#factorial"><i class="fas fa-superscript"></i> Factorial Calculator</a></li>
+          <li><a href="#chromatic"><i class="fas fa-chart-line"></i> Chromatic Analysis</a></li>
         </ul>
       </div>
     </nav>
@@ -77,8 +89,9 @@
     </footer>
   </div>
 
-  <script src="factorial.js"></script>
   <script src="chromatic.js"></script>
+  <script src="factorial.js"></script>
+  <script src="search.js" defer></script>
   <script src="theme.js"></script>
 </body>
 </html>
