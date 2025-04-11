@@ -1,0 +1,282 @@
+/* Chromatic Number Analysis Styles */
+
+.analysis-step {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.number-display {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: relative;
+}
+
+.parent {
+  background-color: #ffcccc;
+  font-weight: bold;
+}
+
+.indicator {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+.parent-child-relation {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.parent-node {
+  font-weight: bold;
+  color: #cc0000;
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.child-nodes {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.explanation {
+  margin-left: 15px;
+  color: #666;
+  font-style: italic;
+}
+
+.calculation {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f5f5f5;
+}
+
+.factorial-analysis {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.process {
+  margin-left: 20px;
+}
+
+.steps {
+  font-family: monospace;
+}
+
+.scale-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+}
+
+.scale {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.scaled-numbers {
+  margin: 10px 0;
+}
+
+.conclusion {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f0f7ff;
+  border-radius: 5px;
+}
+
+.scale-input-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.scale-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.scale-button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.scale-button:hover {
+  background-color: #3367d6;
+}
+
+#custom-scale-results {
+  margin-top: 20px;
+}
+
+.custom-scale {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e8f0fe;
+  border-left: 5px solid #4285f4;
+}
+
+.chart-container {
+  height: 300px;
+  margin: 20px 0;
+}
+
+.visualization-section {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9ff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cycle-analysis {
+  background-color: #f5f5ff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.cycle-pattern {
+  font-family: monospace;
+  font-size: 16px;
+  background-color: #eaeaff;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.pattern-table, .comparison-table, .factors-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.pattern-table th, .pattern-table td,
+.comparison-table th, .comparison-table td,
+.factors-table th, .factors-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.pattern-table th, .comparison-table th, .factors-table th {
+  background-color: #f2f2f2;
+}
+
+.comparison-tool {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.comparison-input {
+  width: 150px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.comparison-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.comparison-button:hover {
+  background-color: #45a049;
+}
+
+.comparison-results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f7ff;
+  border-left: 5px solid #4285f4;
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.factor-bars {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.factor-unit {
+  display: inline-block;
+  height: 100%;
+  min-width: 20px;
+  text-align: center;
+  color: white;
+  margin-right: 2px;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+@keyframes pulseAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.highlight-animation {
+  animation: pulseAnimation 1s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
