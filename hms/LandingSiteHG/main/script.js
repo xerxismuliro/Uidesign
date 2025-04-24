@@ -15,3 +15,6 @@ function toggleTheme() {
         themeIcon.classList.replace('fa-sun', 'fa-moon');
     }
 }
+
+
+
