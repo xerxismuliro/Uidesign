@@ -11,7 +11,7 @@ var fallbackPurchaseLinks = [
     
         {
           "url": "http://ezproxy.purchase.edu/login?url=https://www.jstor.org/stable/23361974",
-          "text": "http://ezproxy.purchase.edu/login?url=https://www.jstor.org/stable/23361974",
+          "text": "Purchase College",
           "title": "",
           "valid": true,
           "depth": 1

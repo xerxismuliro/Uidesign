@@ -1,11 +1,10 @@
 // PURCHASE COLLEGE LINKS COMPONENT
-let purchaseEduLinks = []; // Will be loaded from JSON
 let filteredPurchaseLinks = []; // Optimized list after processing
 
 // Initialize the Purchase links component
 function initializePurchaseLinks() {
-    // Load the links data
-    loadPurchaseLinksData();
+    // Use fallback links directly instead of loading from JSON
+    useFallbackLinks();
     
     // Create the UI
     createPurchaseLinksUI();
@@ -14,52 +13,20 @@ function initializePurchaseLinks() {
     setupPurchaseLinksVoiceCommands();
 }
 
-// Load and process links from JSON
-function loadPurchaseLinksData() {
-    // Try to load from the JSON file
-    fetch('purchase_edu_links.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (Array.isArray(data) && data.length > 0) {
-                purchaseEduLinks = data;
-                console.log(`Loaded ${purchaseEduLinks.length} raw Purchase College links from JSON`);
-                
-                // Process and optimize the links
-                filteredPurchaseLinks = optimizePurchaseLinks(purchaseEduLinks);
-                console.log(`Optimized to ${filteredPurchaseLinks.length} useful links`);
-                
-                // Render the optimized links
-                renderPurchaseLinks(filteredPurchaseLinks);
-            } else {
-                throw new Error('JSON data is not in the expected format');
-            }
-        })
-        .catch(error => {
-            console.error('Error loading Purchase links:', error);
-            // Use embedded links as fallback
-            useFallbackLinks();
-        });
-}
-
-
-// Use embedded fallback links when JSON loading fails
+// Use embedded fallback links directly
 function useFallbackLinks() {
     console.log('Using fallback Purchase College links');
     
     // Use the fallback links defined in fallbackLinks.js
-    purchaseEduLinks = fallbackPurchaseLinks;
-    
-    // Set filtered links to be the same as the fallback links
-    filteredPurchaseLinks = purchaseEduLinks;
-    renderPurchaseLinks(filteredPurchaseLinks);
+    if (typeof fallbackPurchaseLinks !== 'undefined' && fallbackPurchaseLinks && fallbackPurchaseLinks.length > 0) {
+        // Set filtered links to be the optimized version of the fallback links
+        filteredPurchaseLinks = optimizePurchaseLinks(fallbackPurchaseLinks);
+        console.log(`Using ${filteredPurchaseLinks.length} Purchase College links`);
+    } else {
+        console.error('Fallback links not available');
+        filteredPurchaseLinks = [];
+    }
 }
-
-
 
 // Optimize the links by removing duplicates and organizing them
 function optimizePurchaseLinks(allLinks) {
@@ -158,6 +125,12 @@ function createPurchaseLinksUI() {
                 <button class="category-button" data-category="campus">Campus Life</button>
                 <button class="category-button" data-category="about">About</button>
             </div>
+
+
+            <div class="voice-command-hint">
+                <i class="fas fa-microphone"></i>
+                <p>Try saying: "Go to Purchase Academics" or "Open Purchase Admissions"</p>
+            </div>
             
             <div class="purchase-links-list" id="purchase-links-list">
                 <div class="loading-links">
@@ -186,6 +159,9 @@ function createPurchaseLinksUI() {
     setTimeout(() => {
         setupPurchaseSearch();
         setupCategoryFiltering();
+        
+        // Render the links immediately since we're not waiting for async loading
+        renderPurchaseLinks(filteredPurchaseLinks);
     }, 100);
 }
 
@@ -515,7 +491,10 @@ function setupPurchaseLinksVoiceCommands() {
             // Extract the query part after "purchase"
             let query = command.replace('go to purchase', '').replace('open purchase', '').trim();
             
-            // Find a matching link
+            // Clean up query by removing common speech recognition issues
+            query = query.replace(/dot com|\.com|dotcom/gi, '');
+            
+            // Find a matching link by text field
             const matchingLinks = filteredPurchaseLinks.filter(link => 
                 link.text.toLowerCase().includes(query)
             );
@@ -536,9 +515,6 @@ function setupPurchaseLinksVoiceCommands() {
         return false; // Command was not handled
     });
 }
-
-
-
 
 // Update the voice command handling function
 function extendVoiceRecognitionForPurchase() {
@@ -563,9 +539,12 @@ function extendVoiceRecognitionForPurchase() {
                 return;
             }
             
-            // Find a matching link
+            // Clean up query by removing common speech recognition issues
+            query = query.replace(/dot com|\.com|dotcom/gi, '');
+            
+            // Find a matching link by text field
             const matchingLinks = filteredPurchaseLinks.filter(link => 
-                link.text.toLowerCase().includes(query)
+                link.text && link.text.toLowerCase().includes(query)
             );
             
             if (matchingLinks.length > 0) {
@@ -574,7 +553,18 @@ function extendVoiceRecognitionForPurchase() {
                 return;
             }
             
-            // If no exact match found, try to construct a smarter URL guess
+            // If no exact match found, try title field as fallback
+            const titleMatches = filteredPurchaseLinks.filter(link => 
+                link.title && link.title.toLowerCase().includes(query)
+            );
+            
+            if (titleMatches.length > 0) {
+                // Navigate to the first matching link
+                navigateToWebsite(titleMatches[0].url);
+                return;
+            }
+            
+            // If no match found, try to construct a smarter URL guess
             const guessedUrl = constructSmartUrl(query);
             navigateToWebsite(guessedUrl);
             return;
@@ -591,7 +581,7 @@ function extendVoiceRecognitionForPurchase() {
     };
 }
 
-// New function to construct better URL guesses
+// Function to construct better URL guesses
 function constructSmartUrl(query) {
     // Clean the query
     query = query.toLowerCase().trim();
@@ -632,11 +622,6 @@ function constructSmartUrl(query) {
     return `https://www.purchase.edu/${sectionPrefix}${path}/`;
 }
 
-
-
-// This should go in your website-navigation.js file
-// This is a suggested modification to your existing navigateToWebsite function
-
 // Add this function to handle URL retries for Purchase.edu paths
 function handlePurchasePathNotFound(originalUrl) {
     // Only apply to Purchase.edu URLs
@@ -665,56 +650,3 @@ function handlePurchasePathNotFound(originalUrl) {
     return null;
 }
 
-
-
-
-// // Update existing voice recognition to include Purchase College commands
-// function extendVoiceRecognitionForPurchase() {
-//     const existingHandleVoiceCommand = handleVoiceCommand;
-    
-//     // Override the existing handleVoiceCommand function
-//     handleVoiceCommand = function(event, recognition) {
-//         const last = event.results.length - 1;
-//         const command = event.results[last][0].transcript.toLowerCase().trim();
-        
-//         document.getElementById('voice-status').textContent = `Command: "${command}"`;
-        
-//         // Check for Purchase College specific commands
-//         if ((command.includes('go to purchase') || command.includes('open purchase'))) {
-            
-//             // Extract the query part after "purchase"
-//             let query = command.replace('go to purchase', '').replace('open purchase', '').trim();
-            
-//             if (!query || query === '') {
-//                 // If just "go to purchase", navigate to main site
-//                 navigateToWebsite('https://www.purchase.edu/');
-//                 return;
-//             }
-            
-//             // Find a matching link
-//             const matchingLinks = filteredPurchaseLinks.filter(link => 
-//                 link.text.toLowerCase().includes(query)
-//             );
-            
-//             if (matchingLinks.length > 0) {
-//                 // Navigate to the first matching link
-//                 navigateToWebsite(matchingLinks[0].url);
-//                 return;
-//             }
-            
-//             // If no exact match found, try to guess the URL
-//             const guessedUrl = `https://www.purchase.edu/${query.replace(/\s+/g, '-')}/`;
-//             navigateToWebsite(guessedUrl);
-//             return;
-//         }
-        
-//         // Show purchase links section
-//         if (command.includes('show purchase links') || command.includes('open purchase links')) {
-//             showSection('purchase-links');
-//             return;
-//         }
-        
-//         // If no Purchase-specific command matched, call the original handler
-//         existingHandleVoiceCommand(event, recognition);
-//     };
-// }

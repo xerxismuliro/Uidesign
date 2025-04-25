@@ -1,13 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Initialize app components
-//     initializeSidebar();
-//     initializeContentNavigation();
-//     initializeVoiceRecognition();
-//     initializeHistoryAndBookmarks();
-//     scrapePurchaseEduLinks();
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize app components
     initializeSidebar();

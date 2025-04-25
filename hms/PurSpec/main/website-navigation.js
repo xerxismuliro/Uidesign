@@ -1,7 +1,13 @@
+
 // WEBSITE NAVIGATION
 function navigateToWebsite(website) {
     // Clean up website input
     website = formatWebsiteUrl(website);
+    
+    // Special cleanup for Purchase.edu URLs
+    if (website.includes('purchase.edu')) {
+        website = cleanupPurchaseUrl(website);
+    }
     
     // Check if it's a known site that blocks framing
     if (isKnownFrameBlockingSite(website)) {
@@ -10,17 +16,6 @@ function navigateToWebsite(website) {
         return;
     }
 
-
-    // Check if it's the Purchase.edu link scraper request
-    if (website === 'https://www.purchase.edu/?scrape=links') {
-        scrapePurchaseEduLinks();
-        return;
-    }
-
-
-
-
-    
     // Create browser UI elements
     const browserUI = createBrowserUI(website);
     
@@ -41,6 +36,72 @@ function navigateToWebsite(website) {
     addToHistory(website);
 }
 
+// Special cleanup function for Purchase.edu URLs
+function cleanupPurchaseUrl(url) {
+    try {
+        // Parse the URL to work with its components
+        const urlObj = new URL(url);
+        
+        // Check if this is a Purchase.edu domain
+        if (!urlObj.hostname.includes('purchase.edu')) {
+            return url;
+        }
+        
+        let path = urlObj.pathname;
+        
+        // Remove .com suffix from the path if present
+        if (path.endsWith('.com')) {
+            console.log(`Removing .com suffix from Purchase URL path: ${path}`);
+            path = path.slice(0, -4);
+            urlObj.pathname = path;
+        }
+        
+        // Check for any path segments ending with .com
+        const segments = path.split('/').filter(segment => segment.length > 0);
+        if (segments.length > 0) {
+            let pathModified = false;
+            
+            // Check each segment for a .com ending
+            const cleanedSegments = segments.map(segment => {
+                if (segment.endsWith('.com')) {
+                    pathModified = true;
+                    return segment.slice(0, -4);
+                }
+                return segment;
+            });
+            
+            // If we made changes, rebuild the path
+            if (pathModified) {
+                path = '/' + cleanedSegments.join('/');
+                if (!path.endsWith('/') && !path.includes('.')) {
+                    path += '/'; // Add trailing slash for directory paths
+                }
+                urlObj.pathname = path;
+            }
+        }
+        
+        // Ensure proper trailing slashes for directories
+        if (!path.endsWith('/') && !path.includes('.')) {
+            urlObj.pathname = path + '/';
+        }
+        
+        // Remove any ?scrape=links or similar parameters
+        if (urlObj.searchParams.has('scrape')) {
+            urlObj.searchParams.delete('scrape');
+        }
+        
+        // Log the cleanup
+        const cleanedUrl = urlObj.toString();
+        if (cleanedUrl !== url) {
+            console.log(`Purchase URL cleaned: ${url} → ${cleanedUrl}`);
+        }
+        
+        return cleanedUrl;
+    } catch (e) {
+        console.error('Error cleaning Purchase URL:', e);
+        return url;
+    }
+}
 
 // Add to your existing isKnownFrameBlockingSite function
 function isKnownFrameBlockingSite(website) {
@@ -62,20 +123,42 @@ function isKnownFrameBlockingSite(website) {
         hostname === domain || hostname.endsWith('.' + domain));
 }
 
-
+// function openInNewTab(website) {
+//     // Open the website in a new tab
+//     const newTab = window.open(website, '_blank');
+    
+//     // If popup was blocked, show a message
+//     if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+//         alert(`Popup blocked! Please allow popups for ${window.location.hostname} to open websites directly.`);
+        
+//         // As a fallback, create a click-to-open UI
+//         createDirectLinkUI(website);
+//     } else {
+//         // Still add to history even though we opened in new tab
+//         addToHistory(website);
+        
+//         // Show a brief confirmation
+//         showOpenedConfirmation(website);
+//     }
+// }
 
 
 function openInNewTab(website) {
+    // Add debugging to track what's happening
+    console.log(`Opening in new tab: ${website}`);
+    
     // Open the website in a new tab
     const newTab = window.open(website, '_blank');
     
     // If popup was blocked, show a message
     if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+        console.log('Popup was blocked or failed to open');
         alert(`Popup blocked! Please allow popups for ${window.location.hostname} to open websites directly.`);
         
         // As a fallback, create a click-to-open UI
         createDirectLinkUI(website);
     } else {
+        console.log('Successfully opened in new tab');
         // Still add to history even though we opened in new tab
         addToHistory(website);
         
@@ -83,6 +166,8 @@ function openInNewTab(website) {
         showOpenedConfirmation(website);
     }
 }
+
+
 
 function createDirectLinkUI(website) {
     const hostname = new URL(website).hostname;
@@ -227,8 +312,8 @@ function formatWebsiteUrl(website) {
         website = 'https://' + website;
     }
     
-    // Add .com if no TLD is specified
-    if (!website.match(/\.[a-z]{2,}$/i)) {
+    // Add .com if no TLD is specified - but NOT for Purchase.edu URLs
+    if (!website.match(/\.[a-z]{2,}$/i) && !website.includes('purchase.edu')) {
         website = website + '.com';
     }
     

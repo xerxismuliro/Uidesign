@@ -151,3 +151,13 @@ The JSON file will look something like this:
   }
 ]
 ```
+
+
+# Using Fuse.js Library to perform more text matching algorithm to find a link to open base on what the user says.
+<!-- In your HTML file, add this to the head section -->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+# OR Download it via CDN into your root dir.
+mkdir -p libs
+curl -L https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js > libs/fuse.js
+
