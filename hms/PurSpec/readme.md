@@ -161,3 +161,40 @@ The JSON file will look something like this:
 mkdir -p libs
 curl -L https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js > libs/fuse.js
 
+# Use sass to manage the css files
+npm install -g sass ===> install globally on your machine or locally in your project.
+sass --version. ====> check the version.
+
+sass --watch /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/hms/PurSpec/assessts/scss/main.scss:/Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/hms/PurSpec/assessts/css/styles.css ====> watch for the file changes.
+
+# Use font Awesome locally.
+# Create the fontawesome directory in your current location
+mkdir -p fontawesome
+
+# Download the FontAwesome CSS
+curl -L https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css > fontawesome/all.min.css
+
+# Create webfonts directory
+mkdir -p fontawesome/webfonts
+
+# Download the webfonts files
+curl -L https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-solid-900.woff2 > fontawesome/webfonts/fa-solid-900.woff2
+curl -L https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-regular-400.woff2 > fontawesome/webfonts/fa-regular-400.woff2
+curl -L https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.woff2 > fontawesome/webfonts/fa-brands-400.woff2
+
+Or the download the who;e package.
+
+# Download the zip file
+curl -L https://use.fontawesome.com/releases/v6.4.2/fontawesome-free-6.4.2-web.zip -o fontawesome.zip
+
+# Unzip it 
+unzip fontawesome.zip
+
+# Rename the directory to something shorter (optional)
+mv fontawesome-free-6.4.2-web fontawesome
+
+# Clean up the zip file
+rm fontawesome.zip
+
+
+

@@ -207,7 +207,7 @@ function createDirectLinkUI(website) {
     const tempSection = document.createElement('div');
     tempSection.className = 'content-section active';
     tempSection.id = 'navigation-result';
-    tempSection.innerHTML = `<h2><i class="fas fa-globe"></i> External Link: ${hostname}</h2>` + directLinkUI;
+    tempSection.innerHTML = `<h3><i class="fas fa-globe"></i> External Link: ${hostname}</h3>` + directLinkUI;
     
     // Remove any existing navigation-result section
     const existingNavResult = document.getElementById('navigation-result');

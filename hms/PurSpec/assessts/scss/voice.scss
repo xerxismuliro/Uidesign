@@ -1,0 +1,180 @@
+/* Voice control section */
+.voice-control {
+    display: flex;
+    flex-direction: row;  // Keep the original horizontal layout
+    align-items: center;
+    height: 8%;
+    max-height: 8%;
+    min-height: 8%;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--bg-secondary);
+    position: relative;
+}
+
+/* Button container - now takes less space */
+.voice-btn-container {
+    display: flex;
+    gap: 8px;
+    flex: 0 0 auto;  // Don't grow, don't shrink, auto width
+    max-width: 180px; // Limit the width
+}
+
+/* Main voice button style */
+.voice-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.voice-btn i {
+    margin-right: 6px;
+}
+
+.voice-btn.primary-btn {
+    background-color: var(--primary);
+    color: var(--text-on-accent);
+    width: 100%;
+}
+
+.voice-btn.secondary-btn {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+}
+
+.voice-btn.secondary-btn i {
+    margin-right: 0;
+}
+
+.voice-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.voice-btn.primary-btn:hover {
+    background-color: var(--accent);
+}
+
+/* Status text */
+#voice-status {
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: color 0.3s;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    margin-left: 8px;
+    color: var(--text-primary);
+}
+
+/* Voice visualizer - horizontal layout */
+.voice-visualizer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20px;
+    gap: 4px;
+    flex: 1 1 auto; // Grow to fill available space
+    min-width: 80px;
+    margin: 0 8px;
+}
+
+.visualizer-bar {
+    width: 4px;
+    height: 10%;
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: height 0.2s ease-in-out;
+}
+
+.voice-visualizer.active .visualizer-bar {
+    background-color: var(--accent);
+}
+
+.voice-visualizer.paused .visualizer-bar {
+    background-color: #FFA500; /* Orange for paused state */
+}
+
+.voice-visualizer.error .visualizer-bar {
+    background-color: #FF4136; /* Red for error state */
+}
+
+/* Browser compatibility message */
+.compat-message {
+    flex: 1 1 auto;
+    padding: 8px;
+    background-color: rgba(255, 65, 54, 0.1); /* Light red background */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.compat-message i {
+    color: #FF4136; /* Red for error icon */
+    font-size: 1.2em;
+}
+
+.compat-message p {
+    margin: 0;
+    font-size: 0.85em;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .voice-control {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        min-height: auto;
+    }
+    
+    .voice-btn-container {
+        max-width: none;
+        width: 100%;
+    }
+    
+    #voice-status {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    
+    .voice-visualizer {
+        margin: 10px 0;
+    }
+}
+
+/* Custom states for voice status text */
+#voice-status.listening {
+    color: var(--accent);
+}
+
+#voice-status.inactive {
+    color: var(--text-secondary);
+}
+
+#voice-status.error {
+    color: #FF4136; /* Red for error */
+}
+
+#voice-status.paused {
+    color: #FFA500; /* Orange for paused */
+}

@@ -4,22 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice Web Navigator</title>
-    <link rel="stylesheet" href="assessts/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="assessts/css/styles.css">
+    <link rel="stylesheet" href="libs/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
 <body class="light-theme">
     <div class="container">
         <div class="header">
             <div class="logo">
-                <h1><i class="fas fa-microphone-alt"></i>Browse with Voice</h1>
+                <h3><div class="circle-image"><img src="assessts/images/purchase1.jpeg" alt="Microphone"></div>Purchase College Voice Browse</h3>
             </div>
             <div class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="nav">
                 <div class="voice-control">
-                    <button id="start-listening"><i class="fas fa-microphone"></i> Start Listening</button>
+                    <!-- Voice control UI will be inserted here dynamically -->
+                </div>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="left-sidebar">
+                <!-- Sidebar items will be inserted here dynamically -->
+            </div>
+            
+            <div class="content">
+                <!-- Content sections will be inserted here dynamically -->
+            </div>
+            
+            <div class="right-sidebar">
+                <!-- Right sidebar content will be inserted here dynamically -->
+            </div>
+        </div>
+        
+        <!-- <div class="footer">
+            <p>&copy; 2023 Purchase College Website voice search built with love by Isaac Muliro</p>
+        </div> -->
+    </div>
+
+    <!-- Core functionality files -->
+    <script src="libs/fuse.js"></script> 
+    <script src="main/sidebar.js"></script>
+    <script src="main/content-navigation.js"></script>
+    <script src="main/links-text-content.js"></script>
+    
+    <!-- Voice recognition files -->
+    <script src="voice/voice-core.js"></script>
+    <script src="voice/voice-feedback.js"></script>
+    <script src="voice/voice-ui.js"></script>
+    <script src="voice/voice-commands.js"></script>
+    <script src="voice/voice-navigation.js"></script>
+
+    <!-- UI Construction files -->
+    <script src="mainUiComponents/sidebar-builder.js"></script>
+    <script src="mainUiComponents/content-builder.js"></script>
+    <script src="mainUiComponents/right-sidebar-builder.js"></script>
+    
+    <!-- Other functionality -->
+    <script src="main/website-navigation.js"></script>
+    <script src="main/iframe-controls.js"></script>
+    <script src="main/history.js"></script>
+    <script src="main/bookmarks.js"></script>
+    <script src="main/storage-management.js"></script>
+    <script src="main/Fallbacklinks.js"></script>
+    <script src="main/purchasedu.js"></script>
+    
+    <script src="Theme/theme.js"></script>
+    <script src="main/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Web Navigator</title>
+    <link rel="stylesheet" href="assessts/css/styles.css">
+    <link rel="stylesheet" href="libs/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
+
+</head>
+<body class="light-theme">
+    <div class="container">
+        <div class="header">
+        
+            <div class="logo">
+                <h3><div class="circle-image"><img src="assessts/images/purchase1.jpeg" alt="Microphone"></div>Purchase College Voice Browse</h3>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav">
+                <div class="voice-control">
+                    <div class="start-listening"><button id="start-listening"><i class="fas fa-microphone"></i> Start Listening</button></div>
                     <div id="voice-status"> Inactive</div>
                 </div>
                 
@@ -28,26 +139,75 @@
                 <i class="fas fa-sun"></i>
             </div>
         </div>
-        <div class="main-container">
-            <div class="left-sidebar">
-                <ul>
-                    <li>
-                        <a href="#" class="content-trigger" data-content="purchase-links">
-                            <i class="fas fa-university"></i>
-                            <span>Purchase College</span>
-                        </a>
-                    </li>
 
-                    <li><a href="#" class="content-trigger" data-content="voice-commands"><i class="fas fa-microphone"></i> Voice Commands</a></li>
-                    <li><a href="#" class="content-trigger" data-content="bookmarks"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
-                    <li><a href="#" class="content-trigger" data-content="history"><i class="fas fa-history"></i> History</a></li>
-                    <li><a href="#" class="content-trigger" data-content="settings"><i class="fas fa-cog"></i> Settings</a></li>
-                    <li><a href="#" class="content-trigger" data-content="help"><i class="fas fa-question-circle"></i> Help</a></li>
-                    <li><a href="#" class="content-trigger" data-content="accessibility"><i class="fas fa-universal-access"></i> Accessibility</a></li>
-                </ul>
+        <div class="main-container">
+                   <div class="left-sidebar">
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="purchase-links">
+                    <div class="icon-container icon-purchase">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <span>Purchase College</span>
+                </a>
             </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="voice-commands">
+                    <div class="icon-container icon-voice">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <span>Voice Commands</span>
+                </a>
+            </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="bookmarks">
+                    <div class="icon-container icon-bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <span>Bookmarks</span>
+                </a>
+            </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="history">
+                    <div class="icon-container icon-history">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <span>History</span>
+                </a>
+            </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="settings">
+                    <div class="icon-container icon-settings">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <span>Settings</span>
+                </a>
+            </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="help">
+                    <div class="icon-container icon-help">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <span>Help</span>
+                </a>
+            </div>
+        
+            <div class="sidebar-item">
+                <a href="#" class="content-trigger" data-content="accessibility">
+                    <div class="icon-container icon-accessibility">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <span>Accessibility</span>
+                </a>
+            </div>
+        </div>
+            
             <div class="content">
-                <!-- Default content section -->
+             
                 <div class="content-section active" id="default">
                     <h2>Welcome to Voice Web Navigator</h2>
                     <p>This application allows you to navigate the web using voice commands. Simply speak the name of a website or select an option from the sidebar.</p>
@@ -62,7 +222,7 @@
                     </div>
                 </div>
                 
-                <!-- Voice Commands section -->
+               
                 <div class="content-section" id="voice-commands">
                     <h2><i class="fas fa-microphone"></i> Voice Commands</h2>
                     <p>Use these voice commands to navigate:</p>
@@ -89,7 +249,7 @@
                     </div>
                 </div>
                 
-                <!-- Bookmarks section -->
+            
                 <div class="content-section" id="bookmarks">
                     <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
                     <p>Your saved bookmarks:</p>
@@ -117,7 +277,7 @@
                     </div>
                 </div>
                 
-                <!-- History section -->
+               
                 <div class="content-section" id="history">
                     <h2><i class="fas fa-history"></i> History</h2>
                     <p>Your browsing history:</p>
@@ -142,7 +302,7 @@
                     <button class="clear-history"><i class="fas fa-trash"></i> Clear History</button>
                 </div>
                 
-                <!-- Settings section -->
+             
                 <div class="content-section" id="settings">
                     <h2><i class="fas fa-cog"></i> Settings</h2>
                     <div class="settings-section">
@@ -188,7 +348,7 @@
                     </div>
                 </div>
                 
-                <!-- Help section -->
+              
                 <div class="content-section" id="help">
                     <h2><i class="fas fa-question-circle"></i> Help</h2>
                     <div class="help-section">
@@ -213,7 +373,7 @@
                     <button class="help-button"><i class="fas fa-envelope"></i> Contact Support</button>
                 </div>
                 
-                <!-- Accessibility section -->
+            
                 <div class="content-section" id="accessibility">
                     <h2><i class="fas fa-universal-access"></i> Accessibility</h2>
                     <p>Voice Web Navigator is designed to be accessible to all users:</p>
@@ -242,7 +402,7 @@
                 </div>
             </div>
             
-            <!-- Right sidebar (hidden by default) -->
+      
             <div class="right-sidebar">
                 <div class="close-panel">
                     <i class="fas fa-times"></i>
@@ -258,13 +418,20 @@
         </div>
     </div>
 
-    <!-- Core functionality files -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script> -->
+  
+   
     <script src="libs/fuse.js"></script> 
     <script src="main/sidebar.js"></script>
     <script src="main/content-navigation.js"></script>
     <script src="main/links-text-content.js"></script>
-    <script src="main/voice-recognition.js"></script>
+   
+
+    <script src="main/voice/voice-core.js"></script>
+    <script src="main/voice/voice-feedback.js"></script>
+    <script src="main/voice/voice-ui.js"></script>
+    <script src="main/voice/voice-commands.js"></script>
+   <script src="main/voice/voice-navigation.js"></script>
+
     <script src="main/website-navigation.js"></script>
     <script src="main/iframe-controls.js"></script>
     <script src="main/history.js"></script>
@@ -274,9 +441,8 @@
     <script src="main/purchasedu.js"></script>
     
 
-    <!-- In the head or before the closing body tag -->
     <script src="main/theme.js"></script>
     <script src="main/main.js"></script>
 
 </body>
-</html>
+</html> -->
