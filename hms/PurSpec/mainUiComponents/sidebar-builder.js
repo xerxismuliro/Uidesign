@@ -1,3 +1,4 @@
+
 /**
  * Builds the left sidebar items
  */
@@ -7,6 +8,11 @@ function buildSidebar() {
     
     // Clear existing content
     sidebar.innerHTML = '';
+    
+    // Create container for scrollable items
+    const sidebarItemsContainer = document.createElement('div');
+    sidebarItemsContainer.className = 'sidebar-items-container';
+    sidebar.appendChild(sidebarItemsContainer);
     
     // Define sidebar items
     const sidebarItems = [
@@ -54,7 +60,7 @@ function buildSidebar() {
         }
     ];
     
-    // Build each sidebar item
+    // Build each sidebar item - now append to the container instead of sidebar
     sidebarItems.forEach(item => {
         const sidebarItem = document.createElement('div');
         sidebarItem.className = 'sidebar-item';
@@ -68,11 +74,36 @@ function buildSidebar() {
             </a>
         `;
         
-        sidebar.appendChild(sidebarItem);
+        sidebarItemsContainer.appendChild(sidebarItem);
     });
+    
+    // Add credits footer - append directly to sidebar, not to container
+    addCreditsFooter(sidebar);
     
     // Re-attach event listeners
     attachSidebarEventListeners();
+}
+
+/**
+ * Adds a credits footer to the sidebar
+ * @param {HTMLElement} sidebar - The sidebar DOM element
+ */
+function addCreditsFooter(sidebar) {
+    const creditsFooter = document.createElement('div');
+    creditsFooter.className = 'sidebar-credits';
+    
+    // Get current year for copyright
+    const currentYear = new Date().getFullYear();
+    
+    creditsFooter.innerHTML = `
+        <div class="credits-content">
+            <p>Developed by</p>
+            <p class="developer-name">Isaac Muliro</p>
+            <p class="copyright">&copy; ${currentYear}</p>
+        </div>
+    `;
+    
+    sidebar.appendChild(creditsFooter);
 }
 
 /**

@@ -22,73 +22,137 @@ function useFallbackLinks() {
         // Set filtered links to be the optimized version of the fallback links
         filteredPurchaseLinks = optimizePurchaseLinks(fallbackPurchaseLinks);
         console.log(`Using ${filteredPurchaseLinks.length} Purchase College links`);
+        
+        // Process children links for each entry if they exist
+        filteredPurchaseLinks.forEach(link => {
+            // Add a children property if not present
+            if (!link.children) {
+                link.children = [];
+            }
+        });
     } else {
         console.error('Fallback links not available');
         filteredPurchaseLinks = [];
     }
 }
 
-// Optimize the links by removing duplicates and organizing them
-function optimizePurchaseLinks(allLinks) {
-    // Step 1: Remove duplicate URLs and keep the best text representation
-    const uniqueUrlMap = new Map();
+// Function to optimize Purchase links, accounting for new structure with children
+function optimizePurchaseLinks(links) {
+    if (!Array.isArray(links)) {
+        console.error('Links data is not an array');
+        return [];
+    }
     
-    allLinks.forEach(link => {
-        const url = link.url.toLowerCase();
-        const text = link.text.trim();
+    // Create a map to store unique links by URL for deduplication
+    const uniqueLinks = new Map();
+    
+    // First pass - collect all unique links by URL
+    links.forEach(link => {
+        // Skip invalid links
+        if (!link.url || typeof link.url !== 'string') return;
         
-        // Skip empty or useless links
-        if (!text || text === url || text.length < 2 || 
-            text === 'Skip to search' || text === 'Editor Login' ||
-            text.includes('Calendar of Events') || // Calendar entry with date prefix
-            url.includes('#') || // Skip anchors
-            url.includes('?login') || // Skip login links
-            url.includes('livewhale') || // Skip CMS links
-            text === 'English' || text === 'Español') { // Skip language switchers
-            return;
+        // Normalize URL to prevent duplicates with trailing slashes, etc.
+        const normalizedUrl = normalizeUrl(link.url);
+        
+        // If we haven't seen this URL before, add it
+        if (!uniqueLinks.has(normalizedUrl)) {
+            // Create a clean link object with essential properties
+            uniqueLinks.set(normalizedUrl, {
+                url: normalizedUrl,
+                text: link.text || extractTextFromUrl(normalizedUrl),
+                parent: link.parent || null,
+                parentText: link.parentText || null,
+                children: []
+            });
         }
+    });
+    
+    // Second pass - establish parent-child relationships
+    links.forEach(link => {
+        if (!link.url || !link.parent) return;
         
-        // Check if this URL is already in our map
-        if (uniqueUrlMap.has(url)) {
-            const existingLink = uniqueUrlMap.get(url);
-            // If the new text is better (shorter but not too short, or more descriptive), use it
-            if ((text.length < existingLink.text.length && text.length > 3) || 
-                 (!existingLink.text.includes(' ') && text.includes(' '))) {
-                uniqueUrlMap.set(url, { url: link.url, text: text });
+        const normalizedUrl = normalizeUrl(link.url);
+        const normalizedParent = normalizeUrl(link.parent);
+        
+        // Get the parent from our map
+        const parentLink = uniqueLinks.get(normalizedParent);
+        const childLink = uniqueLinks.get(normalizedUrl);
+        
+        // If both parent and child exist, establish relationship
+        if (parentLink && childLink) {
+            // Check if child is already in parent's children array
+            const childExists = parentLink.children.some(child => 
+                child.url === normalizedUrl
+            );
+            
+            // Add child to parent's children if not already there
+            if (!childExists) {
+                parentLink.children.push({
+                    url: normalizedUrl,
+                    text: childLink.text
+                });
             }
-        } else {
-            uniqueUrlMap.set(url, { url: link.url, text: text });
         }
     });
     
-    // Step 2: Convert map back to array
-    let optimizedLinks = Array.from(uniqueUrlMap.values());
-    
-    // Step 3: Sort by category priority and alphabetically within categories
-    optimizedLinks.sort((a, b) => {
-        const aCat = getLinkCategory(a);
-        const bCat = getLinkCategory(b);
+    // If the original data already has a children array, process those too
+    links.forEach(link => {
+        if (!link.url || !Array.isArray(link.children)) return;
         
-        // First sort by category priority
-        const categoryOrder = {
-            'main': 1,
-            'academics': 2,
-            'admissions': 3,
-            'campus': 4,
-            'about': 5,
-            'other': 6
-        };
+        const normalizedUrl = normalizeUrl(link.url);
+        const parentLink = uniqueLinks.get(normalizedUrl);
         
-        if (categoryOrder[aCat] !== categoryOrder[bCat]) {
-            return categoryOrder[aCat] - categoryOrder[bCat];
+        if (parentLink) {
+            // Process each child in the original children array
+            link.children.forEach(child => {
+                if (!child.url) return;
+                
+                const normalizedChildUrl = normalizeUrl(child.url);
+                
+                // Check if child is already in parent's children array
+                const childExists = parentLink.children.some(existingChild => 
+                    existingChild.url === normalizedChildUrl
+                );
+                
+                // Add child to parent's children if not already there
+                if (!childExists) {
+                    parentLink.children.push({
+                        url: normalizedChildUrl,
+                        text: child.text || extractTextFromUrl(normalizedChildUrl)
+                    });
+                }
+            });
         }
-        
-        // Then alphabetically by text
-        return a.text.localeCompare(b.text);
     });
     
-    return optimizedLinks;
+    // Convert the map back to an array
+    return Array.from(uniqueLinks.values());
 }
+
+// Helper function to normalize URLs
+function normalizeUrl(url) {
+    // Remove trailing slash if present
+    return url.replace(/\/$/, '');
+}
+
+// Helper function to extract meaningful text from a URL
+function extractTextFromUrl(url) {
+    try {
+        // Get the last part of the URL path
+        const pathParts = new URL(url).pathname.split('/');
+        const lastPart = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2] || '';
+        
+        // Convert dashes/underscores to spaces and capitalize words
+        return lastPart
+            .replace(/[-_]/g, ' ')
+            .replace(/\b\w/g, c => c.toUpperCase())
+            .trim() || url;
+    } catch (e) {
+        // If URL parsing fails, return the original URL
+        return url;
+    }
+}
+
 
 // Create the UI container for Purchase links
 function createPurchaseLinksUI() {
@@ -103,9 +167,9 @@ function createPurchaseLinksUI() {
     purchaseSection.className = 'content-section';
     purchaseSection.id = 'purchase-links';
     
-    // Create the UI structure
+    // Create the UI structure for the header and controls
     purchaseSection.innerHTML = `
-        <h2><i class="fas fa-university"></i> Purchase College Links</h2>
+        <h3><i class="fas fa-university"></i> Purchase College Links</h3>
         
         <div class="purchase-links-container">
             <div class="purchase-links-header">
@@ -126,33 +190,42 @@ function createPurchaseLinksUI() {
                 <button class="category-button" data-category="about">About</button>
             </div>
 
-
-            <div class="voice-command-hint">
-                <i class="fas fa-microphone"></i>
-                <p>Try saying: "Go to Purchase Academics" or "Open Purchase Admissions"</p>
-            </div>
-            
-            <div class="purchase-links-list" id="purchase-links-list">
-                <div class="loading-links">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Loading Purchase College links...</p>
-                </div>
-            </div>
-            
             <div class="voice-command-hint">
                 <i class="fas fa-microphone"></i>
                 <p>Try saying: "Go to Purchase Academics" or "Open Purchase Admissions"</p>
             </div>
         </div>
     `;
-    
-    // Add to the content area
+
+    // Add the section to the content area
     const contentArea = document.querySelector('.content');
     if (contentArea) {
         contentArea.appendChild(purchaseSection);
     } else {
         console.error('Content area not found');
         document.body.appendChild(purchaseSection);
+    }
+
+    // Create the links list container as a separate div
+    const purchaseLinksListContainer = document.createElement('div');
+    purchaseLinksListContainer.className = 'purchase-links-list';
+    purchaseLinksListContainer.id = 'purchase-links-list';
+    
+    // Add loading spinner inside the links list container
+    purchaseLinksListContainer.innerHTML = `
+        <div class="loading-links">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading Purchase College links...</p>
+        </div>
+    `;
+    
+    // Find the purchase-links-container and append the links list to it
+    const container = purchaseSection.querySelector('.purchase-links-container');
+    if (container) {
+        container.appendChild(purchaseLinksListContainer);
+    } else {
+        // Fallback: append directly to the purchase section
+        purchaseSection.appendChild(purchaseLinksListContainer);
     }
     
     // Setup search functionality and category filtering
@@ -288,30 +361,61 @@ function renderPurchaseLinks(links) {
     });
 }
 
-// Create a link item element
+// Replace the existing createLinkItem function
 function createLinkItem(link) {
     const linkItem = document.createElement('div');
     linkItem.className = 'purchase-link-item';
     linkItem.dataset.url = link.url;
     linkItem.dataset.category = getLinkCategory(link);
     
-    linkItem.innerHTML = `
-        <div class="link-icon">
-            <i class="fas ${getLinkIcon(link)}"></i>
-        </div>
-        <div class="link-details">
-            <div class="link-text">${link.text}</div>
-            <div class="link-url">${formatUrl(link.url)}</div>
-        </div>
-        <div class="link-action">
-            <button class="open-link-button" aria-label="Open ${link.text}">
-                <i class="fas fa-external-link-alt"></i>
-            </button>
-        </div>
-    `;
+    // Create icon container with the improved visual style
+    const iconContainer = document.createElement('div');
+    iconContainer.className = 'purchase-link-icon';
+    
+    // Add appropriate icon based on link type
+    const icon = document.createElement('i');
+    icon.className = `fas ${getLinkIcon(link)}`;
+    iconContainer.appendChild(icon);
+    
+    // Create link details container
+    const details = document.createElement('div');
+    details.className = 'link-details';
+    
+    const text = document.createElement('div');
+    text.className = 'link-text';
+    text.textContent = link.text;
+    
+    const url = document.createElement('div');
+    url.className = 'link-url';
+    url.textContent = formatUrl(link.url);
+    
+    details.appendChild(text);
+    details.appendChild(url);
+    
+    // Create action button container
+    const action = document.createElement('div');
+    action.className = 'link-action';
+    
+    const button = document.createElement('button');
+    button.className = 'open-link-button';
+    button.setAttribute('aria-label', `Open ${link.text}`);
+    button.innerHTML = '<i class="fas fa-external-link-alt"></i>';
+    
+    action.appendChild(button);
+    
+    // Assemble the components
+    linkItem.appendChild(iconContainer);
+    linkItem.appendChild(details);
+    linkItem.appendChild(action);
     
     // Add click handler
     linkItem.addEventListener('click', () => {
+        navigateToWebsite(link.url);
+    });
+    
+    // Stop propagation on button click to prevent triggering the parent click
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
         navigateToWebsite(link.url);
     });
     

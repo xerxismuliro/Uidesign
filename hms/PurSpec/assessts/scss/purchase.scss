@@ -47,12 +47,11 @@
 }
 
 .purchase-links-info {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-secondary);
 }
 
 .purchase-links-info span {
-    font-weight: bold;
     color: var(--accent-color);
 }
 
@@ -62,6 +61,54 @@
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
+
+/* Purchase College Links Component Styles */
+// ...existing code...
+
+/* Add icon styling for Purchase links similar to sidebar icons */
+.purchase-link-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--accent-color-rgb), 0.15);
+    border-radius: 50%;
+    margin-right: 15px;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.purchase-link-item:hover .purchase-link-icon {
+    background-color: rgba(var(--accent-color-rgb), 0.25);
+    transform: scale(1.05);
+}
+
+/* Modify the purchase-link-item to include the new icon container */
+.purchase-link-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Dark theme adjustments */
+.dark-theme .purchase-link-icon {
+    background-color: rgba(var(--accent-color-rgb-dark), 0.2);
+    color: var(--accent-color-dark);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .purchase-link-item:hover .purchase-link-icon {
+    background-color: rgba(var(--accent-color-rgb-dark), 0.3);
+}
+
+
+
 
 
 /* Add these category header styles to your Purchase links section */
@@ -127,10 +174,11 @@
 }
 
 .purchase-links-list {
-    background: var(--bg-primary);
+    // background: var(--bg-primary);
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    max-height: 500px;
+    // max-height: 500px;
+    height: 100%;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) var(--bg-secondary);
@@ -173,7 +221,6 @@
 }
 
 .link-text {
-    font-weight: bold;
     color: var(--text-primary);
     white-space: nowrap;
     overflow: hidden;

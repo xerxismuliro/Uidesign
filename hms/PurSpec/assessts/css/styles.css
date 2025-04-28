@@ -84,7 +84,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
-  overflow: hidden; /* Prevent scrolling on the body */
+  overflow: hidden;
+  /* Prevent scrolling on the body */
 }
 
 ul {
@@ -190,22 +191,31 @@ body {
 .main-container {
   display: flex;
   flex: 1;
-  overflow: hidden; /* Prevent overflow */
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 /* Redesigned sidebar styles */
 .left-sidebar {
   background-color: var(--sidebar);
-  padding: 1rem;
   width: 240px;
-  overflow-y: auto;
   border-right: 1px solid var(--secondary);
   transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.sidebar-items-container {
+  flex: 1;
+  overflow: hidden;
+  padding: 0rem;
 }
 
 /* New sidebar item styles */
 .sidebar-item {
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .sidebar-item a {
@@ -237,7 +247,8 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar-item a.active, .sidebar-item a:active {
+.sidebar-item a.active,
+.sidebar-item a:active {
   background-color: var(--primary-light);
   font-weight: bold;
 }
@@ -295,7 +306,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(93, 93, 169);
-  border-radius: 50%; /* Creates a perfect circle */
+  border-radius: 50%;
+  /* Creates a perfect circle */
   margin-right: 15px;
   color: var(--accent-color);
   flex-shrink: 0;
@@ -362,11 +374,64 @@ body {
   z-index: 100;
 }
 
+/* Fix for sidebar credits height */
+.sidebar-credits {
+  background-color: var(--sidebar);
+  padding: 5px 0; /* Minimal vertical padding */
+  font-size: 0.65rem; /* Even smaller font */
+  color: var(--text-primary);
+  opacity: 0.8;
+  text-align: center;
+  border-top: 1px solid rgba(var(--accent-color-rgb), 0.2);
+  width: 100%;
+  height: 50px; /* Fixed height instead of auto */
+  overflow: hidden; /* Prevent content from expanding beyond height */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-credits .credits-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1.5; /* Even tighter line spacing */
+  max-width: 100%;
+}
+
+.sidebar-credits p {
+  margin: 0; /* Remove all margins */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-credits .developer-name {
+  font-weight: 600;
+  font-size: 0.75rem; /* Slightly larger than other text */
+  color: var(--accent-color);
+}
+
+.sidebar-credits .copyright {
+  font-size: 0.6rem; /* Smallest text */
+  color: var(--text-secondary);
+}
+
 /* Rounded corners for better UI */
-.header, .content, .right-sidebar,
-button, .slider, select, input[type=range],
-.bookmarks-grid .bookmark-item, .setting-item,
-.content-section, .feature {
+.content,
+.right-sidebar,
+button,
+.slider,
+select,
+input[type=range],
+.bookmarks-grid .bookmark-item,
+.setting-item,
+.content-section,
+.feature {
   border-radius: 8px;
 }
 
@@ -1259,12 +1324,11 @@ button, .slider, select, input[type=range],
 }
 
 .purchase-links-info {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-secondary);
 }
 
 .purchase-links-info span {
-  font-weight: bold;
   color: var(--accent-color);
 }
 
@@ -1273,6 +1337,49 @@ button, .slider, select, input[type=range],
   gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+}
+
+/* Purchase College Links Component Styles */
+/* Add icon styling for Purchase links similar to sidebar icons */
+.purchase-link-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--accent-color-rgb), 0.15);
+  border-radius: 50%;
+  margin-right: 15px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.purchase-link-item:hover .purchase-link-icon {
+  background-color: rgba(var(--accent-color-rgb), 0.25);
+  transform: scale(1.05);
+}
+
+/* Modify the purchase-link-item to include the new icon container */
+.purchase-link-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Dark theme adjustments */
+.dark-theme .purchase-link-icon {
+  background-color: rgba(var(--accent-color-rgb-dark), 0.2);
+  color: var(--accent-color-dark);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .purchase-link-item:hover .purchase-link-icon {
+  background-color: rgba(var(--accent-color-rgb-dark), 0.3);
 }
 
 /* Add these category header styles to your Purchase links section */
@@ -1336,10 +1443,9 @@ button, .slider, select, input[type=range],
 }
 
 .purchase-links-list {
-  background: var(--bg-primary);
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  max-height: 500px;
+  height: 100%;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--bg-secondary);
@@ -1382,7 +1488,6 @@ button, .slider, select, input[type=range],
 }
 
 .link-text {
-  font-weight: bold;
   color: var(--text-primary);
   white-space: nowrap;
   overflow: hidden;

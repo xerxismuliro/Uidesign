@@ -9,7 +9,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
-    overflow: hidden; /* Prevent scrolling on the body */
+    overflow: hidden;
+    /* Prevent scrolling on the body */
 }
 
 ul {
@@ -76,7 +77,7 @@ body {
     align-items: center;
     height: 10%;
     z-index: 100;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid var(--secondary);
     position: relative;
 }
@@ -115,22 +116,32 @@ body {
 .main-container {
     display: flex;
     flex: 1;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
+    /* Prevent overflow */
 }
 
 /* Redesigned sidebar styles */
 .left-sidebar {
     background-color: var(--sidebar);
-    padding: 1rem;
     width: 240px;
-    overflow-y: auto;
     border-right: 1px solid var(--secondary);
     transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.sidebar-items-container {
+    flex: 1;
+    // overflow-y: auto;
+    overflow: hidden;
+    padding: 0rem;
 }
 
 /* New sidebar item styles */
 .sidebar-item {
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .sidebar-item a {
@@ -159,10 +170,11 @@ body {
     margin-right: 15px;
     color: var(--accent-color);
     flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar-item a.active, .sidebar-item a:active {
+.sidebar-item a.active,
+.sidebar-item a:active {
     background-color: var(--primary-light);
     font-weight: bold;
 }
@@ -220,11 +232,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(93, 93, 169);
-    border-radius: 50%; /* Creates a perfect circle */
+    border-radius: 50%;
+    /* Creates a perfect circle */
     margin-right: 15px;
     color: var(--accent-color);
     flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .content {
@@ -246,7 +259,7 @@ body {
     transition: transform 0.3s ease;
     overflow-y: auto;
     z-index: 100;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .right-sidebar.show {
@@ -281,17 +294,70 @@ body {
     background-color: var(--header);
     padding: 0.8rem;
     text-align: center;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     border-top: 1px solid var(--secondary);
     position: relative;
     z-index: 100;
 }
 
+/* Fix for sidebar credits height */
+.sidebar-credits {
+    background-color: var(--sidebar);
+    padding: 5px 0; /* Minimal vertical padding */
+    font-size: 0.65rem; /* Even smaller font */
+    color: var(--text-primary);
+    opacity: 0.8;
+    text-align: center;
+    border-top: 1px solid rgba(var(--accent-color-rgb), 0.2);
+    width: 100%;
+    height: 50px; /* Fixed height instead of auto */
+    overflow: hidden; /* Prevent content from expanding beyond height */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-credits .credits-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.5; /* Even tighter line spacing */
+    max-width: 100%;
+}
+
+.sidebar-credits p {
+    margin: 0; /* Remove all margins */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-credits .developer-name {
+    font-weight: 600;
+    font-size: 0.75rem; /* Slightly larger than other text */
+    color: var(--accent-color);
+}
+
+.sidebar-credits .copyright {
+    font-size: 0.6rem; /* Smallest text */
+    color: var(--text-secondary);
+}
+
 /* Rounded corners for better UI */
-.header, .content, .right-sidebar, 
-button, .slider, select, input[type="range"],
-.bookmarks-grid .bookmark-item, .setting-item, 
-.content-section, .feature {
+.content,
+.right-sidebar,
+button,
+.slider,
+select,
+input[type="range"],
+.bookmarks-grid .bookmark-item,
+.setting-item,
+.content-section,
+.feature {
     border-radius: 8px;
 }
 
@@ -308,7 +374,7 @@ button, .slider, select, input[type="range"],
     padding: 5px 8px;
     background-color: var(--secondary);
     margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content-section.active {
@@ -317,7 +383,11 @@ button, .slider, select, input[type="range"],
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
