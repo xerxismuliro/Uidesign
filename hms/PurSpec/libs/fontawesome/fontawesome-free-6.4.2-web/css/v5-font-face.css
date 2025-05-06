@@ -1,8 +1,19 @@
-/*!
- * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
+/*
+   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  
+  Usage Guidelines:
+  - Maintain the CSS variable structure for theming
+  - Mobile-first approach for all responsive styling
+  - Class names follow BEM methodology
+  - For questions or contributions, contact isaac.muliro@purchase.edu
+  - Last updated: 2025-05-06
+*/
+
+
+
+
+
+
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-display: block;

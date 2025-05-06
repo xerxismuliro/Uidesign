@@ -1,12 +1,25 @@
-// Less advanced version of the script
+/**
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
+ */
+
+
+
+
+
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-/**
- * Scrapes YouTube videos based on a search query and filters by channel
- */
+
 async function scrapeYouTube(options = {}) {
-    // Default options
+    
     const config = {
         searchQuery: options.searchQuery || "Bethel Music",
         channelName: options.channelName || "Bethel Music",
@@ -18,12 +31,12 @@ async function scrapeYouTube(options = {}) {
         excludeShorts: options.excludeShorts !== undefined ? options.excludeShorts : true
     };
 
-    // Try a direct channel search instead
+    
     const channelSearchQuery = `${config.searchQuery} ${config.channelName}`;
     console.log(`Searching for: "${channelSearchQuery}"`);
-    const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(channelSearchQuery)}`;
+    const searchUrl = `https:
 
-    // List of common User-Agent strings
+    
     const userAgents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -31,33 +44,33 @@ async function scrapeYouTube(options = {}) {
         "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/537.36"
     ];
 
-    // Select a random User-Agent
+    
     const randomUserAgent = userAgents[Math.floor(Math.random() * userAgents.length)];
 
     let browser;
     try {
-        // Launch Puppeteer with a random User-Agent
+        
         browser = await puppeteer.launch({ 
-            headless: config.headless, // false to see the browser UI
+            headless: config.headless, 
             args: ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=1280,800']
         });
         
         const page = await browser.newPage();
         await page.setUserAgent(randomUserAgent);
         
-        // Set viewport for better rendering
+        
         await page.setViewport({ width: 1280, height: 800 });
 
-        // Enable debug logging
+        
         if (config.debug) {
             page.on('console', msg => console.log('BROWSER CONSOLE:', msg.text()));
         }
 
         console.log(`Navigating to YouTube search results...`);
-        // Go to YouTube search results page
+        
         await page.goto(searchUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
-        // Accept cookies if the consent dialog appears
+        
         try {
             const acceptButton = await page.$('button[aria-label="Accept all"]');
             if (acceptButton) {
@@ -69,13 +82,13 @@ async function scrapeYouTube(options = {}) {
             console.log('No cookie consent dialog or could not interact with it.');
         }
 
-        // Function to scroll down the page to load more results
+        
         async function autoScroll(page) {
             console.log(`Scrolling to load more videos...`);
             await page.evaluate(async () => {
                 await new Promise((resolve) => {
                     let totalHeight = 0;
-                    const distance = 500; // Scroll step size
+                    const distance = 500; 
                     const timer = setInterval(() => {
                         const scrollHeight = document.documentElement.scrollHeight;
                         window.scrollBy(0, distance);
@@ -90,7 +103,7 @@ async function scrapeYouTube(options = {}) {
             });
         }
 
-        // Wait for the video results to load - try multiple selectors
+        
         console.log('Waiting for search results to load...');
         try {
             await page.waitForSelector('ytd-video-renderer, ytd-rich-item-renderer, ytd-grid-video-renderer', { timeout: 10000 });
@@ -99,20 +112,20 @@ async function scrapeYouTube(options = {}) {
             console.log('Warning: Could not find standard video elements, but continuing...');
         }
 
-        // Scroll down multiple times to load more results
+        
         for (let i = 0; i < config.scrollCount; i++) {
             console.log(`Scroll ${i+1}/${config.scrollCount}`);
             await autoScroll(page);
-            await new Promise(resolve => setTimeout(resolve, 3000)); // Wait for 3 seconds
+            await new Promise(resolve => setTimeout(resolve, 3000)); 
         }
 
-        // Using more modern YouTube selectors to extract all types of videos
+        
         console.log('Extracting video data...');
         const allVideos = await page.evaluate((channelName) => {
             const videos = [];
             
-            // Match new YouTube rendering methods (2023-2024)
-            // We'll try to get all types of video elements that could appear
+            
+            
             const videoElements = Array.from(document.querySelectorAll(`
                 ytd-video-renderer, 
                 ytd-rich-item-renderer, 
@@ -124,7 +137,7 @@ async function scrapeYouTube(options = {}) {
             
             videoElements.forEach(video => {
                 try {
-                    // Get all possible title elements
+                    
                     const titleElement = 
                         video.querySelector('#video-title') || 
                         video.querySelector('a#video-title-link') || 
@@ -137,10 +150,10 @@ async function scrapeYouTube(options = {}) {
                     
                     if (!title || !url) return;
                     
-                    // Check if this is a shorts video by looking at the URL
+                    
                     const isShort = url.includes('/shorts/');
                     
-                    // Get the channel information
+                    
                     const channelElement = 
                         video.querySelector('#channel-name a') || 
                         video.querySelector('#channel-info a') || 
@@ -149,14 +162,14 @@ async function scrapeYouTube(options = {}) {
                     
                     const channel = channelElement ? channelElement.innerText.trim() : "";
                     
-                    // Get video duration (if available)
+                    
                     const durationElement = 
                         video.querySelector('.ytd-thumbnail-overlay-time-status-renderer') || 
                         video.querySelector('span.ytd-thumbnail-overlay-time-status-renderer');
                     
                     const duration = durationElement ? durationElement.innerText.trim() : "";
                     
-                    // Get view count and age if available
+                    
                     const metaElements = Array.from(video.querySelectorAll('#metadata-line span, .ytd-video-meta-block span'));
                     const metaTexts = metaElements.map(el => el.innerText.trim()).filter(text => text);
                     
@@ -178,31 +191,31 @@ async function scrapeYouTube(options = {}) {
 
         console.log(`Found ${allVideos.length} total videos before filtering`);
         
-        // Debug: Print all channels found to help identify why filtering is failing
+        
         if (config.debug) {
             console.log("Channels found:");
             const channels = [...new Set(allVideos.map(v => v.channel).filter(Boolean))];
             channels.forEach(c => console.log(`- "${c}"`));
         }
 
-        // Process the videos with improved filtering
+        
         const validVideos = allVideos.filter(video => {
-            // Skip shorts if configured to do so
+            
             if (config.excludeShorts && video.isShort) {
                 return false;
             }
             
-            // Check if we have a valid URL
+            
             if (!video.url || video.url === "No URL") {
                 return false;
             }
             
-            // If no channel name filtering is needed
+            
             if (!config.channelName) {
                 return true;
             }
             
-            // More flexible channel matching
+            
             const videoChannel = (video.channel || "").toLowerCase();
             const targetChannel = config.channelName.toLowerCase();
             
@@ -211,7 +224,7 @@ async function scrapeYouTube(options = {}) {
 
         console.log(`Found ${validVideos.length} videos after filtering (excluding shorts: ${config.excludeShorts})`);
         
-        // Limit to max results
+        
         const finalVideos = validVideos.slice(0, config.maxResults).map(video => ({
             title: video.title,
             url: video.url,
@@ -220,10 +233,10 @@ async function scrapeYouTube(options = {}) {
             meta: video.meta
         }));
 
-        // Extract just the URLs
+        
         const urlsOnly = finalVideos.map(video => video.url);
 
-        // Save both full data and URLs-only
+        
         fs.writeFileSync(config.outputFile, JSON.stringify(finalVideos, null, 2));
         console.log(`Results saved to ${config.outputFile}`);
 
@@ -231,7 +244,7 @@ async function scrapeYouTube(options = {}) {
         fs.writeFileSync(urlsFile, JSON.stringify(urlsOnly, null, 2));
         console.log(`URLs only saved to ${urlsFile}`);
         
-        // Take a screenshot in case we need to debug
+        
         await page.screenshot({ 
             path: 'youtube-search-results.png', 
             fullPage: false,
@@ -239,10 +252,10 @@ async function scrapeYouTube(options = {}) {
         });
         console.log("Saved screenshot to youtube-search-results.png");
         
-        // Display a message and keep the browser open for inspection if not in headless mode
+        
         if (!config.headless) {
             console.log('Browser will stay open for 10 seconds. You can inspect the results visually.');
-            await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for inspection
+            await new Promise(resolve => setTimeout(resolve, 10000)); 
         }
         
         await browser.close();
@@ -268,7 +281,7 @@ async function scrapeYouTube(options = {}) {
     }
 }
 
-// Parse command line arguments
+
 function parseArgs() {
     const args = process.argv.slice(2);
     const options = {};
@@ -322,11 +335,11 @@ Examples:
     return options;
 }
 
-// Main execution
+
 (async () => {
     try {
         const options = parseArgs();
-        options.debug = true; // Always enable debug for troubleshooting
+        options.debug = true; 
         await scrapeYouTube(options);
     } catch (error) {
         console.error('Scraping failed:', error);
@@ -339,17 +352,15 @@ Examples:
 
 
 
-// Advanced version of the script with more features and options like category filtering and output formats
+
 
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Scrapes YouTube videos based on a search query and filters by channel
- */
+
 async function scrapeYouTube(options = {}) {
-    // Default options
+    
     const config = {
         searchQuery: options.searchQuery || "Bethel Music",
         channelName: options.channelName || "Bethel Music",
@@ -362,22 +373,22 @@ async function scrapeYouTube(options = {}) {
         format: options.format || 'json',
         category: options.category || '',
         playlistId: options.playlistId || '',
-        rateLimit: options.rateLimit || 1000 // Default rate limit of 1 second between actions
+        rateLimit: options.rateLimit || 1000 
     };
 
-    // Determine the URL based on whether it's a playlist or search
+    
     let searchUrl;
     if (config.playlistId) {
-        searchUrl = `https://www.youtube.com/playlist?list=${config.playlistId}`;
+        searchUrl = `https:
         console.log(`Scraping playlist: ${config.playlistId}`);
     } else {
-        // Try a direct channel search instead
+        
         const channelSearchQuery = `${config.searchQuery} ${config.channelName}`;
         console.log(`Searching for: "${channelSearchQuery}"`);
-        searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(channelSearchQuery)}`;
+        searchUrl = `https:
     }
 
-    // List of common User-Agent strings
+    
     const userAgents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -385,38 +396,38 @@ async function scrapeYouTube(options = {}) {
         "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/537.36"
     ];
 
-    // Helper function for rate limiting
+    
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-    // Select a random User-Agent
+    
     const randomUserAgent = userAgents[Math.floor(Math.random() * userAgents.length)];
 
     let browser;
     try {
-        // Launch Puppeteer with a random User-Agent
+        
         browser = await puppeteer.launch({ 
-            headless: config.headless, // false to see the browser UI
+            headless: config.headless, 
             args: ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=1280,800']
         });
         
         const page = await browser.newPage();
         await page.setUserAgent(randomUserAgent);
         
-        // Set viewport for better rendering
+        
         await page.setViewport({ width: 1200, height: 800 });
 
-        // Enable debug logging
+        
         if (config.debug) {
             page.on('console', msg => console.log('BROWSER CONSOLE:', msg.text()));
         }
 
         console.log(`Navigating to YouTube...`);
-        // Go to YouTube search results page
+        
         await page.goto(searchUrl, { waitUntil: 'networkidle2', timeout: 60000 });
-        // Apply rate limiting
+        
         await sleep(config.rateLimit);
 
-        // Accept cookies if the consent dialog appears
+        
         try {
             const acceptButton = await page.$('button[aria-label="Accept all"]');
             if (acceptButton) {
@@ -428,13 +439,13 @@ async function scrapeYouTube(options = {}) {
             console.log('No cookie consent dialog or could not interact with it.');
         }
 
-        // Function to scroll down the page to load more results
+        
         async function autoScroll(page) {
             console.log(`Scrolling to load more videos...`);
             await page.evaluate(async () => {
                 await new Promise((resolve) => {
                     let totalHeight = 0;
-                    const distance = 500; // Scroll step size
+                    const distance = 500; 
                     const timer = setInterval(() => {
                         const scrollHeight = document.documentElement.scrollHeight;
                         window.scrollBy(0, distance);
@@ -447,11 +458,11 @@ async function scrapeYouTube(options = {}) {
                     }, 300);
                 });
             });
-            // Apply rate limiting after scrolling
+            
             await sleep(config.rateLimit);
         }
 
-        // Wait for the video results to load - try multiple selectors based on whether it's a playlist or search
+        
         console.log('Waiting for results to load...');
         try {
             if (config.playlistId) {
@@ -465,24 +476,24 @@ async function scrapeYouTube(options = {}) {
             console.log('Warning: Could not find standard video elements, but continuing...');
         }
 
-        // Scroll down multiple times to load more results
+        
         for (let i = 0; i < config.scrollCount; i++) {
             console.log(`Scroll ${i+1}/${config.scrollCount}`);
             await autoScroll(page);
-            await sleep(config.rateLimit); // Rate limiting between scrolls
+            await sleep(config.rateLimit); 
         }
 
-        // Using more modern YouTube selectors to extract all types of videos
+        
         console.log('Extracting video data...');
         const allVideos = await page.evaluate((config) => {
             const videos = [];
             
-            // Select different elements based on whether it's a playlist or search
+            
             let videoElements;
             if (config.playlistId) {
                 videoElements = Array.from(document.querySelectorAll('ytd-playlist-video-renderer'));
             } else {
-                // Match new YouTube rendering methods (2023-2024)
+                
                 videoElements = Array.from(document.querySelectorAll(`
                     ytd-video-renderer, 
                     ytd-rich-item-renderer, 
@@ -495,7 +506,7 @@ async function scrapeYouTube(options = {}) {
             
             videoElements.forEach(video => {
                 try {
-                    // Get all possible title elements
+                    
                     const titleElement = 
                         video.querySelector('#video-title') || 
                         video.querySelector('a#video-title-link') || 
@@ -508,10 +519,10 @@ async function scrapeYouTube(options = {}) {
                     
                     if (!title || !url) return;
                     
-                    // Check if this is a shorts video by looking at the URL
+                    
                     const isShort = url.includes('/shorts/');
                     
-                    // Get the channel information
+                    
                     const channelElement = 
                         video.querySelector('#channel-name a') || 
                         video.querySelector('#channel-info a') || 
@@ -520,7 +531,7 @@ async function scrapeYouTube(options = {}) {
                     
                     const channel = channelElement ? channelElement.innerText.trim() : "";
                     
-                    // Get video duration (if available) - using more specific selectors
+                    
                     const durationElement = 
                         video.querySelector('#overlays #text.ytd-thumbnail-overlay-time-status-renderer') ||
                         video.querySelector('#overlays span.ytd-thumbnail-overlay-time-status-renderer') ||
@@ -532,15 +543,15 @@ async function scrapeYouTube(options = {}) {
                     
                     const duration = durationElement ? durationElement.innerText.trim() : "Unknown";
                     
-                    // Get view count and age if available
+                    
                     const metaElements = Array.from(video.querySelectorAll('#metadata-line span, .ytd-video-meta-block span'));
                     const metaTexts = metaElements.map(el => el.innerText.trim()).filter(text => text);
                     
-                    // Try to determine video category (music video, live, etc.)
+                    
                     let category = "regular";
                     const lowerTitle = title.toLowerCase();
                     
-                    // Detect category based on title and duration
+                    
                     if (lowerTitle.includes("official") && (lowerTitle.includes("video") || lowerTitle.includes("mv"))) {
                         category = "official";
                     } else if (lowerTitle.includes("live") || lowerTitle.includes("performance")) {
@@ -552,7 +563,7 @@ async function scrapeYouTube(options = {}) {
                     } else if (lowerTitle.includes("cover")) {
                         category = "cover";
                     } else if (duration && parseInt(duration.split(':')[0]) > 20) {
-                        // Videos longer than 20 minutes are likely full albums
+                        
                         category = "album";
                     }
                     
@@ -575,7 +586,7 @@ async function scrapeYouTube(options = {}) {
 
         console.log(`Found ${allVideos.length} total videos before filtering`);
         
-        // Debug: Print all channels found to help identify why filtering is failing
+        
         if (config.debug) {
             console.log("Channels found:");
             const channels = [...new Set(allVideos.map(v => v.channel).filter(Boolean))];
@@ -586,29 +597,29 @@ async function scrapeYouTube(options = {}) {
             categories.forEach(c => console.log(`- "${c}"`));
         }
 
-        // Process the videos with improved filtering
+        
         const validVideos = allVideos.filter(video => {
-            // Skip shorts if configured to do so
+            
             if (config.excludeShorts && video.isShort) {
                 return false;
             }
             
-            // Check if we have a valid URL
+            
             if (!video.url || video.url === "No URL") {
                 return false;
             }
             
-            // Filter by category if specified
+            
             if (config.category && video.category !== config.category) {
                 return false;
             }
             
-            // If no channel name filtering is needed (e.g., for playlists)
+            
             if (!config.channelName || config.playlistId) {
                 return true;
             }
             
-            // More flexible channel matching
+            
             const videoChannel = (video.channel || "").toLowerCase();
             const targetChannel = config.channelName.toLowerCase();
             
@@ -617,7 +628,7 @@ async function scrapeYouTube(options = {}) {
 
         console.log(`Found ${validVideos.length} videos after filtering (excluding shorts: ${config.excludeShorts}${config.category ? `, category: ${config.category}` : ''})`);
         
-        // Limit to max results
+        
         const finalVideos = validVideos.slice(0, config.maxResults).map(video => ({
             title: video.title,
             url: video.url,
@@ -627,23 +638,23 @@ async function scrapeYouTube(options = {}) {
             category: video.category
         }));
 
-        // Extract just the URLs
+        
         const urlsOnly = finalVideos.map(video => video.url);
 
-        // Save results in the requested format(s)
+        
         const baseFileName = path.parse(config.outputFile).name;
         const filePrefix = config.channelName.replace(/\s/g, '-');
         
-        // Always save JSON (full data)
+        
         fs.writeFileSync(config.outputFile, JSON.stringify(finalVideos, null, 2));
         console.log(`Results saved to ${config.outputFile}`);
 
-        // Save URLs-only JSON
+        
         const urlsFile = `${filePrefix}-urls.json`;
         fs.writeFileSync(urlsFile, JSON.stringify(urlsOnly, null, 2));
         console.log(`URLs only saved to ${urlsFile}`);
         
-        // Save as Text file if requested
+        
         if (config.format === 'text' || config.format === 'all') {
             const textContent = finalVideos.map(v => 
                 `Title: ${v.title}\nURL: ${v.url}\nChannel: ${v.channel}\nDuration: ${v.duration}\nCategory: ${v.category}\n${v.meta.join(', ')}\n\n`
@@ -654,15 +665,15 @@ async function scrapeYouTube(options = {}) {
             console.log(`Text results saved to ${textFile}`);
         }
         
-        // Save as CSV if requested
+        
         if (config.format === 'csv' || config.format === 'all') {
             const header = 'Title,URL,Channel,Duration,Category,Views,Published\n';
             const csvRows = finalVideos.map(v => {
-                // Extract views and publish date from meta if available
+                
                 const views = v.meta.find(m => m.includes('views')) || '';
                 const published = v.meta.find(m => m.includes('ago')) || '';
                 
-                // Escape fields for CSV
+                
                 const escapeCSV = (field) => `"${(field || '').replace(/"/g, '""')}"`;
                 
                 return [
@@ -681,7 +692,7 @@ async function scrapeYouTube(options = {}) {
             console.log(`CSV results saved to ${csvFile}`);
         }
         
-        // Take a screenshot in case we need to debug
+        
         await page.screenshot({ 
             path: 'youtube-search-results.png', 
             fullPage: false,
@@ -689,10 +700,10 @@ async function scrapeYouTube(options = {}) {
         });
         console.log("Saved screenshot to youtube-search-results.png");
         
-        // Display a message and keep the browser open for inspection if not in headless mode
+        
         if (!config.headless) {
             console.log('Browser will stay open for 10 seconds. You can inspect the results visually.');
-            await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for inspection
+            await new Promise(resolve => setTimeout(resolve, 10000)); 
         }
         
         await browser.close();
@@ -718,7 +729,7 @@ async function scrapeYouTube(options = {}) {
     }
 }
 
-// Parse command line arguments
+
 function parseArgs() {
     const args = process.argv.slice(2);
     const options = {};
@@ -748,10 +759,10 @@ function parseArgs() {
         } else if (args[i] === '--include-shorts') {
             options.excludeShorts = false;
         } else if (args[i] === '--format' && i + 1 < args.length) {
-            options.format = args[i + 1]; // json, text, csv, or all
+            options.format = args[i + 1]; 
             i++;
         } else if (args[i] === '--category' && i + 1 < args.length) {
-            options.category = args[i + 1]; // official, live, lyrics, etc.
+            options.category = args[i + 1]; 
             i++;
         } else if (args[i] === '--playlist' && i + 1 < args.length) {
             options.playlistId = args[i + 1];
@@ -790,11 +801,11 @@ Examples:
     return options;
 }
 
-// Main execution
+
 (async () => {
     try {
         const options = parseArgs();
-        options.debug = true; // Always enable debug for troubleshooting
+        options.debug = true; 
         await scrapeYouTube(options);
     } catch (error) {
         console.error('Scraping failed:', error);

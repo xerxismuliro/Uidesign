@@ -1,6 +1,21 @@
+/*
+   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  
+  Usage Guidelines:
+  - Maintain the CSS variable structure for theming
+  - Mobile-first approach for all responsive styling
+  - Class names follow BEM methodology
+  - For questions or contributions, contact isaac.muliro@purchase.edu
+  - Last updated: 2025-05-06
+*/
+
+
+
+
+
 
 :root {
-  /* Light theme (default) - more intuitive color palette */
+  
   --bg-color: #f8f9fa;
   --text-color: #343a40;
   --header-bg: #e9ecef;
@@ -16,7 +31,7 @@
   --scrollbar-track: #f1f3f5;
 }
 
-/* Dark theme variables applied via JS */
+
 body.dark-theme {
   --bg-color: #1a1b1e;
   --text-color: #e9ecef;
@@ -41,7 +56,7 @@ body.dark-theme {
 
 html, body {
   height: 100%;
-  overflow: hidden; /* Prevent body from scrolling */
+  overflow: hidden; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,7 +68,7 @@ body {
   font-size: 14px;
 }
 
-/* Container layout */
+
 .container {
   display: grid;
   grid-template-areas:
@@ -65,11 +80,11 @@ body {
   height: 100vh;
   gap: 0.1rem;
   padding: 0.5rem;
-  max-height: 100vh; /* Ensure container doesn't exceed viewport height */
-  overflow: hidden; /* Prevent container from scrolling */
+  max-height: 100vh; 
+  overflow: hidden; 
 }
 
-/* Custom scrollbar styling */
+
 .scrollable::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -88,8 +103,8 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   overflow-y: auto;
-  height: 100%; /* Ensure full height of parent */
-  max-height: 100%; /* Ensure doesn't exceed parent */
+  height: 100%; 
+  max-height: 100%; 
 }
 
 header {
@@ -111,14 +126,14 @@ header {
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent sidebar from scrolling */
-  max-height: calc(100vh - 100px); /* Account for header, footer, and gaps */
+  overflow: hidden; 
+  max-height: calc(100vh - 100px); 
 }
 
-/* Important: Make sure the sidebar content is contained in the scrollable div */
+
 .sidebar h2 {
   margin-bottom: 1rem;
-  flex-shrink: 0; /* Prevent header from shrinking */
+  flex-shrink: 0; 
 }
 
 .sidebar .scrollable {
@@ -137,14 +152,14 @@ header {
 
 main {
   grid-area: main;
-  /* padding: 0.5rem; */
+  
   padding: 0rem 0.5rem;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent main from scrolling */
-  max-height: calc(100vh - 100px); /* Account for header, footer, and gaps */
+  overflow: hidden; 
+  max-height: calc(100vh - 100px); 
 }
 
 main .scrollable {
@@ -161,8 +176,8 @@ footer {
   border-radius: 4px;
   box-shadow: var(--box-shadow);
   z-index: 10;
-  min-height: 30px; /* Set a minimum height */
-  max-height: 30px; /* Set a maximum height */
+  min-height: 30px; 
+  max-height: 30px; 
 }
 
 h1,h2{
@@ -172,7 +187,7 @@ h1,h2{
 
  h3,h4{
   margin-bottom: 0.5rem;
-  /* color: var(--accent-color); */
+  
 }
 
 .section {
@@ -316,20 +331,20 @@ body.dark-theme .error {
   background-color: rgba(224, 49, 49, 0.1);
 }
 
-/* Make sure Chrome-based browsers respect the overflow settings */
+
 .sidebar, main {
   contain: content;
 }
 
 
 
-/* Chromatic Number Analysis Styles  only for the chromatic.js*/
+
 .analysis-step {
   margin-bottom: 30px;
   padding: 0px;
-  /* border: 1px solid var(--border-color); */
+  
   border-radius: 5px;
-  /* background-color: var(--sidebar-bg); */
+  
   box-shadow: var(--box-shadow);
 }
 
@@ -643,7 +658,7 @@ body.dark-theme .error {
 
 
 
-/* Search highlighting styles */
+
 .search-highlight {
   background-color: rgba(255, 255, 0, 0.4);
   padding: 2px 0;
@@ -700,7 +715,7 @@ body.dark-theme .error {
   font-size: 12px;
   margin: 0 5px;
 }
-/* Make sure the search container has proper positioning for the results count */
+
 .search-container {
   position: relative;
 }
@@ -716,7 +731,7 @@ body.dark-theme .error {
 
 
 
-/* Hide theme-text on small screens */
+
 @media (max-width: 600px) {
   #theme-text {
     display: none;
@@ -727,10 +742,10 @@ body.dark-theme .error {
 
 
 
-/* Responsive design for mobile */
+
 @media screen and (max-width: 768px) {
   html, body {
-    overflow: auto; /* Allow scrolling on mobile */
+    overflow: auto; 
     height: auto;
   }
   

@@ -1,2733 +1,2742 @@
 /**
- * Purchase College Fallback Links
- * 
- * This file contains embedded links from Purchase.edu to be used when
- * the JSON loading process fails. Separating these links into their
- * own file improves maintainability and code organization.
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
  */
 
-// Define fallback links in the global scope so they can be accessed by purchasedu.js
+
+
+
+
+
+
+
 var fallbackPurchaseLinks = [
     {
-      "url": "https://www.purchase.edu/",
+      "url": "https:
       "text": "Welcome to Purchase College",
       "parent": null,
       "parentText": null,
       "children": [
         {
-          "url": "https://www.purchase.edu",
+          "url": "https:
           "text": "Welcome to Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about",
+          "url": "https:
           "text": "About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics",
+          "url": "https:
           "text": "Academics • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions",
+          "url": "https:
           "text": "Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/campus-life",
+          "url": "https:
           "text": "Campus Life • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting",
+          "url": "https:
           "text": "Acting • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology",
+          "url": "https:
           "text": "Anthropology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history",
+          "url": "https:
           "text": "Art History • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma",
+          "url": "https:
           "text": "Art History (MA) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/foundations",
+          "url": "https:
           "text": "Foundations Program • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management",
+          "url": "https:
           "text": "Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+          "url": "https:
           "text": "Music Industry Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+          "url": "https:
           "text": "Performing Arts Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts/open-access",
+          "url": "https:
           "text": "Arts Open Access • School of the Arts • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/asian-studies",
+          "url": "https:
           "text": "Asian Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry",
+          "url": "https:
           "text": "Biochemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology",
+          "url": "https:
           "text": "Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+          "url": "https:
           "text": "Concentrations • Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry",
+          "url": "https:
           "text": "Chemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese",
+          "url": "https:
           "text": "Chinese • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies",
+          "url": "https:
           "text": "Cinema and Television Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+          "url": "https:
           "text": "College and Expository Writing Program • School of Humanities • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications",
+          "url": "https:
           "text": "Communications • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition",
+          "url": "https:
           "text": "Composition (Classical) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/contemplative-studies",
+          "url": "https:
           "text": "Contemplative Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing",
+          "url": "https:
           "text": "Creative Writing • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance",
+          "url": "https:
           "text": "Dance Performance • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/ballet-concentration",
+          "url": "https:
           "text": "Dance Performance: Ballet"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/composition-concentration",
+          "url": "https:
           "text": "Dance Performance: Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/production-concentration",
+          "url": "https:
           "text": "Dance Performance: Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology/certificate-in-early-childhood-development",
+          "url": "https:
           "text": "Early Childhood Development"
         },
         {
-          "url": "https://www.purchase.edu/academics/economics",
+          "url": "https:
           "text": "Economics"
         },
         {
-          "url": "https://www.purchase.edu/academics/education-studies",
+          "url": "https:
           "text": "Education Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/english-and-global-literatures",
+          "url": "https:
           "text": "English and Global Literatures"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/environmental-studies",
+          "url": "https:
           "text": "Environmental Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/film",
+          "url": "https:
           "text": "Film"
         },
         {
-          "url": "https://www.purchase.edu/academics/film-video-production",
+          "url": "https:
           "text": "Film/Video Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/french",
+          "url": "https:
           "text": "French"
         },
         {
-          "url": "https://www.purchase.edu/academics/gender-studies",
+          "url": "https:
           "text": "Gender Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/general-studies",
+          "url": "https:
           "text": "General Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-black-studies",
+          "url": "https:
           "text": "Global Black Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-studies",
+          "url": "https:
           "text": "Global Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design",
+          "url": "https:
           "text": "Graphic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design/requirements/illustration",
+          "url": "https:
           "text": "Graphic Design: Illustration"
         },
         {
-          "url": "https://www.purchase.edu/academics/history",
+          "url": "https:
           "text": "History"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance",
+          "url": "https:
           "text": "Instrumental Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/brass",
+          "url": "https:
           "text": "Instrumental Performance: Brass"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/classical-guitar",
+          "url": "https:
           "text": "Instrumental Performance: Classical Guitar"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/harp",
+          "url": "https:
           "text": "Instrumental Performance: Harp"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/percussion",
+          "url": "https:
           "text": "Instrumental Performance: Percussion"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/piano",
+          "url": "https:
           "text": "Instrumental Performance: Piano"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/strings",
+          "url": "https:
           "text": "Instrumental Performance: Strings"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/woodwinds",
+          "url": "https:
           "text": "Instrumental Performance: Woodwinds"
         },
         {
-          "url": "https://www.purchase.edu/academics/italian",
+          "url": "https:
           "text": "Italian"
         },
         {
-          "url": "https://www.purchase.edu/academics/jazz-studies",
+          "url": "https:
           "text": "Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/jewish-studies",
+          "url": "https:
           "text": "Jewish Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/journalism",
+          "url": "https:
           "text": "Journalism"
         },
         {
-          "url": "https://www.purchase.edu/academics/language-and-culture",
+          "url": "https:
           "text": "Language and Culture"
         },
         {
-          "url": "https://www.purchase.edu/academics/latin-american-caribbean-and-latinx-studies",
+          "url": "https:
           "text": "Latin American, Caribbean, and Latinx Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/law-and-justice-studies",
+          "url": "https:
           "text": "Law and Justice Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/liberal-arts",
+          "url": "https:
           "text": "Liberal Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/linguistics",
+          "url": "https:
           "text": "Linguistics"
         },
         {
-          "url": "https://www.purchase.edu/academics/mathematics-computer-science",
+          "url": "https:
           "text": "Mathematics/Computer Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/media-studies",
+          "url": "https:
           "text": "Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/museum-studies",
+          "url": "https:
           "text": "Museum Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/music-minor",
+          "url": "https:
           "text": "Music Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/new-media",
+          "url": "https:
           "text": "New Media"
         },
         {
-          "url": "https://www.purchase.edu/academics/painting-and-drawing",
+          "url": "https:
           "text": "Painting and Drawing"
         },
         {
-          "url": "https://www.purchase.edu/academics/philosophy-and-critical-thought",
+          "url": "https:
           "text": "Philosophy and Critical Thought"
         },
         {
-          "url": "https://www.purchase.edu/academics/photography",
+          "url": "https:
           "text": "Photography"
         },
         {
-          "url": "https://www.purchase.edu/academics/playwriting-and-screenwriting",
+          "url": "https:
           "text": "Playwriting"
         },
         {
-          "url": "https://www.purchase.edu/academics/political-science",
+          "url": "https:
           "text": "Political Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/printmaking",
+          "url": "https:
           "text": "Printmaking"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology",
+          "url": "https:
           "text": "Psychology"
         },
         {
-          "url": "https://www.purchase.edu/academics/sculpture",
+          "url": "https:
           "text": "Sculpture"
         },
         {
-          "url": "https://www.purchase.edu/academics/sociology",
+          "url": "https:
           "text": "Sociology"
         },
         {
-          "url": "https://www.purchase.edu/academics/spanish",
+          "url": "https:
           "text": "Spanish"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-composition",
+          "url": "https:
           "text": "Studio Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-production",
+          "url": "https:
           "text": "Studio Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/television-theory-and-practice",
+          "url": "https:
           "text": "Television Theory and Practice"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-and-performance",
+          "url": "https:
           "text": "Theatre and Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-technology",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/lighting-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Lighting Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/scenic-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Scenic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/sound-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Sound Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/stage-management",
+          "url": "https:
           "text": "Theatre Design/Technology: Stage Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/technical-direction",
+          "url": "https:
           "text": "Theatre Design/Technology: Technical Direction"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences/undeclared",
+          "url": "https:
           "text": "Undeclared"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts",
+          "url": "https:
           "text": "Visual Arts (BS)"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-graduate-programs",
+          "url": "https:
           "text": "Visual Arts Graduate Programs"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-minor",
+          "url": "https:
           "text": "Visual Arts Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+          "url": "https:
           "text": "Visual Arts, Interdisciplinary (BFA)"
         },
         {
-          "url": "https://www.purchase.edu/academics/voice-and-opera-studies",
+          "url": "https:
           "text": "Voice and Opera Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/majors-and-minors",
+          "url": "https:
           "text": "Majors + Minors"
         },
         {
-          "url": "https://www.purchase.edu/admissions/virtual-tour",
+          "url": "https:
           "text": "Virtual Tour"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+          "url": "https:
           "text": "RECENT EFFORTS"
         },
         {
-          "url": "https://www.purchase.edu/live/events/67283-alumni-artisan-fair",
+          "url": "https:
           "text": "AW25: Alumni Showcase"
         },
         {
-          "url": "https://www.purchase.edu/live/events/65015-the-chamber-music-society-of-lincoln-center",
+          "url": "https:
           "text": "The Chamber Music Society of Lincoln Center"
         },
         {
-          "url": "https://www.purchase.edu/live/events/65016-momix-alice",
+          "url": "https:
           "text": "MOMIX: Alice"
         },
         {
-          "url": "https://www.purchase.edu/neuberger-museum-of-art",
+          "url": "https:
           "text": "NEUBERGER MUSEUM OF ART"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu",
+      "url": "https:
       "text": "Welcome to Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/about",
+          "url": "https:
           "text": "About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics",
+          "url": "https:
           "text": "Academics • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions",
+          "url": "https:
           "text": "Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/campus-life",
+          "url": "https:
           "text": "Campus Life • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting",
+          "url": "https:
           "text": "Acting • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology",
+          "url": "https:
           "text": "Anthropology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history",
+          "url": "https:
           "text": "Art History • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma",
+          "url": "https:
           "text": "Art History (MA) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/foundations",
+          "url": "https:
           "text": "Foundations Program • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management",
+          "url": "https:
           "text": "Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+          "url": "https:
           "text": "Music Industry Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+          "url": "https:
           "text": "Performing Arts Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts/open-access",
+          "url": "https:
           "text": "Arts Open Access • School of the Arts • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/asian-studies",
+          "url": "https:
           "text": "Asian Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry",
+          "url": "https:
           "text": "Biochemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology",
+          "url": "https:
           "text": "Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+          "url": "https:
           "text": "Concentrations • Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry",
+          "url": "https:
           "text": "Chemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese",
+          "url": "https:
           "text": "Chinese • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies",
+          "url": "https:
           "text": "Cinema and Television Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+          "url": "https:
           "text": "College and Expository Writing Program • School of Humanities • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications",
+          "url": "https:
           "text": "Communications • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition",
+          "url": "https:
           "text": "Composition (Classical) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/contemplative-studies",
+          "url": "https:
           "text": "Contemplative Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing",
+          "url": "https:
           "text": "Creative Writing • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance",
+          "url": "https:
           "text": "Dance Performance • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/ballet-concentration",
+          "url": "https:
           "text": "Dance Performance: Ballet"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/composition-concentration",
+          "url": "https:
           "text": "Dance Performance: Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/production-concentration",
+          "url": "https:
           "text": "Dance Performance: Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology/certificate-in-early-childhood-development",
+          "url": "https:
           "text": "Early Childhood Development"
         },
         {
-          "url": "https://www.purchase.edu/academics/economics",
+          "url": "https:
           "text": "Economics"
         },
         {
-          "url": "https://www.purchase.edu/academics/education-studies",
+          "url": "https:
           "text": "Education Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/english-and-global-literatures",
+          "url": "https:
           "text": "English and Global Literatures"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/environmental-studies",
+          "url": "https:
           "text": "Environmental Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/film",
+          "url": "https:
           "text": "Film"
         },
         {
-          "url": "https://www.purchase.edu/academics/film-video-production",
+          "url": "https:
           "text": "Film/Video Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/french",
+          "url": "https:
           "text": "French"
         },
         {
-          "url": "https://www.purchase.edu/academics/gender-studies",
+          "url": "https:
           "text": "Gender Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/general-studies",
+          "url": "https:
           "text": "General Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-black-studies",
+          "url": "https:
           "text": "Global Black Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-studies",
+          "url": "https:
           "text": "Global Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design",
+          "url": "https:
           "text": "Graphic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design/requirements/illustration",
+          "url": "https:
           "text": "Graphic Design: Illustration"
         },
         {
-          "url": "https://www.purchase.edu/academics/history",
+          "url": "https:
           "text": "History"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance",
+          "url": "https:
           "text": "Instrumental Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/brass",
+          "url": "https:
           "text": "Instrumental Performance: Brass"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/classical-guitar",
+          "url": "https:
           "text": "Instrumental Performance: Classical Guitar"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/harp",
+          "url": "https:
           "text": "Instrumental Performance: Harp"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/percussion",
+          "url": "https:
           "text": "Instrumental Performance: Percussion"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/piano",
+          "url": "https:
           "text": "Instrumental Performance: Piano"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/strings",
+          "url": "https:
           "text": "Instrumental Performance: Strings"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/woodwinds",
+          "url": "https:
           "text": "Instrumental Performance: Woodwinds"
         },
         {
-          "url": "https://www.purchase.edu/academics/italian",
+          "url": "https:
           "text": "Italian"
         },
         {
-          "url": "https://www.purchase.edu/academics/jazz-studies",
+          "url": "https:
           "text": "Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/jewish-studies",
+          "url": "https:
           "text": "Jewish Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/journalism",
+          "url": "https:
           "text": "Journalism"
         },
         {
-          "url": "https://www.purchase.edu/academics/language-and-culture",
+          "url": "https:
           "text": "Language and Culture"
         },
         {
-          "url": "https://www.purchase.edu/academics/latin-american-caribbean-and-latinx-studies",
+          "url": "https:
           "text": "Latin American, Caribbean, and Latinx Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/law-and-justice-studies",
+          "url": "https:
           "text": "Law and Justice Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/liberal-arts",
+          "url": "https:
           "text": "Liberal Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/linguistics",
+          "url": "https:
           "text": "Linguistics"
         },
         {
-          "url": "https://www.purchase.edu/academics/mathematics-computer-science",
+          "url": "https:
           "text": "Mathematics/Computer Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/media-studies",
+          "url": "https:
           "text": "Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/museum-studies",
+          "url": "https:
           "text": "Museum Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/music-minor",
+          "url": "https:
           "text": "Music Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/new-media",
+          "url": "https:
           "text": "New Media"
         },
         {
-          "url": "https://www.purchase.edu/academics/painting-and-drawing",
+          "url": "https:
           "text": "Painting and Drawing"
         },
         {
-          "url": "https://www.purchase.edu/academics/philosophy-and-critical-thought",
+          "url": "https:
           "text": "Philosophy and Critical Thought"
         },
         {
-          "url": "https://www.purchase.edu/academics/photography",
+          "url": "https:
           "text": "Photography"
         },
         {
-          "url": "https://www.purchase.edu/academics/playwriting-and-screenwriting",
+          "url": "https:
           "text": "Playwriting"
         },
         {
-          "url": "https://www.purchase.edu/academics/political-science",
+          "url": "https:
           "text": "Political Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/printmaking",
+          "url": "https:
           "text": "Printmaking"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology",
+          "url": "https:
           "text": "Psychology"
         },
         {
-          "url": "https://www.purchase.edu/academics/sculpture",
+          "url": "https:
           "text": "Sculpture"
         },
         {
-          "url": "https://www.purchase.edu/academics/sociology",
+          "url": "https:
           "text": "Sociology"
         },
         {
-          "url": "https://www.purchase.edu/academics/spanish",
+          "url": "https:
           "text": "Spanish"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-composition",
+          "url": "https:
           "text": "Studio Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-production",
+          "url": "https:
           "text": "Studio Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/television-theory-and-practice",
+          "url": "https:
           "text": "Television Theory and Practice"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-and-performance",
+          "url": "https:
           "text": "Theatre and Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-technology",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/lighting-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Lighting Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/scenic-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Scenic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/sound-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Sound Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/stage-management",
+          "url": "https:
           "text": "Theatre Design/Technology: Stage Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/technical-direction",
+          "url": "https:
           "text": "Theatre Design/Technology: Technical Direction"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences/undeclared",
+          "url": "https:
           "text": "Undeclared"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts",
+          "url": "https:
           "text": "Visual Arts (BS)"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-graduate-programs",
+          "url": "https:
           "text": "Visual Arts Graduate Programs"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-minor",
+          "url": "https:
           "text": "Visual Arts Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+          "url": "https:
           "text": "Visual Arts, Interdisciplinary (BFA)"
         },
         {
-          "url": "https://www.purchase.edu/academics/voice-and-opera-studies",
+          "url": "https:
           "text": "Voice and Opera Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/majors-and-minors",
+          "url": "https:
           "text": "Majors + Minors"
         },
         {
-          "url": "https://www.purchase.edu/admissions/virtual-tour",
+          "url": "https:
           "text": "Virtual Tour"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+          "url": "https:
           "text": "RECENT EFFORTS"
         },
         {
-          "url": "https://www.purchase.edu/live/events/67283-alumni-artisan-fair",
+          "url": "https:
           "text": "AW25: Alumni Showcase"
         },
         {
-          "url": "https://www.purchase.edu/live/events/65015-the-chamber-music-society-of-lincoln-center",
+          "url": "https:
           "text": "The Chamber Music Society of Lincoln Center"
         },
         {
-          "url": "https://www.purchase.edu/live/events/65016-momix-alice",
+          "url": "https:
           "text": "MOMIX: Alice"
         },
         {
-          "url": "https://www.purchase.edu/neuberger-museum-of-art",
+          "url": "https:
           "text": "NEUBERGER MUSEUM OF ART"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/about",
+      "url": "https:
       "text": "About • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics",
+          "url": "https:
           "text": "Academics • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions",
+          "url": "https:
           "text": "Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/campus-life",
+          "url": "https:
           "text": "Campus Life • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/facts-and-stats",
+          "url": "https:
           "text": "Facts and Stats"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus",
+          "url": "https:
           "text": "Our Campus"
         },
         {
-          "url": "https://www.purchase.edu/about/alumni-outcomes",
+          "url": "https:
           "text": "Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/about/presidents-welcome",
+          "url": "https:
           "text": "President’s Welcome"
         },
         {
-          "url": "https://www.purchase.edu/about/diversity-and-compliance",
+          "url": "https:
           "text": "Diversity and Compliance"
         },
         {
-          "url": "https://www.purchase.edu/about/institutional-learning-outcomes",
+          "url": "https:
           "text": "Institutional Learning Outcomes"
         },
         {
-          "url": "https://www.purchase.edu/about/accreditation",
+          "url": "https:
           "text": "Accreditation"
         },
         {
-          "url": "https://www.purchase.edu/about/the-strategic-plan",
+          "url": "https:
           "text": "The Purchase College Strategic Plan"
         },
         {
-          "url": "https://www.purchase.edu/offices/sustainability",
+          "url": "https:
           "text": "sustainable campus"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/mission-vision-values",
+          "url": "https:
           "text": "Mission, Vision, and Values"
         },
         {
-          "url": "https://www.purchase.edu/admissions/virtual-tour",
+          "url": "https:
           "text": "Virtual Tour"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit/where-to-stay-and-eat",
+          "url": "https:
           "text": "What's Nearby"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+          "url": "https:
           "text": "RECENT EFFORTS"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3407-adotei-akwei-84",
+          "url": "https:
           "text": "Adotei Akwei ’84"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6295-james-spione-85",
+          "url": "https:
           "text": "James Spione ’85"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1794-parker-posey",
+          "url": "https:
           "text": "Parker Posey"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3379-jill-bargonetti-85",
+          "url": "https:
           "text": "Jill Bargonetti ’85"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3350-kris-graves-04",
+          "url": "https:
           "text": "Kris Graves ’04"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology",
+          "url": "https:
           "text": "Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8206-latest-rankings-and-ratings",
+          "url": "https:
           "text": "Latest Rankings and Ratings"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8123-fiske-guide-to-colleges-2025-unique-within-the",
+          "url": "https:
           "text": "Fiske Guide to Colleges 2025: “Unique Within the SUNY System”"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3456-susie-essman-77",
+          "url": "https:
           "text": "Susie Essman ’77"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics",
+      "url": "https:
       "text": "Academics • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/admissions",
+          "url": "https:
           "text": "Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/campus-life",
+          "url": "https:
           "text": "Campus Life • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/majors-and-minors",
+          "url": "https:
           "text": "Majors + Minors"
         },
         {
-          "url": "https://www.purchase.edu/academics/graduate-programs",
+          "url": "https:
           "text": "Graduate Programs"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience",
+          "url": "https:
           "text": "Purchase Experience"
         },
         {
-          "url": "https://www.purchase.edu/academics/career-readiness",
+          "url": "https:
           "text": "Career Readiness"
         },
         {
-          "url": "https://www.purchase.edu/academics/faculty",
+          "url": "https:
           "text": "Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/resources-and-support",
+          "url": "https:
           "text": "Resources and Support"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance",
+          "url": "https:
           "text": "Conservatory of Dance"
         },
         {
-          "url": "https://www.purchase.edu/academics/music",
+          "url": "https:
           "text": "Conservatory of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts",
+          "url": "https:
           "text": "Conservatory of Theatre Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design",
+          "url": "https:
           "text": "School of Art+Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies",
+          "url": "https:
           "text": "School of Film and Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+          "url": "https:
           "text": "School of Liberal Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education",
+          "url": "https:
           "text": "School of Continuing Education"
         },
         {
-          "url": "https://www.purchase.edu/intergenerational-learning",
+          "url": "https:
           "text": "Intergenerational Learning"
         },
         {
-          "url": "https://www.purchase.edu/broadview",
+          "url": "https:
           "text": "Broadview"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting",
+          "url": "https:
           "text": "Acting • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology",
+          "url": "https:
           "text": "Anthropology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history",
+          "url": "https:
           "text": "Art History • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma",
+          "url": "https:
           "text": "Art History (MA) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/foundations",
+          "url": "https:
           "text": "Foundations Program • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management",
+          "url": "https:
           "text": "Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+          "url": "https:
           "text": "Music Industry Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+          "url": "https:
           "text": "Performing Arts Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts/open-access",
+          "url": "https:
           "text": "Arts Open Access • School of the Arts • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/asian-studies",
+          "url": "https:
           "text": "Asian Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry",
+          "url": "https:
           "text": "Biochemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology",
+          "url": "https:
           "text": "Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+          "url": "https:
           "text": "Concentrations • Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry",
+          "url": "https:
           "text": "Chemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese",
+          "url": "https:
           "text": "Chinese • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies",
+          "url": "https:
           "text": "Cinema and Television Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+          "url": "https:
           "text": "College and Expository Writing Program • School of Humanities • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications",
+          "url": "https:
           "text": "Communications • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition",
+          "url": "https:
           "text": "Composition (Classical) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/contemplative-studies",
+          "url": "https:
           "text": "Contemplative Studies • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing",
+          "url": "https:
           "text": "Creative Writing • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance",
+          "url": "https:
           "text": "Dance Performance • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/ballet-concentration",
+          "url": "https:
           "text": "Dance Performance: Ballet"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/composition-concentration",
+          "url": "https:
           "text": "Dance Performance: Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements/production-concentration",
+          "url": "https:
           "text": "Dance Performance: Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology/certificate-in-early-childhood-development",
+          "url": "https:
           "text": "Early Childhood Development"
         },
         {
-          "url": "https://www.purchase.edu/academics/economics",
+          "url": "https:
           "text": "Economics"
         },
         {
-          "url": "https://www.purchase.edu/academics/education-studies",
+          "url": "https:
           "text": "Education Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/english-and-global-literatures",
+          "url": "https:
           "text": "English and Global Literatures"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/environmental-studies",
+          "url": "https:
           "text": "Environmental Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/film",
+          "url": "https:
           "text": "Film"
         },
         {
-          "url": "https://www.purchase.edu/academics/film-video-production",
+          "url": "https:
           "text": "Film/Video Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/french",
+          "url": "https:
           "text": "French"
         },
         {
-          "url": "https://www.purchase.edu/academics/gender-studies",
+          "url": "https:
           "text": "Gender Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/general-studies",
+          "url": "https:
           "text": "General Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-black-studies",
+          "url": "https:
           "text": "Global Black Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/global-studies",
+          "url": "https:
           "text": "Global Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design",
+          "url": "https:
           "text": "Graphic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design/requirements/illustration",
+          "url": "https:
           "text": "Graphic Design: Illustration"
         },
         {
-          "url": "https://www.purchase.edu/academics/history",
+          "url": "https:
           "text": "History"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance",
+          "url": "https:
           "text": "Instrumental Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/brass",
+          "url": "https:
           "text": "Instrumental Performance: Brass"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/classical-guitar",
+          "url": "https:
           "text": "Instrumental Performance: Classical Guitar"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/harp",
+          "url": "https:
           "text": "Instrumental Performance: Harp"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/percussion",
+          "url": "https:
           "text": "Instrumental Performance: Percussion"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/piano",
+          "url": "https:
           "text": "Instrumental Performance: Piano"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/strings",
+          "url": "https:
           "text": "Instrumental Performance: Strings"
         },
         {
-          "url": "https://www.purchase.edu/academics/instrumental-performance/woodwinds",
+          "url": "https:
           "text": "Instrumental Performance: Woodwinds"
         },
         {
-          "url": "https://www.purchase.edu/academics/italian",
+          "url": "https:
           "text": "Italian"
         },
         {
-          "url": "https://www.purchase.edu/academics/jazz-studies",
+          "url": "https:
           "text": "Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/jewish-studies",
+          "url": "https:
           "text": "Jewish Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/journalism",
+          "url": "https:
           "text": "Journalism"
         },
         {
-          "url": "https://www.purchase.edu/academics/language-and-culture",
+          "url": "https:
           "text": "Language and Culture"
         },
         {
-          "url": "https://www.purchase.edu/academics/latin-american-caribbean-and-latinx-studies",
+          "url": "https:
           "text": "Latin American, Caribbean, and Latinx Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/law-and-justice-studies",
+          "url": "https:
           "text": "Law and Justice Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/liberal-arts",
+          "url": "https:
           "text": "Liberal Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/linguistics",
+          "url": "https:
           "text": "Linguistics"
         },
         {
-          "url": "https://www.purchase.edu/academics/mathematics-computer-science",
+          "url": "https:
           "text": "Mathematics/Computer Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/media-studies",
+          "url": "https:
           "text": "Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/museum-studies",
+          "url": "https:
           "text": "Museum Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/music-minor",
+          "url": "https:
           "text": "Music Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/new-media",
+          "url": "https:
           "text": "New Media"
         },
         {
-          "url": "https://www.purchase.edu/academics/painting-and-drawing",
+          "url": "https:
           "text": "Painting and Drawing"
         },
         {
-          "url": "https://www.purchase.edu/academics/philosophy-and-critical-thought",
+          "url": "https:
           "text": "Philosophy and Critical Thought"
         },
         {
-          "url": "https://www.purchase.edu/academics/photography",
+          "url": "https:
           "text": "Photography"
         },
         {
-          "url": "https://www.purchase.edu/academics/playwriting-and-screenwriting",
+          "url": "https:
           "text": "Playwriting"
         },
         {
-          "url": "https://www.purchase.edu/academics/political-science",
+          "url": "https:
           "text": "Political Science"
         },
         {
-          "url": "https://www.purchase.edu/academics/printmaking",
+          "url": "https:
           "text": "Printmaking"
         },
         {
-          "url": "https://www.purchase.edu/academics/psychology",
+          "url": "https:
           "text": "Psychology"
         },
         {
-          "url": "https://www.purchase.edu/academics/sculpture",
+          "url": "https:
           "text": "Sculpture"
         },
         {
-          "url": "https://www.purchase.edu/academics/sociology",
+          "url": "https:
           "text": "Sociology"
         },
         {
-          "url": "https://www.purchase.edu/academics/spanish",
+          "url": "https:
           "text": "Spanish"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-composition",
+          "url": "https:
           "text": "Studio Composition"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-production",
+          "url": "https:
           "text": "Studio Production"
         },
         {
-          "url": "https://www.purchase.edu/academics/television-theory-and-practice",
+          "url": "https:
           "text": "Television Theory and Practice"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-and-performance",
+          "url": "https:
           "text": "Theatre and Performance"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-technology",
+          "url": "https:
           "text": "Theatre Design/Technology: Costume Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/lighting-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Lighting Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/scenic-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Scenic Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/sound-design",
+          "url": "https:
           "text": "Theatre Design/Technology: Sound Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/stage-management",
+          "url": "https:
           "text": "Theatre Design/Technology: Stage Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/technical-direction",
+          "url": "https:
           "text": "Theatre Design/Technology: Technical Direction"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences/undeclared",
+          "url": "https:
           "text": "Undeclared"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts",
+          "url": "https:
           "text": "Visual Arts (BS)"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-graduate-programs",
+          "url": "https:
           "text": "Visual Arts Graduate Programs"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-minor",
+          "url": "https:
           "text": "Visual Arts Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+          "url": "https:
           "text": "Visual Arts, Interdisciplinary (BFA)"
         },
         {
-          "url": "https://www.purchase.edu/academics/voice-and-opera-studies",
+          "url": "https:
           "text": "Voice and Opera Studies"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions",
+          "url": "https:
           "text": "Summer and Winter Sessions"
         },
         {
-          "url": "https://www.purchase.edu/academics/college-catalog",
+          "url": "https:
           "text": "College Catalog"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/first-year",
+          "url": "https:
           "text": "Your First Year"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/hands-on-learning",
+          "url": "https:
           "text": "Hands-On Learning"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8280-new-cohort-of-interns-busy-in-the-field",
+          "url": "https:
           "text": "LEARN MORE"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/campus-workspaces",
+          "url": "https:
           "text": "INSIDE LOOK"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+          "url": "https:
           "text": "2025 Grammy Awards: Big Night for Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3378-adam-nagourney-77",
+          "url": "https:
           "text": "Adam Nagourney ’77"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3379-jill-bargonetti-85",
+          "url": "https:
           "text": "Jill Bargonetti ’85"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3377-latrice-walker-01",
+          "url": "https:
           "text": "Latrice M. Walker ’01"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3383-erin-sullivan-12",
+          "url": "https:
           "text": "Erin Sullivan ’12"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3385-janette-yarwood-96",
+          "url": "https:
           "text": "Janette Yarwood ’96"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+          "url": "https:
           "text": "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+          "url": "https:
           "text": "Math & Comp Sci Club Visits IBM Research"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/admissions",
+      "url": "https:
       "text": "Admissions • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/campus-life",
+          "url": "https:
           "text": "Campus Life • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/admissions/tuition-and-aid",
+          "url": "https:
           "text": "Tuition and Aid"
         },
         {
-          "url": "https://www.purchase.edu/admissions/accepted-students",
+          "url": "https:
           "text": "Accepted Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/first-year",
+          "url": "https:
           "text": "First Year"
         },
         {
-          "url": "https://www.purchase.edu/admissions/transfers",
+          "url": "https:
           "text": "Transfers"
         },
         {
-          "url": "https://www.purchase.edu/admissions/international-students",
+          "url": "https:
           "text": "International Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/graduate-students",
+          "url": "https:
           "text": "Graduate Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/parents",
+          "url": "https:
           "text": "Parents"
         },
         {
-          "url": "https://www.purchase.edu/admissions/high-school-counselors",
+          "url": "https:
           "text": "High School Counselors"
         },
         {
-          "url": "https://www.purchase.edu/majors-explorer",
+          "url": "https:
           "text": "Explore Majors"
         },
         {
-          "url": "https://www.purchase.edu/admissions/virtual-tour",
+          "url": "https:
           "text": "Virtual Tour"
         },
         {
-          "url": "https://www.purchase.edu/admissions/why-purchase",
+          "url": "https:
           "text": "Why Purchase?"
         },
         {
-          "url": "https://www.purchase.edu/admissions/our-team",
+          "url": "https:
           "text": "Contact Our Team"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/acting",
+          "url": "https:
           "text": "Acting BFA"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/art-and-design",
+          "url": "https:
           "text": "Art+Design BFA / BS"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/creative-writing",
+          "url": "https:
           "text": "Creative Writing BA"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/dance",
+          "url": "https:
           "text": "Dance BFA"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/music",
+          "url": "https:
           "text": "Music MusB"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology BFA"
         },
         {
-          "url": "https://www.purchase.edu/live/events/70229-visual-and-performing-arts-information-session-amp",
+          "url": "https:
           "text": "Visual and Performing Arts Information Session & Tour"
         },
         {
-          "url": "https://www.purchase.edu/live/events/71547-25-open-house",
+          "url": "https:
           "text": "25 - Open House"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center/ace-purchase",
+          "url": "https:
           "text": "ACE | Purchase"
         },
         {
-          "url": "https://www.purchase.edu/offices/disability-resources/cornerstone-connect",
+          "url": "https:
           "text": "Cornerstone Connect"
         },
         {
-          "url": "https://www.purchase.edu/admissions/eop-admissions",
+          "url": "https:
           "text": "Educational Opportunity Program"
         },
         {
-          "url": "https://www.purchase.edu/offices/global-education/global-scholars-program",
+          "url": "https:
           "text": "Global Scholars"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3447-claribel-ortega-10",
+          "url": "https:
           "text": "Claribel Ortega ’10"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+          "url": "https:
           "text": "Math & Comp Sci Club Visits IBM Research"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+          "url": "https:
           "text": "2025 Grammy Awards: Big Night for Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7625-sara-richter-24",
+          "url": "https:
           "text": "Sara Richter ’24"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5725-sean-kaufman-22",
+          "url": "https:
           "text": "Sean Kaufman ’22"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5619-samara-joy-21",
+          "url": "https:
           "text": "Samara Joy ’21"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6782-pavani-srinivasan-11",
+          "url": "https:
           "text": "Pavani Srinivasan ’11"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/campus-life",
+      "url": "https:
       "text": "Campus Life • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/give-to-purchase",
+          "url": "https:
           "text": "Give to Purchase • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/clubs-organizations",
+          "url": "https:
           "text": "Clubs and Organizations"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/student-activities",
+          "url": "https:
           "text": "Student Activities"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/athletics",
+          "url": "https:
           "text": "Athletics"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/housing",
+          "url": "https:
           "text": "Housing"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/dining",
+          "url": "https:
           "text": "Dining"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/transportation-and-amenities",
+          "url": "https:
           "text": "Transportation and Amenities"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/health-and-wellness",
+          "url": "https:
           "text": "Health and Wellness"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/safety-and-security",
+          "url": "https:
           "text": "Safety and Security"
         },
         {
-          "url": "https://www.purchase.edu/offices/living-on-campus",
+          "url": "https:
           "text": "Living on Campus"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-involvement",
+          "url": "https:
           "text": "Student Involvement"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5619-samara-joy-21",
+          "url": "https:
           "text": "Samara Joy ’21"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8275-the-stood",
+          "url": "https:
           "text": "SEE INSIDE"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5729-shayan-sobhian-17",
+          "url": "https:
           "text": "Shayan Sobhian ’17"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7259-veronica-ryzio-21",
+          "url": "https:
           "text": "Veronica Ryzio ’21"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5146-mitski-miyawaki-13",
+          "url": "https:
           "text": "Mitski Miyawaki ’13"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+          "url": "https:
           "text": "Math & Comp Sci Club Visits IBM Research"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8598-little-monsters-show-up-for-lady-gaga-night",
+          "url": "https:
           "text": "Little Monsters Show Up for Lady Gaga Night"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8576-notable-authors-in-conversation",
+          "url": "https:
           "text": "Notable Authors in Conversation"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase",
+      "url": "https:
       "text": "Give to Purchase • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/calendar",
+          "url": "https:
           "text": "Calendar • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/scholarships-inspire-confidence",
+          "url": "https:
           "text": "Scholarships Inspire Confidence"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/what-to-support",
+          "url": "https:
           "text": "Priorities: What To Support"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/ways-to-give",
+          "url": "https:
           "text": "Ways to Give"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/impact-of-your-gift",
+          "url": "https:
           "text": "Impact Stories"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/purchase-college-foundation",
+          "url": "https:
           "text": "Purchase College Foundation"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/our-team",
+          "url": "https:
           "text": "Our Team"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/victors-story",
+          "url": "https:
           "text": "Victor"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/davids-story",
+          "url": "https:
           "text": "David"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/tims-story",
+          "url": "https:
           "text": "Tim"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/harleys-story",
+          "url": "https:
           "text": "Harley"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/christians-story",
+          "url": "https:
           "text": "Christian"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/veronicas-story",
+          "url": "https:
           "text": "Veronica"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/jakobs-story",
+          "url": "https:
           "text": "Jakob"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/lilys-story",
+          "url": "https:
           "text": "Lily"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8622-meet-the-filmmakers",
+          "url": "https:
           "text": "Meet the Filmmakers"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/calendar",
+      "url": "https:
       "text": "Calendar • News • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/current-students",
+          "url": "https:
           "text": "Current Students • Portals • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/current-students",
+      "url": "https:
       "text": "Current Students • Portals • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8543-suny-sexual-violence-prevention-svp-survey",
+          "url": "https:
           "text": "8543-suny-sexual-violence-prevention-svp-survey"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8442-guide-to-campus-resources",
+          "url": "https:
           "text": "8442-guide-to-campus-resources"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5452-purchase-college-joins-uns-university-global",
+          "url": "https:
           "text": "UN Sustainability Goals Logo (Color swatches in a circle)"
         },
         {
-          "url": "https://www.purchase.edu/live/events/66385-melt-method-intramurals-from-athletics-department",
+          "url": "https:
           "text": "foam rollers and balls on a yoga matt"
         },
         {
-          "url": "https://www.purchase.edu/live/events/71956-creating-unique-career-pathways-in-the-arts",
+          "url": "https:
           "text": "71956-creating-unique-career-pathways-in-the-arts"
         },
         {
-          "url": "https://www.purchase.edu/live/events/71821-westchester-medical-center-health-network",
+          "url": "https:
           "text": "71821-westchester-medical-center-health-network"
         },
         {
-          "url": "https://www.purchase.edu/live/events/70736-slow-flow-yoga",
+          "url": "https:
           "text": "Picture of yoga matts and light candles on the floor with screens behind it in a warmly lit  Harbor Center room."
         },
         {
-          "url": "https://www.purchase.edu/live/events/71796-pride-trivia",
+          "url": "https:
           "text": "71796-pride-trivia"
         },
         {
-          "url": "https://www.purchase.edu/current-students/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%2520Events%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522exclude_tag%2522%253EPSGA%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E5%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EPortals%253C%252Farg%253E%253Carg%2520id%253D%2522tag%2522%253Efor%2520students%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522format%2522%2520encoded%253D%2522true%2522%253EVYxNCsIwEIWvEiJ0G5WsdMwp3MtghjbQRukMpZDm7k6DLlw93t9XIgpVAzEt5jki883SQllsMCVN2FOFwf8aSTKSDaVpBTf48PeUNGkNLPMr9%252BGu7gLu64DfmBXKgrM89mUt3WE9H0%252F%252BulGOLdoU2nbgFKvwJh8%253D%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E240%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E173%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 5 more..."
         },
         {
-          "url": "https://www.purchase.edu/current-students/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%2520Events%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522exclude_tag%2522%253EPSGA%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E5%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EPortals%253C%252Farg%253E%253Carg%2520id%253D%2522tag%2522%253Efor%2520students%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522format%2522%2520encoded%253D%2522true%2522%253EVYxNCsIwEIWvEiJ0G5WsdMwp3MtghjbQRukMpZDm7k6DLlw93t9XIgpVAzEt5jki883SQllsMCVN2FOFwf8aSTKSDaVpBTf48PeUNGkNLPMr9%252BGu7gLu64DfmBXKgrM89mUt3WE9H0%252F%252BulGOLdoU2nbgFKvwJh8%253D%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E240%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E173%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "12 total"
         },
         {
-          "url": "https://www.purchase.edu/live/galleries/596-club-fair-spring-2024",
+          "url": "https:
           "text": "VIEW FULL GALLERY"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+          "url": "https:
           "text": "Academic Calendar"
         },
         {
-          "url": "https://apps.purchase.edu/passwordreset/default.aspx",
+          "url": "https:
           "text": "Account Activation / Password Reset"
         },
         {
-          "url": "https://brightspace.purchase.edu",
+          "url": "https:
           "text": "Brightspace"
         },
         {
-          "url": "https://www.purchase.edu/covid-19-updates-and-plans",
+          "url": "https:
           "text": "COVID-19 Updates"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2551-cts-video-chat-tech-support",
+          "url": "https:
           "text": "CTS Video Chat Tech Support Helpdesk"
         },
         {
-          "url": "https://moodle.purchase.edu",
+          "url": "https:
           "text": "Moodle"
         },
         {
-          "url": "https://ssb.purchase.edu/ssomanager/c/SSB",
+          "url": "https:
           "text": "MyHeliotrope"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/find-jobs-and-internships/purchase-jobscore",
+          "url": "https:
           "text": "Purchase JobScore"
         },
         {
-          "url": "https://apps.purchase.edu/spsubmit",
+          "url": "https:
           "text": "Student Project Portal"
         },
         {
-          "url": "https://apps.purchase.edu/workstudy/Home.aspx",
+          "url": "https:
           "text": "Work Study Online"
         },
         {
-          "url": "https://www.purchase.edu/offices/health-services/policies",
+          "url": "https:
           "text": "Health Forms"
         },
         {
-          "url": "https://www.purchase.edu/admissions/accepted-students",
+          "url": "https:
           "text": "Accepted Students"
         },
         {
-          "url": "https://www.purchase.edu/offices/orientation",
+          "url": "https:
           "text": "Orientation"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center",
+          "url": "https:
           "text": "Advising Center"
         },
         {
-          "url": "https://www.purchase.edu/offices/learning-center",
+          "url": "https:
           "text": "Learning Center"
         },
         {
-          "url": "https://www.purchase.edu/offices/disability-resources",
+          "url": "https:
           "text": "Office of Disability Resources"
         },
         {
-          "url": "https://www.purchase.edu/counseling-and-behavioral-health-services",
+          "url": "https:
           "text": "Counseling and Behavioral Health Services"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/financial-literacy",
+          "url": "https:
           "text": "Financial Literacy"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/graduate-on-time/eight-semester-graduation-plans",
+          "url": "https:
           "text": "Eight-Semester Graduation Plans"
         },
         {
-          "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+          "url": "https:
           "text": "Course Search"
         },
         {
-          "url": "https://portfolios.purchase.edu",
+          "url": "https:
           "text": "E-Portfolios"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/final-exam-schedule",
+          "url": "https:
           "text": "Final Exam Schedule"
         },
         {
-          "url": "https://survey.purchase.edu/LoginActiveDirectory.aspx?SurveyID=82KKn53",
+          "url": "https:
           "text": "FERPA Training"
         },
         {
-          "url": "https://www.purchase.edu/offices/parking-and-transportation/buses",
+          "url": "https:
           "text": "Bus Service"
         },
         {
-          "url": "https://apps.purchase.edu/wot",
+          "url": "https:
           "text": "CTS/FMG Work Orders and Equipment Loans"
         },
         {
-          "url": "https://www.purchase.edu/college-policies",
+          "url": "https:
           "text": "College Policies"
         },
         {
-          "url": "https://www.purchase.edu/offices/parking-and-transportation/parking",
+          "url": "https:
           "text": "Parking and Parking Tickets"
         },
         {
-          "url": "https://survey.purchase.edu",
+          "url": "https:
           "text": "Surveys"
         },
         {
-          "url": "https://www.purchase.edu/offices/more-card/dining-dollars",
+          "url": "https:
           "text": "Dining Dollars"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/resolving-myheliotrope-login-issues",
+          "url": "https:
           "text": "Visit the CTS help page for info"
         },
         {
@@ -2737,385 +2746,385 @@ var fallbackPurchaseLinks = [
       ]
     },
     {
-      "url": "https://www.purchase.edu/faculty-and-staff",
+      "url": "https:
       "text": "Faculty and Staff • News • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/parents",
+          "url": "https:
           "text": "Parents and Families • Parents and Families • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/passwordreset/default.aspx",
+          "url": "https:
           "text": "Account Activation / Password Reset"
         },
         {
-          "url": "https://banner.purchase.edu:10000/applicationNavigator",
+          "url": "https:
           "text": "Banner Administrator"
         },
         {
-          "url": "https://apps.purchase.edu/Restricted/BCS",
+          "url": "https:
           "text": "Broadcast Email (BEM)"
         },
         {
-          "url": "https://www.purchase.edu/offices/parking-and-transportation/buses",
+          "url": "https:
           "text": "Bus Service"
         },
         {
-          "url": "https://www.purchase.edu/covid-19-updates-and-plans",
+          "url": "https:
           "text": "COVID-19 Updates"
         },
         {
-          "url": "https://apps.purchase.edu/PersonalInfo/EmergencyContact",
+          "url": "https:
           "text": "Emergency Alerts Sign-up"
         },
         {
-          "url": "https://apps.purchase.edu/PETS",
+          "url": "https:
           "text": "Purchase Event Tracking (PETS)"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/find-jobs-and-internships/purchase-jobscore",
+          "url": "https:
           "text": "Purchase JobScore"
         },
         {
-          "url": "https://www.purchase.edu/shared-governance",
+          "url": "https:
           "text": "Shared Governance"
         },
         {
-          "url": "https://admission.purchase.edu/manage",
+          "url": "https:
           "text": "Slate"
         },
         {
-          "url": "https://survey.purchase.edu",
+          "url": "https:
           "text": "Surveys"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/employee-training",
+          "url": "https:
           "text": "Training"
         },
         {
-          "url": "https://apps.purchase.edu/WOT",
+          "url": "https:
           "text": "Work Orders"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management/care-team",
+          "url": "https:
           "text": "Community Assessment, Response and Education (CARE) Team"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-success/student-support-and-outreach",
+          "url": "https:
           "text": "Student Support and Outreach (Starfish)"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+          "url": "https:
           "text": "Academic Calendar"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center/advising-support",
+          "url": "https:
           "text": "Advising Support"
         },
         {
-          "url": "https://brightspace.purchase.edu",
+          "url": "https:
           "text": "Brightspace"
         },
         {
-          "url": "https://www.purchase.edu/faculty-handbook/enrollment-services/course-scheduling",
+          "url": "https:
           "text": "Course Scheduling"
         },
         {
-          "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+          "url": "https:
           "text": "Course Search"
         },
         {
-          "url": "https://portfolios.purchase.edu",
+          "url": "https:
           "text": "E-Portfolios"
         },
         {
-          "url": "https://moodle.purchase.edu",
+          "url": "https:
           "text": "Moodle"
         },
         {
-          "url": "https://ssb.purchase.edu/ssomanager/c/SSB",
+          "url": "https:
           "text": "MyHeliotrope"
         },
         {
-          "url": "https://apps.purchase.edu/snapshot",
+          "url": "https:
           "text": "SnapShot"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center/starfish-help",
+          "url": "https:
           "text": "Starfish Help"
         },
         {
-          "url": "https://apps.purchase.edu/spsubmit",
+          "url": "https:
           "text": "Student Project Portal"
         },
         {
-          "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=82M1892K",
+          "url": "https:
           "text": "ITAC Learning Space Conditions Survey 2021"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
-          "url": "https://apps.purchase.edu/DAT/Dashboard.aspx",
+          "url": "https:
           "text": "Device Assignment Tracking (DAT)"
         },
         {
-          "url": "https://www.purchase.edu/help",
+          "url": "https:
           "text": "Website Help"
         },
         {
-          "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=920I5962",
+          "url": "https:
           "text": "COVID-19 Reporting Form"
         },
         {
-          "url": "https://apps.purchase.edu/hrets",
+          "url": "https:
           "text": "HRETS"
         },
         {
-          "url": "https://apps.purchase.edu/workstudy/Home.aspx",
+          "url": "https:
           "text": "Work Study Online"
         },
         {
-          "url": "https://www.purchase.edu/college-policies",
+          "url": "https:
           "text": "College Policies"
         },
         {
-          "url": "https://www.purchase.edu/faculty-handbook",
+          "url": "https:
           "text": "Faculty Handbook"
         },
         {
-          "url": "https://apps.purchase.edu/TBS",
+          "url": "https:
           "text": "Telephone Billing System (TBS)"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/journal-of-expository-writing",
+          "url": "https:
           "text": "Expose"
         },
         {
-          "url": "https://www.purchase.edu/academics/college-catalog",
+          "url": "https:
           "text": "College Catalog"
         },
         {
-          "url": "https://www.purchase.edu/editorial-style-guide",
+          "url": "https:
           "text": "Editorial Style Guide"
         },
         {
-          "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=725K6L7",
+          "url": "https:
           "text": "Anonymous Workplace Violence Report"
         },
         {
-          "url": "https://reports.purchase.edu",
+          "url": "https:
           "text": "Argos Reports"
         },
         {
-          "url": "https://www.purchase.edu/offices/environmental-health-and-safety",
+          "url": "https:
           "text": "Environmental Health and Safety"
         },
         {
-          "url": "https://www.purchase.edu/current-students/glossary-of-terms",
+          "url": "https:
           "text": "Glossary of Terms"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8623-lily-bruder-zal-04-cultivating-the-art-of-flower-farmin",
+          "url": "https:
           "text": "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8635-stephanie-leblanc-14-named-a-top-25-chief-content-leade",
+          "url": "https:
           "text": "Stephanie LeBlanc"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+          "url": "https:
           "text": "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks"
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522columns%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 4 more..."
         },
         {
-          "url": "https://www.purchase.edu/faculty-and-staff/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522columns%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "584 total"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/parents",
+      "url": "https:
       "text": "Parents and Families • Parents and Families • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/alumni",
+          "url": "https:
           "text": "Alumni • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/events/59012-alumni-weekend-2025",
+          "url": "https:
           "text": "Square image with a dark blue background and the text announcing the May 2-3 dates for Alumni Weekend 2025"
         },
         {
-          "url": "https://www.purchase.edu/live/events/66089-james-utter-natural-and-social-sciences-research-sympo",
+          "url": "https:
           "text": "43rd Annual James Utter Natural and Social Sciences Research Symposium"
         },
         {
-          "url": "https://www.purchase.edu/live/events/67283-alumni-showcase",
+          "url": "https:
           "text": "Square illustration with many swirled colors in the background, the Purchase College logo, and the words Alumni Showcase"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8521-lisa-eadicicco-12-lands-cnn-business-role",
+          "url": "https:
           "text": "Lisa Eadicicco '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+          "url": "https:
           "text": "2025 Grammy Awards: Big Night for Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/parents/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E3%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EParents%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 3 more..."
         },
         {
-          "url": "https://www.purchase.edu/parents/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E3%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EParents%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "95 total"
         },
         {
@@ -3123,199 +3132,199 @@ var fallbackPurchaseLinks = [
           "text": "family@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/parents/get-involved",
+          "url": "https:
           "text": "Get Involved"
         },
         {
-          "url": "https://www.purchase.edu/parents/get-involved/family-day",
+          "url": "https:
           "text": "Family Day"
         },
         {
-          "url": "https://www.purchase.edu/parents/campus-resources-guide",
+          "url": "https:
           "text": "Campus Resources Guide"
         },
         {
-          "url": "https://www.purchase.edu/parents/proxy-access",
+          "url": "https:
           "text": "Proxy Access"
         },
         {
-          "url": "https://www.purchase.edu/parents/for-all-students/glossary",
+          "url": "https:
           "text": "Glossary"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+          "url": "https:
           "text": "Academic Calendar"
         },
         {
-          "url": "https://www.purchase.edu/parents/manage-the-transition/new-student-timeline",
+          "url": "https:
           "text": "New Student Timeline"
         },
         {
-          "url": "https://www.purchase.edu/parents/manage-the-transition/support-your-new-student",
+          "url": "https:
           "text": "Support Your New Student"
         },
         {
-          "url": "https://www.purchase.edu/parents/manage-the-transition/big-differences",
+          "url": "https:
           "text": "Big Differences"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/alumni",
+      "url": "https:
       "text": "Alumni • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+          "url": "https:
           "text": "Lifelong Learning • School of Continuing Education • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/alumni/alumni-weekend-2025",
+          "url": "https:
           "text": "Alumni Weekend 2025 Postcard"
         },
         {
-          "url": "https://www.purchase.edu/alumni/alumni-weekend",
+          "url": "https:
           "text": "SCHEDULE OF EVENTS"
         },
         {
-          "url": "https://www.purchase.edu/alumni/aw25-registration-pricing",
+          "url": "https:
           "text": "REGISTER"
         },
         {
-          "url": "https://www.purchase.edu/alumni/whos-attending-alumni-weekend",
+          "url": "https:
           "text": "WHO’S ATTENDING"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit/where-to-stay-and-eat",
+          "url": "https:
           "text": "What's Nearby"
         },
         {
-          "url": "https://www.purchase.edu/calendar/event/67283-alumni-showcase",
+          "url": "https:
           "text": "Square illustration with many swirled colors in the background, the Purchase College logo, and the words Alumni Showcase"
         },
         {
-          "url": "https://www.purchase.edu/alumni/whos-exhibiting-at-the-alumni-showcase",
+          "url": "https:
           "text": "Alumni Showcase"
         },
         {
-          "url": "https://www.purchase.edu/alumni/stay-in-touch/update-your-info",
+          "url": "https:
           "text": "Update your contact information"
         },
         {
-          "url": "https://www.purchase.edu/alumni/stay-in-touch/share-your-news",
+          "url": "https:
           "text": "Share your news"
         },
         {
-          "url": "https://www.purchase.edu/alumni/alumni-association/committees",
+          "url": "https:
           "text": "Purchase College Alumni Association (PCAA) Committee"
         },
         {
-          "url": "https://www.purchase.edu/alumni/alumni-association/alumni-affinity-groups",
+          "url": "https:
           "text": "Affinity Group"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/give",
+          "url": "https:
           "text": "Make a gift"
         },
         {
-          "url": "https://www.purchase.edu/live/events/69966-stick-fly-bfa-junior-rep",
+          "url": "https:
           "text": "Stick Fly (BFA Junior Rep)"
         },
         {
-          "url": "https://www.purchase.edu/live/events/69947-the-seagull-bfa-junior-rep",
+          "url": "https:
           "text": "The Seagull (BFA Junior Rep)"
         },
         {
-          "url": "https://www.purchase.edu/alumni/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 2 more..."
         },
         {
-          "url": "https://www.purchase.edu/alumni/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "21 total"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8635-stephanie-leblanc-14-named-a-top-25-chief-content-leade",
+          "url": "https:
           "text": "Stephanie LeBlanc"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8636-alumni-association-names-2025-award-honorees",
+          "url": "https:
           "text": "Purple cloth background with 2025 Purchase Alumni Awards in gold text with gold starbursts and accents"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8623-lily-bruder-zal-04-cultivating-the-art-of-flower-farmin",
+          "url": "https:
           "text": "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+          "url": "https:
           "text": "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks"
         },
         {
-          "url": "https://www.purchase.edu/alumni/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 4 more..."
         },
         {
-          "url": "https://www.purchase.edu/alumni/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "311 total"
         },
         {
@@ -3323,327 +3332,327 @@ var fallbackPurchaseLinks = [
           "text": "alumni@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/alumni/alumni-association",
+          "url": "https:
           "text": "Alumni Association"
         },
         {
-          "url": "https://www.purchase.edu/alumni/perks-and-benefits",
+          "url": "https:
           "text": "Benefits and Perks"
         },
         {
-          "url": "https://www.purchase.edu/alumni/college-services",
+          "url": "https:
           "text": "College Services"
         },
         {
-          "url": "https://www.purchase.edu/alumni/events",
+          "url": "https:
           "text": "Events"
         },
         {
-          "url": "https://www.purchase.edu/alumni/get-involved",
+          "url": "https:
           "text": "Get Involved"
         },
         {
-          "url": "https://www.purchase.edu/alumni/stay-in-touch",
+          "url": "https:
           "text": "Stay in Touch"
         },
         {
-          "url": "https://www.purchase.edu/alumni/purchase-magazine",
+          "url": "https:
           "text": "proof Magazine"
         },
         {
-          "url": "https://www.purchase.edu/alumni/contact-us",
+          "url": "https:
           "text": "Contact Us"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "url": "https:
       "text": "Lifelong Learning • School of Continuing Education • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education",
+          "url": "https:
           "text": "School of Continuing Education"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+          "url": "https:
           "text": "Visiting Students • Office of the Registrar • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/professional-certificates",
+          "url": "https:
           "text": "Professional Certificates"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/personal-enrichment",
+          "url": "https:
           "text": "Personal Enrichment Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/personal-enrichment/undergraduate-courses-with-noncredit-seats",
+          "url": "https:
           "text": "Undergraduate Courses with Noncredit Seats"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/online-noncredit-programs-and-courses",
+          "url": "https:
           "text": "Courses and programs through online partners"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-youth-programs-in-the-arts",
+          "url": "https:
           "text": "youth"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-precollege-programs-in-the-arts",
+          "url": "https:
           "text": "precollege students"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/fallspring-courses",
+          "url": "https:
           "text": "Fall and spring courses"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1367-are-you-ahigh-school-student-interested-in-taking",
+          "url": "https:
           "text": "register for undergraduate courses"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions/summer",
+          "url": "https:
           "text": "summer"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions/winter",
+          "url": "https:
           "text": "winter"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions",
+          "url": "https:
           "text": "Summer and Winter Sessions"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+          "url": "https:
           "text": "Academic Calendar"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/registration-procedures",
+          "url": "https:
           "text": "Registration Procedures"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/senior-auditor-registration",
+          "url": "https:
           "text": "Older Adult Registration Information and Process"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1367-high-school-students-how-to-obtain-permission-to",
+          "url": "https:
           "text": "approval from Purchase College to register"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1016-full-time-and-part-time-status-and-overload",
+          "url": "https:
           "text": "Course Load and Overload"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/tuition-and-fees",
+          "url": "https:
           "text": "Tuition and Fees"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/840-academic-and-professional-integrity",
+          "url": "https:
           "text": "840-academic-and-professional-integrity"
         },
         {
-          "url": "https://www.purchase.edu/offices/community-standards/student-code-of-conduct",
+          "url": "https:
           "text": "Student Code of Conduct"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1042-satisfactory-academic-progress-standards-for",
+          "url": "https:
           "text": "Satisfactory Academic Progress"
         },
         {
-          "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+          "url": "https:
           "text": "Course Search"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education/our-staff",
+          "url": "https:
           "text": "Contact Us"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies/index.php",
+          "url": "https:
           "text": "Premedical Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/files/1580-campus-map",
+          "url": "https:
           "text": "Campus Map"
         },
         {
-          "url": "http://www.purchase.edu/offices/veterans-services",
+          "url": "http:
           "text": "Veteran’s Services"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit-campus/parking",
+          "url": "https:
           "text": "Parking"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/refund-policy",
+          "url": "https:
           "text": "Refund Policy"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/new-york-state-residency",
+          "url": "https:
           "text": "New York State Residency"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "url": "https:
       "text": "Visiting Students • Office of the Registrar • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/offices/registrar",
+          "url": "https:
           "text": "Office of the Registrar"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies",
+          "url": "https:
           "text": "Forms and Policies"
         },
         {
-          "url": "https://www.purchase.edu/about/contact-us",
+          "url": "https:
           "text": "Contact Us • About • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+          "url": "https:
           "text": "Course Search"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/tuition-and-fees",
+          "url": "https:
           "text": "Tuition and Fees"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/refund-policy",
+          "url": "https:
           "text": "Refund Policy"
         },
         {
-          "url": "https://www.purchase.edu/offices/veterans-services",
+          "url": "https:
           "text": "Veterans’ Services"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+          "url": "https:
           "text": "Academic Calendar"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/pre-med-advising",
+          "url": "https:
           "text": "Premed advising"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1367-are-you-ahigh-school-student-interested-in-taking",
+          "url": "https:
           "text": "register for undergraduate courses"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://www.purchase.edu/admissions/transfers",
+          "url": "https:
           "text": "Transfers"
         },
         {
@@ -3651,43 +3660,43 @@ var fallbackPurchaseLinks = [
           "text": "admissions@purchase.edu"
         },
         {
-          "url": "https://ssb.purchase.edu/pls/prod/bwskalog.p_disploginnew?in_id=&cpbl=&newid=",
+          "url": "https:
           "text": "Student Data Form"
         },
         {
-          "url": "https://www.purchase.edu/live/files/1133-student-data-form-vspdf",
+          "url": "https:
           "text": "Student Data Form instructions"
         },
         {
-          "url": "https://www.purchase.edu/activate",
+          "url": "https:
           "text": "purchase.edu/activate"
         },
         {
-          "url": "https://ssb.purchase.edu/ssomanager/c/SSB",
+          "url": "https:
           "text": "MyHeliotrope"
         },
         {
-          "url": "https://www.purchase.edu/live/files/1201-sugregnon-degree-studentsdocx",
+          "url": "https:
           "text": "Registration User Guide"
         },
         {
-          "url": "https://ssb.purchase.edu/pls/prod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu",
+          "url": "https:
           "text": "myHeliotrope"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services",
+          "url": "https:
           "text": "Student Financial Services"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/transcript-request",
+          "url": "https:
           "text": "official transcript"
         },
         {
-          "url": "https://www.purchase.edu/offices/more-card/index.php",
+          "url": "https:
           "text": "More Card Office"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies/index.php",
+          "url": "https:
           "text": "Premedical Studies"
         },
         {
@@ -3695,7 +3704,7 @@ var fallbackPurchaseLinks = [
           "text": "helpdesk@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
@@ -3703,55 +3712,55 @@ var fallbackPurchaseLinks = [
           "text": "hse@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/health-services",
+          "url": "https:
           "text": "website"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa",
+          "url": "https:
           "text": "FERPA"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa-training",
+          "url": "https:
           "text": "FERPA Training"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/cross-registration",
+          "url": "https:
           "text": "Cross Registration"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1842-preferredchosen-name-policy",
+          "url": "https:
           "text": "Chosen Name Policy"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/registration-procedures",
+          "url": "https:
           "text": "Registration Procedures"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/leaves-and-withdrawal",
+          "url": "https:
           "text": "Leaves and Withdrawal"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/readmission",
+          "url": "https:
           "text": "Readmission"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/faculty-and-staff",
+          "url": "https:
           "text": "Faculty and Staff"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/enrollment-and-degree-verification",
+          "url": "https:
           "text": "Enrollment and Degree Verification"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/graduation-and-diplomas",
+          "url": "https:
           "text": "Graduation and Diplomas"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/transfer-equivalencies",
+          "url": "https:
           "text": "Transfer Credit"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/final-exam-schedule",
+          "url": "https:
           "text": "Final Exam Schedule"
         },
         {
@@ -3759,67 +3768,67 @@ var fallbackPurchaseLinks = [
           "text": "registrar@purchase.edu"
         },
         {
-          "url": "https://apps.purchase.edu/SecureDocumentUpload/SDU/85",
+          "url": "https:
           "text": "Secure Document Upload"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/about/contact-us",
+      "url": "https:
       "text": "Contact Us • About • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/accessibility",
+          "url": "https:
           "text": "Accessibility • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
@@ -3827,11 +3836,11 @@ var fallbackPurchaseLinks = [
           "text": "admissions@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/admissions/request-information",
+          "url": "https:
           "text": "REQUEST INFORMATION"
         },
         {
-          "url": "https://www.purchase.edu/commencement",
+          "url": "https:
           "text": "Commencement Information"
         },
         {
@@ -3839,7 +3848,7 @@ var fallbackPurchaseLinks = [
           "text": "saf.commencement@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services",
+          "url": "https:
           "text": "Student Financial Services"
         },
         {
@@ -3847,7 +3856,7 @@ var fallbackPurchaseLinks = [
           "text": "financialservices@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar",
+          "url": "https:
           "text": "Office of the Registrar"
         },
         {
@@ -3855,7 +3864,7 @@ var fallbackPurchaseLinks = [
           "text": "registrar@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/campus-events-and-rentals",
+          "url": "https:
           "text": "Office of Campus Events and Rentals"
         },
         {
@@ -3863,163 +3872,163 @@ var fallbackPurchaseLinks = [
           "text": "kristin.brunobates@purchase.edu"
         },
         {
-          "url": "https://ssb.purchase.edu/pls/prod/gzbkcdir.p_search",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/about/facts-and-stats",
+          "url": "https:
           "text": "Facts and Stats"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus",
+          "url": "https:
           "text": "Our Campus"
         },
         {
-          "url": "https://www.purchase.edu/about/alumni-outcomes",
+          "url": "https:
           "text": "Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/about/presidents-welcome",
+          "url": "https:
           "text": "President’s Welcome"
         },
         {
-          "url": "https://www.purchase.edu/about/diversity-and-compliance",
+          "url": "https:
           "text": "Diversity and Compliance"
         },
         {
-          "url": "https://www.purchase.edu/about/institutional-learning-outcomes",
+          "url": "https:
           "text": "Institutional Learning Outcomes"
         },
         {
-          "url": "https://www.purchase.edu/about/accreditation",
+          "url": "https:
           "text": "Accreditation"
         },
         {
-          "url": "https://www.purchase.edu/about/the-strategic-plan",
+          "url": "https:
           "text": "The Purchase College Strategic Plan"
         },
         {
-          "url": "https://www.purchase.edu/admissions/campus-visit-programs",
+          "url": "https:
           "text": "Schedule an Admissions Visit"
         },
         {
-          "url": "https://www.purchase.edu/admissions/travel-and-transportation",
+          "url": "https:
           "text": "Directions and Parking"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/mission-vision-values",
+          "url": "https:
           "text": "Mission, Vision, and Values"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit-campus/maps-and-directions",
+          "url": "https:
           "text": "Directions"
         },
         {
-          "url": "https://www.purchase.edu/live/files/220-campus-map",
+          "url": "https:
           "text": "Campus Map"
         },
         {
-          "url": "https://www.purchase.edu/news/for-the-media",
+          "url": "https:
           "text": "Media Relations"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/accessibility",
+      "url": "https:
       "text": "Accessibility • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+          "url": "https:
           "text": "Interactive Map • About • Purchase College"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/electronic-accessibility",
+          "url": "https:
           "text": "Electronic / Digital Accessibility"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2409-electronic-information-technology-accessibility",
+          "url": "https:
           "text": "Electronic Information Technology Accessibility (EITA) Policy"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/physical-accessibility",
+          "url": "https:
           "text": "Physical Accessibility"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/report-accessibility-barriers",
+          "url": "https:
           "text": "Accessibility Barrier form"
         },
         {
-          "url": "https://www.purchase.edu/offices/facilities-management/facilities-management-policies/snow-response-plan",
+          "url": "https:
           "text": "Snow Response Plan"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/about",
+          "url": "https:
           "text": "About"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/accessibility-initiatives-updates",
+          "url": "https:
           "text": "Accessibility Initiatives & Updates"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/accessibility-for-events",
+          "url": "https:
           "text": "Event Accessibility"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/social-media-accessibility",
+          "url": "https:
           "text": "Social Media Accessibility"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/training-opportunities",
+          "url": "https:
           "text": "Training Opportunities"
         },
         {
-          "url": "https://www.purchase.edu/about/diversity-and-compliance",
+          "url": "https:
           "text": "Diversity and Compliance"
         },
         {
@@ -4027,103 +4036,103 @@ var fallbackPurchaseLinks = [
           "text": "accessibility@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
-          "url": "https://www.purchase.edu/offices/disability-resources",
+          "url": "https:
           "text": "Office of Disability Resources"
         },
         {
-          "url": "https://www.purchase.edu/offices/facilities-management",
+          "url": "https:
           "text": "Office of Facilities Management"
         },
         {
-          "url": "https://www.purchase.edu/title-ix",
+          "url": "https:
           "text": "Title IX"
         },
         {
-          "url": "https://www.purchase.edu/diversity",
+          "url": "https:
           "text": "Diversity"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action",
+          "url": "https:
           "text": "Affirmative Action"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/984-nondiscrimination-policy",
+          "url": "https:
           "text": "Purchase College Non-Discrimination Policy"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/about/our-campus/interactive-map",
+      "url": "https:
       "text": "Interactive Map • About • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/about/our-campus",
+          "url": "https:
           "text": "Our Campus"
         },
         {
-          "url": "https://apps.purchase.edu/CampusDirectory",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices-and-services",
+          "url": "https:
           "text": "Offices and Services • News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         }
       ]
     },
     {
-      "url": "https://apps.purchase.edu/CampusDirectory",
+      "url": "https:
       "text": "Campus Directory",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://apps.purchase.edu/HRETS",
+          "url": "https:
           "text": "Human Resources Employee Tracking System (HRETS)"
         },
         {
-          "url": "https://www.purchase.edu/offices/provost",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4131,7 +4140,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4139,7 +4148,7 @@ var fallbackPurchaseLinks = [
           "text": "admissions@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/learning-center/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4147,7 +4156,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4159,23 +4168,23 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/ways-to-give/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology",
+          "url": "https:
           "text": "Anthropology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history",
+          "url": "https:
           "text": "Art History • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management",
+          "url": "https:
           "text": "Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management-and-entrepreneurship",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4183,23 +4192,23 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services",
+          "url": "https:
           "text": "Student Financial Services"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry",
+          "url": "https:
           "text": "Biochemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology",
+          "url": "https:
           "text": "Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/broadview-senior-living/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/business-affairs",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4207,7 +4216,7 @@ var fallbackPurchaseLinks = [
           "text": "helpdesk@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
@@ -4215,7 +4224,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/capital-facilities-planning",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4223,11 +4232,11 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/conference-planning/catering/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4235,15 +4244,15 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/center-for-production-services/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry",
+          "url": "https:
           "text": "Chemistry • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-studies",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4255,7 +4264,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/ccs",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4263,7 +4272,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/living-on-campus",
+          "url": "https:
           "text": "Living on Campus"
         },
         {
@@ -4271,15 +4280,15 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/community-standards",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/conference-planning",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/conference-planning/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4287,7 +4296,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4295,11 +4304,11 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/academics/music",
+          "url": "https:
           "text": "Conservatory of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts",
+          "url": "https:
           "text": "Conservatory of Theatre Arts"
         },
         {
@@ -4307,23 +4316,23 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/counseling-center/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing",
+          "url": "https:
           "text": "Creative Writing • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance",
+          "url": "https:
           "text": "Conservatory of Dance"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/ways-to-give",
+          "url": "https:
           "text": "Ways to Give"
         },
         {
@@ -4331,11 +4340,11 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/disability-resources/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/economics",
+          "url": "https:
           "text": "Economics"
         },
         {
@@ -4343,7 +4352,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/eopmap",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4351,51 +4360,51 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/employee-assistance-program",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar",
+          "url": "https:
           "text": "Office of the Registrar"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/offices/environmental-health-and-safety",
+          "url": "https:
           "text": "Environmental Health and Safety"
         },
         {
-          "url": "https://www.purchase.edu/academics/environmental-studies",
+          "url": "https:
           "text": "Environmental Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/facilities",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/film",
+          "url": "https:
           "text": "Film"
         },
         {
-          "url": "https://www.purchase.edu/offices/living-on-campus/building-and-room-information/fort-awesome/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/foundation",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/gender-studies/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/graphic-design",
+          "url": "https:
           "text": "Graphic Design"
         },
         {
@@ -4403,7 +4412,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/health-services",
+          "url": "https:
           "text": "website"
         },
         {
@@ -4411,35 +4420,35 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/clubs-organizations/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/history/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design",
+          "url": "https:
           "text": "School of Art+Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/jewish-studies",
+          "url": "https:
           "text": "Jewish Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/journalism",
+          "url": "https:
           "text": "Journalism"
         },
         {
-          "url": "https://www.purchase.edu/academics/language-and-culture",
+          "url": "https:
           "text": "Language and Culture"
         },
         {
-          "url": "https://www.purchase.edu/academics/latin-american-studies",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4447,31 +4456,31 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/academics/legal-studies",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/liberal-arts/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/liberal-studies",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/literature/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/campus-life/dining/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
@@ -4479,11 +4488,11 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/ccs/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4491,7 +4500,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/more-card",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4499,7 +4508,7 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-involvement/multicultural-center/index.php",
+          "url": "https:
           "text": "Web Page"
         },
         {
@@ -4507,495 +4516,495 @@ var fallbackPurchaseLinks = [
           "text": "Email"
         },
         {
-          "url": "https://www.purchase.edu/accessibility/report-accessibility-barriers",
+          "url": "https:
           "text": "Accessibility Barrier form"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/offices-and-services",
+      "url": "https:
       "text": "Offices and Services • News • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/offices/nysup",
+          "url": "https:
           "text": "New York State University Police • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/provost",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/advising-center",
+          "url": "https:
           "text": "Advising Center"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action",
+          "url": "https:
           "text": "Affirmative Action"
         },
         {
-          "url": "https://www.purchase.edu/offices/business-affairs",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/broadview",
+          "url": "https:
           "text": "Broadview"
         },
         {
-          "url": "https://www.purchase.edu/offices/campus-events-and-rentals",
+          "url": "https:
           "text": "Office of Campus Events and Rentals"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
-          "url": "https://www.purchase.edu/offices/capital-facilities-planning",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development",
+          "url": "https:
           "text": "Career Development Center"
         },
         {
-          "url": "https://www.purchase.edu/offices/casa-purchase",
+          "url": "https:
           "text": "CASA Purchase"
         },
         {
-          "url": "https://www.purchase.edu/the-center-for-engagement",
+          "url": "https:
           "text": "Center for Engagement, The"
         },
         {
-          "url": "https://www.purchase.edu/offices/center-for-production-services",
+          "url": "https:
           "text": "Center for Production Services"
         },
         {
-          "url": "https://www.purchase.edu/commencement",
+          "url": "https:
           "text": "Commencement Information"
         },
         {
-          "url": "https://www.purchase.edu/offices/ccs",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/community-standards",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance",
+          "url": "https:
           "text": "Conservatory of Dance"
         },
         {
-          "url": "https://www.purchase.edu/academics/music",
+          "url": "https:
           "text": "Conservatory of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts",
+          "url": "https:
           "text": "Conservatory of Theatre Arts"
         },
         {
-          "url": "https://www.purchase.edu/counseling-and-behavioral-health-services",
+          "url": "https:
           "text": "Counseling and Behavioral Health Services"
         },
         {
-          "url": "https://ssb.purchase.edu/pls/prod/gzbkcdir.p_search",
+          "url": "https:
           "text": "Campus Directory"
         },
         {
-          "url": "https://www.purchase.edu/offices/disability-resources",
+          "url": "https:
           "text": "Office of Disability Resources"
         },
         {
-          "url": "https://www.purchase.edu/diversity",
+          "url": "https:
           "text": "Diversity"
         },
         {
-          "url": "https://www.purchase.edu/offices/employee-assistance-program",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/environmental-health-and-safety",
+          "url": "https:
           "text": "Environmental Health and Safety"
         },
         {
-          "url": "https://www.purchase.edu/offices/eopmap",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/facilities-management",
+          "url": "https:
           "text": "Office of Facilities Management"
         },
         {
-          "url": "https://www.purchase.edu/offices/global-education",
+          "url": "https:
           "text": "Global Education, Office for"
         },
         {
-          "url": "https://www.purchase.edu/offices/great-potential",
+          "url": "https:
           "text": "Great Potential"
         },
         {
-          "url": "https://www.purchase.edu/counseling-and-behavioral-health-services/harbor-center-for-health-promotion",
+          "url": "https:
           "text": "Harbor Center for Health Promotion"
         },
         {
-          "url": "https://www.purchase.edu/offices/health-services",
+          "url": "https:
           "text": "website"
         },
         {
-          "url": "https://www.purchase.edu/offices/living-on-campus",
+          "url": "https:
           "text": "Living on Campus"
         },
         {
-          "url": "https://www.purchase.edu/offices/institutional-research",
+          "url": "https:
           "text": "Institutional Research, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/institutional-review-board",
+          "url": "https:
           "text": "Institutional Review Board"
         },
         {
-          "url": "https://www.purchase.edu/offices/internal-control",
+          "url": "https:
           "text": "Internal Control, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/learning-center",
+          "url": "https:
           "text": "Learning Center"
         },
         {
-          "url": "https://www.purchase.edu/offices/mailroom",
+          "url": "https:
           "text": "Mailroom"
         },
         {
-          "url": "https://www.purchase.edu/offices/more-card",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/offices/more-store",
+          "url": "https:
           "text": "More Store"
         },
         {
-          "url": "https://www.purchase.edu/offices/orientation",
+          "url": "https:
           "text": "Orientation"
         },
         {
-          "url": "https://www.purchase.edu/offices/parking-and-transportation",
+          "url": "https:
           "text": "Parking and Transportation, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/president",
+          "url": "https:
           "text": "President, Office of the"
         },
         {
-          "url": "https://www.purchase.edu/offices/purchase-college-association",
+          "url": "https:
           "text": "Purchase College Association Inc."
         },
         {
-          "url": "https://www.purchase.edu/give-to-purchase/purchase-college-foundation",
+          "url": "https:
           "text": "Purchase College Foundation"
         },
         {
-          "url": "https://www.purchase.edu/offices/purchasing",
+          "url": "https:
           "text": "Purchasing and Accounts Payable, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar",
+          "url": "https:
           "text": "Office of the Registrar"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design",
+          "url": "https:
           "text": "School of Art+Design"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-continuing-education",
+          "url": "https:
           "text": "School of Continuing Education"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies",
+          "url": "https:
           "text": "School of Film and Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences",
+          "url": "https:
           "text": "School of Liberal Arts and Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+          "url": "https:
           "text": "School of Liberal Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts",
+          "url": "https:
           "text": "School of the Arts"
         },
         {
-          "url": "https://www.purchase.edu/offices/sexual-violence-prevention-response",
+          "url": "https:
           "text": "Sexual Violence Prevention and Response"
         },
         {
-          "url": "https://www.purchase.edu/offices/sponsored-programs",
+          "url": "https:
           "text": "Sponsored Programs, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-involvement",
+          "url": "https:
           "text": "Student Involvement"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management",
+          "url": "https:
           "text": "Student Affairs and Enrollment Services, Office of"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-financial-services",
+          "url": "https:
           "text": "Student Financial Services"
         },
         {
-          "url": "https://www.purchase.edu/offices/student-success",
+          "url": "https:
           "text": "Student Success"
         },
         {
-          "url": "https://www.purchase.edu/offices/sustainability",
+          "url": "https:
           "text": "sustainable campus"
         },
         {
-          "url": "https://www.purchase.edu/teaching-learning-and-technology-center",
+          "url": "https:
           "text": "Teaching, Learning, and Technology Center"
         },
         {
-          "url": "https://www.purchase.edu/title-ix",
+          "url": "https:
           "text": "Title IX"
         },
         {
-          "url": "https://www.purchase.edu/offices/veterans-services",
+          "url": "https:
           "text": "Veterans’ Services"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup",
+      "url": "https:
       "text": "New York State University Police • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/right-to-know",
+          "url": "https:
           "text": "Your Right To Know • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide/emergency-blue-light-phone-map",
+          "url": "https:
           "text": "EMERGENCY BLUE LIGHT PHONES"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/personal-safety-committee",
+          "url": "https:
           "text": "Personal Safety Committee webpage"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6135-suny-upd-annual-awards-for-professional-service",
+          "url": "https:
           "text": "SUNY Chief's Association Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4044-police-officers-recognized-for-response-to-medical",
+          "url": "https:
           "text": "University Police Officer Recognition"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2993-building-bridges-with-upd-and-campus-community",
+          "url": "https:
           "text": "Brian Peterkin with Chief Tucker in front of new mural."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2963-purchase-hosts-local-police-officers-for-special",
+          "url": "https:
           "text": "Police officers gathered from around the region to learn about best practices in sexual assault investigations. Seen here: L to R: NYSP S..."
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/about-us",
+          "url": "https:
           "text": "About Us"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/logs-and-records",
+          "url": "https:
           "text": "Logs and Records"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/file-a-report",
+          "url": "https:
           "text": "File a Report"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/community-services",
+          "url": "https:
           "text": "Community Services"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/policies",
+          "url": "https:
           "text": "Policies"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide",
+          "url": "https:
           "text": "Emergency Guide"
         },
         {
-          "url": "https://www.purchase.edu/offices/nysup/safety-tips",
+          "url": "https:
           "text": "Safety Tips"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/right-to-know",
+      "url": "https:
       "text": "Your Right To Know • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+          "url": "https:
           "text": "Information Privacy • Campus Technology Services • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/public-reports",
+          "url": "https:
           "text": "Public Reports"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/student-information",
+          "url": "https:
           "text": "Student Information"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/financial-assistance-information",
+          "url": "https:
           "text": "Financial Assistance Information"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/health-and-safety",
+          "url": "https:
           "text": "Health and Safety"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/gainful-employment-programs",
+          "url": "https:
           "text": "Gainful Employment Programs"
         },
         {
-          "url": "https://www.purchase.edu/right-to-know/athletic-information",
+          "url": "https:
           "text": "Athletic Information"
         },
         {
-          "url": "https://www.purchase.edu/about/accreditation",
+          "url": "https:
           "text": "Accreditation"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "url": "https:
       "text": "Information Privacy • Campus Technology Services • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/offices/hr",
+          "url": "https:
           "text": "Office of Human Resources • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts",
+          "url": "https:
           "text": "CTS Live Helpdesk Support"
         },
         {
@@ -5007,191 +5016,191 @@ var fallbackPurchaseLinks = [
           "text": "Bill Junor Email"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/Administrative-Printing",
+          "url": "https:
           "text": "SUNY Print Initiative - Administrative Printing"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/frequently-asked-questions",
+          "url": "https:
           "text": "Frequently Asked Questions"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/new-students-frequently-asked-questions",
+          "url": "https:
           "text": "New Students Frequently Asked Questions"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/audio-visual-equipment-loans",
+          "url": "https:
           "text": "Audio Visual Equipment Loans"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/long-term-equipment-loan-program",
+          "url": "https:
           "text": "Long-Term Equipment Loan Program"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/campus-computer-labs",
+          "url": "https:
           "text": "Campus Computer Labs"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/campus-smart-classrooms",
+          "url": "https:
           "text": "Campus Smart Classrooms"
         },
         {
-          "url": "https://apps.purchase.edu/DAT/Dashboard.aspx",
+          "url": "https:
           "text": "Device Assignment Tracking (DAT)"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/communication-options",
+          "url": "https:
           "text": "Communication Options"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/resolving-myheliotrope-login-issues",
+          "url": "https:
           "text": "Visit the CTS help page for info"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/account-locked-out",
+          "url": "https:
           "text": "Account Locked Out"
         },
         {
-          "url": "https://www.purchase.edu/offices/cts/technology-policies",
+          "url": "https:
           "text": "Technology Policies"
         },
         {
-          "url": "https://apps.purchase.edu/WOT",
+          "url": "https:
           "text": "Work Orders"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/872-information-privacy",
+          "url": "https:
           "text": "English"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/offices/hr",
+      "url": "https:
       "text": "Office of Human Resources • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/admissions/visit",
+          "url": "https:
           "text": "Visit • Admissions • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://jobs.purchase.edu",
+          "url": "https:
           "text": "SEARCH CURRENT JOB OPENINGS"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2766-how-will-my-covered-spouse-pay-for-the-retiree",
+          "url": "https:
           "text": "How will my covered spouse pay for the retiree health insurance coverage after my death?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2774-how-do-i-notify-my-department-of-my-intention-to",
+          "url": "https:
           "text": "How do I notify my department of my intention to retire?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2760-who-do-i-contact-with-questions-about-my-health",
+          "url": "https:
           "text": "Who do I contact with questions about my health insurance/prescription drug coverage after I retire?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2755-how-do-i-start-collecting-my-pension",
+          "url": "https:
           "text": "How do I start collecting my pension?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2761-what-is-the-cost-of-health-insuranceprescription",
+          "url": "https:
           "text": "What is the cost of health insurance/prescription drug coverage in retirement?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2758-will-my-dental-and-vision-care-benefits-continue",
+          "url": "https:
           "text": "Will my dental and vision care benefits continue in retirement?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2764-how-will-i-pay-for-my-retiree-health",
+          "url": "https:
           "text": "How will I pay for my retiree health insurance/prescription drug coverage if my monthly credit does not cover the full cost of the monthly premium?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2757-what-are-the-eligibility-requirements-for",
+          "url": "https:
           "text": "What are the eligibility requirements for continuing health insurance/prescription drug coverage in retirement?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2762-how-will-i-pay-for-my-retiree-health",
+          "url": "https:
           "text": "How will I pay for my retiree health insurance/prescription drug coverage?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2763-how-is-the-monthly-lifetime-credit-calculated",
+          "url": "https:
           "text": "How is the monthly lifetime credit calculated?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2756-will-my-health-insurance-coverage-continue-in",
+          "url": "https:
           "text": "Will my health insurance coverage continue in retirement?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2773-who-will-notify-my-retirement-plan-of-my-intention",
+          "url": "https:
           "text": "Who will notify my retirement plan of my intention to retire?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2765-if-i-predecease-my-covered-spouse-after-retirement",
+          "url": "https:
           "text": "If I predecease my covered spouse after retirement, can my spouse continue health insurance coverage under my plan?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2777-when-does-the-benefits-office-process-my-retiree",
+          "url": "https:
           "text": "When does the Benefits Office process my retiree benefits?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2775-what-information-should-i-put-in-my-retirement",
+          "url": "https:
           "text": "What information should I put in my retirement letter to my department?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2985-if-i-am-using-a-joint-account-for-my-direct",
+          "url": "https:
           "text": "If I am using a joint account for my Direct Deposit, does the joint account holder also need to sign the Direct Deposit Form?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2982-how-do-i-adjustchange-my-tax-dependents-deductions",
+          "url": "https:
           "text": "How do I adjust/change my tax dependents, deductions, etc.?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2984-can-i-use-a-business-account-for-my-direct-deposit",
+          "url": "https:
           "text": "Can I use a business account for my Direct Deposit?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2979-how-long-does-my-direct-deposit-information-stay",
+          "url": "https:
           "text": "How long does my Direct Deposit information stay active?"
         },
         {
-          "url": "https://apps.purchase.edu/HRETS",
+          "url": "https:
           "text": "Human Resources Employee Tracking System (HRETS)"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2981-how-do-i-change-my-direct-deposit-account",
+          "url": "https:
           "text": "How do I change my direct deposit account information?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2983-how-and-where-do-i-update-my-home-address",
+          "url": "https:
           "text": "How and where do I update my home address?"
         },
         {
-          "url": "https://apps.purchase.edu/hrets",
+          "url": "https:
           "text": "HRETS"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2980-how-do-i-set-up-direct-deposit",
+          "url": "https:
           "text": "How do I set-up Direct Deposit?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2986-how-do-i-access-hrets-and-upload-documents-to-the",
+          "url": "https:
           "text": "How do I access HRETS and upload documents to the Employee Data Sheet?"
         },
         {
@@ -5199,107 +5208,107 @@ var fallbackPurchaseLinks = [
           "text": "robin.farrell@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/seven-reasons-to-work-at-purchase",
+          "url": "https:
           "text": "Reasons to Work at Purchase"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/benefits-information",
+          "url": "https:
           "text": "Benefits Information"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/benefits-information/professional-development",
+          "url": "https:
           "text": "Professional Development"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/payroll",
+          "url": "https:
           "text": "Payroll"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/announcements",
+          "url": "https:
           "text": "Announcements"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/hr-employment-forms",
+          "url": "https:
           "text": "HR Employment Forms"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/policies-and-procedures",
+          "url": "https:
           "text": "Policies and Procedures"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/links-to-other-resources",
+          "url": "https:
           "text": "Links to Other Resources"
         },
         {
-          "url": "https://www.purchase.edu/offices/hr/contact-us",
+          "url": "https:
           "text": "Contact Us"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action",
+          "url": "https:
           "text": "Affirmative Action"
         },
         {
-          "url": "https://www.purchase.edu/title-ix",
+          "url": "https:
           "text": "Title IX"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action/affirmative-action-plan",
+          "url": "https:
           "text": "Affirmative Action Plan"
         },
         {
-          "url": "https://www.purchase.edu/offices/affirmative-action/search-process",
+          "url": "https:
           "text": "Search Process"
         },
         {
-          "url": "https://www.purchase.edu/offices/sexual-violence-prevention-response",
+          "url": "https:
           "text": "Sexual Violence Prevention and Response"
         },
         {
-          "url": "https://www.purchase.edu/live/files/4884-purchase-college-biennial-review-alcohol-and-other",
+          "url": "https:
           "text": "Purchase College Biennial Review Alcohol and Other Drugs 2021 - 2023"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1062-reporting-workplace-violence-anonymously",
+          "url": "https:
           "text": "Reporting Workplace Violence Anonymously"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit",
+      "url": "https:
       "text": "Visit • Admissions • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/library",
+          "url": "https:
           "text": "Library • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://admission.purchase.edu/portal/allcampusvisits",
+          "url": "https:
           "text": "CAMPUS VISIT CALENDAR"
         },
         {
-          "url": "https://admission.purchase.edu/portal/vapasession",
+          "url": "https:
           "text": "ARTS TOURS"
         },
         {
-          "url": "https://admission.purchase.edu/portal/Trips",
+          "url": "https:
           "text": "PURCHASE ON THE ROAD"
         },
         {
-          "url": "https://www.purchase.edu/live/forms/333-ask-a-counselor",
+          "url": "https:
           "text": "ASK A COUNSELOR"
         },
         {
@@ -5307,259 +5316,259 @@ var fallbackPurchaseLinks = [
           "text": "admissions@purchase.edu"
         },
         {
-          "url": "https://admission.purchase.edu/portal/appointments",
+          "url": "https:
           "text": "Schedule one today"
         },
         {
-          "url": "https://admission.purchase.edu/register?id=e26602ea-67d1-4998-9874-a111db8887d3",
+          "url": "https:
           "text": "Please submit this form"
         },
         {
-          "url": "https://www.purchase.edu/admissions/virtual-tour",
+          "url": "https:
           "text": "Virtual Tour"
         },
         {
-          "url": "https://www.purchase.edu/live/events/70229-visual-and-performing-arts-information-session-amp",
+          "url": "https:
           "text": "Visual and Performing Arts Information Session & Tour"
         },
         {
-          "url": "https://www.purchase.edu/live/events/71547-25-open-house",
+          "url": "https:
           "text": "25 - Open House"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit/art-and-design-events",
+          "url": "https:
           "text": "Art+Design Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/visit/travel-and-transportation",
+          "url": "https:
           "text": "Travel and Transportation"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/admissions/tuition-and-aid",
+          "url": "https:
           "text": "Tuition and Aid"
         },
         {
-          "url": "https://www.purchase.edu/admissions/accepted-students",
+          "url": "https:
           "text": "Accepted Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/first-year",
+          "url": "https:
           "text": "First Year"
         },
         {
-          "url": "https://www.purchase.edu/admissions/transfers",
+          "url": "https:
           "text": "Transfers"
         },
         {
-          "url": "https://www.purchase.edu/admissions/international-students",
+          "url": "https:
           "text": "International Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/graduate-students",
+          "url": "https:
           "text": "Graduate Students"
         },
         {
-          "url": "https://www.purchase.edu/admissions/parents",
+          "url": "https:
           "text": "Parents"
         },
         {
-          "url": "https://www.purchase.edu/admissions/high-school-counselors",
+          "url": "https:
           "text": "High School Counselors"
         },
         {
-          "url": "https://www.purchase.edu/majors-explorer",
+          "url": "https:
           "text": "Explore Majors"
         },
         {
-          "url": "https://www.purchase.edu/admissions/why-purchase",
+          "url": "https:
           "text": "Why Purchase?"
         },
         {
-          "url": "https://www.purchase.edu/admissions/our-team",
+          "url": "https:
           "text": "Contact Our Team"
         },
         {
-          "url": "https://www.purchase.edu/offices/veterans-services",
+          "url": "https:
           "text": "Veterans’ Services"
         },
         {
-          "url": "https://www.purchase.edu/college-policies/index.php",
+          "url": "https:
           "text": "Admissions Policies"
         },
         {
-          "url": "https://www.purchase.edu/about/our-campus/where-we-are",
+          "url": "https:
           "text": "Where We Are"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/library",
+      "url": "https:
       "text": "Library • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/news",
+          "url": "https:
           "text": "News • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/library/hours",
+          "url": "https:
           "text": "hours"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1121-food-and-drink",
+          "url": "https:
           "text": "food and drink"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1120-guests",
+          "url": "https:
           "text": "visitors"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8652-finals-countdown-spring-2025",
+          "url": "https:
           "text": "Stop by the library to relax and destress with fun activities."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8305-wild-about-research-4-ways-to-get-help-from-a",
+          "url": "https:
           "text": "Desert owl sitting on a driftwood branch near the Ask a Librarian logo. Text reads wild about the library. Explore the research frontier wi"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7968-national-poetry-month-display",
+          "url": "https:
           "text": "Children, many dressed in costume, dance to music and have a tea party with a monster. A man and a green monster play banjo and bass."
         },
         {
-          "url": "https://www.purchase.edu/live/news/5605-library-course-reserves",
+          "url": "https:
           "text": "Books on physical reserve at the Library"
         },
         {
-          "url": "https://www.purchase.edu/library/services/course-reserves",
+          "url": "https:
           "text": "Course Reserves Request Forms"
         },
         {
-          "url": "https://www.purchase.edu/library/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 4 more..."
         },
         {
-          "url": "https://www.purchase.edu/library/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "18 total"
         },
         {
-          "url": "https://www.purchase.edu/live/events/58915-button-making",
+          "url": "https:
           "text": "Buttons made at the library"
         },
         {
-          "url": "https://www.purchase.edu/live/events/58904-button-making",
+          "url": "https:
           "text": "Buttons made at the library"
         },
         {
-          "url": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+          "url": "https:
           "text": "Show 2 more..."
         },
         {
-          "url": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+          "url": "https:
           "text": "8 total"
         },
         {
-          "url": "https://www.purchase.edu/library/frequently-asked-questions",
+          "url": "https:
           "text": "Frequently Asked Questions"
         },
         {
-          "url": "https://www.purchase.edu/library/searches",
+          "url": "https:
           "text": "Search"
         },
         {
-          "url": "https://www.purchase.edu/library/guides-tools",
+          "url": "https:
           "text": "Guides & Tools"
         },
         {
-          "url": "https://www.purchase.edu/library/services",
+          "url": "https:
           "text": "Services"
         },
         {
-          "url": "https://www.purchase.edu/library/collections",
+          "url": "https:
           "text": "Collections"
         },
         {
-          "url": "https://www.purchase.edu/library/about",
+          "url": "https:
           "text": "About"
         },
         {
-          "url": "https://www.purchase.edu/library/contact",
+          "url": "https:
           "text": "Contact Us"
         },
         {
-          "url": "https://www.purchase.edu/library/latest-news",
+          "url": "https:
           "text": "Latest News"
         },
         {
-          "url": "https://www.purchase.edu/library/upcoming-events",
+          "url": "https:
           "text": "Upcoming Events"
         },
         {
-          "url": "https://www.purchase.edu/teaching-learning-and-technology-center",
+          "url": "https:
           "text": "Teaching, Learning, and Technology Center"
         },
         {
-          "url": "https://brightspace.purchase.edu",
+          "url": "https:
           "text": "Brightspace"
         },
         {
-          "url": "https://www.purchase.edu/offices/learning-center",
+          "url": "https:
           "text": "Learning Center"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/3129-how-do-i-get-help-with-d2l-brightspace",
+          "url": "https:
           "text": "How do I get help with D2L Brightspace?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1178-what-are-the-librarys-hours",
+          "url": "https:
           "text": "What are the Library’s hours?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1424-is-there-wifi-wireless-internet-how-do-i-access",
+          "url": "https:
           "text": "Is there wifi (wireless internet) ? How do I access the wifi network? Can guests use wifi?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1773-where-is-the-tltc-located",
+          "url": "https:
           "text": "Where is the TLTC located?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1772-where-is-the-tltc-located",
+          "url": "https:
           "text": "FAQ about the TLTC"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1172-where-can-i-find-information-on-senior-projects-",
+          "url": "https:
           "text": "Where can I find information on senior projects / capstone papers / master’s theses?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2673-how-can-i-obtain-a-westchester-library-system-card",
+          "url": "https:
           "text": "How can I obtain a Westchester Library System card?"
         },
         {
-          "url": "https://www.purchase.edu/library/contact/subject-liaisons",
+          "url": "https:
           "text": "e"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1103-how-do-i-pay-a-fine-at-the-library",
+          "url": "https:
           "text": "How do I pay a fine at the Library?"
         },
         {
-          "url": "http://www.purchase.edu/portal",
+          "url": "http:
           "text": "My Heliotrope"
         },
         {
@@ -5567,2083 +5576,2083 @@ var fallbackPurchaseLinks = [
           "text": "lib.circ@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/library/about/library-policies",
+          "url": "https:
           "text": "Lost Library Materials"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1182-are-there-vending-machines-in-the-library-can-i",
+          "url": "https:
           "text": "Are there vending machines in the Library? Can I buy food in the Library?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1181-how-do-i-view-materials-in-special-collections-amp",
+          "url": "https:
           "text": "How do I view materials in Special Collections & Archives?"
         },
         {
-          "url": "https://www.purchase.edu/library/collections/special-collections",
+          "url": "https:
           "text": "Special Collections & Archives"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2349-why-have-i-suddenly-been-unenrolleddropped-from-my",
+          "url": "https:
           "text": "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1247-mandatory-immunization-requirements",
+          "url": "https:
           "text": "Mandatory Immunization Requirements"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar",
+          "url": "https:
           "text": "Office of the Registrar"
         },
         {
-          "url": "https://www.purchase.edu/offices/health-services",
+          "url": "https:
           "text": "website"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2349",
+          "url": "https:
           "text": "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1179-does-the-library-have-graphic-novels-and-comics",
+          "url": "https:
           "text": "Does the Library have graphic novels and comics? Where are they?"
         },
         {
-          "url": "https://www.purchase.edu/library/collections/graphic-novels",
+          "url": "https:
           "text": "Graphic Novels"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1642-do-i-have-to-submit-a-paper-copy-of-my-student",
+          "url": "https:
           "text": "Do I have to submit a paper copy of my Student Project to the Library?"
         },
         {
-          "url": "https://apps.purchase.edu/spsubmit",
+          "url": "https:
           "text": "Student Project Portal"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1180-does-the-library-have-popular-fiction-where-is-the",
+          "url": "https:
           "text": "Does the Library have popular fiction? Where is the popular reading collection?"
         },
         {
-          "url": "https://www.purchase.edu/library/collections/popular-collection",
+          "url": "https:
           "text": "Popular Collection"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1151-how-do-i-use-turnitin-to-check-my-own-drafts-for",
+          "url": "https:
           "text": "How do I use Turnitin? How can I check my own drafts for originality?"
         },
         {
-          "url": "https://www.purchase.edu/live/image/gid/91/width/650/26136_turnitin-self-checker.png",
+          "url": "https:
           "text": "screenshot of the Turnitin Self-Checker activity in Brightspace"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/1151",
+          "url": "https:
           "text": "How do I use Turnitin to check my own drafts for originality?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2815-how-do-i-add-the-thinkingstorm-online-tutoring",
+          "url": "https:
           "text": "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace course?"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2815",
+          "url": "https:
           "text": "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace Moodle course?"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/news",
+      "url": "https:
       "text": "News • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+          "url": "https:
           "text": "Youth and Precollege Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8623-lily-bruder-zal-04-cultivating-the-art-of-flower-farmin",
+          "url": "https:
           "text": "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+          "url": "https:
           "text": "Math & Comp Sci Club Visits IBM Research"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8586-daniela-gomez-paz-14-unmissable-show-at-lyles-amp",
+          "url": "https:
           "text": "Daniela Gomez Paz"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8571-sydney-cole-alexander-15-stars-in-appletv-hit-series",
+          "url": "https:
           "text": "Sydney Cole Alexander '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8562-new-season-of-the-white-lotus-features-two-from-purchas",
+          "url": "https:
           "text": "Sarah Catherine Hook '17 and Parker Posey in season three of HBO's The White Lotus."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8534-professor-stephen-cooke-creates-new-chemistry-and",
+          "url": "https:
           "text": "Original illustration by Professor Stephen Cooke, published by Physical Chemistry Chemical Physics."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+          "url": "https:
           "text": "2025 Grammy Awards: Big Night for Jazz Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8480-damani-pompey-12-earns-nysca-grant",
+          "url": "https:
           "text": "Damani Pompey '12 (Photo: Conor McNamara)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8456-two-named-25-to-watch",
+          "url": "https:
           "text": "Dava Huesca '19"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8427-emily-carragher-06-loves-playing-the-villian",
+          "url": "https:
           "text": "Emily Carragher '06"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8417-derek-shane-garcia-13-premieres-film-in-nyc",
+          "url": "https:
           "text": "A/way by Derek Shane Garcia '13"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8404-kyle-abraham-00-brings-new-work-to-the-park-avenue",
+          "url": "https:
           "text": "Kyle Abraham '00 (Dear Lord by AIM)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8393-curtis-brodner-19-joins-columbia-journalism",
+          "url": "https:
           "text": "Curtis Brodner '19"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8324-psychological-bulletin-publishes-work-by-professor",
+          "url": "https:
           "text": "Tarantula (Photo: Pratik Jain)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8288-congratulations-to-budding-high-school-journalists",
+          "url": "https:
           "text": "Winners of the inaugural Purchase College Excellence in High School Journalism Awards."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+          "url": "https:
           "text": "RECENT EFFORTS"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8230-two-alumni-make-broadway-debuts-in-romeo-juliet",
+          "url": "https:
           "text": "Group of young people sit and look in same direction."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8237-jennifer-mogbock-13-on-apple-tv-series",
+          "url": "https:
           "text": "Jennifer Mogbock '13"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8206-latest-rankings-and-ratings",
+          "url": "https:
           "text": "Latest Rankings and Ratings"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8170-a-dean-irby-and-lisa-dawn-cave-79-receive-honors",
+          "url": "https:
           "text": "A. Dean Irby"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8137-professor-paul-siegel-awarded-third-nimh-grant",
+          "url": "https:
           "text": "Professor Paul Siegel"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8116-the-power-of-purchase-on-stage-in-nyc",
+          "url": "https:
           "text": "Cain Coleman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7983-film-by-lecturer-connie-tsang-selected-for-cannes",
+          "url": "https:
           "text": "Connie Tsang, Lecturer in Film"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8045-sierra-blanco-26-wins-kennedy-center-award",
+          "url": "https:
           "text": "Sierra Bianco"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8020-sinkane-owes-songwriting-shift-to-purchase-experience",
+          "url": "https:
           "text": "Sinkane We Belong Album Cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7988-kunga-choephel-23-selected-for-competitive",
+          "url": "https:
           "text": "Kunga Choephel '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7969-the-2024-suny-chancellors-award-winners",
+          "url": "https:
           "text": "7969-the-2024-suny-chancellors-award-winners"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7958-claudia-logan-18-stars-in-bet-hit",
+          "url": "https:
           "text": "Claudia Logan '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5938-announcing-the-artists-and-hackers-podcast",
+          "url": "https:
           "text": "Artists and Hackers logo in text with drawing of hand on digital device"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7934-micah-stock-11-to-make-steppenwolf-theatre-debut",
+          "url": "https:
           "text": "Micah Stock '11"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7915-lecturer-carlie-hoffman-wins-national-jewish-book",
+          "url": "https:
           "text": "Carlie Hoffman, Lecturer in Creative Writing"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7893-faculty-member-wins-nyppa-photography-award",
+          "url": "https:
           "text": "David Handschuh stands on a bridge with belt straps attached to the railings"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7888-purchase-receives-second-invasive-species-grant",
+          "url": "https:
           "text": "Maura VanderPutten (Environmental Sciences, Biology minor)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7869-one-last-time-zoe-winters-07-honored-for-succession",
+          "url": "https:
           "text": "Zoë Winters '07 plays Kerry on HBO's Succession. (Photo: Macall B. Polay/HBO)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7794-susan-shopmaker-nominated-for-bafta-best-casting",
+          "url": "https:
           "text": "Susan Shopmaker accepts the Casting Award for The Holdovers on stage during the EE BAFTA Film Awards 2024 at The Royal Festival Hall on F..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7823-purchase-receives-dec-grant-for-invasive-species",
+          "url": "https:
           "text": "Student and professor outdoors looking at a small container."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7752-voice-and-dialect-coach-thom-jones-91-visits",
+          "url": "https:
           "text": "Thom Jones and Nicole Kidman smile at the camera with arms around each others shoulders"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7728-junior-experimental-film-screens-in-us-and-uk",
+          "url": "https:
           "text": "Amelia Ponirakis '23 at the Buffalo International Film Festival, Buffalo, NY"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7687-purchase-again-named-fulbright-hsi-leader",
+          "url": "https:
           "text": "Blue badge with yellow stripe and white globe, reads Fulbright HSI Leader 2023"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7625-first-annual-bioblitz-records-317-different",
+          "url": "https:
           "text": "Student holds a container with a grasshopper."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7593-riotusa-22-signs-global-publishing-deal",
+          "url": "https:
           "text": "RIOTUSA '22 and Ryan Press, President, North America at Warner Chappell Music"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7542-political-theatre-in-prague",
+          "url": "https:
           "text": "7542-political-theatre-in-prague"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7471-latest-podcast-cover-up-the-pill-plot-by-tj",
+          "url": "https:
           "text": "Hand in blue latex glove holds a pill between thumb and index finger on a pink background"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7435-keerati-jinakunwiphat-16-wins-princess-grace-award",
+          "url": "https:
           "text": "Asian American woman in blue with elbow in the air"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7419-crossover-goals-pollinator-garden-signage",
+          "url": "https:
           "text": "Flowers in the Purchase Native Pollinator Garden"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7395-franco-paz-16-signs-book-deal",
+          "url": "https:
           "text": "Man in white t-shirt and black jacket smiles with water in background"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7388-film-by-alessandro-chille-14-screens-at-festivals",
+          "url": "https:
           "text": "Alessandro Chillé"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7369-purchase-helps-divert-unwanted-paint-from",
+          "url": "https:
           "text": "Large box holding several paint cans"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7327-economics-network-event-connects-students-and",
+          "url": "https:
           "text": "Standing left to right: David Settanni '09, Lynn Lin '14, Devon Donahue '19"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7317-moviemaker-supports-project-by-victoria-demartin",
+          "url": "https:
           "text": "Victoria deMartin '14"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7297-pwsw-shonnon-marshall-22",
+          "url": "https:
           "text": "7297-pwsw-shonnon-marshall-22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7276-hannah-kaebnick-suny-chancellors-award-winner",
+          "url": "https:
           "text": "SUNY Chancellor John King, Hannah Kaebnick (holding a certificate), and Rudolf Gaudio, Director of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7270-film-by-senior-kunga-choephelto-screen-at-nffty",
+          "url": "https:
           "text": "Kunga Choephel '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7246-awards-season-professors-grill-and-yavich",
+          "url": "https:
           "text": "Drama Desk Awards in gold with a feather award between the words."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7237-purchase-awarded-major-doe-grant",
+          "url": "https:
           "text": "Daffodils on campus"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7184-debut-novel-by-jiaming-andy-tang-18-coming-in-2024",
+          "url": "https:
           "text": "Jiaming Tang '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7166-andrea-patterson-05-earns-obie-for-sustained",
+          "url": "https:
           "text": "Andrea Patterson '05"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7149-two-from-purchase-star-in-fresh-take-on-chekov",
+          "url": "https:
           "text": "Bill Sage '88 in The New Group's The Seagull/Woodstock, NY (Photo: Monique Carboni)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7109-film-by-jordan-tetewsky-16-is-new-york-times",
+          "url": "https:
           "text": "Jordan Tetewsky '16 at Woodstock Film Festival"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7084-karen-beltran-esq-02-appointed-yonkers-city-court",
+          "url": "https:
           "text": "The Honorable Karen T. Beltran, Esq. '02, a judge in the Yonkers City Court."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7055-20212022-debora-martinez-22-creates-community",
+          "url": "https:
           "text": "Debora Martinez '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6998-major-neh-grant-will-support-humanities",
+          "url": "https:
           "text": "Latinos Unidos Student Club / Club Fair 2022"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6975-debut-novel-by-hal-hartley-named-among-years-best",
+          "url": "https:
           "text": "Hal Hartley '84 (Photo: Michael Koshkin)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6955-annual-shark-tank-competition-awards-5000-grand",
+          "url": "https:
           "text": "Participants in the annual Purchase Shark Tank-style competition for 2022."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6918-purchase-college-bridges-students-win-awards-at",
+          "url": "https:
           "text": "(Left) Ruth-Ann Gordon & Mauro David Cortina (right) hold their awards accompanied by the rest of our bridges students, Prof. Jonas a..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6877-senior-filmmaker-screens-work-at-tide-film",
+          "url": "https:
           "text": "Kunga Choephel '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6858-hunter-hollingsworth-22-heads-to-the-apollo-grand",
+          "url": "https:
           "text": "Hunter Hollingsworth-Harris '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6844-purchase-noted-as-a-green-college",
+          "url": "https:
           "text": "The Princeton Review Guide to Green Colleges logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6798-purchase-named-a-2022-fulbright-hsi-leader",
+          "url": "https:
           "text": "Marcel Gbeffa during an artistic residency as a part of (T)HERE: Global Festival in 2019."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6786-two-from-purchase-win-at-woodstock-film-festival",
+          "url": "https:
           "text": "Woodstock Film Festival"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6764-novel-by-marco-north-90-released-to-critical",
+          "url": "https:
           "text": "Marco North '90"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6750-professor-jordan-schildcrout-interviewed-on-ny1",
+          "url": "https:
           "text": "Professor of Theatre and Performance Jordan Schildcrout"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6730-purchase-college-named-top-public-school-by-us",
+          "url": "https:
           "text": "Student presents senior project research at the annual Natural and Social Science Symposium."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6698-regina-spektor-01-re-releases-formative-album-1111",
+          "url": "https:
           "text": "Regina Spektor '01"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6661-camille-seaman-92-on-pbs-brief-but-spectacular",
+          "url": "https:
           "text": "Camille Seaman '92 at the Oceti Sakowin Camp,ND during the 2016 Standing Rock protests."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6648-iquail-shaheed-mfa-12-breaks-new-ground",
+          "url": "https:
           "text": "Iquail Shaheed MFA '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6625-nicco-annan-98-wins-naacp-trailblazer-award",
+          "url": "https:
           "text": "Nicco Annan '98 at the NAACP Convention July 2022 holding the inaugural Trailblazer Award."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6611-douglas-shindler-22-plans-to-open-the-black",
+          "url": "https:
           "text": "Douglas Shindler and Michael Davis , natives of the City of Monticello as well as accomplished artists. The creative duo recently-with th..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6597-dan-romer-04-earns-emmy-nomination",
+          "url": "https:
           "text": "Dan Romer '04"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6581-neuberger-museum-of-art-acquires-romare-beardens",
+          "url": "https:
           "text": "Romare Bearden, River Mist, ca. 1962, mixed media, 54x40 inches"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6553-dan-deacon-04-scores-hustle",
+          "url": "https:
           "text": "Dan Deacon '04"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6537-marjan-neshat-98-finds-her-groove-off-broadway",
+          "url": "https:
           "text": "Marjan Neshat '98"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6509-jd-zeik-82-adapting-sci-fi-horror-fantasy-novel",
+          "url": "https:
           "text": "The Warded Man illustration by Allen Williams for Grim Oak Press"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6487-suny-chancellors-award-for-excellence-2022",
+          "url": "https:
           "text": "SUNY Chancellor's Award for Excellence Recipients Laila Wilson and Corina Picon, Commencement 2022"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6485-thayer-fellowship-winner-mara-keen",
+          "url": "https:
           "text": "Mara Keen MM '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6422-merce-cunningham-trust-endows-new-scholarship-in",
+          "url": "https:
           "text": "Merce Cunningham teaching."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6393-ernestine-white-mifetu-99-named-curator-at",
+          "url": "https:
           "text": "Ernestine White-Mifetu '99 (Photo: Raphael Mifetu)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6357-tom-cross-93-wins-bafta-for-best-editing",
+          "url": "https:
           "text": "Visual Arts Alum Tom Cross '93"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6341-zoe-winters-07-earns-sag-award-for-hbos-succession",
+          "url": "https:
           "text": "Zoë Winters '07"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6321-nina-schatell-23-receives-competitive-cody-renard",
+          "url": "https:
           "text": "Nina Schatell '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6305-three-alumni-screening-films-at-moma",
+          "url": "https:
           "text": "Erik Spink, Meet Me in the Meadow, 2021"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6276-prof-pete-malinverni-turns-to-purchase-family-on",
+          "url": "https:
           "text": "Album Cover, On the Town, Pete Malinverni Plays Leonard Bernstein"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6250-purchase-and-wcc-offer-seamless-pathway",
+          "url": "https:
           "text": "Students talk at a table."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6231-amanda-seales-03-discusses-her-career-with-cbs",
+          "url": "https:
           "text": "Amanda Seales '03"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6205-rob-swainston-doomscrolling-prints-in-response-to",
+          "url": "https:
           "text": "Rob Swainston, Assistant Professor Art+Design, Printmaking"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6182-alice-selipanov-21-visual-approach-to-anthropology",
+          "url": "https:
           "text": "Alice Selipanov '21"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6162-obama-picks-mitski-13",
+          "url": "https:
           "text": "Mitski '13 from The Only Heartbreaker video, 2021"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6116-all-lit-up-heisman-trophy-on-espn",
+          "url": "https:
           "text": "David Grill '86, Associate Professor of Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6093-chris-perfetti-12-lands-role-on-abc-sitcom",
+          "url": "https:
           "text": "Cast of ABC's Abbott Elementary"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6084-the-american-riad-project-co-founded-by-professor",
+          "url": "https:
           "text": "American Riad Project in Detroit."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6062-janet-rolle-84-takes-the-helm-of-american-ballet",
+          "url": "https:
           "text": "Janet Rollé '84"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6044-purchase-is-a-top-green-college",
+          "url": "https:
           "text": "Bioswale in the West 1 Parking Lot"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6016-rena-butler-11-dance-cover-feature",
+          "url": "https:
           "text": "Rena Butler '11 (Courtesy of Dance magazine)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5126-jonathan-harris-20-presidents-award-winner-for",
+          "url": "https:
           "text": "Jonathan Harris '20"
         },
         {
-          "url": "https://www.purchase.edu/offices/president/presidents-award",
+          "url": "https:
           "text": "The President’s Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5927-professor-shaka-mcglotten-named-to-hfpa-advisory",
+          "url": "https:
           "text": "Professor Shaka McGlotten"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5916-professor-elise-lemire-discusses-new-book-on",
+          "url": "https:
           "text": "Professor of Literature Elise Lemire"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5867-laila-wilson-22-suny-act-and-naacp-scholarship",
+          "url": "https:
           "text": "Laila Wilson '22, playwriting and screenwriting"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5898-jazz-artist-anais-reno-performs-at-citifield",
+          "url": "https:
           "text": "Anaïs Reno performs on September 11, 2021 at Citifield."
         },
         {
-          "url": "https://www.purchase.edu/live/news/5871-meryl-cates-08-pens-feature-on-native-american",
+          "url": "https:
           "text": "Meryl Cates '08"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5845-jason-rodriguez-12-forms-new-talent-agency",
+          "url": "https:
           "text": "Jason Rodriguez '12 (Courtesy Santiago Felipe/RRR Creative)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5752-congratulations-to-richard-marylee-salomon",
+          "url": "https:
           "text": "Sophia Hadeshian"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5774-damali-okeefe-22-selected-for-prestigious",
+          "url": "https:
           "text": "Damali O'Keefe '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5754-asst-prof-thome-wins-prestigious-helen-merrill",
+          "url": "https:
           "text": "Andrea Thome"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5716-purchase-named-top-20-best-values-in-the-nation",
+          "url": "https:
           "text": "2022 Fiske Guide to Colleges Best Buy School"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5680-proud-to-be-me-adon-cooper-09",
+          "url": "https:
           "text": "Adon Cooper '09"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5610-lucy-wijnands-20-wins-prestigious-ella-fitzgerald",
+          "url": "https:
           "text": "Lucy Wijnands '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5583-assistant-professor-of-arts-management-laura",
+          "url": "https:
           "text": "Laura Ricciardi"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5547-congratulations-to-the-winners-of-the-suny-wide",
+          "url": "https:
           "text": "Film still from Princesa by Melanie Rosete, Best of Fest winner"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5532-undeniable-talent-kyle-abraham-00-earns-endowed",
+          "url": "https:
           "text": "Kyle Abraham '00 (Photo: Tatiana Will)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5260-professor-silas-brown-10-wins-grammy-award",
+          "url": "https:
           "text": "Silas Brown '10, assistant professor"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5461-illustration-by-senior-gabriella-shery-in-the-new",
+          "url": "https:
           "text": "Gabriella Shery '21"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5445-purchase-college-joins-uns-university-global",
+          "url": "https:
           "text": "UN Sustainability Goals Logo (Color swatches in a circle)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5395-dava-huesca-19-named-artist-in-residence",
+          "url": "https:
           "text": "Dava Huesca '19"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5343-laura-jobin-acosta-20-mm-earns-inaugural-opera",
+          "url": "https:
           "text": "Laura Jobin-Acosta '20 MM"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5326-mural-by-stella-nova-picuri-21-selected-for-area",
+          "url": "https:
           "text": "From left, Benjamin Santiago, lecturer in graphic design, Liz Pollack, senior marketing manager at Cross County Center, and Stella Nova P..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/5285-brianna-agront-21-receives-the-suny-eop-norman-r",
+          "url": "https:
           "text": "Brianna Agront, recipient of the 2020 Norman R. McConney, Jr. Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5248-two-purchase-authors-among-most-notable-for-2020",
+          "url": "https:
           "text": "Carl Safina '77 (Photo: Kizza Vincent)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5113-creative-writing-alumni-trio-launch-a-literary",
+          "url": "https:
           "text": "Imani Parker '20, Ashley Fields '19, and Shanille Martin '20, creative writing alumni and founders of Brown Sugar"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5057-anita-yavich-earns-henry-hewes-design-award-for",
+          "url": "https:
           "text": "Anita Yavich"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5041-susan-gideon-fuirst-makes-transformative-gift-to",
+          "url": "https:
           "text": "Neuberger Museum of Art Youth Education Program"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5066-jen-schriever-04-wins-obie-award",
+          "url": "https:
           "text": "Jen Schriever"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5022-money-magazine-ranks-purchase-among-best-for-value",
+          "url": "https:
           "text": "Campus in the Fall"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5006-purchase-among-the-top-386-colleges-in-the-us",
+          "url": "https:
           "text": "Processed with Snapseed."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4991-stephen-cooke-receives-national-science-foundation",
+          "url": "https:
           "text": "Associate Professor of Chemistry Stephen Cooke"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4970-humans-of-ny-insta-features-purchase-success-story",
+          "url": "https:
           "text": "Solangie Ledesma '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4925-students-immersed-in-the-ever-expanding-world-of",
+          "url": "https:
           "text": "Live Performance and Interactive Media Workshop screen shot"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4902-mariales-diaz-19-named-a-sundance-ignite-fellow",
+          "url": "https:
           "text": "Mariales Diaz '19 (film)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4895-purchase-makes-highly-selective-fiske-guide-for",
+          "url": "https:
           "text": "Fiske Guide to Colleges book cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4846-adam-nagourney-77-captures-historical-importance",
+          "url": "https:
           "text": "Pride Flag"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4830-professors-receive-grant-for-innovative-study",
+          "url": "https:
           "text": "Jostedalsbreen Glacier, Norway"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4779-alumnus-spike-wilner-reopens-nyc-jazz-club",
+          "url": "https:
           "text": "Smalls Jazz Club"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4763-two-founding-professors-retire",
+          "url": "https:
           "text": "Professors Emeriti Lee Ehrman and Peter Schwab"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4728-ilias-fourati-20-receives-suny-chancellors-award",
+          "url": "https:
           "text": "SUNY Chancellors Award for Excellence Winner Ilias Fourati '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4331-paramount-picks-up-original-script-by-mattson",
+          "url": "https:
           "text": "Filmmaker Mattson Tomlin '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4666-faculty-and-alum-nominated-for-drama-desk-awards",
+          "url": "https:
           "text": "Anita Yavich"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4624-meet-rakeem-hardy-20-thayer-fellowship-winner",
+          "url": "https:
           "text": "Rakeem Hardy '20 (dance)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4608-garth-greenwell-earns-guggenheim-fellowship",
+          "url": "https:
           "text": "Garth Greenwell '01 (Photo: William J. Adams)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4587-campus-arts-organizations-deliver-online-content",
+          "url": "https:
           "text": "Concert Hall, The Performing Arts Center"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4556-purchasecares",
+          "url": "https:
           "text": "Purchase Cares Icon (Navy blue heart over lighter blue background)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4410-monica-ferrell-finalist-for-kingsley-tufts-poetry",
+          "url": "https:
           "text": "Monica Ferrell, Associate Professor of Creative Writing"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4358-erin-sullivan-12-delivers-a-ted-talk",
+          "url": "https:
           "text": "Erin Sullivan '12 (Photo: Renee Hahnel)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4283-art-in-public-places",
+          "url": "https:
           "text": "Art in Public Places / Quantum Leap by Isaiah Ship"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4244-sophomores-andres-hernandez-rodriguez-and-brian",
+          "url": "https:
           "text": "Purchase College Startup Pitching Competition Winners Andres Hernandez-Rodriguez and Brian Farez."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4226-engels-the-artist-creates-new-sculpture-with",
+          "url": "https:
           "text": "Curator Patrice Giasson; Engels the artist; Cindy Millin; Instructor Felix Matta-Fletcher; Alessandra Russo; Leonardo Giasson."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4203-cyrille-aimee-earns-grammy-nomination",
+          "url": "https:
           "text": "Cyrille Aimée '08"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4187-professor-warren-lehrer-awarded-2019-ladislav",
+          "url": "https:
           "text": "Professor Warren Lehrer awarded the 2019 Ladislav Sutnar Prize"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4129-global-fest-2019",
+          "url": "https:
           "text": "Edwidge Danticat"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4048-paola-lazaro-10-joins-season-ten-of-the-walking",
+          "url": "https:
           "text": "Paola Lázaro '09"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4027-thomas-j-schwarz-appointed-president-emeritus",
+          "url": "https:
           "text": "President Emeritus Thomas J. Schwarz at the May 8 event celebrating his 17 year tenure at Purchase College. (Photo by Sean Zanni/PMC)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3990-purchase-joins-renewable-energy-consortium",
+          "url": "https:
           "text": "Purchase Garden"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3974-the-new-york-times-highlights-insta-by-purchase",
+          "url": "https:
           "text": "Instagram Post from Issa Dance Look"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3943-michael-rakowitz-95-recipient-of-the-nasher-prize",
+          "url": "https:
           "text": "Michael Rakowitz '95"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3915-from-purchase-to-zombie-apocalypse-colby-hollman",
+          "url": "https:
           "text": "Colby Hollman '19 (acting)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3869-artist-brian-kavanaugh-05-earns-fulbright-award",
+          "url": "https:
           "text": "Brian Kavanaugh '05 Earns Fulbright Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3827-purchase-merits-placement-in-highly-selective",
+          "url": "https:
           "text": "Students in Seminar Class"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3784-regina-spektor-01-debuts-on-broadway",
+          "url": "https:
           "text": "Regina Spektor '01"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3751-neuberger-museum-of-art-receives-150000-grantto",
+          "url": "https:
           "text": "The Andrew W. Mellon Foundation logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3727-jay-osanders-76-wins-a-drama-desk-award",
+          "url": "https:
           "text": "Celeste Arias as Eléna and Jay O. Sanders as Ványa in Uncle Vanya"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3674-purchase-students-earn-suny-arts-awards",
+          "url": "https:
           "text": "Dancers perform on stage"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3578-dancer-jojo-boykins-18-featured-on-allarts",
+          "url": "https:
           "text": "Dancer Jojo Boykins '18 featured on PBS' new  ALLARTS channel (dancing in the Dance Building lobby)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3524-danniel-schoonebeek-08-earns-nea-award",
+          "url": "https:
           "text": "Danniel Schoonebeek '08"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3500-backstage-legends-and-masters-honors-david",
+          "url": "https:
           "text": "David Rosenberg"
         },
         {
-          "url": "https://www.purchase.edu/broadway-technical-theatre-history-project",
+          "url": "https:
           "text": "Broadway Technical Theatre History Project"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3452-acting-professor-features-purchase-alumni-and",
+          "url": "https:
           "text": "The Out of the Depths company takes a bow"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3419-purchase-offers-food-pantry-to-address-food",
+          "url": "https:
           "text": "Food Pantry sign"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3410-wet-ink-featuring-ian-antonio-is-named-best",
+          "url": "https:
           "text": "Ian Antonio"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1630-ian-antonio",
+          "url": "https:
           "text": "Ian Antonio"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3394-debut-hbo-special-for-amanda-seales-03",
+          "url": "https:
           "text": "Amanda Seales '03"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3351-janice-yarwood-96-honored",
+          "url": "https:
           "text": "Janette Yarwood '96"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3315-purchase-shark-tank-awards-7000-to-students",
+          "url": "https:
           "text": "Seniors Angela Galli and Kelly Hayes receive oversized check for winning the second annual Start Up Purchase Pitching Competition"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3301-anne-kern-honored-by-french-embassy",
+          "url": "https:
           "text": "Anne Kern Awarded Chevalier of the Order of Arts and Letters"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3228-kerry-levielle-17-named-an-ignite-fellow-by",
+          "url": "https:
           "text": "Kerry LeVielle '17 (cinema studies)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3185-frank-candelaria-to-speak-at-the-national",
+          "url": "https:
           "text": "Walt Whitman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3082-65-million-in-upgrades-to-residence-halls-now",
+          "url": "https:
           "text": "The Quad"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3045-purchase-professor-and-students-featured-in",
+          "url": "https:
           "text": "Literature professor Anthony Domestico speaks at the SUNY Chancellor's Inauguration"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3012-purchase-college-named-a-top-public-liberal-arts",
+          "url": "https:
           "text": "Students at Orientation 2018"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2929-purchase-ranked-as-one-of-top-384-colleges",
+          "url": "https:
           "text": "Multicultural Center invites passers by to comment on the one thing they can do to build community and help end prejudice."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2891-energy-efficient-lighting-project-reduces",
+          "url": "https:
           "text": "Purchase College Library exterior"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2862-new-york-emmy-goes-to-journalism-alumna",
+          "url": "https:
           "text": "Rachel Weiss '16 holds her NY Emmy"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2821-composition-professor-wins-two-opera-america",
+          "url": "https:
           "text": "Kamala Sankaram Headshet"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1884-kamala-sankaram",
+          "url": "https:
           "text": "Kamala Sankaram"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2820-purchase-alum-score-emmy-nominations",
+          "url": "https:
           "text": "Jesus Christ Superstar Live in Concert / Ben Green '15 earned Emmy nomination for lighting direction."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2803-zaire-anderson-19-is-superhero-for-the-summer",
+          "url": "https:
           "text": "Zaire Anderson '19 and the Art Force 5"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2733-acting-is-amazing",
+          "url": "https:
           "text": "Comedy of Errors"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2710-brittny-cooper-15-embarks-on-the-ride-of-her-life",
+          "url": "https:
           "text": "Brittny Cooper '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2666-nods-to-purchase-tony-award-nominations-announced",
+          "url": "https:
           "text": "Clint Ramos, assistant professor for theatre design/technology"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2640-creative-writer-wins-prestigious-contest",
+          "url": "https:
           "text": "Jiaming “Andy Tang '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2623-regina-spektor-01-featured-on-poetry-in-america",
+          "url": "https:
           "text": "Regina Spektor '01 performing    Après Moi during a day of filming with the Poetry in America team."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2586-sexual-assault-awareness-week-recap",
+          "url": "https:
           "text": "Teal ribbon symbol to end sexual assault"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2550-three-students-honored-for-excellence-by-suny",
+          "url": "https:
           "text": "SUNY Logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2517-kate-gilmore-honored-with-a-guggenheim-fellowship",
+          "url": "https:
           "text": "Kate Gilmore, Wall Bearer, 2011. Performance and installation at the Weatherspoon Art Museum, Greensboro, NC (Women in pink dresses stand..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2489-the-pacs-pepsico-theatre-unveiled-after-million",
+          "url": "https:
           "text": "The PAC logo projected on the PepsiCo Theatre's stage curtain."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2456-max-pearce-18-finishes-third-in-slam-dunk",
+          "url": "https:
           "text": "Max Pearce '18 slam dunks in the gym"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2443-purchase-alternative-service-trip",
+          "url": "https:
           "text": "Various students participating in a previous Purchase Alternative Service Trip"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2430-purchase-alum-wins-first-hildegard-composition",
+          "url": "https:
           "text": "Kayla Cashetta Headshot"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition",
+          "url": "https:
           "text": "Composition (Classical) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2398-author-neil-gaiman-offered-advice-for-students",
+          "url": "https:
           "text": "Neil Gaiman and Michael Chabon spoke as part of the Durst Distinguished Lecture Series."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2379-legendary-broadway-costume-designer-is-wicked-good",
+          "url": "https:
           "text": "Alyce Gilbert, 2017 Broadway Legends and Masters award winner"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2322-dave-grill-lights-up-superbowl-halftime-show",
+          "url": "https:
           "text": "Professor Dave Grill and intern Victoria Corbalis '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2253-project-by-professor-chris-robbins-earns-knight",
+          "url": "https:
           "text": "Students and collaborators work on American Riad project in Detroit"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2187-opera-production-wins-national-award",
+          "url": "https:
           "text": "Coronation of Poppea"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2174-two-dancers-rise-to-the-top",
+          "url": "https:
           "text": "Cover of Dance Magazine January 2018 issue"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2277-pc4y-to-partner-with-innovative-yonkers",
+          "url": "https:
           "text": "Ray Wilcox, LaMont OyeWale' Badru, and Anthony Bailey '01 (left to right) from The PowerLab."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2111-students-create-art-in-vacant-spaces",
+          "url": "https:
           "text": "Recipe for a Loving Community by Madeline Friedman '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2090-jazz-alum-releases-new-epic-recording",
+          "url": "https:
           "text": "Wayne Tucker"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2075-journalism-professor-pays-it-forward",
+          "url": "https:
           "text": "Andrew Salomon at the Alumni Mixer for Journalism and Writing Majors, 11/10/17"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2022-artdesign-students-study-with-renowned-painter",
+          "url": "https:
           "text": "Artist in Residence Ignacio Iturria in the studio with students"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2001-purchase-college-alumni-attend-abrahaminmotion",
+          "url": "https:
           "text": "Top row L to R: Tamisha Guy '13, Marcella Lewis '16, Denise Roberts Hurlin '84, Kyle Abraham, former dean Carol Walker, an..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1983-purchase-dance-company-visits-taiwan",
+          "url": "https:
           "text": "The Purchase Dance Company recently visited Taipei and Kaohsiung City for performances, workshops, and cross-cultural learning."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1946-durst-lectures-feature-top-authors",
+          "url": "https:
           "text": "Bubble P logo with Man Booker Prize logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1925-break-the-handcuffs",
+          "url": "https:
           "text": "A. Dean Irby, associate professor of acting"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1871-arts-abroad-program-welcomes-students-from-china",
+          "url": "https:
           "text": "Arts Abroad Program Students"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts/arts-abroad-program/index.php",
+          "url": "https:
           "text": "Arts Abroad Program"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1829-majella-loughran-12-has-got-talent",
+          "url": "https:
           "text": "Majella Loughran '12 and the Diavolo Dance Company following their semi-final win on NBC's America's Got Talent"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1808-fourth-emmy-award-for-david-grill-86",
+          "url": "https:
           "text": "Dave Grill '86"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1734-kamala-sankaram-featured-at-resonant-bodies",
+          "url": "https:
           "text": "Kamala Sankaram"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1698-new-jazz-faculty-member-finds-music-in-sandburgs",
+          "url": "https:
           "text": "Matt Wilson"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1693-purchase-faculty-among-top-35-female-classical",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1040-laura-kaminsky",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1658-purchase-adopts-test-optional-admissions-policy",
+          "url": "https:
           "text": "Commencement 2016"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1648-jon-faddis-uses-social-media-to-bring-jazz-to",
+          "url": "https:
           "text": "Jon Faddis"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1602-stunning-iceberg-cover-photo-by-camille-seaman-92",
+          "url": "https:
           "text": "Camille Seaman '92 The Lemaire Channel off the off the west coast of the Antarctic Peninsula"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1580-alumnus-dan-romers-music-featured-in-netflix-movie",
+          "url": "https:
           "text": "Dan Romer"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1521-american-opera-projects-celebrates-pride-with-free",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1486-philosophy-art-and-the-dalai-lama",
+          "url": "https:
           "text": "Students studying abroad in India granted an audience with the Dalai Lama"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1447-julianne-waber-17",
+          "url": "https:
           "text": "Julianne Waber '17"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1400-laura-kaminsky-selected-for-opera-for-all-voices",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1387-commencement-2017",
+          "url": "https:
           "text": "Commencement 2016"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1373-leah-woods-18-merges-arts-and-philanthropy",
+          "url": "https:
           "text": "Leah Woods '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1332-ivan-forde-12-awarded-prestigious-fellowship",
+          "url": "https:
           "text": "Ivan Forde '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1159-purchase-college-at-the-2017-whitney-biennial",
+          "url": "https:
           "text": "Occupy Museums, Debtfair, 2017 (back), works by Jon Kessler (front). Photo: Henri Neuendorf"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1144-celebrating-international-womens-day-with-madonna",
+          "url": "https:
           "text": "Screen shot from Madonna's video HerStory"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1127-ptv-station-managers-take-on-prime-time",
+          "url": "https:
           "text": "Seniors Hannah, Summer, and Katie are managing Purchase Television (PTV) this year."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8635-stephanie-leblanc-14-named-a-top-25-chief-content-leade",
+          "url": "https:
           "text": "Stephanie LeBlanc"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+          "url": "https:
           "text": "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8590-janet-langsam-improbable-feminist-a-compelling",
+          "url": "https:
           "text": "Artist Janet Langsam working in her studio circa 1970. Photo courtesy of Janet Langsam."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8576-notable-authors-in-conversation",
+          "url": "https:
           "text": "Notable Authors in Conversation"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8567-carter-hudson-09-cast-in-broadways-good-night-and",
+          "url": "https:
           "text": "Carter Hudson '09"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8560-fun-fact-zero-day-scene-shot-on-campus",
+          "url": "https:
           "text": "A crossroads with orange cones and a railroad crossing gate."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8521-lisa-eadicicco-12-lands-cnn-business-role",
+          "url": "https:
           "text": "Lisa Eadicicco '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8484-joey-katz-18-artistic-director-of-film-festival",
+          "url": "https:
           "text": "Joey Katz '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8472-lifetime-achievement-awards-for-faculty",
+          "url": "https:
           "text": "Company 49 in Gint (Written by Romulus Linney, Adapted from Peer Gynt by Henrik Ibsen / Directed by Trezana Beverley)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8452-book-by-professor-marin-kosut-named-best-of-2024",
+          "url": "https:
           "text": "Marin Kosut, Professor of Sociology"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8415-world-renowned-artist-fred-wilsonjoins-friends-of",
+          "url": "https:
           "text": "Fred Wilson '76, Passionate Artist"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8410-lip-critic-lands-at-57-on-pastes-100-best",
+          "url": "https:
           "text": "Lip Critic's Hex Dealer album cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8399-dana-freeman-25-earns-design-scholarship",
+          "url": "https:
           "text": "Dana Freeman '25"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8370-nominations-for-the-2025-grammy-awards-announced",
+          "url": "https:
           "text": "Lucy Kalantari '98"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8297-mugler-creators-program-shines-a-light-on-purchase",
+          "url": "https:
           "text": "Conservatory of Dance students take part in a film to announce the launch of Mugler Creators to support talented contemporary dance and m..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8278-2nd-annual-bioblitz-records-347-species",
+          "url": "https:
           "text": "Student BioBlitz participant"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8248-work-by-khalif-tahir-thompson-18-at-the-armory-show",
+          "url": "https:
           "text": "Khlaif Tahir Thompson '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8242-andrea-patterson-05-stars-in-greek-classic",
+          "url": "https:
           "text": "Andrea Patterson '05"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8218-immersive-photography-is-festival-runs-sep-18nov-22",
+          "url": "https:
           "text": "A gallery visitor wearing a blue shirt seen from behind looking at art on the wall."
         },
         {
-          "url": "https://www.purchase.edu/live/news/8185-two-film-alumni-win-prestigious-nbr-awards",
+          "url": "https:
           "text": "Film still from On The Ridge by Ruby Rose Makkena '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8165-assistant-professor-of-history-jessica-levy",
+          "url": "https:
           "text": "Jessica Levy"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8123-fiske-guide-to-colleges-2025-unique-within-the",
+          "url": "https:
           "text": "Fiske Guide to Colleges 2025: “Unique Within the SUNY System”"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8103-the-25-best-drama-schools-in-the-world",
+          "url": "https:
           "text": "Wordmark: The Hollywood Reporter in red"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8085-brian-macdevitt-80-wins-sixth-tony-award",
+          "url": "https:
           "text": "Brian MacDevitt '80"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8037-associate-professor-hakan-topal-merges-art-science",
+          "url": "https:
           "text": "Concrete house on a distant hillside surrounded by trees and greens with a blue sky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8013-rosalynde-leblanc-94-wins-peabody-award-for",
+          "url": "https:
           "text": "Rosalynde LeBlanc '94 (Photo: Lee Gumbs)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7977-take-a-hike-with-the-purchase-outdoors-club",
+          "url": "https:
           "text": "Purchase Outdoors Club Hikes Hook Mountain"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7961-paige-gilbert-14-stars-in-the-welkin",
+          "url": "https:
           "text": "Paige Gilbert '14"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-releasing-jan-30",
+          "url": "https:
           "text": "Emily Ruth Verona '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7941-purchase-bred-lip-critic-a-band-to-watch",
+          "url": "https:
           "text": "Lip Critic band"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7919-purchase-the-first-to-tour-laguardias-premier",
+          "url": "https:
           "text": "Students view the art on display in LaGuardia Airport Terminals B and C"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7856-pivotal-behind-the-scenes-role-thom-jones-91",
+          "url": "https:
           "text": "Da'Vine Joy Randolph poses with the Supporting Actress Award for 'The Holdovers' in the winners room during the EE BAFTA Film Awards 2024..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7892-20232024-jessica-maffia-mfa-24",
+          "url": "https:
           "text": "Jessica Maffia MFA '24, Untitled (2023), President's Award for Public Art in the Humanities Lobby"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7876-new-local-housing-scholarships-announced",
+          "url": "https:
           "text": "The Quad and Residence Halls"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7857-caleb-eberhardt-12-lands-second-broadway-role",
+          "url": "https:
           "text": "Caleb Eberhardt '12 in glasses and a blue button down shirt with arms crossed"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7833-big-night-at-the-grammys",
+          "url": "https:
           "text": "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7759-hunter-hollingsworth-22-makes-broadway-debut",
+          "url": "https:
           "text": "Hunter Hollingsworth '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-competition-awards-5000-in-prizes",
+          "url": "https:
           "text": "Acting majors Tachynel Merveille and Destiny Barbour won the Audience Favorite Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7695-grammy-nominated",
+          "url": "https:
           "text": "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7676-adam-birnbaums-new-album-preludes-wins-praise",
+          "url": "https:
           "text": "Adam Birnbaum"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7602-billboard-magazine-touts-studio-production-program",
+          "url": "https:
           "text": "7602-billboard-magazine-touts-studio-production-program"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7559-feeling-top-ten",
+          "url": "https:
           "text": "Students enjoy Fun Fair on the Great Lawn during Welcome Week."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7524-new-film-by-megan-rossman-hits-the-film-circuit",
+          "url": "https:
           "text": "Assistant Professor of Communications Megan Rossman (Photo: Bri Elledge)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7456-symara-johnson-19-named-outstanding-breakout",
+          "url": "https:
           "text": "Portrait of light skinned Black dancer with hand bent over head"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7441-dance-magazine-cover-shota-miyoshi-22",
+          "url": "https:
           "text": "Shota Miyoshi '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6934-debut-feature-by-vuk-lungulov-klotz-16-at-sundance",
+          "url": "https:
           "text": "Vuk Lungulov-Klotz '16"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7392-purchase-selected-for-fiske-guide-2024",
+          "url": "https:
           "text": "Person walks in distance with Welcome to Purchase College sign on brick building"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7379-chancellor-king-visits-campus-to-welcome-eop",
+          "url": "https:
           "text": "Chancellor King stands at a table chatting with EOP students."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7352-caitly-dominici-24-awarded-inaugural-suny",
+          "url": "https:
           "text": "Photo of Caitly Dominici '24"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7322-edie-falco-84-and-oona-roche-17-on-pete-davidsons",
+          "url": "https:
           "text": "Edie Falco, Pete Davidson, and Joe Pesci sit at a table in scene from BUPKIS TV comedy"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7311-lisa-dawn-cave-83-earns-special-tony-award",
+          "url": "https:
           "text": "Lisa Dawn Cave '83"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7298-lecturer-jen-schreiver-04-earns-tony-nomination",
+          "url": "https:
           "text": "Jen Schriever '04"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7277-sonia-seth-suny-chancellors-award-winner",
+          "url": "https:
           "text": "SUNY Chancellor John King, Sonia Seth '23 holding a certificate, and Director of the School of Natural and Social Sciences Rudolf Gaudio."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7245-james-ortiz-10-earns-drama-desk-nomination",
+          "url": "https:
           "text": "James Ortiz '10"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7247-jeff-croiter-93-earns-drama-desk-nomination",
+          "url": "https:
           "text": "Jeff Croiter '93"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7223-professor-david-bassuk-is-a-fulbright-scholar-for",
+          "url": "https:
           "text": "David Bassuk, Professor of Acting"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7122-nicco-annan-98-wins-outstanding-actor-award",
+          "url": "https:
           "text": "Nicco Annan '98 Wins NAACP Image Award for Outstanding Actor in a Drama Series."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7161-purchase-on-the-creative-team-for-broadways-bob",
+          "url": "https:
           "text": "Jovan Dansberry in Bob Fosse's Dancin' (Photo: Julieta Cervantes)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7144-thomas-warfield-88-celebrated-for-career",
+          "url": "https:
           "text": "Thomas Warfield '88"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7093-keerati-jinakunwiphat-16-makes-history-at-nybc",
+          "url": "https:
           "text": "Keerati Jinakunwiphat choreographing her new ballet for New York City Ballet, Wednesday, November 16, 2022. Credit Photo: Erin Baiano"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6895-two-major-grammy-nominations-for-samara-joy-21",
+          "url": "https:
           "text": "Jazz vocalist Samara Joy '21 (Photo: Meredith Truax)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7032-mitski-13-collaboration-receives-oscar-nomination",
+          "url": "https:
           "text": "Mitski '13 (Photo: Ebru Yildiz)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6990-darryl-rahn-15-wins-battle-of-the-instant",
+          "url": "https:
           "text": "Darryl Rahn '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6967-global-scholars-meet-with-un-deputy-secretary",
+          "url": "https:
           "text": "Global Scholars students visit the UN"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6933-chris-perfetti-11-nominated-for-abbott-elementary",
+          "url": "https:
           "text": "Creator/star Quinta Brunson and Chris Perfetti on the ABC sitcom Abbott Elementary. (Photo: Christopher Willard/"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6888-blake-pfiel-19-finds-solace-and-beauty-in",
+          "url": "https:
           "text": "Blake Pfeil MA '19"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6863-purchase-opera-earns-the-american-prize-honors",
+          "url": "https:
           "text": "Purchase Opera production of Dialogues of the Carmelites in 2020-2021."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6849-four-earn-audelco-viv-award-nominations",
+          "url": "https:
           "text": "AUDELCO Awards 50 Logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6827-can-clever-chemistry-eliminate-nuclear-waste",
+          "url": "https:
           "text": "Uranium spectrum visible"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6793-purchase-earns-a-competitive-fulbright-hays-award",
+          "url": "https:
           "text": "6793-purchase-earns-a-competitive-fulbright-hays-award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6769-the-buzz-about-bees-collecting-honey-to-examine",
+          "url": "https:
           "text": "Students use a comb knife to remove the caps from honey frames"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6756-purchase-dance-represents-at-the-la-dance-project",
+          "url": "https:
           "text": "LA Dance Project (from preview performances of Benjamin Millepied's ROMEO & JULIET SUITE during the @nuitsdefourviere festival i..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6740-sophie-glenn-12-receives-john-d-mineck-fellowship",
+          "url": "https:
           "text": "Furniture artist Sophie Glenn '12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6708-hunter-zimny-16-praised-for-work-on-funny-pages",
+          "url": "https:
           "text": "Hunter Zimny '16"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6691-professors-awarded-major-grant-by-national-science",
+          "url": "https:
           "text": "Erika Ebbs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6655-lecturer-thomas-mesa-wins-sphinx-medal-of",
+          "url": "https:
           "text": "Cellist and Lecturer Thomas Mesa"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6638-fatoumata-fadiga-24-named-future-nobel-laureate",
+          "url": "https:
           "text": "Fatoumata Fadiga"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6621-soul-voices-director-knoelle-higginson-on-agt",
+          "url": "https:
           "text": "Lecturer and Soul Voices Choir Director Knoelle Higginson"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6607-purchase-among-best-and-most-interesting-in-fiske",
+          "url": "https:
           "text": "Fiske Guide to Colleges"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6592-work-by-kyle-abraham-00-earns-a-ny-emmy-nomination",
+          "url": "https:
           "text": "Kyle Abraham '00"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6561-james-ortiz-10-wins-drama-desk-award-for-puppetry",
+          "url": "https:
           "text": "James Ortiz '10"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6545-poem-by-professor-monica-ferrell-published-in-the",
+          "url": "https:
           "text": "Professor of Creative Writing Monica Ferrell"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6524-sarah-catherine-hook-17-stars-in-new-netflix",
+          "url": "https:
           "text": "Sarah Catherine Hook '17 and Imani Lewis star in Netflix series First Kill."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6503-purchase-college-leadership-institute-20212022",
+          "url": "https:
           "text": "Purchase College Leadership Institute 2021-2022"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6486-thayer-fellowship-winner-naoki-yogi",
+          "url": "https:
           "text": "Naoki Yogi '22"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6378-tv-pilot-by-claire-giegerich-23-selected-for-nffty",
+          "url": "https:
           "text": "Claire Giegerich '23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6423-allison-loggins-hull-05-named-a-cleveland",
+          "url": "https:
           "text": "Allison Loggins-Hull '05"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6368-tj-raphael-11-number-1-science-podcast-in-america",
+          "url": "https:
           "text": "TJ Raphael '11"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6406-journalist-aj-jordan-15-best-financial-decision",
+          "url": "https:
           "text": "AJ Jordan '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6328-paige-gilbert-14-lands-role-at-lincoln-center",
+          "url": "https:
           "text": "Paige Gilbert '14"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6311-jordan-tetewsky-16-wins-at-slamdance",
+          "url": "https:
           "text": "Jordan Tetewsky '16 (film)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6293-samara-joy-21-on-the-today-show",
+          "url": "https:
           "text": "Samara Joy '21 (jazz studies)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6258-neuberger-museum-of-art-announces-2022-winner-of",
+          "url": "https:
           "text": "Tomashi Jackson, 2022 Roy R. Neuberger Prize Recipient"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6241-phil-corso-11-named-to-newly-created-position-at",
+          "url": "https:
           "text": "Phil Corso '11"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6211-erik-spink-11-to-screen-short-at-moma",
+          "url": "https:
           "text": "Erik Spink '11"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6195-aya-keefe-07-named-manhattans-deputy-borough",
+          "url": "https:
           "text": "Aya Keefe"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6169-the-purchase-shark-tank-style-competition-awards",
+          "url": "https:
           "text": "Entrepreneurship in the Arts major Shannon Dawson, winner of the 2021 Purchase Shark Tank."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6125-two-from-purchase-in-spielbergs-west-side-story",
+          "url": "https:
           "text": "West Side Story logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6101-actor-cici-koueth-21-selected-by-warner-brothers",
+          "url": "https:
           "text": "Cecellia Koueth"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6088-professor-elise-lemire-discusses-black-walden",
+          "url": "https:
           "text": "A boulder marks the location where Brister Freeman's house is thought to have stood in Walden Woods. (Courtesy of the Walden Woods Project)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6069-purchase-opera-earns-top-award-for-20202021",
+          "url": "https:
           "text": "Purchase Opera production of Dialogues of the Carmelites in 2020-2021."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6046-senior-film-by-lamesa-nashrat-21-screening-at-tide",
+          "url": "https:
           "text": "Lamesa Nashrat '21 (film)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6023-brittany-petronella-16-shares-her-passion-for",
+          "url": "https:
           "text": "Brittany Petronella '16 (photography, art history minor)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5997-raechelle-manalo-20-joins-paul-taylor-dance-co",
+          "url": "https:
           "text": "Raechelle Manalo '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5973-katie-kresek-98-99-wins-tony-award",
+          "url": "https:
           "text": "Katie Kresek '98, '99"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5920-lee-tusman-to-explore-innovation",
+          "url": "https:
           "text": "Lee Tusman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5908-purchase-named-top-ten-public-liberal-arts",
+          "url": "https:
           "text": "Student on campus viewing a cell phone"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5906-brian-otano-11-signs-deal-with-amazon-studios",
+          "url": "https:
           "text": "Brian Otaño '11"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5890-tamisha-guy-13-earns-vilcek-prize",
+          "url": "https:
           "text": "Tamisha Guy '13"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5850-gianna-caranfa-15-invites-you-to-bee-inked",
+          "url": "https:
           "text": "Gianna Caranfa '15 Inside her new tattoo parlor Bee Inked. (Mark Vergari/The Journal News)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5788-louise-bartolotta-16-receives-inaugural-content",
+          "url": "https:
           "text": "Louise Bartolotta '16"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5781-victor-cuoto-14-nominated-for-news-and-doc-emmy",
+          "url": "https:
           "text": "Victor Cuoto '14"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3036-bryan-korn-12-hilda-wins-two-daytime-emmy-awards",
+          "url": "https:
           "text": "Bryan Korn"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5727-jodi-long-76-earns-a-daytime-emmy-win",
+          "url": "https:
           "text": "Jodi Long '76 Holds Up her Daytime Emmy® Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5690-acting-bfa-named-top-25-in-the-world",
+          "url": "https:
           "text": "Blood Wedding"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5673-connectivecollective-on-view-through-june-27-at",
+          "url": "https:
           "text": "ConnectiveCollective on view at the Neuberger Museum of Art through June 27, 2021"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5589-caleb-dowden-21-earns-fulbright-award",
+          "url": "https:
           "text": "Caleb Dowden '21 (dance)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5566-purchase-is-a-top-200-best-value-college-for-2021",
+          "url": "https:
           "text": "Purchase is Princeton Review Top 200 Best Value Colleges (students on the Quad in Adirondack chairs)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5546-william-byram-20-earns-fulbright-award",
+          "url": "https:
           "text": "William Byram '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5503-4th-annual-pov-festival-april-1718",
+          "url": "https:
           "text": "POV Fest Logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5477-10th-annual-suny-wide-film-festival-april-910",
+          "url": "https:
           "text": "SUNYWide Film Festival design"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5454-travis-sluss-07-named-40-under-40",
+          "url": "https:
           "text": "Travis Sluss '07 (Photo: MacInspires Facebook)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5425-working-5-to-9-tanairi-vazquez-10-stars-in",
+          "url": "https:
           "text": "Tanairi Vazquez '10 (dance performance)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5368-emma-caymares-12-lands-role-on-abc-sitcom",
+          "url": "https:
           "text": "Emma Caymares'12"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5336-keerati-jinakunwiphat-16-is-one-to-watch",
+          "url": "https:
           "text": "Cover of Dance magazine"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5305-broadview-a-meeting-of-the-minds",
+          "url": "https:
           "text": "Entrance to the Broadview complex"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5267-david-de-jesus-plays-on-grammy-nominated-album",
+          "url": "https:
           "text": "Asst. Professor David DeJesus"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5195-the-alchemy-of-meth-by-professor-jason-pine-earns",
+          "url": "https:
           "text": "Professor of Anthropology and Media Studies Jason Pine (Photo: Annette Hornischer)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5107-joe-matoske-10-wins-emmys-and-accepted-into-ace",
+          "url": "https:
           "text": "Joe Matoske '10"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4940-professor-david-grill-and-ben-green-15-earn-emmy",
+          "url": "https:
           "text": "Dave Grill"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5054-purchase-is-among-top-ten-public-national-liberal",
+          "url": "https:
           "text": "Purchase College sign at front with orange and gold mums."
         },
         {
-          "url": "https://www.purchase.edu/live/news/5042-renowned-anthropologist-david-graeber-84-has-died",
+          "url": "https:
           "text": "David Graeber, 2016"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5016-christoper-robbins-american-riad-project-receives",
+          "url": "https:
           "text": "Director, School of Art+Design Christopher Robbins inside the sculpture on site at the American Riad project"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5003-times-up-on-racism",
+          "url": "https:
           "text": "Interim President Dennis Craig and Chief Diversity Officer Jerima DeWese stand below the large clock on campus."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4984-nathaniel-nicco-annan-98-is-uncle-clifford",
+          "url": "https:
           "text": "Actor Nicco Annan '98 as Uncle Clifford in Starz drama P-Valley"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4948-two-2019-grads-are-winners-of-this-years-salomon",
+          "url": "https:
           "text": "Curtis Brodner '19, the 2020 Winner of the Salomon Fund for Journalists Award."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4915-britney-ditocco-20-welcomes-new-students-in-song",
+          "url": "https:
           "text": "Britney DiTocco '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4899-suny-chancellors-award-for-excellence-announced",
+          "url": "https:
           "text": "SUNY logo and wordmark, white on blue background"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4856-the-acting-program-honors-juneteenth",
+          "url": "https:
           "text": "Juneteenth We Breathe Black art exhibition logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4839-professor-shaka-mcglotten-named-data-society",
+          "url": "https:
           "text": "Professor Shaka McGlotten"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4783-yancy-garcia-named-next-ella-fitzgerald-scholar",
+          "url": "https:
           "text": "Yancy Garcia"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4772-dr-milagros-pena-named-next-president",
+          "url": "https:
           "text": "Dr. Milagros Milly Peña, the sixth president of Purchase College."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4748-jazz-studies-head-pete-malinverni-featured-on",
+          "url": "https:
           "text": "Pete Malinverni"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4720-britney-ditocco-20-receives-suny-chancellors-award",
+          "url": "https:
           "text": "Britney DiTocco '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4678-purchase-joins-esports-challenge-sunytogether",
+          "url": "https:
           "text": "SUNY Esports Challenge Co-sponsored by Extreme Networks"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4630-meet-elizabeth-cook-20-thayer-fellowship-winner",
+          "url": "https:
           "text": "Elizabeth Cook '20 (acting)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4615-vocalist-lucy-wijnands-20-finalist-in-prestigious",
+          "url": "https:
           "text": "Lucy Wijnands '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4601-eric-gottesman-awarded-prestigious-guggenheim",
+          "url": "https:
           "text": "Eric Gottesman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4578-novel-by-claribel-ortega-10-will-see-the-big",
+          "url": "https:
           "text": "Claribel Ortega '10"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4310-andrew-buckland-94-earns-oscar-nomination",
+          "url": "https:
           "text": "Ford V Ferrari movie (Merrick Morton/20th Century Fox)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4399-purchase-is-a-best-value",
+          "url": "https:
           "text": "Purchase College Commencement at the Westchester Civic Center, White Plains, N.Y., Friday, May 18, 2018."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4335-jon-samson-03-wins-a-grammy",
+          "url": "https:
           "text": "Jon Samson '03 wins a Grammy for Best Childrens Album"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4271-dance-magazine-names-hannah-garner-15-one-to-watch",
+          "url": "https:
           "text": "Hannah Garner '15 (Credit: Mike Lindle)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3409-kate-gilmore-heals-with-art-after-parkland",
+          "url": "https:
           "text": "Participants walk on the The Yellow Walk performance created by Kate Gilmore"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4211-samara-mclendon-21-earns-prestigious-sassy-award",
+          "url": "https:
           "text": "Samara Joy McLendon '21 holds her Sarah Vaughan Jazz Vocal award."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4184-nine-students-explore-opportunities-in-stem",
+          "url": "https:
           "text": "Left to right: Sarah Yousef, Angelina King, Ariana Padua, Jorge Acuna, Angelique Malcolm, Macela Carmo Dos Santos, Samantha Garcia, Jenni..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/4188-faculty-members-earn-grammy-nominations",
+          "url": "https:
           "text": "Silas Brown"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4066-damani-brissett-21-receives-inaugural-milos",
+          "url": "https:
           "text": "Damani Bissett '21"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4045-senior-wins-princess-grace-foundation-film",
+          "url": "https:
           "text": "Melanie Rosete '20"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4011-georgie-humphries-19-april-mcilwaine-19",
+          "url": "https:
           "text": "Dr. Stephen Harris, April McIlwaine, Georgie Humphries, and Dr. Ryan Taylor"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3989-professor-warren-lehrers-new-book-multimedia",
+          "url": "https:
           "text": "Five Oceans in a Teaspoon Front Cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3971-us-news-and-world-report-ranks-purchase",
+          "url": "https:
           "text": "Purchase College Library exterior"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3937-professor-kamala-sankarams-techno-infused-opera",
+          "url": "https:
           "text": "Kamala Sankaram"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3885-purchase-named-top-385-by-the-princeton-review",
+          "url": "https:
           "text": "Students play music on the mall"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3840-jazz-program-featured-at-artswestchesters-jazzfest",
+          "url": "https:
           "text": "Purchase Jazz Orchestra at Blue Note"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3820-must-read-profile-mitski-13",
+          "url": "https:
           "text": "Mitski '13 (Photo: David Lee, Redmond, WA)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2773-discover-the-academic-partnership-with-upstate",
+          "url": "https:
           "text": "Students Conduct Research in Biology Lab"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3741-two-alumni-star-in-operas-by-purchase-faculty",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/701-laura-kaminsky",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3697-suny-chancellors-award-for-excellence-2019",
+          "url": "https:
           "text": "SUNY Logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3620-lisa-jean-moore-named-distinguished-professor",
+          "url": "https:
           "text": "Lisa Jean Moore (stands at front of class)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3558-nicolas-bruno-15-photographs-his-nightmares",
+          "url": "https:
           "text": "Nick Bruno '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3501-the-center-for-engagement-has-launched",
+          "url": "https:
           "text": "The Center for Engagement"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3491-spotlights-on-david-grill-86-for-a-change",
+          "url": "https:
           "text": "David Grill '86 and student look at stage model"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3446-declan-moore-19-interned-at-the-super-bowl",
+          "url": "https:
           "text": "Declan Moore '19 and Dave Grill '86 at Super Bowl 2019"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3412-purchase-named-a-top-200-best-value-in-the-nation",
+          "url": "https:
           "text": "Students Conduct Research in Biology Lab"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3405-dean-lorenzo-candelaria-in-the-news",
+          "url": "https:
           "text": "Lorenzo Candelaria, Dean of the School of the Arts"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3383-laura-kaminsky-wins-visionary-composer-award",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3333-ted-fox-76-author-of-showtime-at-the-apollo",
+          "url": "https:
           "text": "Showtime at the Apollo cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3310-mary-kosut-receives-prestigious-fellowship",
+          "url": "https:
           "text": "Mary Kosut, associate professor of sociology"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3269-students-place-art-in-vacant-spaces",
+          "url": "https:
           "text": "Art in Vacant Spaces window 2018, “A Woman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3202-sustainability-coordinator-angie-kim-receives",
+          "url": "https:
           "text": "Angie Kim, sustainability coordinator"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3160-conservatory-of-dance-students-in-bam-production",
+          "url": "https:
           "text": "Quaba Ernest and Aleksandra Gologorskaya from the Conservatory of Dance at Purchase College in Robbins' Watermill."
         },
         {
-          "url": "https://www.purchase.edu/live/news/3074-artist-michael-rakowitz-95-at-art-basel-2018",
+          "url": "https:
           "text": "Artist Michael Rakowitz '95"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3031-alumni-win-big-at-creative-arts-emmy-awards",
+          "url": "https:
           "text": "Alumni Ben Green '15, Melissa Shakun '08, and Professor David Grill '86."
         },
         {
-          "url": "https://www.purchase.edu/live/news/2941-purchase-college-students-stand-with-puerto-rico",
+          "url": "https:
           "text": "Volunteers in the SUNY Stands with Puerto Rico initiative"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2921-music-alumni-earn-news-and-doc-emmy-nomination",
+          "url": "https:
           "text": "Chasing Coral documentary still"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2871-two-dance-alumni-earn-princess-grace-awards",
+          "url": "https:
           "text": "Marcella Lewis '16"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2856-follow-purchase-dancers-on-dance-fashion",
+          "url": "https:
           "text": "@issadancelook Instagram account post"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2822-new-opera-by-purchase-instructor-us-poet",
+          "url": "https:
           "text": "Gregory Spears"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1886-gregory-spears",
+          "url": "https:
           "text": "Gregory Spears"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2811-purchase-ranks-among-the-best",
+          "url": "https:
           "text": "Fiske Guide to Colleges 2019 Badge"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2747-purchase-filmmaker-heads-to-sundance-institute",
+          "url": "https:
           "text": "Vuk Lungulov-Klotz '16"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2721-jazz-instructor-wins-musician-and-record-of-the",
+          "url": "https:
           "text": "Matt Wilson"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1747-matthew-wilson",
+          "url": "https:
           "text": "Matt Wilson"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2706-stephen-ferri-13-named-wunderkind-2018",
+          "url": "https:
           "text": "Stephen Ferri '13 (courtesy Westchester Magazine)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2649-madeline-cramer-18-wins-suny-thayer-fellowship",
+          "url": "https:
           "text": "Madeline Cramer '18, Winner of SUNY Thayer Fellowship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2634-purchase-college-represented-with-multiple",
+          "url": "https:
           "text": "Drama Desk Awards logo"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1815-clint-ramos",
+          "url": "https:
           "text": "Clint Ramos"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/324-dane-laffrey",
+          "url": "https:
           "text": "Dane Laffrey"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/313-maruti-evans",
+          "url": "https:
           "text": "Maruti Evans"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2620-a-tree-planted-for-clean-and-green-day",
+          "url": "https:
           "text": "President Schwarz helps plant a tree for Clean and Green Day 2018"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2569-andrew-pharmer-90",
+          "url": "https:
           "text": "Andrew Pharmer '90"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2515-purchase-professor-composes-for-alvin-ailey",
+          "url": "https:
           "text": "Jakub Ciupinski Headshot"
         },
         {
-          "url": "https://www.purchase.edu/academics/studio-composition",
+          "url": "https:
           "text": "Studio Composition"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/249-jakub-ciupiski",
+          "url": "https:
           "text": "Jakub Ciupinski"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2492-jazz-studies-onstage-and-on-air-in-april",
+          "url": "https:
           "text": "New Standards Combo in the Jazz Studies program"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2488-professor-joe-skrivanek-named-distinguished",
+          "url": "https:
           "text": "Joseph A. Skrivanek, professor of chemistry"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2462-president-schwarz-announces-his-plans-for",
+          "url": "https:
           "text": "President Thomas J. Schwarz"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2441-students-walk-out",
+          "url": "https:
           "text": "Students on the main plaza to protest gun violence"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2432-purchase-students-head-to-london",
+          "url": "https:
           "text": "Abrielle Scharff and her Band on stage"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2394-president-schwarz-on-the-college-admission-process",
+          "url": "https:
           "text": "President Thomas J. Schwarz"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2339-professor-of-literature-elise-lemire-tours-walden",
+          "url": "https:
           "text": "Stone marker for site of Thoreau's cabin"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2294-composition-faculty-sends-opera-to-the-schools",
+          "url": "https:
           "text": "Kamala Sankaram Headshet"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2190-purchase-named-best-value-by-kiplingers-personal",
+          "url": "https:
           "text": "Students in class"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2181-critically-acclaimed-spielberg-film-shot-on-campus",
+          "url": "https:
           "text": "Steven Spielberg's The Post film shoot on campus"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2165-purchase-is-all-in-the-antar-family",
+          "url": "https:
           "text": "Jenar Antar '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2123-chris-wedge-81-and-jeanne-markel-81-give-back-to",
+          "url": "https:
           "text": "Jeanne Markel '81 and Chris Wedge '81"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2093-shaka-mcglotten-receives-grant-for-black-data",
+          "url": "https:
           "text": "Shaka McGlotten, Associate Professor of Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2080-professor-nancy-bowen-selected-for-coveted-award",
+          "url": "https:
           "text": "Nancy Bowen"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2045-annual-biomedical-research-conference-for-minority",
+          "url": "https:
           "text": "Students"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2013-purchase-photographers-look-through-the-lens-of",
+          "url": "https:
           "text": "Two Purchase photography students and an alumnus of the program discussed their work at a symposium honoring the work of Gordon Parks. L ..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1984-softball-trio-goes-beyond-sports-in-south-africa",
+          "url": "https:
           "text": "Kelly Hayes '19, Mary Adams '17, and Briana Leon '17 on the beach with penguins on Boulder Beach"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1956-a-special-week-spent-with-alumni",
+          "url": "https:
           "text": "Cain Coleman '09-'11, '15 of Coleman Collective works with students"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1937-hear-professor-lisa-keller-on-wnyc",
+          "url": "https:
           "text": "WNYC logo"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1892-fred-wilson-76-named-art-of-change-fellow",
+          "url": "https:
           "text": "Conceptual artist Fred Wilson '76"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1843-201718-eliza-evans-17",
+          "url": "https:
           "text": "Transpire, an art installation of plastic-wrapped trees by Eliza Evans MFA '17 (visual arts) was selected for the 2017-18 President's Awa..."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1821-acclaimed-novelists-kick-off-the-durst",
+          "url": "https:
           "text": "Authors Hari Kunzru and Katie Kitamura on stage during the Durst Distinguished Lecture Series."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1764-terese-capucilli-78-honored",
+          "url": "https:
           "text": "Terese Capucilli '78"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1716-photographer-tapped-for-brooklyn-museum-exhibition",
+          "url": "https:
           "text": "Kris Graves' 04"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1697-new-composition-faculty-headlines-prototype",
+          "url": "https:
           "text": "Gregory Spears"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1659-students-reimagine-tchaikovsky",
+          "url": "https:
           "text": "Avant Projekts"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1651-the-princeton-review-ranks-purchase-as-a-top",
+          "url": "https:
           "text": "The campus of Purchase College."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1604-purchase-makes-selective-fiske-guide-for-2018",
+          "url": "https:
           "text": "Sunflowers behind the Student Services Building"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1591-2017-emmy-nominations",
+          "url": "https:
           "text": "FEUD: BETTE & JOAN Stanley Tucci '82 as Jack Warner"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1562-purchase-dubbed-a-music-scene",
+          "url": "https:
           "text": "The band Cende"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1428-chancellors-award-for-excellence",
+          "url": "https:
           "text": "SUNY logo and wordmark, white on blue background"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1476-dream-come-true-for-incoming-freshman",
+          "url": "https:
           "text": "The senior class of Summit Academy Charter School with Ellen DeGeneres. Photo Credit: Michael Rozman/Warner Bros."
         },
         {
-          "url": "https://www.purchase.edu/live/news/1431-alumnus-gabriel-fridkis-wins-principal-flute-in",
+          "url": "https:
           "text": "Gabriel Fridkis"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1388-scholar-athletes-honored-by-suny",
+          "url": "https:
           "text": "Emma Porter '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1374-new-media-exhibition-in-yonkers",
+          "url": "https:
           "text": "New Media Photography Expanded at PC4"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1358-suny-appoints-new-chancellor",
+          "url": "https:
           "text": "Dr. Kristina Johnson, incoming SUNY Chancellor"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1309-purchase-opera-wins-two-american-prizes",
+          "url": "https:
           "text": "Purchase Opera: The Crucible"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/72-voice-and-opera-studies",
+          "url": "https:
           "text": "Purchase Opera"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1148-megan-seibel-17-lights-up-the-super-bowl",
+          "url": "https:
           "text": "Design Tech student Megan Seibel with her professor Dave Grill at the Super Bowl"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1130-garth-greenwell-01-on-shortlist-for-penfaulkner",
+          "url": "https:
           "text": "Garth Greenwell"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1005-technical-theatre-legend-joseph-b-forbes-to",
+          "url": "https:
           "text": "Scenic Art Studios founder Joseph B. Forbes"
         },
         {
-          "url": "https://www.purchase.edu/news/for-the-media",
+          "url": "https:
           "text": "Media Relations"
         },
         {
-          "url": "https://www.purchase.edu/news/recent-press-coverage",
+          "url": "https:
           "text": "Recent Press Coverage"
         },
         {
-          "url": "https://www.purchase.edu/news/news-archive",
+          "url": "https:
           "text": "News Archive"
         },
         {
-          "url": "https://www.purchase.edu/magazine",
+          "url": "https:
           "text": "PURCHASE MAGAZINE"
         },
         {
@@ -7655,219 +7664,219 @@ var fallbackPurchaseLinks = [
           "text": "media@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/offices/ccs",
+          "url": "https:
           "text": "Web Page"
         },
         {
-          "url": "https://www.purchase.edu/live/galleries/51-purchase-in-pictures",
+          "url": "https:
           "text": "Purchase in Pictures"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "url": "https:
       "text": "Youth and Precollege Programs • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/continuing-education",
+          "url": "https:
           "text": "Adult Noncredit Programs • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/about",
+          "url": "https:
           "text": "About"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/register",
+          "url": "https:
           "text": "Register"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/fallspring-courses",
+          "url": "https:
           "text": "Fall and spring courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/meet-the-director",
+          "url": "https:
           "text": "Meet the Director"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/contact-us",
+          "url": "https:
           "text": "Contact Us"
         },
         {
-          "url": "https://www.purchase.edu/live/forms/21-1",
+          "url": "https:
           "text": "Join Our Mailing List"
         },
         {
-          "url": "https://www.purchase.edu/live/forms/670-open-house-summer-youth-and-precollege-programs-in-the-a",
+          "url": "https:
           "text": "Register for the Open House"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-youth-programs-in-the-arts",
+          "url": "https:
           "text": "youth"
         },
         {
-          "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-precollege-programs-in-the-arts",
+          "url": "https:
           "text": "precollege students"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education",
+      "url": "https:
       "text": "Adult Noncredit Programs • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/professional-certificates",
+          "url": "https:
           "text": "Professional Certificates"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/personal-enrichment",
+          "url": "https:
           "text": "Personal Enrichment Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/undergraduate-courses-with-noncredit-seats",
+          "url": "https:
           "text": "Undergraduate Courses with Noncredit Seats"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/online-noncredit-programs-and-courses",
+          "url": "https:
           "text": "Courses and programs through online partners"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/meet-the-director",
+          "url": "https:
           "text": "Meet the Director"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/contact-us",
+          "url": "https:
           "text": "Contact Us"
         },
         {
-          "url": "https://www.purchase.edu/live/forms/60-join-our-mailing-list",
+          "url": "https:
           "text": "Join Our Mailing List"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/register",
+          "url": "https:
           "text": "Register Now"
         },
         {
-          "url": "https://www.purchase.edu/live/forms/528-1",
+          "url": "https:
           "text": "Continuing Education Course Proposal Form"
         },
         {
-          "url": "https://www.purchase.edu/academics/continuing-education/interior-design/courses",
+          "url": "https:
           "text": "Open Interior Design Courses"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions/summer",
+          "url": "https:
           "text": "summer"
         },
         {
-          "url": "https://www.purchase.edu/summer-and-winter-sessions/winter",
+          "url": "https:
           "text": "winter"
         },
         {
-          "url": "https://www.purchase.edu/broadview",
+          "url": "https:
           "text": "Broadview"
         },
         {
-          "url": "https://www.purchase.edu/covid-19-updates-and-plans",
+          "url": "https:
           "text": "COVID-19 Updates"
         },
         {
-          "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/registration-procedures",
+          "url": "https:
           "text": "Registration Procedures"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies",
+          "url": "https:
           "text": "Post-Baccalaureate Premedical Studies"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6720-iin-graduate-one-of-7-black-entrepreneurs-changing",
+          "url": "https:
           "text": "IIN Graduate One of 7 Black Entrepreneurs Changing the Face of the Health and Wellness Industry"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2469-new-to-online-learning",
+          "url": "https:
           "text": "New to Online Learning?"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4374-interested-in-applying-to-purchase-college",
+          "url": "https:
           "text": "Interested in applying to Purchase College?"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/acting",
+      "url": "https:
       "text": "Acting • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts",
+          "url": "https:
           "text": "Conservatory of Theatre Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/current-senior-acting-company",
+          "url": "https:
           "text": "Current Senior Acting Company"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/recent-news",
+          "url": "https:
           "text": "Recent News"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/acting-network",
+          "url": "https:
           "text": "Acting Network"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts/performances",
+          "url": "https:
           "text": "Performances"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts/facilities",
+          "url": "https:
           "text": "Facilities"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-arts/alumni",
+          "url": "https:
           "text": "Alumni"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/acting",
+          "url": "https:
           "text": "Acting BFA"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/2707-liam-joynt",
+          "url": "https:
           "text": "Liam Joynt"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/287-maggie-surovell",
+          "url": "https:
           "text": "Maggie Surovell"
         },
         {
@@ -7875,439 +7884,439 @@ var fallbackPurchaseLinks = [
           "text": "acting.auditions@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1799-micah-stock-11",
+          "url": "https:
           "text": "Micah Stock ’11"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6449-machinal",
+          "url": "https:
           "text": "Machinal"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-design-technology",
+          "url": "https:
           "text": "Theatre Design/Technology"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/recent-performances",
+          "url": "https:
           "text": "SEE FULL GALLERY"
         },
         {
-          "url": "https://www.purchase.edu/academics/acting/requirements/additional-program-information",
+          "url": "https:
           "text": "See if we answered them here"
         },
         {
-          "url": "https://www.purchase.edu/magazine/acting-at-50",
+          "url": "https:
           "text": "PURCHASE magazine cover story"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5746-",
+          "url": "https:
           "text": "Orlagh Cassidy ’90"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1798-",
+          "url": "https:
           "text": "Sherry Stringfield ’89"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6868-alano-miller-02",
+          "url": "https:
           "text": "Alano Miller ’02"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5720-",
+          "url": "https:
           "text": "Nicco Annan ’98"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8571-sydney-cole-alexander-15-stars-in-appletv-hit-series",
+          "url": "https:
           "text": "Sydney Cole Alexander '15"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8567-carter-hudson-09-cast-in-broadways-good-night-and",
+          "url": "https:
           "text": "Carter Hudson '09"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8562-new-season-of-the-white-lotus-features-two-from-purchas",
+          "url": "https:
           "text": "Sarah Catherine Hook '17 and Parker Posey in season three of HBO's The White Lotus."
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7467-lei-lei-bavoil-15",
+          "url": "https:
           "text": "Lei-Lei Bavoil ’15"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6029-",
+          "url": "https:
           "text": "Gina Belafonte ’83"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1793-",
+          "url": "https:
           "text": "Chris Perfetti ’11"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5723-",
+          "url": "https:
           "text": "Paige Gilbert ’14"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology",
+      "url": "https:
       "text": "Anthropology • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/anthropology/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/462-lorraine-plourde",
+          "url": "https:
           "text": "Lorraine Plourde"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/anthropology",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7625-sara-richter-24",
+          "url": "https:
           "text": "Sara Richter ’24"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8555-anthropology-professor-lorraine-plourde-on-the",
+          "url": "https:
           "text": "Anthropology Professor Lorraine Plourde on The Urbanist podcast"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8410-lip-critic-lands-at-57-on-pastes-100-best",
+          "url": "https:
           "text": "Lip Critic's Hex Dealer album cover"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7969-the-2024-suny-chancellors-award-winners",
+          "url": "https:
           "text": "7969-the-2024-suny-chancellors-award-winners"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5632-opeoluwa-obasa-20",
+          "url": "https:
           "text": "Opeoluwa Obasa ’20"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3385-",
+          "url": "https:
           "text": "Janette Yarwood ’96"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7333-cassidy-hammond-17",
+          "url": "https:
           "text": "Cassidy Rose Hammond ’17"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5997-karen-beltran-02",
+          "url": "https:
           "text": "Karen T. Beltran ’02"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history",
+      "url": "https:
       "text": "Art History • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma",
+          "url": "https:
           "text": "Art History (MA) • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/awards",
+          "url": "https:
           "text": "Awards"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/501-paul-kaplan",
+          "url": "https:
           "text": "Paul Kaplan"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/art-history",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8586-daniela-gomez-paz-14-unmissable-show-at-lyles-amp",
+          "url": "https:
           "text": "Daniela Gomez Paz"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8248-work-by-khalif-tahir-thompson-18-at-the-armory-show",
+          "url": "https:
           "text": "Khlaif Tahir Thompson '18"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7052-gilman-scholarship-spotlight-frankie-bademci-23",
+          "url": "https:
           "text": "Gilman Scholarship Spotlight: Frankie Bademci ’23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6023-brittany-petronella-16-shares-her-passion-for",
+          "url": "https:
           "text": "Brittany Petronella '16 (photography, art history minor)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5470-professor-elizabeth-guffey-pens-article-on-active",
+          "url": "https:
           "text": "Professor Elizabeth Guffey Pens Article on “Active Exclusion”"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4518-michelle-friedman-11",
+          "url": "https:
           "text": "Michelle Friedman ’11"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma",
+      "url": "https:
       "text": "Art History (MA) • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/scholarships-and-awards",
+          "url": "https:
           "text": "Fellowships and Awards"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-history-ma/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/graduateinquiry",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/academics/graduate-programs",
+          "url": "https:
           "text": "Graduate Programs"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1763-jonah-westerman",
+          "url": "https:
           "text": "Jonah Westerman"
         },
         {
-          "url": "https://www.purchase.edu/admissions/graduate-students/art-history-ma",
+          "url": "https:
           "text": "Application Details"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6922-kristen-galvin-08",
+          "url": "https:
           "text": "Kristen Galvin ’08"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6256-ma-graduate-shilpi-chandras-solo-curatorial-debut",
+          "url": "https:
           "text": "Shilpi Chandra MA ’15 Has Solo Curatorial Debut"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5604-alumni-spotlight-meet-chelsea-spengemann-ma-11",
+          "url": "https:
           "text": "Chelsea Spengemann, MA ’11"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/art-and-design/foundations",
+      "url": "https:
       "text": "Foundations Program • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/ad-student-handbook",
+          "url": "https:
           "text": "A+D Handbook"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design/foundations/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/painting-and-drawing",
+          "url": "https:
           "text": "Painting and Drawing"
         },
         {
-          "url": "https://www.purchase.edu/academics/photography",
+          "url": "https:
           "text": "Photography"
         },
         {
-          "url": "https://www.purchase.edu/academics/printmaking",
+          "url": "https:
           "text": "Printmaking"
         },
         {
-          "url": "https://www.purchase.edu/academics/sculpture",
+          "url": "https:
           "text": "Sculpture"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts",
+          "url": "https:
           "text": "Visual Arts (BS)"
         },
         {
-          "url": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+          "url": "https:
           "text": "Visual Arts, Interdisciplinary (BFA)"
         },
         {
-          "url": "https://www.purchase.edu/academics/art-and-design",
+          "url": "https:
           "text": "School of Art+Design"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management",
+      "url": "https:
       "text": "Arts Management • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+          "url": "https:
           "text": "School of Liberal Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/minor-in-arts-management",
+          "url": "https:
           "text": "Minor in Arts Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/internships",
+          "url": "https:
           "text": "Internships"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/jandon-lecture-series",
+          "url": "https:
           "text": "Jandon Lecture Series"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/notes-from-the-field",
+          "url": "https:
           "text": "Notes from the Field"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/sammies",
+          "url": "https:
           "text": "SAMMIES"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3104-arts-management-iesa-artsampculture",
+          "url": "https:
           "text": "Semester in France"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3103-arts-management-international-business-school",
+          "url": "https:
           "text": "Semester in Hungary"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/694-maria-guralnik",
+          "url": "https:
           "text": "Maria Guralnik"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/696-jordan-shue",
+          "url": "https:
           "text": "Jordan Shue"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
@@ -8319,707 +8328,707 @@ var fallbackPurchaseLinks = [
           "text": "email the department"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/arts-management",
+          "url": "https:
           "text": "Visit the Career Development Center"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7772-museum-visitor-research-the-new-museum",
+          "url": "https:
           "text": "READ MORE ABOUT THEIR WORK"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7769-exhibition-practice-and-management-visual-arts-collabor",
+          "url": "https:
           "text": "SEE IMAGES FROM THE OPENING"
         },
         {
-          "url": "https://www.purchase.edu/live/events/71956-creating-unique-career-pathways-in-the-arts",
+          "url": "https:
           "text": "71956-creating-unique-career-pathways-in-the-arts"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-pitching-competition-awards-5000",
+          "url": "https:
           "text": "The 2023 Startup Competition Awards $5,000 in Prizes"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7456-symara-johnson-19-named-outstanding-breakout",
+          "url": "https:
           "text": "Portrait of light skinned Black dancer with hand bent over head"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7419-crossover-goals-pollinator-garden-signage",
+          "url": "https:
           "text": "Flowers in the Purchase Native Pollinator Garden"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6662-rachael-pazdan-12",
+          "url": "https:
           "text": "Rachael Pazdan ’12"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6663-lily-thrall-14",
+          "url": "https:
           "text": "Lily Thrall ’14"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6782-pavani-srinivasan-11",
+          "url": "https:
           "text": "Pavani Srinivasan ’11"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6665-josh-abess-12",
+          "url": "https:
           "text": "Josh Abess ’12"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6144-angela-galli-19",
+          "url": "https:
           "text": "Angela Galli ’19"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6141-viktoriya-molchanova-20",
+          "url": "https:
           "text": "Viktoriya Molchanova ’20"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6140-cheyenne-myrie-17",
+          "url": "https:
           "text": "Cheyenne Myrie ’17"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5222-",
+          "url": "https:
           "text": "Adriana Arguelles ’13"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+      "url": "https:
       "text": "Music Industry Concentration • Arts Management • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+          "url": "https:
           "text": "School of Liberal Studies"
         },
         {
-          "url": "https://www.purchase.edu/offices/provost/general-education-curriculum",
+          "url": "https:
           "text": "General Education"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/687-academic-requirements-for-undergraduate-degrees",
+          "url": "https:
           "text": "other degree requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/eight-semester-graduation-plan",
+          "url": "https:
           "text": "Eight-Semester Graduation Plan"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry/eight-semester-graduation-plan",
+          "url": "https:
           "text": "Eight-Semester Graduation Plan"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+          "url": "https:
           "text": "Performing Arts Concentration • Arts Management • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/minor-in-arts-management",
+          "url": "https:
           "text": "Minor in Arts Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/internships",
+          "url": "https:
           "text": "Internships"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/jandon-lecture-series",
+          "url": "https:
           "text": "Jandon Lecture Series"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/notes-from-the-field",
+          "url": "https:
           "text": "Notes from the Field"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/sammies",
+          "url": "https:
           "text": "SAMMIES"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3104-arts-management-iesa-artsampculture",
+          "url": "https:
           "text": "Semester in France"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3103-arts-management-international-business-school",
+          "url": "https:
           "text": "Semester in Hungary"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+      "url": "https:
       "text": "Performing Arts Concentration • Arts Management • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+          "url": "https:
           "text": "School of Liberal Studies"
         },
         {
-          "url": "https://www.purchase.edu/offices/provost/general-education-curriculum",
+          "url": "https:
           "text": "General Education"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/687-academic-requirements-for-undergraduate-degrees",
+          "url": "https:
           "text": "other degree requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/eight-semester-graduation-plan",
+          "url": "https:
           "text": "Eight-Semester Graduation Plan"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts/eight-semester-graduation-plan",
+          "url": "https:
           "text": "Eight-Semester Graduation Plan"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/requirements/minor-in-arts-management",
+          "url": "https:
           "text": "Minor in Arts Management"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/internships",
+          "url": "https:
           "text": "Internships"
         },
         {
-          "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+          "url": "https:
           "text": "Entrepreneurship in the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/jandon-lecture-series",
+          "url": "https:
           "text": "Jandon Lecture Series"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/notes-from-the-field",
+          "url": "https:
           "text": "Notes from the Field"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/sammies",
+          "url": "https:
           "text": "SAMMIES"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3104-arts-management-iesa-artsampculture",
+          "url": "https:
           "text": "Semester in France"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3103-arts-management-international-business-school",
+          "url": "https:
           "text": "Semester in Hungary"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/arts/open-access",
+      "url": "https:
       "text": "Arts Open Access • School of the Arts • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/arts",
+          "url": "https:
           "text": "School of the Arts"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts-management/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/theatre-and-performance/courses",
+          "url": "https:
           "text": "theatre and performance"
         },
         {
-          "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+          "url": "https:
           "text": "Course Search"
         },
         {
-          "url": "https://www.purchase.edu/academics/arts/alumni",
+          "url": "https:
           "text": "Alumni"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/asian-studies",
+      "url": "https:
       "text": "Asian Studies • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/asian-studies/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/asian-studies/requirements-for-minor",
+          "url": "https:
           "text": "Requirements for Minor"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/526-christian-bailey",
+          "url": "https:
           "text": "Christian Bailey"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry",
+      "url": "https:
       "text": "Biochemistry • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/about",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/618-",
+          "url": "https:
           "text": "Joseph Skrivanek"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biochemistry",
+          "url": "https:
           "text": "Career Development Center"
         },
         {
-          "url": "https://www.purchase.edu/academics/biochemistry/requirements/eight-semester-graduation-plan",
+          "url": "https:
           "text": "eight-semester plan"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3213-students-attend-national-stem-conference",
+          "url": "https:
           "text": "Students Attend National STEM Conference"
         },
         {
-          "url": "https://www.purchase.edu/live/news/2045-annual-biomedical-research-conference-for-minority",
+          "url": "https:
           "text": "Students"
         },
         {
-          "url": "https://www.purchase.edu/live/news/1381-showcasing-the-sciences",
+          "url": "https:
           "text": "Showcasing the Sciences"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/biology",
+      "url": "https:
       "text": "Biology • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3064-coral-reef-biology-and-ecology-roatan-honduras",
+          "url": "https:
           "text": "Coral Reef Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/pre-med-advising",
+          "url": "https:
           "text": "Premed advising"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+          "url": "https:
           "text": "Concentrations • Biology • Purchase College"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/610-mark-jonas",
+          "url": "https:
           "text": "Mark Jonas"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research/senior-project",
+          "url": "https:
           "text": "Senior Project"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research",
+          "url": "https:
           "text": "Student Science Symposium"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development",
+          "url": "https:
           "text": "Career Development Center"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5-elliott-abrams",
+          "url": "https:
           "text": "Elliott Abrams, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/607-james-g-daly",
+          "url": "https:
           "text": "James G. Daly, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3553-erika-ebbs",
+          "url": "https:
           "text": "Erika Ebbs, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/608-lee-ehrman",
+          "url": "https:
           "text": "Lee Ehrman, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/609-jan-robert-factor",
+          "url": "https:
           "text": "Jan Robert Factor, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/1759-stephen-harris",
+          "url": "https:
           "text": "Stephen E. Harris, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/634-george-p-kraemer",
+          "url": "https:
           "text": "George Kraemer, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/611-maryann-mcenroe",
+          "url": "https:
           "text": "Maryann McEnroe, PhD"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/618-joseph-skrivanek",
+          "url": "https:
           "text": "Joseph A. Skrivanek, PhD"
         },
         {
-          "url": "https://www.purchase.edu/admissions/transfers",
+          "url": "https:
           "text": "Transfers"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8308-behind-the-brick-general-biology-1-lab",
+          "url": "https:
           "text": "Behind the Brick: Gen Bio I Lab"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8539-biology-facilities-equipment",
+          "url": "https:
           "text": "Inside the Facilities"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4416-closer-look-biotechnology-concentration",
+          "url": "https:
           "text": "Closer Look: Biotech Concentration"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/2206-jeffrey-arroyo",
+          "url": "https:
           "text": "Jeffrey Arroyo"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biology",
+          "url": "https:
           "text": "Careers in Biology"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5555-",
+          "url": "https:
           "text": "Elizabeth Bardwil-Lugones ’21"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6542-colm-mccarthy-09",
+          "url": "https:
           "text": "Colm McCarthy ’09"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5546-",
+          "url": "https:
           "text": "Jorge Acuna ’20"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3406-",
+          "url": "https:
           "text": "Mark Viniello ’92"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+          "url": "https:
           "text": "Nationally Ranked for Graduates Who Earn PhDs"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7888-purchase-receives-second-invasive-species-grant",
+          "url": "https:
           "text": "Maura VanderPutten (Environmental Sciences, Biology minor)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-pitching-competition-awards-5000",
+          "url": "https:
           "text": "The 2023 Startup Competition Awards $5,000 in Prizes"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+      "url": "https:
       "text": "Concentrations • Biology • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/live/news/4416-closer-look-biotechnology-concentration",
+          "url": "https:
           "text": "Closer Look: Biotech Concentration"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/eight-semester-graduation-plans",
+          "url": "https:
           "text": "Eight-Semester Graduation Plans"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/requirements/minor-in-biology",
+          "url": "https:
           "text": "Minor in Biology"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/biology/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3064-coral-reef-biology-and-ecology-roatan-honduras",
+          "url": "https:
           "text": "Coral Reef Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/pre-med-advising",
+          "url": "https:
           "text": "Premed advising"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry",
+      "url": "https:
       "text": "Chemistry • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/chemistry/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/618-joseph-skrivanek",
+          "url": "https:
           "text": "Joseph A. Skrivanek, PhD"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/academics/the-undergraduate-experience/senior-project",
+          "url": "https:
           "text": "senior project"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/chemistry",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8534-professor-stephen-cooke-creates-new-chemistry-and",
+          "url": "https:
           "text": "Original illustration by Professor Stephen Cooke, published by Physical Chemistry Chemical Physics."
         },
         {
-          "url": "https://www.purchase.edu/live/news/7277-sonia-seth-suny-chancellors-award-winner",
+          "url": "https:
           "text": "SUNY Chancellor John King, Sonia Seth '23 holding a certificate, and Director of the School of Natural and Social Sciences Rudolf Gaudio."
         },
         {
-          "url": "https://www.purchase.edu/live/news/6827-can-clever-chemistry-eliminate-nuclear-waste",
+          "url": "https:
           "text": "Uranium spectrum visible"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6542-colm-mccarthy-09",
+          "url": "https:
           "text": "Colm McCarthy ’09"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3380-",
+          "url": "https:
           "text": "John Ambroseo ’83"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3405-",
+          "url": "https:
           "text": "Jaya Mohanan Lakshmi ’99"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/chinese",
+      "url": "https:
       "text": "Chinese • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese/requirements-for-minor",
+          "url": "https:
           "text": "Requirements for Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/chinese/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/language-and-culture",
+          "url": "https:
           "text": "Language and Culture"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
@@ -9029,61 +9038,61 @@ var fallbackPurchaseLinks = [
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "url": "https:
       "text": "Cinema and Television Studies • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies",
+          "url": "https:
           "text": "School of Film and Media Studies"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/television-theory-and-practice",
+          "url": "https:
           "text": "Television Theory and Practice"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/transnational-filmmaking-project",
+          "url": "https:
           "text": "Transnational Filmmaking Project"
         },
         {
-          "url": "https://www.purchase.edu/academics/cinema-and-television-studies/student-work-and-accolades",
+          "url": "https:
           "text": "Student Work and Accolades"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/2145-nathan-holmes",
+          "url": "https:
           "text": "Nathan Holmes"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/cinema-studies",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
@@ -9091,10000 +9100,10000 @@ var fallbackPurchaseLinks = [
           "text": "fms@purchase.edu"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8514-azazel-jacobs-94-visits-to-screen-his-three-daughters",
+          "url": "https:
           "text": "Azazel Jacobs ’94 visits to screen HIS THREE DAUGHTERS"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8516-cinema-studies-students-attend-film-archiving",
+          "url": "https:
           "text": "Cinema Studies Students Attend Film Archiving Conference"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8436-halloween-edition-of-cinemaroll-is-now-out",
+          "url": "https:
           "text": "Halloween Edition of CINEMAROLL is now out"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3459-sean-dunne-03",
+          "url": "https:
           "text": "Sean Dunne ’03"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6790-eric-hahn-14",
+          "url": "https:
           "text": "Eric Hahn ’14"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7343-troy-peterson-19",
+          "url": "https:
           "text": "Troy Peterson ’19"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7834-paul-drechsler-martell-07",
+          "url": "https:
           "text": "Paul Drechsler-Martell ’07"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "url": "https:
       "text": "College and Expository Writing Program • School of Humanities • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/live/blurbs/2159-transfer-credit",
+          "url": "https:
           "text": "college policies"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/meet-the-director",
+          "url": "https:
           "text": "Meet the Director"
         },
         {
-          "url": "https://www.purchase.edu/offices/casa-purchase",
+          "url": "https:
           "text": "CASA Purchase"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/voces",
+          "url": "https:
           "text": "VOCES"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/journal-of-expository-writing",
+          "url": "https:
           "text": "Expose"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/lectures",
+          "url": "https:
           "text": "Lectures"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/student-publications",
+          "url": "https:
           "text": "Student Publications"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/awards",
+          "url": "https:
           "text": "Awards"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/humanities-events",
+          "url": "https:
           "text": "Humanities Events"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/working-in-humanities",
+          "url": "https:
           "text": "Working in Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/contact-us",
+          "url": "https:
           "text": "Contact Us"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/communications",
+      "url": "https:
       "text": "Communications • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/communications/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/2192-megan-rossman",
+          "url": "https:
           "text": "Megan Rossman"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+          "url": "https:
           "text": "Liberal Arts and Sciences BA / BS"
         },
         {
-          "url": "https://www.purchase.edu/live/galleries/595-communications-in-the-field",
+          "url": "https:
           "text": "VIEW FULL GALLERY"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/communications",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6760-benjamin-chalson-20",
+          "url": "https:
           "text": "Benjamin Chalson ’20"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5167-tayler-montague-19",
+          "url": "https:
           "text": "Tayler Montague ’19"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6788-riot-usa-22",
+          "url": "https:
           "text": "Riot USA ’22"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6757-jaden-doret-23",
+          "url": "https:
           "text": "Jaden Doret ’23"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7981-broadcast-tv-studio-provides-professional",
+          "url": "https:
           "text": "Broadcast TV Studio Provides Professional Experience"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-pitching-competition-awards-5000",
+          "url": "https:
           "text": "The 2023 Startup Competition Awards $5,000 in Prizes"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7695-grammy-nominated",
+          "url": "https:
           "text": "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition",
+      "url": "https:
       "text": "Composition (Classical) • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/music",
+          "url": "https:
           "text": "Conservatory of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/bachelor-of-music",
+          "url": "https:
           "text": "Bachelor of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/minor-of-music",
+          "url": "https:
           "text": "Minor of Music (Classical Composition)"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/master-of-music",
+          "url": "https:
           "text": "Master of Music"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/private-lessons",
+          "url": "https:
           "text": "Private Lessons"
         },
         {
-          "url": "https://www.purchase.edu/academics/classical-composition/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/music-courses",
+          "url": "https:
           "text": "Music Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/music-minor",
+          "url": "https:
           "text": "Music Minor"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/alumni",
+          "url": "https:
           "text": "Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/music/facilities",
+          "url": "https:
           "text": "Facilities"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/701-laura-kaminsky",
+          "url": "https:
           "text": "Laura Kaminsky"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/music",
+          "url": "https:
           "text": "Music MusB"
         },
         {
-          "url": "https://www.purchase.edu/admissions/music-graduate",
+          "url": "https:
           "text": "Graduate"
         },
         {
-          "url": "https://www.purchase.edu/admissions/audition-and-portfolio-guidelines/music",
+          "url": "https:
           "text": "LEARN MORE\nABOUT APPLY TODAY - MUSIC AT PURCHASE"
         },
         {
-          "url": "https://www.purchase.edu/live/news/6260-lecturer-gregory-spears-premieres-love-story",
+          "url": "https:
           "text": "Lecturer Gregory Spears Premieres “Love Story”"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5126-jonathan-harris-20-presidents-award-winner-for",
+          "url": "https:
           "text": "Jonathan Harris '20"
         },
         {
-          "url": "https://www.purchase.edu/offices/president/presidents-award",
+          "url": "https:
           "text": "The President’s Award"
         },
         {
-          "url": "https://www.purchase.edu/live/news/5343-laura-jobin-acosta-20-mm-earns-inaugural-opera",
+          "url": "https:
           "text": "Laura Jobin-Acosta '20 MM"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7536-sequoia-sellinger-17",
+          "url": "https:
           "text": "Sequoia Sellinger ’17"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/5500-jordan-mclean-06-mm-20",
+          "url": "https:
           "text": "Jordan Mclean ’06, MM ’20"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/contemplative-studies",
+      "url": "https:
       "text": "Contemplative Studies • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+          "url": "https:
           "text": "School of Natural and Social Sciences"
         },
         {
-          "url": "https://www.purchase.edu/academics/contemplative-studies/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/contemplative-studies/requirements",
+          "url": "https:
           "text": "Requirements for Minor"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/679-matthew-immergut",
+          "url": "https:
           "text": "Matthew Immergut"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/390-joshua-lutz",
+          "url": "https:
           "text": "Joshua Lutz"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3808-mindfulness-in-action",
+          "url": "https:
           "text": "Mindfulness In Action"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3807-a-lecture-with-dan-goleman",
+          "url": "https:
           "text": "A Lecture with Dan Goleman"
         },
         {
-          "url": "https://www.purchase.edu/live/news/3806-phakchok-rinpoche-and-erric-solomon-radically",
+          "url": "https:
           "text": "Phakchok Rinpoche and Erric Solomon “Radically Happy”"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing",
+      "url": "https:
       "text": "Creative Writing • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities",
+          "url": "https:
           "text": "School of Humanities"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/student-journal-italics-mine",
+          "url": "https:
           "text": "Student Journal: Italics Mine"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/meet-our-alumni",
+          "url": "https:
           "text": "Meet Our Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/news-and-events",
+          "url": "https:
           "text": "News and Events"
         },
         {
-          "url": "https://www.purchase.edu/academics/creative-writing/how-to-apply",
+          "url": "https:
           "text": "How to Apply"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/525-mehdi-okasi",
+          "url": "https:
           "text": "Mehdi Tavana Okasi"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/creative-writing",
+          "url": "https:
           "text": "Creative Writing BA"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/senior-project",
+          "url": "https:
           "text": "senior project"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/lectures/durst-distinguished-lectures",
+          "url": "https:
           "text": "The Durst Distinguished Chair and the Durst Lecture Series"
         },
         {
-          "url": "https://www.purchase.edu/academics/school-of-humanities/student-publications",
+          "url": "https:
           "text": "Student Publications"
         },
         {
-          "url": "https://www.purchase.edu/academics/purchase-experience/study-abroad",
+          "url": "https:
           "text": "studying abroad"
         },
         {
-          "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/creative-writing",
+          "url": "https:
           "text": "Visit the Career Development Center to learn more"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7221-misty-yarnall-22",
+          "url": "https:
           "text": "Misty Yarnall ’22"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3496-",
+          "url": "https:
           "text": "Trisha Murphy ’19"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6720-emily-verona-12",
+          "url": "https:
           "text": "Emily Verona ’12"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6212-",
+          "url": "https:
           "text": "Marissa LaRocca ’09"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8576-notable-authors-in-conversation",
+          "url": "https:
           "text": "Notable Authors in Conversation"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8320-author-jiaming-tang-18-discusses-debut-novel",
+          "url": "https:
           "text": "Author Jiaming Tang ’18 Discusses Debut Novel"
         },
         {
-          "url": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-with-nods-to-cinema",
+          "url": "https:
           "text": "Debut Novel by Emily Ruth Verona ’12 With Nods to Cinema"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance",
+      "url": "https:
       "text": "Dance Performance • Purchase College",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": [
         {
-          "url": "https://www.purchase.edu/academics/dance",
+          "url": "https:
           "text": "Conservatory of Dance"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/about-the-program",
+          "url": "https:
           "text": "About the Program"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/requirements",
+          "url": "https:
           "text": "Requirements"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/courses",
+          "url": "https:
           "text": "Courses"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/meet-our-faculty",
+          "url": "https:
           "text": "Meet Our Faculty"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/study-abroad",
+          "url": "https:
           "text": "Study Abroad"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/pilates-micro-credential",
+          "url": "https:
           "text": "Pilates Micro-Credential"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance-performance/recent-news",
+          "url": "https:
           "text": "Recent News"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance/purchase-dance-company",
+          "url": "https:
           "text": "Purchase Dance Company"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance/alumni",
+          "url": "https:
           "text": "Alumni"
         },
         {
-          "url": "https://www.purchase.edu/academics/dance/facilities",
+          "url": "https:
           "text": "Facilities"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+          "url": "https:
           "text": "Apply"
         },
         {
-          "url": "https://admission.purchase.edu/register/inquiryform",
+          "url": "https:
           "text": "Request Information"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/165-nelly-van-bommel",
+          "url": "https:
           "text": "Nelly van Bommel"
         },
         {
-          "url": "https://www.purchase.edu/admissions/apply-to-purchase/dance",
+          "url": "https:
           "text": "Dance BFA"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/2199-doug-varone-78",
+          "url": "https:
           "text": "Doug Varone ’78"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8480-damani-pompey-12-earns-nysca-grant",
+          "url": "https:
           "text": "Damani Pompey '12 (Photo: Conor McNamara)"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8460-balletx-to-perform-work-by-choreographer-nicolo",
+          "url": "https:
           "text": "BalletX to Perform Work by Choreographer Nicolo Fonte ’87"
         },
         {
-          "url": "https://www.purchase.edu/live/news/8456-two-named-25-to-watch",
+          "url": "https:
           "text": "Dava Huesca '19"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/6034-",
+          "url": "https:
           "text": "Thomas Warfield ’88"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7815-jai-perez-23",
+          "url": "https:
           "text": "Jai Perez ’23"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/3454-",
+          "url": "https:
           "text": "Meryl Cates ’08"
         },
         {
-          "url": "https://www.purchase.edu/live/profiles/7125-joy-marie-thompson-18",
+          "url": "https:
           "text": "Joy-Marie Thompson ’18"
         }
       ]
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/requirements/ballet-concentration",
+      "url": "https:
       "text": "Dance Performance: Ballet",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/requirements/composition-concentration",
+      "url": "https:
       "text": "Dance Performance: Composition",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/requirements/production-concentration",
+      "url": "https:
       "text": "Dance Performance: Production",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/psychology/certificate-in-early-childhood-development",
+      "url": "https:
       "text": "Early Childhood Development",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/economics",
+      "url": "https:
       "text": "Economics",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/education-studies",
+      "url": "https:
       "text": "Education Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/english-and-global-literatures",
+      "url": "https:
       "text": "English and Global Literatures",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+      "url": "https:
       "text": "Entrepreneurship in the Arts",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/environmental-studies",
+      "url": "https:
       "text": "Environmental Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/film",
+      "url": "https:
       "text": "Film",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/film-video-production",
+      "url": "https:
       "text": "Film/Video Production",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/french",
+      "url": "https:
       "text": "French",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/gender-studies",
+      "url": "https:
       "text": "Gender Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/general-studies",
+      "url": "https:
       "text": "General Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/global-black-studies",
+      "url": "https:
       "text": "Global Black Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/global-studies",
+      "url": "https:
       "text": "Global Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/graphic-design",
+      "url": "https:
       "text": "Graphic Design",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/graphic-design/requirements/illustration",
+      "url": "https:
       "text": "Graphic Design: Illustration",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/history",
+      "url": "https:
       "text": "History",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance",
+      "url": "https:
       "text": "Instrumental Performance",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/brass",
+      "url": "https:
       "text": "Instrumental Performance: Brass",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/classical-guitar",
+      "url": "https:
       "text": "Instrumental Performance: Classical Guitar",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/harp",
+      "url": "https:
       "text": "Instrumental Performance: Harp",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/percussion",
+      "url": "https:
       "text": "Instrumental Performance: Percussion",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/piano",
+      "url": "https:
       "text": "Instrumental Performance: Piano",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/strings",
+      "url": "https:
       "text": "Instrumental Performance: Strings",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/instrumental-performance/woodwinds",
+      "url": "https:
       "text": "Instrumental Performance: Woodwinds",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/italian",
+      "url": "https:
       "text": "Italian",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/jazz-studies",
+      "url": "https:
       "text": "Jazz Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/jewish-studies",
+      "url": "https:
       "text": "Jewish Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/journalism",
+      "url": "https:
       "text": "Journalism",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/language-and-culture",
+      "url": "https:
       "text": "Language and Culture",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/latin-american-caribbean-and-latinx-studies",
+      "url": "https:
       "text": "Latin American, Caribbean, and Latinx Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/law-and-justice-studies",
+      "url": "https:
       "text": "Law and Justice Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/liberal-arts",
+      "url": "https:
       "text": "Liberal Arts",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/linguistics",
+      "url": "https:
       "text": "Linguistics",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/mathematics-computer-science",
+      "url": "https:
       "text": "Mathematics/Computer Science",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/media-studies",
+      "url": "https:
       "text": "Media Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/museum-studies",
+      "url": "https:
       "text": "Museum Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/music/music-minor",
+      "url": "https:
       "text": "Music Minor",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/new-media",
+      "url": "https:
       "text": "New Media",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/painting-and-drawing",
+      "url": "https:
       "text": "Painting and Drawing",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/philosophy-and-critical-thought",
+      "url": "https:
       "text": "Philosophy and Critical Thought",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/photography",
+      "url": "https:
       "text": "Photography",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/playwriting-and-screenwriting",
+      "url": "https:
       "text": "Playwriting",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/political-science",
+      "url": "https:
       "text": "Political Science",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/printmaking",
+      "url": "https:
       "text": "Printmaking",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/psychology",
+      "url": "https:
       "text": "Psychology",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/sculpture",
+      "url": "https:
       "text": "Sculpture",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/sociology",
+      "url": "https:
       "text": "Sociology",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/spanish",
+      "url": "https:
       "text": "Spanish",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/studio-composition",
+      "url": "https:
       "text": "Studio Composition",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/studio-production",
+      "url": "https:
       "text": "Studio Production",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/television-theory-and-practice",
+      "url": "https:
       "text": "Television Theory and Practice",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-and-performance",
+      "url": "https:
       "text": "Theatre and Performance",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology",
+      "url": "https:
       "text": "Theatre Design/Technology",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-design",
+      "url": "https:
       "text": "Theatre Design/Technology: Costume Design",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-technology",
+      "url": "https:
       "text": "Theatre Design/Technology: Costume Technology",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/lighting-design",
+      "url": "https:
       "text": "Theatre Design/Technology: Lighting Design",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/scenic-design",
+      "url": "https:
       "text": "Theatre Design/Technology: Scenic Design",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/sound-design",
+      "url": "https:
       "text": "Theatre Design/Technology: Sound Design",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/stage-management",
+      "url": "https:
       "text": "Theatre Design/Technology: Stage Management",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-design-technology/requirements/technical-direction",
+      "url": "https:
       "text": "Theatre Design/Technology: Technical Direction",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences/undeclared",
+      "url": "https:
       "text": "Undeclared",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/visual-arts",
+      "url": "https:
       "text": "Visual Arts (BS)",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/visual-arts-graduate-programs",
+      "url": "https:
       "text": "Visual Arts Graduate Programs",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/visual-arts-minor",
+      "url": "https:
       "text": "Visual Arts Minor",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+      "url": "https:
       "text": "Visual Arts, Interdisciplinary (BFA)",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/voice-and-opera-studies",
+      "url": "https:
       "text": "Voice and Opera Studies",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/majors-and-minors",
+      "url": "https:
       "text": "Majors + Minors",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/virtual-tour",
+      "url": "https:
       "text": "Virtual Tour",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase",
+      "url": "https:
       "text": "Apply",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+      "url": "https:
       "text": "RECENT EFFORTS",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/67283-alumni-artisan-fair",
+      "url": "https:
       "text": "AW25: Alumni Showcase",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/65015-the-chamber-music-society-of-lincoln-center",
+      "url": "https:
       "text": "The Chamber Music Society of Lincoln Center",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/65016-momix-alice",
+      "url": "https:
       "text": "MOMIX: Alice",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/neuberger-museum-of-art",
+      "url": "https:
       "text": "NEUBERGER MUSEUM OF ART",
-      "parent": "https://www.purchase.edu/",
+      "parent": "https:
       "parentText": "Welcome to Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/facts-and-stats",
+      "url": "https:
       "text": "Facts and Stats",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/our-campus",
+      "url": "https:
       "text": "Our Campus",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/alumni-outcomes",
+      "url": "https:
       "text": "Our Alumni",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/presidents-welcome",
+      "url": "https:
       "text": "President’s Welcome",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/diversity-and-compliance",
+      "url": "https:
       "text": "Diversity and Compliance",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/institutional-learning-outcomes",
+      "url": "https:
       "text": "Institutional Learning Outcomes",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/accreditation",
+      "url": "https:
       "text": "Accreditation",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/the-strategic-plan",
+      "url": "https:
       "text": "The Purchase College Strategic Plan",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/sustainability",
+      "url": "https:
       "text": "sustainable campus",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/our-campus/mission-vision-values",
+      "url": "https:
       "text": "Mission, Vision, and Values",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit/where-to-stay-and-eat",
+      "url": "https:
       "text": "What's Nearby",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3407-adotei-akwei-84",
+      "url": "https:
       "text": "Adotei Akwei ’84",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6295-james-spione-85",
+      "url": "https:
       "text": "James Spione ’85",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1794-parker-posey",
+      "url": "https:
       "text": "Parker Posey",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3379-jill-bargonetti-85",
+      "url": "https:
       "text": "Jill Bargonetti ’85",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3350-kris-graves-04",
+      "url": "https:
       "text": "Kris Graves ’04",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+      "url": "https:
       "text": "Nationally Ranked for Graduates Who Earn PhDs",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8206-latest-rankings-and-ratings",
+      "url": "https:
       "text": "Latest Rankings and Ratings",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8123-fiske-guide-to-colleges-2025-unique-within-the",
+      "url": "https:
       "text": "Fiske Guide to Colleges 2025: “Unique Within the SUNY System”",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3456-susie-essman-77",
+      "url": "https:
       "text": "Susie Essman ’77",
-      "parent": "https://www.purchase.edu/about",
+      "parent": "https:
       "parentText": "About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/graduate-programs",
+      "url": "https:
       "text": "Graduate Programs",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience",
+      "url": "https:
       "text": "Purchase Experience",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/career-readiness",
+      "url": "https:
       "text": "Career Readiness",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/faculty",
+      "url": "https:
       "text": "Faculty",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/resources-and-support",
+      "url": "https:
       "text": "Resources and Support",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance",
+      "url": "https:
       "text": "Conservatory of Dance",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/music",
+      "url": "https:
       "text": "Conservatory of Music",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-arts",
+      "url": "https:
       "text": "Conservatory of Theatre Arts",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-and-design",
+      "url": "https:
       "text": "School of Art+Design",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies",
+      "url": "https:
       "text": "School of Film and Media Studies",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities",
+      "url": "https:
       "text": "School of Humanities",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-liberal-studies",
+      "url": "https:
       "text": "School of Liberal Studies",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+      "url": "https:
       "text": "School of Natural and Social Sciences",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-continuing-education",
+      "url": "https:
       "text": "School of Continuing Education",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/intergenerational-learning",
+      "url": "https:
       "text": "Intergenerational Learning",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/broadview",
+      "url": "https:
       "text": "Broadview",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/summer-and-winter-sessions",
+      "url": "https:
       "text": "Summer and Winter Sessions",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/college-catalog",
+      "url": "https:
       "text": "College Catalog",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/first-year",
+      "url": "https:
       "text": "Your First Year",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/hands-on-learning",
+      "url": "https:
       "text": "Hands-On Learning",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8280-new-cohort-of-interns-busy-in-the-field",
+      "url": "https:
       "text": "LEARN MORE",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/campus-workspaces",
+      "url": "https:
       "text": "INSIDE LOOK",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+      "url": "https:
       "text": "2025 Grammy Awards: Big Night for Jazz Studies",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3378-adam-nagourney-77",
+      "url": "https:
       "text": "Adam Nagourney ’77",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3377-latrice-walker-01",
+      "url": "https:
       "text": "Latrice M. Walker ’01",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3383-erin-sullivan-12",
+      "url": "https:
       "text": "Erin Sullivan ’12",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3385-janette-yarwood-96",
+      "url": "https:
       "text": "Janette Yarwood ’96",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+      "url": "https:
       "text": "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+      "url": "https:
       "text": "Math & Comp Sci Club Visits IBM Research",
-      "parent": "https://www.purchase.edu/academics",
+      "parent": "https:
       "parentText": "Academics • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/register/inquiryform",
+      "url": "https:
       "text": "Request Information",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/tuition-and-aid",
+      "url": "https:
       "text": "Tuition and Aid",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/accepted-students",
+      "url": "https:
       "text": "Accepted Students",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/first-year",
+      "url": "https:
       "text": "First Year",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/transfers",
+      "url": "https:
       "text": "Transfers",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/international-students",
+      "url": "https:
       "text": "International Students",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/graduate-students",
+      "url": "https:
       "text": "Graduate Students",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/parents",
+      "url": "https:
       "text": "Parents",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/high-school-counselors",
+      "url": "https:
       "text": "High School Counselors",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/majors-explorer",
+      "url": "https:
       "text": "Explore Majors",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/why-purchase",
+      "url": "https:
       "text": "Why Purchase?",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/our-team",
+      "url": "https:
       "text": "Contact Our Team",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+      "url": "https:
       "text": "Liberal Arts and Sciences BA / BS",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/acting",
+      "url": "https:
       "text": "Acting BFA",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/art-and-design",
+      "url": "https:
       "text": "Art+Design BFA / BS",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/creative-writing",
+      "url": "https:
       "text": "Creative Writing BA",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/dance",
+      "url": "https:
       "text": "Dance BFA",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/music",
+      "url": "https:
       "text": "Music MusB",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/apply-to-purchase/theatre-design-technology",
+      "url": "https:
       "text": "Theatre Design/Technology BFA",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/70229-visual-and-performing-arts-information-session-amp",
+      "url": "https:
       "text": "Visual and Performing Arts Information Session & Tour",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/71547-25-open-house",
+      "url": "https:
       "text": "25 - Open House",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/advising-center/ace-purchase",
+      "url": "https:
       "text": "ACE | Purchase",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/disability-resources/cornerstone-connect",
+      "url": "https:
       "text": "Cornerstone Connect",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/eop-admissions",
+      "url": "https:
       "text": "Educational Opportunity Program",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/global-education/global-scholars-program",
+      "url": "https:
       "text": "Global Scholars",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3447-claribel-ortega-10",
+      "url": "https:
       "text": "Claribel Ortega ’10",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7625-sara-richter-24",
+      "url": "https:
       "text": "Sara Richter ’24",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5725-sean-kaufman-22",
+      "url": "https:
       "text": "Sean Kaufman ’22",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5619-samara-joy-21",
+      "url": "https:
       "text": "Samara Joy ’21",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6782-pavani-srinivasan-11",
+      "url": "https:
       "text": "Pavani Srinivasan ’11",
-      "parent": "https://www.purchase.edu/admissions",
+      "parent": "https:
       "parentText": "Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/clubs-organizations",
+      "url": "https:
       "text": "Clubs and Organizations",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/student-activities",
+      "url": "https:
       "text": "Student Activities",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/athletics",
+      "url": "https:
       "text": "Athletics",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/housing",
+      "url": "https:
       "text": "Housing",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/dining",
+      "url": "https:
       "text": "Dining",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/transportation-and-amenities",
+      "url": "https:
       "text": "Transportation and Amenities",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/health-and-wellness",
+      "url": "https:
       "text": "Health and Wellness",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/safety-and-security",
+      "url": "https:
       "text": "Safety and Security",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/living-on-campus",
+      "url": "https:
       "text": "Living on Campus",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-involvement",
+      "url": "https:
       "text": "Student Involvement",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8275-the-stood",
+      "url": "https:
       "text": "SEE INSIDE",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5729-shayan-sobhian-17",
+      "url": "https:
       "text": "Shayan Sobhian ’17",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7259-veronica-ryzio-21",
+      "url": "https:
       "text": "Veronica Ryzio ’21",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5146-mitski-miyawaki-13",
+      "url": "https:
       "text": "Mitski Miyawaki ’13",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8598-little-monsters-show-up-for-lady-gaga-night",
+      "url": "https:
       "text": "Little Monsters Show Up for Lady Gaga Night",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8576-notable-authors-in-conversation",
+      "url": "https:
       "text": "Notable Authors in Conversation",
-      "parent": "https://www.purchase.edu/campus-life",
+      "parent": "https:
       "parentText": "Campus Life • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/scholarships-inspire-confidence",
+      "url": "https:
       "text": "Scholarships Inspire Confidence",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/what-to-support",
+      "url": "https:
       "text": "Priorities: What To Support",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/ways-to-give",
+      "url": "https:
       "text": "Ways to Give",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/impact-of-your-gift",
+      "url": "https:
       "text": "Impact Stories",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/purchase-college-foundation",
+      "url": "https:
       "text": "Purchase College Foundation",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/our-team",
+      "url": "https:
       "text": "Our Team",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/victors-story",
+      "url": "https:
       "text": "Victor",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/davids-story",
+      "url": "https:
       "text": "David",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/tims-story",
+      "url": "https:
       "text": "Tim",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/harleys-story",
+      "url": "https:
       "text": "Harley",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/christians-story",
+      "url": "https:
       "text": "Christian",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/veronicas-story",
+      "url": "https:
       "text": "Veronica",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/jakobs-story",
+      "url": "https:
       "text": "Jakob",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/lilys-story",
+      "url": "https:
       "text": "Lily",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8622-meet-the-filmmakers",
+      "url": "https:
       "text": "Meet the Filmmakers",
-      "parent": "https://www.purchase.edu/give-to-purchase",
+      "parent": "https:
       "parentText": "Give to Purchase • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8543-suny-sexual-violence-prevention-svp-survey",
+      "url": "https:
       "text": "8543-suny-sexual-violence-prevention-svp-survey",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8442-guide-to-campus-resources",
+      "url": "https:
       "text": "8442-guide-to-campus-resources",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5452-purchase-college-joins-uns-university-global",
+      "url": "https:
       "text": "UN Sustainability Goals Logo (Color swatches in a circle)",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/66385-melt-method-intramurals-from-athletics-department",
+      "url": "https:
       "text": "foam rollers and balls on a yoga matt",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/71956-creating-unique-career-pathways-in-the-arts",
+      "url": "https:
       "text": "71956-creating-unique-career-pathways-in-the-arts",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/71821-westchester-medical-center-health-network",
+      "url": "https:
       "text": "71821-westchester-medical-center-health-network",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/70736-slow-flow-yoga",
+      "url": "https:
       "text": "Picture of yoga matts and light candles on the floor with screens behind it in a warmly lit  Harbor Center room.",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/71796-pride-trivia",
+      "url": "https:
       "text": "71796-pride-trivia",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/current-students/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%2520Events%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522exclude_tag%2522%253EPSGA%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E5%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EPortals%253C%252Farg%253E%253Carg%2520id%253D%2522tag%2522%253Efor%2520students%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522format%2522%2520encoded%253D%2522true%2522%253EVYxNCsIwEIWvEiJ0G5WsdMwp3MtghjbQRukMpZDm7k6DLlw93t9XIgpVAzEt5jki883SQllsMCVN2FOFwf8aSTKSDaVpBTf48PeUNGkNLPMr9%252BGu7gLu64DfmBXKgrM89mUt3WE9H0%252F%252BulGOLdoU2nbgFKvwJh8%253D%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E240%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E173%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 5 more...",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/current-students/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%2520Events%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522exclude_tag%2522%253EPSGA%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E5%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EPortals%253C%252Farg%253E%253Carg%2520id%253D%2522tag%2522%253Efor%2520students%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522format%2522%2520encoded%253D%2522true%2522%253EVYxNCsIwEIWvEiJ0G5WsdMwp3MtghjbQRukMpZDm7k6DLlw93t9XIgpVAzEt5jki883SQllsMCVN2FOFwf8aSTKSDaVpBTf48PeUNGkNLPMr9%252BGu7gLu64DfmBXKgrM89mUt3WE9H0%252F%252BulGOLdoU2nbgFKvwJh8%253D%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E240%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E173%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "12 total",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/galleries/596-club-fair-spring-2024",
+      "url": "https:
       "text": "VIEW FULL GALLERY",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/academic-calendar",
+      "url": "https:
       "text": "Academic Calendar",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/passwordreset/default.aspx",
+      "url": "https:
       "text": "Account Activation / Password Reset",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://brightspace.purchase.edu",
+      "url": "https:
       "text": "Brightspace",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/covid-19-updates-and-plans",
+      "url": "https:
       "text": "COVID-19 Updates",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2551-cts-video-chat-tech-support",
+      "url": "https:
       "text": "CTS Video Chat Tech Support Helpdesk",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://moodle.purchase.edu",
+      "url": "https:
       "text": "Moodle",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://ssb.purchase.edu/ssomanager/c/SSB",
+      "url": "https:
       "text": "MyHeliotrope",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/find-jobs-and-internships/purchase-jobscore",
+      "url": "https:
       "text": "Purchase JobScore",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/spsubmit",
+      "url": "https:
       "text": "Student Project Portal",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/workstudy/Home.aspx",
+      "url": "https:
       "text": "Work Study Online",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/health-services/policies",
+      "url": "https:
       "text": "Health Forms",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/orientation",
+      "url": "https:
       "text": "Orientation",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/advising-center",
+      "url": "https:
       "text": "Advising Center",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/learning-center",
+      "url": "https:
       "text": "Learning Center",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/disability-resources",
+      "url": "https:
       "text": "Office of Disability Resources",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/counseling-and-behavioral-health-services",
+      "url": "https:
       "text": "Counseling and Behavioral Health Services",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-financial-services/financial-literacy",
+      "url": "https:
       "text": "Financial Literacy",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/graduate-on-time/eight-semester-graduation-plans",
+      "url": "https:
       "text": "Eight-Semester Graduation Plans",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+      "url": "https:
       "text": "Course Search",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://portfolios.purchase.edu",
+      "url": "https:
       "text": "E-Portfolios",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/final-exam-schedule",
+      "url": "https:
       "text": "Final Exam Schedule",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://survey.purchase.edu/LoginActiveDirectory.aspx?SurveyID=82KKn53",
+      "url": "https:
       "text": "FERPA Training",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/parking-and-transportation/buses",
+      "url": "https:
       "text": "Bus Service",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/wot",
+      "url": "https:
       "text": "CTS/FMG Work Orders and Equipment Loans",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/college-policies",
+      "url": "https:
       "text": "College Policies",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/parking-and-transportation/parking",
+      "url": "https:
       "text": "Parking and Parking Tickets",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://survey.purchase.edu",
+      "url": "https:
       "text": "Surveys",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/more-card/dining-dollars",
+      "url": "https:
       "text": "Dining Dollars",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/resolving-myheliotrope-login-issues",
+      "url": "https:
       "text": "Visit the CTS help page for info",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
       "url": "nullheliotropecentral@purchase.edu",
       "text": "heliotropecentral@purchase.edu",
-      "parent": "https://www.purchase.edu/current-students",
+      "parent": "https:
       "parentText": "Current Students • Portals • Purchase College",
       "children": []
     },
     {
-      "url": "https://banner.purchase.edu:10000/applicationNavigator",
+      "url": "https:
       "text": "Banner Administrator",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/Restricted/BCS",
+      "url": "https:
       "text": "Broadcast Email (BEM)",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/PersonalInfo/EmergencyContact",
+      "url": "https:
       "text": "Emergency Alerts Sign-up",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/PETS",
+      "url": "https:
       "text": "Purchase Event Tracking (PETS)",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/shared-governance",
+      "url": "https:
       "text": "Shared Governance",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/manage",
+      "url": "https:
       "text": "Slate",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/employee-training",
+      "url": "https:
       "text": "Training",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/WOT",
+      "url": "https:
       "text": "Work Orders",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management/care-team",
+      "url": "https:
       "text": "Community Assessment, Response and Education (CARE) Team",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-success/student-support-and-outreach",
+      "url": "https:
       "text": "Student Support and Outreach (Starfish)",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/advising-center/advising-support",
+      "url": "https:
       "text": "Advising Support",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/faculty-handbook/enrollment-services/course-scheduling",
+      "url": "https:
       "text": "Course Scheduling",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/snapshot",
+      "url": "https:
       "text": "SnapShot",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/advising-center/starfish-help",
+      "url": "https:
       "text": "Starfish Help",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=82M1892K",
+      "url": "https:
       "text": "ITAC Learning Space Conditions Survey 2021",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts",
+      "url": "https:
       "text": "CTS Live Helpdesk Support",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/DAT/Dashboard.aspx",
+      "url": "https:
       "text": "Device Assignment Tracking (DAT)",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/help",
+      "url": "https:
       "text": "Website Help",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=920I5962",
+      "url": "https:
       "text": "COVID-19 Reporting Form",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/hrets",
+      "url": "https:
       "text": "HRETS",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/faculty-handbook",
+      "url": "https:
       "text": "Faculty Handbook",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/TBS",
+      "url": "https:
       "text": "Telephone Billing System (TBS)",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/journal-of-expository-writing",
+      "url": "https:
       "text": "Expose",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/editorial-style-guide",
+      "url": "https:
       "text": "Editorial Style Guide",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=725K6L7",
+      "url": "https:
       "text": "Anonymous Workplace Violence Report",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://reports.purchase.edu",
+      "url": "https:
       "text": "Argos Reports",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/environmental-health-and-safety",
+      "url": "https:
       "text": "Environmental Health and Safety",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/current-students/glossary-of-terms",
+      "url": "https:
       "text": "Glossary of Terms",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8623-lily-bruder-zal-04-cultivating-the-art-of-flower-farmin",
+      "url": "https:
       "text": "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm.",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8635-stephanie-leblanc-14-named-a-top-25-chief-content-leade",
+      "url": "https:
       "text": "Stephanie LeBlanc",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/faculty-and-staff/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522columns%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 4 more...",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/faculty-and-staff/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ENews%253C%252Farg%253E%253Carg%2520id%253D%2522columns%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "584 total",
-      "parent": "https://www.purchase.edu/faculty-and-staff",
+      "parent": "https:
       "parentText": "Faculty and Staff • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/59012-alumni-weekend-2025",
+      "url": "https:
       "text": "Square image with a dark blue background and the text announcing the May 2-3 dates for Alumni Weekend 2025",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/66089-james-utter-natural-and-social-sciences-research-sympo",
+      "url": "https:
       "text": "43rd Annual James Utter Natural and Social Sciences Research Symposium",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/67283-alumni-showcase",
+      "url": "https:
       "text": "Square illustration with many swirled colors in the background, the Purchase College logo, and the words Alumni Showcase",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8521-lisa-eadicicco-12-lands-cnn-business-role",
+      "url": "https:
       "text": "Lisa Eadicicco '12",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E3%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EParents%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 3 more...",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E3%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EParents%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "95 total",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
       "url": "nullfamily@purchase.edu",
       "text": "family@purchase.edu",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/get-involved",
+      "url": "https:
       "text": "Get Involved",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/get-involved/family-day",
+      "url": "https:
       "text": "Family Day",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/campus-resources-guide",
+      "url": "https:
       "text": "Campus Resources Guide",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/proxy-access",
+      "url": "https:
       "text": "Proxy Access",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/for-all-students/glossary",
+      "url": "https:
       "text": "Glossary",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/manage-the-transition/new-student-timeline",
+      "url": "https:
       "text": "New Student Timeline",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/manage-the-transition/support-your-new-student",
+      "url": "https:
       "text": "Support Your New Student",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/parents/manage-the-transition/big-differences",
+      "url": "https:
       "text": "Big Differences",
-      "parent": "https://www.purchase.edu/parents",
+      "parent": "https:
       "parentText": "Parents and Families • Parents and Families • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/alumni-weekend-2025",
+      "url": "https:
       "text": "Alumni Weekend 2025 Postcard",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/alumni-weekend",
+      "url": "https:
       "text": "SCHEDULE OF EVENTS",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/aw25-registration-pricing",
+      "url": "https:
       "text": "REGISTER",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/whos-attending-alumni-weekend",
+      "url": "https:
       "text": "WHO’S ATTENDING",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/calendar/event/67283-alumni-showcase",
+      "url": "https:
       "text": "Square illustration with many swirled colors in the background, the Purchase College logo, and the words Alumni Showcase",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/whos-exhibiting-at-the-alumni-showcase",
+      "url": "https:
       "text": "Alumni Showcase",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/stay-in-touch/update-your-info",
+      "url": "https:
       "text": "Update your contact information",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/stay-in-touch/share-your-news",
+      "url": "https:
       "text": "Share your news",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/alumni-association/committees",
+      "url": "https:
       "text": "Purchase College Alumni Association (PCAA) Committee",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/alumni-association/alumni-affinity-groups",
+      "url": "https:
       "text": "Affinity Group",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/give",
+      "url": "https:
       "text": "Make a gift",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/69966-stick-fly-bfa-junior-rep",
+      "url": "https:
       "text": "Stick Fly (BFA Junior Rep)",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/69947-the-seagull-bfa-junior-rep",
+      "url": "https:
       "text": "The Seagull (BFA Junior Rep)",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 2 more...",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "21 total",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8636-alumni-association-names-2025-award-honorees",
+      "url": "https:
       "text": "Purple cloth background with 2025 Purchase Alumni Awards in gold text with gold starbursts and accents",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 4 more...",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EAlumni%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "311 total",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
       "url": "nullalumni@purchase.edu",
       "text": "alumni@purchase.edu",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/alumni-association",
+      "url": "https:
       "text": "Alumni Association",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/perks-and-benefits",
+      "url": "https:
       "text": "Benefits and Perks",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/college-services",
+      "url": "https:
       "text": "College Services",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/events",
+      "url": "https:
       "text": "Events",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/get-involved",
+      "url": "https:
       "text": "Get Involved",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/stay-in-touch",
+      "url": "https:
       "text": "Stay in Touch",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/purchase-magazine",
+      "url": "https:
       "text": "proof Magazine",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/alumni/contact-us",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/alumni",
+      "parent": "https:
       "parentText": "Alumni • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/professional-certificates",
+      "url": "https:
       "text": "Professional Certificates",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/personal-enrichment",
+      "url": "https:
       "text": "Personal Enrichment Courses",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/personal-enrichment/undergraduate-courses-with-noncredit-seats",
+      "url": "https:
       "text": "Undergraduate Courses with Noncredit Seats",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/online-noncredit-programs-and-courses",
+      "url": "https:
       "text": "Courses and programs through online partners",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-youth-programs-in-the-arts",
+      "url": "https:
       "text": "youth",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-precollege-programs-in-the-arts",
+      "url": "https:
       "text": "precollege students",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/fallspring-courses",
+      "url": "https:
       "text": "Fall and spring courses",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1367-are-you-ahigh-school-student-interested-in-taking",
+      "url": "https:
       "text": "register for undergraduate courses",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/summer-and-winter-sessions/summer",
+      "url": "https:
       "text": "summer",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/summer-and-winter-sessions/winter",
+      "url": "https:
       "text": "winter",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/registration-procedures",
+      "url": "https:
       "text": "Registration Procedures",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/senior-auditor-registration",
+      "url": "https:
       "text": "Older Adult Registration Information and Process",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1367-high-school-students-how-to-obtain-permission-to",
+      "url": "https:
       "text": "approval from Purchase College to register",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1016-full-time-and-part-time-status-and-overload",
+      "url": "https:
       "text": "Course Load and Overload",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/tuition-and-fees",
+      "url": "https:
       "text": "Tuition and Fees",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/840-academic-and-professional-integrity",
+      "url": "https:
       "text": "840-academic-and-professional-integrity",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/community-standards/student-code-of-conduct",
+      "url": "https:
       "text": "Student Code of Conduct",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1042-satisfactory-academic-progress-standards-for",
+      "url": "https:
       "text": "Satisfactory Academic Progress",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-continuing-education/our-staff",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies/index.php",
+      "url": "https:
       "text": "Premedical Studies",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/files/1580-campus-map",
+      "url": "https:
       "text": "Campus Map",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "http://www.purchase.edu/offices/veterans-services",
+      "url": "http:
       "text": "Veteran’s Services",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit-campus/parking",
+      "url": "https:
       "text": "Parking",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/refund-policy",
+      "url": "https:
       "text": "Refund Policy",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/new-york-state-residency",
+      "url": "https:
       "text": "New York State Residency",
-      "parent": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+      "parent": "https:
       "parentText": "Lifelong Learning • School of Continuing Education • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar",
+      "url": "https:
       "text": "Office of the Registrar",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies",
+      "url": "https:
       "text": "Forms and Policies",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/veterans-services",
+      "url": "https:
       "text": "Veterans’ Services",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/pre-med-advising",
+      "url": "https:
       "text": "Premed advising",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
       "url": "nulladmissions@purchase.edu",
       "text": "admissions@purchase.edu",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://ssb.purchase.edu/pls/prod/bwskalog.p_disploginnew?in_id=&cpbl=&newid=",
+      "url": "https:
       "text": "Student Data Form",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/files/1133-student-data-form-vspdf",
+      "url": "https:
       "text": "Student Data Form instructions",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/activate",
+      "url": "https:
       "text": "purchase.edu/activate",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/files/1201-sugregnon-degree-studentsdocx",
+      "url": "https:
       "text": "Registration User Guide",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://ssb.purchase.edu/pls/prod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu",
+      "url": "https:
       "text": "myHeliotrope",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-financial-services",
+      "url": "https:
       "text": "Student Financial Services",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/transcript-request",
+      "url": "https:
       "text": "official transcript",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/more-card/index.php",
+      "url": "https:
       "text": "More Card Office",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
       "url": "nullhelpdesk@purchase.edu",
       "text": "helpdesk@purchase.edu",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
       "url": "nullhse@purchase.edu",
       "text": "hse@purchase.edu",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/health-services",
+      "url": "https:
       "text": "website",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa",
+      "url": "https:
       "text": "FERPA",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa-training",
+      "url": "https:
       "text": "FERPA Training",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/forms-and-policies/cross-registration",
+      "url": "https:
       "text": "Cross Registration",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1842-preferredchosen-name-policy",
+      "url": "https:
       "text": "Chosen Name Policy",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/leaves-and-withdrawal",
+      "url": "https:
       "text": "Leaves and Withdrawal",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/readmission",
+      "url": "https:
       "text": "Readmission",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/faculty-and-staff",
+      "url": "https:
       "text": "Faculty and Staff",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/enrollment-and-degree-verification",
+      "url": "https:
       "text": "Enrollment and Degree Verification",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/graduation-and-diplomas",
+      "url": "https:
       "text": "Graduation and Diplomas",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/registrar/transfer-equivalencies",
+      "url": "https:
       "text": "Transfer Credit",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
       "url": "nullregistrar@purchase.edu",
       "text": "registrar@purchase.edu",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/SecureDocumentUpload/SDU/85",
+      "url": "https:
       "text": "Secure Document Upload",
-      "parent": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+      "parent": "https:
       "parentText": "Visiting Students • Office of the Registrar • Purchase College",
       "children": []
     },
     {
       "url": "nullpurchaseadmissions@purchase.edu",
       "text": "admissions@purchase.edu",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/request-information",
+      "url": "https:
       "text": "REQUEST INFORMATION",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/commencement",
+      "url": "https:
       "text": "Commencement Information",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
       "url": "nullsaf.commencement@purchase.edu",
       "text": "saf.commencement@purchase.edu",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
       "url": "nullfinancialservices@purchase.edu",
       "text": "financialservices@purchase.edu",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/campus-events-and-rentals",
+      "url": "https:
       "text": "Office of Campus Events and Rentals",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
       "url": "nullkristin.brunobates@purchase.edu",
       "text": "kristin.brunobates@purchase.edu",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://ssb.purchase.edu/pls/prod/gzbkcdir.p_search",
+      "url": "https:
       "text": "Campus Directory",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/campus-visit-programs",
+      "url": "https:
       "text": "Schedule an Admissions Visit",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/travel-and-transportation",
+      "url": "https:
       "text": "Directions and Parking",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit-campus/maps-and-directions",
+      "url": "https:
       "text": "Directions",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/files/220-campus-map",
+      "url": "https:
       "text": "Campus Map",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/news/for-the-media",
+      "url": "https:
       "text": "Media Relations",
-      "parent": "https://www.purchase.edu/about/contact-us",
+      "parent": "https:
       "parentText": "Contact Us • About • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/electronic-accessibility",
+      "url": "https:
       "text": "Electronic / Digital Accessibility",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2409-electronic-information-technology-accessibility",
+      "url": "https:
       "text": "Electronic Information Technology Accessibility (EITA) Policy",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/physical-accessibility",
+      "url": "https:
       "text": "Physical Accessibility",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/report-accessibility-barriers",
+      "url": "https:
       "text": "Accessibility Barrier form",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/facilities-management/facilities-management-policies/snow-response-plan",
+      "url": "https:
       "text": "Snow Response Plan",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/about",
+      "url": "https:
       "text": "About",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/accessibility-initiatives-updates",
+      "url": "https:
       "text": "Accessibility Initiatives & Updates",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/accessibility-for-events",
+      "url": "https:
       "text": "Event Accessibility",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/social-media-accessibility",
+      "url": "https:
       "text": "Social Media Accessibility",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/accessibility/training-opportunities",
+      "url": "https:
       "text": "Training Opportunities",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
       "url": "nullaccessibility@purchase.edu",
       "text": "accessibility@purchase.edu",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/facilities-management",
+      "url": "https:
       "text": "Office of Facilities Management",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/title-ix",
+      "url": "https:
       "text": "Title IX",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/diversity",
+      "url": "https:
       "text": "Diversity",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/affirmative-action",
+      "url": "https:
       "text": "Affirmative Action",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/984-nondiscrimination-policy",
+      "url": "https:
       "text": "Purchase College Non-Discrimination Policy",
-      "parent": "https://www.purchase.edu/accessibility",
+      "parent": "https:
       "parentText": "Accessibility • Purchase College",
       "children": []
     },
     {
-      "url": "https://apps.purchase.edu/HRETS",
+      "url": "https:
       "text": "Human Resources Employee Tracking System (HRETS)",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/provost",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nulladvising@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/advising-center/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/learning-center/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullHuman.resources@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/affirmative-action/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullgiving@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/give-to-purchase/ways-to-give/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management-and-entrepreneurship",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullsfs@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/broadview-senior-living/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/business-affairs",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullCFP.capital.facilities.planning@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/capital-facilities-planning",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullcareer.development@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/conference-planning/catering/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullnancy.kane@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/center-for-production-services/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-studies",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullmarsia.riley@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullCCS.communications.creative.services@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/ccs",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullceg@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullsaf.conduct@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/community-standards",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/conference-planning",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/conference-planning/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nulldance@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullmusic@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullCOU.counseling.center@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/counseling-center/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullodr@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/disability-resources/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nulleop@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/eopmap",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullEAP@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/employee-assistance-program",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/facilities",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/living-on-campus/building-and-room-information/fort-awesome/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-and-design/foundation",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/gender-studies/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullHSE@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullsaul.spangenberg@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/clubs-organizations/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/history/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/latin-american-studies",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nulllearning@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/legal-studies",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/liberal-arts/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/liberal-studies",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/literature/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/campus-life/dining/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullbetsy.aldredge@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/ccs/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-film-and-media-studies/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullchristine.onderdonk@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/more-card",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullceg.multicultural.center@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-involvement/multicultural-center/index.php",
+      "url": "https:
       "text": "Web Page",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
       "url": "nullNeuberger@purchase.edu",
       "text": "Email",
-      "parent": "https://apps.purchase.edu/CampusDirectory",
+      "parent": "https:
       "parentText": "Campus Directory",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development",
+      "url": "https:
       "text": "Career Development Center",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/casa-purchase",
+      "url": "https:
       "text": "CASA Purchase",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/the-center-for-engagement",
+      "url": "https:
       "text": "Center for Engagement, The",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/center-for-production-services",
+      "url": "https:
       "text": "Center for Production Services",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/global-education",
+      "url": "https:
       "text": "Global Education, Office for",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/great-potential",
+      "url": "https:
       "text": "Great Potential",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/counseling-and-behavioral-health-services/harbor-center-for-health-promotion",
+      "url": "https:
       "text": "Harbor Center for Health Promotion",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/institutional-research",
+      "url": "https:
       "text": "Institutional Research, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/institutional-review-board",
+      "url": "https:
       "text": "Institutional Review Board",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/internal-control",
+      "url": "https:
       "text": "Internal Control, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/mailroom",
+      "url": "https:
       "text": "Mailroom",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/more-store",
+      "url": "https:
       "text": "More Store",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/parking-and-transportation",
+      "url": "https:
       "text": "Parking and Transportation, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/president",
+      "url": "https:
       "text": "President, Office of the",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/purchase-college-association",
+      "url": "https:
       "text": "Purchase College Association Inc.",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/purchasing",
+      "url": "https:
       "text": "Purchasing and Accounts Payable, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences",
+      "url": "https:
       "text": "School of Liberal Arts and Sciences",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts",
+      "url": "https:
       "text": "School of the Arts",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/sexual-violence-prevention-response",
+      "url": "https:
       "text": "Sexual Violence Prevention and Response",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/sponsored-programs",
+      "url": "https:
       "text": "Sponsored Programs, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management",
+      "url": "https:
       "text": "Student Affairs and Enrollment Services, Office of",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/student-success",
+      "url": "https:
       "text": "Student Success",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/teaching-learning-and-technology-center",
+      "url": "https:
       "text": "Teaching, Learning, and Technology Center",
-      "parent": "https://www.purchase.edu/offices-and-services",
+      "parent": "https:
       "parentText": "Offices and Services • News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide/emergency-blue-light-phone-map",
+      "url": "https:
       "text": "EMERGENCY BLUE LIGHT PHONES",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/personal-safety-committee",
+      "url": "https:
       "text": "Personal Safety Committee webpage",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6135-suny-upd-annual-awards-for-professional-service",
+      "url": "https:
       "text": "SUNY Chief's Association Award",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4044-police-officers-recognized-for-response-to-medical",
+      "url": "https:
       "text": "University Police Officer Recognition",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2993-building-bridges-with-upd-and-campus-community",
+      "url": "https:
       "text": "Brian Peterkin with Chief Tucker in front of new mural.",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2963-purchase-hosts-local-police-officers-for-special",
+      "url": "https:
       "text": "Police officers gathered from around the region to learn about best practices in sexual assault investigations. Seen here: L to R: NYSP S...",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/about-us",
+      "url": "https:
       "text": "About Us",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/logs-and-records",
+      "url": "https:
       "text": "Logs and Records",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/file-a-report",
+      "url": "https:
       "text": "File a Report",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/community-services",
+      "url": "https:
       "text": "Community Services",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/policies",
+      "url": "https:
       "text": "Policies",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide",
+      "url": "https:
       "text": "Emergency Guide",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/nysup/safety-tips",
+      "url": "https:
       "text": "Safety Tips",
-      "parent": "https://www.purchase.edu/offices/nysup",
+      "parent": "https:
       "parentText": "New York State University Police • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/public-reports",
+      "url": "https:
       "text": "Public Reports",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/student-information",
+      "url": "https:
       "text": "Student Information",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/financial-assistance-information",
+      "url": "https:
       "text": "Financial Assistance Information",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/health-and-safety",
+      "url": "https:
       "text": "Health and Safety",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/gainful-employment-programs",
+      "url": "https:
       "text": "Gainful Employment Programs",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/right-to-know/athletic-information",
+      "url": "https:
       "text": "Athletic Information",
-      "parent": "https://www.purchase.edu/right-to-know",
+      "parent": "https:
       "parentText": "Your Right To Know • Purchase College",
       "children": []
     },
     {
       "url": "nullbill.junor@purchase.edu",
       "text": "Bill Junor Email",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/Administrative-Printing",
+      "url": "https:
       "text": "SUNY Print Initiative - Administrative Printing",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/frequently-asked-questions",
+      "url": "https:
       "text": "Frequently Asked Questions",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/new-students-frequently-asked-questions",
+      "url": "https:
       "text": "New Students Frequently Asked Questions",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/audio-visual-equipment-loans",
+      "url": "https:
       "text": "Audio Visual Equipment Loans",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/long-term-equipment-loan-program",
+      "url": "https:
       "text": "Long-Term Equipment Loan Program",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/campus-computer-labs",
+      "url": "https:
       "text": "Campus Computer Labs",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/campus-smart-classrooms",
+      "url": "https:
       "text": "Campus Smart Classrooms",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/communication-options",
+      "url": "https:
       "text": "Communication Options",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/account-locked-out",
+      "url": "https:
       "text": "Account Locked Out",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/cts/technology-policies",
+      "url": "https:
       "text": "Technology Policies",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/872-information-privacy",
+      "url": "https:
       "text": "English",
-      "parent": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+      "parent": "https:
       "parentText": "Information Privacy • Campus Technology Services • Purchase College",
       "children": []
     },
     {
-      "url": "https://jobs.purchase.edu",
+      "url": "https:
       "text": "SEARCH CURRENT JOB OPENINGS",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2766-how-will-my-covered-spouse-pay-for-the-retiree",
+      "url": "https:
       "text": "How will my covered spouse pay for the retiree health insurance coverage after my death?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2774-how-do-i-notify-my-department-of-my-intention-to",
+      "url": "https:
       "text": "How do I notify my department of my intention to retire?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2760-who-do-i-contact-with-questions-about-my-health",
+      "url": "https:
       "text": "Who do I contact with questions about my health insurance/prescription drug coverage after I retire?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2755-how-do-i-start-collecting-my-pension",
+      "url": "https:
       "text": "How do I start collecting my pension?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2761-what-is-the-cost-of-health-insuranceprescription",
+      "url": "https:
       "text": "What is the cost of health insurance/prescription drug coverage in retirement?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2758-will-my-dental-and-vision-care-benefits-continue",
+      "url": "https:
       "text": "Will my dental and vision care benefits continue in retirement?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2764-how-will-i-pay-for-my-retiree-health",
+      "url": "https:
       "text": "How will I pay for my retiree health insurance/prescription drug coverage if my monthly credit does not cover the full cost of the monthly premium?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2757-what-are-the-eligibility-requirements-for",
+      "url": "https:
       "text": "What are the eligibility requirements for continuing health insurance/prescription drug coverage in retirement?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2762-how-will-i-pay-for-my-retiree-health",
+      "url": "https:
       "text": "How will I pay for my retiree health insurance/prescription drug coverage?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2763-how-is-the-monthly-lifetime-credit-calculated",
+      "url": "https:
       "text": "How is the monthly lifetime credit calculated?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2756-will-my-health-insurance-coverage-continue-in",
+      "url": "https:
       "text": "Will my health insurance coverage continue in retirement?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2773-who-will-notify-my-retirement-plan-of-my-intention",
+      "url": "https:
       "text": "Who will notify my retirement plan of my intention to retire?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2765-if-i-predecease-my-covered-spouse-after-retirement",
+      "url": "https:
       "text": "If I predecease my covered spouse after retirement, can my spouse continue health insurance coverage under my plan?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2777-when-does-the-benefits-office-process-my-retiree",
+      "url": "https:
       "text": "When does the Benefits Office process my retiree benefits?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2775-what-information-should-i-put-in-my-retirement",
+      "url": "https:
       "text": "What information should I put in my retirement letter to my department?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2985-if-i-am-using-a-joint-account-for-my-direct",
+      "url": "https:
       "text": "If I am using a joint account for my Direct Deposit, does the joint account holder also need to sign the Direct Deposit Form?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2982-how-do-i-adjustchange-my-tax-dependents-deductions",
+      "url": "https:
       "text": "How do I adjust/change my tax dependents, deductions, etc.?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2984-can-i-use-a-business-account-for-my-direct-deposit",
+      "url": "https:
       "text": "Can I use a business account for my Direct Deposit?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2979-how-long-does-my-direct-deposit-information-stay",
+      "url": "https:
       "text": "How long does my Direct Deposit information stay active?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2981-how-do-i-change-my-direct-deposit-account",
+      "url": "https:
       "text": "How do I change my direct deposit account information?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2983-how-and-where-do-i-update-my-home-address",
+      "url": "https:
       "text": "How and where do I update my home address?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2980-how-do-i-set-up-direct-deposit",
+      "url": "https:
       "text": "How do I set-up Direct Deposit?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2986-how-do-i-access-hrets-and-upload-documents-to-the",
+      "url": "https:
       "text": "How do I access HRETS and upload documents to the Employee Data Sheet?",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
       "url": "nullrobin.farrell@purchase.edu",
       "text": "robin.farrell@purchase.edu",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/seven-reasons-to-work-at-purchase",
+      "url": "https:
       "text": "Reasons to Work at Purchase",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/benefits-information",
+      "url": "https:
       "text": "Benefits Information",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/benefits-information/professional-development",
+      "url": "https:
       "text": "Professional Development",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/payroll",
+      "url": "https:
       "text": "Payroll",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/announcements",
+      "url": "https:
       "text": "Announcements",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/hr-employment-forms",
+      "url": "https:
       "text": "HR Employment Forms",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/policies-and-procedures",
+      "url": "https:
       "text": "Policies and Procedures",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/links-to-other-resources",
+      "url": "https:
       "text": "Links to Other Resources",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/hr/contact-us",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/affirmative-action/affirmative-action-plan",
+      "url": "https:
       "text": "Affirmative Action Plan",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/affirmative-action/search-process",
+      "url": "https:
       "text": "Search Process",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/files/4884-purchase-college-biennial-review-alcohol-and-other",
+      "url": "https:
       "text": "Purchase College Biennial Review Alcohol and Other Drugs 2021 - 2023",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1062-reporting-workplace-violence-anonymously",
+      "url": "https:
       "text": "Reporting Workplace Violence Anonymously",
-      "parent": "https://www.purchase.edu/offices/hr",
+      "parent": "https:
       "parentText": "Office of Human Resources • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/portal/allcampusvisits",
+      "url": "https:
       "text": "CAMPUS VISIT CALENDAR",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/portal/vapasession",
+      "url": "https:
       "text": "ARTS TOURS",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/portal/Trips",
+      "url": "https:
       "text": "PURCHASE ON THE ROAD",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/forms/333-ask-a-counselor",
+      "url": "https:
       "text": "ASK A COUNSELOR",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/portal/appointments",
+      "url": "https:
       "text": "Schedule one today",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/register?id=e26602ea-67d1-4998-9874-a111db8887d3",
+      "url": "https:
       "text": "Please submit this form",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit/art-and-design-events",
+      "url": "https:
       "text": "Art+Design Events",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/visit/travel-and-transportation",
+      "url": "https:
       "text": "Travel and Transportation",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/college-policies/index.php",
+      "url": "https:
       "text": "Admissions Policies",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/about/our-campus/where-we-are",
+      "url": "https:
       "text": "Where We Are",
-      "parent": "https://www.purchase.edu/admissions/visit",
+      "parent": "https:
       "parentText": "Visit • Admissions • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/hours",
+      "url": "https:
       "text": "hours",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1121-food-and-drink",
+      "url": "https:
       "text": "food and drink",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1120-guests",
+      "url": "https:
       "text": "visitors",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8652-finals-countdown-spring-2025",
+      "url": "https:
       "text": "Stop by the library to relax and destress with fun activities.",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8305-wild-about-research-4-ways-to-get-help-from-a",
+      "url": "https:
       "text": "Desert owl sitting on a driftwood branch near the Ask a Librarian logo. Text reads wild about the library. Explore the research frontier wi",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7968-national-poetry-month-display",
+      "url": "https:
       "text": "Children, many dressed in costume, dance to music and have a tea party with a monster. A man and a green monster play banjo and bass.",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5605-library-course-reserves",
+      "url": "https:
       "text": "Books on physical reserve at the Library",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/services/course-reserves",
+      "url": "https:
       "text": "Course Reserves Request Forms",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 4 more...",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "18 total",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/58915-button-making",
+      "url": "https:
       "text": "Buttons made at the library",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/events/58904-button-making",
+      "url": "https:
       "text": "Buttons made at the library",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+      "url": "https:
       "text": "Show 2 more...",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+      "url": "https:
       "text": "8 total",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/frequently-asked-questions",
+      "url": "https:
       "text": "Frequently Asked Questions",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/searches",
+      "url": "https:
       "text": "Search",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/guides-tools",
+      "url": "https:
       "text": "Guides & Tools",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/services",
+      "url": "https:
       "text": "Services",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/collections",
+      "url": "https:
       "text": "Collections",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/about",
+      "url": "https:
       "text": "About",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/contact",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/latest-news",
+      "url": "https:
       "text": "Latest News",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/upcoming-events",
+      "url": "https:
       "text": "Upcoming Events",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/3129-how-do-i-get-help-with-d2l-brightspace",
+      "url": "https:
       "text": "How do I get help with D2L Brightspace?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1178-what-are-the-librarys-hours",
+      "url": "https:
       "text": "What are the Library’s hours?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1424-is-there-wifi-wireless-internet-how-do-i-access",
+      "url": "https:
       "text": "Is there wifi (wireless internet) ? How do I access the wifi network? Can guests use wifi?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1773-where-is-the-tltc-located",
+      "url": "https:
       "text": "Where is the TLTC located?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1772-where-is-the-tltc-located",
+      "url": "https:
       "text": "FAQ about the TLTC",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1172-where-can-i-find-information-on-senior-projects-",
+      "url": "https:
       "text": "Where can I find information on senior projects / capstone papers / master’s theses?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2673-how-can-i-obtain-a-westchester-library-system-card",
+      "url": "https:
       "text": "How can I obtain a Westchester Library System card?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/contact/subject-liaisons",
+      "url": "https:
       "text": "e",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1103-how-do-i-pay-a-fine-at-the-library",
+      "url": "https:
       "text": "How do I pay a fine at the Library?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "http://www.purchase.edu/portal",
+      "url": "http:
       "text": "My Heliotrope",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
       "url": "nulllib.circ@purchase.edu",
       "text": "lib.circ@purchase.edu",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/about/library-policies",
+      "url": "https:
       "text": "Lost Library Materials",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1182-are-there-vending-machines-in-the-library-can-i",
+      "url": "https:
       "text": "Are there vending machines in the Library? Can I buy food in the Library?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1181-how-do-i-view-materials-in-special-collections-amp",
+      "url": "https:
       "text": "How do I view materials in Special Collections & Archives?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/collections/special-collections",
+      "url": "https:
       "text": "Special Collections & Archives",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2349-why-have-i-suddenly-been-unenrolleddropped-from-my",
+      "url": "https:
       "text": "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1247-mandatory-immunization-requirements",
+      "url": "https:
       "text": "Mandatory Immunization Requirements",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2349",
+      "url": "https:
       "text": "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1179-does-the-library-have-graphic-novels-and-comics",
+      "url": "https:
       "text": "Does the Library have graphic novels and comics? Where are they?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/collections/graphic-novels",
+      "url": "https:
       "text": "Graphic Novels",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1642-do-i-have-to-submit-a-paper-copy-of-my-student",
+      "url": "https:
       "text": "Do I have to submit a paper copy of my Student Project to the Library?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1180-does-the-library-have-popular-fiction-where-is-the",
+      "url": "https:
       "text": "Does the Library have popular fiction? Where is the popular reading collection?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/library/collections/popular-collection",
+      "url": "https:
       "text": "Popular Collection",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1151-how-do-i-use-turnitin-to-check-my-own-drafts-for",
+      "url": "https:
       "text": "How do I use Turnitin? How can I check my own drafts for originality?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/image/gid/91/width/650/26136_turnitin-self-checker.png",
+      "url": "https:
       "text": "screenshot of the Turnitin Self-Checker activity in Brightspace",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/1151",
+      "url": "https:
       "text": "How do I use Turnitin to check my own drafts for originality?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2815-how-do-i-add-the-thinkingstorm-online-tutoring",
+      "url": "https:
       "text": "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace course?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2815",
+      "url": "https:
       "text": "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace Moodle course?",
-      "parent": "https://www.purchase.edu/library",
+      "parent": "https:
       "parentText": "Library • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8586-daniela-gomez-paz-14-unmissable-show-at-lyles-amp",
+      "url": "https:
       "text": "Daniela Gomez Paz",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8571-sydney-cole-alexander-15-stars-in-appletv-hit-series",
+      "url": "https:
       "text": "Sydney Cole Alexander '15",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8562-new-season-of-the-white-lotus-features-two-from-purchas",
+      "url": "https:
       "text": "Sarah Catherine Hook '17 and Parker Posey in season three of HBO's The White Lotus.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8534-professor-stephen-cooke-creates-new-chemistry-and",
+      "url": "https:
       "text": "Original illustration by Professor Stephen Cooke, published by Physical Chemistry Chemical Physics.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8480-damani-pompey-12-earns-nysca-grant",
+      "url": "https:
       "text": "Damani Pompey '12 (Photo: Conor McNamara)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8456-two-named-25-to-watch",
+      "url": "https:
       "text": "Dava Huesca '19",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8427-emily-carragher-06-loves-playing-the-villian",
+      "url": "https:
       "text": "Emily Carragher '06",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8417-derek-shane-garcia-13-premieres-film-in-nyc",
+      "url": "https:
       "text": "A/way by Derek Shane Garcia '13",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8404-kyle-abraham-00-brings-new-work-to-the-park-avenue",
+      "url": "https:
       "text": "Kyle Abraham '00 (Dear Lord by AIM)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8393-curtis-brodner-19-joins-columbia-journalism",
+      "url": "https:
       "text": "Curtis Brodner '19",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8324-psychological-bulletin-publishes-work-by-professor",
+      "url": "https:
       "text": "Tarantula (Photo: Pratik Jain)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8288-congratulations-to-budding-high-school-journalists",
+      "url": "https:
       "text": "Winners of the inaugural Purchase College Excellence in High School Journalism Awards.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8230-two-alumni-make-broadway-debuts-in-romeo-juliet",
+      "url": "https:
       "text": "Group of young people sit and look in same direction.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8237-jennifer-mogbock-13-on-apple-tv-series",
+      "url": "https:
       "text": "Jennifer Mogbock '13",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8170-a-dean-irby-and-lisa-dawn-cave-79-receive-honors",
+      "url": "https:
       "text": "A. Dean Irby",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8137-professor-paul-siegel-awarded-third-nimh-grant",
+      "url": "https:
       "text": "Professor Paul Siegel",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8116-the-power-of-purchase-on-stage-in-nyc",
+      "url": "https:
       "text": "Cain Coleman",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7983-film-by-lecturer-connie-tsang-selected-for-cannes",
+      "url": "https:
       "text": "Connie Tsang, Lecturer in Film",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8045-sierra-blanco-26-wins-kennedy-center-award",
+      "url": "https:
       "text": "Sierra Bianco",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8020-sinkane-owes-songwriting-shift-to-purchase-experience",
+      "url": "https:
       "text": "Sinkane We Belong Album Cover",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7988-kunga-choephel-23-selected-for-competitive",
+      "url": "https:
       "text": "Kunga Choephel '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7969-the-2024-suny-chancellors-award-winners",
+      "url": "https:
       "text": "7969-the-2024-suny-chancellors-award-winners",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7958-claudia-logan-18-stars-in-bet-hit",
+      "url": "https:
       "text": "Claudia Logan '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5938-announcing-the-artists-and-hackers-podcast",
+      "url": "https:
       "text": "Artists and Hackers logo in text with drawing of hand on digital device",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7934-micah-stock-11-to-make-steppenwolf-theatre-debut",
+      "url": "https:
       "text": "Micah Stock '11",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7915-lecturer-carlie-hoffman-wins-national-jewish-book",
+      "url": "https:
       "text": "Carlie Hoffman, Lecturer in Creative Writing",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7893-faculty-member-wins-nyppa-photography-award",
+      "url": "https:
       "text": "David Handschuh stands on a bridge with belt straps attached to the railings",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7888-purchase-receives-second-invasive-species-grant",
+      "url": "https:
       "text": "Maura VanderPutten (Environmental Sciences, Biology minor)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7869-one-last-time-zoe-winters-07-honored-for-succession",
+      "url": "https:
       "text": "Zoë Winters '07 plays Kerry on HBO's Succession. (Photo: Macall B. Polay/HBO)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7794-susan-shopmaker-nominated-for-bafta-best-casting",
+      "url": "https:
       "text": "Susan Shopmaker accepts the Casting Award for The Holdovers on stage during the EE BAFTA Film Awards 2024 at The Royal Festival Hall on F...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7823-purchase-receives-dec-grant-for-invasive-species",
+      "url": "https:
       "text": "Student and professor outdoors looking at a small container.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7752-voice-and-dialect-coach-thom-jones-91-visits",
+      "url": "https:
       "text": "Thom Jones and Nicole Kidman smile at the camera with arms around each others shoulders",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7728-junior-experimental-film-screens-in-us-and-uk",
+      "url": "https:
       "text": "Amelia Ponirakis '23 at the Buffalo International Film Festival, Buffalo, NY",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7687-purchase-again-named-fulbright-hsi-leader",
+      "url": "https:
       "text": "Blue badge with yellow stripe and white globe, reads Fulbright HSI Leader 2023",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7625-first-annual-bioblitz-records-317-different",
+      "url": "https:
       "text": "Student holds a container with a grasshopper.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7593-riotusa-22-signs-global-publishing-deal",
+      "url": "https:
       "text": "RIOTUSA '22 and Ryan Press, President, North America at Warner Chappell Music",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7542-political-theatre-in-prague",
+      "url": "https:
       "text": "7542-political-theatre-in-prague",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7471-latest-podcast-cover-up-the-pill-plot-by-tj",
+      "url": "https:
       "text": "Hand in blue latex glove holds a pill between thumb and index finger on a pink background",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7435-keerati-jinakunwiphat-16-wins-princess-grace-award",
+      "url": "https:
       "text": "Asian American woman in blue with elbow in the air",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7419-crossover-goals-pollinator-garden-signage",
+      "url": "https:
       "text": "Flowers in the Purchase Native Pollinator Garden",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7395-franco-paz-16-signs-book-deal",
+      "url": "https:
       "text": "Man in white t-shirt and black jacket smiles with water in background",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7388-film-by-alessandro-chille-14-screens-at-festivals",
+      "url": "https:
       "text": "Alessandro Chillé",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7369-purchase-helps-divert-unwanted-paint-from",
+      "url": "https:
       "text": "Large box holding several paint cans",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7327-economics-network-event-connects-students-and",
+      "url": "https:
       "text": "Standing left to right: David Settanni '09, Lynn Lin '14, Devon Donahue '19",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7317-moviemaker-supports-project-by-victoria-demartin",
+      "url": "https:
       "text": "Victoria deMartin '14",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7297-pwsw-shonnon-marshall-22",
+      "url": "https:
       "text": "7297-pwsw-shonnon-marshall-22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7276-hannah-kaebnick-suny-chancellors-award-winner",
+      "url": "https:
       "text": "SUNY Chancellor John King, Hannah Kaebnick (holding a certificate), and Rudolf Gaudio, Director of Natural and Social Sciences",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7270-film-by-senior-kunga-choephelto-screen-at-nffty",
+      "url": "https:
       "text": "Kunga Choephel '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7246-awards-season-professors-grill-and-yavich",
+      "url": "https:
       "text": "Drama Desk Awards in gold with a feather award between the words.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7237-purchase-awarded-major-doe-grant",
+      "url": "https:
       "text": "Daffodils on campus",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7184-debut-novel-by-jiaming-andy-tang-18-coming-in-2024",
+      "url": "https:
       "text": "Jiaming Tang '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7166-andrea-patterson-05-earns-obie-for-sustained",
+      "url": "https:
       "text": "Andrea Patterson '05",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7149-two-from-purchase-star-in-fresh-take-on-chekov",
+      "url": "https:
       "text": "Bill Sage '88 in The New Group's The Seagull/Woodstock, NY (Photo: Monique Carboni)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7109-film-by-jordan-tetewsky-16-is-new-york-times",
+      "url": "https:
       "text": "Jordan Tetewsky '16 at Woodstock Film Festival",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7084-karen-beltran-esq-02-appointed-yonkers-city-court",
+      "url": "https:
       "text": "The Honorable Karen T. Beltran, Esq. '02, a judge in the Yonkers City Court.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7055-20212022-debora-martinez-22-creates-community",
+      "url": "https:
       "text": "Debora Martinez '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6998-major-neh-grant-will-support-humanities",
+      "url": "https:
       "text": "Latinos Unidos Student Club / Club Fair 2022",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6975-debut-novel-by-hal-hartley-named-among-years-best",
+      "url": "https:
       "text": "Hal Hartley '84 (Photo: Michael Koshkin)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6955-annual-shark-tank-competition-awards-5000-grand",
+      "url": "https:
       "text": "Participants in the annual Purchase Shark Tank-style competition for 2022.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6918-purchase-college-bridges-students-win-awards-at",
+      "url": "https:
       "text": "(Left) Ruth-Ann Gordon & Mauro David Cortina (right) hold their awards accompanied by the rest of our bridges students, Prof. Jonas a...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6877-senior-filmmaker-screens-work-at-tide-film",
+      "url": "https:
       "text": "Kunga Choephel '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6858-hunter-hollingsworth-22-heads-to-the-apollo-grand",
+      "url": "https:
       "text": "Hunter Hollingsworth-Harris '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6844-purchase-noted-as-a-green-college",
+      "url": "https:
       "text": "The Princeton Review Guide to Green Colleges logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6798-purchase-named-a-2022-fulbright-hsi-leader",
+      "url": "https:
       "text": "Marcel Gbeffa during an artistic residency as a part of (T)HERE: Global Festival in 2019.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6786-two-from-purchase-win-at-woodstock-film-festival",
+      "url": "https:
       "text": "Woodstock Film Festival",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6764-novel-by-marco-north-90-released-to-critical",
+      "url": "https:
       "text": "Marco North '90",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6750-professor-jordan-schildcrout-interviewed-on-ny1",
+      "url": "https:
       "text": "Professor of Theatre and Performance Jordan Schildcrout",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6730-purchase-college-named-top-public-school-by-us",
+      "url": "https:
       "text": "Student presents senior project research at the annual Natural and Social Science Symposium.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6698-regina-spektor-01-re-releases-formative-album-1111",
+      "url": "https:
       "text": "Regina Spektor '01",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6661-camille-seaman-92-on-pbs-brief-but-spectacular",
+      "url": "https:
       "text": "Camille Seaman '92 at the Oceti Sakowin Camp,ND during the 2016 Standing Rock protests.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6648-iquail-shaheed-mfa-12-breaks-new-ground",
+      "url": "https:
       "text": "Iquail Shaheed MFA '12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6625-nicco-annan-98-wins-naacp-trailblazer-award",
+      "url": "https:
       "text": "Nicco Annan '98 at the NAACP Convention July 2022 holding the inaugural Trailblazer Award.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6611-douglas-shindler-22-plans-to-open-the-black",
+      "url": "https:
       "text": "Douglas Shindler and Michael Davis , natives of the City of Monticello as well as accomplished artists. The creative duo recently-with th...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6597-dan-romer-04-earns-emmy-nomination",
+      "url": "https:
       "text": "Dan Romer '04",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6581-neuberger-museum-of-art-acquires-romare-beardens",
+      "url": "https:
       "text": "Romare Bearden, River Mist, ca. 1962, mixed media, 54x40 inches",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6553-dan-deacon-04-scores-hustle",
+      "url": "https:
       "text": "Dan Deacon '04",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6537-marjan-neshat-98-finds-her-groove-off-broadway",
+      "url": "https:
       "text": "Marjan Neshat '98",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6509-jd-zeik-82-adapting-sci-fi-horror-fantasy-novel",
+      "url": "https:
       "text": "The Warded Man illustration by Allen Williams for Grim Oak Press",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6487-suny-chancellors-award-for-excellence-2022",
+      "url": "https:
       "text": "SUNY Chancellor's Award for Excellence Recipients Laila Wilson and Corina Picon, Commencement 2022",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6485-thayer-fellowship-winner-mara-keen",
+      "url": "https:
       "text": "Mara Keen MM '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6422-merce-cunningham-trust-endows-new-scholarship-in",
+      "url": "https:
       "text": "Merce Cunningham teaching.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6393-ernestine-white-mifetu-99-named-curator-at",
+      "url": "https:
       "text": "Ernestine White-Mifetu '99 (Photo: Raphael Mifetu)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6357-tom-cross-93-wins-bafta-for-best-editing",
+      "url": "https:
       "text": "Visual Arts Alum Tom Cross '93",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6341-zoe-winters-07-earns-sag-award-for-hbos-succession",
+      "url": "https:
       "text": "Zoë Winters '07",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6321-nina-schatell-23-receives-competitive-cody-renard",
+      "url": "https:
       "text": "Nina Schatell '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6305-three-alumni-screening-films-at-moma",
+      "url": "https:
       "text": "Erik Spink, Meet Me in the Meadow, 2021",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6276-prof-pete-malinverni-turns-to-purchase-family-on",
+      "url": "https:
       "text": "Album Cover, On the Town, Pete Malinverni Plays Leonard Bernstein",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6250-purchase-and-wcc-offer-seamless-pathway",
+      "url": "https:
       "text": "Students talk at a table.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6231-amanda-seales-03-discusses-her-career-with-cbs",
+      "url": "https:
       "text": "Amanda Seales '03",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6205-rob-swainston-doomscrolling-prints-in-response-to",
+      "url": "https:
       "text": "Rob Swainston, Assistant Professor Art+Design, Printmaking",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6182-alice-selipanov-21-visual-approach-to-anthropology",
+      "url": "https:
       "text": "Alice Selipanov '21",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6162-obama-picks-mitski-13",
+      "url": "https:
       "text": "Mitski '13 from The Only Heartbreaker video, 2021",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6116-all-lit-up-heisman-trophy-on-espn",
+      "url": "https:
       "text": "David Grill '86, Associate Professor of Theatre Design/Technology",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6093-chris-perfetti-12-lands-role-on-abc-sitcom",
+      "url": "https:
       "text": "Cast of ABC's Abbott Elementary",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6084-the-american-riad-project-co-founded-by-professor",
+      "url": "https:
       "text": "American Riad Project in Detroit.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6062-janet-rolle-84-takes-the-helm-of-american-ballet",
+      "url": "https:
       "text": "Janet Rollé '84",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6044-purchase-is-a-top-green-college",
+      "url": "https:
       "text": "Bioswale in the West 1 Parking Lot",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6016-rena-butler-11-dance-cover-feature",
+      "url": "https:
       "text": "Rena Butler '11 (Courtesy of Dance magazine)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5126-jonathan-harris-20-presidents-award-winner-for",
+      "url": "https:
       "text": "Jonathan Harris '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/president/presidents-award",
+      "url": "https:
       "text": "The President’s Award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5927-professor-shaka-mcglotten-named-to-hfpa-advisory",
+      "url": "https:
       "text": "Professor Shaka McGlotten",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5916-professor-elise-lemire-discusses-new-book-on",
+      "url": "https:
       "text": "Professor of Literature Elise Lemire",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5867-laila-wilson-22-suny-act-and-naacp-scholarship",
+      "url": "https:
       "text": "Laila Wilson '22, playwriting and screenwriting",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5898-jazz-artist-anais-reno-performs-at-citifield",
+      "url": "https:
       "text": "Anaïs Reno performs on September 11, 2021 at Citifield.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5871-meryl-cates-08-pens-feature-on-native-american",
+      "url": "https:
       "text": "Meryl Cates '08",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5845-jason-rodriguez-12-forms-new-talent-agency",
+      "url": "https:
       "text": "Jason Rodriguez '12 (Courtesy Santiago Felipe/RRR Creative)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5752-congratulations-to-richard-marylee-salomon",
+      "url": "https:
       "text": "Sophia Hadeshian",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5774-damali-okeefe-22-selected-for-prestigious",
+      "url": "https:
       "text": "Damali O'Keefe '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5754-asst-prof-thome-wins-prestigious-helen-merrill",
+      "url": "https:
       "text": "Andrea Thome",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5716-purchase-named-top-20-best-values-in-the-nation",
+      "url": "https:
       "text": "2022 Fiske Guide to Colleges Best Buy School",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5680-proud-to-be-me-adon-cooper-09",
+      "url": "https:
       "text": "Adon Cooper '09",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5610-lucy-wijnands-20-wins-prestigious-ella-fitzgerald",
+      "url": "https:
       "text": "Lucy Wijnands '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5583-assistant-professor-of-arts-management-laura",
+      "url": "https:
       "text": "Laura Ricciardi",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5547-congratulations-to-the-winners-of-the-suny-wide",
+      "url": "https:
       "text": "Film still from Princesa by Melanie Rosete, Best of Fest winner",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5532-undeniable-talent-kyle-abraham-00-earns-endowed",
+      "url": "https:
       "text": "Kyle Abraham '00 (Photo: Tatiana Will)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5260-professor-silas-brown-10-wins-grammy-award",
+      "url": "https:
       "text": "Silas Brown '10, assistant professor",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5461-illustration-by-senior-gabriella-shery-in-the-new",
+      "url": "https:
       "text": "Gabriella Shery '21",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5445-purchase-college-joins-uns-university-global",
+      "url": "https:
       "text": "UN Sustainability Goals Logo (Color swatches in a circle)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5395-dava-huesca-19-named-artist-in-residence",
+      "url": "https:
       "text": "Dava Huesca '19",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5343-laura-jobin-acosta-20-mm-earns-inaugural-opera",
+      "url": "https:
       "text": "Laura Jobin-Acosta '20 MM",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5326-mural-by-stella-nova-picuri-21-selected-for-area",
+      "url": "https:
       "text": "From left, Benjamin Santiago, lecturer in graphic design, Liz Pollack, senior marketing manager at Cross County Center, and Stella Nova P...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5285-brianna-agront-21-receives-the-suny-eop-norman-r",
+      "url": "https:
       "text": "Brianna Agront, recipient of the 2020 Norman R. McConney, Jr. Award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5248-two-purchase-authors-among-most-notable-for-2020",
+      "url": "https:
       "text": "Carl Safina '77 (Photo: Kizza Vincent)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5113-creative-writing-alumni-trio-launch-a-literary",
+      "url": "https:
       "text": "Imani Parker '20, Ashley Fields '19, and Shanille Martin '20, creative writing alumni and founders of Brown Sugar",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5057-anita-yavich-earns-henry-hewes-design-award-for",
+      "url": "https:
       "text": "Anita Yavich",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5041-susan-gideon-fuirst-makes-transformative-gift-to",
+      "url": "https:
       "text": "Neuberger Museum of Art Youth Education Program",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5066-jen-schriever-04-wins-obie-award",
+      "url": "https:
       "text": "Jen Schriever",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5022-money-magazine-ranks-purchase-among-best-for-value",
+      "url": "https:
       "text": "Campus in the Fall",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5006-purchase-among-the-top-386-colleges-in-the-us",
+      "url": "https:
       "text": "Processed with Snapseed.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4991-stephen-cooke-receives-national-science-foundation",
+      "url": "https:
       "text": "Associate Professor of Chemistry Stephen Cooke",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4970-humans-of-ny-insta-features-purchase-success-story",
+      "url": "https:
       "text": "Solangie Ledesma '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4925-students-immersed-in-the-ever-expanding-world-of",
+      "url": "https:
       "text": "Live Performance and Interactive Media Workshop screen shot",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4902-mariales-diaz-19-named-a-sundance-ignite-fellow",
+      "url": "https:
       "text": "Mariales Diaz '19 (film)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4895-purchase-makes-highly-selective-fiske-guide-for",
+      "url": "https:
       "text": "Fiske Guide to Colleges book cover",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4846-adam-nagourney-77-captures-historical-importance",
+      "url": "https:
       "text": "Pride Flag",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4830-professors-receive-grant-for-innovative-study",
+      "url": "https:
       "text": "Jostedalsbreen Glacier, Norway",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4779-alumnus-spike-wilner-reopens-nyc-jazz-club",
+      "url": "https:
       "text": "Smalls Jazz Club",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4763-two-founding-professors-retire",
+      "url": "https:
       "text": "Professors Emeriti Lee Ehrman and Peter Schwab",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4728-ilias-fourati-20-receives-suny-chancellors-award",
+      "url": "https:
       "text": "SUNY Chancellors Award for Excellence Winner Ilias Fourati '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4331-paramount-picks-up-original-script-by-mattson",
+      "url": "https:
       "text": "Filmmaker Mattson Tomlin '12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4666-faculty-and-alum-nominated-for-drama-desk-awards",
+      "url": "https:
       "text": "Anita Yavich",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4624-meet-rakeem-hardy-20-thayer-fellowship-winner",
+      "url": "https:
       "text": "Rakeem Hardy '20 (dance)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4608-garth-greenwell-earns-guggenheim-fellowship",
+      "url": "https:
       "text": "Garth Greenwell '01 (Photo: William J. Adams)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4587-campus-arts-organizations-deliver-online-content",
+      "url": "https:
       "text": "Concert Hall, The Performing Arts Center",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4556-purchasecares",
+      "url": "https:
       "text": "Purchase Cares Icon (Navy blue heart over lighter blue background)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4410-monica-ferrell-finalist-for-kingsley-tufts-poetry",
+      "url": "https:
       "text": "Monica Ferrell, Associate Professor of Creative Writing",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4358-erin-sullivan-12-delivers-a-ted-talk",
+      "url": "https:
       "text": "Erin Sullivan '12 (Photo: Renee Hahnel)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4283-art-in-public-places",
+      "url": "https:
       "text": "Art in Public Places / Quantum Leap by Isaiah Ship",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4244-sophomores-andres-hernandez-rodriguez-and-brian",
+      "url": "https:
       "text": "Purchase College Startup Pitching Competition Winners Andres Hernandez-Rodriguez and Brian Farez.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4226-engels-the-artist-creates-new-sculpture-with",
+      "url": "https:
       "text": "Curator Patrice Giasson; Engels the artist; Cindy Millin; Instructor Felix Matta-Fletcher; Alessandra Russo; Leonardo Giasson.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4203-cyrille-aimee-earns-grammy-nomination",
+      "url": "https:
       "text": "Cyrille Aimée '08",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4187-professor-warren-lehrer-awarded-2019-ladislav",
+      "url": "https:
       "text": "Professor Warren Lehrer awarded the 2019 Ladislav Sutnar Prize",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4129-global-fest-2019",
+      "url": "https:
       "text": "Edwidge Danticat",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4048-paola-lazaro-10-joins-season-ten-of-the-walking",
+      "url": "https:
       "text": "Paola Lázaro '09",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4027-thomas-j-schwarz-appointed-president-emeritus",
+      "url": "https:
       "text": "President Emeritus Thomas J. Schwarz at the May 8 event celebrating his 17 year tenure at Purchase College. (Photo by Sean Zanni/PMC)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3990-purchase-joins-renewable-energy-consortium",
+      "url": "https:
       "text": "Purchase Garden",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3974-the-new-york-times-highlights-insta-by-purchase",
+      "url": "https:
       "text": "Instagram Post from Issa Dance Look",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3943-michael-rakowitz-95-recipient-of-the-nasher-prize",
+      "url": "https:
       "text": "Michael Rakowitz '95",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3915-from-purchase-to-zombie-apocalypse-colby-hollman",
+      "url": "https:
       "text": "Colby Hollman '19 (acting)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3869-artist-brian-kavanaugh-05-earns-fulbright-award",
+      "url": "https:
       "text": "Brian Kavanaugh '05 Earns Fulbright Award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3827-purchase-merits-placement-in-highly-selective",
+      "url": "https:
       "text": "Students in Seminar Class",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3784-regina-spektor-01-debuts-on-broadway",
+      "url": "https:
       "text": "Regina Spektor '01",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3751-neuberger-museum-of-art-receives-150000-grantto",
+      "url": "https:
       "text": "The Andrew W. Mellon Foundation logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3727-jay-osanders-76-wins-a-drama-desk-award",
+      "url": "https:
       "text": "Celeste Arias as Eléna and Jay O. Sanders as Ványa in Uncle Vanya",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3674-purchase-students-earn-suny-arts-awards",
+      "url": "https:
       "text": "Dancers perform on stage",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3578-dancer-jojo-boykins-18-featured-on-allarts",
+      "url": "https:
       "text": "Dancer Jojo Boykins '18 featured on PBS' new  ALLARTS channel (dancing in the Dance Building lobby)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3524-danniel-schoonebeek-08-earns-nea-award",
+      "url": "https:
       "text": "Danniel Schoonebeek '08",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3500-backstage-legends-and-masters-honors-david",
+      "url": "https:
       "text": "David Rosenberg",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/broadway-technical-theatre-history-project",
+      "url": "https:
       "text": "Broadway Technical Theatre History Project",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3452-acting-professor-features-purchase-alumni-and",
+      "url": "https:
       "text": "The Out of the Depths company takes a bow",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3419-purchase-offers-food-pantry-to-address-food",
+      "url": "https:
       "text": "Food Pantry sign",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3410-wet-ink-featuring-ian-antonio-is-named-best",
+      "url": "https:
       "text": "Ian Antonio",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1630-ian-antonio",
+      "url": "https:
       "text": "Ian Antonio",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3394-debut-hbo-special-for-amanda-seales-03",
+      "url": "https:
       "text": "Amanda Seales '03",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3351-janice-yarwood-96-honored",
+      "url": "https:
       "text": "Janette Yarwood '96",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3315-purchase-shark-tank-awards-7000-to-students",
+      "url": "https:
       "text": "Seniors Angela Galli and Kelly Hayes receive oversized check for winning the second annual Start Up Purchase Pitching Competition",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3301-anne-kern-honored-by-french-embassy",
+      "url": "https:
       "text": "Anne Kern Awarded Chevalier of the Order of Arts and Letters",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3228-kerry-levielle-17-named-an-ignite-fellow-by",
+      "url": "https:
       "text": "Kerry LeVielle '17 (cinema studies)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3185-frank-candelaria-to-speak-at-the-national",
+      "url": "https:
       "text": "Walt Whitman",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3082-65-million-in-upgrades-to-residence-halls-now",
+      "url": "https:
       "text": "The Quad",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3045-purchase-professor-and-students-featured-in",
+      "url": "https:
       "text": "Literature professor Anthony Domestico speaks at the SUNY Chancellor's Inauguration",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3012-purchase-college-named-a-top-public-liberal-arts",
+      "url": "https:
       "text": "Students at Orientation 2018",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2929-purchase-ranked-as-one-of-top-384-colleges",
+      "url": "https:
       "text": "Multicultural Center invites passers by to comment on the one thing they can do to build community and help end prejudice.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2891-energy-efficient-lighting-project-reduces",
+      "url": "https:
       "text": "Purchase College Library exterior",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2862-new-york-emmy-goes-to-journalism-alumna",
+      "url": "https:
       "text": "Rachel Weiss '16 holds her NY Emmy",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2821-composition-professor-wins-two-opera-america",
+      "url": "https:
       "text": "Kamala Sankaram Headshet",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1884-kamala-sankaram",
+      "url": "https:
       "text": "Kamala Sankaram",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2820-purchase-alum-score-emmy-nominations",
+      "url": "https:
       "text": "Jesus Christ Superstar Live in Concert / Ben Green '15 earned Emmy nomination for lighting direction.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2803-zaire-anderson-19-is-superhero-for-the-summer",
+      "url": "https:
       "text": "Zaire Anderson '19 and the Art Force 5",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2733-acting-is-amazing",
+      "url": "https:
       "text": "Comedy of Errors",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2710-brittny-cooper-15-embarks-on-the-ride-of-her-life",
+      "url": "https:
       "text": "Brittny Cooper '15",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2666-nods-to-purchase-tony-award-nominations-announced",
+      "url": "https:
       "text": "Clint Ramos, assistant professor for theatre design/technology",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2640-creative-writer-wins-prestigious-contest",
+      "url": "https:
       "text": "Jiaming “Andy Tang '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2623-regina-spektor-01-featured-on-poetry-in-america",
+      "url": "https:
       "text": "Regina Spektor '01 performing    Après Moi during a day of filming with the Poetry in America team.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2586-sexual-assault-awareness-week-recap",
+      "url": "https:
       "text": "Teal ribbon symbol to end sexual assault",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2550-three-students-honored-for-excellence-by-suny",
+      "url": "https:
       "text": "SUNY Logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2517-kate-gilmore-honored-with-a-guggenheim-fellowship",
+      "url": "https:
       "text": "Kate Gilmore, Wall Bearer, 2011. Performance and installation at the Weatherspoon Art Museum, Greensboro, NC (Women in pink dresses stand...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2489-the-pacs-pepsico-theatre-unveiled-after-million",
+      "url": "https:
       "text": "The PAC logo projected on the PepsiCo Theatre's stage curtain.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2456-max-pearce-18-finishes-third-in-slam-dunk",
+      "url": "https:
       "text": "Max Pearce '18 slam dunks in the gym",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2443-purchase-alternative-service-trip",
+      "url": "https:
       "text": "Various students participating in a previous Purchase Alternative Service Trip",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2430-purchase-alum-wins-first-hildegard-composition",
+      "url": "https:
       "text": "Kayla Cashetta Headshot",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2398-author-neil-gaiman-offered-advice-for-students",
+      "url": "https:
       "text": "Neil Gaiman and Michael Chabon spoke as part of the Durst Distinguished Lecture Series.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2379-legendary-broadway-costume-designer-is-wicked-good",
+      "url": "https:
       "text": "Alyce Gilbert, 2017 Broadway Legends and Masters award winner",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2322-dave-grill-lights-up-superbowl-halftime-show",
+      "url": "https:
       "text": "Professor Dave Grill and intern Victoria Corbalis '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2253-project-by-professor-chris-robbins-earns-knight",
+      "url": "https:
       "text": "Students and collaborators work on American Riad project in Detroit",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2187-opera-production-wins-national-award",
+      "url": "https:
       "text": "Coronation of Poppea",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2174-two-dancers-rise-to-the-top",
+      "url": "https:
       "text": "Cover of Dance Magazine January 2018 issue",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2277-pc4y-to-partner-with-innovative-yonkers",
+      "url": "https:
       "text": "Ray Wilcox, LaMont OyeWale' Badru, and Anthony Bailey '01 (left to right) from The PowerLab.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2111-students-create-art-in-vacant-spaces",
+      "url": "https:
       "text": "Recipe for a Loving Community by Madeline Friedman '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2090-jazz-alum-releases-new-epic-recording",
+      "url": "https:
       "text": "Wayne Tucker",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2075-journalism-professor-pays-it-forward",
+      "url": "https:
       "text": "Andrew Salomon at the Alumni Mixer for Journalism and Writing Majors, 11/10/17",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2022-artdesign-students-study-with-renowned-painter",
+      "url": "https:
       "text": "Artist in Residence Ignacio Iturria in the studio with students",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2001-purchase-college-alumni-attend-abrahaminmotion",
+      "url": "https:
       "text": "Top row L to R: Tamisha Guy '13, Marcella Lewis '16, Denise Roberts Hurlin '84, Kyle Abraham, former dean Carol Walker, an...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1983-purchase-dance-company-visits-taiwan",
+      "url": "https:
       "text": "The Purchase Dance Company recently visited Taipei and Kaohsiung City for performances, workshops, and cross-cultural learning.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1946-durst-lectures-feature-top-authors",
+      "url": "https:
       "text": "Bubble P logo with Man Booker Prize logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1925-break-the-handcuffs",
+      "url": "https:
       "text": "A. Dean Irby, associate professor of acting",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1871-arts-abroad-program-welcomes-students-from-china",
+      "url": "https:
       "text": "Arts Abroad Program Students",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts/arts-abroad-program/index.php",
+      "url": "https:
       "text": "Arts Abroad Program",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1829-majella-loughran-12-has-got-talent",
+      "url": "https:
       "text": "Majella Loughran '12 and the Diavolo Dance Company following their semi-final win on NBC's America's Got Talent",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1808-fourth-emmy-award-for-david-grill-86",
+      "url": "https:
       "text": "Dave Grill '86",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1734-kamala-sankaram-featured-at-resonant-bodies",
+      "url": "https:
       "text": "Kamala Sankaram",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1698-new-jazz-faculty-member-finds-music-in-sandburgs",
+      "url": "https:
       "text": "Matt Wilson",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1693-purchase-faculty-among-top-35-female-classical",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1040-laura-kaminsky",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1658-purchase-adopts-test-optional-admissions-policy",
+      "url": "https:
       "text": "Commencement 2016",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1648-jon-faddis-uses-social-media-to-bring-jazz-to",
+      "url": "https:
       "text": "Jon Faddis",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1602-stunning-iceberg-cover-photo-by-camille-seaman-92",
+      "url": "https:
       "text": "Camille Seaman '92 The Lemaire Channel off the off the west coast of the Antarctic Peninsula",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1580-alumnus-dan-romers-music-featured-in-netflix-movie",
+      "url": "https:
       "text": "Dan Romer",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1521-american-opera-projects-celebrates-pride-with-free",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1486-philosophy-art-and-the-dalai-lama",
+      "url": "https:
       "text": "Students studying abroad in India granted an audience with the Dalai Lama",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1447-julianne-waber-17",
+      "url": "https:
       "text": "Julianne Waber '17",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1400-laura-kaminsky-selected-for-opera-for-all-voices",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1387-commencement-2017",
+      "url": "https:
       "text": "Commencement 2016",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1373-leah-woods-18-merges-arts-and-philanthropy",
+      "url": "https:
       "text": "Leah Woods '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1332-ivan-forde-12-awarded-prestigious-fellowship",
+      "url": "https:
       "text": "Ivan Forde '12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1159-purchase-college-at-the-2017-whitney-biennial",
+      "url": "https:
       "text": "Occupy Museums, Debtfair, 2017 (back), works by Jon Kessler (front). Photo: Henri Neuendorf",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1144-celebrating-international-womens-day-with-madonna",
+      "url": "https:
       "text": "Screen shot from Madonna's video HerStory",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1127-ptv-station-managers-take-on-prime-time",
+      "url": "https:
       "text": "Seniors Hannah, Summer, and Katie are managing Purchase Television (PTV) this year.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8590-janet-langsam-improbable-feminist-a-compelling",
+      "url": "https:
       "text": "Artist Janet Langsam working in her studio circa 1970. Photo courtesy of Janet Langsam.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8567-carter-hudson-09-cast-in-broadways-good-night-and",
+      "url": "https:
       "text": "Carter Hudson '09",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8560-fun-fact-zero-day-scene-shot-on-campus",
+      "url": "https:
       "text": "A crossroads with orange cones and a railroad crossing gate.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8484-joey-katz-18-artistic-director-of-film-festival",
+      "url": "https:
       "text": "Joey Katz '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8472-lifetime-achievement-awards-for-faculty",
+      "url": "https:
       "text": "Company 49 in Gint (Written by Romulus Linney, Adapted from Peer Gynt by Henrik Ibsen / Directed by Trezana Beverley)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8452-book-by-professor-marin-kosut-named-best-of-2024",
+      "url": "https:
       "text": "Marin Kosut, Professor of Sociology",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8415-world-renowned-artist-fred-wilsonjoins-friends-of",
+      "url": "https:
       "text": "Fred Wilson '76, Passionate Artist",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8410-lip-critic-lands-at-57-on-pastes-100-best",
+      "url": "https:
       "text": "Lip Critic's Hex Dealer album cover",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8399-dana-freeman-25-earns-design-scholarship",
+      "url": "https:
       "text": "Dana Freeman '25",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8370-nominations-for-the-2025-grammy-awards-announced",
+      "url": "https:
       "text": "Lucy Kalantari '98",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8297-mugler-creators-program-shines-a-light-on-purchase",
+      "url": "https:
       "text": "Conservatory of Dance students take part in a film to announce the launch of Mugler Creators to support talented contemporary dance and m...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8278-2nd-annual-bioblitz-records-347-species",
+      "url": "https:
       "text": "Student BioBlitz participant",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8248-work-by-khalif-tahir-thompson-18-at-the-armory-show",
+      "url": "https:
       "text": "Khlaif Tahir Thompson '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8242-andrea-patterson-05-stars-in-greek-classic",
+      "url": "https:
       "text": "Andrea Patterson '05",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8218-immersive-photography-is-festival-runs-sep-18nov-22",
+      "url": "https:
       "text": "A gallery visitor wearing a blue shirt seen from behind looking at art on the wall.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8185-two-film-alumni-win-prestigious-nbr-awards",
+      "url": "https:
       "text": "Film still from On The Ridge by Ruby Rose Makkena '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8165-assistant-professor-of-history-jessica-levy",
+      "url": "https:
       "text": "Jessica Levy",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8103-the-25-best-drama-schools-in-the-world",
+      "url": "https:
       "text": "Wordmark: The Hollywood Reporter in red",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8085-brian-macdevitt-80-wins-sixth-tony-award",
+      "url": "https:
       "text": "Brian MacDevitt '80",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8037-associate-professor-hakan-topal-merges-art-science",
+      "url": "https:
       "text": "Concrete house on a distant hillside surrounded by trees and greens with a blue sky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8013-rosalynde-leblanc-94-wins-peabody-award-for",
+      "url": "https:
       "text": "Rosalynde LeBlanc '94 (Photo: Lee Gumbs)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7977-take-a-hike-with-the-purchase-outdoors-club",
+      "url": "https:
       "text": "Purchase Outdoors Club Hikes Hook Mountain",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7961-paige-gilbert-14-stars-in-the-welkin",
+      "url": "https:
       "text": "Paige Gilbert '14",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-releasing-jan-30",
+      "url": "https:
       "text": "Emily Ruth Verona '12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7941-purchase-bred-lip-critic-a-band-to-watch",
+      "url": "https:
       "text": "Lip Critic band",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7919-purchase-the-first-to-tour-laguardias-premier",
+      "url": "https:
       "text": "Students view the art on display in LaGuardia Airport Terminals B and C",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7856-pivotal-behind-the-scenes-role-thom-jones-91",
+      "url": "https:
       "text": "Da'Vine Joy Randolph poses with the Supporting Actress Award for 'The Holdovers' in the winners room during the EE BAFTA Film Awards 2024...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7892-20232024-jessica-maffia-mfa-24",
+      "url": "https:
       "text": "Jessica Maffia MFA '24, Untitled (2023), President's Award for Public Art in the Humanities Lobby",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7876-new-local-housing-scholarships-announced",
+      "url": "https:
       "text": "The Quad and Residence Halls",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7857-caleb-eberhardt-12-lands-second-broadway-role",
+      "url": "https:
       "text": "Caleb Eberhardt '12 in glasses and a blue button down shirt with arms crossed",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7833-big-night-at-the-grammys",
+      "url": "https:
       "text": "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7759-hunter-hollingsworth-22-makes-broadway-debut",
+      "url": "https:
       "text": "Hunter Hollingsworth '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-competition-awards-5000-in-prizes",
+      "url": "https:
       "text": "Acting majors Tachynel Merveille and Destiny Barbour won the Audience Favorite Award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7695-grammy-nominated",
+      "url": "https:
       "text": "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7676-adam-birnbaums-new-album-preludes-wins-praise",
+      "url": "https:
       "text": "Adam Birnbaum",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7602-billboard-magazine-touts-studio-production-program",
+      "url": "https:
       "text": "7602-billboard-magazine-touts-studio-production-program",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7559-feeling-top-ten",
+      "url": "https:
       "text": "Students enjoy Fun Fair on the Great Lawn during Welcome Week.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7524-new-film-by-megan-rossman-hits-the-film-circuit",
+      "url": "https:
       "text": "Assistant Professor of Communications Megan Rossman (Photo: Bri Elledge)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7456-symara-johnson-19-named-outstanding-breakout",
+      "url": "https:
       "text": "Portrait of light skinned Black dancer with hand bent over head",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7441-dance-magazine-cover-shota-miyoshi-22",
+      "url": "https:
       "text": "Shota Miyoshi '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6934-debut-feature-by-vuk-lungulov-klotz-16-at-sundance",
+      "url": "https:
       "text": "Vuk Lungulov-Klotz '16",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7392-purchase-selected-for-fiske-guide-2024",
+      "url": "https:
       "text": "Person walks in distance with Welcome to Purchase College sign on brick building",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7379-chancellor-king-visits-campus-to-welcome-eop",
+      "url": "https:
       "text": "Chancellor King stands at a table chatting with EOP students.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7352-caitly-dominici-24-awarded-inaugural-suny",
+      "url": "https:
       "text": "Photo of Caitly Dominici '24",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7322-edie-falco-84-and-oona-roche-17-on-pete-davidsons",
+      "url": "https:
       "text": "Edie Falco, Pete Davidson, and Joe Pesci sit at a table in scene from BUPKIS TV comedy",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7311-lisa-dawn-cave-83-earns-special-tony-award",
+      "url": "https:
       "text": "Lisa Dawn Cave '83",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7298-lecturer-jen-schreiver-04-earns-tony-nomination",
+      "url": "https:
       "text": "Jen Schriever '04",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7277-sonia-seth-suny-chancellors-award-winner",
+      "url": "https:
       "text": "SUNY Chancellor John King, Sonia Seth '23 holding a certificate, and Director of the School of Natural and Social Sciences Rudolf Gaudio.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7245-james-ortiz-10-earns-drama-desk-nomination",
+      "url": "https:
       "text": "James Ortiz '10",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7247-jeff-croiter-93-earns-drama-desk-nomination",
+      "url": "https:
       "text": "Jeff Croiter '93",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7223-professor-david-bassuk-is-a-fulbright-scholar-for",
+      "url": "https:
       "text": "David Bassuk, Professor of Acting",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7122-nicco-annan-98-wins-outstanding-actor-award",
+      "url": "https:
       "text": "Nicco Annan '98 Wins NAACP Image Award for Outstanding Actor in a Drama Series.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7161-purchase-on-the-creative-team-for-broadways-bob",
+      "url": "https:
       "text": "Jovan Dansberry in Bob Fosse's Dancin' (Photo: Julieta Cervantes)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7144-thomas-warfield-88-celebrated-for-career",
+      "url": "https:
       "text": "Thomas Warfield '88",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7093-keerati-jinakunwiphat-16-makes-history-at-nybc",
+      "url": "https:
       "text": "Keerati Jinakunwiphat choreographing her new ballet for New York City Ballet, Wednesday, November 16, 2022. Credit Photo: Erin Baiano",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6895-two-major-grammy-nominations-for-samara-joy-21",
+      "url": "https:
       "text": "Jazz vocalist Samara Joy '21 (Photo: Meredith Truax)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7032-mitski-13-collaboration-receives-oscar-nomination",
+      "url": "https:
       "text": "Mitski '13 (Photo: Ebru Yildiz)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6990-darryl-rahn-15-wins-battle-of-the-instant",
+      "url": "https:
       "text": "Darryl Rahn '15",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6967-global-scholars-meet-with-un-deputy-secretary",
+      "url": "https:
       "text": "Global Scholars students visit the UN",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6933-chris-perfetti-11-nominated-for-abbott-elementary",
+      "url": "https:
       "text": "Creator/star Quinta Brunson and Chris Perfetti on the ABC sitcom Abbott Elementary. (Photo: Christopher Willard/",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6888-blake-pfiel-19-finds-solace-and-beauty-in",
+      "url": "https:
       "text": "Blake Pfeil MA '19",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6863-purchase-opera-earns-the-american-prize-honors",
+      "url": "https:
       "text": "Purchase Opera production of Dialogues of the Carmelites in 2020-2021.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6849-four-earn-audelco-viv-award-nominations",
+      "url": "https:
       "text": "AUDELCO Awards 50 Logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6827-can-clever-chemistry-eliminate-nuclear-waste",
+      "url": "https:
       "text": "Uranium spectrum visible",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6793-purchase-earns-a-competitive-fulbright-hays-award",
+      "url": "https:
       "text": "6793-purchase-earns-a-competitive-fulbright-hays-award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6769-the-buzz-about-bees-collecting-honey-to-examine",
+      "url": "https:
       "text": "Students use a comb knife to remove the caps from honey frames",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6756-purchase-dance-represents-at-the-la-dance-project",
+      "url": "https:
       "text": "LA Dance Project (from preview performances of Benjamin Millepied's ROMEO & JULIET SUITE during the @nuitsdefourviere festival i...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6740-sophie-glenn-12-receives-john-d-mineck-fellowship",
+      "url": "https:
       "text": "Furniture artist Sophie Glenn '12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6708-hunter-zimny-16-praised-for-work-on-funny-pages",
+      "url": "https:
       "text": "Hunter Zimny '16",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6691-professors-awarded-major-grant-by-national-science",
+      "url": "https:
       "text": "Erika Ebbs",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6655-lecturer-thomas-mesa-wins-sphinx-medal-of",
+      "url": "https:
       "text": "Cellist and Lecturer Thomas Mesa",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6638-fatoumata-fadiga-24-named-future-nobel-laureate",
+      "url": "https:
       "text": "Fatoumata Fadiga",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6621-soul-voices-director-knoelle-higginson-on-agt",
+      "url": "https:
       "text": "Lecturer and Soul Voices Choir Director Knoelle Higginson",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6607-purchase-among-best-and-most-interesting-in-fiske",
+      "url": "https:
       "text": "Fiske Guide to Colleges",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6592-work-by-kyle-abraham-00-earns-a-ny-emmy-nomination",
+      "url": "https:
       "text": "Kyle Abraham '00",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6561-james-ortiz-10-wins-drama-desk-award-for-puppetry",
+      "url": "https:
       "text": "James Ortiz '10",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6545-poem-by-professor-monica-ferrell-published-in-the",
+      "url": "https:
       "text": "Professor of Creative Writing Monica Ferrell",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6524-sarah-catherine-hook-17-stars-in-new-netflix",
+      "url": "https:
       "text": "Sarah Catherine Hook '17 and Imani Lewis star in Netflix series First Kill.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6503-purchase-college-leadership-institute-20212022",
+      "url": "https:
       "text": "Purchase College Leadership Institute 2021-2022",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6486-thayer-fellowship-winner-naoki-yogi",
+      "url": "https:
       "text": "Naoki Yogi '22",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6378-tv-pilot-by-claire-giegerich-23-selected-for-nffty",
+      "url": "https:
       "text": "Claire Giegerich '23",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6423-allison-loggins-hull-05-named-a-cleveland",
+      "url": "https:
       "text": "Allison Loggins-Hull '05",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6368-tj-raphael-11-number-1-science-podcast-in-america",
+      "url": "https:
       "text": "TJ Raphael '11",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6406-journalist-aj-jordan-15-best-financial-decision",
+      "url": "https:
       "text": "AJ Jordan '15",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6328-paige-gilbert-14-lands-role-at-lincoln-center",
+      "url": "https:
       "text": "Paige Gilbert '14",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6311-jordan-tetewsky-16-wins-at-slamdance",
+      "url": "https:
       "text": "Jordan Tetewsky '16 (film)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6293-samara-joy-21-on-the-today-show",
+      "url": "https:
       "text": "Samara Joy '21 (jazz studies)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6258-neuberger-museum-of-art-announces-2022-winner-of",
+      "url": "https:
       "text": "Tomashi Jackson, 2022 Roy R. Neuberger Prize Recipient",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6241-phil-corso-11-named-to-newly-created-position-at",
+      "url": "https:
       "text": "Phil Corso '11",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6211-erik-spink-11-to-screen-short-at-moma",
+      "url": "https:
       "text": "Erik Spink '11",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6195-aya-keefe-07-named-manhattans-deputy-borough",
+      "url": "https:
       "text": "Aya Keefe",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6169-the-purchase-shark-tank-style-competition-awards",
+      "url": "https:
       "text": "Entrepreneurship in the Arts major Shannon Dawson, winner of the 2021 Purchase Shark Tank.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6125-two-from-purchase-in-spielbergs-west-side-story",
+      "url": "https:
       "text": "West Side Story logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6101-actor-cici-koueth-21-selected-by-warner-brothers",
+      "url": "https:
       "text": "Cecellia Koueth",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6088-professor-elise-lemire-discusses-black-walden",
+      "url": "https:
       "text": "A boulder marks the location where Brister Freeman's house is thought to have stood in Walden Woods. (Courtesy of the Walden Woods Project)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6069-purchase-opera-earns-top-award-for-20202021",
+      "url": "https:
       "text": "Purchase Opera production of Dialogues of the Carmelites in 2020-2021.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6046-senior-film-by-lamesa-nashrat-21-screening-at-tide",
+      "url": "https:
       "text": "Lamesa Nashrat '21 (film)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6023-brittany-petronella-16-shares-her-passion-for",
+      "url": "https:
       "text": "Brittany Petronella '16 (photography, art history minor)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5997-raechelle-manalo-20-joins-paul-taylor-dance-co",
+      "url": "https:
       "text": "Raechelle Manalo '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5973-katie-kresek-98-99-wins-tony-award",
+      "url": "https:
       "text": "Katie Kresek '98, '99",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5920-lee-tusman-to-explore-innovation",
+      "url": "https:
       "text": "Lee Tusman",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5908-purchase-named-top-ten-public-liberal-arts",
+      "url": "https:
       "text": "Student on campus viewing a cell phone",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5906-brian-otano-11-signs-deal-with-amazon-studios",
+      "url": "https:
       "text": "Brian Otaño '11",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5890-tamisha-guy-13-earns-vilcek-prize",
+      "url": "https:
       "text": "Tamisha Guy '13",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5850-gianna-caranfa-15-invites-you-to-bee-inked",
+      "url": "https:
       "text": "Gianna Caranfa '15 Inside her new tattoo parlor Bee Inked. (Mark Vergari/The Journal News)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5788-louise-bartolotta-16-receives-inaugural-content",
+      "url": "https:
       "text": "Louise Bartolotta '16",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5781-victor-cuoto-14-nominated-for-news-and-doc-emmy",
+      "url": "https:
       "text": "Victor Cuoto '14",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3036-bryan-korn-12-hilda-wins-two-daytime-emmy-awards",
+      "url": "https:
       "text": "Bryan Korn",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5727-jodi-long-76-earns-a-daytime-emmy-win",
+      "url": "https:
       "text": "Jodi Long '76 Holds Up her Daytime Emmy® Award",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5690-acting-bfa-named-top-25-in-the-world",
+      "url": "https:
       "text": "Blood Wedding",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5673-connectivecollective-on-view-through-june-27-at",
+      "url": "https:
       "text": "ConnectiveCollective on view at the Neuberger Museum of Art through June 27, 2021",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5589-caleb-dowden-21-earns-fulbright-award",
+      "url": "https:
       "text": "Caleb Dowden '21 (dance)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5566-purchase-is-a-top-200-best-value-college-for-2021",
+      "url": "https:
       "text": "Purchase is Princeton Review Top 200 Best Value Colleges (students on the Quad in Adirondack chairs)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5546-william-byram-20-earns-fulbright-award",
+      "url": "https:
       "text": "William Byram '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5503-4th-annual-pov-festival-april-1718",
+      "url": "https:
       "text": "POV Fest Logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5477-10th-annual-suny-wide-film-festival-april-910",
+      "url": "https:
       "text": "SUNYWide Film Festival design",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5454-travis-sluss-07-named-40-under-40",
+      "url": "https:
       "text": "Travis Sluss '07 (Photo: MacInspires Facebook)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5425-working-5-to-9-tanairi-vazquez-10-stars-in",
+      "url": "https:
       "text": "Tanairi Vazquez '10 (dance performance)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5368-emma-caymares-12-lands-role-on-abc-sitcom",
+      "url": "https:
       "text": "Emma Caymares'12",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5336-keerati-jinakunwiphat-16-is-one-to-watch",
+      "url": "https:
       "text": "Cover of Dance magazine",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5305-broadview-a-meeting-of-the-minds",
+      "url": "https:
       "text": "Entrance to the Broadview complex",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5267-david-de-jesus-plays-on-grammy-nominated-album",
+      "url": "https:
       "text": "Asst. Professor David DeJesus",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5195-the-alchemy-of-meth-by-professor-jason-pine-earns",
+      "url": "https:
       "text": "Professor of Anthropology and Media Studies Jason Pine (Photo: Annette Hornischer)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5107-joe-matoske-10-wins-emmys-and-accepted-into-ace",
+      "url": "https:
       "text": "Joe Matoske '10",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4940-professor-david-grill-and-ben-green-15-earn-emmy",
+      "url": "https:
       "text": "Dave Grill",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5054-purchase-is-among-top-ten-public-national-liberal",
+      "url": "https:
       "text": "Purchase College sign at front with orange and gold mums.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5042-renowned-anthropologist-david-graeber-84-has-died",
+      "url": "https:
       "text": "David Graeber, 2016",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5016-christoper-robbins-american-riad-project-receives",
+      "url": "https:
       "text": "Director, School of Art+Design Christopher Robbins inside the sculpture on site at the American Riad project",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5003-times-up-on-racism",
+      "url": "https:
       "text": "Interim President Dennis Craig and Chief Diversity Officer Jerima DeWese stand below the large clock on campus.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4984-nathaniel-nicco-annan-98-is-uncle-clifford",
+      "url": "https:
       "text": "Actor Nicco Annan '98 as Uncle Clifford in Starz drama P-Valley",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4948-two-2019-grads-are-winners-of-this-years-salomon",
+      "url": "https:
       "text": "Curtis Brodner '19, the 2020 Winner of the Salomon Fund for Journalists Award.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4915-britney-ditocco-20-welcomes-new-students-in-song",
+      "url": "https:
       "text": "Britney DiTocco '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4899-suny-chancellors-award-for-excellence-announced",
+      "url": "https:
       "text": "SUNY logo and wordmark, white on blue background",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4856-the-acting-program-honors-juneteenth",
+      "url": "https:
       "text": "Juneteenth We Breathe Black art exhibition logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4839-professor-shaka-mcglotten-named-data-society",
+      "url": "https:
       "text": "Professor Shaka McGlotten",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4783-yancy-garcia-named-next-ella-fitzgerald-scholar",
+      "url": "https:
       "text": "Yancy Garcia",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4772-dr-milagros-pena-named-next-president",
+      "url": "https:
       "text": "Dr. Milagros Milly Peña, the sixth president of Purchase College.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4748-jazz-studies-head-pete-malinverni-featured-on",
+      "url": "https:
       "text": "Pete Malinverni",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4720-britney-ditocco-20-receives-suny-chancellors-award",
+      "url": "https:
       "text": "Britney DiTocco '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4678-purchase-joins-esports-challenge-sunytogether",
+      "url": "https:
       "text": "SUNY Esports Challenge Co-sponsored by Extreme Networks",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4630-meet-elizabeth-cook-20-thayer-fellowship-winner",
+      "url": "https:
       "text": "Elizabeth Cook '20 (acting)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4615-vocalist-lucy-wijnands-20-finalist-in-prestigious",
+      "url": "https:
       "text": "Lucy Wijnands '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4601-eric-gottesman-awarded-prestigious-guggenheim",
+      "url": "https:
       "text": "Eric Gottesman",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4578-novel-by-claribel-ortega-10-will-see-the-big",
+      "url": "https:
       "text": "Claribel Ortega '10",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4310-andrew-buckland-94-earns-oscar-nomination",
+      "url": "https:
       "text": "Ford V Ferrari movie (Merrick Morton/20th Century Fox)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4399-purchase-is-a-best-value",
+      "url": "https:
       "text": "Purchase College Commencement at the Westchester Civic Center, White Plains, N.Y., Friday, May 18, 2018.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4335-jon-samson-03-wins-a-grammy",
+      "url": "https:
       "text": "Jon Samson '03 wins a Grammy for Best Childrens Album",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4271-dance-magazine-names-hannah-garner-15-one-to-watch",
+      "url": "https:
       "text": "Hannah Garner '15 (Credit: Mike Lindle)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3409-kate-gilmore-heals-with-art-after-parkland",
+      "url": "https:
       "text": "Participants walk on the The Yellow Walk performance created by Kate Gilmore",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4211-samara-mclendon-21-earns-prestigious-sassy-award",
+      "url": "https:
       "text": "Samara Joy McLendon '21 holds her Sarah Vaughan Jazz Vocal award.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4184-nine-students-explore-opportunities-in-stem",
+      "url": "https:
       "text": "Left to right: Sarah Yousef, Angelina King, Ariana Padua, Jorge Acuna, Angelique Malcolm, Macela Carmo Dos Santos, Samantha Garcia, Jenni...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4188-faculty-members-earn-grammy-nominations",
+      "url": "https:
       "text": "Silas Brown",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4066-damani-brissett-21-receives-inaugural-milos",
+      "url": "https:
       "text": "Damani Bissett '21",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4045-senior-wins-princess-grace-foundation-film",
+      "url": "https:
       "text": "Melanie Rosete '20",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4011-georgie-humphries-19-april-mcilwaine-19",
+      "url": "https:
       "text": "Dr. Stephen Harris, April McIlwaine, Georgie Humphries, and Dr. Ryan Taylor",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3989-professor-warren-lehrers-new-book-multimedia",
+      "url": "https:
       "text": "Five Oceans in a Teaspoon Front Cover",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3971-us-news-and-world-report-ranks-purchase",
+      "url": "https:
       "text": "Purchase College Library exterior",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3937-professor-kamala-sankarams-techno-infused-opera",
+      "url": "https:
       "text": "Kamala Sankaram",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3885-purchase-named-top-385-by-the-princeton-review",
+      "url": "https:
       "text": "Students play music on the mall",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3840-jazz-program-featured-at-artswestchesters-jazzfest",
+      "url": "https:
       "text": "Purchase Jazz Orchestra at Blue Note",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3820-must-read-profile-mitski-13",
+      "url": "https:
       "text": "Mitski '13 (Photo: David Lee, Redmond, WA)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2773-discover-the-academic-partnership-with-upstate",
+      "url": "https:
       "text": "Students Conduct Research in Biology Lab",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3741-two-alumni-star-in-operas-by-purchase-faculty",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/701-laura-kaminsky",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3697-suny-chancellors-award-for-excellence-2019",
+      "url": "https:
       "text": "SUNY Logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3620-lisa-jean-moore-named-distinguished-professor",
+      "url": "https:
       "text": "Lisa Jean Moore (stands at front of class)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3558-nicolas-bruno-15-photographs-his-nightmares",
+      "url": "https:
       "text": "Nick Bruno '15",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3501-the-center-for-engagement-has-launched",
+      "url": "https:
       "text": "The Center for Engagement",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3491-spotlights-on-david-grill-86-for-a-change",
+      "url": "https:
       "text": "David Grill '86 and student look at stage model",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3446-declan-moore-19-interned-at-the-super-bowl",
+      "url": "https:
       "text": "Declan Moore '19 and Dave Grill '86 at Super Bowl 2019",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3412-purchase-named-a-top-200-best-value-in-the-nation",
+      "url": "https:
       "text": "Students Conduct Research in Biology Lab",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3405-dean-lorenzo-candelaria-in-the-news",
+      "url": "https:
       "text": "Lorenzo Candelaria, Dean of the School of the Arts",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3383-laura-kaminsky-wins-visionary-composer-award",
+      "url": "https:
       "text": "Laura Kaminsky",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3333-ted-fox-76-author-of-showtime-at-the-apollo",
+      "url": "https:
       "text": "Showtime at the Apollo cover",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3310-mary-kosut-receives-prestigious-fellowship",
+      "url": "https:
       "text": "Mary Kosut, associate professor of sociology",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3269-students-place-art-in-vacant-spaces",
+      "url": "https:
       "text": "Art in Vacant Spaces window 2018, “A Woman",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3202-sustainability-coordinator-angie-kim-receives",
+      "url": "https:
       "text": "Angie Kim, sustainability coordinator",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3160-conservatory-of-dance-students-in-bam-production",
+      "url": "https:
       "text": "Quaba Ernest and Aleksandra Gologorskaya from the Conservatory of Dance at Purchase College in Robbins' Watermill.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3074-artist-michael-rakowitz-95-at-art-basel-2018",
+      "url": "https:
       "text": "Artist Michael Rakowitz '95",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3031-alumni-win-big-at-creative-arts-emmy-awards",
+      "url": "https:
       "text": "Alumni Ben Green '15, Melissa Shakun '08, and Professor David Grill '86.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2941-purchase-college-students-stand-with-puerto-rico",
+      "url": "https:
       "text": "Volunteers in the SUNY Stands with Puerto Rico initiative",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2921-music-alumni-earn-news-and-doc-emmy-nomination",
+      "url": "https:
       "text": "Chasing Coral documentary still",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2871-two-dance-alumni-earn-princess-grace-awards",
+      "url": "https:
       "text": "Marcella Lewis '16",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2856-follow-purchase-dancers-on-dance-fashion",
+      "url": "https:
       "text": "@issadancelook Instagram account post",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2822-new-opera-by-purchase-instructor-us-poet",
+      "url": "https:
       "text": "Gregory Spears",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1886-gregory-spears",
+      "url": "https:
       "text": "Gregory Spears",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2811-purchase-ranks-among-the-best",
+      "url": "https:
       "text": "Fiske Guide to Colleges 2019 Badge",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2747-purchase-filmmaker-heads-to-sundance-institute",
+      "url": "https:
       "text": "Vuk Lungulov-Klotz '16",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2721-jazz-instructor-wins-musician-and-record-of-the",
+      "url": "https:
       "text": "Matt Wilson",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1747-matthew-wilson",
+      "url": "https:
       "text": "Matt Wilson",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2706-stephen-ferri-13-named-wunderkind-2018",
+      "url": "https:
       "text": "Stephen Ferri '13 (courtesy Westchester Magazine)",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2649-madeline-cramer-18-wins-suny-thayer-fellowship",
+      "url": "https:
       "text": "Madeline Cramer '18, Winner of SUNY Thayer Fellowship in the Arts",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2634-purchase-college-represented-with-multiple",
+      "url": "https:
       "text": "Drama Desk Awards logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1815-clint-ramos",
+      "url": "https:
       "text": "Clint Ramos",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/324-dane-laffrey",
+      "url": "https:
       "text": "Dane Laffrey",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/313-maruti-evans",
+      "url": "https:
       "text": "Maruti Evans",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2620-a-tree-planted-for-clean-and-green-day",
+      "url": "https:
       "text": "President Schwarz helps plant a tree for Clean and Green Day 2018",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2569-andrew-pharmer-90",
+      "url": "https:
       "text": "Andrew Pharmer '90",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2515-purchase-professor-composes-for-alvin-ailey",
+      "url": "https:
       "text": "Jakub Ciupinski Headshot",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/249-jakub-ciupiski",
+      "url": "https:
       "text": "Jakub Ciupinski",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2492-jazz-studies-onstage-and-on-air-in-april",
+      "url": "https:
       "text": "New Standards Combo in the Jazz Studies program",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2488-professor-joe-skrivanek-named-distinguished",
+      "url": "https:
       "text": "Joseph A. Skrivanek, professor of chemistry",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2462-president-schwarz-announces-his-plans-for",
+      "url": "https:
       "text": "President Thomas J. Schwarz",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2441-students-walk-out",
+      "url": "https:
       "text": "Students on the main plaza to protest gun violence",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2432-purchase-students-head-to-london",
+      "url": "https:
       "text": "Abrielle Scharff and her Band on stage",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2394-president-schwarz-on-the-college-admission-process",
+      "url": "https:
       "text": "President Thomas J. Schwarz",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2339-professor-of-literature-elise-lemire-tours-walden",
+      "url": "https:
       "text": "Stone marker for site of Thoreau's cabin",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2294-composition-faculty-sends-opera-to-the-schools",
+      "url": "https:
       "text": "Kamala Sankaram Headshet",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2190-purchase-named-best-value-by-kiplingers-personal",
+      "url": "https:
       "text": "Students in class",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2181-critically-acclaimed-spielberg-film-shot-on-campus",
+      "url": "https:
       "text": "Steven Spielberg's The Post film shoot on campus",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2165-purchase-is-all-in-the-antar-family",
+      "url": "https:
       "text": "Jenar Antar '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2123-chris-wedge-81-and-jeanne-markel-81-give-back-to",
+      "url": "https:
       "text": "Jeanne Markel '81 and Chris Wedge '81",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2093-shaka-mcglotten-receives-grant-for-black-data",
+      "url": "https:
       "text": "Shaka McGlotten, Associate Professor of Media Studies",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2080-professor-nancy-bowen-selected-for-coveted-award",
+      "url": "https:
       "text": "Nancy Bowen",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2045-annual-biomedical-research-conference-for-minority",
+      "url": "https:
       "text": "Students",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2013-purchase-photographers-look-through-the-lens-of",
+      "url": "https:
       "text": "Two Purchase photography students and an alumnus of the program discussed their work at a symposium honoring the work of Gordon Parks. L ...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1984-softball-trio-goes-beyond-sports-in-south-africa",
+      "url": "https:
       "text": "Kelly Hayes '19, Mary Adams '17, and Briana Leon '17 on the beach with penguins on Boulder Beach",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1956-a-special-week-spent-with-alumni",
+      "url": "https:
       "text": "Cain Coleman '09-'11, '15 of Coleman Collective works with students",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1937-hear-professor-lisa-keller-on-wnyc",
+      "url": "https:
       "text": "WNYC logo",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1892-fred-wilson-76-named-art-of-change-fellow",
+      "url": "https:
       "text": "Conceptual artist Fred Wilson '76",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1843-201718-eliza-evans-17",
+      "url": "https:
       "text": "Transpire, an art installation of plastic-wrapped trees by Eliza Evans MFA '17 (visual arts) was selected for the 2017-18 President's Awa...",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1821-acclaimed-novelists-kick-off-the-durst",
+      "url": "https:
       "text": "Authors Hari Kunzru and Katie Kitamura on stage during the Durst Distinguished Lecture Series.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1764-terese-capucilli-78-honored",
+      "url": "https:
       "text": "Terese Capucilli '78",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1716-photographer-tapped-for-brooklyn-museum-exhibition",
+      "url": "https:
       "text": "Kris Graves' 04",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1697-new-composition-faculty-headlines-prototype",
+      "url": "https:
       "text": "Gregory Spears",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1659-students-reimagine-tchaikovsky",
+      "url": "https:
       "text": "Avant Projekts",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1651-the-princeton-review-ranks-purchase-as-a-top",
+      "url": "https:
       "text": "The campus of Purchase College.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1604-purchase-makes-selective-fiske-guide-for-2018",
+      "url": "https:
       "text": "Sunflowers behind the Student Services Building",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1591-2017-emmy-nominations",
+      "url": "https:
       "text": "FEUD: BETTE & JOAN Stanley Tucci '82 as Jack Warner",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1562-purchase-dubbed-a-music-scene",
+      "url": "https:
       "text": "The band Cende",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1428-chancellors-award-for-excellence",
+      "url": "https:
       "text": "SUNY logo and wordmark, white on blue background",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1476-dream-come-true-for-incoming-freshman",
+      "url": "https:
       "text": "The senior class of Summit Academy Charter School with Ellen DeGeneres. Photo Credit: Michael Rozman/Warner Bros.",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1431-alumnus-gabriel-fridkis-wins-principal-flute-in",
+      "url": "https:
       "text": "Gabriel Fridkis",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1388-scholar-athletes-honored-by-suny",
+      "url": "https:
       "text": "Emma Porter '18",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1374-new-media-exhibition-in-yonkers",
+      "url": "https:
       "text": "New Media Photography Expanded at PC4",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1358-suny-appoints-new-chancellor",
+      "url": "https:
       "text": "Dr. Kristina Johnson, incoming SUNY Chancellor",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1309-purchase-opera-wins-two-american-prizes",
+      "url": "https:
       "text": "Purchase Opera: The Crucible",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/72-voice-and-opera-studies",
+      "url": "https:
       "text": "Purchase Opera",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1148-megan-seibel-17-lights-up-the-super-bowl",
+      "url": "https:
       "text": "Design Tech student Megan Seibel with her professor Dave Grill at the Super Bowl",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1130-garth-greenwell-01-on-shortlist-for-penfaulkner",
+      "url": "https:
       "text": "Garth Greenwell",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1005-technical-theatre-legend-joseph-b-forbes-to",
+      "url": "https:
       "text": "Scenic Art Studios founder Joseph B. Forbes",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/news/recent-press-coverage",
+      "url": "https:
       "text": "Recent Press Coverage",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/news/news-archive",
+      "url": "https:
       "text": "News Archive",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/magazine",
+      "url": "https:
       "text": "PURCHASE MAGAZINE",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
       "url": "nullmedia@purchase.edu",
       "text": "media@purchase.edu",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/galleries/51-purchase-in-pictures",
+      "url": "https:
       "text": "Purchase in Pictures",
-      "parent": "https://www.purchase.edu/news",
+      "parent": "https:
       "parentText": "News • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/about",
+      "url": "https:
       "text": "About",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/register",
+      "url": "https:
       "text": "Register",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/meet-the-director",
+      "url": "https:
       "text": "Meet the Director",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/youth-and-precollege-programs/contact-us",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/forms/21-1",
+      "url": "https:
       "text": "Join Our Mailing List",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/forms/670-open-house-summer-youth-and-precollege-programs-in-the-a",
+      "url": "https:
       "text": "Register for the Open House",
-      "parent": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+      "parent": "https:
       "parentText": "Youth and Precollege Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/undergraduate-courses-with-noncredit-seats",
+      "url": "https:
       "text": "Undergraduate Courses with Noncredit Seats",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/meet-the-director",
+      "url": "https:
       "text": "Meet the Director",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/contact-us",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/forms/60-join-our-mailing-list",
+      "url": "https:
       "text": "Join Our Mailing List",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/register",
+      "url": "https:
       "text": "Register Now",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/forms/528-1",
+      "url": "https:
       "text": "Continuing Education Course Proposal Form",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/continuing-education/interior-design/courses",
+      "url": "https:
       "text": "Open Interior Design Courses",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies",
+      "url": "https:
       "text": "Post-Baccalaureate Premedical Studies",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6720-iin-graduate-one-of-7-black-entrepreneurs-changing",
+      "url": "https:
       "text": "IIN Graduate One of 7 Black Entrepreneurs Changing the Face of the Health and Wellness Industry",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/2469-new-to-online-learning",
+      "url": "https:
       "text": "New to Online Learning?",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4374-interested-in-applying-to-purchase-college",
+      "url": "https:
       "text": "Interested in applying to Purchase College?",
-      "parent": "https://www.purchase.edu/academics/continuing-education",
+      "parent": "https:
       "parentText": "Adult Noncredit Programs • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/meet-our-alumni",
+      "url": "https:
       "text": "Meet Our Alumni",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/current-senior-acting-company",
+      "url": "https:
       "text": "Current Senior Acting Company",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/recent-news",
+      "url": "https:
       "text": "Recent News",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/acting-network",
+      "url": "https:
       "text": "Acting Network",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-arts/performances",
+      "url": "https:
       "text": "Performances",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-arts/facilities",
+      "url": "https:
       "text": "Facilities",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-arts/alumni",
+      "url": "https:
       "text": "Alumni",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/2707-liam-joynt",
+      "url": "https:
       "text": "Liam Joynt",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/287-maggie-surovell",
+      "url": "https:
       "text": "Maggie Surovell",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
       "url": "nullacting.auditions@purchase.edu",
       "text": "acting.auditions@purchase.edu",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1799-micah-stock-11",
+      "url": "https:
       "text": "Micah Stock ’11",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6449-machinal",
+      "url": "https:
       "text": "Machinal",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/recent-performances",
+      "url": "https:
       "text": "SEE FULL GALLERY",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/acting/requirements/additional-program-information",
+      "url": "https:
       "text": "See if we answered them here",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/magazine/acting-at-50",
+      "url": "https:
       "text": "PURCHASE magazine cover story",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5746-",
+      "url": "https:
       "text": "Orlagh Cassidy ’90",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1798-",
+      "url": "https:
       "text": "Sherry Stringfield ’89",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6868-alano-miller-02",
+      "url": "https:
       "text": "Alano Miller ’02",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5720-",
+      "url": "https:
       "text": "Nicco Annan ’98",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7467-lei-lei-bavoil-15",
+      "url": "https:
       "text": "Lei-Lei Bavoil ’15",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6029-",
+      "url": "https:
       "text": "Gina Belafonte ’83",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1793-",
+      "url": "https:
       "text": "Chris Perfetti ’11",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5723-",
+      "url": "https:
       "text": "Paige Gilbert ’14",
-      "parent": "https://www.purchase.edu/academics/acting",
+      "parent": "https:
       "parentText": "Acting • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/meet-our-alumni",
+      "url": "https:
       "text": "Meet Our Alumni",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/anthropology/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/462-lorraine-plourde",
+      "url": "https:
       "text": "Lorraine Plourde",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/anthropology",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8555-anthropology-professor-lorraine-plourde-on-the",
+      "url": "https:
       "text": "Anthropology Professor Lorraine Plourde on The Urbanist podcast",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5632-opeoluwa-obasa-20",
+      "url": "https:
       "text": "Opeoluwa Obasa ’20",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3385-",
+      "url": "https:
       "text": "Janette Yarwood ’96",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7333-cassidy-hammond-17",
+      "url": "https:
       "text": "Cassidy Rose Hammond ’17",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5997-karen-beltran-02",
+      "url": "https:
       "text": "Karen T. Beltran ’02",
-      "parent": "https://www.purchase.edu/academics/anthropology",
+      "parent": "https:
       "parentText": "Anthropology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/awards",
+      "url": "https:
       "text": "Awards",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/501-paul-kaplan",
+      "url": "https:
       "text": "Paul Kaplan",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/art-history",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7052-gilman-scholarship-spotlight-frankie-bademci-23",
+      "url": "https:
       "text": "Gilman Scholarship Spotlight: Frankie Bademci ’23",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5470-professor-elizabeth-guffey-pens-article-on-active",
+      "url": "https:
       "text": "Professor Elizabeth Guffey Pens Article on “Active Exclusion”",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4518-michelle-friedman-11",
+      "url": "https:
       "text": "Michelle Friedman ’11",
-      "parent": "https://www.purchase.edu/academics/art-history",
+      "parent": "https:
       "parentText": "Art History • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/scholarships-and-awards",
+      "url": "https:
       "text": "Fellowships and Awards",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-history-ma/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://admission.purchase.edu/register/graduateinquiry",
+      "url": "https:
       "text": "Request Information",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1763-jonah-westerman",
+      "url": "https:
       "text": "Jonah Westerman",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/graduate-students/art-history-ma",
+      "url": "https:
       "text": "Application Details",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6922-kristen-galvin-08",
+      "url": "https:
       "text": "Kristen Galvin ’08",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6256-ma-graduate-shilpi-chandras-solo-curatorial-debut",
+      "url": "https:
       "text": "Shilpi Chandra MA ’15 Has Solo Curatorial Debut",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/5604-alumni-spotlight-meet-chelsea-spengemann-ma-11",
+      "url": "https:
       "text": "Chelsea Spengemann, MA ’11",
-      "parent": "https://www.purchase.edu/academics/art-history-ma",
+      "parent": "https:
       "parentText": "Art History (MA) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-and-design/ad-student-handbook",
+      "url": "https:
       "text": "A+D Handbook",
-      "parent": "https://www.purchase.edu/academics/art-and-design/foundations",
+      "parent": "https:
       "parentText": "Foundations Program • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/art-and-design/foundations/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/art-and-design/foundations",
+      "parent": "https:
       "parentText": "Foundations Program • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/minor-in-arts-management",
+      "url": "https:
       "text": "Minor in Arts Management",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/meet-our-alumni",
+      "url": "https:
       "text": "Meet Our Alumni",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/internships",
+      "url": "https:
       "text": "Internships",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/jandon-lecture-series",
+      "url": "https:
       "text": "Jandon Lecture Series",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/notes-from-the-field",
+      "url": "https:
       "text": "Notes from the Field",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/sammies",
+      "url": "https:
       "text": "SAMMIES",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3104-arts-management-iesa-artsampculture",
+      "url": "https:
       "text": "Semester in France",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3103-arts-management-international-business-school",
+      "url": "https:
       "text": "Semester in Hungary",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/694-maria-guralnik",
+      "url": "https:
       "text": "Maria Guralnik",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/696-jordan-shue",
+      "url": "https:
       "text": "Jordan Shue",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
       "url": "nullmaria.guralnik@purchase.edu",
       "text": "Maria Guralnik",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
       "url": "nullAME.arts.management@purchase.edu",
       "text": "email the department",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/arts-management",
+      "url": "https:
       "text": "Visit the Career Development Center",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7772-museum-visitor-research-the-new-museum",
+      "url": "https:
       "text": "READ MORE ABOUT THEIR WORK",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7769-exhibition-practice-and-management-visual-arts-collabor",
+      "url": "https:
       "text": "SEE IMAGES FROM THE OPENING",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7735-the-2023-startup-pitching-competition-awards-5000",
+      "url": "https:
       "text": "The 2023 Startup Competition Awards $5,000 in Prizes",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6662-rachael-pazdan-12",
+      "url": "https:
       "text": "Rachael Pazdan ’12",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6663-lily-thrall-14",
+      "url": "https:
       "text": "Lily Thrall ’14",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6665-josh-abess-12",
+      "url": "https:
       "text": "Josh Abess ’12",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6144-angela-galli-19",
+      "url": "https:
       "text": "Angela Galli ’19",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6141-viktoriya-molchanova-20",
+      "url": "https:
       "text": "Viktoriya Molchanova ’20",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6140-cheyenne-myrie-17",
+      "url": "https:
       "text": "Cheyenne Myrie ’17",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5222-",
+      "url": "https:
       "text": "Adriana Arguelles ’13",
-      "parent": "https://www.purchase.edu/academics/arts-management",
+      "parent": "https:
       "parentText": "Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/provost/general-education-curriculum",
+      "url": "https:
       "text": "General Education",
-      "parent": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+      "parent": "https:
       "parentText": "Music Industry Concentration • Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/687-academic-requirements-for-undergraduate-degrees",
+      "url": "https:
       "text": "other degree requirements",
-      "parent": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+      "parent": "https:
       "parentText": "Music Industry Concentration • Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/eight-semester-graduation-plan",
+      "url": "https:
       "text": "Eight-Semester Graduation Plan",
-      "parent": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+      "parent": "https:
       "parentText": "Music Industry Concentration • Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/music-industry/eight-semester-graduation-plan",
+      "url": "https:
       "text": "Eight-Semester Graduation Plan",
-      "parent": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+      "parent": "https:
       "parentText": "Music Industry Concentration • Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts/eight-semester-graduation-plan",
+      "url": "https:
       "text": "Eight-Semester Graduation Plan",
-      "parent": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+      "parent": "https:
       "parentText": "Performing Arts Concentration • Arts Management • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/theatre-and-performance/courses",
+      "url": "https:
       "text": "theatre and performance",
-      "parent": "https://www.purchase.edu/academics/arts/open-access",
+      "parent": "https:
       "parentText": "Arts Open Access • School of the Arts • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/arts/alumni",
+      "url": "https:
       "text": "Alumni",
-      "parent": "https://www.purchase.edu/academics/arts/open-access",
+      "parent": "https:
       "parentText": "Arts Open Access • School of the Arts • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/asian-studies/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/asian-studies",
+      "parent": "https:
       "parentText": "Asian Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/asian-studies/requirements-for-minor",
+      "url": "https:
       "text": "Requirements for Minor",
-      "parent": "https://www.purchase.edu/academics/asian-studies",
+      "parent": "https:
       "parentText": "Asian Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/526-christian-bailey",
+      "url": "https:
       "text": "Christian Bailey",
-      "parent": "https://www.purchase.edu/academics/asian-studies",
+      "parent": "https:
       "parentText": "Asian Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/about",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/618-",
+      "url": "https:
       "text": "Joseph Skrivanek",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biochemistry",
+      "url": "https:
       "text": "Career Development Center",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biochemistry/requirements/eight-semester-graduation-plan",
+      "url": "https:
       "text": "eight-semester plan",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3213-students-attend-national-stem-conference",
+      "url": "https:
       "text": "Students Attend National STEM Conference",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/1381-showcasing-the-sciences",
+      "url": "https:
       "text": "Showcasing the Sciences",
-      "parent": "https://www.purchase.edu/academics/biochemistry",
+      "parent": "https:
       "parentText": "Biochemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3064-coral-reef-biology-and-ecology-roatan-honduras",
+      "url": "https:
       "text": "Coral Reef Program",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/610-mark-jonas",
+      "url": "https:
       "text": "Mark Jonas",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research/senior-project",
+      "url": "https:
       "text": "Senior Project",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research",
+      "url": "https:
       "text": "Student Science Symposium",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5-elliott-abrams",
+      "url": "https:
       "text": "Elliott Abrams, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/607-james-g-daly",
+      "url": "https:
       "text": "James G. Daly, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3553-erika-ebbs",
+      "url": "https:
       "text": "Erika Ebbs, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/608-lee-ehrman",
+      "url": "https:
       "text": "Lee Ehrman, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/609-jan-robert-factor",
+      "url": "https:
       "text": "Jan Robert Factor, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/1759-stephen-harris",
+      "url": "https:
       "text": "Stephen E. Harris, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/634-george-p-kraemer",
+      "url": "https:
       "text": "George Kraemer, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/611-maryann-mcenroe",
+      "url": "https:
       "text": "Maryann McEnroe, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/618-joseph-skrivanek",
+      "url": "https:
       "text": "Joseph A. Skrivanek, PhD",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8308-behind-the-brick-general-biology-1-lab",
+      "url": "https:
       "text": "Behind the Brick: Gen Bio I Lab",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8539-biology-facilities-equipment",
+      "url": "https:
       "text": "Inside the Facilities",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/4416-closer-look-biotechnology-concentration",
+      "url": "https:
       "text": "Closer Look: Biotech Concentration",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/2206-jeffrey-arroyo",
+      "url": "https:
       "text": "Jeffrey Arroyo",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biology",
+      "url": "https:
       "text": "Careers in Biology",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5555-",
+      "url": "https:
       "text": "Elizabeth Bardwil-Lugones ’21",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6542-colm-mccarthy-09",
+      "url": "https:
       "text": "Colm McCarthy ’09",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5546-",
+      "url": "https:
       "text": "Jorge Acuna ’20",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3406-",
+      "url": "https:
       "text": "Mark Viniello ’92",
-      "parent": "https://www.purchase.edu/academics/biology",
+      "parent": "https:
       "parentText": "Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/requirements/eight-semester-graduation-plans",
+      "url": "https:
       "text": "Eight-Semester Graduation Plans",
-      "parent": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+      "parent": "https:
       "parentText": "Concentrations • Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/biology/requirements/minor-in-biology",
+      "url": "https:
       "text": "Minor in Biology",
-      "parent": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+      "parent": "https:
       "parentText": "Concentrations • Biology • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chemistry/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/the-undergraduate-experience/senior-project",
+      "url": "https:
       "text": "senior project",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/chemistry",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3380-",
+      "url": "https:
       "text": "John Ambroseo ’83",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3405-",
+      "url": "https:
       "text": "Jaya Mohanan Lakshmi ’99",
-      "parent": "https://www.purchase.edu/academics/chemistry",
+      "parent": "https:
       "parentText": "Chemistry • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chinese/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/chinese",
+      "parent": "https:
       "parentText": "Chinese • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chinese/requirements-for-minor",
+      "url": "https:
       "text": "Requirements for Minor",
-      "parent": "https://www.purchase.edu/academics/chinese",
+      "parent": "https:
       "parentText": "Chinese • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/chinese/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/chinese",
+      "parent": "https:
       "parentText": "Chinese • Purchase College",
       "children": []
     },
     {
       "url": "nullalfredo.garciapardo@purchase.edu",
       "text": "Alfredo Garcia-Pardo",
-      "parent": "https://www.purchase.edu/academics/chinese",
+      "parent": "https:
       "parentText": "Chinese • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/transnational-filmmaking-project",
+      "url": "https:
       "text": "Transnational Filmmaking Project",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/cinema-and-television-studies/student-work-and-accolades",
+      "url": "https:
       "text": "Student Work and Accolades",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/2145-nathan-holmes",
+      "url": "https:
       "text": "Nathan Holmes",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/cinema-studies",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
       "url": "nullfms@purchase.edu",
       "text": "fms@purchase.edu",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8514-azazel-jacobs-94-visits-to-screen-his-three-daughters",
+      "url": "https:
       "text": "Azazel Jacobs ’94 visits to screen HIS THREE DAUGHTERS",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8516-cinema-studies-students-attend-film-archiving",
+      "url": "https:
       "text": "Cinema Studies Students Attend Film Archiving Conference",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8436-halloween-edition-of-cinemaroll-is-now-out",
+      "url": "https:
       "text": "Halloween Edition of CINEMAROLL is now out",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3459-sean-dunne-03",
+      "url": "https:
       "text": "Sean Dunne ’03",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6790-eric-hahn-14",
+      "url": "https:
       "text": "Eric Hahn ’14",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7343-troy-peterson-19",
+      "url": "https:
       "text": "Troy Peterson ’19",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7834-paul-drechsler-martell-07",
+      "url": "https:
       "text": "Paul Drechsler-Martell ’07",
-      "parent": "https://www.purchase.edu/academics/cinema-and-television-studies",
+      "parent": "https:
       "parentText": "Cinema and Television Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/blurbs/2159-transfer-credit",
+      "url": "https:
       "text": "college policies",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/meet-the-director",
+      "url": "https:
       "text": "Meet the Director",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/voces",
+      "url": "https:
       "text": "VOCES",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/lectures",
+      "url": "https:
       "text": "Lectures",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/student-publications",
+      "url": "https:
       "text": "Student Publications",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/meet-our-alumni",
+      "url": "https:
       "text": "Meet Our Alumni",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/humanities-events",
+      "url": "https:
       "text": "Humanities Events",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/working-in-humanities",
+      "url": "https:
       "text": "Working in Humanities",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/contact-us",
+      "url": "https:
       "text": "Contact Us",
-      "parent": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+      "parent": "https:
       "parentText": "College and Expository Writing Program • School of Humanities • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/communications/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/communications/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/communications/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/communications/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/2192-megan-rossman",
+      "url": "https:
       "text": "Megan Rossman",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/galleries/595-communications-in-the-field",
+      "url": "https:
       "text": "VIEW FULL GALLERY",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/communications",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6760-benjamin-chalson-20",
+      "url": "https:
       "text": "Benjamin Chalson ’20",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5167-tayler-montague-19",
+      "url": "https:
       "text": "Tayler Montague ’19",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6788-riot-usa-22",
+      "url": "https:
       "text": "Riot USA ’22",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6757-jaden-doret-23",
+      "url": "https:
       "text": "Jaden Doret ’23",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7981-broadcast-tv-studio-provides-professional",
+      "url": "https:
       "text": "Broadcast TV Studio Provides Professional Experience",
-      "parent": "https://www.purchase.edu/academics/communications",
+      "parent": "https:
       "parentText": "Communications • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/bachelor-of-music",
+      "url": "https:
       "text": "Bachelor of Music",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/minor-of-music",
+      "url": "https:
       "text": "Minor of Music (Classical Composition)",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/master-of-music",
+      "url": "https:
       "text": "Master of Music",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/private-lessons",
+      "url": "https:
       "text": "Private Lessons",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/classical-composition/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/music/music-courses",
+      "url": "https:
       "text": "Music Courses",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/music/alumni",
+      "url": "https:
       "text": "Alumni",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/music/facilities",
+      "url": "https:
       "text": "Facilities",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/music-graduate",
+      "url": "https:
       "text": "Graduate",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/admissions/audition-and-portfolio-guidelines/music",
+      "url": "https:
       "text": "LEARN MORE\nABOUT APPLY TODAY - MUSIC AT PURCHASE",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/6260-lecturer-gregory-spears-premieres-love-story",
+      "url": "https:
       "text": "Lecturer Gregory Spears Premieres “Love Story”",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7536-sequoia-sellinger-17",
+      "url": "https:
       "text": "Sequoia Sellinger ’17",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/5500-jordan-mclean-06-mm-20",
+      "url": "https:
       "text": "Jordan Mclean ’06, MM ’20",
-      "parent": "https://www.purchase.edu/academics/classical-composition",
+      "parent": "https:
       "parentText": "Composition (Classical) • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/contemplative-studies/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/contemplative-studies/requirements",
+      "url": "https:
       "text": "Requirements for Minor",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/679-matthew-immergut",
+      "url": "https:
       "text": "Matthew Immergut",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/390-joshua-lutz",
+      "url": "https:
       "text": "Joshua Lutz",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3808-mindfulness-in-action",
+      "url": "https:
       "text": "Mindfulness In Action",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3807-a-lecture-with-dan-goleman",
+      "url": "https:
       "text": "A Lecture with Dan Goleman",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/3806-phakchok-rinpoche-and-erric-solomon-radically",
+      "url": "https:
       "text": "Phakchok Rinpoche and Erric Solomon “Radically Happy”",
-      "parent": "https://www.purchase.edu/academics/contemplative-studies",
+      "parent": "https:
       "parentText": "Contemplative Studies • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/student-journal-italics-mine",
+      "url": "https:
       "text": "Student Journal: Italics Mine",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/meet-our-alumni",
+      "url": "https:
       "text": "Meet Our Alumni",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/news-and-events",
+      "url": "https:
       "text": "News and Events",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/creative-writing/how-to-apply",
+      "url": "https:
       "text": "How to Apply",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/525-mehdi-okasi",
+      "url": "https:
       "text": "Mehdi Tavana Okasi",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/senior-project",
+      "url": "https:
       "text": "senior project",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/school-of-humanities/lectures/durst-distinguished-lectures",
+      "url": "https:
       "text": "The Durst Distinguished Chair and the Durst Lecture Series",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/purchase-experience/study-abroad",
+      "url": "https:
       "text": "studying abroad",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/creative-writing",
+      "url": "https:
       "text": "Visit the Career Development Center to learn more",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7221-misty-yarnall-22",
+      "url": "https:
       "text": "Misty Yarnall ’22",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3496-",
+      "url": "https:
       "text": "Trisha Murphy ’19",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6720-emily-verona-12",
+      "url": "https:
       "text": "Emily Verona ’12",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6212-",
+      "url": "https:
       "text": "Marissa LaRocca ’09",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8320-author-jiaming-tang-18-discusses-debut-novel",
+      "url": "https:
       "text": "Author Jiaming Tang ’18 Discusses Debut Novel",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-with-nods-to-cinema",
+      "url": "https:
       "text": "Debut Novel by Emily Ruth Verona ’12 With Nods to Cinema",
-      "parent": "https://www.purchase.edu/academics/creative-writing",
+      "parent": "https:
       "parentText": "Creative Writing • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/about-the-program",
+      "url": "https:
       "text": "About the Program",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/requirements",
+      "url": "https:
       "text": "Requirements",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/courses",
+      "url": "https:
       "text": "Courses",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/meet-our-faculty",
+      "url": "https:
       "text": "Meet Our Faculty",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/study-abroad",
+      "url": "https:
       "text": "Study Abroad",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/pilates-micro-credential",
+      "url": "https:
       "text": "Pilates Micro-Credential",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance-performance/recent-news",
+      "url": "https:
       "text": "Recent News",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance/purchase-dance-company",
+      "url": "https:
       "text": "Purchase Dance Company",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance/alumni",
+      "url": "https:
       "text": "Alumni",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/academics/dance/facilities",
+      "url": "https:
       "text": "Facilities",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/165-nelly-van-bommel",
+      "url": "https:
       "text": "Nelly van Bommel",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/2199-doug-varone-78",
+      "url": "https:
       "text": "Doug Varone ’78",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/news/8460-balletx-to-perform-work-by-choreographer-nicolo",
+      "url": "https:
       "text": "BalletX to Perform Work by Choreographer Nicolo Fonte ’87",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/6034-",
+      "url": "https:
       "text": "Thomas Warfield ’88",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7815-jai-perez-23",
+      "url": "https:
       "text": "Jai Perez ’23",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/3454-",
+      "url": "https:
       "text": "Meryl Cates ’08",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     },
     {
-      "url": "https://www.purchase.edu/live/profiles/7125-joy-marie-thompson-18",
+      "url": "https:
       "text": "Joy-Marie Thompson ’18",
-      "parent": "https://www.purchase.edu/academics/dance-performance",
+      "parent": "https:
       "parentText": "Dance Performance • Purchase College",
       "children": []
     }

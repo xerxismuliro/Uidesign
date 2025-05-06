@@ -1,11 +1,24 @@
+/**
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
+ */
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Check for saved theme preference
+
   const savedTheme = localStorage.getItem('theme');
   const themeToggle = document.getElementById('theme-toggle');
   const darkIcon = document.getElementById('theme-icon-dark');
   const lightIcon = document.getElementById('theme-icon-light');
-  
-  // Apply saved theme if available
+
+
   if (savedTheme === 'dark') {
     document.body.classList.add('dark-theme');
     darkIcon.style.display = 'none';
@@ -15,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     lightIcon.style.display = 'none';
   }
 
-  // Set up theme toggle button
+
   themeToggle.addEventListener('click', () => {
-    // Toggle dark theme class
+
     document.body.classList.toggle('dark-theme');
-    
-    // Update icons
+
+
     if (document.body.classList.contains('dark-theme')) {
       darkIcon.style.display = 'none';
       lightIcon.style.display = 'inline-block';
@@ -32,13 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-

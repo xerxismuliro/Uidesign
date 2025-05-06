@@ -1,7 +1,22 @@
+/**
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
+ */
+
+
+
+
+
 function digitalRoot(n) {
   if (n === 0) return 0;
   
-  // Show the process
+  
   let steps = [n];
   let current = n;
   
@@ -13,17 +28,17 @@ function digitalRoot(n) {
   return { result: ((n - 1) % 9) + 1, steps };
 }
 
-// Factorial calculation for larger numbers
+
 function factorial(n) {
   if (n === 0 || n === 1) return BigInt(1);
   let result = BigInt(1);
   
-  // Store intermediate steps for display
+  
   const steps = [];
   
   for (let i = 2; i <= n; i++) {
     result *= BigInt(i);
-    if (i <= 5 || i === n) { // Show first few steps and final result
+    if (i <= 5 || i === n) { 
       steps.push(`${i}! = ${result}`);
     } else if (i === 6) {
       steps.push("...");
@@ -33,12 +48,12 @@ function factorial(n) {
   return { result, steps };
 }
 
-// Sum digits of a very large number
+
 function digitSum(n) {
   const digits = n.toString().split('');
   const sum = digits.reduce((sum, d) => sum + parseInt(d), 0);
   
-  // For extremely large numbers, show only length and first/last few digits
+  
   const digitDisplay = digits.length > 20 ? 
     `${digits.slice(0, 5).join('')}...${digits.slice(-5).join('')} (${digits.length} digits)` : 
     digits.join('');
@@ -46,7 +61,7 @@ function digitSum(n) {
   return { sum, digitDisplay };
 }
 
-// Function to perform scale analysis and return HTML
+
 function analyzeScale(scale, chromaticRoots) {
   const scaled = chromaticRoots.map(n => n * scale);
   const sum = scaled.reduce((a, b) => a + b, 0);
@@ -64,7 +79,7 @@ function analyzeScale(scale, chromaticRoots) {
   `;
 }
 
-// Function to find prime factors
+
 function primeFactors(n) {
   const factors = [];
   let divisor = 2;
@@ -76,7 +91,7 @@ function primeFactors(n) {
     }
     divisor++;
     
-    // Optimization for large prime numbers
+    
     if (divisor * divisor > n && n > 1) {
       factors.push(n);
       break;
@@ -86,7 +101,7 @@ function primeFactors(n) {
   return factors;
 }
 
-// Pattern Analysis
+
 function analyzePatternCycles() {
   const resultHTML = [];
   
@@ -98,7 +113,7 @@ function analyzePatternCycles() {
       <div class="cycle-analysis">
   `);
   
-  // Generate data for a larger range (e.g., scales 1-100)
+  
   const scaleRange = 100;
   const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const digitalRootValues = [];
@@ -110,7 +125,7 @@ function analyzePatternCycles() {
     digitalRootValues.push(dr);
   }
   
-  // Find the cycle length
+  
   let cycleLength = 0;
   for (let len = 1; len <= digitalRootValues.length / 2; len++) {
     let isCycle = true;
@@ -160,7 +175,7 @@ function analyzePatternCycles() {
   return resultHTML.join('');
 }
 
-// Add interactive comparison tool between different numbers
+
 function addComparisonTool() {
   return `
     <div class="analysis-step">
@@ -228,7 +243,7 @@ function addPrimeFactorAnalysis() {
   `;
 }
 
-// Remove the addExtraStyles function since we're moving styles to a separate CSS file
+
 function performChromaticAnalysis(customScale = null) {
   const resultHTML = [];
   
@@ -237,7 +252,7 @@ function performChromaticAnalysis(customScale = null) {
     <p>This analysis explores number patterns based on digital roots and the relationships between parent and child nodes.</p>
   </div>`);
 
-  // Step 1: Chromatic Roots
+  
   const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   resultHTML.push(`
     <div class="analysis-step">
@@ -249,7 +264,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 2: Parent Nodes (multiples of 3)
+  
   const parentNodes = chromaticRoots.filter(n => n % 3 === 0);
   resultHTML.push(`
     <div class="analysis-step">
@@ -266,7 +281,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 3: Child Nodes — 2-step subtraction from each parent node
+  
   const childMap = {};
   const childNodes = [];
 
@@ -298,7 +313,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 4: Sums and Digital Roots
+  
   const sumCR = chromaticRoots.reduce((a, b) => a + b, 0);
   const sumPN = parentNodes.reduce((a, b) => a + b, 0);
   const sumCN = childNodes.reduce((a, b) => a + b, 0);
@@ -328,24 +343,24 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 5: Factorials and digit sums
+  
   resultHTML.push(`
     <div class="analysis-step">
       <h3>Step 5: Factorials and Digit Sums</h3>
       <p>We now calculate the factorials of our sums and analyze their digital properties.</p>
   `);
 
-  // Calculate factorials
+  
   const factCR = factorial(sumCR);
   const factPN = factorial(sumPN);
   const factCN = factorial(sumCN);
   
-  // Calculate digit sums
+  
   const dsCR = digitSum(factCR.result);
   const dsPN = digitSum(factPN.result);
   const dsCN = digitSum(factCN.result);
   
-  // Calculate digital roots of digit sums
+  
   const drDSCR = digitalRoot(dsCR.sum);
   const drDSPN = digitalRoot(dsPN.sum);
   const drDSCN = digitalRoot(dsCN.sum);
@@ -383,7 +398,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 6: Scales (chromatic roots × scale factors)
+  
   resultHTML.push(`
     <div class="analysis-step">
       <h3>Step 6: Scaling Chromatic Roots</h3>
@@ -402,7 +417,7 @@ function performChromaticAnalysis(customScale = null) {
       <div class="scale-container">
   `);
   
-  // Generate default scales 1-9
+  
   for (let scale = 1; scale <= 9; scale++) {
     resultHTML.push(analyzeScale(scale, chromaticRoots));
   
@@ -413,12 +428,12 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Add the new sections
+  
   resultHTML.push(analyzePatternCycles());
   resultHTML.push(addComparisonTool());
   resultHTML.push(addPrimeFactorAnalysis());
   
-  // Add a conclusion section
+  
   resultHTML.push(`
     <div class="conclusion">
       <h3>Conclusion</h3>
@@ -430,11 +445,11 @@ function performChromaticAnalysis(customScale = null) {
   return resultHTML.join('');
 }
 
-// Initialize the chromatic analysis when the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', () => {
   const chromaticResults = document.getElementById('chromatic-results');
   
-  // Load Chart.js if needed for visualizations
+  
   function loadChartJS() {
     return new Promise((resolve, reject) => {
       if (window.Chart) {
@@ -443,22 +458,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/chart.js';
+      script.src = 'https:
       script.onload = resolve;
       script.onerror = () => reject(new Error('Failed to load Chart.js'));
       document.head.appendChild(script);
     });
   }
   
-  // Display a loading message
+  
   chromaticResults.innerHTML = '<p>Loading chromatic analysis...</p>';
   
-  // Use setTimeout to prevent UI freezing for calculations
+  
   setTimeout(() => {
     try {
       chromaticResults.innerHTML = performChromaticAnalysis();
       
-      // Add event listener for custom scale calculation
+      
       document.getElementById('calculate-scale').addEventListener('click', () => {
         const scaleInput = document.getElementById('scale-input');
         const scale = parseInt(scaleInput.value, 10);
@@ -471,7 +486,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const customScaleResults = document.getElementById('custom-scale-results');
         const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         
-        // Create container for the new scale
+        
         const scaleContainer = document.createElement('div');
         scaleContainer.className = 'custom-scale';
         scaleContainer.innerHTML = `
@@ -479,28 +494,28 @@ document.addEventListener('DOMContentLoaded', () => {
           ${analyzeScale(scale, chromaticRoots)}
         `;
         
-        // Add to the beginning of results
+        
         if (customScaleResults.firstChild) {
           customScaleResults.insertBefore(scaleContainer, customScaleResults.firstChild);
         } else {
           customScaleResults.appendChild(scaleContainer);
         }
         
-        // Clear input
+        
         scaleInput.value = '';
         
-        // Scroll to the new result
+        
         scaleContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
       
-      // Add keyboard event listener for Enter key
+      
       document.getElementById('scale-input').addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
           document.getElementById('calculate-scale').click();
         }
       });
       
-      // Add event listener for comparison tool
+      
       document.getElementById('compare-numbers').addEventListener('click', function() {
         const num1 = parseInt(document.getElementById('number1').value);
         const num2 = parseInt(document.getElementById('number2').value);
@@ -554,11 +569,11 @@ document.addEventListener('DOMContentLoaded', () => {
         comparisonResults.style.display = 'block';
       });
       
-      // Try to load Chart.js and initialize visualization if successful
+      
       loadChartJS().then(() => {
-        // Only try to add visualization if Chart.js loaded successfully
+        
         try {
-          // Add a visualization section after the conclusion
+          
           const visualSection = document.createElement('div');
           visualSection.className = 'visualization-section';
           visualSection.innerHTML = `
@@ -573,7 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (conclusion) {
             conclusion.after(visualSection);
             
-            // Create data for the chart
+            
             const scales = Array.from({length: 20}, (_, i) => i + 1);
             const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
             const digitalRootData = scales.map(scale => {
@@ -582,7 +597,7 @@ document.addEventListener('DOMContentLoaded', () => {
               return digitalRoot(sum).result;
             });
             
-            // Create the chart
+            
             const ctx = document.getElementById('digitalRootChart').getContext('2d');
             new Chart(ctx, {
               type: 'line',
@@ -620,12 +635,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Chart.js could not be loaded:', error);
       });
       
-      // Add a scroll event to animate elements as they come into view
+      
       const animateOnScroll = () => {
         const elements = document.querySelectorAll('.analysis-step, .custom-scale');
         elements.forEach(element => {
           const position = element.getBoundingClientRect();
-          // If element is in viewport
+          
           if(position.top >= 0 && position.bottom <= window.innerHeight) {
             element.style.animation = 'fadeIn 1s forwards';
           }
@@ -633,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       
       window.addEventListener('scroll', animateOnScroll);
-      // Trigger once on load
+      
       animateOnScroll();
       
     } catch (error) {

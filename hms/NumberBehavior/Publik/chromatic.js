@@ -1,7 +1,22 @@
+/**
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
+ */
+
+
+
+
+
 function digitalRoot(n) {
   if (n === 0) return 0;
   
-  // Show the process
+  
   let steps = [n];
   let current = n;
   
@@ -13,23 +28,23 @@ function digitalRoot(n) {
   return { result: ((n - 1) % 9) + 1, steps };
 }
 
-// Constants for factorial calculation thresholds
-const FACTORIAL_WARNING_THRESHOLD = 1000; // Show warning for n ≥ 1000
-const FACTORIAL_WEBWORKER_THRESHOLD = 10000; // Use web worker for n ≥ 10000
 
-// Factorial calculation for larger numbers
+const FACTORIAL_WARNING_THRESHOLD = 1000; 
+const FACTORIAL_WEBWORKER_THRESHOLD = 10000; 
+
+
 function factorial(n) {
   if (n === 0 || n === 1) return { result: BigInt(1), steps: ["1! = 1"] };
   
-  // For smaller numbers, calculate directly
+  
   if (n < FACTORIAL_WARNING_THRESHOLD) {
     let result = BigInt(1);
-    // Store intermediate steps for display
+    
     const steps = [];
     
     for (let i = 2; i <= n; i++) {
       result *= BigInt(i);
-      if (i <= 5 || i === n) { // Show first few steps and final result
+      if (i <= 5 || i === n) { 
         steps.push(`${i}! = ${result}`);
       } else if (i === 6) {
         steps.push("...");
@@ -38,10 +53,10 @@ function factorial(n) {
     
     return { result, steps };
   }
-  // For larger numbers, return a placeholder and indicate that calculation will be async
+  
   else {
     return { 
-      result: BigInt(-1),  // Placeholder to be replaced with actual result
+      result: BigInt(-1),  
       steps: [`${n}! will be calculated using a web worker`],
       needsWebWorker: true,
       n: n
@@ -49,24 +64,24 @@ function factorial(n) {
   }
 }
 
-// Create a web worker for factorial calculations
+
 function createFactorialWorker() {
   const workerScript = `
     onmessage = function(e) {
       const num = e.data;
       try {
-        // Calculate factorial
+        
         let result = BigInt(1);
         let n = BigInt(num);
         
-        // Report progress every 5%
+        
         const reportInterval = Math.max(1, Number(n) / 20);
         let lastReportedProgress = 0;
         
         for (let i = BigInt(2); i <= n; i++) {
           result *= i;
           
-          // Report progress
+          
           if (Number(i) - lastReportedProgress >= reportInterval) {
             const progress = Number(i) / Number(n);
             postMessage({ type: 'progress', progress: progress * 100 });
@@ -74,7 +89,7 @@ function createFactorialWorker() {
           }
         }
         
-        // Send back result
+        
         postMessage({ 
           type: 'result', 
           result: result.toString()
@@ -85,14 +100,14 @@ function createFactorialWorker() {
     };
   `;
   
-  // Create a blob from the worker script
+  
   const blob = new Blob([workerScript], { type: 'application/javascript' });
   const workerUrl = URL.createObjectURL(blob);
   
   return new Worker(workerUrl);
 }
 
-// Calculate factorial using web worker
+
 function calculateFactorialAsync(n, callback) {
   const worker = createFactorialWorker();
   let progressElement = null;
@@ -101,16 +116,16 @@ function calculateFactorialAsync(n, callback) {
     const data = e.data;
     
     if (data.type === 'progress') {
-      // Update progress bar if it exists
+      
       if (progressElement) {
         progressElement.style.width = `${data.progress}%`;
       }
     } 
     else if (data.type === 'result') {
-      // Call the callback with the result
+      
       callback(BigInt(data.result));
       
-      // Terminate worker
+      
       worker.terminate();
     } 
     else if (data.type === 'error') {
@@ -126,25 +141,25 @@ function calculateFactorialAsync(n, callback) {
     worker.terminate();
   };
   
-  // Create progress bar
+  
   const containerElement = document.createElement('div');
   containerElement.className = 'calculation-progress';
   progressElement = document.createElement('div');
   progressElement.className = 'progress-bar';
   containerElement.appendChild(progressElement);
   
-  // Start calculation
+  
   worker.postMessage(n);
   
   return containerElement;
 }
 
-// Sum digits of a very large number
+
 function digitSum(n) {
   const digits = n.toString().split('');
   const sum = digits.reduce((sum, d) => sum + parseInt(d), 0);
   
-  // For extremely large numbers, show only length and first/last few digits
+  
   const digitDisplay = digits.length > 20 ? 
     `${digits.slice(0, 5).join('')}...${digits.slice(-5).join('')} (${digits.length} digits)` : 
     digits.join('');
@@ -152,7 +167,7 @@ function digitSum(n) {
   return { sum, digitDisplay };
 }
 
-// Function to perform scale analysis and return HTML
+
 function analyzeScale(scale, chromaticRoots) {
   const scaled = chromaticRoots.map(n => n * scale);
   const sum = scaled.reduce((a, b) => a + b, 0);
@@ -170,7 +185,7 @@ function analyzeScale(scale, chromaticRoots) {
   `;
 }
 
-// Function to find prime factors
+
 function primeFactors(n) {
   const factors = [];
   let divisor = 2;
@@ -182,7 +197,7 @@ function primeFactors(n) {
     }
     divisor++;
     
-    // Optimization for large prime numbers
+    
     if (divisor * divisor > n && n > 1) {
       factors.push(n);
       break;
@@ -192,7 +207,7 @@ function primeFactors(n) {
   return factors;
 }
 
-// Pattern Analysis
+
 function analyzePatternCycles() {
   const resultHTML = [];
   
@@ -204,7 +219,7 @@ function analyzePatternCycles() {
       <div class="cycle-analysis">
   `);
   
-  // Generate data for a larger range (e.g., scales 1-100)
+  
   const scaleRange = 100;
   const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const digitalRootValues = [];
@@ -216,7 +231,7 @@ function analyzePatternCycles() {
     digitalRootValues.push(dr);
   }
   
-  // Find the cycle length
+  
   let cycleLength = 0;
   for (let len = 1; len <= digitalRootValues.length / 2; len++) {
     let isCycle = true;
@@ -266,7 +281,7 @@ function analyzePatternCycles() {
   return resultHTML.join('');
 }
 
-// Add interactive comparison tool between different numbers
+
 function addComparisonTool() {
   return `
     <div class="analysis-step">
@@ -335,7 +350,7 @@ function addPrimeFactorAnalysis() {
 }
 
 
-// Add styles for digit frequency visualization
+
 function addFactorialStyles() {
   const style = document.createElement('style');
   style.textContent = `
@@ -371,7 +386,7 @@ function addFactorialStyles() {
       font-size: 20px;
     }
     
-    /* Expandable content styles */
+    
     .expandable-content {
       position: relative;
       max-height: 80px;
@@ -431,21 +446,21 @@ function addFactorialStyles() {
       transform: rotate(180deg);
     }
     
-    /* Ensure comparison table contents wrap */
+    
     .comparison-table td {
       max-width: 300px;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
     
-    /* Format factorial results to wrap properly */
+    
     .factorial-result {
       white-space: normal;
       word-break: break-all;
       overflow-wrap: break-word;
     }
     
-    /* Digit frequency visualization styles */
+    
     .digit-frequency {
       margin-top: 10px;
       width: 100%;
@@ -463,9 +478,9 @@ function addFactorialStyles() {
       text-align: left;
     }
     
-    // .frequency-table th {
-    //   background-color:rgb(2, 36, 67);
-    // }
+    
+    
+    
     
     .frequency-bar-container {
       width: 100%;
@@ -486,7 +501,7 @@ function addFactorialStyles() {
 
 
 
-// Function to create expandable content container
+
 function createExpandableContent(preview, fullContent) {
   return `
     <div class="expandable-content">
@@ -498,7 +513,7 @@ function createExpandableContent(preview, fullContent) {
 }
 
 
-// Function to analyze digit frequency in a number
+
 function analyzeDigitFrequency(numStr) {
   const frequency = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0};
   
@@ -511,7 +526,7 @@ function analyzeDigitFrequency(numStr) {
   return frequency;
 }
 
-// Function to create a visual representation of digit frequency
+
 function createDigitFrequencyVisualization(frequency) {
   const total = Object.values(frequency).reduce((sum, count) => sum + count, 0);
   let html = `<div class="digit-frequency">
@@ -553,7 +568,7 @@ function createDigitFrequencyVisualization(frequency) {
 
 
 
-// Perform chromatic analysis
+
 function performChromaticAnalysis(customScale = null) {
   const resultHTML = [];
   
@@ -562,7 +577,7 @@ function performChromaticAnalysis(customScale = null) {
     <p>This analysis explores number patterns based on digital roots and the relationships between parent and child nodes.</p>
   </div>`);
 
-  // Step 1: Chromatic Roots
+  
   const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   resultHTML.push(`
     <div class="analysis-step">
@@ -574,7 +589,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 2: Parent Nodes (multiples of 3)
+  
   const parentNodes = chromaticRoots.filter(n => n % 3 === 0);
   resultHTML.push(`
     <div class="analysis-step">
@@ -591,7 +606,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 3: Child Nodes — 2-step subtraction from each parent node
+  
   const childMap = {};
   const childNodes = [];
 
@@ -623,7 +638,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 4: Sums and Digital Roots
+  
   const sumCR = chromaticRoots.reduce((a, b) => a + b, 0);
   const sumPN = parentNodes.reduce((a, b) => a + b, 0);
   const sumCN = childNodes.reduce((a, b) => a + b, 0);
@@ -653,14 +668,14 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 5: Factorials and digit sums
+  
   resultHTML.push(`
     <div class="analysis-step" id="factorial-analysis">
       <h4>Factorials and Digit Sums</h4>
       <p>I now calculate the factorials of our sums and analyze their digital properties.</p>
   `);
 
-  // Create factorial analysis placeholders
+  
   resultHTML.push(`
       <div class="factorial-analysis" id="cr-factorial-container">
         <h4>${sumCR}! (Sum of Chromatic Roots)</h4>
@@ -685,7 +700,7 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Step 6: Scales (chromatic roots × scale factors)
+  
   resultHTML.push(`
     <div class="analysis-step">
       <h4>Scaling Chromatic Roots</h4>
@@ -704,7 +719,7 @@ function performChromaticAnalysis(customScale = null) {
       <div class="scale-container">
   `);
   
-  // Generate default scales 1-9
+  
   for (let scale = 1; scale <= 9; scale++) {
     resultHTML.push(analyzeScale(scale, chromaticRoots));
   
@@ -715,12 +730,12 @@ function performChromaticAnalysis(customScale = null) {
     </div>
   `);
 
-  // Add the new sections
+  
   resultHTML.push(analyzePatternCycles());
   resultHTML.push(addComparisonTool());
   resultHTML.push(addPrimeFactorAnalysis());
   
-  // Add a conclusion section
+  
   resultHTML.push(`
     <div class="conclusion">
       <h4>Isaac Muliro (The Xerxis Observation)</h4>
@@ -733,14 +748,14 @@ function performChromaticAnalysis(customScale = null) {
   return resultHTML.join('');
 }
 
-// Process factorial calculation results asynchronously
+
 function processFactorialResults(sumCR, sumPN, sumCN) {
-  // Calculate factorial for chromatic roots sum
+  
   const factCR = factorial(sumCR);
   if (factCR.needsWebWorker) {
     const container = document.getElementById('cr-factorial-process');
     
-    // Show warning for large calculation
+    
     const warningHTML = `
       <div class="warning-bar">
         <i>⚠️</i> 
@@ -751,14 +766,14 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
     `;
     container.innerHTML = warningHTML;
     
-    // Add progress bar
+    
     const progressBar = calculateFactorialAsync(sumCR, (result, error) => {
       if (error) {
         container.innerHTML = `<p class="error">Error: ${error}</p>`;
         return;
       }
       
-      // Process result
+      
       const digitSumData = digitSum(result);
       const digitalRootData = digitalRoot(digitSumData.sum);
       
@@ -782,12 +797,12 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
     `;
   }
   
-  // Calculate factorial for parent nodes sum
+  
   const factPN = factorial(sumPN);
   if (factPN.needsWebWorker) {
     const container = document.getElementById('pn-factorial-process');
     
-    // Show warning for large calculation
+    
     const warningHTML = `
       <div class="warning-bar">
         <i>⚠️</i> 
@@ -798,14 +813,14 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
     `;
     container.innerHTML = warningHTML;
     
-    // Add progress bar
+    
     const progressBar = calculateFactorialAsync(sumPN, (result, error) => {
       if (error) {
         container.innerHTML = `<p class="error">Error: ${error}</p>`;
         return;
       }
       
-      // Process result
+      
       const digitSumData = digitSum(result);
       const digitalRootData = digitalRoot(digitSumData.sum);
       
@@ -829,12 +844,12 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
     `;
   }
   
-  // Calculate factorial for child nodes sum
+  
   const factCN = factorial(sumCN);
   if (factCN.needsWebWorker) {
     const container = document.getElementById('cn-factorial-process');
     
-    // Show warning for large calculation
+    
     const warningHTML = `
       <div class="warning-bar">
         <i>⚠️</i> 
@@ -845,14 +860,14 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
     `;
     container.innerHTML = warningHTML;
     
-    // Add progress bar
+    
     const progressBar = calculateFactorialAsync(sumCN, (result, error) => {
       if (error) {
         container.innerHTML = `<p class="error">Error: ${error}</p>`;
         return;
       }
       
-      // Process result
+      
       const digitSumData = digitSum(result);
       const digitalRootData = digitalRoot(digitSumData.sum);
       
@@ -877,14 +892,14 @@ function processFactorialResults(sumCR, sumPN, sumCN) {
   }
 }
 
-// Initialize the chromatic analysis when the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', () => {
   const chromaticResults = document.getElementById('chromatic-results');
   
-  // Add factorial styles
+  
   addFactorialStyles();
   
-  // Load Chart.js if needed for visualizations
+  
   function loadChartJS() {
     return new Promise((resolve, reject) => {
       if (window.Chart) {
@@ -893,22 +908,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/chart.js';
+      script.src = 'https:
       script.onload = resolve;
       script.onerror = () => reject(new Error('Failed to load Chart.js'));
       document.head.appendChild(script);
     });
   }
   
-  // Display a loading message
+  
   chromaticResults.innerHTML = '<p>Loading chromatic analysis...</p>';
   
-  // Use setTimeout to prevent UI freezing for calculations
+  
   setTimeout(() => {
     try {
       chromaticResults.innerHTML = performChromaticAnalysis();
       
-      // Process factorial calculations after DOM rendering
+      
       const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
       const parentNodes = chromaticRoots.filter(n => n % 3 === 0);
       const childNodes = [];
@@ -924,10 +939,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const sumPN = parentNodes.reduce((a, b) => a + b, 0);
       const sumCN = childNodes.reduce((a, b) => a + b, 0);
       
-      // Process factorials asynchronously
+      
       processFactorialResults(sumCR, sumPN, sumCN);
       
-      // Add event listener for custom scale calculation
+      
       document.getElementById('calculate-scale').addEventListener('click', () => {
         const scaleInput = document.getElementById('scale-input');
         const scale = parseInt(scaleInput.value, 10);
@@ -940,7 +955,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const customScaleResults = document.getElementById('custom-scale-results');
         const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         
-        // Create container for the new scale
+        
         const scaleContainer = document.createElement('div');
         scaleContainer.className = 'custom-scale';
         scaleContainer.innerHTML = `
@@ -948,21 +963,21 @@ document.addEventListener('DOMContentLoaded', () => {
           ${analyzeScale(scale, chromaticRoots)}
         `;
         
-        // Add to the beginning of results
+        
         if (customScaleResults.firstChild) {
           customScaleResults.insertBefore(scaleContainer, customScaleResults.firstChild);
         } else {
           customScaleResults.appendChild(scaleContainer);
         }
         
-        // Clear input
+        
         scaleInput.value = '';
         
-        // Scroll to the new result
+        
         scaleContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
       
-      // Add keyboard event listener for Enter key
+      
       document.getElementById('scale-input').addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
           document.getElementById('calculate-scale').click();
@@ -970,7 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
 
-// Modify the comparison tool event listener to include digit frequency analysis
+
 document.getElementById('compare-numbers').addEventListener('click', function() {
   const num1 = parseInt(document.getElementById('number1').value);
   const num2 = parseInt(document.getElementById('number2').value);
@@ -987,7 +1002,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
   const comparisonResults = document.getElementById('comparison-results');
   comparisonResults.style.display = 'block';
   
-  // Setup comparison table with initial data
+  
   comparisonResults.innerHTML = `
     <h4>Comparison Results</h4>
     <table class="comparison-table">
@@ -1031,7 +1046,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
     </table>
   `;
   
-  // Add event listeners to expand buttons after adding them to DOM
+  
   document.querySelectorAll('.expand-button').forEach(button => {
     button.addEventListener('click', function() {
       const container = this.parentElement;
@@ -1042,7 +1057,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
     });
   });
   
-  // Handle factorial calculation based on size
+  
   if (factorialSum >= FACTORIAL_WEBWORKER_THRESHOLD) {
     const factRow = document.getElementById('factorial-row');
     factRow.cells[1].innerHTML = `
@@ -1068,7 +1083,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
       const digitSumData = digitSum(result);
       const digitFrequency = analyzeDigitFrequency(resultStr);
       
-      // Create expandable content for the factorial result
+      
       const preview = `${factorialSum}! = ${resultStr.length > 20 ? 
         resultStr.substring(0, 10) + '...' + resultStr.substring(resultStr.length - 10) : 
         resultStr} (${resultStr.length} digits)`;
@@ -1081,7 +1096,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
         `Sum of all ${resultStr.length} digits = ${digitSumData.sum}`
       );
       
-      // Add digit frequency analysis
+      
       const frequencyRow = document.getElementById('digit-frequency-row');
       const frequencyHTML = createDigitFrequencyVisualization(digitFrequency);
       frequencyRow.cells[1].innerHTML = createExpandableContent(
@@ -1089,7 +1104,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
         frequencyHTML
       );
       
-      // Add event listeners to the newly created expand buttons
+      
       document.querySelectorAll('.expand-button').forEach(button => {
         button.addEventListener('click', function() {
           const container = this.parentElement;
@@ -1108,7 +1123,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
     const resultStr = factAnalysis.result.toString();
     const digitFrequency = analyzeDigitFrequency(resultStr);
     
-    // Create expandable content for the factorial result
+    
     const factPreview = `${factorialSum}! = ${resultStr.length > 20 ? 
       resultStr.substring(0, 10) + '...' + resultStr.substring(resultStr.length - 10) : 
       resultStr}`;
@@ -1118,7 +1133,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
     document.getElementById('factorial-row').cells[1].innerHTML = createExpandableContent(factPreview, factFull);
     document.getElementById('digit-sum-row').cells[1].innerHTML = factDigitSum.sum;
     
-    // Add digit frequency analysis
+    
     const frequencyRow = document.getElementById('digit-frequency-row');
     const frequencyHTML = createDigitFrequencyVisualization(digitFrequency);
     frequencyRow.cells[1].innerHTML = createExpandableContent(
@@ -1126,7 +1141,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
       frequencyHTML
     );
     
-    // Add event listeners to expand buttons
+    
     document.querySelectorAll('.expand-button').forEach(button => {
       button.addEventListener('click', function() {
         const container = this.parentElement;
@@ -1144,11 +1159,11 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
 
 
       
-      // Try to load Chart.js and initialize visualization if successful
+      
       loadChartJS().then(() => {
-        // Only try to add visualization if Chart.js loaded successfully
+        
         try {
-          // Add a visualization section after the conclusion
+          
           const visualSection = document.createElement('div');
           visualSection.className = 'visualization-section';
           visualSection.innerHTML = `
@@ -1163,7 +1178,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
           if (conclusion) {
             conclusion.after(visualSection);
             
-            // Create data for the chart
+            
             const scales = Array.from({length: 20}, (_, i) => i + 1);
             const chromaticRoots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
             const digitalRootData = scales.map(scale => {
@@ -1172,7 +1187,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
               return digitalRoot(sum).result;
             });
             
-            // Create the chart
+            
             const ctx = document.getElementById('digitalRootChart').getContext('2d');
             new Chart(ctx, {
               type: 'line',
@@ -1210,12 +1225,12 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
         console.warn('Chart.js could not be loaded:', error);
       });
       
-      // Add a scroll event to animate elements as they come into view
+      
       const animateOnScroll = () => {
         const elements = document.querySelectorAll('.analysis-step, .custom-scale');
         elements.forEach(element => {
           const position = element.getBoundingClientRect();
-          // If element is in viewport
+          
           if(position.top >= 0 && position.bottom <= window.innerHeight) {
             element.style.animation = 'fadeIn 1s forwards';
           }
@@ -1223,7 +1238,7 @@ document.getElementById('compare-numbers').addEventListener('click', function() 
       };
       
       window.addEventListener('scroll', animateOnScroll);
-      // Trigger once on load
+      
       animateOnScroll();
       
     } catch (error) {

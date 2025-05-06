@@ -1,21 +1,36 @@
+/**
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
+ */
+
+
+
+
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-// Settings for the crawler
+
 const CRAWLER_CONFIG = {
-  maxDepth: 2,                // How deep to crawl
-  maxPages: 50,               // Maximum number of pages to crawl
-  crawlDelay: 1000,           // Delay between requests in ms
-  visualizeInBrowser: true,   // Open pages in system browser while crawling
-  openEveryNthPage: 5,        // Open every Nth page to avoid overwhelming the system
-  incrementalSave: true,      // Save links incrementally to reduce memory usage
-  saveEveryNPages: 10,        // Save to disk every N pages
-  includePatterns: [          // Only crawl URLs that match these patterns
+  maxDepth: 2,                
+  maxPages: 50,               
+  crawlDelay: 1000,           
+  visualizeInBrowser: true,   
+  openEveryNthPage: 5,        
+  incrementalSave: true,      
+  saveEveryNPages: 10,        
+  includePatterns: [          
     'purchase.edu'
   ],
-  excludePatterns: [          // Skip URLs that match these patterns
+  excludePatterns: [          
     '/livewhale', 
     '?login', 
     '.pdf',
@@ -26,30 +41,30 @@ const CRAWLER_CONFIG = {
     'instagram.com',
     'youtube.com',
     'linkedin.com',
-    'my.purchase.edu',        // Skip login-protected areas
-    'apply.purchase.edu'      // Skip application system
+    'my.purchase.edu',        
+    'apply.purchase.edu'      
   ]
 };
 
-// Paths for incremental saving
+
 const TEMP_FILES = {
   links: path.join(__dirname, 'temp_links.json'),
   parent_child: path.join(__dirname, 'temp_parent_child.json'),
   visited: path.join(__dirname, 'temp_visited.json')
 };
 
-// Function to open URL in the default system browser
+
 function openInBrowser(url) {
   if (!CRAWLER_CONFIG.visualizeInBrowser) return;
   
   const platform = process.platform;
   let command;
   
-  if (platform === 'darwin') {  // macOS
+  if (platform === 'darwin') {  
     command = `open "${url}"`;
-  } else if (platform === 'win32') {  // Windows
+  } else if (platform === 'win32') {  
     command = `start "" "${url}"`;
-  } else {  // Linux and others
+  } else {  
     command = `xdg-open "${url}"`;
   }
   
@@ -62,7 +77,7 @@ function openInBrowser(url) {
   });
 }
 
-// Load data from temporary files if they exist
+
 function loadTempFiles() {
   const result = {
     discoveredLinks: new Map(),
@@ -71,14 +86,14 @@ function loadTempFiles() {
   };
   
   try {
-    // Load visited pages
+    
     if (fs.existsSync(TEMP_FILES.visited)) {
       const visitedArray = JSON.parse(fs.readFileSync(TEMP_FILES.visited, 'utf8'));
       result.pagesVisited = new Set(visitedArray);
       console.log(`Loaded ${result.pagesVisited.size} previously visited pages`);
     }
     
-    // Load discovered links
+    
     if (fs.existsSync(TEMP_FILES.links)) {
       const linksArray = JSON.parse(fs.readFileSync(TEMP_FILES.links, 'utf8'));
       linksArray.forEach(link => {
@@ -87,7 +102,7 @@ function loadTempFiles() {
       console.log(`Loaded ${result.discoveredLinks.size} previously discovered links`);
     }
     
-    // Load parent-child relations
+    
     if (fs.existsSync(TEMP_FILES.parent_child)) {
       const relationsObj = JSON.parse(fs.readFileSync(TEMP_FILES.parent_child, 'utf8'));
       Object.entries(relationsObj).forEach(([parent, children]) => {
@@ -97,7 +112,7 @@ function loadTempFiles() {
     }
   } catch (e) {
     console.error(`Error loading temp files: ${e.message}`);
-    // If there's an error, start fresh
+    
     return {
       discoveredLinks: new Map(),
       pagesVisited: new Set(),
@@ -108,16 +123,16 @@ function loadTempFiles() {
   return result;
 }
 
-// Save data to temporary files
+
 function saveTempFiles(discoveredLinks, pagesVisited, parentChildRelations) {
   try {
-    // Save visited pages as array
+    
     fs.writeFileSync(TEMP_FILES.visited, JSON.stringify([...pagesVisited]));
     
-    // Save discovered links as array
+    
     fs.writeFileSync(TEMP_FILES.links, JSON.stringify([...discoveredLinks.values()]));
     
-    // Save parent-child relations as object
+    
     const relationsObj = {};
     parentChildRelations.forEach((children, parent) => {
       relationsObj[parent] = children;
@@ -137,13 +152,13 @@ async function scrapePurchaseLinks() {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   
-  // Load or initialize data structures
+  
   let { discoveredLinks, pagesVisited, parentChildRelations } = loadTempFiles();
   const pagesToVisit = [];
   let pagesVisitedCount = pagesVisited.size;
   
-  // Start with the homepage if we're starting fresh
-  const homepageUrl = 'https://www.purchase.edu/';
+  
+  const homepageUrl = 'https:
   if (pagesVisited.size === 0) {
     pagesToVisit.push({
       url: homepageUrl,
@@ -152,7 +167,7 @@ async function scrapePurchaseLinks() {
       parentText: null
     });
     
-    // Open the homepage in the system browser to visualize the start
+    
     if (CRAWLER_CONFIG.visualizeInBrowser) {
       openInBrowser(homepageUrl);
       console.log('Opening homepage in browser for visualization');
@@ -160,14 +175,14 @@ async function scrapePurchaseLinks() {
   } else {
     console.log(`Resuming from previous run with ${pagesVisited.size} pages already visited`);
     
-    // Add unvisited children of visited pages to the queue
+    
     for (const [parentUrl, childUrls] of parentChildRelations.entries()) {
       childUrls.forEach(childUrl => {
         if (!pagesVisited.has(childUrl)) {
           const parentData = discoveredLinks.get(parentUrl);
           pagesToVisit.push({
             url: childUrl,
-            depth: parentData ? 1 : 0, // Assume 1 level deeper than parent
+            depth: parentData ? 1 : 0, 
             parent: parentUrl,
             parentText: parentData ? parentData.text : null
           });
@@ -178,13 +193,13 @@ async function scrapePurchaseLinks() {
     console.log(`Added ${pagesToVisit.length} unvisited pages to the queue`);
   }
   
-  // File for incremental links (append mode)
+  
   const incrementalLinksPath = path.join(__dirname, 'purchase_edu_links_incremental.jsonl');
   if (!fs.existsSync(incrementalLinksPath)) {
     fs.writeFileSync(incrementalLinksPath, '');
   }
   
-  // Create a progress file to track crawling
+  
   const progressPath = path.join(__dirname, 'crawl_progress.txt');
   if (!fs.existsSync(progressPath) || pagesVisited.size === 0) {
     fs.writeFileSync(progressPath, 'Purchase College Link Crawling Progress\n======================================\n\n');
@@ -195,52 +210,52 @@ async function scrapePurchaseLinks() {
   try {
     const page = await browser.newPage();
     
-    // Set a reasonable timeout and viewport
+    
     page.setDefaultNavigationTimeout(30000);
     await page.setViewport({ width: 1280, height: 800 });
     
-    // Process pages until queue is empty or we reach limits
+    
     while (pagesToVisit.length > 0 && pagesVisitedCount < CRAWLER_CONFIG.maxPages) {
       const currentPage = pagesToVisit.shift();
       const { url, depth, parent, parentText } = currentPage;
       
-      // Skip if already visited to prevent duplicate scraping
+      
       if (pagesVisited.has(url)) {
         continue;
       }
       
-      // Mark as visited immediately to prevent duplicates
+      
       pagesVisited.add(url);
       pagesVisitedCount++;
       
       console.log(`Crawling page ${pagesVisitedCount}/${CRAWLER_CONFIG.maxPages}: ${url} (depth: ${depth})`);
       
-      // Append to progress file
+      
       fs.appendFileSync(progressPath, `Page ${pagesVisitedCount}: ${url}\n`);
       if (parent) {
         fs.appendFileSync(progressPath, `  Parent: ${parent} (${parentText || 'Unknown'})\n`);
       }
       
-      // Open in system browser periodically for visual progress
+      
       if (CRAWLER_CONFIG.visualizeInBrowser && pagesVisitedCount % CRAWLER_CONFIG.openEveryNthPage === 0) {
         openInBrowser(url);
       }
       
       try {
-        // Navigate to the page in headless browser
+        
         const response = await page.goto(url, {
           waitUntil: 'domcontentloaded',
           timeout: 30000
         });
         
-        // Check if page is valid (200 status code)
+        
         const isValidPage = response && response.ok();
         
         if (isValidPage) {
-          // Get the page title
+          
           const pageTitle = await page.title();
           
-          // Create or update the link in our map with simplified structure
+          
           const linkData = {
             url: url,
             text: pageTitle || url.split('/').pop() || url,
@@ -249,17 +264,17 @@ async function scrapePurchaseLinks() {
             children: []
           };
           
-          // Update in-memory storage
+          
           discoveredLinks.set(url, linkData);
           
-          // Write to incremental file immediately (one link per line)
+          
           fs.appendFileSync(incrementalLinksPath, JSON.stringify(linkData) + '\n');
           
-          // Extract links from the current page
+          
           const pageLinks = await extractLinksFromPage(page);
           console.log(`  Found ${pageLinks.length} links on this page`);
           
-          // Filter links to prevent excessive crawling
+          
           const filteredLinks = pageLinks.filter(link => {
             const normalizedUrl = normalizeUrl(link.url);
             return shouldCrawl(normalizedUrl) && !pagesVisited.has(normalizedUrl);
@@ -268,19 +283,19 @@ async function scrapePurchaseLinks() {
           console.log(`  ${filteredLinks.length} links remain after filtering`);
           fs.appendFileSync(progressPath, `  Found ${pageLinks.length} links, ${filteredLinks.length} unique new links\n`);
           
-          // Initialize parent-child relation if needed
+          
           if (!parentChildRelations.has(url)) {
             parentChildRelations.set(url, []);
           }
           
-          // Process each link
+          
           for (const link of filteredLinks) {
             const normalizedUrl = normalizeUrl(link.url);
             
-            // Skip if we've already visited
+            
             if (pagesVisited.has(normalizedUrl)) continue;
             
-            // Add this link as a child of the current page
+            
             const childLink = {
               url: normalizedUrl,
               text: link.text,
@@ -289,18 +304,18 @@ async function scrapePurchaseLinks() {
               children: []
             };
             
-            // Update parent-child relationship
+            
             parentChildRelations.get(url).push(normalizedUrl);
             
-            // Add to memory only if not already present
+            
             if (!discoveredLinks.has(normalizedUrl)) {
               discoveredLinks.set(normalizedUrl, childLink);
               
-              // Write to incremental file
+              
               fs.appendFileSync(incrementalLinksPath, JSON.stringify(childLink) + '\n');
             }
             
-            // Add to crawling queue if we're not at max depth
+            
             if (depth < CRAWLER_CONFIG.maxDepth) {
               pagesToVisit.push({
                 url: normalizedUrl,
@@ -315,10 +330,10 @@ async function scrapePurchaseLinks() {
           fs.appendFileSync(progressPath, `  ⚠️ Invalid page (${response?.status() || 'unknown status'})\n`);
         }
         
-        // Add a small delay between requests
+        
         await new Promise(resolve => setTimeout(resolve, CRAWLER_CONFIG.crawlDelay));
         
-        // Save progress periodically to prevent data loss
+        
         if (CRAWLER_CONFIG.incrementalSave && pagesVisitedCount % CRAWLER_CONFIG.saveEveryNPages === 0) {
           saveTempFiles(discoveredLinks, pagesVisited, parentChildRelations);
         }
@@ -331,10 +346,10 @@ async function scrapePurchaseLinks() {
       fs.appendFileSync(progressPath, `  Completed. Queue length: ${pagesToVisit.length}\n\n`);
     }
     
-    // Save final state
+    
     saveTempFiles(discoveredLinks, pagesVisited, parentChildRelations);
     
-    // Generate the final structured outputs
+    
     await generateFinalOutputs(discoveredLinks, parentChildRelations);
     
     return { 
@@ -345,7 +360,7 @@ async function scrapePurchaseLinks() {
   } catch (error) {
     console.error(`Fatal error: ${error.message}`);
     
-    // Save progress on error
+    
     saveTempFiles(discoveredLinks, pagesVisited, parentChildRelations);
     throw error;
   } finally {
@@ -354,19 +369,19 @@ async function scrapePurchaseLinks() {
 }
 
 
-// Generate final structured outputs from incremental data
+
 async function generateFinalOutputs(discoveredLinks, parentChildRelations) {
   console.log("Generating final outputs from incremental data...");
   
-  // First, remove duplicate child links from parentChildRelations
+  
   removeChildDuplicates(parentChildRelations);
   
-  // Build hierarchical structure
+  
   const hierarchicalLinks = buildSimplifiedHierarchy(discoveredLinks, parentChildRelations);
   
-  // Convert to flat array with simplified children
+  
   const linksArray = Array.from(discoveredLinks.values()).map(link => {
-    // Get children URLs from parent-child relations
+    
     const childUrls = parentChildRelations.get(link.url) || [];
     
     return {
@@ -383,32 +398,32 @@ async function generateFinalOutputs(discoveredLinks, parentChildRelations) {
   
   console.log(`Preparing to save ${linksArray.length} links`);
   
-  // Save hierarchical structure
+  
   const hierarchyOutputPath = path.join(__dirname, 'purchase_edu_links_hierarchy.json');
   fs.writeFileSync(hierarchyOutputPath, JSON.stringify(hierarchicalLinks, null, 2));
   console.log(`Hierarchical links saved to ${hierarchyOutputPath}`);
   
-  // Save flat structure
+  
   const flatOutputPath = path.join(__dirname, 'purchase_edu_links.json');
   fs.writeFileSync(flatOutputPath, JSON.stringify(linksArray, null, 2));
   console.log(`Flat links saved to ${flatOutputPath}`);
   
-  // Generate human-readable report
+  
   generateHierarchyReport(hierarchicalLinks);
   
-  // Open the report in browser
+  
   const htmlPath = path.join(__dirname, 'purchase_links_report.html');
   console.log('Opening link report in browser...');
-  openInBrowser(`file://${htmlPath}`);
+  openInBrowser(`file:
 }
 
-// Function to remove duplicate children from the parent-child relations
+
 function removeChildDuplicates(parentChildRelations) {
   console.log("Removing duplicate child links...");
   let totalDuplicatesRemoved = 0;
   
   parentChildRelations.forEach((children, parent) => {
-    // Use a Set to efficiently remove duplicates
+    
     const uniqueChildren = Array.from(new Set(children));
     const duplicatesRemoved = children.length - uniqueChildren.length;
     
@@ -423,24 +438,24 @@ function removeChildDuplicates(parentChildRelations) {
 
 
 
-// Build a simplified hierarchy for better visualization without recursion
-// Fix the buildSimplifiedHierarchy function to properly initialize the result variable
+
+
 function buildSimplifiedHierarchy(linksMap, parentChildRelations) {
-  const homepage = 'https://www.purchase.edu/';
+  const homepage = 'https:
   
-  // Create a top-level structure
+  
   const hierarchy = {
     url: homepage,
     text: linksMap.has(homepage) ? linksMap.get(homepage).text : 'Purchase College',
     children: []
   };
   
-  // Use a queue-based approach instead of recursion to avoid call stack issues
+  
   function buildChildrenFor(parentUrl) {
-    // Track visited URLs to prevent circular references
+    
     const visitedUrls = new Set();
     const queue = [{ url: parentUrl, result: [] }];
-    const result = []; // Initialize the result array here
+    const result = []; 
     
     while (queue.length > 0) {
       const current = queue.shift();
@@ -478,7 +493,7 @@ function buildSimplifiedHierarchy(linksMap, parentChildRelations) {
         
         currentResult.push(childNode);
         
-        // Only process this child's children if not already visited
+        
         if (!visitedUrls.has(childUrl)) {
           queue.push({ url: childUrl, result: childNode.children });
         }
@@ -488,11 +503,11 @@ function buildSimplifiedHierarchy(linksMap, parentChildRelations) {
     return result;
   }
   
-  // Build the hierarchy starting from homepage
+  
   if (linksMap.has(homepage)) {
     hierarchy.children = buildChildrenFor(homepage);
   } else {
-    // If homepage wasn't found, find top-level entries
+    
     for (const [url, link] of linksMap.entries()) {
       if (!link.parent) {
         const children = buildChildrenFor(url);
@@ -507,7 +522,7 @@ function buildSimplifiedHierarchy(linksMap, parentChildRelations) {
   
   return hierarchy;
 }
-// Extract links from the current page
+
 async function extractLinksFromPage(page) {
   return await page.evaluate(() => {
     const links = [];
@@ -517,23 +532,23 @@ async function extractLinksFromPage(page) {
       try {
         const url = new URL(link.href, window.location.origin).href;
         
-        // Skip empty URLs or javascript: links
+        
         if (!url || url.startsWith('javascript:')) return;
         
-        // Get the best text for this link
+        
         let text = '';
         
-        // Check for innerText first
+        
         text = link.innerText.trim();
         
-        // If empty, try aria-label or title
+        
         if (!text) {
           text = link.getAttribute('aria-label') || 
                  link.getAttribute('title') || 
                  link.textContent.trim();
         }
         
-        // If still empty, try image alt text
+        
         if (!text) {
           const img = link.querySelector('img[alt]');
           if (img && img.alt) {
@@ -541,14 +556,14 @@ async function extractLinksFromPage(page) {
           }
         }
         
-        // If still empty, use URL
+        
         if (!text) {
           text = url.split('/').pop() || url;
         }
         
         links.push({ url, text });
       } catch (e) {
-        // Skip invalid URLs
+        
       }
     });
     
@@ -556,45 +571,45 @@ async function extractLinksFromPage(page) {
   });
 }
 
-// Check if a URL should be crawled
+
 function shouldCrawl(url) {
-  // Must match at least one include pattern
+  
   const matchesInclude = CRAWLER_CONFIG.includePatterns.some(pattern => url.includes(pattern));
   if (!matchesInclude) return false;
   
-  // Must not match any exclude pattern
+  
   const matchesExclude = CRAWLER_CONFIG.excludePatterns.some(pattern => url.includes(pattern));
   return !matchesExclude;
 }
 
-// Normalize a URL to prevent duplicates
+
 function normalizeUrl(url) {
   try {
-    // Create URL object to standardize the format
+    
     const urlObj = new URL(url);
     
-    // Remove trailing slash if present
+    
     let cleanUrl = urlObj.origin + urlObj.pathname.replace(/\/$/, '');
     
-    // Add back search params if they exist
+    
     if (urlObj.search) {
       cleanUrl += urlObj.search;
     }
     
     return cleanUrl;
   } catch {
-    return url; // Return original if parsing fails
+    return url; 
   }
 }
 
-// Generate a human-readable report
+
 function generateHierarchyReport(hierarchicalLinks) {
   const reportPath = path.join(__dirname, 'purchase_links_report.txt');
   let report = "Purchase College Link Hierarchy Report\n";
   report += "=====================================\n\n";
   report += `Generated: ${new Date().toLocaleString()}\n\n`;
   
-  // Non-recursive approach to building the report
+  
   function addNodeToReport(node, level = 0) {
     const queue = [{ node, level }];
     
@@ -622,7 +637,7 @@ function generateHierarchyReport(hierarchicalLinks) {
       if (node.children && node.children.length > 0) {
         report += `${indent}Children (${node.children.length}):\n`;
         
-        // Process only a limited number of children to keep the report manageable
+        
         const maxChildrenToShow = 10;
         const shownChildren = node.children.slice(0, maxChildrenToShow);
         
@@ -646,11 +661,11 @@ function generateHierarchyReport(hierarchicalLinks) {
   fs.writeFileSync(reportPath, report);
   console.log(`Human-readable report saved to ${reportPath}`);
   
-  // Also create an HTML version for better visualization
+  
   createHtmlReport(hierarchicalLinks);
 }
 
-// Create an HTML version of the report
+
 function createHtmlReport(hierarchicalLinks) {
   const htmlPath = path.join(__dirname, 'purchase_links_report.html');
   
@@ -689,19 +704,19 @@ function createHtmlReport(hierarchicalLinks) {
   <div id="hierarchy">
 `;
 
-  // Non-recursive HTML generation
+  
   function addNodeToHtml(rootNode) {
-    // Use a stack-based approach
+    
     const stack = [{ node: rootNode, level: 0, parentDiv: '#hierarchy' }];
     const processedNodes = new Set();
     
     while (stack.length > 0) {
       const { node, level, parentDiv } = stack.pop();
       
-      // Create a unique ID for this node
+      
       const nodeId = `node-${node.url.replace(/[^a-zA-Z0-9]/g, '-')}`;
       
-      // Check if we've seen this node before (circular reference)
+      
       const isCircular = processedNodes.has(node.url);
       if (isCircular && node.url !== rootNode.url) {
         html += `<div class="node" style="margin-left: ${level * 20}px">`;
@@ -718,7 +733,7 @@ function createHtmlReport(hierarchicalLinks) {
       html += `<div id="${nodeId}" class="node" style="margin-left: ${level * 20}px">`;
       html += `<div class="node-content">`;
       
-      // Add toggle if has children
+      
       if (node.children && node.children.length > 0) {
         html += `<span class="toggle" onclick="toggleChildren('${nodeId}-children')">[-]</span> `;
       }
@@ -737,7 +752,7 @@ function createHtmlReport(hierarchicalLinks) {
       if (node.children && node.children.length > 0) {
         html += `<div id="${nodeId}-children" class="children">`;
         
-        // Push children onto stack in reverse order so they get processed in the right order
+        
         for (let i = node.children.length - 1; i >= 0; i--) {
           stack.push({ 
             node: node.children[i], 
@@ -806,7 +821,7 @@ function createHtmlReport(hierarchicalLinks) {
   console.log(`HTML report saved to ${htmlPath}`);
 }
 
-// Run the scraper
+
 console.log("Starting Purchase College link scraper with memory optimization");
 console.log(`Will visit up to ${CRAWLER_CONFIG.maxPages} pages with maximum depth of ${CRAWLER_CONFIG.maxDepth}`);
 console.log(`Using incremental saving every ${CRAWLER_CONFIG.saveEveryNPages} pages to reduce memory usage`);

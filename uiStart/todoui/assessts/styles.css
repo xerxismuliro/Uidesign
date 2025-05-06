@@ -1,10 +1,25 @@
+/*
+   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  
+  Usage Guidelines:
+  - Maintain the CSS variable structure for theming
+  - Mobile-first approach for all responsive styling
+  - Class names follow BEM methodology
+  - For questions or contributions, contact isaac.muliro@purchase.edu
+  - Last updated: 2025-05-06
+*/
+
+
+
+
+
 
  :root {
 	--background-color: #ffffff;
     --allINtopBarborderbotAndTop: #151515;
 }
 
-/* Define dark theme colors */
+
 [data-theme="dark"] {
 	--background-color: #424242;
     --allINtopBarborderbotAndTop: #151515;
@@ -115,7 +130,7 @@ body {
     padding: 8px;
     color: wheat;
     border-radius: 8px;
-    /* background-color: #1a2a46c6;  */
+    
 }
 
 #Events-saved-via-Terminal:hover, #Events-saved-via-Browser:hover {
@@ -346,18 +361,7 @@ body {
     text-align: center;
 }
 
-/* .calendar-view, .statistics, .reminders, .help-support,.settings,.upcoming,.add-event {
-    background-color: #3a4c66a8;
-    padding: 8px;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-
-.add-event:hover,.calendar-view:hover,.statistics:hover,.reminders:hover,.help-support:hover,.settings:hover,.upcoming:hover {
-    background-color: #1a2a46d0; 
-} */
 
 .icon-box {
     background-color: #3a4c66a8;
@@ -439,7 +443,7 @@ body {
 }
 
 
-/* styles for the createAddEventContent function */
+
 #addEventSection {
     display: flex;
     flex-direction: column;
@@ -515,7 +519,7 @@ body {
 }
 
 
-/* Media query for screens smaller than 1200px (e.g., large tablets and small desktops) */
+
 @media (max-width: 1200px) {
     .section {
         flex-direction: row; 
@@ -526,7 +530,7 @@ body {
     }
 }
 
-/* Media query for screens smaller than 992px (e.g., tablets) */
+
 @media (max-width: 992px) {
     .section {
         flex-direction: row; 
@@ -537,7 +541,7 @@ body {
     }
 }
 
-/* Media query for screens smaller than 768px (e.g., tablets and phones) */
+
 @media (max-width: 768px) {
     .section {
         flex-direction: column; 
@@ -551,7 +555,7 @@ body {
 
 
 
-/* Mobile Navigation Styles */
+
 .mobile-nav {
     display: none;
     position: fixed;
@@ -570,7 +574,7 @@ body {
     cursor: pointer;
 }
 
-/* Sidebar overlay for mobile */
+
 .sidebar-overlay {
     display: none;
     position: fixed;
@@ -581,7 +585,7 @@ body {
     z-index: 98;
 }
 
-/* Mobile search container - conditionally displayed via JavaScript */
+
 .mobile-search-container {
     width: 100%;
     padding: 0px;
@@ -621,14 +625,14 @@ body {
     color: #3772de;
 }
 
-/* Enhanced media queries for better responsive layout */
+
 @media (max-width: 1200px) {
     .section {
-        flex-direction: row; /* Keep divs in a row */
-        flex-wrap: wrap; /* Allow wrapping to the next line */
+        flex-direction: row; 
+        flex-wrap: wrap; 
     }
     .section > div {
-        flex: 1 1 45%; /* Each div takes up 45% of the container width */
+        flex: 1 1 45%; 
     }
     
     .rightSidebarDiv {
@@ -638,11 +642,11 @@ body {
 
 @media (max-width: 992px) {
     .section {
-        flex-direction: row; /* Keep divs in a row */
-        flex-wrap: wrap; /* Allow wrapping to the next line */
+        flex-direction: row; 
+        flex-wrap: wrap; 
     }
     .section > div {
-        flex: 1 1 100%; /* Each div takes up 100% of the container width */
+        flex: 1 1 100%; 
     }
     
     .leftSidebarDiv {
@@ -699,14 +703,14 @@ body {
         display: block;
     }
     
-    /* Hide the search bar in the sidebar on mobile */
+    
     .leftSidebarDiv #searchInput {
         display: none;
     }
     
-    /* Top bar position */
+    
     .allINtopBar {
-        padding-left: 50px; /* Make room for the hamburger menu */
+        padding-left: 50px; 
         position: sticky;
         top: 0;
         z-index: 10;
@@ -730,12 +734,12 @@ body {
         white-space: nowrap;
     }
     
-    /* Default content positioning */
+    
     .contentDiv {
         margin-top: 10px;
     }
     
-    /* Special handling for browser events content */
+    
     #browserEventsContent {
         padding-top: 15px;
     }
@@ -749,18 +753,18 @@ body {
         max-height: 30vh;
     }
     
-    /* Optimize calendar for mobile */
+    
     .month {
         width: 90%;
         margin: 5px 0;
     }
     
-    /* Ensure form inputs are large enough for touch */
+    
     input, textarea, select, button {
-        min-height: 44px; /* Recommended touch target size */
+        min-height: 44px; 
     }
     
-    /* Make icons more tappable */
+    
     .section > div {
         padding: 12px 8px;
     }
@@ -768,7 +772,7 @@ body {
     #addEventForm input,
     #addEventForm textarea,
     #addEventForm button {
-        font-size: 16px; /* Minimum font size for inputs on mobile */
+        font-size: 16px; 
         padding: 12px;
     }
 }

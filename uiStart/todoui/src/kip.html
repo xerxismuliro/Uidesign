@@ -1,3 +1,18 @@
+<!--
+  Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  
+  Usage Guidelines:
+  -  Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  - Maintain the responsive design principles when making changes mainly using flexbox
+  - Follow established color schemes in the CSS variables for more controll over theme when changinh mode.
+  - For questions or contributions, contact isaac.muliro@purchase.edu
+  - Last updated: 2025-05-06
+-->
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +25,7 @@
 </head>
 
 <body>
-    <!-- Mobile Navigation - Hamburger Menu -->
+    
     <div class="mobile-nav">
         <button id="hamburger-menu">
             <i class="fas fa-bars"></i>
@@ -18,7 +33,7 @@
     </div>
     
     <div class="flex-container">
-        <!-- Left Sidebar -->
+        
         <div class="leftSidebarDiv">
             <div id="pinAndpinWinparentDiv">
                 <div id="searchInput">
@@ -26,9 +41,9 @@
                 </div>
             </div>
 
-            <!-- Left Apps Sections -->
+            
             <div class="left-apps">
-                <!-- Section 1 -->
+                
                 <div class="section">
                     <div class="settings" data-target="settingsContent">
                         <i class="fas fa-cog icon-settings"></i>
@@ -44,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Section 2 -->
+                
                 <div class="section">
                     <div class="calendar-view" data-target="calendarContent">
                         <i class="fas fa-calendar icon-calendar-view"></i>
@@ -61,7 +76,7 @@
                     </div>
                 </div>
 
-                <!-- Section 3 -->
+                
                 <div class="section">
                     <div class="help-support" data-target="helpSupportContent">
                         <i class="fas fa-question-circle icon-help-support"></i>
@@ -70,28 +85,28 @@
                 </div>
             </div>
 
-            <!-- Months With Events -->
+            
             <div id="MonthsWthEvents-leftDiv" class="MonthsWthEvents-leftDiv">
                 <p id="Pcolor">No upcoming Events</p>
             </div>
         </div>
 
-        <!-- Middle Section -->
+        
         <div class="middleDiv">
             <div class="allINtopBar">
                 <div id="Events-saved-via-Browser" data-target="browserEventsContent">Upcomming Events</div>
                 <div id="UserIcon" class="usericon"><i class="fa-regular fa-circle-user"></i></div>
             </div>
 
-            <!-- Content Divs -->
+            
             <div id="settingsContent" class="contentDiv settings" style="display: none;">
                 <h1>Settings</h1>
-                <!-- Settings content here -->
+                
             </div>
 
             <div id="upcomingContent" class="contentDiv upcoming" style="display: none;">
                 <h1>Upcoming</h1>
-                <!-- Upcoming content here -->
+                
             </div>
 
             <div id="addEventContent" class="contentDiv add-event" style="display: none;">
@@ -119,17 +134,17 @@
 
             <div id="calendarContent" class="contentDiv calendar-view" style="display: none;">
                 <h1>Calendar</h1>
-                <!-- Calendar content here -->
+                
             </div>
 
             <div id="statisticsContent" class="contentDiv statistics" style="display: none;">
                 <h1>Statistics</h1>
-                <!-- Statistics content here -->
+                
             </div>
 
             <div id="remindersContent" class="contentDiv reminders" style="display: none;">
                 <h1>Reminders</h1>
-                <!-- Reminders content here -->
+                
             </div>
 
             <div id="helpSupportContent" class="contentDiv help-support" style="display: none;">
@@ -175,28 +190,23 @@
                         </tr>
                     </thead>
                     <tbody id="browserTodoTableBody">
-                        <!-- To-Do items will be inserted here -->
+                        
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- Right Sidebar -->
-        <!-- <div class="rightSidebarDiv">
-            <div class="RightSideDivtopBar">
-                <div id="UserIcon" class="usericon"><i class="fa-regular fa-circle-user"></i></div>
-            </div>
-            <div id="calendar"></div>
-        </div> -->
+        
+        
     </div>
 
-    <!-- Sidebar overlay for mobile -->
+    
     <div class="sidebar-overlay"></div>
 
     <script src="assessts/jquery.js"></script>
     <script src="main/script.js"></script>
 
-    <!-- Mobile menu functionality -->
+    
     <script></script>
 </body>
 

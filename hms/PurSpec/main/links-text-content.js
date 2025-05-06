@@ -1,7 +1,19 @@
 /**
- * This file contains all the text values extracted from Purchase College links
- * for use in voice recognition matching.
+ * Code developed by Isaac Muliro - UI/UX Designer & Developer
+ *
+ * Usage Guidelines:
+ * - Maintain modular structure when adding new features
+ * - Use ES6+ syntax standards and some times I built my own modules from sratch
+ * - Document any new functions with JSDoc comments
+ * - For questions or contributions, contact isaac.muliro@purchase.edu
+ * - Last updated: 2025-05-06
  */
+
+
+
+
+
+
 
 const linkTextContent = [
   "About",
@@ -1207,9 +1219,9 @@ const linkTextContent = [
   "general campus tour",
   "heliotropecentral@purchase.edu",
   "hse@purchase.edu",
-  "https://www.purchase.edu/calendar/event/67283-alumni-showcase",
-  "https://www.purchase.edu/library/collections/special-collections/",
-  "https://www.purchase.edu/live/image/gid/91/width/650/26136_turnitin-self-checker.png",
+  "https:
+  "https:
+  "https:
   "kristin.brunobates@purchase.edu",
   "lib.circ@purchase.edu",
   "mask and social distancing policy",
@@ -1234,10 +1246,10 @@ const linkTextContent = [
  
 ];
 
-// Export the array for use in other files
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = linkTextContent;
 } else {
-  // For browser environments
+  
   window.linkTextContent = linkTextContent;
 }

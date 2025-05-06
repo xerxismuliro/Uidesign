@@ -1,23 +1,38 @@
+/*
+   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
+  
+  Usage Guidelines:
+  - Maintain the CSS variable structure for theming
+  - Mobile-first approach for all responsive styling
+  - Class names follow BEM methodology
+  - For questions or contributions, contact isaac.muliro@purchase.edu
+  - Last updated: 2025-05-06
+*/
+
+
+
+
+
 @charset "UTF-8";
-/* CSS Variable Mapping for Theme Compatibility */
+
 :root {
-  /* Light theme variables */
+  
   --light-bg: #f5f5f5;
   --light-text: #333;
   --light-primary: #4a6fa5;
   --light-secondary: #e0e0e0;
-  --light-accent: #3f7be5; /* Changed from #ff6b6b to blue */
+  --light-accent: #3f7be5; 
   --light-sidebar: #e8eef7;
   --light-header: #dae4f2;
-  /* Dark theme variables - grayscale version */
+  
   --dark-bg: #1a1a1a;
   --dark-text: #f0f0f0;
   --dark-primary: #707070;
   --dark-secondary: #363636;
-  --dark-accent: #5d8fe6; /* Changed from #ff8585 to blue */
+  --dark-accent: #5d8fe6; 
   --dark-sidebar: #252525;
   --dark-header: #202020;
-  /* Purchase component variable mapping - light theme default */
+  
   --bg-primary: var(--light-bg);
   --bg-secondary: var(--light-secondary);
   --bg-hover: #f0f0f0;
@@ -25,9 +40,9 @@
   --text-secondary: #666666;
   --text-on-accent: #ffffff;
   --accent-color: var(--light-accent);
-  --accent-color-rgb: 63, 123, 229; /* RGB values of blue accent */
+  --accent-color-rgb: 63, 123, 229; 
   --border-color: #dddddd;
-  /* Dark theme equivalents - will be applied when dark-theme class is added */
+  
   --bg-primary-dark: var(--dark-bg);
   --bg-secondary-dark: var(--dark-secondary);
   --bg-hover-dark: #2c2c2c;
@@ -35,11 +50,11 @@
   --text-secondary-dark: #aaaaaa;
   --text-on-accent-dark: #ffffff;
   --accent-color-dark: var(--dark-accent);
-  --accent-color-rgb-dark: 93, 143, 230; /* RGB values of dark blue accent */
+  --accent-color-rgb-dark: 93, 143, 230; 
   --border-color-dark: #444444;
 }
 
-/* For dark theme, apply the mapped dark variables */
+
 .dark-theme {
   --bg-primary: var(--bg-primary-dark);
   --bg-secondary: var(--bg-secondary-dark);
@@ -52,7 +67,7 @@
   --border-color: var(--border-color-dark);
 }
 
-/* Theme styles */
+
 .light-theme {
   --bg: var(--light-bg);
   --text: var(--light-text);
@@ -73,7 +88,7 @@
   --header: var(--dark-header);
 }
 
-/* Base styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +100,7 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
-  /* Prevent scrolling on the body */
+  
 }
 
 ul {
@@ -137,7 +152,7 @@ body {
   object-fit: cover;
 }
 
-/* Layout styles */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -192,10 +207,10 @@ body {
   display: flex;
   flex: 1;
   overflow: hidden;
-  /* Prevent overflow */
+  
 }
 
-/* Redesigned sidebar styles */
+
 .left-sidebar {
   background-color: var(--sidebar);
   width: 240px;
@@ -213,7 +228,7 @@ body {
   padding: 0rem;
 }
 
-/* New sidebar item styles */
+
 .sidebar-item {
   margin: 0px 0;
 }
@@ -258,7 +273,7 @@ body {
   font-weight: 500;
 }
 
-/* Legacy sidebar styles for backwards compatibility */
+
 .left-sidebar h2 {
   color: var(--primary);
   border-bottom: 2px solid var(--secondary);
@@ -298,7 +313,7 @@ body {
   color: var(--primary);
 }
 
-/* New styles for perfect circles */
+
 .ulIconstyle {
   width: 40px;
   height: 40px;
@@ -307,7 +322,7 @@ body {
   justify-content: center;
   background-color: rgb(93, 93, 169);
   border-radius: 50%;
-  /* Creates a perfect circle */
+  
   margin-right: 15px;
   color: var(--accent-color);
   flex-shrink: 0;
@@ -374,18 +389,18 @@ body {
   z-index: 100;
 }
 
-/* Fix for sidebar credits height */
+
 .sidebar-credits {
   background-color: var(--sidebar);
-  padding: 5px 0; /* Minimal vertical padding */
-  font-size: 0.65rem; /* Even smaller font */
+  padding: 5px 0; 
+  font-size: 0.65rem; 
   color: var(--text-primary);
   opacity: 0.8;
   text-align: center;
   border-top: 1px solid var(--secondary);
   width: 100%;
-  height: 50px; /* Fixed height instead of auto */
-  overflow: hidden; /* Prevent content from expanding beyond height */
+  height: 50px; 
+  overflow: hidden; 
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   bottom: 0;
@@ -399,29 +414,29 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  line-height: 1.5; /* Even tighter line spacing */
+  line-height: 1.5; 
   max-width: 100%;
 }
 
 .sidebar-credits p {
-  margin: 0; /* Remove all margins */
-  white-space: nowrap; /* Prevent text wrapping */
+  margin: 0; 
+  white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .sidebar-credits .developer-name {
   font-weight: 600;
-  font-size: 0.75rem; /* Slightly larger than other text */
+  font-size: 0.75rem; 
   color: var(--accent-color);
 }
 
 .sidebar-credits .copyright {
-  font-size: 0.6rem; /* Smallest text */
+  font-size: 0.6rem; 
   color: var(--text-secondary);
 }
 
-/* Rounded corners for better UI */
+
 .content,
 .right-sidebar,
 button,
@@ -435,12 +450,12 @@ input[type=range],
   border-radius: 8px;
 }
 
-/* Main content needs different radius to fit properly */
+
 .content {
   border-radius: 0;
 }
 
-/* Content sections */
+
 .content-section {
   display: none;
   justify-content: center;
@@ -464,7 +479,7 @@ input[type=range],
     opacity: 1;
   }
 }
-/* Voice control section */
+
 .voice-control {
   display: flex;
   flex-direction: row;
@@ -480,7 +495,7 @@ input[type=range],
   position: relative;
 }
 
-/* Button container - now takes less space */
+
 .voice-btn-container {
   display: flex;
   gap: 8px;
@@ -488,7 +503,7 @@ input[type=range],
   max-width: 180px;
 }
 
-/* Main voice button style */
+
 .voice-btn {
   padding: 8px 12px;
   border: none;
@@ -537,7 +552,7 @@ input[type=range],
   background-color: var(--accent);
 }
 
-/* Status text */
+
 #voice-status {
   font-size: 0.85em;
   font-weight: bold;
@@ -548,7 +563,7 @@ input[type=range],
   color: var(--text-primary);
 }
 
-/* Voice visualizer - horizontal layout */
+
 .voice-visualizer {
   display: flex;
   justify-content: center;
@@ -573,18 +588,18 @@ input[type=range],
 }
 
 .voice-visualizer.paused .visualizer-bar {
-  background-color: #FFA500; /* Orange for paused state */
+  background-color: #FFA500; 
 }
 
 .voice-visualizer.error .visualizer-bar {
-  background-color: #FF4136; /* Red for error state */
+  background-color: #FF4136; 
 }
 
-/* Browser compatibility message */
+
 .compat-message {
   flex: 1 1 auto;
   padding: 8px;
-  background-color: rgba(255, 65, 54, 0.1); /* Light red background */
+  background-color: rgba(255, 65, 54, 0.1); 
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -592,7 +607,7 @@ input[type=range],
 }
 
 .compat-message i {
-  color: #FF4136; /* Red for error icon */
+  color: #FF4136; 
   font-size: 1.2em;
 }
 
@@ -603,7 +618,7 @@ input[type=range],
   white-space: nowrap;
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 600px) {
   .voice-control {
     flex-direction: column;
@@ -623,7 +638,7 @@ input[type=range],
     margin: 10px 0;
   }
 }
-/* Custom states for voice status text */
+
 #voice-status.listening {
   color: var(--accent);
 }
@@ -633,14 +648,14 @@ input[type=range],
 }
 
 #voice-status.error {
-  color: #FF4136; /* Red for error */
+  color: #FF4136; 
 }
 
 #voice-status.paused {
-  color: #FFA500; /* Orange for paused */
+  color: #FFA500; 
 }
 
-/* Voice demo section */
+
 .voice-demo {
   background-color: var(--secondary);
   padding: 20px;
@@ -681,7 +696,7 @@ input[type=range],
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Commands section */
+
 .commands-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -715,7 +730,7 @@ input[type=range],
   font-weight: bold;
 }
 
-/* Bookmarks section */
+
 .bookmarks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -764,7 +779,7 @@ input[type=range],
   border-color: var(--accent);
 }
 
-/* History section */
+
 .history-list {
   margin-top: 15px;
 }
@@ -800,7 +815,7 @@ input[type=range],
   margin-right: 8px;
 }
 
-/* Settings section */
+
 .settings-section {
   margin-bottom: 25px;
   padding: 20px;
@@ -824,7 +839,7 @@ input[type=range],
   padding: 5px 0;
 }
 
-/* Help section */
+
 .help-section {
   margin-bottom: 25px;
 }
@@ -861,7 +876,7 @@ input[type=range],
   margin-right: 8px;
 }
 
-/* Accessibility section */
+
 .accessibility-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -889,7 +904,7 @@ input[type=range],
   margin-bottom: 15px;
 }
 
-/* Improve iframe display */
+
 #website-frame {
   width: 100%;
   height: 70vh;
@@ -899,7 +914,7 @@ input[type=range],
   transition: opacity 0.3s ease;
 }
 
-/* Better loading animation */
+
 .loading-message {
   display: flex;
   flex-direction: column;
@@ -936,7 +951,7 @@ input[type=range],
   margin-bottom: 10px;
 }
 
-/* Improved fallback message */
+
 #fallback-message {
   display: none;
   flex-direction: column;
@@ -985,7 +1000,7 @@ input[type=range],
   font-size: 16px;
 }
 
-/* Browser simulation styles */
+
 .browser-simulation {
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -1045,7 +1060,7 @@ input[type=range],
   background-color: var(--bg-primary);
 }
 
-/* Direct link container and confirmation container styles */
+
 .direct-link-container, .confirmation-container {
   display: flex;
   align-items: center;
@@ -1071,7 +1086,7 @@ input[type=range],
 }
 
 .opened-confirmation i {
-  color: var(--accent); /* Success color */
+  color: var(--accent); 
 }
 
 .direct-link-message h3, .opened-confirmation h3 {
@@ -1101,7 +1116,7 @@ input[type=range],
   margin-top: 25px;
 }
 
-/* Button styles */
+
 .primary-button, .secondary-button {
   display: inline-flex;
   align-items: center;
@@ -1143,7 +1158,7 @@ input[type=range],
   color: inherit;
 }
 
-/* Fallback and quick site styles */
+
 .fallback-options {
   display: flex;
   justify-content: center;
@@ -1185,7 +1200,7 @@ input[type=range],
   border-color: var(--primary);
 }
 
-/* Add styles for circle image */
+
 .circle-image {
   display: inline-block;
   width: 40px;
@@ -1204,9 +1219,9 @@ input[type=range],
   object-fit: cover;
 }
 
-/* NEW SIDEBAR ICON STYLES - Added to fix circular icons */
-/* These styles override the existing ones and ensure proper circular icons */
-/* Perfect circular icon containers with proper centering */
+
+
+
 .left-sidebar .icon-container {
   width: 40px;
   height: 40px;
@@ -1216,13 +1231,13 @@ input[type=range],
   border-radius: 50%;
   margin-right: 15px;
   flex-shrink: 0;
-  position: relative; /* For precise icon positioning */
+  position: relative; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  overflow: hidden; /* Ensures perfect circle clipping */
+  overflow: hidden; 
 }
 
-/* Center and style the icon inside the container */
-/* Perfect circular icon containers with proper centering */
+
+
 .left-sidebar .icon-container {
   width: 40px;
   height: 40px;
@@ -1232,52 +1247,52 @@ input[type=range],
   border-radius: 50%;
   margin-right: 15px;
   flex-shrink: 0;
-  position: relative; /* For precise icon positioning */
+  position: relative; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  overflow: hidden; /* Ensures perfect circle clipping */
+  overflow: hidden; 
 }
 
-/* Center and style the icon inside the container */
+
 .left-sidebar .icon-container i {
   font-size: 18px;
-  color: white; /* White icons on colored backgrounds */
-  /* Center perfectly */
+  color: white; 
+  
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Individual colors for each sidebar icon using specific classes */
+
 .icon-purchase {
-  background-color: #4a6da7; /* Purchase College - blue */
+  background-color: #4a6da7; 
 }
 
 .icon-voice {
-  background-color: #d32f2f; /* Voice Commands - red */
+  background-color: #d32f2f; 
 }
 
 .icon-bookmarks {
-  background-color: #388e3c; /* Bookmarks - green */
+  background-color: #388e3c; 
 }
 
 .icon-history {
-  background-color: #7b1fa2; /* History - purple */
+  background-color: #7b1fa2; 
 }
 
 .icon-settings {
-  background-color: #f57c00; /* Settings - orange */
+  background-color: #f57c00; 
 }
 
 .icon-help {
-  background-color: #0288d1; /* Help - blue */
+  background-color: #0288d1; 
 }
 
 .icon-accessibility {
-  background-color: #5d4037; /* Accessibility - brown */
+  background-color: #5d4037; 
 }
 
-/* Purchase College Links Component Styles */
+
 .purchase-links-container {
   background: var(--bg-secondary);
   border-radius: 8px;
@@ -1339,8 +1354,8 @@ input[type=range],
   flex-wrap: wrap;
 }
 
-/* Purchase College Links Component Styles */
-/* Add icon styling for Purchase links similar to sidebar icons */
+
+
 .purchase-link-icon {
   width: 40px;
   height: 40px;
@@ -1361,7 +1376,7 @@ input[type=range],
   transform: scale(1.05);
 }
 
-/* Modify the purchase-link-item to include the new icon container */
+
 .purchase-link-item {
   display: flex;
   align-items: center;
@@ -1371,7 +1386,7 @@ input[type=range],
   transition: background 0.2s;
 }
 
-/* Dark theme adjustments */
+
 .dark-theme .purchase-link-icon {
   background-color: rgba(var(--accent-color-rgb-dark), 0.2);
   color: var(--accent-color-dark);
@@ -1382,7 +1397,7 @@ input[type=range],
   background-color: rgba(var(--accent-color-rgb-dark), 0.3);
 }
 
-/* Add these category header styles to your Purchase links section */
+
 .category-header {
   padding: 15px;
   background: var(--bg-secondary);
@@ -1408,7 +1423,7 @@ input[type=range],
   color: var(--accent-color-dark);
 }
 
-/* Count badge styles */
+
 .category-button .count {
   background: rgba(var(--accent-color-rgb), 0.1);
   border-radius: 12px;
@@ -1560,7 +1575,7 @@ input[type=range],
   margin-right: 15px;
 }
 
-/* Dark theme adjustments */
+
 .dark-theme .purchase-links-container {
   background: var(--bg-secondary-dark);
 }
@@ -1603,7 +1618,7 @@ input[type=range],
   color: var(--text-secondary-dark);
 }
 
-/* Animations */
+
 @keyframes linkItemAppear {
   from {
     opacity: 0;
@@ -1658,7 +1673,7 @@ input[type=range],
   animation-delay: 0.5s;
 }
 
-/* Focus styles for accessibility */
+
 .search-container input:focus,
 .category-button:focus,
 .open-link-button:focus {
@@ -1671,7 +1686,7 @@ input[type=range],
   outline-offset: -2px;
 }
 
-/* Additional utility classes for the Purchase links component */
+
 .text-overflow-ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -1683,7 +1698,7 @@ input[type=range],
   font-size: 16px;
 }
 
-/* Browser simulation */
+
 .browser-simulation {
   border: 1px solid var(--secondary);
   border-radius: 8px;
@@ -1755,7 +1770,7 @@ input[type=range],
   margin-top: 15px;
 }
 
-/* Switch toggle */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -1808,7 +1823,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* Media queries for responsive design */
+
 @media (max-width: 768px) {
   .purchase-links-header {
     flex-direction: column;
@@ -1855,7 +1870,7 @@ input:checked + .slider:before {
     align-self: flex-end;
   }
 }
-/* Mobile styles */
+
 @media screen and (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -1888,4 +1903,4 @@ input:checked + .slider:before {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+
