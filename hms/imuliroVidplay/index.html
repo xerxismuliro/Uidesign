@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidPlay - Your Personal Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VidPlay</h1>
+            <p>Your Personal Video Collection</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">My Videos</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Playlists</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    <source src="vids/imulirosamplevid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="video-controls">
+                <h2 id="video-title">Sample Video</h2>
+                <div class="controls-wrapper">
+                    <button id="prev-btn">Previous</button>
+                    <button id="play-btn">Play</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+        </main>
+        
+        <aside>
+            <h3>Video Playlist</h3>
+            <ul id="playlist">
+                <li class="active" data-src="vids/imulirosamplevid.mp4">Sample Video</li>
+            </ul>
+        </aside>
+        
+        <footer>
+            <p>&copy; 2025 VidPlay by Isaac Muliro</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
