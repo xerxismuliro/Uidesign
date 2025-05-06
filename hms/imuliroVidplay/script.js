@@ -1,4 +1,4 @@
-/* filepath: /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/imuliroVidplay/script.js */
+
 document.addEventListener('DOMContentLoaded', function() {
     const videoPlayer = document.getElementById('videoPlayer');
     const videoTitle = document.getElementById('video-title');
