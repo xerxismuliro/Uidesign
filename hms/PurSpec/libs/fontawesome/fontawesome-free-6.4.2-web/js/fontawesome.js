@@ -1,19 +1,8 @@
-/**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
+/*!
+ * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
  */
-
-
-
-
-
-
 (function () {
   'use strict';
 
@@ -297,7 +286,7 @@
   var FAMILIES = [FAMILY_CLASSIC, FAMILY_SHARP];
 
   function familyProxy(obj) {
-    
+    // Defaults to the classic family if family is not available
     return new Proxy(obj, {
       get: function get(target, prop) {
         return prop in target ? target[prop] : target[FAMILY_CLASSIC];
@@ -368,7 +357,7 @@
     'fa-regular': 'fasr',
     'fa-light': 'fasl'
   }), _familyProxy4));
-  var ICON_SELECTION_SYNTAX_PATTERN = /fa(s|r|l|t|d|b|k|ss|sr|sl)?[\-\ ]/; 
+  var ICON_SELECTION_SYNTAX_PATTERN = /fa(s|r|l|t|d|b|k|ss|sr|sl)?[\-\ ]/; // eslint-disable-line no-useless-escape
 
   var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
   var FONT_FAMILY_PATTERN = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp|Kit)?.*/i;
@@ -412,8 +401,8 @@
   }
 
   function coerce(val) {
-    
-    
+    // Getting an empty string will occur if the attribute is set on the HTML tag but without a value
+    // We'll assume that this is an indication that it should be toggled to true
     if (val === '') return true;
     if (val === 'false') return false;
     if (val === 'true') return true;
@@ -449,7 +438,7 @@
     keepOriginalSource: true,
     measurePerformance: false,
     showMissingIcons: true
-  }; 
+  }; // familyPrefix is deprecated but we must still support it if present
 
   if (initial.familyPrefix) {
     initial.cssPrefix = initial.familyPrefix;
@@ -473,7 +462,7 @@
         return _config[key];
       }
     });
-  }); 
+  }); // familyPrefix is deprecated as of 6.2.0 and should be removed in 7.0.0
 
   Object.defineProperty(config, 'familyPrefix', {
     enumerable: true,
@@ -735,7 +724,10 @@
     }
   }
 
-  
+  /**
+   * Internal helper to bind a function known to have 4 arguments
+   * to a given context.
+   */
 
   var bindInternal4 = function bindInternal4(func, thisContext) {
     return function (a, b, c, d) {
@@ -743,7 +735,17 @@
     };
   };
 
-  
+  /**
+   * # Reduce
+   *
+   * A fast object `.reduce()` implementation.
+   *
+   * @param  {Object}   subject      The object to reduce over.
+   * @param  {Function} fn           The reducer function.
+   * @param  {mixed}    initialValue The initial value for the reducer, defaults to subject[0].
+   * @param  {Object}   thisContext  The context for the reducer.
+   * @return {mixed}                 The final result.
+   */
 
 
   var reduce = function fastReduceObject(subject, fn, initialValue, thisContext) {
@@ -770,7 +772,30 @@
     return result;
   };
 
-  
+  /**
+   * ucs2decode() and codePointAt() are both works of Mathias Bynens and licensed under MIT
+   *
+   * Copyright Mathias Bynens <https://mathiasbynens.be/>
+
+   * Permission is hereby granted, free of charge, to any person obtaining
+   * a copy of this software and associated documentation files (the
+   * "Software"), to deal in the Software without restriction, including
+   * without limitation the rights to use, copy, modify, merge, publish,
+   * distribute, sublicense, and/or sell copies of the Software, and to
+   * permit persons to whom the Software is furnished to do so, subject to
+   * the following conditions:
+
+   * The above copyright notice and this permission notice shall be
+   * included in all copies or substantial portions of the Software.
+
+   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+   * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+   * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   */
   function ucs2decode(string) {
     var output = [];
     var counter = 0;
@@ -783,7 +808,7 @@
         var extra = string.charCodeAt(counter++);
 
         if ((extra & 0xFC00) == 0xDC00) {
-          
+          // eslint-disable-line eqeqeq
           output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
         } else {
           output.push(value);
@@ -843,7 +868,12 @@
     } else {
       namespace.styles[prefix] = _objectSpread2(_objectSpread2({}, namespace.styles[prefix] || {}), normalized);
     }
-    
+    /**
+     * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
+     * of new styles we needed to differentiate between them. Prefix `fa` is now an alias
+     * for `fas` so we'll ease the upgrade process for our users by automatically defining
+     * this as well.
+     */
 
 
     if (prefix === 'fas') {
@@ -851,15 +881,15 @@
     }
   }
 
-  var duotonePathRe = [_wrapRegExp(/path d="((?:(?!")[\s\S])+)".*path d="((?:(?!")[\s\S])+)"/, {
+  var duotonePathRe = [/*#__PURE__*/_wrapRegExp(/path d="((?:(?!")[\s\S])+)".*path d="((?:(?!")[\s\S])+)"/, {
     d1: 1,
     d2: 2
-  }), _wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)".*path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
+  }), /*#__PURE__*/_wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)".*path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
     cls1: 1,
     d1: 2,
     cls2: 3,
     d2: 4
-  }), _wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
+  }), /*#__PURE__*/_wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
     cls1: 1,
     d1: 2
   })];
@@ -936,8 +966,8 @@
         acc[alias] = iconName;
       });
       return acc;
-    }); 
-    
+    }); // If we have a Kit, we can't determine if regular is available since we
+    // could be auto-fetching it. We'll have to assume that it is available.
 
     var hasRegular = 'far' in styles || config.autoFetchSvg;
     var shimLookups = reduce(shims, function (acc, shim) {
@@ -1078,8 +1108,8 @@
         acc.prefix = shim.prefix || acc.prefix;
 
         if (acc.prefix === 'far' && !styles['far'] && styles['fas'] && !config.autoFetchSvg) {
-          
-          
+          // Allow a fallback from the regular style to solid if regular is not available
+          // but only if we aren't auto-fetching SVGs
           acc.prefix = 'fas';
         }
       }
@@ -1101,15 +1131,15 @@
     }
 
     if (canonical.prefix === 'fa' || givenPrefix === 'fa') {
-      
-      
+      // The fa prefix is not canonical. So if it has made it through until this point
+      // we will shift it to the correct prefix.
       canonical.prefix = getDefaultUsablePrefix() || 'fas';
     }
 
     return canonical;
   }
 
-  var Library = function () {
+  var Library = /*#__PURE__*/function () {
     function Library() {
       _classCallCheck(this, Library);
 
@@ -1128,7 +1158,7 @@
         var additions = definitions.reduce(this._pullDefinitions, {});
         Object.keys(additions).forEach(function (key) {
           _this.definitions[key] = _objectSpread2(_objectSpread2({}, _this.definitions[key] || {}), additions[key]);
-          defineIcons(key, additions[key]); 
+          defineIcons(key, additions[key]); // TODO can we stop doing this? We can't get the icons by 'fa-solid' any longer so this probably needs to change
 
           var longPrefix = PREFIX_TO_LONG_STYLE[FAMILY_CLASSIC][key];
           if (longPrefix) defineIcons(longPrefix, additions[key]);
@@ -1228,7 +1258,7 @@
 
     var hookFns = _hooks[hook] || [];
     hookFns.forEach(function (hookFn) {
-      accumulator = hookFn.apply(null, [accumulator].concat(args)); 
+      accumulator = hookFn.apply(null, [accumulator].concat(args)); // eslint-disable-line no-useless-call
     });
     return accumulator;
   }
@@ -1499,7 +1529,7 @@
         'data-icon': iconName,
         'class': attrClass,
         'role': extra.attributes.role || 'img',
-        'xmlns': 'http:
+        'xmlns': 'http://www.w3.org/2000/svg',
         'viewBox': "0 0 ".concat(width, " ").concat(height)
       })
     };
@@ -1793,7 +1823,7 @@
   }
 
   function createElementNS(tag) {
-    return DOCUMENT.createElementNS('http:
+    return DOCUMENT.createElementNS('http://www.w3.org/2000/svg', tag);
   }
 
   function createElement(tag) {
@@ -1824,10 +1854,10 @@
 
   function nodeAsComment(node) {
     var comment = " ".concat(node.outerHTML, " ");
-    
+    /* BEGIN.ATTRIBUTION */
 
     comment = "".concat(comment, "Font Awesome fontawesome.com ");
-    
+    /* END.ATTRIBUTION */
 
     return comment;
   }
@@ -1851,8 +1881,8 @@
     },
     nest: function nest(mutation) {
       var node = mutation[0];
-      var _abstract2 = mutation[1]; 
-      
+      var _abstract2 = mutation[1]; // If we already have a replaced node we do not want to continue nesting within it.
+      // Short-circuit to the standard replacement
 
       if (~classArray(node).indexOf(config.replacementClass)) {
         return mutators.replace(mutation);
@@ -2170,7 +2200,7 @@
 
     try {
       candidates = toArray(root.querySelectorAll(prefixesDomQuery));
-    } catch (e) {
+    } catch (e) {// noop
     }
 
     if (candidates.length > 0) {
@@ -2557,7 +2587,7 @@
     var pendingAttribute = "".concat(DATA_FA_PSEUDO_ELEMENT_PENDING).concat(position.replace(':', '-'));
     return new Promise(function (resolve, reject) {
       if (node.getAttribute(pendingAttribute) !== null) {
-        
+        // This node is already being processed
         return resolve();
       }
 
@@ -2571,9 +2601,9 @@
       var content = styles.getPropertyValue('content');
 
       if (alreadyProcessedPseudoElement && !fontFamily) {
-        
-        
-        
+        // If we've already processed it but the current computed style does not result in a font-family,
+        // that probably means that a class name that was previously present to make the icon has been
+        // removed. So we now should delete the icon.
         node.removeChild(alreadyProcessedPseudoElement);
         return resolve();
       } else if (fontFamily && content !== 'none' && content !== '') {
@@ -2597,15 +2627,15 @@
             iconName = iconName4.iconName;
             prefix = iconName4.prefix;
           }
-        } 
-        
+        } // Only convert the pseudo element in this ::before/::after position into an icon if we haven't
+        // already done so with the same prefix and iconName
 
 
         if (iconName && !isSecondary && (!alreadyProcessedPseudoElement || alreadyProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix || alreadyProcessedPseudoElement.getAttribute(DATA_ICON) !== iconIdentifier)) {
           node.setAttribute(pendingAttribute, iconIdentifier);
 
           if (alreadyProcessedPseudoElement) {
-            
+            // Delete the old one, since we're replacing it with a new one
             node.removeChild(alreadyProcessedPseudoElement);
           }
 
@@ -2624,7 +2654,7 @@
               watchable: true
             }));
 
-            var element = DOCUMENT.createElementNS('http:
+            var element = DOCUMENT.createElementNS('http://www.w3.org/2000/svg', 'svg');
 
             if (position === '::before') {
               node.insertBefore(element, node.firstChild);
@@ -2992,7 +3022,7 @@
           attributeType: 'XML',
           repeatCount: 'indefinite',
           dur: '2s'
-        }; 
+        }; // Ring
 
         gChildren.push({
           tag: 'path',
@@ -3046,7 +3076,7 @@
         });
 
         if (!reduceMotion) {
-          
+          // Exclamation
           gChildren.push({
             tag: 'path',
             attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {

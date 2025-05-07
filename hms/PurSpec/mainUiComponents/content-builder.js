@@ -1,40 +1,35 @@
 /**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
+ * Builds all content sections
  */
-
-
-
 function buildContentSections() {
-  const contentContainer = document.querySelector('.content');
-  if (!contentContainer) return;
+    const contentContainer = document.querySelector('.content');
+    if (!contentContainer) return;
+    
+    // Clear existing content
+    contentContainer.innerHTML = '';
+    
+    // Build each section
+    buildDefaultSection(contentContainer);
+    buildVoiceCommandsSection(contentContainer);
+    buildBookmarksSection(contentContainer);
+    buildHistorySection(contentContainer);
+    buildSettingsSection(contentContainer);
+    buildHelpSection(contentContainer);
+    buildAccessibilitySection(contentContainer);
+    
+    // Show default section
+    showSection('default');
+}
 
-
-  contentContainer.innerHTML = '';
-
-
-  buildDefaultSection(contentContainer);
-  buildVoiceCommandsSection(contentContainer);
-  buildBookmarksSection(contentContainer);
-  buildHistorySection(contentContainer);
-  buildSettingsSection(contentContainer);
-  buildHelpSection(contentContainer);
-  buildAccessibilitySection(contentContainer);
-
-
-  showSection('default');
-} function buildDefaultSection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'default';
-
-  section.innerHTML = `
+/**
+ * Builds the default welcome section
+ */
+function buildDefaultSection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'default';
+    
+    section.innerHTML = `
         <h2>Welcome to Voice Web Navigator</h2>
         <p>This application allows you to navigate the web using voice commands. Simply speak the name of a website or select an option from the sidebar.</p>
         <div class="voice-demo">
@@ -47,27 +42,32 @@ function buildContentSections() {
             <button id="quick-start"><i class="fas fa-play"></i> Quick Start</button>
         </div>
     `;
+    
+    container.appendChild(section);
+    
+    // Add event listener to quick start button
+    const quickStartBtn = section.querySelector('#quick-start');
+    if (quickStartBtn) {
+        quickStartBtn.addEventListener('click', () => {
+            if (typeof startVoiceRecognition === 'function' && 
+                typeof recognition !== 'undefined' && 
+                !isListening) {
+                startVoiceRecognition(recognition);
+            }
+            showSection("voice-commands");
+        });
+    }
+}
 
-  container.appendChild(section);
-
-
-  const quickStartBtn = section.querySelector('#quick-start');
-  if (quickStartBtn) {
-    quickStartBtn.addEventListener('click', () => {
-      if (typeof startVoiceRecognition === 'function' &&
-      typeof recognition !== 'undefined' &&
-      !isListening) {
-        startVoiceRecognition(recognition);
-      }
-      showSection("voice-commands");
-    });
-  }
-} function buildVoiceCommandsSection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'voice-commands';
-
-  section.innerHTML = `
+/**
+ * Builds the voice commands section
+ */
+function buildVoiceCommandsSection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'voice-commands';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-microphone"></i> Voice Commands</h2>
         <p>Use these voice commands to navigate:</p>
         <div class="commands-list">
@@ -92,14 +92,19 @@ function buildContentSections() {
             </div>
         </div>
     `;
+    
+    container.appendChild(section);
+}
 
-  container.appendChild(section);
-} function buildBookmarksSection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'bookmarks';
-
-  section.innerHTML = `
+/**
+ * Builds the bookmarks section
+ */
+function buildBookmarksSection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'bookmarks';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
         <p>Your saved bookmarks:</p>
         <div class="bookmarks-grid">
@@ -125,36 +130,41 @@ function buildContentSections() {
             </div>
         </div>
     `;
-
-  container.appendChild(section);
-
-
-  const bookmarkItems = section.querySelectorAll('.bookmark-item:not(.add-bookmark)');
-  bookmarkItems.forEach((item) => {
-    item.addEventListener('click', function () {
-      const siteName = this.querySelector('span').textContent;
-      if (typeof navigateToWebsite === 'function') {
-        navigateToWebsite(siteName);
-      }
+    
+    container.appendChild(section);
+    
+    // Add event listeners for bookmark items
+    const bookmarkItems = section.querySelectorAll('.bookmark-item:not(.add-bookmark)');
+    bookmarkItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const siteName = this.querySelector('span').textContent;
+            if (typeof navigateToWebsite === 'function') {
+                navigateToWebsite(siteName);
+            }
+        });
     });
-  });
+    
+    // Add event listener for "Add Bookmark" button
+    const addBookmarkBtn = section.querySelector('.add-bookmark');
+    if (addBookmarkBtn) {
+        addBookmarkBtn.addEventListener('click', function() {
+            // Handle adding a new bookmark
+            if (typeof addBookmark === 'function') {
+                addBookmark();
+            }
+        });
+    }
+}
 
-
-  const addBookmarkBtn = section.querySelector('.add-bookmark');
-  if (addBookmarkBtn) {
-    addBookmarkBtn.addEventListener('click', function () {
-
-      if (typeof addBookmark === 'function') {
-        addBookmark();
-      }
-    });
-  }
-} function buildHistorySection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'history';
-
-  section.innerHTML = `
+/**
+ * Builds the history section
+ */
+function buildHistorySection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'history';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-history"></i> History</h2>
         <p>Your browsing history:</p>
         <ul class="history-list">
@@ -177,37 +187,42 @@ function buildContentSections() {
         </ul>
         <button class="clear-history"><i class="fas fa-trash"></i> Clear History</button>
     `;
-
-  container.appendChild(section);
-
-
-  const clearHistoryBtn = section.querySelector('.clear-history');
-  if (clearHistoryBtn) {
-    clearHistoryBtn.addEventListener('click', function () {
-
-      if (typeof clearHistory === 'function') {
-        clearHistory();
-      }
+    
+    container.appendChild(section);
+    
+    // Add event listener for clear history button
+    const clearHistoryBtn = section.querySelector('.clear-history');
+    if (clearHistoryBtn) {
+        clearHistoryBtn.addEventListener('click', function() {
+            // Clear history functionality
+            if (typeof clearHistory === 'function') {
+                clearHistory();
+            }
+        });
+    }
+    
+    // Add event listeners for history items
+    const historyItems = section.querySelectorAll('.history-list li');
+    historyItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const siteText = this.querySelector('span').textContent;
+            const siteName = siteText.split(' - ')[0]; // Extract site name
+            if (typeof navigateToWebsite === 'function') {
+                navigateToWebsite(siteName);
+            }
+        });
     });
-  }
+}
 
-
-  const historyItems = section.querySelectorAll('.history-list li');
-  historyItems.forEach((item) => {
-    item.addEventListener('click', function () {
-      const siteText = this.querySelector('span').textContent;
-      const siteName = siteText.split(' - ')[0];
-      if (typeof navigateToWebsite === 'function') {
-        navigateToWebsite(siteName);
-      }
-    });
-  });
-} function buildSettingsSection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'settings';
-
-  section.innerHTML = `
+/**
+ * Builds the settings section
+ */
+function buildSettingsSection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'settings';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-cog"></i> Settings</h2>
         <div class="settings-section">
             <h3>Voice Recognition</h3>
@@ -251,39 +266,44 @@ function buildContentSections() {
             </div>
         </div>
     `;
+    
+    container.appendChild(section);
+    
+    // Add event listeners for settings controls
+    const fontSizeSelect = section.querySelector('#font-size');
+    if (fontSizeSelect) {
+        fontSizeSelect.addEventListener('change', function() {
+            document.body.setAttribute('data-font-size', this.value);
+            if (typeof saveSettings === 'function') {
+                saveSettings('fontSize', this.value);
+            }
+        });
+    }
+    
+    const highContrastToggle = section.querySelector('#high-contrast');
+    if (highContrastToggle) {
+        highContrastToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('high-contrast');
+            } else {
+                document.body.classList.remove('high-contrast');
+            }
+            if (typeof saveSettings === 'function') {
+                saveSettings('highContrast', this.checked);
+            }
+        });
+    }
+}
 
-  container.appendChild(section);
-
-
-  const fontSizeSelect = section.querySelector('#font-size');
-  if (fontSizeSelect) {
-    fontSizeSelect.addEventListener('change', function () {
-      document.body.setAttribute('data-font-size', this.value);
-      if (typeof saveSettings === 'function') {
-        saveSettings('fontSize', this.value);
-      }
-    });
-  }
-
-  const highContrastToggle = section.querySelector('#high-contrast');
-  if (highContrastToggle) {
-    highContrastToggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('high-contrast');
-      } else {
-        document.body.classList.remove('high-contrast');
-      }
-      if (typeof saveSettings === 'function') {
-        saveSettings('highContrast', this.checked);
-      }
-    });
-  }
-} function buildHelpSection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'help';
-
-  section.innerHTML = `
+/**
+ * Builds the help section
+ */
+function buildHelpSection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'help';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-question-circle"></i> Help</h2>
         <div class="help-section">
             <h3>Frequently Asked Questions</h3>
@@ -306,22 +326,27 @@ function buildContentSections() {
         </div>
         <button class="help-button"><i class="fas fa-envelope"></i> Contact Support</button>
     `;
+    
+    container.appendChild(section);
+    
+    // Add event listener for contact support button
+    const contactBtn = section.querySelector('.help-button');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', function() {
+            window.open('mailto:support@example.com?subject=Voice Web Navigator Support', '_blank');
+        });
+    }
+}
 
-  container.appendChild(section);
-
-
-  const contactBtn = section.querySelector('.help-button');
-  if (contactBtn) {
-    contactBtn.addEventListener('click', function () {
-      window.open('mailto:support@example.com?subject=Voice Web Navigator Support', '_blank');
-    });
-  }
-} function buildAccessibilitySection(container) {
-  const section = document.createElement('div');
-  section.className = 'content-section';
-  section.id = 'accessibility';
-
-  section.innerHTML = `
+/**
+ * Builds the accessibility section
+ */
+function buildAccessibilitySection(container) {
+    const section = document.createElement('div');
+    section.className = 'content-section';
+    section.id = 'accessibility';
+    
+    section.innerHTML = `
         <h2><i class="fas fa-universal-access"></i> Accessibility</h2>
         <p>Voice Web Navigator is designed to be accessible to all users:</p>
         <div class="accessibility-features">
@@ -347,30 +372,35 @@ function buildContentSections() {
             </div>
         </div>
     `;
-
-  container.appendChild(section);
-} function showSection(sectionId) {
-
-  const sections = document.querySelectorAll('.content-section');
-  sections.forEach((section) => {
-    section.classList.remove('active');
-  });
-
-
-  const targetSection = document.getElementById(sectionId);
-  if (targetSection) {
-    targetSection.classList.add('active');
-  }
-
-
-  const sidebarItems = document.querySelectorAll('.sidebar-item a');
-  sidebarItems.forEach((item) => {
-    item.classList.remove('active');
-    if (item.getAttribute('data-content') === sectionId) {
-      item.classList.add('active');
-    }
-  });
+    
+    container.appendChild(section);
 }
 
+/**
+ * Handles showing a specific content section
+ */
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+    
+    // Show the requested section
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        targetSection.classList.add('active');
+    }
+    
+    // Highlight the active sidebar item
+    const sidebarItems = document.querySelectorAll('.sidebar-item a');
+    sidebarItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('data-content') === sectionId) {
+            item.classList.add('active');
+        }
+    });
+}
 
+// Initialize content sections when the DOM is loaded
 document.addEventListener('DOMContentLoaded', buildContentSections);

@@ -1,19 +1,4 @@
-/*
-   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
-  
-  Usage Guidelines:
-  - Maintain the CSS variable structure for theming
-  - Mobile-first approach for all responsive styling
-  - Class names follow BEM methodology
-  - For questions or contributions, contact isaac.muliro@purchase.edu
-  - Last updated: 2025-05-06
-*/
-
-
-
-
-
-
+/* Root variables */
 :root {
     --background-color: #000000f1;
     --panel-bg: #303030b4;
@@ -27,21 +12,21 @@
     --allINtopBarborderbotAndTop: #151515;
 }
 
-
+/* Dark theme variations */
 [data-theme="dark"] {
     --background-color: #212121;
     --panel-bg: #2c2c2c;
     --border-color: #1a478c;
 }
 
-
+/* Base styles */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
+/* Also ensure body and html have no scrolling */
 html, body {
     margin: 0;
     padding: 0;
@@ -60,14 +45,14 @@ body {
 .holy-grail {
     display: flex;
     flex-direction: column;
-    height: 100vh; 
-    overflow: hidden; 
+    height: 100vh; /* Use exact viewport height instead of min-height */
+    overflow: hidden; /* Prevent body scrolling */
 }
 
 .holy-grail-body {
     display: flex;
     flex: 1;
-    overflow: hidden; 
+    overflow: hidden; /* Prevent body scrolling */
 }
 
 
@@ -79,7 +64,7 @@ body {
     align-items: center;
     padding: 0 20px;
     border-bottom: 1px solid var(--allINtopBarborderbotAndTop);
-    flex-shrink: 0; 
+    flex-shrink: 0; /* Prevent header from shrinking */
 }
 
 .holy-grail-header .logo {
@@ -106,8 +91,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    overflow-y: auto; 
-    flex-shrink: 0; 
+    overflow-y: auto; /* Only sidebar content scrolls */
+    flex-shrink: 0; /* Prevent nav from shrinking */
 }
 
 
@@ -115,7 +100,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; 
+    overflow-y: auto; /* Only main content scrolls */
     padding: 0;
     background-color: transparent;
 }
@@ -140,8 +125,8 @@ body {
     background-color: rgba(48, 48, 48, 0.5);
     border-left: 1px solid rgb(57, 56, 56);
     padding: 15px;
-    overflow-y: auto; 
-    flex-shrink: 0; 
+    overflow-y: auto; /* Only sidebar content scrolls */
+    flex-shrink: 0; /* Prevent aside from shrinking */
 }
 
 
@@ -152,11 +137,11 @@ body {
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--allINtopBarborderbotAndTop);
-    flex-shrink: 0; 
+    flex-shrink: 0; /* Prevent footer from shrinking */
 }
 
 
-
+/* Content Divs */
 .contentDiv {
     display: flex;
     flex-direction: column;
@@ -164,7 +149,7 @@ body {
     margin-top: 0;
 }
 
-
+/* Left sidebar elements */
 #searchInput {
     display: flex;
     justify-content: center;
@@ -213,7 +198,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 10px;
-    
+    /* background-color: #3a4c66a8; */
     background: transparent;
     padding: 8px;
     border-radius: 8px;
@@ -245,7 +230,7 @@ body {
     cursor: pointer;
 }
 
-
+/* Icon colors */
 .icon-settings { color: #4CAF50; }
 .icon-upcoming { color: #2196F3; }
 .icon-add-event { color: #FFEB3B; }
@@ -254,7 +239,7 @@ body {
 .icon-reminders { color: #F44336; }
 .icon-help-support { color: #00BCD4; }
 
-
+/* Months With Events */
 .MonthsWthEvents-leftDiv {
     display: flex;
     flex-direction: column;
@@ -273,7 +258,7 @@ body {
     color: var(--highlight-color);
 }
 
-
+/* Table styles */
 .todo-table {
     width: 100%;
     border-collapse: collapse;
@@ -296,7 +281,7 @@ body {
 }
 
 
-
+/* Calendar */
 #calendar {
     display: flex;
     flex-wrap: wrap;
@@ -315,10 +300,10 @@ body {
     text-align: center;
 }
 
-
+/* Add this to your CSS file */
 .days {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
+    grid-template-columns: repeat(7, 1fr); /* Creates 7 columns for days (Sun-Sat) */
     gap: 2px;
     margin-top: 8px;
 }
@@ -355,7 +340,7 @@ body {
 
 
 
-
+/* Form styles */
 #addEventSection {
     display: flex;
     flex-direction: column;
@@ -417,7 +402,7 @@ body {
     background-color: #0056b3;
 }
 
-
+/* User icon */
 .usericon {
     display: flex;
     justify-content: center;
@@ -430,7 +415,7 @@ body {
     cursor: pointer;
 }
 
-
+/* Mobile navigation */
 .mobile-nav {
     display: none;
 }
@@ -445,7 +430,7 @@ body {
     cursor: pointer;
 }
 
-
+/* Sidebar overlay for mobile */
 .sidebar-overlay {
     display: none;
     position: fixed;
@@ -457,7 +442,7 @@ body {
     z-index: 98;
 }
 
-
+/* Help & Support content */
 #helpSupportContentDiv {
     padding: 15px;
     border-radius: 8px;
@@ -472,7 +457,7 @@ body {
     color: yellow;
 }
 
-
+/* Mobile search container */
 .mobile-search-container {
     width: 100%;
     padding: 10px 15px;
@@ -493,8 +478,8 @@ body {
     border: 1px solid var(--border-color);
 }
 
-
-
+/* Media queries for responsiveness */
+/* Tablet view */
 @media (max-width: 992px) {
     :root {
         --nav-width: 220px;
@@ -502,7 +487,7 @@ body {
     }
 }
 
-
+/* Mobile view */
 @media (max-width: 768px) {
     .holy-grail-body {
         flex-direction: column;
@@ -550,13 +535,13 @@ body {
         max-height: 30vh;
     }
     
-    
+    /* Hide left sidebar search in mobile view */
     .holy-grail-nav #searchInput {
         display: none;
     }
 }
 
-
+/* Small mobile view */
 @media (max-width: 480px) {
     .holy-grail-header .logo h1 {
         font-size: 18px;

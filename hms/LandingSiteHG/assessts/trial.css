@@ -1,19 +1,4 @@
-/*
-   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
-  
-  Usage Guidelines:
-  - Maintain the CSS variable structure for theming
-  - Mobile-first approach for all responsive styling
-  - Class names follow BEM methodology
-  - For questions or contributions, contact isaac.muliro@purchase.edu
-  - Last updated: 2025-05-06
-*/
-
-
-
-
-
-
+/* Theme Variables */
 :root[data-theme="light"] {
     --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
     --text-color: #333;
@@ -46,7 +31,7 @@
     --sidebar-bg: rgba(15, 20, 40, 0.4);
     --active-nav: rgba(71, 118, 230, 0.3);
     
-    
+    /* Colorful button gradients for dark mode */
     --btn1-gradient: linear-gradient(145deg, #5614B0 0%, #3B2667 100%);
     --btn2-gradient: linear-gradient(145deg, #B24592 0%, #4B2450 100%);
     --btn3-gradient: linear-gradient(145deg, #f2709c 0%, #8b2659 100%);
@@ -58,7 +43,7 @@
     --btn9-gradient: linear-gradient(145deg, #fc4a1a 0%, #8C1B09 100%);
     --btn10-gradient: linear-gradient(145deg, #00b09b 0%, #015e52 100%);
     
-    
+    /* Icon gradients for dark mode */
     --icon1-gradient: linear-gradient(135deg, #667eea 0%, #4d6ad8 100%);
     --icon2-gradient: linear-gradient(135deg, #ff9a9e 0%, #e57d8b 100%);
     --icon3-gradient: linear-gradient(135deg, #a18cd1 0%, #8675c7 100%);
@@ -70,7 +55,7 @@
     --icon9-gradient: linear-gradient(135deg, #ff9a9e 0%, #fa7e89 100%);
     --icon10-gradient: linear-gradient(135deg, #96e6a1 0%, #6dcb89 100%);
     
-    
+    /* Icon colors for dark mode */
     --icon1-color: #a0c4ff;
     --icon2-color: #ffb8b8;
     --icon3-color: #c8b6ff;
@@ -118,7 +103,7 @@ body {
     position: relative;
 }
 
-
+/* Canvas and Overlay Positioning */
 #particles-canvas {
     position: absolute;
     top: 0;
@@ -135,24 +120,24 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    pointer-events: none; 
+    pointer-events: none; /* Allow clicks to pass through */
 }
 
-
+/* Light theme gradient overlay */
 html[data-theme="light"] .gradient-overlay {
     background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.8), rgba(240, 244, 248, 0.5)),
     radial-gradient(circle at bottom left, rgba(210, 235, 255, 0.5), rgba(255, 255, 255, 0.3));
     mix-blend-mode: overlay;
 }
 
-
+/* Dark theme gradient overlay */
 html[data-theme="dark"] .gradient-overlay {
     background: radial-gradient(circle at top right, rgba(20, 30, 60, 0.8), rgba(10, 15, 30, 0.5)),
     radial-gradient(circle at bottom left, rgba(70, 10, 80, 0.5), rgba(10, 15, 30, 0.3));
     mix-blend-mode: soft-light;
 }
 
-
+/* Holy Grail Layout Additions */
 .holy-grail {
     display: flex;
     flex-direction: column;
@@ -403,7 +388,7 @@ html[data-theme="dark"] .gradient-overlay {
     color: var(--icon-color);
 }
 
-
+/* Projects Section Styles */
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -539,7 +524,7 @@ html[data-theme="dark"] .gradient-overlay {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-
+/* About Section Styling */
 .about-section {
     margin-top: 3rem;
     padding: 2rem;
@@ -819,7 +804,7 @@ html[data-theme="dark"] .gradient-overlay {
     box-shadow: 0 8px 20px var(--hover-shadow);
 }
 
-
+/* Theme toggle button */
 .theme-toggle {
     cursor: pointer;
     font-size: 1.5rem;
@@ -841,7 +826,7 @@ html[data-theme="dark"] .gradient-overlay {
     transform: translateY(-2px);
 }
 
-
+/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .holy-grail-body {
         flex-direction: column;

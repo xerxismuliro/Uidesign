@@ -1,19 +1,9 @@
 /**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
+ * This file contains all the text values extracted from Purchase College links
+ * for use in voice recognition matching.
+ * Generated on: 4/27/2025, 8:12:57 PM
+ * Total unique values: 1185
  */
-
-
-
-
-
-
 
 const linkTextContent = [
   "- Open House",
@@ -1203,1204 +1193,1204 @@ const linkTextContent = [
   "youth"
 ];
 
-
+// Original text to URL mapping for reference
 const linkTextToUrlMap = {
-  "Welcome to Purchase College": "https:
-  "About Purchase College": "https:
-  "Academics Purchase College": "https:
-  "Admissions Purchase College": "https:
-  "Campus Life Purchase College": "https:
-  "Give to Purchase Purchase College": "https:
-  "Calendar News Purchase College": "https:
-  "Current Students Portals Purchase College": "https:
-  "Faculty and Staff News Purchase College": "https:
-  "Parents and Families Parents and Families Purchase College": "https:
-  "Alumni Purchase College": "https:
-  "Lifelong Learning School of Continuing Education Purchase College": "https:
-  "Visiting Students Office of the Registrar Purchase College": "https:
-  "Contact Us About Purchase College": "https:
-  "Accessibility Purchase College": "https:
-  "Interactive Map About Purchase College": "https:
-  "Campus Directory": "https:
-  "Offices and Services News Purchase College": "https:
-  "New York State University Police Purchase College": "https:
-  "Your Right To Know Purchase College": "https:
-  "Information Privacy Campus Technology Services Purchase College": "https:
-  "Office of Human Resources Purchase College": "https:
-  "Visit Admissions Purchase College": "https:
-  "Library Purchase College": "https:
-  "News Purchase College": "https:
-  "Youth and Precollege Programs Purchase College": "https:
-  "Adult Noncredit Programs Purchase College": "https:
-  "Acting Purchase College": "https:
-  "Anthropology Purchase College": "https:
-  "Art History Purchase College": "https:
-  "Art History (MA) Purchase College": "https:
-  "Foundations Program Purchase College": "https:
-  "Arts Management Purchase College": "https:
-  "Music Industry Concentration Arts Management Purchase College": "https:
-  "Performing Arts Concentration Arts Management Purchase College": "https:
-  "Arts Open Access School of the Arts Purchase College": "https:
-  "Asian Studies Purchase College": "https:
-  "Biochemistry Purchase College": "https:
-  "Biology Purchase College": "https:
-  "Concentrations Biology Purchase College": "https:
-  "Chemistry Purchase College": "https:
-  "Chinese Purchase College": "https:
-  "Cinema and Television Studies Purchase College": "https:
-  "College and Expository Writing Program School of Humanities Purchase College": "https:
-  "Communications Purchase College": "https:
-  "Composition (Classical) Purchase College": "https:
-  "Contemplative Studies Purchase College": "https:
-  "Creative Writing Purchase College": "https:
-  "Dance Performance Purchase College": "https:
-  "Dance Performance: Ballet": "https:
-  "Dance Performance: Composition": "https:
-  "Dance Performance: Production": "https:
-  "Early Childhood Development": "https:
-  "Economics": "https:
-  "Education Studies": "https:
-  "English and Global Literatures": "https:
-  "Entrepreneurship in the Arts": "https:
-  "Environmental Studies": "https:
-  "Film": "https:
-  "Film/Video Production": "https:
-  "French": "https:
-  "Gender Studies": "https:
-  "General Studies": "https:
-  "Global Black Studies": "https:
-  "Global Studies": "https:
-  "Graphic Design": "https:
-  "Graphic Design: Illustration": "https:
-  "History": "https:
-  "Instrumental Performance": "https:
-  "Instrumental Performance: Brass": "https:
-  "Instrumental Performance: Classical Guitar": "https:
-  "Instrumental Performance: Harp": "https:
-  "Instrumental Performance: Percussion": "https:
-  "Instrumental Performance: Piano": "https:
-  "Instrumental Performance: Strings": "https:
-  "Instrumental Performance: Woodwinds": "https:
-  "Italian": "https:
-  "Jazz Studies": "https:
-  "Jewish Studies": "https:
-  "Journalism": "https:
-  "Language and Culture": "https:
-  "Latin American, Caribbean, and Latinx Studies": "https:
-  "Law and Justice Studies": "https:
-  "Liberal Arts": "https:
-  "Linguistics": "https:
-  "Mathematics/Computer Science": "https:
-  "Media Studies": "https:
-  "Museum Studies": "https:
-  "Music Minor": "https:
-  "New Media": "https:
-  "Painting and Drawing": "https:
-  "Philosophy and Critical Thought": "https:
-  "Photography": "https:
-  "Playwriting": "https:
-  "Political Science": "https:
-  "Printmaking": "https:
-  "Psychology": "https:
-  "Sculpture": "https:
-  "Sociology": "https:
-  "Spanish": "https:
-  "Studio Composition": "https:
-  "Studio Production": "https:
-  "Television Theory and Practice": "https:
-  "Theatre and Performance": "https:
-  "Theatre Design/Technology": "https:
-  "Theatre Design/Technology: Costume Design": "https:
-  "Theatre Design/Technology: Costume Technology": "https:
-  "Theatre Design/Technology: Lighting Design": "https:
-  "Theatre Design/Technology: Scenic Design": "https:
-  "Theatre Design/Technology: Sound Design": "https:
-  "Theatre Design/Technology: Stage Management": "https:
-  "Theatre Design/Technology: Technical Direction": "https:
-  "Undeclared": "https:
-  "Visual Arts (BS)": "https:
-  "Visual Arts Graduate Programs": "https:
-  "Visual Arts Minor": "https:
-  "Visual Arts, Interdisciplinary (BFA)": "https:
-  "Voice and Opera Studies": "https:
-  "Majors + Minors": "https:
-  "Virtual Tour": "https:
-  "Apply": "https:
-  "RECENT EFFORTS": "https:
-  "AW25: Alumni Showcase": "https:
-  "The Chamber Music Society of Lincoln Center": "https:
-  "MOMIX: Alice": "https:
-  "NEUBERGER MUSEUM OF ART": "https:
-  "Facts and Stats": "https:
-  "Our Campus": "https:
-  "Our Alumni": "https:
-  "President’s Welcome": "https:
-  "Diversity and Compliance": "https:
-  "Institutional Learning Outcomes": "https:
-  "Accreditation": "https:
-  "The Purchase College Strategic Plan": "https:
-  "sustainable campus": "https:
-  "Mission, Vision, and Values": "https:
-  "What's Nearby": "https:
-  "Adotei Akwei ’84": "https:
-  "James Spione ’85": "https:
-  "Parker Posey": "https:
-  "Jill Bargonetti ’85": "https:
-  "Kris Graves ’04": "https:
-  "Nationally Ranked for Graduates Who Earn PhDs": "https:
-  "Latest Rankings and Ratings": "https:
-  "Fiske Guide to Colleges 2025: “Unique Within the SUNY System”": "https:
-  "Susie Essman ’77": "https:
-  "Graduate Programs": "https:
-  "Purchase Experience": "https:
-  "Career Readiness": "https:
-  "Faculty": "https:
-  "Resources and Support": "https:
-  "Conservatory of Dance": "https:
-  "Conservatory of Music": "https:
-  "Conservatory of Theatre Arts": "https:
-  "School of Art+Design": "https:
-  "School of Film and Media Studies": "https:
-  "School of Humanities": "https:
-  "School of Liberal Studies": "https:
-  "School of Natural and Social Sciences": "https:
-  "School of Continuing Education": "https:
-  "Intergenerational Learning": "https:
-  "Broadview": "https:
-  "Summer and Winter Sessions": "https:
-  "College Catalog": "https:
-  "Your First Year": "https:
-  "Hands-On Learning": "https:
-  "LEARN MORE": "https:
-  "INSIDE LOOK": "https:
-  "Grammy Awards: Big Night for Jazz Studies": "https:
-  "Adam Nagourney ’77": "https:
-  "Latrice M. Walker ’01": "https:
-  "Erin Sullivan ’12": "https:
-  "Janette Yarwood ’96": "https:
-  "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks": "https:
-  "Math & Comp Sci Club Visits IBM Research": "https:
-  "Request Information": "https:
-  "Tuition and Aid": "https:
-  "Accepted Students": "https:
-  "First Year": "https:
-  "Transfers": "https:
-  "International Students": "https:
-  "Graduate Students": "https:
-  "Parents": "https:
-  "High School Counselors": "https:
-  "Explore Majors": "https:
-  "Why Purchase?": "https:
-  "Contact Our Team": "https:
-  "Liberal Arts and Sciences BA / BS": "https:
-  "Acting BFA": "https:
-  "Art+Design BFA / BS": "https:
-  "Creative Writing BA": "https:
-  "Dance BFA": "https:
-  "Music MusB": "https:
-  "Theatre Design/Technology BFA": "https:
-  "Visual and Performing Arts Information Session & Tour": "https:
-  "- Open House": "https:
-  "ACE Purchase": "https:
-  "Cornerstone Connect": "https:
-  "Educational Opportunity Program": "https:
-  "Global Scholars": "https:
-  "Claribel Ortega ’10": "https:
-  "Sara Richter ’24": "https:
-  "Sean Kaufman ’22": "https:
-  "Samara Joy ’21": "https:
-  "Pavani Srinivasan ’11": "https:
-  "Clubs and Organizations": "https:
-  "Student Activities": "https:
-  "Athletics": "https:
-  "Housing": "https:
-  "Dining": "https:
-  "Transportation and Amenities": "https:
-  "Health and Wellness": "https:
-  "Safety and Security": "https:
-  "Living on Campus": "https:
-  "Student Involvement": "https:
-  "SEE INSIDE": "https:
-  "Shayan Sobhian ’17": "https:
-  "Veronica Ryzio ’21": "https:
-  "Mitski Miyawaki ’13": "https:
-  "Little Monsters Show Up for Lady Gaga Night": "https:
-  "Notable Authors in Conversation": "https:
-  "Scholarships Inspire Confidence": "https:
-  "Priorities: What To Support": "https:
-  "Ways to Give": "https:
-  "Impact Stories": "https:
-  "Purchase College Foundation": "https:
-  "Our Team": "https:
-  "Victor": "https:
-  "David": "https:
-  "Tim": "https:
-  "Harley": "https:
-  "Christian": "https:
-  "Veronica": "https:
-  "Jakob": "https:
-  "Lily": "https:
-  "Meet the Filmmakers": "https:
-  "suny-sexual-violence-prevention-svp-survey": "https:
-  "guide-to-campus-resources": "https:
-  "UN Sustainability Goals Logo (Color swatches in a circle)": "https:
-  "foam rollers and balls on a yoga matt": "https:
-  "creating-unique-career-pathways-in-the-arts": "https:
-  "westchester-medical-center-health-network": "https:
-  "Picture of yoga matts and light candles on the floor with screens behind it in a warmly lit Harbor Center room.": "https:
-  "pride-trivia": "https:
-  "Show 5 more...": "https:
-  "total": "https:
-  "VIEW FULL GALLERY": "https:
-  "Academic Calendar": "https:
-  "Account Activation / Password Reset": "https:
-  "Brightspace": "https:
-  "COVID-19 Updates": "https:
-  "CTS Video Chat Tech Support Helpdesk": "https:
-  "Moodle": "https:
-  "MyHeliotrope": "https:
-  "Purchase JobScore": "https:
-  "Student Project Portal": "https:
-  "Work Study Online": "https:
-  "Health Forms": "https:
-  "Orientation": "https:
-  "Advising Center": "https:
-  "Learning Center": "https:
-  "Office of Disability Resources": "https:
-  "Counseling and Behavioral Health Services": "https:
-  "Financial Literacy": "https:
-  "Eight-Semester Graduation Plans": "https:
-  "Course Search": "https:
-  "E-Portfolios": "https:
-  "Final Exam Schedule": "https:
-  "FERPA Training": "https:
-  "Bus Service": "https:
-  "CTS/FMG Work Orders and Equipment Loans": "https:
-  "College Policies": "https:
-  "Parking and Parking Tickets": "https:
-  "Surveys": "https:
-  "Dining Dollars": "https:
-  "Visit the CTS help page for info": "https:
+  "Welcome to Purchase College": "https://www.purchase.edu",
+  "About Purchase College": "https://www.purchase.edu/about",
+  "Academics Purchase College": "https://www.purchase.edu/academics",
+  "Admissions Purchase College": "https://www.purchase.edu/admissions",
+  "Campus Life Purchase College": "https://www.purchase.edu/campus-life",
+  "Give to Purchase Purchase College": "https://www.purchase.edu/give-to-purchase",
+  "Calendar News Purchase College": "https://www.purchase.edu/calendar",
+  "Current Students Portals Purchase College": "https://www.purchase.edu/current-students",
+  "Faculty and Staff News Purchase College": "https://www.purchase.edu/faculty-and-staff",
+  "Parents and Families Parents and Families Purchase College": "https://www.purchase.edu/parents",
+  "Alumni Purchase College": "https://www.purchase.edu/alumni",
+  "Lifelong Learning School of Continuing Education Purchase College": "https://www.purchase.edu/academics/school-of-continuing-education/lifelong-learning",
+  "Visiting Students Office of the Registrar Purchase College": "https://www.purchase.edu/offices/registrar/forms-and-policies/visiting-students",
+  "Contact Us About Purchase College": "https://www.purchase.edu/about/contact-us",
+  "Accessibility Purchase College": "https://www.purchase.edu/accessibility",
+  "Interactive Map About Purchase College": "https://www.purchase.edu/about/our-campus/interactive-map",
+  "Campus Directory": "https://ssb.purchase.edu/pls/prod/gzbkcdir.p_search",
+  "Offices and Services News Purchase College": "https://www.purchase.edu/offices-and-services",
+  "New York State University Police Purchase College": "https://www.purchase.edu/offices/nysup",
+  "Your Right To Know Purchase College": "https://www.purchase.edu/right-to-know",
+  "Information Privacy Campus Technology Services Purchase College": "https://www.purchase.edu/live/blurbs/872-website-accessibility-and-privacy",
+  "Office of Human Resources Purchase College": "https://www.purchase.edu/offices/hr",
+  "Visit Admissions Purchase College": "https://www.purchase.edu/admissions/visit",
+  "Library Purchase College": "https://www.purchase.edu/library",
+  "News Purchase College": "https://www.purchase.edu/news",
+  "Youth and Precollege Programs Purchase College": "https://www.purchase.edu/academics/youth-and-precollege-programs",
+  "Adult Noncredit Programs Purchase College": "https://www.purchase.edu/academics/continuing-education",
+  "Acting Purchase College": "https://www.purchase.edu/academics/acting",
+  "Anthropology Purchase College": "https://www.purchase.edu/academics/anthropology",
+  "Art History Purchase College": "https://www.purchase.edu/academics/art-history",
+  "Art History (MA) Purchase College": "https://www.purchase.edu/academics/art-history-ma",
+  "Foundations Program Purchase College": "https://www.purchase.edu/academics/art-and-design/foundations",
+  "Arts Management Purchase College": "https://www.purchase.edu/academics/arts-management",
+  "Music Industry Concentration Arts Management Purchase College": "https://www.purchase.edu/academics/arts-management/requirements/music-industry",
+  "Performing Arts Concentration Arts Management Purchase College": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts",
+  "Arts Open Access School of the Arts Purchase College": "https://www.purchase.edu/academics/arts/open-access",
+  "Asian Studies Purchase College": "https://www.purchase.edu/academics/asian-studies",
+  "Biochemistry Purchase College": "https://www.purchase.edu/academics/biochemistry",
+  "Biology Purchase College": "https://www.purchase.edu/academics/biology",
+  "Concentrations Biology Purchase College": "https://www.purchase.edu/academics/biology/requirements/concentrations",
+  "Chemistry Purchase College": "https://www.purchase.edu/academics/chemistry",
+  "Chinese Purchase College": "https://www.purchase.edu/academics/chinese",
+  "Cinema and Television Studies Purchase College": "https://www.purchase.edu/academics/cinema-and-television-studies",
+  "College and Expository Writing Program School of Humanities Purchase College": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program",
+  "Communications Purchase College": "https://www.purchase.edu/academics/communications",
+  "Composition (Classical) Purchase College": "https://www.purchase.edu/academics/classical-composition",
+  "Contemplative Studies Purchase College": "https://www.purchase.edu/academics/contemplative-studies",
+  "Creative Writing Purchase College": "https://www.purchase.edu/academics/creative-writing",
+  "Dance Performance Purchase College": "https://www.purchase.edu/academics/dance-performance",
+  "Dance Performance: Ballet": "https://www.purchase.edu/academics/dance-performance/requirements/ballet-concentration",
+  "Dance Performance: Composition": "https://www.purchase.edu/academics/dance-performance/requirements/composition-concentration",
+  "Dance Performance: Production": "https://www.purchase.edu/academics/dance-performance/requirements/production-concentration",
+  "Early Childhood Development": "https://www.purchase.edu/academics/psychology/certificate-in-early-childhood-development",
+  "Economics": "https://www.purchase.edu/academics/economics",
+  "Education Studies": "https://www.purchase.edu/academics/education-studies",
+  "English and Global Literatures": "https://www.purchase.edu/academics/english-and-global-literatures",
+  "Entrepreneurship in the Arts": "https://www.purchase.edu/academics/entrepreneurship-in-the-arts",
+  "Environmental Studies": "https://www.purchase.edu/academics/environmental-studies",
+  "Film": "https://www.purchase.edu/academics/film",
+  "Film/Video Production": "https://www.purchase.edu/academics/film-video-production",
+  "French": "https://www.purchase.edu/academics/french",
+  "Gender Studies": "https://www.purchase.edu/academics/gender-studies",
+  "General Studies": "https://www.purchase.edu/academics/general-studies",
+  "Global Black Studies": "https://www.purchase.edu/academics/global-black-studies",
+  "Global Studies": "https://www.purchase.edu/academics/global-studies",
+  "Graphic Design": "https://www.purchase.edu/academics/graphic-design",
+  "Graphic Design: Illustration": "https://www.purchase.edu/academics/graphic-design/requirements/illustration",
+  "History": "https://www.purchase.edu/academics/history",
+  "Instrumental Performance": "https://www.purchase.edu/academics/instrumental-performance",
+  "Instrumental Performance: Brass": "https://www.purchase.edu/academics/instrumental-performance/brass",
+  "Instrumental Performance: Classical Guitar": "https://www.purchase.edu/academics/instrumental-performance/classical-guitar",
+  "Instrumental Performance: Harp": "https://www.purchase.edu/academics/instrumental-performance/harp",
+  "Instrumental Performance: Percussion": "https://www.purchase.edu/academics/instrumental-performance/percussion",
+  "Instrumental Performance: Piano": "https://www.purchase.edu/academics/instrumental-performance/piano",
+  "Instrumental Performance: Strings": "https://www.purchase.edu/academics/instrumental-performance/strings",
+  "Instrumental Performance: Woodwinds": "https://www.purchase.edu/academics/instrumental-performance/woodwinds",
+  "Italian": "https://www.purchase.edu/academics/italian",
+  "Jazz Studies": "https://www.purchase.edu/academics/jazz-studies",
+  "Jewish Studies": "https://www.purchase.edu/academics/jewish-studies",
+  "Journalism": "https://www.purchase.edu/academics/journalism",
+  "Language and Culture": "https://www.purchase.edu/academics/language-and-culture",
+  "Latin American, Caribbean, and Latinx Studies": "https://www.purchase.edu/academics/latin-american-caribbean-and-latinx-studies",
+  "Law and Justice Studies": "https://www.purchase.edu/academics/law-and-justice-studies",
+  "Liberal Arts": "https://www.purchase.edu/academics/liberal-arts",
+  "Linguistics": "https://www.purchase.edu/academics/linguistics",
+  "Mathematics/Computer Science": "https://www.purchase.edu/academics/mathematics-computer-science",
+  "Media Studies": "https://www.purchase.edu/academics/media-studies",
+  "Museum Studies": "https://www.purchase.edu/academics/museum-studies",
+  "Music Minor": "https://www.purchase.edu/academics/music/music-minor",
+  "New Media": "https://www.purchase.edu/academics/new-media",
+  "Painting and Drawing": "https://www.purchase.edu/academics/painting-and-drawing",
+  "Philosophy and Critical Thought": "https://www.purchase.edu/academics/philosophy-and-critical-thought",
+  "Photography": "https://www.purchase.edu/academics/photography",
+  "Playwriting": "https://www.purchase.edu/academics/playwriting-and-screenwriting",
+  "Political Science": "https://www.purchase.edu/academics/political-science",
+  "Printmaking": "https://www.purchase.edu/academics/printmaking",
+  "Psychology": "https://www.purchase.edu/academics/psychology",
+  "Sculpture": "https://www.purchase.edu/academics/sculpture",
+  "Sociology": "https://www.purchase.edu/academics/sociology",
+  "Spanish": "https://www.purchase.edu/academics/spanish",
+  "Studio Composition": "https://www.purchase.edu/academics/studio-composition",
+  "Studio Production": "https://www.purchase.edu/academics/studio-production",
+  "Television Theory and Practice": "https://www.purchase.edu/academics/television-theory-and-practice",
+  "Theatre and Performance": "https://www.purchase.edu/academics/theatre-and-performance",
+  "Theatre Design/Technology": "https://www.purchase.edu/academics/theatre-design-technology",
+  "Theatre Design/Technology: Costume Design": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-design",
+  "Theatre Design/Technology: Costume Technology": "https://www.purchase.edu/academics/theatre-design-technology/requirements/costume-technology",
+  "Theatre Design/Technology: Lighting Design": "https://www.purchase.edu/academics/theatre-design-technology/requirements/lighting-design",
+  "Theatre Design/Technology: Scenic Design": "https://www.purchase.edu/academics/theatre-design-technology/requirements/scenic-design",
+  "Theatre Design/Technology: Sound Design": "https://www.purchase.edu/academics/theatre-design-technology/requirements/sound-design",
+  "Theatre Design/Technology: Stage Management": "https://www.purchase.edu/academics/theatre-design-technology/requirements/stage-management",
+  "Theatre Design/Technology: Technical Direction": "https://www.purchase.edu/academics/theatre-design-technology/requirements/technical-direction",
+  "Undeclared": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences/undeclared",
+  "Visual Arts (BS)": "https://www.purchase.edu/academics/visual-arts",
+  "Visual Arts Graduate Programs": "https://www.purchase.edu/academics/visual-arts-graduate-programs",
+  "Visual Arts Minor": "https://www.purchase.edu/academics/visual-arts-minor",
+  "Visual Arts, Interdisciplinary (BFA)": "https://www.purchase.edu/academics/visual-arts-interdisciplinary",
+  "Voice and Opera Studies": "https://www.purchase.edu/academics/voice-and-opera-studies",
+  "Majors + Minors": "https://www.purchase.edu/academics/majors-and-minors",
+  "Virtual Tour": "https://www.purchase.edu/admissions/virtual-tour",
+  "Apply": "https://www.purchase.edu/admissions/apply-to-purchase",
+  "RECENT EFFORTS": "https://www.purchase.edu/live/news/8277-latest-sustainability-efforts",
+  "AW25: Alumni Showcase": "https://www.purchase.edu/live/events/67283-alumni-artisan-fair",
+  "The Chamber Music Society of Lincoln Center": "https://www.purchase.edu/live/events/65015-the-chamber-music-society-of-lincoln-center",
+  "MOMIX: Alice": "https://www.purchase.edu/live/events/65016-momix-alice",
+  "NEUBERGER MUSEUM OF ART": "https://www.purchase.edu/neuberger-museum-of-art",
+  "Facts and Stats": "https://www.purchase.edu/about/facts-and-stats",
+  "Our Campus": "https://www.purchase.edu/about/our-campus",
+  "Our Alumni": "https://www.purchase.edu/about/alumni-outcomes",
+  "President’s Welcome": "https://www.purchase.edu/about/presidents-welcome",
+  "Diversity and Compliance": "https://www.purchase.edu/about/diversity-and-compliance",
+  "Institutional Learning Outcomes": "https://www.purchase.edu/about/institutional-learning-outcomes",
+  "Accreditation": "https://www.purchase.edu/about/accreditation",
+  "The Purchase College Strategic Plan": "https://www.purchase.edu/about/the-strategic-plan",
+  "sustainable campus": "https://www.purchase.edu/offices/sustainability",
+  "Mission, Vision, and Values": "https://www.purchase.edu/about/our-campus/mission-vision-values",
+  "What's Nearby": "https://www.purchase.edu/admissions/visit/where-to-stay-and-eat",
+  "Adotei Akwei ’84": "https://www.purchase.edu/live/profiles/3407-adotei-akwei-84",
+  "James Spione ’85": "https://www.purchase.edu/live/profiles/6295-james-spione-85",
+  "Parker Posey": "https://www.purchase.edu/live/profiles/1794-parker-posey",
+  "Jill Bargonetti ’85": "https://www.purchase.edu/live/profiles/3379-jill-bargonetti-85",
+  "Kris Graves ’04": "https://www.purchase.edu/live/profiles/3350-kris-graves-04",
+  "Nationally Ranked for Graduates Who Earn PhDs": "https://www.purchase.edu/live/news/7505-nationally-ranked-for-graduates-who-earn-phds",
+  "Latest Rankings and Ratings": "https://www.purchase.edu/live/news/8206-latest-rankings-and-ratings",
+  "Fiske Guide to Colleges 2025: “Unique Within the SUNY System”": "https://www.purchase.edu/live/news/8123-fiske-guide-to-colleges-2025-unique-within-the",
+  "Susie Essman ’77": "https://www.purchase.edu/live/profiles/3456-susie-essman-77",
+  "Graduate Programs": "https://www.purchase.edu/academics/graduate-programs",
+  "Purchase Experience": "https://www.purchase.edu/academics/purchase-experience",
+  "Career Readiness": "https://www.purchase.edu/academics/career-readiness",
+  "Faculty": "https://www.purchase.edu/academics/faculty",
+  "Resources and Support": "https://www.purchase.edu/academics/resources-and-support",
+  "Conservatory of Dance": "https://www.purchase.edu/academics/dance",
+  "Conservatory of Music": "https://www.purchase.edu/academics/music",
+  "Conservatory of Theatre Arts": "https://www.purchase.edu/academics/theatre-arts",
+  "School of Art+Design": "https://www.purchase.edu/academics/art-and-design",
+  "School of Film and Media Studies": "https://www.purchase.edu/academics/school-of-film-and-media-studies",
+  "School of Humanities": "https://www.purchase.edu/academics/school-of-humanities",
+  "School of Liberal Studies": "https://www.purchase.edu/academics/school-of-liberal-studies",
+  "School of Natural and Social Sciences": "https://www.purchase.edu/academics/school-of-natural-social-sciences",
+  "School of Continuing Education": "https://www.purchase.edu/academics/school-of-continuing-education",
+  "Intergenerational Learning": "https://www.purchase.edu/intergenerational-learning",
+  "Broadview": "https://www.purchase.edu/broadview",
+  "Summer and Winter Sessions": "https://www.purchase.edu/summer-and-winter-sessions",
+  "College Catalog": "https://www.purchase.edu/academics/college-catalog",
+  "Your First Year": "https://www.purchase.edu/academics/purchase-experience/first-year",
+  "Hands-On Learning": "https://www.purchase.edu/academics/purchase-experience/hands-on-learning",
+  "LEARN MORE": "https://www.purchase.edu/live/news/8280-new-cohort-of-interns-busy-in-the-field",
+  "INSIDE LOOK": "https://www.purchase.edu/academics/purchase-experience/campus-workspaces",
+  "Grammy Awards: Big Night for Jazz Studies": "https://www.purchase.edu/live/news/8523-2025-grammy-awards-big-night-for-jazz-studies",
+  "Adam Nagourney ’77": "https://www.purchase.edu/live/profiles/3378-adam-nagourney-77",
+  "Latrice M. Walker ’01": "https://www.purchase.edu/live/profiles/3377-latrice-walker-01",
+  "Erin Sullivan ’12": "https://www.purchase.edu/live/profiles/3383-erin-sullivan-12",
+  "Janette Yarwood ’96": "https://www.purchase.edu/live/profiles/3385-",
+  "Isaac Zal ’04 Turns Artists’ Visions into Metal Masterworks": "https://www.purchase.edu/live/news/8612-isaac-zal-sprachman-04-turns-artists-visions-into",
+  "Math & Comp Sci Club Visits IBM Research": "https://www.purchase.edu/live/news/8602-math-comp-sci-club-visits-ibm-research",
+  "Request Information": "https://admission.purchase.edu/register/graduateinquiry",
+  "Tuition and Aid": "https://www.purchase.edu/admissions/tuition-and-aid",
+  "Accepted Students": "https://www.purchase.edu/admissions/accepted-students",
+  "First Year": "https://www.purchase.edu/admissions/first-year",
+  "Transfers": "https://www.purchase.edu/admissions/transfers",
+  "International Students": "https://www.purchase.edu/admissions/international-students",
+  "Graduate Students": "https://www.purchase.edu/admissions/graduate-students",
+  "Parents": "https://www.purchase.edu/admissions/parents",
+  "High School Counselors": "https://www.purchase.edu/admissions/high-school-counselors",
+  "Explore Majors": "https://www.purchase.edu/majors-explorer",
+  "Why Purchase?": "https://www.purchase.edu/admissions/why-purchase",
+  "Contact Our Team": "https://www.purchase.edu/admissions/our-team",
+  "Liberal Arts and Sciences BA / BS": "https://www.purchase.edu/admissions/apply-to-purchase/liberal-arts-and-sciences",
+  "Acting BFA": "https://www.purchase.edu/admissions/apply-to-purchase/acting",
+  "Art+Design BFA / BS": "https://www.purchase.edu/admissions/apply-to-purchase/art-and-design",
+  "Creative Writing BA": "https://www.purchase.edu/admissions/apply-to-purchase/creative-writing",
+  "Dance BFA": "https://www.purchase.edu/admissions/apply-to-purchase/dance",
+  "Music MusB": "https://www.purchase.edu/admissions/apply-to-purchase/music",
+  "Theatre Design/Technology BFA": "https://www.purchase.edu/admissions/apply-to-purchase/theatre-design-technology",
+  "Visual and Performing Arts Information Session & Tour": "https://www.purchase.edu/live/events/70229-visual-and-performing-arts-information-session-amp",
+  "- Open House": "https://www.purchase.edu/live/events/71547-25-open-house",
+  "ACE Purchase": "https://www.purchase.edu/offices/advising-center/ace-purchase",
+  "Cornerstone Connect": "https://www.purchase.edu/offices/disability-resources/cornerstone-connect",
+  "Educational Opportunity Program": "https://www.purchase.edu/admissions/eop-admissions",
+  "Global Scholars": "https://www.purchase.edu/offices/global-education/global-scholars-program",
+  "Claribel Ortega ’10": "https://www.purchase.edu/live/profiles/3447-claribel-ortega-10",
+  "Sara Richter ’24": "https://www.purchase.edu/live/profiles/7625-sara-richter-24",
+  "Sean Kaufman ’22": "https://www.purchase.edu/live/profiles/5725-sean-kaufman-22",
+  "Samara Joy ’21": "https://www.purchase.edu/live/profiles/5619-samara-joy-21",
+  "Pavani Srinivasan ’11": "https://www.purchase.edu/live/profiles/6782-pavani-srinivasan-11",
+  "Clubs and Organizations": "https://www.purchase.edu/campus-life/clubs-organizations",
+  "Student Activities": "https://www.purchase.edu/campus-life/student-activities",
+  "Athletics": "https://www.purchase.edu/campus-life/athletics",
+  "Housing": "https://www.purchase.edu/campus-life/housing",
+  "Dining": "https://www.purchase.edu/campus-life/dining",
+  "Transportation and Amenities": "https://www.purchase.edu/campus-life/transportation-and-amenities",
+  "Health and Wellness": "https://www.purchase.edu/campus-life/health-and-wellness",
+  "Safety and Security": "https://www.purchase.edu/campus-life/safety-and-security",
+  "Living on Campus": "https://www.purchase.edu/offices/living-on-campus",
+  "Student Involvement": "https://www.purchase.edu/offices/student-involvement",
+  "SEE INSIDE": "https://www.purchase.edu/live/news/8275-the-stood",
+  "Shayan Sobhian ’17": "https://www.purchase.edu/live/profiles/5729-shayan-sobhian-17",
+  "Veronica Ryzio ’21": "https://www.purchase.edu/live/profiles/7259-veronica-ryzio-21",
+  "Mitski Miyawaki ’13": "https://www.purchase.edu/live/profiles/5146-mitski-miyawaki-13",
+  "Little Monsters Show Up for Lady Gaga Night": "https://www.purchase.edu/live/news/8598-little-monsters-show-up-for-lady-gaga-night",
+  "Notable Authors in Conversation": "https://www.purchase.edu/live/news/8576-notable-authors-in-conversation",
+  "Scholarships Inspire Confidence": "https://www.purchase.edu/give-to-purchase/scholarships-inspire-confidence",
+  "Priorities: What To Support": "https://www.purchase.edu/give-to-purchase/what-to-support",
+  "Ways to Give": "https://www.purchase.edu/give-to-purchase/ways-to-give",
+  "Impact Stories": "https://www.purchase.edu/give-to-purchase/impact-of-your-gift",
+  "Purchase College Foundation": "https://www.purchase.edu/give-to-purchase/purchase-college-foundation",
+  "Our Team": "https://www.purchase.edu/give-to-purchase/our-team",
+  "Victor": "https://www.purchase.edu/give-to-purchase/victors-story",
+  "David": "https://www.purchase.edu/give-to-purchase/davids-story",
+  "Tim": "https://www.purchase.edu/give-to-purchase/tims-story",
+  "Harley": "https://www.purchase.edu/give-to-purchase/harleys-story",
+  "Christian": "https://www.purchase.edu/give-to-purchase/christians-story",
+  "Veronica": "https://www.purchase.edu/give-to-purchase/veronicas-story",
+  "Jakob": "https://www.purchase.edu/give-to-purchase/jakobs-story",
+  "Lily": "https://www.purchase.edu/give-to-purchase/lilys-story",
+  "Meet the Filmmakers": "https://www.purchase.edu/live/news/8622-meet-the-filmmakers",
+  "suny-sexual-violence-prevention-svp-survey": "https://www.purchase.edu/live/news/8543-suny-sexual-violence-prevention-svp-survey",
+  "guide-to-campus-resources": "https://www.purchase.edu/live/news/8442-guide-to-campus-resources",
+  "UN Sustainability Goals Logo (Color swatches in a circle)": "https://www.purchase.edu/live/news/5445-purchase-college-joins-uns-university-global",
+  "foam rollers and balls on a yoga matt": "https://www.purchase.edu/live/events/66385-melt-method-intramurals-from-athletics-department",
+  "creating-unique-career-pathways-in-the-arts": "https://www.purchase.edu/live/events/71956-creating-unique-career-pathways-in-the-arts",
+  "westchester-medical-center-health-network": "https://www.purchase.edu/live/events/71821-westchester-medical-center-health-network",
+  "Picture of yoga matts and light candles on the floor with screens behind it in a warmly lit Harbor Center room.": "https://www.purchase.edu/live/events/70736-slow-flow-yoga",
+  "pride-trivia": "https://www.purchase.edu/live/events/71796-pride-trivia",
+  "Show 5 more...": "https://www.purchase.edu/current-students/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%2520Events%253C%252Farg%253E%253Carg%2520id%253D%2522header_block%2522%253Eh2%253C%252Farg%253E%253Carg%2520id%253D%2522exclude_tag%2522%253EPSGA%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E5%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EPortals%253C%252Farg%253E%253Carg%2520id%253D%2522tag%2522%253Efor%2520students%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522format%2522%2520encoded%253D%2522true%2522%253EVYxNCsIwEIWvEiJ0G5WsdMwp3MtghjbQRukMpZDm7k6DLlw93t9XIgpVAzEt5jki883SQllsMCVN2FOFwf8aSTKSDaVpBTf48PeUNGkNLPMr9%252BGu7gLu64DfmBXKgrM89mUt3WE9H0%252F%252BulGOLdoU2nbgFKvwJh8%253D%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E240%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E173%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+  "total": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&all=1",
+  "VIEW FULL GALLERY": "https://www.purchase.edu/live/galleries/595-communications-in-the-field",
+  "Academic Calendar": "https://www.purchase.edu/offices/registrar/academic-calendar",
+  "Account Activation / Password Reset": "https://apps.purchase.edu/passwordreset/default.aspx",
+  "Brightspace": "https://brightspace.purchase.edu",
+  "COVID-19 Updates": "https://www.purchase.edu/covid-19-updates-and-plans",
+  "CTS Video Chat Tech Support Helpdesk": "https://www.purchase.edu/live/blurbs/2551-cts-video-chat-tech-support",
+  "Moodle": "https://moodle.purchase.edu",
+  "MyHeliotrope": "https://ssb.purchase.edu/ssomanager/c/SSB",
+  "Purchase JobScore": "https://www.purchase.edu/offices/career-development/find-jobs-and-internships/purchase-jobscore",
+  "Student Project Portal": "https://apps.purchase.edu/spsubmit",
+  "Work Study Online": "https://apps.purchase.edu/workstudy/Home.aspx",
+  "Health Forms": "https://www.purchase.edu/offices/health-services/policies",
+  "Orientation": "https://www.purchase.edu/offices/orientation",
+  "Advising Center": "https://www.purchase.edu/offices/advising-center",
+  "Learning Center": "https://www.purchase.edu/offices/learning-center",
+  "Office of Disability Resources": "https://www.purchase.edu/offices/disability-resources",
+  "Counseling and Behavioral Health Services": "https://www.purchase.edu/counseling-and-behavioral-health-services",
+  "Financial Literacy": "https://www.purchase.edu/offices/student-financial-services/financial-literacy",
+  "Eight-Semester Graduation Plans": "https://www.purchase.edu/academics/biology/requirements/eight-semester-graduation-plans",
+  "Course Search": "https://apps.purchase.edu/CourseSearch/CourseSearch.aspx",
+  "E-Portfolios": "https://portfolios.purchase.edu",
+  "Final Exam Schedule": "https://www.purchase.edu/offices/registrar/final-exam-schedule",
+  "FERPA Training": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa-training",
+  "Bus Service": "https://www.purchase.edu/offices/parking-and-transportation/buses",
+  "CTS/FMG Work Orders and Equipment Loans": "https://apps.purchase.edu/wot",
+  "College Policies": "https://www.purchase.edu/college-policies",
+  "Parking and Parking Tickets": "https://www.purchase.edu/offices/parking-and-transportation/parking",
+  "Surveys": "https://survey.purchase.edu",
+  "Dining Dollars": "https://www.purchase.edu/offices/more-card/dining-dollars",
+  "Visit the CTS help page for info": "https://www.purchase.edu/offices/cts/resolving-myheliotrope-login-issues",
   "heliotropecentral@purchase.edu": "nullheliotropecentral@purchase.edu",
-  "Banner Administrator": "https:
-  "Broadcast Email (BEM)": "https:
-  "Emergency Alerts Sign-up": "https:
-  "Purchase Event Tracking (PETS)": "https:
-  "Shared Governance": "https:
-  "Slate": "https:
-  "Training": "https:
-  "Work Orders": "https:
-  "Community Assessment, Response and Education (CARE) Team": "https:
-  "Student Support and Outreach (Starfish)": "https:
-  "Advising Support": "https:
-  "Course Scheduling": "https:
-  "SnapShot": "https:
-  "Starfish Help": "https:
-  "ITAC Learning Space Conditions Survey 2021": "https:
-  "CTS Live Helpdesk Support": "https:
-  "Device Assignment Tracking (DAT)": "https:
-  "Website Help": "https:
-  "COVID-19 Reporting Form": "https:
-  "HRETS": "https:
-  "Faculty Handbook": "https:
-  "Telephone Billing System (TBS)": "https:
-  "Expose": "https:
-  "Editorial Style Guide": "https:
-  "Anonymous Workplace Violence Report": "https:
-  "Argos Reports": "https:
-  "Environmental Health and Safety": "https:
-  "Glossary of Terms": "https:
-  "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm.": "https:
-  "Stephanie LeBlanc": "https:
-  "Show 4 more...": "https:
-  "Square image with a dark blue background and the text announcing the May 2-3 dates for Alumni Weekend 2025": "https:
-  "rd Annual James Utter Natural and Social Sciences Research Symposium": "https:
-  "Square illustration with many swirled colors in the background": "https:
-  "Lisa Eadicicco '12": "https:
-  "Show 3 more...": "https:
+  "Banner Administrator": "https://banner.purchase.edu:10000/applicationNavigator",
+  "Broadcast Email (BEM)": "https://apps.purchase.edu/Restricted/BCS",
+  "Emergency Alerts Sign-up": "https://apps.purchase.edu/PersonalInfo/EmergencyContact",
+  "Purchase Event Tracking (PETS)": "https://apps.purchase.edu/PETS",
+  "Shared Governance": "https://www.purchase.edu/shared-governance",
+  "Slate": "https://admission.purchase.edu/manage",
+  "Training": "https://www.purchase.edu/offices/cts/employee-training",
+  "Work Orders": "https://apps.purchase.edu/WOT",
+  "Community Assessment, Response and Education (CARE) Team": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management/care-team",
+  "Student Support and Outreach (Starfish)": "https://www.purchase.edu/offices/student-success/student-support-and-outreach",
+  "Advising Support": "https://www.purchase.edu/offices/advising-center/advising-support",
+  "Course Scheduling": "https://www.purchase.edu/faculty-handbook/enrollment-services/course-scheduling",
+  "SnapShot": "https://apps.purchase.edu/snapshot",
+  "Starfish Help": "https://www.purchase.edu/offices/advising-center/starfish-help",
+  "ITAC Learning Space Conditions Survey 2021": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=82M1892K",
+  "CTS Live Helpdesk Support": "https://www.purchase.edu/offices/cts",
+  "Device Assignment Tracking (DAT)": "https://apps.purchase.edu/DAT/Dashboard.aspx",
+  "Website Help": "https://www.purchase.edu/help",
+  "COVID-19 Reporting Form": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=920I5962",
+  "HRETS": "https://apps.purchase.edu/hrets",
+  "Faculty Handbook": "https://www.purchase.edu/faculty-handbook",
+  "Telephone Billing System (TBS)": "https://apps.purchase.edu/TBS",
+  "Expose": "https://www.purchase.edu/academics/school-of-humanities/college-and-expository-writing-program/journal-of-expository-writing",
+  "Editorial Style Guide": "https://www.purchase.edu/editorial-style-guide",
+  "Anonymous Workplace Violence Report": "https://survey.purchase.edu/TakeSurvey.aspx?SurveyID=725K6L7",
+  "Argos Reports": "https://reports.purchase.edu",
+  "Environmental Health and Safety": "https://www.purchase.edu/offices/environmental-health-and-safety",
+  "Glossary of Terms": "https://www.purchase.edu/current-students/glossary-of-terms",
+  "Lily Bruder-Zal harvesting flowers on Vanishing Point Farm.": "https://www.purchase.edu/live/news/8623-lily-bruder-zal-04-cultivating-the-art-of-flower-farmin",
+  "Stephanie LeBlanc": "https://www.purchase.edu/live/news/8635-stephanie-leblanc-14-named-a-top-25-chief-content-leade",
+  "Show 4 more...": "https://www.purchase.edu/library/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253ENews%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E4%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+  "Square image with a dark blue background and the text announcing the May 2-3 dates for Alumni Weekend 2025": "https://www.purchase.edu/live/events/59012-alumni-weekend-2025",
+  "rd Annual James Utter Natural and Social Sciences Research Symposium": "https://www.purchase.edu/live/events/66089-james-utter-natural-and-social-sciences-research-sympo",
+  "Square illustration with many swirled colors in the background": "https://www.purchase.edu/calendar/event/67283-alumni-showcase",
+  "Lisa Eadicicco '12": "https://www.purchase.edu/live/news/8521-lisa-eadicicco-12-lands-cnn-business-role",
+  "Show 3 more...": "https://www.purchase.edu/parents/index.php?widget=news&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522news%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E3%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253EParents%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E200%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E200%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
   "family@purchase.edu": "nullfamily@purchase.edu",
-  "Get Involved": "https:
-  "Family Day": "https:
-  "Campus Resources Guide": "https:
-  "Proxy Access": "https:
-  "Glossary": "https:
-  "New Student Timeline": "https:
-  "Support Your New Student": "https:
-  "Big Differences": "https:
-  "Alumni Weekend 2025 Postcard": "https:
-  "SCHEDULE OF EVENTS": "https:
-  "REGISTER": "https:
-  "WHO’S ATTENDING": "https:
-  "Alumni Showcase": "https:
-  "Update your contact information": "https:
-  "Share your news": "https:
-  "Purchase College Alumni Association (PCAA) Committee": "https:
-  "Affinity Group": "https:
-  "Make a gift": "https:
-  "Stick Fly (BFA Junior Rep)": "https:
-  "The Seagull (BFA Junior Rep)": "https:
-  "Show 2 more...": "https:
-  "Purple cloth background with 2025 Purchase Alumni Awards in gold text with gold starbursts and accents": "https:
+  "Get Involved": "https://www.purchase.edu/alumni/get-involved",
+  "Family Day": "https://www.purchase.edu/parents/get-involved/family-day",
+  "Campus Resources Guide": "https://www.purchase.edu/parents/campus-resources-guide",
+  "Proxy Access": "https://www.purchase.edu/parents/proxy-access",
+  "Glossary": "https://www.purchase.edu/parents/for-all-students/glossary",
+  "New Student Timeline": "https://www.purchase.edu/parents/manage-the-transition/new-student-timeline",
+  "Support Your New Student": "https://www.purchase.edu/parents/manage-the-transition/support-your-new-student",
+  "Big Differences": "https://www.purchase.edu/parents/manage-the-transition/big-differences",
+  "Alumni Weekend 2025 Postcard": "https://www.purchase.edu/alumni/alumni-weekend-2025",
+  "SCHEDULE OF EVENTS": "https://www.purchase.edu/alumni/alumni-weekend",
+  "REGISTER": "https://www.purchase.edu/alumni/aw25-registration-pricing",
+  "WHO’S ATTENDING": "https://www.purchase.edu/alumni/whos-attending-alumni-weekend",
+  "Alumni Showcase": "https://www.purchase.edu/alumni/whos-exhibiting-at-the-alumni-showcase",
+  "Update your contact information": "https://www.purchase.edu/alumni/stay-in-touch/update-your-info",
+  "Share your news": "https://www.purchase.edu/alumni/stay-in-touch/share-your-news",
+  "Purchase College Alumni Association (PCAA) Committee": "https://www.purchase.edu/alumni/alumni-association/committees",
+  "Affinity Group": "https://www.purchase.edu/alumni/alumni-association/alumni-affinity-groups",
+  "Make a gift": "https://www.purchase.edu/give-to-purchase/give",
+  "Stick Fly (BFA Junior Rep)": "https://www.purchase.edu/live/events/69966-stick-fly-bfa-junior-rep",
+  "The Seagull (BFA Junior Rep)": "https://www.purchase.edu/live/events/69947-the-seagull-bfa-junior-rep",
+  "Show 2 more...": "https://www.purchase.edu/library/index.php?widget=events&livewhale=widget_paginate&syntax=%253Cwidget%2520type%253D%2522events%2522%253E%253Carg%2520id%253D%2522widget_template%2522%253Edefault%253C%252Farg%253E%253Carg%2520id%253D%2522header%2522%253EUpcoming%253A%253C%252Farg%253E%253Carg%2520id%253D%2522paginate%2522%253E2%253C%252Farg%253E%253Carg%2520id%253D%2522group%2522%253ELibrary%253C%252Farg%253E%253Carg%2520id%253D%2522hide_repeats%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522hide_date_headers%2522%253Etrue%253C%252Farg%253E%253Carg%2520id%253D%2522date_format%2522%253E%253Cspan%2520class%253D%2522cal_date%2522%253E%253Cspan%2520class%253D%2522cal_date_month%2522%253E%2525M%253C%252Fspan%253E%253Cspan%2520class%253D%2522cal_date_day%2522%253E%2525j%253C%252Fspan%253E%253C%252Fspan%253E%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_width%2522%253E270%253C%252Farg%253E%253Carg%2520id%253D%2522thumb_height%2522%253E195%253C%252Farg%253E%253C%252Fwidget%253E&page=2",
+  "Purple cloth background with 2025 Purchase Alumni Awards in gold text with gold starbursts and accents": "https://www.purchase.edu/live/news/8636-alumni-association-names-2025-award-honorees",
   "alumni@purchase.edu": "nullalumni@purchase.edu",
-  "Alumni Association": "https:
-  "Benefits and Perks": "https:
-  "College Services": "https:
-  "Events": "https:
-  "Stay in Touch": "https:
-  "proof Magazine": "https:
-  "Contact Us": "https:
-  "Professional Certificates": "https:
-  "Personal Enrichment Courses": "https:
-  "Undergraduate Courses with Noncredit Seats": "https:
-  "Courses and programs through online partners": "https:
-  "youth": "https:
-  "precollege students": "https:
-  "Fall and spring courses": "https:
-  "register for undergraduate courses": "https:
-  "summer": "https:
-  "winter": "https:
-  "Registration Procedures": "https:
-  "Older Adult Registration Information and Process": "https:
-  "approval from Purchase College to register": "https:
-  "Course Load and Overload": "https:
-  "Tuition and Fees": "https:
-  "academic-and-professional-integrity": "https:
-  "Student Code of Conduct": "https:
-  "Satisfactory Academic Progress": "https:
-  "Premedical Studies": "https:
-  "Campus Map": "https:
-  "Veteran’s Services": "http:
-  "Parking": "https:
-  "Refund Policy": "https:
-  "New York State Residency": "https:
-  "Office of the Registrar": "https:
-  "Forms and Policies": "https:
-  "Veterans’ Services": "https:
-  "Premed advising": "https:
+  "Alumni Association": "https://www.purchase.edu/alumni/alumni-association",
+  "Benefits and Perks": "https://www.purchase.edu/alumni/perks-and-benefits",
+  "College Services": "https://www.purchase.edu/alumni/college-services",
+  "Events": "https://www.purchase.edu/alumni/events",
+  "Stay in Touch": "https://www.purchase.edu/alumni/stay-in-touch",
+  "proof Magazine": "https://www.purchase.edu/alumni/purchase-magazine",
+  "Contact Us": "https://www.purchase.edu/academics/school-of-humanities/contact-us",
+  "Professional Certificates": "https://www.purchase.edu/academics/continuing-education/professional-certificates",
+  "Personal Enrichment Courses": "https://www.purchase.edu/academics/continuing-education/personal-enrichment",
+  "Undergraduate Courses with Noncredit Seats": "https://www.purchase.edu/academics/continuing-education/undergraduate-courses-with-noncredit-seats",
+  "Courses and programs through online partners": "https://www.purchase.edu/academics/continuing-education/online-noncredit-programs-and-courses",
+  "youth": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-youth-programs-in-the-arts",
+  "precollege students": "https://www.purchase.edu/academics/youth-and-precollege-programs/summer-precollege-programs-in-the-arts",
+  "Fall and spring courses": "https://www.purchase.edu/academics/youth-and-precollege-programs/fallspring-courses",
+  "register for undergraduate courses": "https://www.purchase.edu/live/blurbs/1367-are-you-ahigh-school-student-interested-in-taking",
+  "summer": "https://www.purchase.edu/summer-and-winter-sessions/summer",
+  "winter": "https://www.purchase.edu/summer-and-winter-sessions/winter",
+  "Registration Procedures": "https://www.purchase.edu/offices/registrar/forms-and-policies/registration-procedures",
+  "Older Adult Registration Information and Process": "https://www.purchase.edu/offices/registrar/senior-auditor-registration",
+  "approval from Purchase College to register": "https://www.purchase.edu/live/blurbs/1367-high-school-students-how-to-obtain-permission-to",
+  "Course Load and Overload": "https://www.purchase.edu/live/blurbs/1016-full-time-and-part-time-status-and-overload",
+  "Tuition and Fees": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/tuition-and-fees",
+  "academic-and-professional-integrity": "https://www.purchase.edu/live/blurbs/840-academic-and-professional-integrity",
+  "Student Code of Conduct": "https://www.purchase.edu/offices/community-standards/student-code-of-conduct",
+  "Satisfactory Academic Progress": "https://www.purchase.edu/live/blurbs/1042-satisfactory-academic-progress-standards-for",
+  "Premedical Studies": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies/index.php",
+  "Campus Map": "https://www.purchase.edu/live/files/220-campus-map",
+  "Veteran’s Services": "http://www.purchase.edu/offices/veterans-services",
+  "Parking": "https://www.purchase.edu/admissions/visit-campus/parking",
+  "Refund Policy": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/refund-policy",
+  "New York State Residency": "https://www.purchase.edu/offices/student-financial-services/student-accounts-billing/new-york-state-residency",
+  "Office of the Registrar": "https://www.purchase.edu/offices/registrar",
+  "Forms and Policies": "https://www.purchase.edu/offices/registrar/forms-and-policies",
+  "Veterans’ Services": "https://www.purchase.edu/offices/veterans-services",
+  "Premed advising": "https://www.purchase.edu/academics/school-of-natural-social-sciences/pre-med-advising",
   "admissions@purchase.edu": "nullpurchaseadmissions@purchase.edu",
-  "Student Data Form": "https:
-  "Student Data Form instructions": "https:
-  "purchase.edu/activate": "https:
-  "Registration User Guide": "https:
-  "myHeliotrope": "https:
-  "Student Financial Services": "https:
-  "official transcript": "https:
-  "More Card Office": "https:
+  "Student Data Form": "https://ssb.purchase.edu/pls/prod/bwskalog.p_disploginnew?in_id=&cpbl=&newid=",
+  "Student Data Form instructions": "https://www.purchase.edu/live/files/1133-student-data-form-vspdf",
+  "purchase.edu/activate": "https://www.purchase.edu/activate",
+  "Registration User Guide": "https://www.purchase.edu/live/files/1201-sugregnon-degree-studentsdocx",
+  "myHeliotrope": "https://ssb.purchase.edu/pls/prod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu",
+  "Student Financial Services": "https://www.purchase.edu/offices/student-financial-services",
+  "official transcript": "https://www.purchase.edu/offices/registrar/transcript-request",
+  "More Card Office": "https://www.purchase.edu/offices/more-card/index.php",
   "helpdesk@purchase.edu": "nullhelpdesk@purchase.edu",
   "hse@purchase.edu": "nullhse@purchase.edu",
-  "website": "https:
-  "FERPA": "https:
-  "Cross Registration": "https:
-  "Chosen Name Policy": "https:
-  "Leaves and Withdrawal": "https:
-  "Readmission": "https:
-  "Faculty and Staff": "https:
-  "Enrollment and Degree Verification": "https:
-  "Graduation and Diplomas": "https:
-  "Transfer Credit": "https:
+  "website": "https://www.purchase.edu/offices/health-services",
+  "FERPA": "https://www.purchase.edu/offices/registrar/forms-and-policies/ferpa",
+  "Cross Registration": "https://www.purchase.edu/offices/registrar/forms-and-policies/cross-registration",
+  "Chosen Name Policy": "https://www.purchase.edu/live/blurbs/1842-preferredchosen-name-policy",
+  "Leaves and Withdrawal": "https://www.purchase.edu/offices/registrar/leaves-and-withdrawal",
+  "Readmission": "https://www.purchase.edu/offices/registrar/readmission",
+  "Faculty and Staff": "https://www.purchase.edu/offices/registrar/faculty-and-staff",
+  "Enrollment and Degree Verification": "https://www.purchase.edu/offices/registrar/enrollment-and-degree-verification",
+  "Graduation and Diplomas": "https://www.purchase.edu/offices/registrar/graduation-and-diplomas",
+  "Transfer Credit": "https://www.purchase.edu/offices/registrar/transfer-equivalencies",
   "registrar@purchase.edu": "nullregistrar@purchase.edu",
-  "Secure Document Upload": "https:
-  "REQUEST INFORMATION": "https:
-  "Commencement Information": "https:
+  "Secure Document Upload": "https://apps.purchase.edu/SecureDocumentUpload/SDU/85",
+  "REQUEST INFORMATION": "https://www.purchase.edu/admissions/request-information",
+  "Commencement Information": "https://www.purchase.edu/commencement",
   "saf.commencement@purchase.edu": "nullsaf.commencement@purchase.edu",
   "financialservices@purchase.edu": "nullfinancialservices@purchase.edu",
-  "Office of Campus Events and Rentals": "https:
+  "Office of Campus Events and Rentals": "https://www.purchase.edu/offices/campus-events-and-rentals",
   "kristin.brunobates@purchase.edu": "nullkristin.brunobates@purchase.edu",
-  "Schedule an Admissions Visit": "https:
-  "Directions and Parking": "https:
-  "Directions": "https:
-  "Media Relations": "https:
-  "Electronic / Digital Accessibility": "https:
-  "Electronic Information Technology Accessibility (EITA) Policy": "https:
-  "Physical Accessibility": "https:
-  "Accessibility Barrier form": "https:
-  "Snow Response Plan": "https:
-  "About": "https:
-  "Accessibility Initiatives & Updates": "https:
-  "Event Accessibility": "https:
-  "Social Media Accessibility": "https:
-  "Training Opportunities": "https:
+  "Schedule an Admissions Visit": "https://www.purchase.edu/admissions/campus-visit-programs",
+  "Directions and Parking": "https://www.purchase.edu/admissions/travel-and-transportation",
+  "Directions": "https://www.purchase.edu/admissions/visit-campus/maps-and-directions",
+  "Media Relations": "https://www.purchase.edu/news/for-the-media",
+  "Electronic / Digital Accessibility": "https://www.purchase.edu/accessibility/electronic-accessibility",
+  "Electronic Information Technology Accessibility (EITA) Policy": "https://www.purchase.edu/live/blurbs/2409-electronic-information-technology-accessibility",
+  "Physical Accessibility": "https://www.purchase.edu/accessibility/physical-accessibility",
+  "Accessibility Barrier form": "https://www.purchase.edu/accessibility/report-accessibility-barriers",
+  "Snow Response Plan": "https://www.purchase.edu/offices/facilities-management/facilities-management-policies/snow-response-plan",
+  "About": "https://www.purchase.edu/academics/youth-and-precollege-programs/about",
+  "Accessibility Initiatives & Updates": "https://www.purchase.edu/accessibility/accessibility-initiatives-updates",
+  "Event Accessibility": "https://www.purchase.edu/accessibility/accessibility-for-events",
+  "Social Media Accessibility": "https://www.purchase.edu/accessibility/social-media-accessibility",
+  "Training Opportunities": "https://www.purchase.edu/accessibility/training-opportunities",
   "accessibility@purchase.edu": "nullaccessibility@purchase.edu",
-  "Office of Facilities Management": "https:
-  "Title IX": "https:
-  "Diversity": "https:
-  "Affirmative Action": "https:
-  "Purchase College Non-Discrimination Policy": "https:
-  "Human Resources Employee Tracking System (HRETS)": "https:
-  "Web Page": "https:
+  "Office of Facilities Management": "https://www.purchase.edu/offices/facilities-management",
+  "Title IX": "https://www.purchase.edu/title-ix",
+  "Diversity": "https://www.purchase.edu/diversity",
+  "Affirmative Action": "https://www.purchase.edu/offices/affirmative-action",
+  "Purchase College Non-Discrimination Policy": "https://www.purchase.edu/live/blurbs/984-nondiscrimination-policy",
+  "Human Resources Employee Tracking System (HRETS)": "https://apps.purchase.edu/HRETS",
+  "Web Page": "https://www.purchase.edu/offices/student-involvement/multicultural-center/index.php",
   "Email": "nullNeuberger@purchase.edu",
-  "Career Development Center": "https:
-  "CASA Purchase": "https:
-  "Center for Engagement, The": "https:
-  "Center for Production Services": "https:
-  "Global Education, Office for": "https:
-  "Great Potential": "https:
-  "Harbor Center for Health Promotion": "https:
-  "Institutional Research, Office of": "https:
-  "Institutional Review Board": "https:
-  "Internal Control, Office of": "https:
-  "Mailroom": "https:
-  "More Store": "https:
-  "Parking and Transportation, Office of": "https:
-  "President, Office of the": "https:
-  "Purchase College Association Inc.": "https:
-  "Purchasing and Accounts Payable, Office of": "https:
-  "School of Liberal Arts and Sciences": "https:
-  "School of the Arts": "https:
-  "Sexual Violence Prevention and Response": "https:
-  "Sponsored Programs, Office of": "https:
-  "Student Affairs and Enrollment Services, Office of": "https:
-  "Student Success": "https:
-  "Teaching, Learning, and Technology Center": "https:
-  "EMERGENCY BLUE LIGHT PHONES": "https:
-  "Personal Safety Committee webpage": "https:
-  "S U N Y Chief's Association Award": "https:
-  "University Police Officer Recognition": "https:
-  "Brian Peterkin with Chief Tucker in front of new mural.": "https:
-  "Police officers gathered from around the region to learn about best practices in sexual assault investigations. Seen here: L to R: NYSP S...": "https:
-  "About Us": "https:
-  "Logs and Records": "https:
-  "File a Report": "https:
-  "Community Services": "https:
-  "Policies": "https:
-  "Emergency Guide": "https:
-  "Safety Tips": "https:
-  "Public Reports": "https:
-  "Student Information": "https:
-  "Financial Assistance Information": "https:
-  "Health and Safety": "https:
-  "Gainful Employment Programs": "https:
-  "Athletic Information": "https:
+  "Career Development Center": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biochemistry",
+  "CASA Purchase": "https://www.purchase.edu/offices/casa-purchase",
+  "Center for Engagement, The": "https://www.purchase.edu/the-center-for-engagement",
+  "Center for Production Services": "https://www.purchase.edu/offices/center-for-production-services",
+  "Global Education, Office for": "https://www.purchase.edu/offices/global-education",
+  "Great Potential": "https://www.purchase.edu/offices/great-potential",
+  "Harbor Center for Health Promotion": "https://www.purchase.edu/counseling-and-behavioral-health-services/harbor-center-for-health-promotion",
+  "Institutional Research, Office of": "https://www.purchase.edu/offices/institutional-research",
+  "Institutional Review Board": "https://www.purchase.edu/offices/institutional-review-board",
+  "Internal Control, Office of": "https://www.purchase.edu/offices/internal-control",
+  "Mailroom": "https://www.purchase.edu/offices/mailroom",
+  "More Store": "https://www.purchase.edu/offices/more-store",
+  "Parking and Transportation, Office of": "https://www.purchase.edu/offices/parking-and-transportation",
+  "President, Office of the": "https://www.purchase.edu/offices/president",
+  "Purchase College Association Inc.": "https://www.purchase.edu/offices/purchase-college-association",
+  "Purchasing and Accounts Payable, Office of": "https://www.purchase.edu/offices/purchasing",
+  "School of Liberal Arts and Sciences": "https://www.purchase.edu/academics/school-of-liberal-arts-sciences",
+  "School of the Arts": "https://www.purchase.edu/academics/arts",
+  "Sexual Violence Prevention and Response": "https://www.purchase.edu/offices/sexual-violence-prevention-response",
+  "Sponsored Programs, Office of": "https://www.purchase.edu/offices/sponsored-programs",
+  "Student Affairs and Enrollment Services, Office of": "https://www.purchase.edu/offices/student-affairs-and-enrollment-management",
+  "Student Success": "https://www.purchase.edu/offices/student-success",
+  "Teaching, Learning, and Technology Center": "https://www.purchase.edu/teaching-learning-and-technology-center",
+  "EMERGENCY BLUE LIGHT PHONES": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide/emergency-blue-light-phone-map",
+  "Personal Safety Committee webpage": "https://www.purchase.edu/offices/nysup/personal-safety-committee",
+  "S U N Y Chief's Association Award": "https://www.purchase.edu/live/news/6135-suny-upd-annual-awards-for-professional-service",
+  "University Police Officer Recognition": "https://www.purchase.edu/live/news/4044-police-officers-recognized-for-response-to-medical",
+  "Brian Peterkin with Chief Tucker in front of new mural.": "https://www.purchase.edu/live/news/2993-building-bridges-with-upd-and-campus-community",
+  "Police officers gathered from around the region to learn about best practices in sexual assault investigations. Seen here: L to R: NYSP S...": "https://www.purchase.edu/live/news/2963-purchase-hosts-local-police-officers-for-special",
+  "About Us": "https://www.purchase.edu/offices/nysup/about-us",
+  "Logs and Records": "https://www.purchase.edu/offices/nysup/logs-and-records",
+  "File a Report": "https://www.purchase.edu/offices/nysup/file-a-report",
+  "Community Services": "https://www.purchase.edu/offices/nysup/community-services",
+  "Policies": "https://www.purchase.edu/offices/nysup/policies",
+  "Emergency Guide": "https://www.purchase.edu/offices/nysup/emergency-response-reference-guide",
+  "Safety Tips": "https://www.purchase.edu/offices/nysup/safety-tips",
+  "Public Reports": "https://www.purchase.edu/right-to-know/public-reports",
+  "Student Information": "https://www.purchase.edu/right-to-know/student-information",
+  "Financial Assistance Information": "https://www.purchase.edu/right-to-know/financial-assistance-information",
+  "Health and Safety": "https://www.purchase.edu/right-to-know/health-and-safety",
+  "Gainful Employment Programs": "https://www.purchase.edu/right-to-know/gainful-employment-programs",
+  "Athletic Information": "https://www.purchase.edu/right-to-know/athletic-information",
   "Bill Junor Email": "nullbill.junor@purchase.edu",
-  "S U N Y Print Initiative Administrative Printing": "https:
-  "Frequently Asked Questions": "https:
-  "New Students Frequently Asked Questions": "https:
-  "Audio Visual Equipment Loans": "https:
-  "Long-Term Equipment Loan Program": "https:
-  "Campus Computer Labs": "https:
-  "Campus Smart Classrooms": "https:
-  "Communication Options": "https:
-  "Account Locked Out": "https:
-  "Technology Policies": "https:
-  "English": "https:
-  "SEARCH CURRENT JOB OPENINGS": "https:
-  "How will my covered spouse pay for the retiree health insurance coverage after my death?": "https:
-  "How do I notify my department of my intention to retire?": "https:
-  "Who do I contact with questions about my health insurance/prescription drug coverage after I retire?": "https:
-  "How do I start collecting my pension?": "https:
-  "What is the cost of health insurance/prescription drug coverage in retirement?": "https:
-  "Will my dental and vision care benefits continue in retirement?": "https:
-  "How will I pay for my retiree health insurance/prescription drug coverage if my monthly credit does not cover the full cost of the monthly premium?": "https:
-  "What are the eligibility requirements for continuing health insurance/prescription drug coverage in retirement?": "https:
-  "How will I pay for my retiree health insurance/prescription drug coverage?": "https:
-  "How is the monthly lifetime credit calculated?": "https:
-  "Will my health insurance coverage continue in retirement?": "https:
-  "Who will notify my retirement plan of my intention to retire?": "https:
-  "If I predecease my covered spouse after retirement": "https:
-  "When does the Benefits Office process my retiree benefits?": "https:
-  "What information should I put in my retirement letter to my department?": "https:
-  "If I am using a joint account for my Direct Deposit": "https:
-  "How do I adjust/change my tax dependents, deductions, etc.?": "https:
-  "Can I use a business account for my Direct Deposit?": "https:
-  "How long does my Direct Deposit information stay active?": "https:
-  "How do I change my direct deposit account information?": "https:
-  "How and where do I update my home address?": "https:
-  "How do I set-up Direct Deposit?": "https:
-  "How do I access HRETS and upload documents to the Employee Data Sheet?": "https:
+  "S U N Y Print Initiative Administrative Printing": "https://www.purchase.edu/offices/cts/Administrative-Printing",
+  "Frequently Asked Questions": "https://www.purchase.edu/library/frequently-asked-questions",
+  "New Students Frequently Asked Questions": "https://www.purchase.edu/offices/cts/new-students-frequently-asked-questions",
+  "Audio Visual Equipment Loans": "https://www.purchase.edu/offices/cts/audio-visual-equipment-loans",
+  "Long-Term Equipment Loan Program": "https://www.purchase.edu/offices/cts/long-term-equipment-loan-program",
+  "Campus Computer Labs": "https://www.purchase.edu/offices/cts/campus-computer-labs",
+  "Campus Smart Classrooms": "https://www.purchase.edu/offices/cts/campus-smart-classrooms",
+  "Communication Options": "https://www.purchase.edu/offices/cts/communication-options",
+  "Account Locked Out": "https://www.purchase.edu/offices/cts/account-locked-out",
+  "Technology Policies": "https://www.purchase.edu/offices/cts/technology-policies",
+  "English": "https://www.purchase.edu/live/blurbs/872-information-privacy",
+  "SEARCH CURRENT JOB OPENINGS": "https://jobs.purchase.edu",
+  "How will my covered spouse pay for the retiree health insurance coverage after my death?": "https://www.purchase.edu/live/blurbs/2766-how-will-my-covered-spouse-pay-for-the-retiree",
+  "How do I notify my department of my intention to retire?": "https://www.purchase.edu/live/blurbs/2774-how-do-i-notify-my-department-of-my-intention-to",
+  "Who do I contact with questions about my health insurance/prescription drug coverage after I retire?": "https://www.purchase.edu/live/blurbs/2760-who-do-i-contact-with-questions-about-my-health",
+  "How do I start collecting my pension?": "https://www.purchase.edu/live/blurbs/2755-how-do-i-start-collecting-my-pension",
+  "What is the cost of health insurance/prescription drug coverage in retirement?": "https://www.purchase.edu/live/blurbs/2761-what-is-the-cost-of-health-insuranceprescription",
+  "Will my dental and vision care benefits continue in retirement?": "https://www.purchase.edu/live/blurbs/2758-will-my-dental-and-vision-care-benefits-continue",
+  "How will I pay for my retiree health insurance/prescription drug coverage if my monthly credit does not cover the full cost of the monthly premium?": "https://www.purchase.edu/live/blurbs/2764-how-will-i-pay-for-my-retiree-health",
+  "What are the eligibility requirements for continuing health insurance/prescription drug coverage in retirement?": "https://www.purchase.edu/live/blurbs/2757-what-are-the-eligibility-requirements-for",
+  "How will I pay for my retiree health insurance/prescription drug coverage?": "https://www.purchase.edu/live/blurbs/2762-how-will-i-pay-for-my-retiree-health",
+  "How is the monthly lifetime credit calculated?": "https://www.purchase.edu/live/blurbs/2763-how-is-the-monthly-lifetime-credit-calculated",
+  "Will my health insurance coverage continue in retirement?": "https://www.purchase.edu/live/blurbs/2756-will-my-health-insurance-coverage-continue-in",
+  "Who will notify my retirement plan of my intention to retire?": "https://www.purchase.edu/live/blurbs/2773-who-will-notify-my-retirement-plan-of-my-intention",
+  "If I predecease my covered spouse after retirement": "https://www.purchase.edu/live/blurbs/2765-if-i-predecease-my-covered-spouse-after-retirement",
+  "When does the Benefits Office process my retiree benefits?": "https://www.purchase.edu/live/blurbs/2777-when-does-the-benefits-office-process-my-retiree",
+  "What information should I put in my retirement letter to my department?": "https://www.purchase.edu/live/blurbs/2775-what-information-should-i-put-in-my-retirement",
+  "If I am using a joint account for my Direct Deposit": "https://www.purchase.edu/live/blurbs/2985-if-i-am-using-a-joint-account-for-my-direct",
+  "How do I adjust/change my tax dependents, deductions, etc.?": "https://www.purchase.edu/live/blurbs/2982-how-do-i-adjustchange-my-tax-dependents-deductions",
+  "Can I use a business account for my Direct Deposit?": "https://www.purchase.edu/live/blurbs/2984-can-i-use-a-business-account-for-my-direct-deposit",
+  "How long does my Direct Deposit information stay active?": "https://www.purchase.edu/live/blurbs/2979-how-long-does-my-direct-deposit-information-stay",
+  "How do I change my direct deposit account information?": "https://www.purchase.edu/live/blurbs/2981-how-do-i-change-my-direct-deposit-account",
+  "How and where do I update my home address?": "https://www.purchase.edu/live/blurbs/2983-how-and-where-do-i-update-my-home-address",
+  "How do I set-up Direct Deposit?": "https://www.purchase.edu/live/blurbs/2980-how-do-i-set-up-direct-deposit",
+  "How do I access HRETS and upload documents to the Employee Data Sheet?": "https://www.purchase.edu/live/blurbs/2986-how-do-i-access-hrets-and-upload-documents-to-the",
   "robin.farrell@purchase.edu": "nullrobin.farrell@purchase.edu",
-  "Reasons to Work at Purchase": "https:
-  "Benefits Information": "https:
-  "Professional Development": "https:
-  "Payroll": "https:
-  "Announcements": "https:
-  "HR Employment Forms": "https:
-  "Policies and Procedures": "https:
-  "Links to Other Resources": "https:
-  "Affirmative Action Plan": "https:
-  "Search Process": "https:
-  "Purchase College Biennial Review Alcohol and Other Drugs 2021 2023": "https:
-  "Reporting Workplace Violence Anonymously": "https:
-  "CAMPUS VISIT CALENDAR": "https:
-  "ARTS TOURS": "https:
-  "PURCHASE ON THE ROAD": "https:
-  "ASK A COUNSELOR": "https:
-  "Schedule one today": "https:
-  "Please submit this form": "https:
-  "Art+Design Events": "https:
-  "Travel and Transportation": "https:
-  "Admissions Policies": "https:
-  "Where We Are": "https:
-  "hours": "https:
-  "food and drink": "https:
-  "visitors": "https:
-  "Stop by the library to relax and destress with fun activities.": "https:
-  "Desert owl sitting on a driftwood branch near the Ask a Librarian logo. Text reads wild about the library. Explore the research frontier wi": "https:
-  "Children": "https:
-  "Books on physical reserve at the Library": "https:
-  "Course Reserves Request Forms": "https:
-  "Buttons made at the library": "https:
-  "Search": "https:
-  "Guides & Tools": "https:
-  "Services": "https:
-  "Collections": "https:
-  "Latest News": "https:
-  "Upcoming Events": "https:
-  "How do I get help with D2L Brightspace?": "https:
-  "What are the Library’s hours?": "https:
-  "Is there wifi (wireless internet) ? How do I access the wifi network? Can guests use wifi?": "https:
-  "Where is the TLTC located?": "https:
-  "F A Q about the TLTC": "https:
-  "Where can I find information on senior projects / capstone papers / master’s theses?": "https:
-  "How can I obtain a Westchester Library System card?": "https:
-  "e": "https:
-  "How do I pay a fine at the Library?": "https:
-  "My Heliotrope": "http:
+  "Reasons to Work at Purchase": "https://www.purchase.edu/offices/hr/seven-reasons-to-work-at-purchase",
+  "Benefits Information": "https://www.purchase.edu/offices/hr/benefits-information",
+  "Professional Development": "https://www.purchase.edu/offices/hr/benefits-information/professional-development",
+  "Payroll": "https://www.purchase.edu/offices/hr/payroll",
+  "Announcements": "https://www.purchase.edu/offices/hr/announcements",
+  "HR Employment Forms": "https://www.purchase.edu/offices/hr/hr-employment-forms",
+  "Policies and Procedures": "https://www.purchase.edu/offices/hr/policies-and-procedures",
+  "Links to Other Resources": "https://www.purchase.edu/offices/hr/links-to-other-resources",
+  "Affirmative Action Plan": "https://www.purchase.edu/offices/affirmative-action/affirmative-action-plan",
+  "Search Process": "https://www.purchase.edu/offices/affirmative-action/search-process",
+  "Purchase College Biennial Review Alcohol and Other Drugs 2021 2023": "https://www.purchase.edu/live/files/4884-purchase-college-biennial-review-alcohol-and-other",
+  "Reporting Workplace Violence Anonymously": "https://www.purchase.edu/live/blurbs/1062-reporting-workplace-violence-anonymously",
+  "CAMPUS VISIT CALENDAR": "https://admission.purchase.edu/portal/allcampusvisits",
+  "ARTS TOURS": "https://admission.purchase.edu/portal/vapasession",
+  "PURCHASE ON THE ROAD": "https://admission.purchase.edu/portal/Trips",
+  "ASK A COUNSELOR": "https://www.purchase.edu/live/forms/333-ask-a-counselor",
+  "Schedule one today": "https://admission.purchase.edu/portal/appointments",
+  "Please submit this form": "https://admission.purchase.edu/register?id=e26602ea-67d1-4998-9874-a111db8887d3",
+  "Art+Design Events": "https://www.purchase.edu/admissions/visit/art-and-design-events",
+  "Travel and Transportation": "https://www.purchase.edu/admissions/visit/travel-and-transportation",
+  "Admissions Policies": "https://www.purchase.edu/college-policies/index.php",
+  "Where We Are": "https://www.purchase.edu/about/our-campus/where-we-are",
+  "hours": "https://www.purchase.edu/library/hours",
+  "food and drink": "https://www.purchase.edu/live/blurbs/1121-food-and-drink",
+  "visitors": "https://www.purchase.edu/live/blurbs/1120-guests",
+  "Stop by the library to relax and destress with fun activities.": "https://www.purchase.edu/live/news/8652-finals-countdown-spring-2025",
+  "Desert owl sitting on a driftwood branch near the Ask a Librarian logo. Text reads wild about the library. Explore the research frontier wi": "https://www.purchase.edu/live/news/8305-wild-about-research-4-ways-to-get-help-from-a",
+  "Children": "https://www.purchase.edu/live/news/7968-national-poetry-month-display",
+  "Books on physical reserve at the Library": "https://www.purchase.edu/live/news/5605-library-course-reserves",
+  "Course Reserves Request Forms": "https://www.purchase.edu/library/services/course-reserves",
+  "Buttons made at the library": "https://www.purchase.edu/live/events/58904-button-making",
+  "Search": "https://www.purchase.edu/library/searches",
+  "Guides & Tools": "https://www.purchase.edu/library/guides-tools",
+  "Services": "https://www.purchase.edu/library/services",
+  "Collections": "https://www.purchase.edu/library/collections",
+  "Latest News": "https://www.purchase.edu/library/latest-news",
+  "Upcoming Events": "https://www.purchase.edu/library/upcoming-events",
+  "How do I get help with D2L Brightspace?": "https://www.purchase.edu/live/blurbs/3129-how-do-i-get-help-with-d2l-brightspace",
+  "What are the Library’s hours?": "https://www.purchase.edu/live/blurbs/1178-what-are-the-librarys-hours",
+  "Is there wifi (wireless internet) ? How do I access the wifi network? Can guests use wifi?": "https://www.purchase.edu/live/blurbs/1424-is-there-wifi-wireless-internet-how-do-i-access",
+  "Where is the TLTC located?": "https://www.purchase.edu/live/blurbs/1773-where-is-the-tltc-located",
+  "F A Q about the TLTC": "https://www.purchase.edu/live/blurbs/1772-where-is-the-tltc-located",
+  "Where can I find information on senior projects / capstone papers / master’s theses?": "https://www.purchase.edu/live/blurbs/1172-where-can-i-find-information-on-senior-projects-",
+  "How can I obtain a Westchester Library System card?": "https://www.purchase.edu/live/blurbs/2673-how-can-i-obtain-a-westchester-library-system-card",
+  "e": "https://www.purchase.edu/library/contact/subject-liaisons",
+  "How do I pay a fine at the Library?": "https://www.purchase.edu/live/blurbs/1103-how-do-i-pay-a-fine-at-the-library",
+  "My Heliotrope": "http://www.purchase.edu/portal",
   "lib.circ@purchase.edu": "nulllib.circ@purchase.edu",
-  "Lost Library Materials": "https:
-  "Are there vending machines in the Library? Can I buy food in the Library?": "https:
-  "How do I view materials in Special Collections & Archives?": "https:
-  "Special Collections & Archives": "https:
-  "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?": "https:
-  "Mandatory Immunization Requirements": "https:
-  "Does the Library have graphic novels and comics? Where are they?": "https:
-  "Graphic Novels": "https:
-  "Do I have to submit a paper copy of my Student Project to the Library?": "https:
-  "Does the Library have popular fiction? Where is the popular reading collection?": "https:
-  "Popular Collection": "https:
-  "How do I use Turnitin? How can I check my own drafts for originality?": "https:
-  "screenshot of the Turnitin Self-Checker activity in Brightspace": "https:
-  "How do I use Turnitin to check my own drafts for originality?": "https:
-  "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace course?": "https:
-  "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace Moodle course?": "https:
-  "Daniela Gomez Paz": "https:
-  "Sydney Cole Alexander '15": "https:
-  "Sarah Catherine Hook '17 and Parker Posey in season three of HBO's The White Lotus.": "https:
-  "Original illustration by Professor Stephen Cooke": "https:
-  "Damani Pompey '12 (Photo: Conor McNamara)": "https:
-  "Dava Huesca '19": "https:
-  "Emily Carragher '06": "https:
-  "A/way by Derek Shane Garcia '13": "https:
-  "Kyle Abraham '00 (Dear Lord by AIM)": "https:
-  "Curtis Brodner '19": "https:
-  "Tarantula (Photo: Pratik Jain)": "https:
-  "Winners of the inaugural Purchase College Excellence in High School Journalism Awards.": "https:
-  "Group of young people sit and look in same direction.": "https:
-  "Jennifer Mogbock '13": "https:
-  "A. Dean Irby": "https:
-  "Professor Paul Siegel": "https:
-  "Cain Coleman": "https:
-  "Connie Tsang, Lecturer in Film": "https:
-  "Sierra Bianco": "https:
-  "Sinkane We Belong Album Cover": "https:
-  "Kunga Choephel '23": "https:
-  "the-2024-suny-chancellors-award-winners": "https:
-  "Claudia Logan '18": "https:
-  "Artists and Hackers logo in text with drawing of hand on digital device": "https:
-  "Micah Stock '11": "https:
-  "Carlie Hoffman, Lecturer in Creative Writing": "https:
-  "David Handschuh stands on a bridge with belt straps attached to the railings": "https:
-  "Maura VanderPutten (Environmental Sciences, Biology minor)": "https:
-  "Zoë Winters '07 plays Kerry on HBO's Succession. (Photo: Macall B. Polay/HBO)": "https:
-  "Susan Shopmaker accepts the Casting Award for The Holdovers on stage during the EE BAFTA Film Awards 2024 at The Royal Festival Hall on F...": "https:
-  "Student and professor outdoors looking at a small container.": "https:
-  "Thom Jones and Nicole Kidman smile at the camera with arms around each others shoulders": "https:
-  "Amelia Ponirakis '23 at the Buffalo International Film Festival": "https:
-  "Blue badge with yellow stripe and white globe": "https:
-  "Student holds a container with a grasshopper.": "https:
-  "RIOTUSA '22 and Ryan Press": "https:
-  "political-theatre-in-prague": "https:
-  "Hand in blue latex glove holds a pill between thumb and index finger on a pink background": "https:
-  "Asian American woman in blue with elbow in the air": "https:
-  "Flowers in the Purchase Native Pollinator Garden": "https:
-  "Man in white t-shirt and black jacket smiles with water in background": "https:
-  "Alessandro Chillé": "https:
-  "Large box holding several paint cans": "https:
-  "Standing left to right: David Settanni '09": "https:
-  "Victoria deMartin '14": "https:
-  "pwsw-shonnon-marshall-22": "https:
-  "S U N Y Chancellor John King": "https:
-  "Drama Desk Awards in gold with a feather award between the words.": "https:
-  "Daffodils on campus": "https:
-  "Jiaming Tang '18": "https:
-  "Andrea Patterson '05": "https:
-  "Bill Sage '88 in The New Group's The Seagull/Woodstock": "https:
-  "Jordan Tetewsky '16 at Woodstock Film Festival": "https:
-  "The Honorable Karen T. Beltran": "https:
-  "Debora Martinez '22": "https:
-  "Latinos Unidos Student Club / Club Fair 2022": "https:
-  "Hal Hartley '84 (Photo: Michael Koshkin)": "https:
-  "Participants in the annual Purchase Shark Tank-style competition for 2022.": "https:
-  "Left) Ruth-Ann Gordon & Mauro David Cortina (right) hold their awards accompanied by the rest of our bridges students": "https:
-  "Hunter Hollingsworth-Harris '22": "https:
-  "The Princeton Review Guide to Green Colleges logo": "https:
-  "Marcel Gbeffa during an artistic residency as a part of (T)HERE: Global Festival in 2019.": "https:
-  "Woodstock Film Festival": "https:
-  "Marco North '90": "https:
-  "Professor of Theatre and Performance Jordan Schildcrout": "https:
-  "Student presents senior project research at the annual Natural and Social Science Symposium.": "https:
-  "Regina Spektor '01": "https:
-  "Camille Seaman '92 at the Oceti Sakowin Camp": "https:
-  "Iquail Shaheed MFA '12": "https:
-  "Nicco Annan '98 at the NAACP Convention July 2022 holding the inaugural Trailblazer Award.": "https:
-  "Douglas Shindler and Michael Davis": "https:
-  "Dan Romer '04": "https:
-  "Romare Bearden": "https:
-  "Dan Deacon '04": "https:
-  "Marjan Neshat '98": "https:
-  "The Warded Man illustration by Allen Williams for Grim Oak Press": "https:
-  "S U N Y Chancellor's Award for Excellence Recipients Laila Wilson and Corina Picon": "https:
-  "Mara Keen MM '22": "https:
-  "Merce Cunningham teaching.": "https:
-  "Ernestine White-Mifetu '99 (Photo: Raphael Mifetu)": "https:
-  "Visual Arts Alum Tom Cross '93": "https:
-  "Zoë Winters '07": "https:
-  "Nina Schatell '23": "https:
-  "Erik Spink, Meet Me in the Meadow, 2021": "https:
-  "Album Cover": "https:
-  "Students talk at a table.": "https:
-  "Amanda Seales '03": "https:
-  "Rob Swainston, Assistant Professor Art+Design, Printmaking": "https:
-  "Alice Selipanov '21": "https:
-  "Mitski '13 from The Only Heartbreaker video, 2021": "https:
-  "David Grill '86": "https:
-  "Cast of ABC's Abbott Elementary": "https:
-  "American Riad Project in Detroit.": "https:
-  "Janet Rollé '84": "https:
-  "Bioswale in the West 1 Parking Lot": "https:
-  "Rena Butler '11 (Courtesy of Dance magazine)": "https:
-  "Jonathan Harris '20": "https:
-  "The President’s Award": "https:
-  "Professor Shaka McGlotten": "https:
-  "Professor of Literature Elise Lemire": "https:
-  "Laila Wilson '22, playwriting and screenwriting": "https:
-  "Anaïs Reno performs on September 11, 2021 at Citifield.": "https:
-  "Meryl Cates '08": "https:
-  "Jason Rodriguez '12 (Courtesy Santiago Felipe/RRR Creative)": "https:
-  "Sophia Hadeshian": "https:
-  "Damali O'Keefe '22": "https:
-  "Andrea Thome": "https:
-  "Fiske Guide to Colleges Best Buy School": "https:
-  "Adon Cooper '09": "https:
-  "Lucy Wijnands '20": "https:
-  "Laura Ricciardi": "https:
-  "Film still from Princesa by Melanie Rosete": "https:
-  "Kyle Abraham '00 (Photo: Tatiana Will)": "https:
-  "Silas Brown '10, assistant professor": "https:
-  "Gabriella Shery '21": "https:
-  "Laura Jobin-Acosta '20 MM": "https:
-  "From left": "https:
-  "Brianna Agront": "https:
-  "Carl Safina '77 (Photo: Kizza Vincent)": "https:
-  "Imani Parker '20": "https:
-  "Anita Yavich": "https:
-  "Neuberger Museum of Art Youth Education Program": "https:
-  "Jen Schriever": "https:
-  "Campus in the Fall": "https:
-  "Processed with Snapseed.": "https:
-  "Associate Professor of Chemistry Stephen Cooke": "https:
-  "Solangie Ledesma '20": "https:
-  "Live Performance and Interactive Media Workshop screen shot": "https:
-  "Mariales Diaz '19 (film)": "https:
-  "Fiske Guide to Colleges book cover": "https:
-  "Pride Flag": "https:
-  "Jostedalsbreen Glacier, Norway": "https:
-  "Smalls Jazz Club": "https:
-  "Professors Emeriti Lee Ehrman and Peter Schwab": "https:
-  "S U N Y Chancellors Award for Excellence Winner Ilias Fourati '20": "https:
-  "Filmmaker Mattson Tomlin '12": "https:
-  "Rakeem Hardy '20 (dance)": "https:
-  "Garth Greenwell '01 (Photo: William J. Adams)": "https:
-  "Concert Hall, The Performing Arts Center": "https:
-  "Purchase Cares Icon (Navy blue heart over lighter blue background)": "https:
-  "Monica Ferrell, Associate Professor of Creative Writing": "https:
-  "Erin Sullivan '12 (Photo: Renee Hahnel)": "https:
-  "Art in Public Places / Quantum Leap by Isaiah Ship": "https:
-  "Purchase College Startup Pitching Competition Winners Andres Hernandez-Rodriguez and Brian Farez.": "https:
-  "Curator Patrice Giasson; Engels the artist; Cindy Millin; Instructor Felix Matta-Fletcher; Alessandra Russo; Leonardo Giasson.": "https:
-  "Cyrille Aimée '08": "https:
-  "Professor Warren Lehrer awarded the 2019 Ladislav Sutnar Prize": "https:
-  "Edwidge Danticat": "https:
-  "Paola Lázaro '09": "https:
-  "President Emeritus Thomas J. Schwarz at the May 8 event celebrating his 17 year tenure at Purchase College. (Photo by Sean Zanni/PMC)": "https:
-  "Purchase Garden": "https:
-  "Instagram Post from Issa Dance Look": "https:
-  "Michael Rakowitz '95": "https:
-  "Colby Hollman '19 (acting)": "https:
-  "Brian Kavanaugh '05 Earns Fulbright Award": "https:
-  "Students in Seminar Class": "https:
-  "The Andrew W. Mellon Foundation logo": "https:
-  "Celeste Arias as Eléna and Jay O. Sanders as Ványa in Uncle Vanya": "https:
-  "Dancers perform on stage": "https:
-  "Dancer Jojo Boykins '18 featured on PBS' new ALLARTS channel (dancing in the Dance Building lobby)": "https:
-  "Danniel Schoonebeek '08": "https:
-  "David Rosenberg": "https:
-  "Broadway Technical Theatre History Project": "https:
-  "The Out of the Depths company takes a bow": "https:
-  "Food Pantry sign": "https:
-  "Ian Antonio": "https:
-  "Janette Yarwood '96": "https:
-  "Seniors Angela Galli and Kelly Hayes receive oversized check for winning the second annual Start Up Purchase Pitching Competition": "https:
-  "Anne Kern Awarded Chevalier of the Order of Arts and Letters": "https:
-  "Kerry LeVielle '17 (cinema studies)": "https:
-  "Walt Whitman": "https:
-  "The Quad": "https:
-  "Literature professor Anthony Domestico speaks at the SUNY Chancellor's Inauguration": "https:
-  "Students at Orientation 2018": "https:
-  "Multicultural Center invites passers by to comment on the one thing they can do to build community and help end prejudice.": "https:
-  "Purchase College Library exterior": "https:
-  "Rachel Weiss '16 holds her NY Emmy": "https:
-  "Kamala Sankaram Headshet": "https:
-  "Kamala Sankaram": "https:
-  "Jesus Christ Superstar Live in Concert / Ben Green '15 earned Emmy nomination for lighting direction.": "https:
-  "Zaire Anderson '19 and the Art Force 5": "https:
-  "Comedy of Errors": "https:
-  "Brittny Cooper '15": "https:
-  "Clint Ramos": "https:
-  "Jiaming “Andy Tang '18": "https:
-  "Regina Spektor '01 performing Après Moi during a day of filming with the Poetry in America team.": "https:
-  "Teal ribbon symbol to end sexual assault": "https:
-  "S U N Y Logo": "https:
-  "Kate Gilmore": "https:
-  "The PAC logo projected on the PepsiCo Theatre's stage curtain.": "https:
-  "Max Pearce '18 slam dunks in the gym": "https:
-  "Various students participating in a previous Purchase Alternative Service Trip": "https:
-  "Kayla Cashetta Headshot": "https:
-  "Neil Gaiman and Michael Chabon spoke as part of the Durst Distinguished Lecture Series.": "https:
-  "Alyce Gilbert": "https:
-  "Professor Dave Grill and intern Victoria Corbalis '18": "https:
-  "Students and collaborators work on American Riad project in Detroit": "https:
-  "Coronation of Poppea": "https:
-  "Cover of Dance Magazine January 2018 issue": "https:
-  "Ray Wilcox": "https:
-  "Recipe for a Loving Community by Madeline Friedman '18": "https:
-  "Wayne Tucker": "https:
-  "Andrew Salomon at the Alumni Mixer for Journalism and Writing Majors": "https:
-  "Artist in Residence Ignacio Iturria in the studio with students": "https:
-  "Top row L to R: Tamisha Guy '13": "https:
-  "The Purchase Dance Company recently visited Taipei and Kaohsiung City for performances": "https:
-  "Bubble P logo with Man Booker Prize logo": "https:
-  "A. Dean Irby, associate professor of acting": "https:
-  "Arts Abroad Program Students": "https:
-  "Arts Abroad Program": "https:
-  "Majella Loughran '12 and the Diavolo Dance Company following their semi-final win on NBC's America's Got Talent": "https:
-  "Dave Grill '86": "https:
-  "Matt Wilson": "https:
-  "Laura Kaminsky": "https:
-  "Commencement 2016": "https:
-  "Jon Faddis": "https:
-  "Camille Seaman '92 The Lemaire Channel off the off the west coast of the Antarctic Peninsula": "https:
-  "Dan Romer": "https:
-  "Students studying abroad in India granted an audience with the Dalai Lama": "https:
-  "Julianne Waber '17": "https:
-  "Leah Woods '18": "https:
-  "Ivan Forde '12": "https:
-  "Occupy Museums": "https:
-  "Screen shot from Madonna's video HerStory": "https:
-  "Seniors Hannah": "https:
-  "Artist Janet Langsam working in her studio circa 1970. Photo courtesy of Janet Langsam.": "https:
-  "Carter Hudson '09": "https:
-  "A crossroads with orange cones and a railroad crossing gate.": "https:
-  "Joey Katz '18": "https:
-  "Company 49 in Gint (Written by Romulus Linney": "https:
-  "Marin Kosut, Professor of Sociology": "https:
-  "Fred Wilson '76, Passionate Artist": "https:
-  "Lip Critic's Hex Dealer album cover": "https:
-  "Dana Freeman '25": "https:
-  "Lucy Kalantari '98": "https:
-  "Conservatory of Dance students take part in a film to announce the launch of Mugler Creators to support talented contemporary dance and m...": "https:
-  "Student BioBlitz participant": "https:
-  "Khlaif Tahir Thompson '18": "https:
-  "A gallery visitor wearing a blue shirt seen from behind looking at art on the wall.": "https:
-  "Film still from On The Ridge by Ruby Rose Makkena '23": "https:
-  "Jessica Levy": "https:
-  "Wordmark: The Hollywood Reporter in red": "https:
-  "Brian MacDevitt '80": "https:
-  "Concrete house on a distant hillside surrounded by trees and greens with a blue sky": "https:
-  "Rosalynde LeBlanc '94 (Photo: Lee Gumbs)": "https:
-  "Purchase Outdoors Club Hikes Hook Mountain": "https:
-  "Paige Gilbert '14": "https:
-  "Emily Ruth Verona '12": "https:
-  "Lip Critic band": "https:
-  "Students view the art on display in LaGuardia Airport Terminals B and C": "https:
-  "Da'Vine Joy Randolph poses with the Supporting Actress Award for 'The Holdovers' in the winners room during the EE BAFTA Film Awards 2024...": "https:
-  "Jessica Maffia MFA '24": "https:
-  "The Quad and Residence Halls": "https:
-  "Caleb Eberhardt '12 in glasses and a blue button down shirt with arms crossed": "https:
-  "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)": "https:
-  "Hunter Hollingsworth '22": "https:
-  "Acting majors Tachynel Merveille and Destiny Barbour won the Audience Favorite Award": "https:
-  "Adam Birnbaum": "https:
-  "billboard-magazine-touts-studio-production-program": "https:
-  "Students enjoy Fun Fair on the Great Lawn during Welcome Week.": "https:
-  "Assistant Professor of Communications Megan Rossman (Photo: Bri Elledge)": "https:
-  "Portrait of light skinned Black dancer with hand bent over head": "https:
-  "Shota Miyoshi '22": "https:
-  "Vuk Lungulov-Klotz '16": "https:
-  "Person walks in distance with Welcome to Purchase College sign on brick building": "https:
-  "Chancellor King stands at a table chatting with EOP students.": "https:
-  "Photo of Caitly Dominici '24": "https:
-  "Edie Falco": "https:
-  "Lisa Dawn Cave '83": "https:
-  "Jen Schriever '04": "https:
-  "James Ortiz '10": "https:
-  "Jeff Croiter '93": "https:
-  "David Bassuk, Professor of Acting": "https:
-  "Nicco Annan '98 Wins NAACP Image Award for Outstanding Actor in a Drama Series.": "https:
-  "Jovan Dansberry in Bob Fosse's Dancin' (Photo: Julieta Cervantes)": "https:
-  "Thomas Warfield '88": "https:
-  "Keerati Jinakunwiphat choreographing her new ballet for New York City Ballet": "https:
-  "Jazz vocalist Samara Joy '21 (Photo: Meredith Truax)": "https:
-  "Mitski '13 (Photo: Ebru Yildiz)": "https:
-  "Darryl Rahn '15": "https:
-  "Global Scholars students visit the UN": "https:
-  "Creator/star Quinta Brunson and Chris Perfetti on the ABC sitcom Abbott Elementary. (Photo: Christopher Willard/": "https:
-  "Blake Pfeil MA '19": "https:
-  "Purchase Opera production of Dialogues of the Carmelites in 2020-2021.": "https:
-  "AUDELCO Awards 50 Logo": "https:
-  "Uranium spectrum visible": "https:
-  "purchase-earns-a-competitive-fulbright-hays-award": "https:
-  "Students use a comb knife to remove the caps from honey frames": "https:
-  "LA Dance Project (from preview performances of Benjamin Millepied's ROMEO & JULIET SUITE during the @nuitsdefourviere festival i...": "https:
-  "Furniture artist Sophie Glenn '12": "https:
-  "Hunter Zimny '16": "https:
-  "Erika Ebbs": "https:
-  "Cellist and Lecturer Thomas Mesa": "https:
-  "Fatoumata Fadiga": "https:
-  "Lecturer and Soul Voices Choir Director Knoelle Higginson": "https:
-  "Fiske Guide to Colleges": "https:
-  "Kyle Abraham '00": "https:
-  "Professor of Creative Writing Monica Ferrell": "https:
-  "Sarah Catherine Hook '17 and Imani Lewis star in Netflix series First Kill.": "https:
-  "Purchase College Leadership Institute 2021-2022": "https:
-  "Naoki Yogi '22": "https:
-  "Claire Giegerich '23": "https:
-  "Allison Loggins-Hull '05": "https:
-  "TJ Raphael '11": "https:
-  "AJ Jordan '15": "https:
-  "Jordan Tetewsky '16 (film)": "https:
-  "Samara Joy '21 (jazz studies)": "https:
-  "Tomashi Jackson, 2022 Roy R. Neuberger Prize Recipient": "https:
-  "Phil Corso '11": "https:
-  "Erik Spink '11": "https:
-  "Aya Keefe": "https:
-  "Entrepreneurship in the Arts major Shannon Dawson": "https:
-  "West Side Story logo": "https:
-  "Cecellia Koueth": "https:
-  "A boulder marks the location where Brister Freeman's house is thought to have stood in Walden Woods. (Courtesy of the Walden Woods Project)": "https:
-  "Lamesa Nashrat '21 (film)": "https:
-  "Brittany Petronella '16 (photography, art history minor)": "https:
-  "Raechelle Manalo '20": "https:
-  "Katie Kresek '98, '99": "https:
-  "Lee Tusman": "https:
-  "Student on campus viewing a cell phone": "https:
-  "Brian Otaño '11": "https:
-  "Tamisha Guy '13": "https:
-  "Gianna Caranfa '15 Inside her new tattoo parlor Bee Inked. (Mark Vergari/The Journal News)": "https:
-  "Louise Bartolotta '16": "https:
-  "Victor Cuoto '14": "https:
-  "Bryan Korn": "https:
-  "Jodi Long '76 Holds Up her Daytime Emmy® Award": "https:
-  "Blood Wedding": "https:
-  "ConnectiveCollective on view at the Neuberger Museum of Art through June 27": "https:
-  "Caleb Dowden '21 (dance)": "https:
-  "Purchase is Princeton Review Top 200 Best Value Colleges (students on the Quad in Adirondack chairs)": "https:
-  "William Byram '20": "https:
-  "POV Fest Logo": "https:
-  "SUNYWide Film Festival design": "https:
-  "Travis Sluss '07 (Photo: MacInspires Facebook)": "https:
-  "Tanairi Vazquez '10 (dance performance)": "https:
-  "Emma Caymares'12": "https:
-  "Cover of Dance magazine": "https:
-  "Entrance to the Broadview complex": "https:
-  "Asst. Professor David DeJesus": "https:
-  "Professor of Anthropology and Media Studies Jason Pine (Photo: Annette Hornischer)": "https:
-  "Joe Matoske '10": "https:
-  "Dave Grill": "https:
-  "Purchase College sign at front with orange and gold mums.": "https:
-  "David Graeber, 2016": "https:
-  "Director": "https:
-  "Interim President Dennis Craig and Chief Diversity Officer Jerima DeWese stand below the large clock on campus.": "https:
-  "Actor Nicco Annan '98 as Uncle Clifford in Starz drama P-Valley": "https:
-  "Britney DiTocco '20": "https:
-  "S U N Y logo and wordmark, white on blue background": "https:
-  "Juneteenth We Breathe Black art exhibition logo": "https:
-  "Yancy Garcia": "https:
-  "Dr. Milagros Milly Peña": "https:
-  "Pete Malinverni": "https:
-  "S U N Y Esports Challenge Co-sponsored by Extreme Networks": "https:
-  "Elizabeth Cook '20 (acting)": "https:
-  "Eric Gottesman": "https:
-  "Claribel Ortega '10": "https:
-  "Ford V Ferrari movie (Merrick Morton/20th Century Fox)": "https:
-  "Purchase College Commencement at the Westchester Civic Center": "https:
-  "Jon Samson '03 wins a Grammy for Best Childrens Album": "https:
-  "Hannah Garner '15 (Credit: Mike Lindle)": "https:
-  "Participants walk on the The Yellow Walk performance created by Kate Gilmore": "https:
-  "Samara Joy McLendon '21 holds her Sarah Vaughan Jazz Vocal award.": "https:
-  "Left to right: Sarah Yousef": "https:
-  "Silas Brown": "https:
-  "Damani Bissett '21": "https:
-  "Melanie Rosete '20": "https:
-  "Dr. Stephen Harris": "https:
-  "Five Oceans in a Teaspoon Front Cover": "https:
-  "Students play music on the mall": "https:
-  "Purchase Jazz Orchestra at Blue Note": "https:
-  "Mitski '13 (Photo: David Lee, Redmond, WA)": "https:
-  "Students Conduct Research in Biology Lab": "https:
-  "Lisa Jean Moore (stands at front of class)": "https:
-  "Nick Bruno '15": "https:
-  "The Center for Engagement": "https:
-  "David Grill '86 and student look at stage model": "https:
-  "Declan Moore '19 and Dave Grill '86 at Super Bowl 2019": "https:
-  "Lorenzo Candelaria, Dean of the School of the Arts": "https:
-  "Showtime at the Apollo cover": "https:
-  "Mary Kosut, associate professor of sociology": "https:
-  "Art in Vacant Spaces window 2018, “A Woman": "https:
-  "Angie Kim, sustainability coordinator": "https:
-  "Quaba Ernest and Aleksandra Gologorskaya from the Conservatory of Dance at Purchase College in Robbins' Watermill.": "https:
-  "Artist Michael Rakowitz '95": "https:
-  "Alumni Ben Green '15": "https:
-  "Volunteers in the SUNY Stands with Puerto Rico initiative": "https:
-  "Chasing Coral documentary still": "https:
-  "Marcella Lewis '16": "https:
-  "issadancelook Instagram account post": "https:
-  "Gregory Spears": "https:
-  "Fiske Guide to Colleges 2019 Badge": "https:
-  "Stephen Ferri '13 (courtesy Westchester Magazine)": "https:
-  "Madeline Cramer '18": "https:
-  "Drama Desk Awards logo": "https:
-  "Dane Laffrey": "https:
-  "Maruti Evans": "https:
-  "President Schwarz helps plant a tree for Clean and Green Day 2018": "https:
-  "Andrew Pharmer '90": "https:
-  "Jakub Ciupinski Headshot": "https:
-  "Jakub Ciupinski": "https:
-  "New Standards Combo in the Jazz Studies program": "https:
-  "Joseph A. Skrivanek, professor of chemistry": "https:
-  "President Thomas J. Schwarz": "https:
-  "Students on the main plaza to protest gun violence": "https:
-  "Abrielle Scharff and her Band on stage": "https:
-  "Stone marker for site of Thoreau's cabin": "https:
-  "Students in class": "https:
-  "Steven Spielberg's The Post film shoot on campus": "https:
-  "Jenar Antar '18": "https:
-  "Jeanne Markel '81 and Chris Wedge '81": "https:
-  "Shaka McGlotten, Associate Professor of Media Studies": "https:
-  "Nancy Bowen": "https:
-  "Students": "https:
-  "Two Purchase photography students and an alumnus of the program discussed their work at a symposium honoring the work of Gordon Parks. L ...": "https:
-  "Kelly Hayes '19": "https:
-  "Cain Coleman '09-'11": "https:
-  "WNYC logo": "https:
-  "Conceptual artist Fred Wilson '76": "https:
-  "Transpire": "https:
-  "Authors Hari Kunzru and Katie Kitamura on stage during the Durst Distinguished Lecture Series.": "https:
-  "Terese Capucilli '78": "https:
-  "Kris Graves' 04": "https:
-  "Avant Projekts": "https:
-  "The campus of Purchase College.": "https:
-  "Sunflowers behind the Student Services Building": "https:
-  "FEUD: BETTE & JOAN Stanley Tucci '82 as Jack Warner": "https:
-  "The band Cende": "https:
-  "The senior class of Summit Academy Charter School with Ellen DeGeneres. Photo Credit: Michael Rozman/Warner Bros.": "https:
-  "Gabriel Fridkis": "https:
-  "Emma Porter '18": "https:
-  "New Media Photography Expanded at PC4": "https:
-  "Dr. Kristina Johnson, incoming SUNY Chancellor": "https:
-  "Purchase Opera: The Crucible": "https:
-  "Purchase Opera": "https:
-  "Design Tech student Megan Seibel with her professor Dave Grill at the Super Bowl": "https:
-  "Garth Greenwell": "https:
-  "Scenic Art Studios founder Joseph B. Forbes": "https:
-  "Recent Press Coverage": "https:
-  "News Archive": "https:
-  "PURCHASE MAGAZINE": "https:
+  "Lost Library Materials": "https://www.purchase.edu/library/about/library-policies",
+  "Are there vending machines in the Library? Can I buy food in the Library?": "https://www.purchase.edu/live/blurbs/1182-are-there-vending-machines-in-the-library-can-i",
+  "How do I view materials in Special Collections & Archives?": "https://www.purchase.edu/live/blurbs/1181-how-do-i-view-materials-in-special-collections-amp",
+  "Special Collections & Archives": "https://www.purchase.edu/library/collections/special-collections",
+  "Why have I suddenly been unenrolled/dropped from my courses on Brightspace?": "https://www.purchase.edu/live/blurbs/2349",
+  "Mandatory Immunization Requirements": "https://www.purchase.edu/live/blurbs/1247-mandatory-immunization-requirements",
+  "Does the Library have graphic novels and comics? Where are they?": "https://www.purchase.edu/live/blurbs/1179-does-the-library-have-graphic-novels-and-comics",
+  "Graphic Novels": "https://www.purchase.edu/library/collections/graphic-novels",
+  "Do I have to submit a paper copy of my Student Project to the Library?": "https://www.purchase.edu/live/blurbs/1642-do-i-have-to-submit-a-paper-copy-of-my-student",
+  "Does the Library have popular fiction? Where is the popular reading collection?": "https://www.purchase.edu/live/blurbs/1180-does-the-library-have-popular-fiction-where-is-the",
+  "Popular Collection": "https://www.purchase.edu/library/collections/popular-collection",
+  "How do I use Turnitin? How can I check my own drafts for originality?": "https://www.purchase.edu/live/blurbs/1151-how-do-i-use-turnitin-to-check-my-own-drafts-for",
+  "screenshot of the Turnitin Self-Checker activity in Brightspace": "https://www.purchase.edu/live/image/gid/91/width/650/26136_turnitin-self-checker.png",
+  "How do I use Turnitin to check my own drafts for originality?": "https://www.purchase.edu/live/blurbs/1151",
+  "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace course?": "https://www.purchase.edu/live/blurbs/2815-how-do-i-add-the-thinkingstorm-online-tutoring",
+  "How do I add the ThinkingStorm Online Tutoring connection to my Brightspace Moodle course?": "https://www.purchase.edu/live/blurbs/2815",
+  "Daniela Gomez Paz": "https://www.purchase.edu/live/news/8586-daniela-gomez-paz-14-unmissable-show-at-lyles-amp",
+  "Sydney Cole Alexander '15": "https://www.purchase.edu/live/news/8571-sydney-cole-alexander-15-stars-in-appletv-hit-series",
+  "Sarah Catherine Hook '17 and Parker Posey in season three of HBO's The White Lotus.": "https://www.purchase.edu/live/news/8562-new-season-of-the-white-lotus-features-two-from-purchas",
+  "Original illustration by Professor Stephen Cooke": "https://www.purchase.edu/live/news/8534-professor-stephen-cooke-creates-new-chemistry-and",
+  "Damani Pompey '12 (Photo: Conor McNamara)": "https://www.purchase.edu/live/news/8480-damani-pompey-12-earns-nysca-grant",
+  "Dava Huesca '19": "https://www.purchase.edu/live/news/5395-dava-huesca-19-named-artist-in-residence",
+  "Emily Carragher '06": "https://www.purchase.edu/live/news/8427-emily-carragher-06-loves-playing-the-villian",
+  "A/way by Derek Shane Garcia '13": "https://www.purchase.edu/live/news/8417-derek-shane-garcia-13-premieres-film-in-nyc",
+  "Kyle Abraham '00 (Dear Lord by AIM)": "https://www.purchase.edu/live/news/8404-kyle-abraham-00-brings-new-work-to-the-park-avenue",
+  "Curtis Brodner '19": "https://www.purchase.edu/live/news/4948-two-2019-grads-are-winners-of-this-years-salomon",
+  "Tarantula (Photo: Pratik Jain)": "https://www.purchase.edu/live/news/8324-psychological-bulletin-publishes-work-by-professor",
+  "Winners of the inaugural Purchase College Excellence in High School Journalism Awards.": "https://www.purchase.edu/live/news/8288-congratulations-to-budding-high-school-journalists",
+  "Group of young people sit and look in same direction.": "https://www.purchase.edu/live/news/8230-two-alumni-make-broadway-debuts-in-romeo-juliet",
+  "Jennifer Mogbock '13": "https://www.purchase.edu/live/news/8237-jennifer-mogbock-13-on-apple-tv-series",
+  "A. Dean Irby": "https://www.purchase.edu/live/news/8170-a-dean-irby-and-lisa-dawn-cave-79-receive-honors",
+  "Professor Paul Siegel": "https://www.purchase.edu/live/news/8137-professor-paul-siegel-awarded-third-nimh-grant",
+  "Cain Coleman": "https://www.purchase.edu/live/news/8116-the-power-of-purchase-on-stage-in-nyc",
+  "Connie Tsang, Lecturer in Film": "https://www.purchase.edu/live/news/7983-film-by-lecturer-connie-tsang-selected-for-cannes",
+  "Sierra Bianco": "https://www.purchase.edu/live/news/8045-sierra-blanco-26-wins-kennedy-center-award",
+  "Sinkane We Belong Album Cover": "https://www.purchase.edu/live/news/8020-sinkane-owes-songwriting-shift-to-purchase-experience",
+  "Kunga Choephel '23": "https://www.purchase.edu/live/news/6877-senior-filmmaker-screens-work-at-tide-film",
+  "the-2024-suny-chancellors-award-winners": "https://www.purchase.edu/live/news/7969-the-2024-suny-chancellors-award-winners",
+  "Claudia Logan '18": "https://www.purchase.edu/live/news/7958-claudia-logan-18-stars-in-bet-hit",
+  "Artists and Hackers logo in text with drawing of hand on digital device": "https://www.purchase.edu/live/news/5938-announcing-the-artists-and-hackers-podcast",
+  "Micah Stock '11": "https://www.purchase.edu/live/news/7934-micah-stock-11-to-make-steppenwolf-theatre-debut",
+  "Carlie Hoffman, Lecturer in Creative Writing": "https://www.purchase.edu/live/news/7915-lecturer-carlie-hoffman-wins-national-jewish-book",
+  "David Handschuh stands on a bridge with belt straps attached to the railings": "https://www.purchase.edu/live/news/7893-faculty-member-wins-nyppa-photography-award",
+  "Maura VanderPutten (Environmental Sciences, Biology minor)": "https://www.purchase.edu/live/news/7888-purchase-receives-second-invasive-species-grant",
+  "Zoë Winters '07 plays Kerry on HBO's Succession. (Photo: Macall B. Polay/HBO)": "https://www.purchase.edu/live/news/7869-one-last-time-zoe-winters-07-honored-for-succession",
+  "Susan Shopmaker accepts the Casting Award for The Holdovers on stage during the EE BAFTA Film Awards 2024 at The Royal Festival Hall on F...": "https://www.purchase.edu/live/news/7794-susan-shopmaker-nominated-for-bafta-best-casting",
+  "Student and professor outdoors looking at a small container.": "https://www.purchase.edu/live/news/7823-purchase-receives-dec-grant-for-invasive-species",
+  "Thom Jones and Nicole Kidman smile at the camera with arms around each others shoulders": "https://www.purchase.edu/live/news/7752-voice-and-dialect-coach-thom-jones-91-visits",
+  "Amelia Ponirakis '23 at the Buffalo International Film Festival": "https://www.purchase.edu/live/news/7728-junior-experimental-film-screens-in-us-and-uk",
+  "Blue badge with yellow stripe and white globe": "https://www.purchase.edu/live/news/7687-purchase-again-named-fulbright-hsi-leader",
+  "Student holds a container with a grasshopper.": "https://www.purchase.edu/live/news/7625-first-annual-bioblitz-records-317-different",
+  "RIOTUSA '22 and Ryan Press": "https://www.purchase.edu/live/news/7593-riotusa-22-signs-global-publishing-deal",
+  "political-theatre-in-prague": "https://www.purchase.edu/live/news/7542-political-theatre-in-prague",
+  "Hand in blue latex glove holds a pill between thumb and index finger on a pink background": "https://www.purchase.edu/live/news/7471-latest-podcast-cover-up-the-pill-plot-by-tj",
+  "Asian American woman in blue with elbow in the air": "https://www.purchase.edu/live/news/7435-keerati-jinakunwiphat-16-wins-princess-grace-award",
+  "Flowers in the Purchase Native Pollinator Garden": "https://www.purchase.edu/live/news/7419-crossover-goals-pollinator-garden-signage",
+  "Man in white t-shirt and black jacket smiles with water in background": "https://www.purchase.edu/live/news/7395-franco-paz-16-signs-book-deal",
+  "Alessandro Chillé": "https://www.purchase.edu/live/news/7388-film-by-alessandro-chille-14-screens-at-festivals",
+  "Large box holding several paint cans": "https://www.purchase.edu/live/news/7369-purchase-helps-divert-unwanted-paint-from",
+  "Standing left to right: David Settanni '09": "https://www.purchase.edu/live/news/7327-economics-network-event-connects-students-and",
+  "Victoria deMartin '14": "https://www.purchase.edu/live/news/7317-moviemaker-supports-project-by-victoria-demartin",
+  "pwsw-shonnon-marshall-22": "https://www.purchase.edu/live/news/7297-pwsw-shonnon-marshall-22",
+  "S U N Y Chancellor John King": "https://www.purchase.edu/live/news/7277-sonia-seth-suny-chancellors-award-winner",
+  "Drama Desk Awards in gold with a feather award between the words.": "https://www.purchase.edu/live/news/7246-awards-season-professors-grill-and-yavich",
+  "Daffodils on campus": "https://www.purchase.edu/live/news/7237-purchase-awarded-major-doe-grant",
+  "Jiaming Tang '18": "https://www.purchase.edu/live/news/7184-debut-novel-by-jiaming-andy-tang-18-coming-in-2024",
+  "Andrea Patterson '05": "https://www.purchase.edu/live/news/8242-andrea-patterson-05-stars-in-greek-classic",
+  "Bill Sage '88 in The New Group's The Seagull/Woodstock": "https://www.purchase.edu/live/news/7149-two-from-purchase-star-in-fresh-take-on-chekov",
+  "Jordan Tetewsky '16 at Woodstock Film Festival": "https://www.purchase.edu/live/news/7109-film-by-jordan-tetewsky-16-is-new-york-times",
+  "The Honorable Karen T. Beltran": "https://www.purchase.edu/live/news/7084-karen-beltran-esq-02-appointed-yonkers-city-court",
+  "Debora Martinez '22": "https://www.purchase.edu/live/news/7055-20212022-debora-martinez-22-creates-community",
+  "Latinos Unidos Student Club / Club Fair 2022": "https://www.purchase.edu/live/news/6998-major-neh-grant-will-support-humanities",
+  "Hal Hartley '84 (Photo: Michael Koshkin)": "https://www.purchase.edu/live/news/6975-debut-novel-by-hal-hartley-named-among-years-best",
+  "Participants in the annual Purchase Shark Tank-style competition for 2022.": "https://www.purchase.edu/live/news/6955-annual-shark-tank-competition-awards-5000-grand",
+  "Left) Ruth-Ann Gordon & Mauro David Cortina (right) hold their awards accompanied by the rest of our bridges students": "https://www.purchase.edu/live/news/6918-purchase-college-bridges-students-win-awards-at",
+  "Hunter Hollingsworth-Harris '22": "https://www.purchase.edu/live/news/6858-hunter-hollingsworth-22-heads-to-the-apollo-grand",
+  "The Princeton Review Guide to Green Colleges logo": "https://www.purchase.edu/live/news/6844-purchase-noted-as-a-green-college",
+  "Marcel Gbeffa during an artistic residency as a part of (T)HERE: Global Festival in 2019.": "https://www.purchase.edu/live/news/6798-purchase-named-a-2022-fulbright-hsi-leader",
+  "Woodstock Film Festival": "https://www.purchase.edu/live/news/6786-two-from-purchase-win-at-woodstock-film-festival",
+  "Marco North '90": "https://www.purchase.edu/live/news/6764-novel-by-marco-north-90-released-to-critical",
+  "Professor of Theatre and Performance Jordan Schildcrout": "https://www.purchase.edu/live/news/6750-professor-jordan-schildcrout-interviewed-on-ny1",
+  "Student presents senior project research at the annual Natural and Social Science Symposium.": "https://www.purchase.edu/live/news/6730-purchase-college-named-top-public-school-by-us",
+  "Regina Spektor '01": "https://www.purchase.edu/live/news/3784-regina-spektor-01-debuts-on-broadway",
+  "Camille Seaman '92 at the Oceti Sakowin Camp": "https://www.purchase.edu/live/news/6661-camille-seaman-92-on-pbs-brief-but-spectacular",
+  "Iquail Shaheed MFA '12": "https://www.purchase.edu/live/news/6648-iquail-shaheed-mfa-12-breaks-new-ground",
+  "Nicco Annan '98 at the NAACP Convention July 2022 holding the inaugural Trailblazer Award.": "https://www.purchase.edu/live/news/6625-nicco-annan-98-wins-naacp-trailblazer-award",
+  "Douglas Shindler and Michael Davis": "https://www.purchase.edu/live/news/6611-douglas-shindler-22-plans-to-open-the-black",
+  "Dan Romer '04": "https://www.purchase.edu/live/news/6597-dan-romer-04-earns-emmy-nomination",
+  "Romare Bearden": "https://www.purchase.edu/live/news/6581-neuberger-museum-of-art-acquires-romare-beardens",
+  "Dan Deacon '04": "https://www.purchase.edu/live/news/6553-dan-deacon-04-scores-hustle",
+  "Marjan Neshat '98": "https://www.purchase.edu/live/news/6537-marjan-neshat-98-finds-her-groove-off-broadway",
+  "The Warded Man illustration by Allen Williams for Grim Oak Press": "https://www.purchase.edu/live/news/6509-jd-zeik-82-adapting-sci-fi-horror-fantasy-novel",
+  "S U N Y Chancellor's Award for Excellence Recipients Laila Wilson and Corina Picon": "https://www.purchase.edu/live/news/6487-suny-chancellors-award-for-excellence-2022",
+  "Mara Keen MM '22": "https://www.purchase.edu/live/news/6485-thayer-fellowship-winner-mara-keen",
+  "Merce Cunningham teaching.": "https://www.purchase.edu/live/news/6422-merce-cunningham-trust-endows-new-scholarship-in",
+  "Ernestine White-Mifetu '99 (Photo: Raphael Mifetu)": "https://www.purchase.edu/live/news/6393-ernestine-white-mifetu-99-named-curator-at",
+  "Visual Arts Alum Tom Cross '93": "https://www.purchase.edu/live/news/6357-tom-cross-93-wins-bafta-for-best-editing",
+  "Zoë Winters '07": "https://www.purchase.edu/live/news/6341-zoe-winters-07-earns-sag-award-for-hbos-succession",
+  "Nina Schatell '23": "https://www.purchase.edu/live/news/6321-nina-schatell-23-receives-competitive-cody-renard",
+  "Erik Spink, Meet Me in the Meadow, 2021": "https://www.purchase.edu/live/news/6305-three-alumni-screening-films-at-moma",
+  "Album Cover": "https://www.purchase.edu/live/news/6276-prof-pete-malinverni-turns-to-purchase-family-on",
+  "Students talk at a table.": "https://www.purchase.edu/live/news/6250-purchase-and-wcc-offer-seamless-pathway",
+  "Amanda Seales '03": "https://www.purchase.edu/live/news/3394-debut-hbo-special-for-amanda-seales-03",
+  "Rob Swainston, Assistant Professor Art+Design, Printmaking": "https://www.purchase.edu/live/news/6205-rob-swainston-doomscrolling-prints-in-response-to",
+  "Alice Selipanov '21": "https://www.purchase.edu/live/news/6182-alice-selipanov-21-visual-approach-to-anthropology",
+  "Mitski '13 from The Only Heartbreaker video, 2021": "https://www.purchase.edu/live/news/6162-obama-picks-mitski-13",
+  "David Grill '86": "https://www.purchase.edu/live/news/6116-all-lit-up-heisman-trophy-on-espn",
+  "Cast of ABC's Abbott Elementary": "https://www.purchase.edu/live/news/6093-chris-perfetti-12-lands-role-on-abc-sitcom",
+  "American Riad Project in Detroit.": "https://www.purchase.edu/live/news/6084-the-american-riad-project-co-founded-by-professor",
+  "Janet Rollé '84": "https://www.purchase.edu/live/news/6062-janet-rolle-84-takes-the-helm-of-american-ballet",
+  "Bioswale in the West 1 Parking Lot": "https://www.purchase.edu/live/news/6044-purchase-is-a-top-green-college",
+  "Rena Butler '11 (Courtesy of Dance magazine)": "https://www.purchase.edu/live/news/6016-rena-butler-11-dance-cover-feature",
+  "Jonathan Harris '20": "https://www.purchase.edu/live/news/5126-jonathan-harris-20-presidents-award-winner-for",
+  "The President’s Award": "https://www.purchase.edu/offices/president/presidents-award",
+  "Professor Shaka McGlotten": "https://www.purchase.edu/live/news/4839-professor-shaka-mcglotten-named-data-society",
+  "Professor of Literature Elise Lemire": "https://www.purchase.edu/live/news/5916-professor-elise-lemire-discusses-new-book-on",
+  "Laila Wilson '22, playwriting and screenwriting": "https://www.purchase.edu/live/news/5867-laila-wilson-22-suny-act-and-naacp-scholarship",
+  "Anaïs Reno performs on September 11, 2021 at Citifield.": "https://www.purchase.edu/live/news/5898-jazz-artist-anais-reno-performs-at-citifield",
+  "Meryl Cates '08": "https://www.purchase.edu/live/news/5871-meryl-cates-08-pens-feature-on-native-american",
+  "Jason Rodriguez '12 (Courtesy Santiago Felipe/RRR Creative)": "https://www.purchase.edu/live/news/5845-jason-rodriguez-12-forms-new-talent-agency",
+  "Sophia Hadeshian": "https://www.purchase.edu/live/news/5752-congratulations-to-richard-marylee-salomon",
+  "Damali O'Keefe '22": "https://www.purchase.edu/live/news/5774-damali-okeefe-22-selected-for-prestigious",
+  "Andrea Thome": "https://www.purchase.edu/live/news/5754-asst-prof-thome-wins-prestigious-helen-merrill",
+  "Fiske Guide to Colleges Best Buy School": "https://www.purchase.edu/live/news/5716-purchase-named-top-20-best-values-in-the-nation",
+  "Adon Cooper '09": "https://www.purchase.edu/live/news/5680-proud-to-be-me-adon-cooper-09",
+  "Lucy Wijnands '20": "https://www.purchase.edu/live/news/4615-vocalist-lucy-wijnands-20-finalist-in-prestigious",
+  "Laura Ricciardi": "https://www.purchase.edu/live/news/5583-assistant-professor-of-arts-management-laura",
+  "Film still from Princesa by Melanie Rosete": "https://www.purchase.edu/live/news/5547-congratulations-to-the-winners-of-the-suny-wide",
+  "Kyle Abraham '00 (Photo: Tatiana Will)": "https://www.purchase.edu/live/news/5532-undeniable-talent-kyle-abraham-00-earns-endowed",
+  "Silas Brown '10, assistant professor": "https://www.purchase.edu/live/news/5260-professor-silas-brown-10-wins-grammy-award",
+  "Gabriella Shery '21": "https://www.purchase.edu/live/news/5461-illustration-by-senior-gabriella-shery-in-the-new",
+  "Laura Jobin-Acosta '20 MM": "https://www.purchase.edu/live/news/5343-laura-jobin-acosta-20-mm-earns-inaugural-opera",
+  "From left": "https://www.purchase.edu/live/news/5326-mural-by-stella-nova-picuri-21-selected-for-area",
+  "Brianna Agront": "https://www.purchase.edu/live/news/5285-brianna-agront-21-receives-the-suny-eop-norman-r",
+  "Carl Safina '77 (Photo: Kizza Vincent)": "https://www.purchase.edu/live/news/5248-two-purchase-authors-among-most-notable-for-2020",
+  "Imani Parker '20": "https://www.purchase.edu/live/news/5113-creative-writing-alumni-trio-launch-a-literary",
+  "Anita Yavich": "https://www.purchase.edu/live/news/4666-faculty-and-alum-nominated-for-drama-desk-awards",
+  "Neuberger Museum of Art Youth Education Program": "https://www.purchase.edu/live/news/5041-susan-gideon-fuirst-makes-transformative-gift-to",
+  "Jen Schriever": "https://www.purchase.edu/live/news/5066-jen-schriever-04-wins-obie-award",
+  "Campus in the Fall": "https://www.purchase.edu/live/news/5022-money-magazine-ranks-purchase-among-best-for-value",
+  "Processed with Snapseed.": "https://www.purchase.edu/live/news/5006-purchase-among-the-top-386-colleges-in-the-us",
+  "Associate Professor of Chemistry Stephen Cooke": "https://www.purchase.edu/live/news/4991-stephen-cooke-receives-national-science-foundation",
+  "Solangie Ledesma '20": "https://www.purchase.edu/live/news/4970-humans-of-ny-insta-features-purchase-success-story",
+  "Live Performance and Interactive Media Workshop screen shot": "https://www.purchase.edu/live/news/4925-students-immersed-in-the-ever-expanding-world-of",
+  "Mariales Diaz '19 (film)": "https://www.purchase.edu/live/news/4902-mariales-diaz-19-named-a-sundance-ignite-fellow",
+  "Fiske Guide to Colleges book cover": "https://www.purchase.edu/live/news/4895-purchase-makes-highly-selective-fiske-guide-for",
+  "Pride Flag": "https://www.purchase.edu/live/news/4846-adam-nagourney-77-captures-historical-importance",
+  "Jostedalsbreen Glacier, Norway": "https://www.purchase.edu/live/news/4830-professors-receive-grant-for-innovative-study",
+  "Smalls Jazz Club": "https://www.purchase.edu/live/news/4779-alumnus-spike-wilner-reopens-nyc-jazz-club",
+  "Professors Emeriti Lee Ehrman and Peter Schwab": "https://www.purchase.edu/live/news/4763-two-founding-professors-retire",
+  "S U N Y Chancellors Award for Excellence Winner Ilias Fourati '20": "https://www.purchase.edu/live/news/4728-ilias-fourati-20-receives-suny-chancellors-award",
+  "Filmmaker Mattson Tomlin '12": "https://www.purchase.edu/live/news/4331-paramount-picks-up-original-script-by-mattson",
+  "Rakeem Hardy '20 (dance)": "https://www.purchase.edu/live/news/4624-meet-rakeem-hardy-20-thayer-fellowship-winner",
+  "Garth Greenwell '01 (Photo: William J. Adams)": "https://www.purchase.edu/live/news/4608-garth-greenwell-earns-guggenheim-fellowship",
+  "Concert Hall, The Performing Arts Center": "https://www.purchase.edu/live/news/4587-campus-arts-organizations-deliver-online-content",
+  "Purchase Cares Icon (Navy blue heart over lighter blue background)": "https://www.purchase.edu/live/news/4556-purchasecares",
+  "Monica Ferrell, Associate Professor of Creative Writing": "https://www.purchase.edu/live/news/4410-monica-ferrell-finalist-for-kingsley-tufts-poetry",
+  "Erin Sullivan '12 (Photo: Renee Hahnel)": "https://www.purchase.edu/live/news/4358-erin-sullivan-12-delivers-a-ted-talk",
+  "Art in Public Places / Quantum Leap by Isaiah Ship": "https://www.purchase.edu/live/news/4283-art-in-public-places",
+  "Purchase College Startup Pitching Competition Winners Andres Hernandez-Rodriguez and Brian Farez.": "https://www.purchase.edu/live/news/4244-sophomores-andres-hernandez-rodriguez-and-brian",
+  "Curator Patrice Giasson; Engels the artist; Cindy Millin; Instructor Felix Matta-Fletcher; Alessandra Russo; Leonardo Giasson.": "https://www.purchase.edu/live/news/4226-engels-the-artist-creates-new-sculpture-with",
+  "Cyrille Aimée '08": "https://www.purchase.edu/live/news/4203-cyrille-aimee-earns-grammy-nomination",
+  "Professor Warren Lehrer awarded the 2019 Ladislav Sutnar Prize": "https://www.purchase.edu/live/news/4187-professor-warren-lehrer-awarded-2019-ladislav",
+  "Edwidge Danticat": "https://www.purchase.edu/live/news/4129-global-fest-2019",
+  "Paola Lázaro '09": "https://www.purchase.edu/live/news/4048-paola-lazaro-10-joins-season-ten-of-the-walking",
+  "President Emeritus Thomas J. Schwarz at the May 8 event celebrating his 17 year tenure at Purchase College. (Photo by Sean Zanni/PMC)": "https://www.purchase.edu/live/news/4027-thomas-j-schwarz-appointed-president-emeritus",
+  "Purchase Garden": "https://www.purchase.edu/live/news/3990-purchase-joins-renewable-energy-consortium",
+  "Instagram Post from Issa Dance Look": "https://www.purchase.edu/live/news/3974-the-new-york-times-highlights-insta-by-purchase",
+  "Michael Rakowitz '95": "https://www.purchase.edu/live/news/3943-michael-rakowitz-95-recipient-of-the-nasher-prize",
+  "Colby Hollman '19 (acting)": "https://www.purchase.edu/live/news/3915-from-purchase-to-zombie-apocalypse-colby-hollman",
+  "Brian Kavanaugh '05 Earns Fulbright Award": "https://www.purchase.edu/live/news/3869-artist-brian-kavanaugh-05-earns-fulbright-award",
+  "Students in Seminar Class": "https://www.purchase.edu/live/news/3827-purchase-merits-placement-in-highly-selective",
+  "The Andrew W. Mellon Foundation logo": "https://www.purchase.edu/live/news/3751-neuberger-museum-of-art-receives-150000-grantto",
+  "Celeste Arias as Eléna and Jay O. Sanders as Ványa in Uncle Vanya": "https://www.purchase.edu/live/news/3727-jay-osanders-76-wins-a-drama-desk-award",
+  "Dancers perform on stage": "https://www.purchase.edu/live/news/3674-purchase-students-earn-suny-arts-awards",
+  "Dancer Jojo Boykins '18 featured on PBS' new ALLARTS channel (dancing in the Dance Building lobby)": "https://www.purchase.edu/live/news/3578-dancer-jojo-boykins-18-featured-on-allarts",
+  "Danniel Schoonebeek '08": "https://www.purchase.edu/live/news/3524-danniel-schoonebeek-08-earns-nea-award",
+  "David Rosenberg": "https://www.purchase.edu/live/news/3500-backstage-legends-and-masters-honors-david",
+  "Broadway Technical Theatre History Project": "https://www.purchase.edu/broadway-technical-theatre-history-project",
+  "The Out of the Depths company takes a bow": "https://www.purchase.edu/live/news/3452-acting-professor-features-purchase-alumni-and",
+  "Food Pantry sign": "https://www.purchase.edu/live/news/3419-purchase-offers-food-pantry-to-address-food",
+  "Ian Antonio": "https://www.purchase.edu/live/profiles/1630-ian-antonio",
+  "Janette Yarwood '96": "https://www.purchase.edu/live/news/3351-janice-yarwood-96-honored",
+  "Seniors Angela Galli and Kelly Hayes receive oversized check for winning the second annual Start Up Purchase Pitching Competition": "https://www.purchase.edu/live/news/3315-purchase-shark-tank-awards-7000-to-students",
+  "Anne Kern Awarded Chevalier of the Order of Arts and Letters": "https://www.purchase.edu/live/news/3301-anne-kern-honored-by-french-embassy",
+  "Kerry LeVielle '17 (cinema studies)": "https://www.purchase.edu/live/news/3228-kerry-levielle-17-named-an-ignite-fellow-by",
+  "Walt Whitman": "https://www.purchase.edu/live/news/3185-frank-candelaria-to-speak-at-the-national",
+  "The Quad": "https://www.purchase.edu/live/news/3082-65-million-in-upgrades-to-residence-halls-now",
+  "Literature professor Anthony Domestico speaks at the SUNY Chancellor's Inauguration": "https://www.purchase.edu/live/news/3045-purchase-professor-and-students-featured-in",
+  "Students at Orientation 2018": "https://www.purchase.edu/live/news/3012-purchase-college-named-a-top-public-liberal-arts",
+  "Multicultural Center invites passers by to comment on the one thing they can do to build community and help end prejudice.": "https://www.purchase.edu/live/news/2929-purchase-ranked-as-one-of-top-384-colleges",
+  "Purchase College Library exterior": "https://www.purchase.edu/live/news/3971-us-news-and-world-report-ranks-purchase",
+  "Rachel Weiss '16 holds her NY Emmy": "https://www.purchase.edu/live/news/2862-new-york-emmy-goes-to-journalism-alumna",
+  "Kamala Sankaram Headshet": "https://www.purchase.edu/live/news/2294-composition-faculty-sends-opera-to-the-schools",
+  "Kamala Sankaram": "https://www.purchase.edu/live/news/3937-professor-kamala-sankarams-techno-infused-opera",
+  "Jesus Christ Superstar Live in Concert / Ben Green '15 earned Emmy nomination for lighting direction.": "https://www.purchase.edu/live/news/2820-purchase-alum-score-emmy-nominations",
+  "Zaire Anderson '19 and the Art Force 5": "https://www.purchase.edu/live/news/2803-zaire-anderson-19-is-superhero-for-the-summer",
+  "Comedy of Errors": "https://www.purchase.edu/live/news/2733-acting-is-amazing",
+  "Brittny Cooper '15": "https://www.purchase.edu/live/news/2710-brittny-cooper-15-embarks-on-the-ride-of-her-life",
+  "Clint Ramos": "https://www.purchase.edu/live/profiles/1815-clint-ramos",
+  "Jiaming “Andy Tang '18": "https://www.purchase.edu/live/news/2640-creative-writer-wins-prestigious-contest",
+  "Regina Spektor '01 performing Après Moi during a day of filming with the Poetry in America team.": "https://www.purchase.edu/live/news/2623-regina-spektor-01-featured-on-poetry-in-america",
+  "Teal ribbon symbol to end sexual assault": "https://www.purchase.edu/live/news/2586-sexual-assault-awareness-week-recap",
+  "S U N Y Logo": "https://www.purchase.edu/live/news/3697-suny-chancellors-award-for-excellence-2019",
+  "Kate Gilmore": "https://www.purchase.edu/live/news/2517-kate-gilmore-honored-with-a-guggenheim-fellowship",
+  "The PAC logo projected on the PepsiCo Theatre's stage curtain.": "https://www.purchase.edu/live/news/2489-the-pacs-pepsico-theatre-unveiled-after-million",
+  "Max Pearce '18 slam dunks in the gym": "https://www.purchase.edu/live/news/2456-max-pearce-18-finishes-third-in-slam-dunk",
+  "Various students participating in a previous Purchase Alternative Service Trip": "https://www.purchase.edu/live/news/2443-purchase-alternative-service-trip",
+  "Kayla Cashetta Headshot": "https://www.purchase.edu/live/news/2430-purchase-alum-wins-first-hildegard-composition",
+  "Neil Gaiman and Michael Chabon spoke as part of the Durst Distinguished Lecture Series.": "https://www.purchase.edu/live/news/2398-author-neil-gaiman-offered-advice-for-students",
+  "Alyce Gilbert": "https://www.purchase.edu/live/news/2379-legendary-broadway-costume-designer-is-wicked-good",
+  "Professor Dave Grill and intern Victoria Corbalis '18": "https://www.purchase.edu/live/news/2322-dave-grill-lights-up-superbowl-halftime-show",
+  "Students and collaborators work on American Riad project in Detroit": "https://www.purchase.edu/live/news/2253-project-by-professor-chris-robbins-earns-knight",
+  "Coronation of Poppea": "https://www.purchase.edu/live/news/2187-opera-production-wins-national-award",
+  "Cover of Dance Magazine January 2018 issue": "https://www.purchase.edu/live/news/2174-two-dancers-rise-to-the-top",
+  "Ray Wilcox": "https://www.purchase.edu/live/news/2277-pc4y-to-partner-with-innovative-yonkers",
+  "Recipe for a Loving Community by Madeline Friedman '18": "https://www.purchase.edu/live/news/2111-students-create-art-in-vacant-spaces",
+  "Wayne Tucker": "https://www.purchase.edu/live/news/2090-jazz-alum-releases-new-epic-recording",
+  "Andrew Salomon at the Alumni Mixer for Journalism and Writing Majors": "https://www.purchase.edu/live/news/2075-journalism-professor-pays-it-forward",
+  "Artist in Residence Ignacio Iturria in the studio with students": "https://www.purchase.edu/live/news/2022-artdesign-students-study-with-renowned-painter",
+  "Top row L to R: Tamisha Guy '13": "https://www.purchase.edu/live/news/2001-purchase-college-alumni-attend-abrahaminmotion",
+  "The Purchase Dance Company recently visited Taipei and Kaohsiung City for performances": "https://www.purchase.edu/live/news/1983-purchase-dance-company-visits-taiwan",
+  "Bubble P logo with Man Booker Prize logo": "https://www.purchase.edu/live/news/1946-durst-lectures-feature-top-authors",
+  "A. Dean Irby, associate professor of acting": "https://www.purchase.edu/live/news/1925-break-the-handcuffs",
+  "Arts Abroad Program Students": "https://www.purchase.edu/live/news/1871-arts-abroad-program-welcomes-students-from-china",
+  "Arts Abroad Program": "https://www.purchase.edu/academics/arts/arts-abroad-program/index.php",
+  "Majella Loughran '12 and the Diavolo Dance Company following their semi-final win on NBC's America's Got Talent": "https://www.purchase.edu/live/news/1829-majella-loughran-12-has-got-talent",
+  "Dave Grill '86": "https://www.purchase.edu/live/news/1808-fourth-emmy-award-for-david-grill-86",
+  "Matt Wilson": "https://www.purchase.edu/live/profiles/1747-matthew-wilson",
+  "Laura Kaminsky": "https://www.purchase.edu/live/news/3383-laura-kaminsky-wins-visionary-composer-award",
+  "Commencement 2016": "https://www.purchase.edu/live/news/1387-commencement-2017",
+  "Jon Faddis": "https://www.purchase.edu/live/news/1648-jon-faddis-uses-social-media-to-bring-jazz-to",
+  "Camille Seaman '92 The Lemaire Channel off the off the west coast of the Antarctic Peninsula": "https://www.purchase.edu/live/news/1602-stunning-iceberg-cover-photo-by-camille-seaman-92",
+  "Dan Romer": "https://www.purchase.edu/live/news/1580-alumnus-dan-romers-music-featured-in-netflix-movie",
+  "Students studying abroad in India granted an audience with the Dalai Lama": "https://www.purchase.edu/live/news/1486-philosophy-art-and-the-dalai-lama",
+  "Julianne Waber '17": "https://www.purchase.edu/live/news/1447-julianne-waber-17",
+  "Leah Woods '18": "https://www.purchase.edu/live/news/1373-leah-woods-18-merges-arts-and-philanthropy",
+  "Ivan Forde '12": "https://www.purchase.edu/live/news/1332-ivan-forde-12-awarded-prestigious-fellowship",
+  "Occupy Museums": "https://www.purchase.edu/live/news/1159-purchase-college-at-the-2017-whitney-biennial",
+  "Screen shot from Madonna's video HerStory": "https://www.purchase.edu/live/news/1144-celebrating-international-womens-day-with-madonna",
+  "Seniors Hannah": "https://www.purchase.edu/live/news/1127-ptv-station-managers-take-on-prime-time",
+  "Artist Janet Langsam working in her studio circa 1970. Photo courtesy of Janet Langsam.": "https://www.purchase.edu/live/news/8590-janet-langsam-improbable-feminist-a-compelling",
+  "Carter Hudson '09": "https://www.purchase.edu/live/news/8567-carter-hudson-09-cast-in-broadways-good-night-and",
+  "A crossroads with orange cones and a railroad crossing gate.": "https://www.purchase.edu/live/news/8560-fun-fact-zero-day-scene-shot-on-campus",
+  "Joey Katz '18": "https://www.purchase.edu/live/news/8484-joey-katz-18-artistic-director-of-film-festival",
+  "Company 49 in Gint (Written by Romulus Linney": "https://www.purchase.edu/live/news/8472-lifetime-achievement-awards-for-faculty",
+  "Marin Kosut, Professor of Sociology": "https://www.purchase.edu/live/news/8452-book-by-professor-marin-kosut-named-best-of-2024",
+  "Fred Wilson '76, Passionate Artist": "https://www.purchase.edu/live/news/8415-world-renowned-artist-fred-wilsonjoins-friends-of",
+  "Lip Critic's Hex Dealer album cover": "https://www.purchase.edu/live/news/8410-lip-critic-lands-at-57-on-pastes-100-best",
+  "Dana Freeman '25": "https://www.purchase.edu/live/news/8399-dana-freeman-25-earns-design-scholarship",
+  "Lucy Kalantari '98": "https://www.purchase.edu/live/news/8370-nominations-for-the-2025-grammy-awards-announced",
+  "Conservatory of Dance students take part in a film to announce the launch of Mugler Creators to support talented contemporary dance and m...": "https://www.purchase.edu/live/news/8297-mugler-creators-program-shines-a-light-on-purchase",
+  "Student BioBlitz participant": "https://www.purchase.edu/live/news/8278-2nd-annual-bioblitz-records-347-species",
+  "Khlaif Tahir Thompson '18": "https://www.purchase.edu/live/news/8248-work-by-khalif-tahir-thompson-18-at-the-armory-show",
+  "A gallery visitor wearing a blue shirt seen from behind looking at art on the wall.": "https://www.purchase.edu/live/news/8218-immersive-photography-is-festival-runs-sep-18nov-22",
+  "Film still from On The Ridge by Ruby Rose Makkena '23": "https://www.purchase.edu/live/news/8185-two-film-alumni-win-prestigious-nbr-awards",
+  "Jessica Levy": "https://www.purchase.edu/live/news/8165-assistant-professor-of-history-jessica-levy",
+  "Wordmark: The Hollywood Reporter in red": "https://www.purchase.edu/live/news/8103-the-25-best-drama-schools-in-the-world",
+  "Brian MacDevitt '80": "https://www.purchase.edu/live/news/8085-brian-macdevitt-80-wins-sixth-tony-award",
+  "Concrete house on a distant hillside surrounded by trees and greens with a blue sky": "https://www.purchase.edu/live/news/8037-associate-professor-hakan-topal-merges-art-science",
+  "Rosalynde LeBlanc '94 (Photo: Lee Gumbs)": "https://www.purchase.edu/live/news/8013-rosalynde-leblanc-94-wins-peabody-award-for",
+  "Purchase Outdoors Club Hikes Hook Mountain": "https://www.purchase.edu/live/news/7977-take-a-hike-with-the-purchase-outdoors-club",
+  "Paige Gilbert '14": "https://www.purchase.edu/live/news/6328-paige-gilbert-14-lands-role-at-lincoln-center",
+  "Emily Ruth Verona '12": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-releasing-jan-30",
+  "Lip Critic band": "https://www.purchase.edu/live/news/7941-purchase-bred-lip-critic-a-band-to-watch",
+  "Students view the art on display in LaGuardia Airport Terminals B and C": "https://www.purchase.edu/live/news/7919-purchase-the-first-to-tour-laguardias-premier",
+  "Da'Vine Joy Randolph poses with the Supporting Actress Award for 'The Holdovers' in the winners room during the EE BAFTA Film Awards 2024...": "https://www.purchase.edu/live/news/7856-pivotal-behind-the-scenes-role-thom-jones-91",
+  "Jessica Maffia MFA '24": "https://www.purchase.edu/live/news/7892-20232024-jessica-maffia-mfa-24",
+  "The Quad and Residence Halls": "https://www.purchase.edu/live/news/7876-new-local-housing-scholarships-announced",
+  "Caleb Eberhardt '12 in glasses and a blue button down shirt with arms crossed": "https://www.purchase.edu/live/news/7857-caleb-eberhardt-12-lands-second-broadway-role",
+  "GRAMMY Awards® logo (illustration of gold gramophone on a brown base)": "https://www.purchase.edu/live/news/7695-grammy-nominated",
+  "Hunter Hollingsworth '22": "https://www.purchase.edu/live/news/7759-hunter-hollingsworth-22-makes-broadway-debut",
+  "Acting majors Tachynel Merveille and Destiny Barbour won the Audience Favorite Award": "https://www.purchase.edu/live/news/7735-the-2023-startup-competition-awards-5000-in-prizes",
+  "Adam Birnbaum": "https://www.purchase.edu/live/news/7676-adam-birnbaums-new-album-preludes-wins-praise",
+  "billboard-magazine-touts-studio-production-program": "https://www.purchase.edu/live/news/7602-billboard-magazine-touts-studio-production-program",
+  "Students enjoy Fun Fair on the Great Lawn during Welcome Week.": "https://www.purchase.edu/live/news/7559-feeling-top-ten",
+  "Assistant Professor of Communications Megan Rossman (Photo: Bri Elledge)": "https://www.purchase.edu/live/news/7524-new-film-by-megan-rossman-hits-the-film-circuit",
+  "Portrait of light skinned Black dancer with hand bent over head": "https://www.purchase.edu/live/news/7456-symara-johnson-19-named-outstanding-breakout",
+  "Shota Miyoshi '22": "https://www.purchase.edu/live/news/7441-dance-magazine-cover-shota-miyoshi-22",
+  "Vuk Lungulov-Klotz '16": "https://www.purchase.edu/live/news/2747-purchase-filmmaker-heads-to-sundance-institute",
+  "Person walks in distance with Welcome to Purchase College sign on brick building": "https://www.purchase.edu/live/news/7392-purchase-selected-for-fiske-guide-2024",
+  "Chancellor King stands at a table chatting with EOP students.": "https://www.purchase.edu/live/news/7379-chancellor-king-visits-campus-to-welcome-eop",
+  "Photo of Caitly Dominici '24": "https://www.purchase.edu/live/news/7352-caitly-dominici-24-awarded-inaugural-suny",
+  "Edie Falco": "https://www.purchase.edu/live/news/7322-edie-falco-84-and-oona-roche-17-on-pete-davidsons",
+  "Lisa Dawn Cave '83": "https://www.purchase.edu/live/news/7311-lisa-dawn-cave-83-earns-special-tony-award",
+  "Jen Schriever '04": "https://www.purchase.edu/live/news/7298-lecturer-jen-schreiver-04-earns-tony-nomination",
+  "James Ortiz '10": "https://www.purchase.edu/live/news/6561-james-ortiz-10-wins-drama-desk-award-for-puppetry",
+  "Jeff Croiter '93": "https://www.purchase.edu/live/news/7247-jeff-croiter-93-earns-drama-desk-nomination",
+  "David Bassuk, Professor of Acting": "https://www.purchase.edu/live/news/7223-professor-david-bassuk-is-a-fulbright-scholar-for",
+  "Nicco Annan '98 Wins NAACP Image Award for Outstanding Actor in a Drama Series.": "https://www.purchase.edu/live/news/7122-nicco-annan-98-wins-outstanding-actor-award",
+  "Jovan Dansberry in Bob Fosse's Dancin' (Photo: Julieta Cervantes)": "https://www.purchase.edu/live/news/7161-purchase-on-the-creative-team-for-broadways-bob",
+  "Thomas Warfield '88": "https://www.purchase.edu/live/news/7144-thomas-warfield-88-celebrated-for-career",
+  "Keerati Jinakunwiphat choreographing her new ballet for New York City Ballet": "https://www.purchase.edu/live/news/7093-keerati-jinakunwiphat-16-makes-history-at-nybc",
+  "Jazz vocalist Samara Joy '21 (Photo: Meredith Truax)": "https://www.purchase.edu/live/news/6895-two-major-grammy-nominations-for-samara-joy-21",
+  "Mitski '13 (Photo: Ebru Yildiz)": "https://www.purchase.edu/live/news/7032-mitski-13-collaboration-receives-oscar-nomination",
+  "Darryl Rahn '15": "https://www.purchase.edu/live/news/6990-darryl-rahn-15-wins-battle-of-the-instant",
+  "Global Scholars students visit the UN": "https://www.purchase.edu/live/news/6967-global-scholars-meet-with-un-deputy-secretary",
+  "Creator/star Quinta Brunson and Chris Perfetti on the ABC sitcom Abbott Elementary. (Photo: Christopher Willard/": "https://www.purchase.edu/live/news/6933-chris-perfetti-11-nominated-for-abbott-elementary",
+  "Blake Pfeil MA '19": "https://www.purchase.edu/live/news/6888-blake-pfiel-19-finds-solace-and-beauty-in",
+  "Purchase Opera production of Dialogues of the Carmelites in 2020-2021.": "https://www.purchase.edu/live/news/6069-purchase-opera-earns-top-award-for-20202021",
+  "AUDELCO Awards 50 Logo": "https://www.purchase.edu/live/news/6849-four-earn-audelco-viv-award-nominations",
+  "Uranium spectrum visible": "https://www.purchase.edu/live/news/6827-can-clever-chemistry-eliminate-nuclear-waste",
+  "purchase-earns-a-competitive-fulbright-hays-award": "https://www.purchase.edu/live/news/6793-purchase-earns-a-competitive-fulbright-hays-award",
+  "Students use a comb knife to remove the caps from honey frames": "https://www.purchase.edu/live/news/6769-the-buzz-about-bees-collecting-honey-to-examine",
+  "LA Dance Project (from preview performances of Benjamin Millepied's ROMEO & JULIET SUITE during the @nuitsdefourviere festival i...": "https://www.purchase.edu/live/news/6756-purchase-dance-represents-at-the-la-dance-project",
+  "Furniture artist Sophie Glenn '12": "https://www.purchase.edu/live/news/6740-sophie-glenn-12-receives-john-d-mineck-fellowship",
+  "Hunter Zimny '16": "https://www.purchase.edu/live/news/6708-hunter-zimny-16-praised-for-work-on-funny-pages",
+  "Erika Ebbs": "https://www.purchase.edu/live/news/6691-professors-awarded-major-grant-by-national-science",
+  "Cellist and Lecturer Thomas Mesa": "https://www.purchase.edu/live/news/6655-lecturer-thomas-mesa-wins-sphinx-medal-of",
+  "Fatoumata Fadiga": "https://www.purchase.edu/live/news/6638-fatoumata-fadiga-24-named-future-nobel-laureate",
+  "Lecturer and Soul Voices Choir Director Knoelle Higginson": "https://www.purchase.edu/live/news/6621-soul-voices-director-knoelle-higginson-on-agt",
+  "Fiske Guide to Colleges": "https://www.purchase.edu/live/news/6607-purchase-among-best-and-most-interesting-in-fiske",
+  "Kyle Abraham '00": "https://www.purchase.edu/live/news/6592-work-by-kyle-abraham-00-earns-a-ny-emmy-nomination",
+  "Professor of Creative Writing Monica Ferrell": "https://www.purchase.edu/live/news/6545-poem-by-professor-monica-ferrell-published-in-the",
+  "Sarah Catherine Hook '17 and Imani Lewis star in Netflix series First Kill.": "https://www.purchase.edu/live/news/6524-sarah-catherine-hook-17-stars-in-new-netflix",
+  "Purchase College Leadership Institute 2021-2022": "https://www.purchase.edu/live/news/6503-purchase-college-leadership-institute-20212022",
+  "Naoki Yogi '22": "https://www.purchase.edu/live/news/6486-thayer-fellowship-winner-naoki-yogi",
+  "Claire Giegerich '23": "https://www.purchase.edu/live/news/6378-tv-pilot-by-claire-giegerich-23-selected-for-nffty",
+  "Allison Loggins-Hull '05": "https://www.purchase.edu/live/news/6423-allison-loggins-hull-05-named-a-cleveland",
+  "TJ Raphael '11": "https://www.purchase.edu/live/news/6368-tj-raphael-11-number-1-science-podcast-in-america",
+  "AJ Jordan '15": "https://www.purchase.edu/live/news/6406-journalist-aj-jordan-15-best-financial-decision",
+  "Jordan Tetewsky '16 (film)": "https://www.purchase.edu/live/news/6311-jordan-tetewsky-16-wins-at-slamdance",
+  "Samara Joy '21 (jazz studies)": "https://www.purchase.edu/live/news/6293-samara-joy-21-on-the-today-show",
+  "Tomashi Jackson, 2022 Roy R. Neuberger Prize Recipient": "https://www.purchase.edu/live/news/6258-neuberger-museum-of-art-announces-2022-winner-of",
+  "Phil Corso '11": "https://www.purchase.edu/live/news/6241-phil-corso-11-named-to-newly-created-position-at",
+  "Erik Spink '11": "https://www.purchase.edu/live/news/6211-erik-spink-11-to-screen-short-at-moma",
+  "Aya Keefe": "https://www.purchase.edu/live/news/6195-aya-keefe-07-named-manhattans-deputy-borough",
+  "Entrepreneurship in the Arts major Shannon Dawson": "https://www.purchase.edu/live/news/6169-the-purchase-shark-tank-style-competition-awards",
+  "West Side Story logo": "https://www.purchase.edu/live/news/6125-two-from-purchase-in-spielbergs-west-side-story",
+  "Cecellia Koueth": "https://www.purchase.edu/live/news/6101-actor-cici-koueth-21-selected-by-warner-brothers",
+  "A boulder marks the location where Brister Freeman's house is thought to have stood in Walden Woods. (Courtesy of the Walden Woods Project)": "https://www.purchase.edu/live/news/6088-professor-elise-lemire-discusses-black-walden",
+  "Lamesa Nashrat '21 (film)": "https://www.purchase.edu/live/news/6046-senior-film-by-lamesa-nashrat-21-screening-at-tide",
+  "Brittany Petronella '16 (photography, art history minor)": "https://www.purchase.edu/live/news/6023-brittany-petronella-16-shares-her-passion-for",
+  "Raechelle Manalo '20": "https://www.purchase.edu/live/news/5997-raechelle-manalo-20-joins-paul-taylor-dance-co",
+  "Katie Kresek '98, '99": "https://www.purchase.edu/live/news/5973-katie-kresek-98-99-wins-tony-award",
+  "Lee Tusman": "https://www.purchase.edu/live/news/5920-lee-tusman-to-explore-innovation",
+  "Student on campus viewing a cell phone": "https://www.purchase.edu/live/news/5908-purchase-named-top-ten-public-liberal-arts",
+  "Brian Otaño '11": "https://www.purchase.edu/live/news/5906-brian-otano-11-signs-deal-with-amazon-studios",
+  "Tamisha Guy '13": "https://www.purchase.edu/live/news/5890-tamisha-guy-13-earns-vilcek-prize",
+  "Gianna Caranfa '15 Inside her new tattoo parlor Bee Inked. (Mark Vergari/The Journal News)": "https://www.purchase.edu/live/news/5850-gianna-caranfa-15-invites-you-to-bee-inked",
+  "Louise Bartolotta '16": "https://www.purchase.edu/live/news/5788-louise-bartolotta-16-receives-inaugural-content",
+  "Victor Cuoto '14": "https://www.purchase.edu/live/news/5781-victor-cuoto-14-nominated-for-news-and-doc-emmy",
+  "Bryan Korn": "https://www.purchase.edu/live/news/3036-bryan-korn-12-hilda-wins-two-daytime-emmy-awards",
+  "Jodi Long '76 Holds Up her Daytime Emmy® Award": "https://www.purchase.edu/live/news/5727-jodi-long-76-earns-a-daytime-emmy-win",
+  "Blood Wedding": "https://www.purchase.edu/live/news/5690-acting-bfa-named-top-25-in-the-world",
+  "ConnectiveCollective on view at the Neuberger Museum of Art through June 27": "https://www.purchase.edu/live/news/5673-connectivecollective-on-view-through-june-27-at",
+  "Caleb Dowden '21 (dance)": "https://www.purchase.edu/live/news/5589-caleb-dowden-21-earns-fulbright-award",
+  "Purchase is Princeton Review Top 200 Best Value Colleges (students on the Quad in Adirondack chairs)": "https://www.purchase.edu/live/news/5566-purchase-is-a-top-200-best-value-college-for-2021",
+  "William Byram '20": "https://www.purchase.edu/live/news/5546-william-byram-20-earns-fulbright-award",
+  "POV Fest Logo": "https://www.purchase.edu/live/news/5503-4th-annual-pov-festival-april-1718",
+  "SUNYWide Film Festival design": "https://www.purchase.edu/live/news/5477-10th-annual-suny-wide-film-festival-april-910",
+  "Travis Sluss '07 (Photo: MacInspires Facebook)": "https://www.purchase.edu/live/news/5454-travis-sluss-07-named-40-under-40",
+  "Tanairi Vazquez '10 (dance performance)": "https://www.purchase.edu/live/news/5425-working-5-to-9-tanairi-vazquez-10-stars-in",
+  "Emma Caymares'12": "https://www.purchase.edu/live/news/5368-emma-caymares-12-lands-role-on-abc-sitcom",
+  "Cover of Dance magazine": "https://www.purchase.edu/live/news/5336-keerati-jinakunwiphat-16-is-one-to-watch",
+  "Entrance to the Broadview complex": "https://www.purchase.edu/live/news/5305-broadview-a-meeting-of-the-minds",
+  "Asst. Professor David DeJesus": "https://www.purchase.edu/live/news/5267-david-de-jesus-plays-on-grammy-nominated-album",
+  "Professor of Anthropology and Media Studies Jason Pine (Photo: Annette Hornischer)": "https://www.purchase.edu/live/news/5195-the-alchemy-of-meth-by-professor-jason-pine-earns",
+  "Joe Matoske '10": "https://www.purchase.edu/live/news/5107-joe-matoske-10-wins-emmys-and-accepted-into-ace",
+  "Dave Grill": "https://www.purchase.edu/live/news/4940-professor-david-grill-and-ben-green-15-earn-emmy",
+  "Purchase College sign at front with orange and gold mums.": "https://www.purchase.edu/live/news/5054-purchase-is-among-top-ten-public-national-liberal",
+  "David Graeber, 2016": "https://www.purchase.edu/live/news/5042-renowned-anthropologist-david-graeber-84-has-died",
+  "Director": "https://www.purchase.edu/live/news/5016-christoper-robbins-american-riad-project-receives",
+  "Interim President Dennis Craig and Chief Diversity Officer Jerima DeWese stand below the large clock on campus.": "https://www.purchase.edu/live/news/5003-times-up-on-racism",
+  "Actor Nicco Annan '98 as Uncle Clifford in Starz drama P-Valley": "https://www.purchase.edu/live/news/4984-nathaniel-nicco-annan-98-is-uncle-clifford",
+  "Britney DiTocco '20": "https://www.purchase.edu/live/news/4720-britney-ditocco-20-receives-suny-chancellors-award",
+  "S U N Y logo and wordmark, white on blue background": "https://www.purchase.edu/live/news/1428-chancellors-award-for-excellence",
+  "Juneteenth We Breathe Black art exhibition logo": "https://www.purchase.edu/live/news/4856-the-acting-program-honors-juneteenth",
+  "Yancy Garcia": "https://www.purchase.edu/live/news/4783-yancy-garcia-named-next-ella-fitzgerald-scholar",
+  "Dr. Milagros Milly Peña": "https://www.purchase.edu/live/news/4772-dr-milagros-pena-named-next-president",
+  "Pete Malinverni": "https://www.purchase.edu/live/news/4748-jazz-studies-head-pete-malinverni-featured-on",
+  "S U N Y Esports Challenge Co-sponsored by Extreme Networks": "https://www.purchase.edu/live/news/4678-purchase-joins-esports-challenge-sunytogether",
+  "Elizabeth Cook '20 (acting)": "https://www.purchase.edu/live/news/4630-meet-elizabeth-cook-20-thayer-fellowship-winner",
+  "Eric Gottesman": "https://www.purchase.edu/live/news/4601-eric-gottesman-awarded-prestigious-guggenheim",
+  "Claribel Ortega '10": "https://www.purchase.edu/live/news/4578-novel-by-claribel-ortega-10-will-see-the-big",
+  "Ford V Ferrari movie (Merrick Morton/20th Century Fox)": "https://www.purchase.edu/live/news/4310-andrew-buckland-94-earns-oscar-nomination",
+  "Purchase College Commencement at the Westchester Civic Center": "https://www.purchase.edu/live/news/4399-purchase-is-a-best-value",
+  "Jon Samson '03 wins a Grammy for Best Childrens Album": "https://www.purchase.edu/live/news/4335-jon-samson-03-wins-a-grammy",
+  "Hannah Garner '15 (Credit: Mike Lindle)": "https://www.purchase.edu/live/news/4271-dance-magazine-names-hannah-garner-15-one-to-watch",
+  "Participants walk on the The Yellow Walk performance created by Kate Gilmore": "https://www.purchase.edu/live/news/3409-kate-gilmore-heals-with-art-after-parkland",
+  "Samara Joy McLendon '21 holds her Sarah Vaughan Jazz Vocal award.": "https://www.purchase.edu/live/news/4211-samara-mclendon-21-earns-prestigious-sassy-award",
+  "Left to right: Sarah Yousef": "https://www.purchase.edu/live/news/4184-nine-students-explore-opportunities-in-stem",
+  "Silas Brown": "https://www.purchase.edu/live/news/4188-faculty-members-earn-grammy-nominations",
+  "Damani Bissett '21": "https://www.purchase.edu/live/news/4066-damani-brissett-21-receives-inaugural-milos",
+  "Melanie Rosete '20": "https://www.purchase.edu/live/news/4045-senior-wins-princess-grace-foundation-film",
+  "Dr. Stephen Harris": "https://www.purchase.edu/live/news/4011-georgie-humphries-19-april-mcilwaine-19",
+  "Five Oceans in a Teaspoon Front Cover": "https://www.purchase.edu/live/news/3989-professor-warren-lehrers-new-book-multimedia",
+  "Students play music on the mall": "https://www.purchase.edu/live/news/3885-purchase-named-top-385-by-the-princeton-review",
+  "Purchase Jazz Orchestra at Blue Note": "https://www.purchase.edu/live/news/3840-jazz-program-featured-at-artswestchesters-jazzfest",
+  "Mitski '13 (Photo: David Lee, Redmond, WA)": "https://www.purchase.edu/live/news/3820-must-read-profile-mitski-13",
+  "Students Conduct Research in Biology Lab": "https://www.purchase.edu/live/news/3412-purchase-named-a-top-200-best-value-in-the-nation",
+  "Lisa Jean Moore (stands at front of class)": "https://www.purchase.edu/live/news/3620-lisa-jean-moore-named-distinguished-professor",
+  "Nick Bruno '15": "https://www.purchase.edu/live/news/3558-nicolas-bruno-15-photographs-his-nightmares",
+  "The Center for Engagement": "https://www.purchase.edu/live/news/3501-the-center-for-engagement-has-launched",
+  "David Grill '86 and student look at stage model": "https://www.purchase.edu/live/news/3491-spotlights-on-david-grill-86-for-a-change",
+  "Declan Moore '19 and Dave Grill '86 at Super Bowl 2019": "https://www.purchase.edu/live/news/3446-declan-moore-19-interned-at-the-super-bowl",
+  "Lorenzo Candelaria, Dean of the School of the Arts": "https://www.purchase.edu/live/news/3405-dean-lorenzo-candelaria-in-the-news",
+  "Showtime at the Apollo cover": "https://www.purchase.edu/live/news/3333-ted-fox-76-author-of-showtime-at-the-apollo",
+  "Mary Kosut, associate professor of sociology": "https://www.purchase.edu/live/news/3310-mary-kosut-receives-prestigious-fellowship",
+  "Art in Vacant Spaces window 2018, “A Woman": "https://www.purchase.edu/live/news/3269-students-place-art-in-vacant-spaces",
+  "Angie Kim, sustainability coordinator": "https://www.purchase.edu/live/news/3202-sustainability-coordinator-angie-kim-receives",
+  "Quaba Ernest and Aleksandra Gologorskaya from the Conservatory of Dance at Purchase College in Robbins' Watermill.": "https://www.purchase.edu/live/news/3160-conservatory-of-dance-students-in-bam-production",
+  "Artist Michael Rakowitz '95": "https://www.purchase.edu/live/news/3074-artist-michael-rakowitz-95-at-art-basel-2018",
+  "Alumni Ben Green '15": "https://www.purchase.edu/live/news/3031-alumni-win-big-at-creative-arts-emmy-awards",
+  "Volunteers in the SUNY Stands with Puerto Rico initiative": "https://www.purchase.edu/live/news/2941-purchase-college-students-stand-with-puerto-rico",
+  "Chasing Coral documentary still": "https://www.purchase.edu/live/news/2921-music-alumni-earn-news-and-doc-emmy-nomination",
+  "Marcella Lewis '16": "https://www.purchase.edu/live/news/2871-two-dance-alumni-earn-princess-grace-awards",
+  "issadancelook Instagram account post": "https://www.purchase.edu/live/news/2856-follow-purchase-dancers-on-dance-fashion",
+  "Gregory Spears": "https://www.purchase.edu/live/news/1697-new-composition-faculty-headlines-prototype",
+  "Fiske Guide to Colleges 2019 Badge": "https://www.purchase.edu/live/news/2811-purchase-ranks-among-the-best",
+  "Stephen Ferri '13 (courtesy Westchester Magazine)": "https://www.purchase.edu/live/news/2706-stephen-ferri-13-named-wunderkind-2018",
+  "Madeline Cramer '18": "https://www.purchase.edu/live/news/2649-madeline-cramer-18-wins-suny-thayer-fellowship",
+  "Drama Desk Awards logo": "https://www.purchase.edu/live/news/2634-purchase-college-represented-with-multiple",
+  "Dane Laffrey": "https://www.purchase.edu/live/profiles/324-dane-laffrey",
+  "Maruti Evans": "https://www.purchase.edu/live/profiles/313-maruti-evans",
+  "President Schwarz helps plant a tree for Clean and Green Day 2018": "https://www.purchase.edu/live/news/2620-a-tree-planted-for-clean-and-green-day",
+  "Andrew Pharmer '90": "https://www.purchase.edu/live/news/2569-andrew-pharmer-90",
+  "Jakub Ciupinski Headshot": "https://www.purchase.edu/live/news/2515-purchase-professor-composes-for-alvin-ailey",
+  "Jakub Ciupinski": "https://www.purchase.edu/live/profiles/249-jakub-ciupiski",
+  "New Standards Combo in the Jazz Studies program": "https://www.purchase.edu/live/news/2492-jazz-studies-onstage-and-on-air-in-april",
+  "Joseph A. Skrivanek, professor of chemistry": "https://www.purchase.edu/live/news/2488-professor-joe-skrivanek-named-distinguished",
+  "President Thomas J. Schwarz": "https://www.purchase.edu/live/news/2394-president-schwarz-on-the-college-admission-process",
+  "Students on the main plaza to protest gun violence": "https://www.purchase.edu/live/news/2441-students-walk-out",
+  "Abrielle Scharff and her Band on stage": "https://www.purchase.edu/live/news/2432-purchase-students-head-to-london",
+  "Stone marker for site of Thoreau's cabin": "https://www.purchase.edu/live/news/2339-professor-of-literature-elise-lemire-tours-walden",
+  "Students in class": "https://www.purchase.edu/live/news/2190-purchase-named-best-value-by-kiplingers-personal",
+  "Steven Spielberg's The Post film shoot on campus": "https://www.purchase.edu/live/news/2181-critically-acclaimed-spielberg-film-shot-on-campus",
+  "Jenar Antar '18": "https://www.purchase.edu/live/news/2165-purchase-is-all-in-the-antar-family",
+  "Jeanne Markel '81 and Chris Wedge '81": "https://www.purchase.edu/live/news/2123-chris-wedge-81-and-jeanne-markel-81-give-back-to",
+  "Shaka McGlotten, Associate Professor of Media Studies": "https://www.purchase.edu/live/news/2093-shaka-mcglotten-receives-grant-for-black-data",
+  "Nancy Bowen": "https://www.purchase.edu/live/news/2080-professor-nancy-bowen-selected-for-coveted-award",
+  "Students": "https://www.purchase.edu/live/news/2045-annual-biomedical-research-conference-for-minority",
+  "Two Purchase photography students and an alumnus of the program discussed their work at a symposium honoring the work of Gordon Parks. L ...": "https://www.purchase.edu/live/news/2013-purchase-photographers-look-through-the-lens-of",
+  "Kelly Hayes '19": "https://www.purchase.edu/live/news/1984-softball-trio-goes-beyond-sports-in-south-africa",
+  "Cain Coleman '09-'11": "https://www.purchase.edu/live/news/1956-a-special-week-spent-with-alumni",
+  "WNYC logo": "https://www.purchase.edu/live/news/1937-hear-professor-lisa-keller-on-wnyc",
+  "Conceptual artist Fred Wilson '76": "https://www.purchase.edu/live/news/1892-fred-wilson-76-named-art-of-change-fellow",
+  "Transpire": "https://www.purchase.edu/live/news/1843-201718-eliza-evans-17",
+  "Authors Hari Kunzru and Katie Kitamura on stage during the Durst Distinguished Lecture Series.": "https://www.purchase.edu/live/news/1821-acclaimed-novelists-kick-off-the-durst",
+  "Terese Capucilli '78": "https://www.purchase.edu/live/news/1764-terese-capucilli-78-honored",
+  "Kris Graves' 04": "https://www.purchase.edu/live/news/1716-photographer-tapped-for-brooklyn-museum-exhibition",
+  "Avant Projekts": "https://www.purchase.edu/live/news/1659-students-reimagine-tchaikovsky",
+  "The campus of Purchase College.": "https://www.purchase.edu/live/news/1651-the-princeton-review-ranks-purchase-as-a-top",
+  "Sunflowers behind the Student Services Building": "https://www.purchase.edu/live/news/1604-purchase-makes-selective-fiske-guide-for-2018",
+  "FEUD: BETTE & JOAN Stanley Tucci '82 as Jack Warner": "https://www.purchase.edu/live/news/1591-2017-emmy-nominations",
+  "The band Cende": "https://www.purchase.edu/live/news/1562-purchase-dubbed-a-music-scene",
+  "The senior class of Summit Academy Charter School with Ellen DeGeneres. Photo Credit: Michael Rozman/Warner Bros.": "https://www.purchase.edu/live/news/1476-dream-come-true-for-incoming-freshman",
+  "Gabriel Fridkis": "https://www.purchase.edu/live/news/1431-alumnus-gabriel-fridkis-wins-principal-flute-in",
+  "Emma Porter '18": "https://www.purchase.edu/live/news/1388-scholar-athletes-honored-by-suny",
+  "New Media Photography Expanded at PC4": "https://www.purchase.edu/live/news/1374-new-media-exhibition-in-yonkers",
+  "Dr. Kristina Johnson, incoming SUNY Chancellor": "https://www.purchase.edu/live/news/1358-suny-appoints-new-chancellor",
+  "Purchase Opera: The Crucible": "https://www.purchase.edu/live/news/1309-purchase-opera-wins-two-american-prizes",
+  "Purchase Opera": "https://www.purchase.edu/live/profiles/72-voice-and-opera-studies",
+  "Design Tech student Megan Seibel with her professor Dave Grill at the Super Bowl": "https://www.purchase.edu/live/news/1148-megan-seibel-17-lights-up-the-super-bowl",
+  "Garth Greenwell": "https://www.purchase.edu/live/news/1130-garth-greenwell-01-on-shortlist-for-penfaulkner",
+  "Scenic Art Studios founder Joseph B. Forbes": "https://www.purchase.edu/live/news/1005-technical-theatre-legend-joseph-b-forbes-to",
+  "Recent Press Coverage": "https://www.purchase.edu/news/recent-press-coverage",
+  "News Archive": "https://www.purchase.edu/news/news-archive",
+  "PURCHASE MAGAZINE": "https://www.purchase.edu/magazine",
   "media@purchase.edu": "nullmedia@purchase.edu",
-  "Purchase in Pictures": "https:
-  "Register": "https:
-  "Meet the Director": "https:
-  "Join Our Mailing List": "https:
-  "Register for the Open House": "https:
-  "Register Now": "https:
-  "Continuing Education Course Proposal Form": "https:
-  "Open Interior Design Courses": "https:
-  "Post-Baccalaureate Premedical Studies": "https:
-  "IIN Graduate One of 7 Black Entrepreneurs Changing the Face of the Health and Wellness Industry": "https:
-  "New to Online Learning?": "https:
-  "Interested in applying to Purchase College?": "https:
-  "About the Program": "https:
-  "Requirements": "https:
-  "Courses": "https:
-  "Meet Our Faculty": "https:
-  "Meet Our Alumni": "https:
-  "Current Senior Acting Company": "https:
-  "Recent News": "https:
-  "Acting Network": "https:
-  "Performances": "https:
-  "Facilities": "https:
-  "Alumni": "https:
-  "Liam Joynt": "https:
-  "Maggie Surovell": "https:
+  "Purchase in Pictures": "https://www.purchase.edu/live/galleries/51-purchase-in-pictures",
+  "Register": "https://www.purchase.edu/academics/youth-and-precollege-programs/register",
+  "Meet the Director": "https://www.purchase.edu/academics/school-of-humanities/meet-the-director",
+  "Join Our Mailing List": "https://www.purchase.edu/live/forms/60-join-our-mailing-list",
+  "Register for the Open House": "https://www.purchase.edu/live/forms/670-open-house-summer-youth-and-precollege-programs-in-the-a",
+  "Register Now": "https://www.purchase.edu/academics/continuing-education/register",
+  "Continuing Education Course Proposal Form": "https://www.purchase.edu/live/forms/528-1",
+  "Open Interior Design Courses": "https://www.purchase.edu/academics/continuing-education/interior-design/courses",
+  "Post-Baccalaureate Premedical Studies": "https://www.purchase.edu/academics/school-of-natural-social-sciences/premedical-studies",
+  "IIN Graduate One of 7 Black Entrepreneurs Changing the Face of the Health and Wellness Industry": "https://www.purchase.edu/live/news/6720-iin-graduate-one-of-7-black-entrepreneurs-changing",
+  "New to Online Learning?": "https://www.purchase.edu/live/news/2469-new-to-online-learning",
+  "Interested in applying to Purchase College?": "https://www.purchase.edu/live/news/4374-interested-in-applying-to-purchase-college",
+  "About the Program": "https://www.purchase.edu/academics/dance-performance/about-the-program",
+  "Requirements": "https://www.purchase.edu/academics/dance-performance/requirements",
+  "Courses": "https://www.purchase.edu/academics/dance-performance/courses",
+  "Meet Our Faculty": "https://www.purchase.edu/academics/dance-performance/meet-our-faculty",
+  "Meet Our Alumni": "https://www.purchase.edu/academics/creative-writing/meet-our-alumni",
+  "Current Senior Acting Company": "https://www.purchase.edu/academics/acting/current-senior-acting-company",
+  "Recent News": "https://www.purchase.edu/academics/dance-performance/recent-news",
+  "Acting Network": "https://www.purchase.edu/academics/acting/acting-network",
+  "Performances": "https://www.purchase.edu/academics/theatre-arts/performances",
+  "Facilities": "https://www.purchase.edu/academics/dance/facilities",
+  "Alumni": "https://www.purchase.edu/academics/dance/alumni",
+  "Liam Joynt": "https://www.purchase.edu/live/profiles/2707-liam-joynt",
+  "Maggie Surovell": "https://www.purchase.edu/live/profiles/287-maggie-surovell",
   "acting.auditions@purchase.edu": "nullacting.auditions@purchase.edu",
-  "Micah Stock ’11": "https:
-  "Machinal": "https:
-  "SEE FULL GALLERY": "https:
-  "See if we answered them here": "https:
-  "PURCHASE magazine cover story": "https:
-  "Orlagh Cassidy ’90": "https:
-  "Sherry Stringfield ’89": "https:
-  "Alano Miller ’02": "https:
-  "Nicco Annan ’98": "https:
-  "Lei-Lei Bavoil ’15": "https:
-  "Gina Belafonte ’83": "https:
-  "Chris Perfetti ’11": "https:
-  "Paige Gilbert ’14": "https:
-  "News and Events": "https:
-  "Lorraine Plourde": "https:
-  "Visit the Career Development Center to learn more": "https:
-  "Anthropology Professor Lorraine Plourde on The Urbanist podcast": "https:
-  "Opeoluwa Obasa ’20": "https:
-  "Cassidy Rose Hammond ’17": "https:
-  "Karen T. Beltran ’02": "https:
-  "Awards": "https:
-  "Paul Kaplan": "https:
-  "Gilman Scholarship Spotlight: Frankie Bademci ’23": "https:
-  "Professor Elizabeth Guffey Pens Article on “Active Exclusion”": "https:
-  "Michelle Friedman ’11": "https:
-  "Fellowships and Awards": "https:
-  "Jonah Westerman": "https:
-  "Application Details": "https:
-  "Kristen Galvin ’08": "https:
-  "Shilpi Chandra MA ’15 Has Solo Curatorial Debut": "https:
-  "Chelsea Spengemann, MA ’11": "https:
-  "A and D Handbook": "https:
-  "Minor in Arts Management": "https:
-  "Internships": "https:
-  "Jandon Lecture Series": "https:
-  "Notes from the Field": "https:
-  "SAMMIES": "https:
-  "Semester in France": "https:
-  "Semester in Hungary": "https:
+  "Micah Stock ’11": "https://www.purchase.edu/live/profiles/1799-micah-stock-11",
+  "Machinal": "https://www.purchase.edu/live/profiles/6449-machinal",
+  "SEE FULL GALLERY": "https://www.purchase.edu/academics/acting/recent-performances",
+  "See if we answered them here": "https://www.purchase.edu/academics/acting/requirements/additional-program-information",
+  "PURCHASE magazine cover story": "https://www.purchase.edu/magazine/acting-at-50",
+  "Orlagh Cassidy ’90": "https://www.purchase.edu/live/profiles/5746-",
+  "Sherry Stringfield ’89": "https://www.purchase.edu/live/profiles/1798-",
+  "Alano Miller ’02": "https://www.purchase.edu/live/profiles/6868-alano-miller-02",
+  "Nicco Annan ’98": "https://www.purchase.edu/live/profiles/5720-",
+  "Lei-Lei Bavoil ’15": "https://www.purchase.edu/live/profiles/7467-lei-lei-bavoil-15",
+  "Gina Belafonte ’83": "https://www.purchase.edu/live/profiles/6029-",
+  "Chris Perfetti ’11": "https://www.purchase.edu/live/profiles/1793-",
+  "Paige Gilbert ’14": "https://www.purchase.edu/live/profiles/5723-",
+  "News and Events": "https://www.purchase.edu/academics/creative-writing/news-and-events",
+  "Lorraine Plourde": "https://www.purchase.edu/live/profiles/462-lorraine-plourde",
+  "Visit the Career Development Center to learn more": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/creative-writing",
+  "Anthropology Professor Lorraine Plourde on The Urbanist podcast": "https://www.purchase.edu/live/news/8555-anthropology-professor-lorraine-plourde-on-the",
+  "Opeoluwa Obasa ’20": "https://www.purchase.edu/live/profiles/5632-opeoluwa-obasa-20",
+  "Cassidy Rose Hammond ’17": "https://www.purchase.edu/live/profiles/7333-cassidy-hammond-17",
+  "Karen T. Beltran ’02": "https://www.purchase.edu/live/profiles/5997-karen-beltran-02",
+  "Awards": "https://www.purchase.edu/academics/school-of-humanities/awards",
+  "Paul Kaplan": "https://www.purchase.edu/live/profiles/501-paul-kaplan",
+  "Gilman Scholarship Spotlight: Frankie Bademci ’23": "https://www.purchase.edu/live/news/7052-gilman-scholarship-spotlight-frankie-bademci-23",
+  "Professor Elizabeth Guffey Pens Article on “Active Exclusion”": "https://www.purchase.edu/live/news/5470-professor-elizabeth-guffey-pens-article-on-active",
+  "Michelle Friedman ’11": "https://www.purchase.edu/live/news/4518-michelle-friedman-11",
+  "Fellowships and Awards": "https://www.purchase.edu/academics/art-history-ma/scholarships-and-awards",
+  "Jonah Westerman": "https://www.purchase.edu/live/profiles/1763-jonah-westerman",
+  "Application Details": "https://www.purchase.edu/admissions/graduate-students/art-history-ma",
+  "Kristen Galvin ’08": "https://www.purchase.edu/live/news/6922-kristen-galvin-08",
+  "Shilpi Chandra MA ’15 Has Solo Curatorial Debut": "https://www.purchase.edu/live/news/6256-ma-graduate-shilpi-chandras-solo-curatorial-debut",
+  "Chelsea Spengemann, MA ’11": "https://www.purchase.edu/live/news/5604-alumni-spotlight-meet-chelsea-spengemann-ma-11",
+  "A and D Handbook": "https://www.purchase.edu/academics/art-and-design/ad-student-handbook",
+  "Minor in Arts Management": "https://www.purchase.edu/academics/arts-management/requirements/minor-in-arts-management",
+  "Internships": "https://www.purchase.edu/academics/arts-management/internships",
+  "Jandon Lecture Series": "https://www.purchase.edu/academics/arts-management/jandon-lecture-series",
+  "Notes from the Field": "https://www.purchase.edu/academics/arts-management/notes-from-the-field",
+  "SAMMIES": "https://www.purchase.edu/academics/arts-management/sammies",
+  "Semester in France": "https://www.purchase.edu/live/profiles/3104-arts-management-iesa-artsampculture",
+  "Semester in Hungary": "https://www.purchase.edu/live/profiles/3103-arts-management-international-business-school",
   "Maria Guralnik": "nullmaria.guralnik@purchase.edu",
-  "Jordan Shue": "https:
+  "Jordan Shue": "https://www.purchase.edu/live/profiles/696-jordan-shue",
   "email the department": "nullAME.arts.management@purchase.edu",
-  "Visit the Career Development Center": "https:
-  "READ MORE ABOUT THEIR WORK": "https:
-  "SEE IMAGES FROM THE OPENING": "https:
-  "The 2023 Startup Competition Awards $5,000 in Prizes": "https:
-  "Rachael Pazdan ’12": "https:
-  "Lily Thrall ’14": "https:
-  "Josh Abess ’12": "https:
-  "Angela Galli ’19": "https:
-  "Viktoriya Molchanova ’20": "https:
-  "Cheyenne Myrie ’17": "https:
-  "Adriana Arguelles ’13": "https:
-  "General Education": "https:
-  "other degree requirements": "https:
-  "Eight-Semester Graduation Plan": "https:
-  "theatre and performance": "https:
-  "Requirements for Minor": "https:
-  "Christian Bailey": "https:
-  "Joseph Skrivanek": "https:
-  "eight-semester plan": "https:
-  "Students Attend National STEM Conference": "https:
-  "Showcasing the Sciences": "https:
-  "Coral Reef Program": "https:
-  "Mark Jonas": "https:
-  "Senior Project": "https:
-  "Student Science Symposium": "https:
-  "Elliott Abrams, PhD": "https:
-  "James G. Daly, PhD": "https:
-  "Erika Ebbs, PhD": "https:
-  "Lee Ehrman, PhD": "https:
-  "Jan Robert Factor, PhD": "https:
-  "Stephen E. Harris, PhD": "https:
-  "George Kraemer, PhD": "https:
-  "Maryann McEnroe, PhD": "https:
-  "Joseph A. Skrivanek, PhD": "https:
-  "Behind the Brick: Gen Bio I Lab": "https:
-  "Inside the Facilities": "https:
-  "Closer Look: Biotech Concentration": "https:
-  "Jeffrey Arroyo": "https:
-  "Careers in Biology": "https:
-  "Elizabeth Bardwil-Lugones ’21": "https:
-  "Colm McCarthy ’09": "https:
-  "Jorge Acuna ’20": "https:
-  "Mark Viniello ’92": "https:
-  "Minor in Biology": "https:
-  "senior project": "https:
-  "John Ambroseo ’83": "https:
-  "Jaya Mohanan Lakshmi ’99": "https:
+  "Visit the Career Development Center": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/arts-management",
+  "READ MORE ABOUT THEIR WORK": "https://www.purchase.edu/live/news/7772-museum-visitor-research-the-new-museum",
+  "SEE IMAGES FROM THE OPENING": "https://www.purchase.edu/live/news/7769-exhibition-practice-and-management-visual-arts-collabor",
+  "The 2023 Startup Competition Awards $5,000 in Prizes": "https://www.purchase.edu/live/news/7735-the-2023-startup-pitching-competition-awards-5000",
+  "Rachael Pazdan ’12": "https://www.purchase.edu/live/profiles/6662-rachael-pazdan-12",
+  "Lily Thrall ’14": "https://www.purchase.edu/live/profiles/6663-lily-thrall-14",
+  "Josh Abess ’12": "https://www.purchase.edu/live/profiles/6665-josh-abess-12",
+  "Angela Galli ’19": "https://www.purchase.edu/live/profiles/6144-angela-galli-19",
+  "Viktoriya Molchanova ’20": "https://www.purchase.edu/live/profiles/6141-viktoriya-molchanova-20",
+  "Cheyenne Myrie ’17": "https://www.purchase.edu/live/profiles/6140-cheyenne-myrie-17",
+  "Adriana Arguelles ’13": "https://www.purchase.edu/live/profiles/5222-",
+  "General Education": "https://www.purchase.edu/offices/provost/general-education-curriculum",
+  "other degree requirements": "https://www.purchase.edu/live/blurbs/687-academic-requirements-for-undergraduate-degrees",
+  "Eight-Semester Graduation Plan": "https://www.purchase.edu/academics/arts-management/requirements/performing-arts/eight-semester-graduation-plan",
+  "theatre and performance": "https://www.purchase.edu/academics/theatre-and-performance/courses",
+  "Requirements for Minor": "https://www.purchase.edu/academics/contemplative-studies/requirements",
+  "Christian Bailey": "https://www.purchase.edu/live/profiles/526-christian-bailey",
+  "Joseph Skrivanek": "https://www.purchase.edu/live/profiles/618-",
+  "eight-semester plan": "https://www.purchase.edu/academics/biochemistry/requirements/eight-semester-graduation-plan",
+  "Students Attend National STEM Conference": "https://www.purchase.edu/live/news/3213-students-attend-national-stem-conference",
+  "Showcasing the Sciences": "https://www.purchase.edu/live/news/1381-showcasing-the-sciences",
+  "Coral Reef Program": "https://www.purchase.edu/live/profiles/3064-coral-reef-biology-and-ecology-roatan-honduras",
+  "Mark Jonas": "https://www.purchase.edu/live/profiles/610-mark-jonas",
+  "Senior Project": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research/senior-project",
+  "Student Science Symposium": "https://www.purchase.edu/academics/school-of-natural-social-sciences/student-research",
+  "Elliott Abrams, PhD": "https://www.purchase.edu/live/profiles/5-elliott-abrams",
+  "James G. Daly, PhD": "https://www.purchase.edu/live/profiles/607-james-g-daly",
+  "Erika Ebbs, PhD": "https://www.purchase.edu/live/profiles/3553-erika-ebbs",
+  "Lee Ehrman, PhD": "https://www.purchase.edu/live/profiles/608-lee-ehrman",
+  "Jan Robert Factor, PhD": "https://www.purchase.edu/live/profiles/609-jan-robert-factor",
+  "Stephen E. Harris, PhD": "https://www.purchase.edu/live/profiles/1759-stephen-harris",
+  "George Kraemer, PhD": "https://www.purchase.edu/live/profiles/634-george-p-kraemer",
+  "Maryann McEnroe, PhD": "https://www.purchase.edu/live/profiles/611-maryann-mcenroe",
+  "Joseph A. Skrivanek, PhD": "https://www.purchase.edu/live/profiles/618-joseph-skrivanek",
+  "Behind the Brick: Gen Bio I Lab": "https://www.purchase.edu/live/news/8308-behind-the-brick-general-biology-1-lab",
+  "Inside the Facilities": "https://www.purchase.edu/live/news/8539-biology-facilities-equipment",
+  "Closer Look: Biotech Concentration": "https://www.purchase.edu/live/news/4416-closer-look-biotechnology-concentration",
+  "Jeffrey Arroyo": "https://www.purchase.edu/live/profiles/2206-jeffrey-arroyo",
+  "Careers in Biology": "https://www.purchase.edu/offices/career-development/explore-majors-careers/major-and-career-possibilities/biology",
+  "Elizabeth Bardwil-Lugones ’21": "https://www.purchase.edu/live/profiles/5555-",
+  "Colm McCarthy ’09": "https://www.purchase.edu/live/profiles/6542-colm-mccarthy-09",
+  "Jorge Acuna ’20": "https://www.purchase.edu/live/profiles/5546-",
+  "Mark Viniello ’92": "https://www.purchase.edu/live/profiles/3406-",
+  "Minor in Biology": "https://www.purchase.edu/academics/biology/requirements/minor-in-biology",
+  "senior project": "https://www.purchase.edu/academics/purchase-experience/senior-project",
+  "John Ambroseo ’83": "https://www.purchase.edu/live/profiles/3380-",
+  "Jaya Mohanan Lakshmi ’99": "https://www.purchase.edu/live/profiles/3405-",
   "Alfredo Garcia-Pardo": "nullalfredo.garciapardo@purchase.edu",
-  "Transnational Filmmaking Project": "https:
-  "Student Work and Accolades": "https:
-  "Nathan Holmes": "https:
+  "Transnational Filmmaking Project": "https://www.purchase.edu/academics/cinema-and-television-studies/transnational-filmmaking-project",
+  "Student Work and Accolades": "https://www.purchase.edu/academics/cinema-and-television-studies/student-work-and-accolades",
+  "Nathan Holmes": "https://www.purchase.edu/live/profiles/2145-nathan-holmes",
   "fms@purchase.edu": "nullfms@purchase.edu",
-  "Azazel Jacobs ’94 visits to screen HIS THREE DAUGHTERS": "https:
-  "Cinema Studies Students Attend Film Archiving Conference": "https:
-  "Halloween Edition of CINEMAROLL is now out": "https:
-  "Sean Dunne ’03": "https:
-  "Eric Hahn ’14": "https:
-  "Troy Peterson ’19": "https:
-  "Paul Drechsler-Martell ’07": "https:
-  "college policies": "https:
-  "VOCES": "https:
-  "Lectures": "https:
-  "Student Publications": "https:
-  "Humanities Events": "https:
-  "Working in Humanities": "https:
-  "Megan Rossman": "https:
-  "Benjamin Chalson ’20": "https:
-  "Tayler Montague ’19": "https:
-  "Riot USA ’22": "https:
-  "Jaden Doret ’23": "https:
-  "Broadcast TV Studio Provides Professional Experience": "https:
-  "Bachelor of Music": "https:
-  "Minor of Music (Classical Composition)": "https:
-  "Master of Music": "https:
-  "Private Lessons": "https:
-  "Music Courses": "https:
-  "Graduate": "https:
-  "LEARN MORE ABOUT APPLY TODAY MUSIC AT PURCHASE": "https:
-  "Lecturer Gregory Spears Premieres “Love Story”": "https:
-  "Sequoia Sellinger ’17": "https:
-  "Jordan Mclean ’06, MM ’20": "https:
-  "Matthew Immergut": "https:
-  "Joshua Lutz": "https:
-  "Mindfulness In Action": "https:
-  "A Lecture with Dan Goleman": "https:
-  "Phakchok Rinpoche and Erric Solomon “Radically Happy”": "https:
-  "Student Journal: Italics Mine": "https:
-  "How to Apply": "https:
-  "Mehdi Tavana Okasi": "https:
-  "The Durst Distinguished Chair and the Durst Lecture Series": "https:
-  "studying abroad": "https:
-  "Misty Yarnall ’22": "https:
-  "Trisha Murphy ’19": "https:
-  "Emily Verona ’12": "https:
-  "Marissa LaRocca ’09": "https:
-  "Author Jiaming Tang ’18 Discusses Debut Novel": "https:
-  "Debut Novel by Emily Ruth Verona ’12 With Nods to Cinema": "https:
-  "Study Abroad": "https:
-  "Pilates Micro-Credential": "https:
-  "Purchase Dance Company": "https:
-  "Nelly van Bommel": "https:
-  "Doug Varone ’78": "https:
-  "BalletX to Perform Work by Choreographer Nicolo Fonte ’87": "https:
-  "Thomas Warfield ’88": "https:
-  "Jai Perez ’23": "https:
-  "Meryl Cates ’08": "https:
-  "Joy-Marie Thompson ’18": "https:
+  "Azazel Jacobs ’94 visits to screen HIS THREE DAUGHTERS": "https://www.purchase.edu/live/news/8514-azazel-jacobs-94-visits-to-screen-his-three-daughters",
+  "Cinema Studies Students Attend Film Archiving Conference": "https://www.purchase.edu/live/news/8516-cinema-studies-students-attend-film-archiving",
+  "Halloween Edition of CINEMAROLL is now out": "https://www.purchase.edu/live/news/8436-halloween-edition-of-cinemaroll-is-now-out",
+  "Sean Dunne ’03": "https://www.purchase.edu/live/profiles/3459-sean-dunne-03",
+  "Eric Hahn ’14": "https://www.purchase.edu/live/profiles/6790-eric-hahn-14",
+  "Troy Peterson ’19": "https://www.purchase.edu/live/profiles/7343-troy-peterson-19",
+  "Paul Drechsler-Martell ’07": "https://www.purchase.edu/live/profiles/7834-paul-drechsler-martell-07",
+  "college policies": "https://www.purchase.edu/live/blurbs/2159-transfer-credit",
+  "VOCES": "https://www.purchase.edu/academics/school-of-humanities/voces",
+  "Lectures": "https://www.purchase.edu/academics/school-of-humanities/lectures",
+  "Student Publications": "https://www.purchase.edu/academics/school-of-humanities/student-publications",
+  "Humanities Events": "https://www.purchase.edu/academics/school-of-humanities/humanities-events",
+  "Working in Humanities": "https://www.purchase.edu/academics/school-of-humanities/working-in-humanities",
+  "Megan Rossman": "https://www.purchase.edu/live/profiles/2192-megan-rossman",
+  "Benjamin Chalson ’20": "https://www.purchase.edu/live/profiles/6760-benjamin-chalson-20",
+  "Tayler Montague ’19": "https://www.purchase.edu/live/profiles/5167-tayler-montague-19",
+  "Riot USA ’22": "https://www.purchase.edu/live/profiles/6788-riot-usa-22",
+  "Jaden Doret ’23": "https://www.purchase.edu/live/profiles/6757-jaden-doret-23",
+  "Broadcast TV Studio Provides Professional Experience": "https://www.purchase.edu/live/news/7981-broadcast-tv-studio-provides-professional",
+  "Bachelor of Music": "https://www.purchase.edu/academics/classical-composition/bachelor-of-music",
+  "Minor of Music (Classical Composition)": "https://www.purchase.edu/academics/classical-composition/minor-of-music",
+  "Master of Music": "https://www.purchase.edu/academics/classical-composition/master-of-music",
+  "Private Lessons": "https://www.purchase.edu/academics/classical-composition/private-lessons",
+  "Music Courses": "https://www.purchase.edu/academics/music/music-courses",
+  "Graduate": "https://www.purchase.edu/admissions/music-graduate",
+  "LEARN MORE ABOUT APPLY TODAY MUSIC AT PURCHASE": "https://www.purchase.edu/admissions/audition-and-portfolio-guidelines/music",
+  "Lecturer Gregory Spears Premieres “Love Story”": "https://www.purchase.edu/live/news/6260-lecturer-gregory-spears-premieres-love-story",
+  "Sequoia Sellinger ’17": "https://www.purchase.edu/live/profiles/7536-sequoia-sellinger-17",
+  "Jordan Mclean ’06, MM ’20": "https://www.purchase.edu/live/profiles/5500-jordan-mclean-06-mm-20",
+  "Matthew Immergut": "https://www.purchase.edu/live/profiles/679-matthew-immergut",
+  "Joshua Lutz": "https://www.purchase.edu/live/profiles/390-joshua-lutz",
+  "Mindfulness In Action": "https://www.purchase.edu/live/news/3808-mindfulness-in-action",
+  "A Lecture with Dan Goleman": "https://www.purchase.edu/live/news/3807-a-lecture-with-dan-goleman",
+  "Phakchok Rinpoche and Erric Solomon “Radically Happy”": "https://www.purchase.edu/live/news/3806-phakchok-rinpoche-and-erric-solomon-radically",
+  "Student Journal: Italics Mine": "https://www.purchase.edu/academics/creative-writing/student-journal-italics-mine",
+  "How to Apply": "https://www.purchase.edu/academics/creative-writing/how-to-apply",
+  "Mehdi Tavana Okasi": "https://www.purchase.edu/live/profiles/525-mehdi-okasi",
+  "The Durst Distinguished Chair and the Durst Lecture Series": "https://www.purchase.edu/academics/school-of-humanities/lectures/durst-distinguished-lectures",
+  "studying abroad": "https://www.purchase.edu/academics/purchase-experience/study-abroad",
+  "Misty Yarnall ’22": "https://www.purchase.edu/live/profiles/7221-misty-yarnall-22",
+  "Trisha Murphy ’19": "https://www.purchase.edu/live/profiles/3496-",
+  "Emily Verona ’12": "https://www.purchase.edu/live/profiles/6720-emily-verona-12",
+  "Marissa LaRocca ’09": "https://www.purchase.edu/live/profiles/6212-",
+  "Author Jiaming Tang ’18 Discusses Debut Novel": "https://www.purchase.edu/live/news/8320-author-jiaming-tang-18-discusses-debut-novel",
+  "Debut Novel by Emily Ruth Verona ’12 With Nods to Cinema": "https://www.purchase.edu/live/news/7812-debut-novel-by-emily-ruth-verona-12-with-nods-to-cinema",
+  "Study Abroad": "https://www.purchase.edu/academics/dance-performance/study-abroad",
+  "Pilates Micro-Credential": "https://www.purchase.edu/academics/dance-performance/pilates-micro-credential",
+  "Purchase Dance Company": "https://www.purchase.edu/academics/dance/purchase-dance-company",
+  "Nelly van Bommel": "https://www.purchase.edu/live/profiles/165-nelly-van-bommel",
+  "Doug Varone ’78": "https://www.purchase.edu/live/profiles/2199-doug-varone-78",
+  "BalletX to Perform Work by Choreographer Nicolo Fonte ’87": "https://www.purchase.edu/live/news/8460-balletx-to-perform-work-by-choreographer-nicolo",
+  "Thomas Warfield ’88": "https://www.purchase.edu/live/profiles/6034-",
+  "Jai Perez ’23": "https://www.purchase.edu/live/profiles/7815-jai-perez-23",
+  "Meryl Cates ’08": "https://www.purchase.edu/live/profiles/3454-",
+  "Joy-Marie Thompson ’18": "https://www.purchase.edu/live/profiles/7125-joy-marie-thompson-18"
 };
 
-
+// Export the arrays for use in other files
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { 
     linkTextContent,
     linkTextToUrlMap
   };
 } else {
-  
+  // For browser environments
   window.linkTextContent = linkTextContent;
   window.linkTextToUrlMap = linkTextToUrlMap;
 }

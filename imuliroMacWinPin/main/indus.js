@@ -1,13 +1,29 @@
-/**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
- */
+
+// document.getElementById('pinWindowButton').addEventListener('click', () => {
+//   console.log('Pin Window button clicked');
+//   // Focus the Electron window
+//   window.focus();
+//   // Send the pin window command
+//   window.electronAPI.pinWindow();
+//   console.log('Pin Window command sent');
+// });
+
+// document.getElementById('unpinWindowButton').addEventListener('click', () => {
+//   console.log('Unpin Window button clicked');
+//   // Focus the Electron window
+//   window.focus();
+//   // Send the unpin window command
+//   window.electronAPI.unpinWindow();
+//   console.log('Unpin Window command sent');
+// });
+
+// window.electronAPI.onPinWindowReply((data) => {
+//   console.log('Received pin window reply');
+//   const contentDiv = document.querySelector('.contentDiv');
+//   console.log('Updating contentDiv with data:', data);
+//   contentDiv.textContent = data;
+// });
+
 
 
 
@@ -17,15 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Received pin window reply');
     const contentDiv = document.querySelector('.contentDiv');
     console.log('Updating contentDiv with data:', data);
-    contentDiv.textContent += data + '\n';
+    contentDiv.textContent += data + '\n'; // Append the data to the contentDiv
   });
 });
 
 document.getElementById('pinWindowButton').addEventListener('click', () => {
   console.log('Pin Window button clicked');
-
+  // Focus the Electron window
   window.focus();
-
+  // Send the pin window command
   window.electronAPI.pinWindow();
   console.log('Pin Window command sent');
 });

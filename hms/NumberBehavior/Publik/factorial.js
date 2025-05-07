@@ -1,54 +1,68 @@
-/**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
- */
 
+// Factorial calculation and analysis
+// Import big.js library
+// Add this script tag to your HTML file:
+// <script src="https://cdn.jsdelivr.net/npm/big.js@6.2.1/big.min.js"></script>
 
+// Constants for thresholds
+const THRESHOLD_WARNING = 1000; // Show warning for n ≥ 1000
+const THRESHOLD_WEBWORKER = 10000; // Use web worker for n ≥ 10000
 
-const THRESHOLD_WARNING = 1000;
-const THRESHOLD_WEBWORKER = 10000; function calculateFactorialindependent(n) {let result = BigInt(1);
+// Calculate factorial of a number
+function calculateFactorialindependent(n) {
+  let result = BigInt(1);
   for (let i = BigInt(2); i <= n; i++) {
     result *= i;
   }
   return result;
-} function calculateDigitSumindependent(numStr) {let sum = 0;
+}
+
+// Sum all digits in a number
+function calculateDigitSumindependent(numStr) {
+  let sum = 0;
   for (const digit of numStr) {
     sum += parseInt(digit, 10);
   }
   return sum;
-} function calculateDigitalRootindependent(n) {while (n >= 10) {
+}
+
+// Compute digital root (iterated digit sum)
+function calculateDigitalRootindependent(n) {
+  while (n >= 10) {
     n = String(n).split('').reduce((sum, digit) => sum + parseInt(digit, 10), 0);
   }
   return n;
-} function performFactorialAnalysisindependent(num) {
+}
+
+// Perform factorial analysis
+function performFactorialAnalysisindependent(num) {
+  // Convert to BigInt for calculation
   const n = BigInt(num);
-
-
+  
+  // Calculate factorial
   const factorialValue = calculateFactorialindependent(n);
-
-
+  
+  // Convert to string for digit processing
   const factorialStr = factorialValue.toString();
-
-
+  
+  // Calculate sum of digits
   const digitSum = calculateDigitSumindependent(factorialStr);
-
-
+  
+  // Calculate digital root
   const digitalRoot = calculateDigitalRootindependent(digitSum);
-
-
+  
+  // Return results as HTML
   return `
     <h4>Results for ${num}!</h4>
     <pre>Factorial: ${factorialStr}</pre>
     <pre>Sum of digits: ${digitSum}</pre>
     <pre>Digital root: ${digitalRoot}</pre>
   `;
-} function addFactorialVisualizationtoindependent(num, digitalRoot) {
+}
+
+// Function to add visualization for factorial results
+function addFactorialVisualizationtoindependent(num, digitalRoot) {
+  // Create visualization container if it doesn't exist
   if (!document.getElementById('factorial-visualization')) {
     const vizContainer = document.createElement('div');
     vizContainer.id = 'factorial-visualization';
@@ -59,24 +73,24 @@ const THRESHOLD_WEBWORKER = 10000; function calculateFactorialindependent(n) {le
     `;
     document.getElementById('factorial-results').appendChild(vizContainer);
   }
-
-
+  
+  // Generate visualization for the digital root
   const rootDisplay = document.querySelector('.digital-root-display');
   rootDisplay.innerHTML = '';
-
-
+  
+  // Create a circular representation of the digital root
   const circle = document.createElement('div');
   circle.className = 'digital-root-circle';
   circle.innerHTML = `<span>${digitalRoot}</span>`;
   circle.style.backgroundColor = `hsl(${digitalRoot * 40}, 70%, 60%)`;
   rootDisplay.appendChild(circle);
-
-
+  
+  // Add some descriptive text
   const description = document.createElement('p');
   description.textContent = `Digital root ${digitalRoot} represents the cyclical nature of the number ${num}!`;
   rootDisplay.appendChild(description);
-
-
+  
+  // Add CSS for visualization
   const style = document.createElement('style');
   style.textContent = `
     .visualization-section {
@@ -151,23 +165,26 @@ const THRESHOLD_WEBWORKER = 10000; function calculateFactorialindependent(n) {le
     }
   `;
   document.head.appendChild(style);
-} function createFactorialWorker() {
+}
+
+// Create a web worker for factorial calculations
+function createFactorialWorker() {
   const workerScript = `
     onmessage = function(e) {
       const num = e.data;
       try {
-        
+        // Calculate factorial
         let result = BigInt(1);
         let n = BigInt(num);
         
-        
+        // Report progress every 5%
         const reportInterval = Math.max(1, Number(n) / 20);
         let lastReportedProgress = 0;
         
         for (let i = BigInt(2); i <= n; i++) {
           result *= i;
           
-          
+          // Report progress
           if (Number(i) - lastReportedProgress >= reportInterval) {
             const progress = Number(i) / Number(n);
             postMessage({ type: 'progress', progress: progress * 100 });
@@ -175,22 +192,22 @@ const THRESHOLD_WEBWORKER = 10000; function calculateFactorialindependent(n) {le
           }
         }
         
-        
+        // Convert to string for digit processing
         const factorialStr = result.toString();
         
-        
+        // Calculate sum of digits
         let digitSum = 0;
         for (const digit of factorialStr) {
           digitSum += parseInt(digit, 10);
         }
         
-        
+        // Calculate digital root
         let digitalRoot = digitSum;
         while (digitalRoot >= 10) {
           digitalRoot = String(digitalRoot).split('').reduce((sum, digit) => sum + parseInt(digit, 10), 0);
         }
         
-        
+        // Send back result
         postMessage({ 
           type: 'result', 
           factorialStr: factorialStr,
@@ -202,15 +219,15 @@ const THRESHOLD_WEBWORKER = 10000; function calculateFactorialindependent(n) {le
       }
     };
   `;
-
-
+  
+  // Create a blob from the worker script
   const blob = new Blob([workerScript], { type: 'application/javascript' });
   const workerUrl = URL.createObjectURL(blob);
-
+  
   return new Worker(workerUrl);
 }
 
-
+// Set up event listeners when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   const calculateBtn = document.getElementById('calculate-btn');
   const factorialInput = document.getElementById('factorial-input');
@@ -223,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-
+    // Show warning for large numbers
     let warningMessage = '';
     if (num >= THRESHOLD_WARNING) {
       warningMessage = `
@@ -244,21 +261,21 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     if (num >= THRESHOLD_WEBWORKER) {
-
+      // Use web worker for very large calculations
       const worker = createFactorialWorker();
-
-      worker.onmessage = function (e) {
+      
+      worker.onmessage = function(e) {
         const data = e.data;
-
+        
         if (data.type === 'progress') {
-
+          // Update progress bar
           const progressBar = document.querySelector('.progress-bar');
           if (progressBar) {
             progressBar.style.width = `${data.progress}%`;
           }
-        } else
-        if (data.type === 'result') {
-
+        } 
+        else if (data.type === 'result') {
+          // Display results
           factorialResults.innerHTML = `
             ${warningMessage}
             <h4>Results for ${num}!</h4>
@@ -266,44 +283,44 @@ document.addEventListener('DOMContentLoaded', () => {
             <pre>Sum of digits: ${data.digitSum}</pre>
             <pre>Digital root: ${data.digitalRoot}</pre>
           `;
-
-
+          
+          // Add visualization
           addFactorialVisualizationtoindependent(num, data.digitalRoot);
-
-
+          
+          // Terminate worker
           worker.terminate();
-        } else
-        if (data.type === 'error') {
+        } 
+        else if (data.type === 'error') {
           factorialResults.innerHTML = `<p class="error">Error: ${data.message}</p>`;
           worker.terminate();
         }
       };
-
-      worker.onerror = function (error) {
+      
+      worker.onerror = function(error) {
         factorialResults.innerHTML = `<p class="error">Worker Error: ${error.message}</p>`;
         worker.terminate();
       };
-
-
+      
+      // Start calculation
       worker.postMessage(num);
-    } else
-    {
-
+    } 
+    else {
+      // Use setTimeout to prevent UI freezing for medium-sized calculations
       setTimeout(() => {
         try {
           const result = performFactorialAnalysisindependent(num);
           factorialResults.innerHTML = warningMessage + result;
-
-
+          
+          // Calculate digital root for visualization
           const n = BigInt(num);
           const factorialValue = calculateFactorialindependent(n);
           const factorialStr = factorialValue.toString();
           const digitSum = calculateDigitSumindependent(factorialStr);
           const digitalRoot = calculateDigitalRootindependent(digitSum);
-
-
+          
+          // Add visualization for the results
           addFactorialVisualizationtoindependent(num, digitalRoot);
-
+          
         } catch (error) {
           factorialResults.innerHTML = `<p class="error">Error: ${error.message}</p>`;
         }

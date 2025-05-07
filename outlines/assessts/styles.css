@@ -1,23 +1,8 @@
-/*
-   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
-  
-  Usage Guidelines:
-  - Maintain the CSS variable structure for theming
-  - Mobile-first approach for all responsive styling
-  - Class names follow BEM methodology
-  - For questions or contributions, contact isaac.muliro@purchase.edu
-  - Last updated: 2025-05-06
-*/
-
-
-
-
-
 body {
     background-color: rgb(45, 44, 44);
     margin: 0;
     overflow: hidden;
-    
+    /* Prevent scrollbars */
 }
 
 #sketch-overly {
@@ -26,7 +11,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    
+    /* background: linear-gradient(to left, rgba(18, 31, 49, 0.483), rgba(94, 76, 33, 0.352));  
+    background: linear-gradient(to bottom left, rgba(43, 21, 57, 0.483), rgba(83, 68, 32, 0.426));  */
     background: linear-gradient(to bottom left, rgba(76, 33, 102, 0.212), rgba(120, 95, 37, 0.258));
     z-index: 1;
 

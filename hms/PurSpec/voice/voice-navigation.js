@@ -1,18 +1,3 @@
-/**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
- */
-
-
-
-
-
 function handlePurchaseLinkVoiceCommand(command) {
     console.log(`Processing Purchase link command: "${command}"`);
     
@@ -35,7 +20,7 @@ function handlePurchaseLinkVoiceCommand(command) {
         speakFeedback("Navigating to Purchase College homepage");
         
         setTimeout(() => {
-            navigateToWebsite('https:
+            navigateToWebsite('https://www.purchase.edu/');
             if (voiceStatus) {
                 voiceStatus.innerHTML = `<span style="color:var(--success-color)">Navigating to Purchase College homepage</span>`;
             }
@@ -49,7 +34,7 @@ function handlePurchaseLinkVoiceCommand(command) {
     if (typeof fallbackPurchaseLinks === 'undefined' || !fallbackPurchaseLinks || !fallbackPurchaseLinks.length) {
         console.warn('No fallback links available for Purchase.edu matching');
         const cleanPath = query.replace(/\s+/g, '-');
-        const constructedUrl = `https:
+        const constructedUrl = `https://www.purchase.edu/${cleanPath}/`;
         
         speakFeedback(`No link database available. Trying to navigate to ${query}`);
         
@@ -62,7 +47,7 @@ function handlePurchaseLinkVoiceCommand(command) {
 
     console.log(`Searching for "${query}" in ${fallbackPurchaseLinks.length} fallback links`);
 
-    
+    // Define scoring function
     function scoreMatch(link, queryText) {
         if (!link || !link.text) return 0;
 
@@ -112,7 +97,7 @@ function handlePurchaseLinkVoiceCommand(command) {
         return score;
     }
 
-    
+    // Score all links
     const scoredLinks = fallbackPurchaseLinks
         .filter(link => link && link.url && link.text)
         .map(link => ({
@@ -124,7 +109,7 @@ function handlePurchaseLinkVoiceCommand(command) {
     console.log('Scored links for query:', query);
     console.log('Top 5 link matches:', scoredLinks.slice(0, 5));
     
-    
+    // Get the best match
     const bestMatch = scoredLinks.find(item => item.score > 0);
 
     if (bestMatch) {
@@ -142,7 +127,7 @@ function handlePurchaseLinkVoiceCommand(command) {
         return;
     }
 
-    
+    // Try word-based matching
     const queryWords = query.split(/\s+/).filter(word => word.length > 2);
 
     if (queryWords.length > 0) {
@@ -179,7 +164,7 @@ function handlePurchaseLinkVoiceCommand(command) {
         }
     }
 
-    
+    // If still no match, try pattern matching
     const mainSections = ['academics', 'admissions', 'campus-life', 'about', 'offices'];
     let bestSection = '';
 
@@ -221,14 +206,14 @@ function handlePurchaseLinkVoiceCommand(command) {
     let constructedUrl;
     if (bestSection) {
         const cleanPath = query.replace(/\s+/g, '-');
-        constructedUrl = `https:
+        constructedUrl = `https://www.purchase.edu/${bestSection}/${cleanPath}/`;
         if (voiceStatus) {
             voiceStatus.innerHTML = `<span style="color:var(--warning-color)">No direct match found. Trying: ${bestSection}/${cleanPath}/</span>`;
         }
         speakFeedback(`No exact match found. Trying ${bestSection} section for ${query}`);
     } else {
         const cleanPath = query.replace(/\s+/g, '-');
-        constructedUrl = `https:
+        constructedUrl = `https://www.purchase.edu/${cleanPath}/`;
         if (voiceStatus) {
             voiceStatus.innerHTML = `<span style="color:var(--warning-color)">No match found. Trying direct path: ${cleanPath}/</span>`;
         }

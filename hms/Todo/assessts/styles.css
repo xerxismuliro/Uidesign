@@ -1,27 +1,26 @@
-/*
-   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
-  
-  Usage Guidelines:
-  - Maintain the CSS variable structure for theming
-  - Mobile-first approach for all responsive styling
-  - Class names follow BEM methodology
-  - For questions or contributions, contact isaac.muliro@purchase.edu
-  - Last updated: 2025-05-06
-*/
+/* npm install -g html-minifier
+npm install -g css-minify
+npm install -g uglify-js
+npm install -g uglifycss
+npm install -g minify
+npm install -g minify-html
+npm install -g minify-css
+npm install -g minify-js
+npm install -g minify-json
+npm install -g minify-xml */
+/* html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --minify-css true --minify-js true -o /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/index.min.html /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/index.html
+css-minify /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/styles.css > /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/styles.min.css
+uglify-js /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/index.js > /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/index.min.js
+uglifycss /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/styles.css > /Users/isaacmuliro/Spring2025/SpringClasses/UIdesign/Uisoftwares/Homeworks/hw1/src/styles.min.css
 
-
-
-
-
-
-
+ */
 
 
 :root {
 	--background-color: #ffffff;
 }
 
-
+/* Define dark theme colors */
 [data-theme="dark"] {
 	--background-color: #000000;
 }
@@ -90,7 +89,7 @@ body {
   }
   
 
-
+/* Add this to your existing styles.css file */
 
 #searchInput {
     display: flex;
@@ -120,7 +119,7 @@ body {
     color: #3772de;
 }
 
-
+/* Add this to your existing styles.css file */
 .event-header {
     display: flex;
     justify-content: space-between;
@@ -163,7 +162,7 @@ body {
 
 
 
-
+/* Add this to your existing styles.css file */
 #calendar {
     display: flex;
     flex-wrap: wrap;
@@ -204,7 +203,7 @@ body {
     color: #fff;
 }
 .current-day {
-    background-color: #ff6347; 
+    background-color: #ff6347; /* Highlight color */
     color: #fff;
     border-radius: 50%;
 }
@@ -272,7 +271,7 @@ body {
 
 
 
-
+/* Add this to your existing styles.css file */
 .left-apps {
     display: flex;
     flex-direction: column;
@@ -319,31 +318,31 @@ body {
     box-sizing: border-box;
 }
 .calendar-view {
-    background-color: #1a2a46a8; 
+    background-color: #1a2a46a8; /* Original color */
 }
 
 .statistics {
-    background-color: #2a3b56a8; 
+    background-color: #2a3b56a8; /* Unique color */
 }
 
 .reminders {
-    background-color: #3a4c66a8; 
+    background-color: #3a4c66a8; /* Unique color */
 }
 
 .help-support {
-    background-color: #4a5d76a8; 
+    background-color: #4a5d76a8; /* Unique color */
 }
 
 .settings {
-    background-color: #5a6e86a8; 
+    background-color: #5a6e86a8; /* Unique color */
 }
 
 .upcoming {
-    background-color: #6a7f96a8; 
+    background-color: #6a7f96a8; /* Unique color */
 }
 
 .add-event {
-    background-color: #7a90a6a8; 
+    background-color: #7a90a6a8; /* Unique color */
 }
 
 
@@ -359,38 +358,38 @@ body {
 }
 
 .icon-settings {
-    color: #4CAF50; 
+    color: #4CAF50; /* Green */
 }
 
 .icon-upcoming {
-    color: #2196F3; 
+    color: #2196F3; /* Blue */
 }
 
 .icon-add-event {
-    color: #FFEB3B; 
+    color: #FFEB3B; /* Yellow */
 }
 
 .icon-calendar-view {
-    color: #FF9800; 
+    color: #FF9800; /* Orange */
 }
 
 .icon-statistics {
-    color: #9C27B0; 
+    color: #9C27B0; /* Purple */
 }
 
 .icon-reminders {
-    color: #F44336; 
+    color: #F44336; /* Red */
 }
 
 .icon-help-support {
-    color: #00BCD4; 
+    color: #00BCD4; /* Cyan */
 }
 
 
 
 
 
-
+/* Add this to your existing styles.css file */
 #todoContent{
     display: flex;
     flex-direction: column;
@@ -437,7 +436,51 @@ body {
 
 
 
+/* 
+.allINtopBar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    background-color: #303030;
+    border-bottom: 1px solid rgb(110, 109, 109);
+    gap: 10px;
+    margin-bottom: 5px;
+}
 
+.contentINtopBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    background-color: #3772de;
+}
+
+.leftContINtopBar,.rightContINtopBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    background-color: #303030;
+    gap: 10px;
+}
+
+#Events-saved-via-Browser{
+    padding: 8px;
+    color: wheat;
+    border-radius: 8px;
+    background-color: #1a2a46c6; 
+}
+
+#Events-saved-via-Browser:hover {
+    background-color: #2a5dbd; 
+    color: white; 
+} */
 
 
 
@@ -463,7 +506,7 @@ body {
 }
 
 
-
+/* styles for the createAddEventContent function */
 #addEventSection {
     display: flex;
     flex-direction: column;
@@ -508,7 +551,7 @@ body {
     background-color: #1a1a1ba8;
     border: 1px solid #343333;
     color: white; 
-    
+    /* border: none; */
     outline: none;
 }
 

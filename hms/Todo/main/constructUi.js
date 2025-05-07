@@ -1,77 +1,82 @@
-/**
- * Code developed by Isaac Muliro - UI/UX Designer & Developer
- *
- * Usage Guidelines:
- * - Maintain modular structure when adding new features
- * - Use ES6+ syntax standards and some times I built my own modules from sratch
- * - Document any new functions with JSDoc comments
- * - For questions or contributions, contact isaac.muliro@purchase.edu
- * - Last updated: 2025-05-06
- */
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
-  initializeUI();
-}); function initializeUI() {
-  const body = document.body;
+    initializeUI();
+});
 
-  const flexContainer = createFlexContainer();
-  const leftSidebarDiv = createLeftSidebar();
-  const middleDiv = createMiddleDiv();
-  const rightSidebarDiv = createRightSidebar();
+function initializeUI() {
+    const body = document.body;
 
-  flexContainer.appendChild(leftSidebarDiv);
-  flexContainer.appendChild(middleDiv);
-  flexContainer.appendChild(rightSidebarDiv);
+    const flexContainer = createFlexContainer();
+    const leftSidebarDiv = createLeftSidebar();
+    const middleDiv = createMiddleDiv();
+    const rightSidebarDiv = createRightSidebar();
 
-  body.appendChild(flexContainer);
+    flexContainer.appendChild(leftSidebarDiv);
+    flexContainer.appendChild(middleDiv);
+    flexContainer.appendChild(rightSidebarDiv);
 
-  appendTerminalEventsContent();
-} function createFlexContainer() {const flexContainer = document.createElement('div');
-  flexContainer.className = 'flex-container';
-  return flexContainer;
-} function createLeftSidebar() {const leftSidebarDiv = document.createElement('div');
-  leftSidebarDiv.className = 'leftSidebarDiv';
+    body.appendChild(flexContainer);
 
-  const pinAndpinWinparentDiv = document.createElement('div');
-  pinAndpinWinparentDiv.id = 'pinAndpinWinparentDiv';
+    appendTerminalEventsContent();
+}
 
-  const searchInput = document.createElement('div');
-  searchInput.id = 'searchInput';
-  searchInput.innerHTML = '<input type="text" id="searchBox" placeholder="Search an Event">';
+function createFlexContainer() {
+    const flexContainer = document.createElement('div');
+    flexContainer.className = 'flex-container';
+    return flexContainer;
+}
 
-  pinAndpinWinparentDiv.appendChild(searchInput);
-  leftSidebarDiv.appendChild(pinAndpinWinparentDiv);
+function createLeftSidebar() {
+    const leftSidebarDiv = document.createElement('div');
+    leftSidebarDiv.className = 'leftSidebarDiv';
 
-  const leftApps = createLeftApps();
-  const MonthsWthEvents = createMonthsWthEvents();
-  leftSidebarDiv.appendChild(leftApps);
-  leftSidebarDiv.appendChild(MonthsWthEvents);
+    const pinAndpinWinparentDiv = document.createElement('div');
+    pinAndpinWinparentDiv.id = 'pinAndpinWinparentDiv';
 
-  return leftSidebarDiv;
-} function createMonthsWthEvents() {
-  const MonthsWthEvents = document.createElement('div');
-  MonthsWthEvents.id = 'MonthsWthEvents-leftDiv';
-  MonthsWthEvents.className = 'MonthsWthEvents-leftDiv';
-  return MonthsWthEvents;
-} function createLeftApps() {
-  const leftApps = document.createElement('div');
-  leftApps.className = 'left-apps';
+    const searchInput = document.createElement('div');
+    searchInput.id = 'searchInput';
+    searchInput.innerHTML = '<input type="text" id="searchBox" placeholder="Search an Event">';
 
-  const section1 = createSection1();
-  const section2 = createSection2();
-  const section3 = createSection3();
+    pinAndpinWinparentDiv.appendChild(searchInput);
+    leftSidebarDiv.appendChild(pinAndpinWinparentDiv);
 
-  leftApps.appendChild(section1);
-  leftApps.appendChild(section2);
-  leftApps.appendChild(section3);
+    const leftApps = createLeftApps();
+    const MonthsWthEvents = createMonthsWthEvents();
+    leftSidebarDiv.appendChild(leftApps);
+    leftSidebarDiv.appendChild(MonthsWthEvents);
 
-  return leftApps;
-} function createSection1() {
-  const section1 = document.createElement('div');
-  section1.className = 'section';
-  section1.innerHTML = `
+    return leftSidebarDiv;
+}
+
+
+function createMonthsWthEvents() {
+    const MonthsWthEvents = document.createElement('div');
+    MonthsWthEvents.id = 'MonthsWthEvents-leftDiv'; // Ensure the id is set correctly
+    MonthsWthEvents.className = 'MonthsWthEvents-leftDiv';
+    return MonthsWthEvents;
+}
+
+
+function createLeftApps() {
+    const leftApps = document.createElement('div');
+    leftApps.className = 'left-apps';
+
+    const section1 = createSection1();
+    const section2 = createSection2();
+    const section3 = createSection3();
+
+    leftApps.appendChild(section1);
+    leftApps.appendChild(section2);
+    leftApps.appendChild(section3);
+
+    return leftApps;
+}
+
+
+function createSection1() {
+    const section1 = document.createElement('div');
+    section1.className = 'section';
+    section1.innerHTML = `
         <div class="settings" data-target="settingsContent">
             <i class="fas fa-cog icon-settings"></i>
             <span>Settings</span>
@@ -85,10 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>Add Event</span>
         </div>
     `;
-  return section1;
-} function createSection2() {const section2 = document.createElement('div');
-  section2.className = 'section';
-  section2.innerHTML = `
+    return section1;
+}
+
+function createSection2() {
+    const section2 = document.createElement('div');
+    section2.className = 'section';
+    section2.innerHTML = `
         <div class="calendar-view" data-target="calendarContent">
             <i class="fas fa-calendar icon-calendar-view"></i>
             <span>Calendar</span>
@@ -103,40 +111,49 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>Reminders</span>
         </div>
     `;
-  return section2;
-} function createSection3() {const section3 = document.createElement('div');
-  section3.className = 'section';
-  section3.innerHTML = `
+    return section2;
+}
+
+function createSection3() {
+    const section3 = document.createElement('div');
+    section3.className = 'section';
+    section3.innerHTML = `
         <div class="help-support" data-target="helpSupportContent">
             <i class="fas fa-question-circle icon-help-support"></i>
             <span>Help & Support</span>
         </div>
     `;
-  return section3;
-} function createMiddleDiv() {
-  const middleDiv = document.createElement('div');
-  middleDiv.className = 'middleDiv';
+    return section3;
+}
 
-  const savedEventsDataTypes = document.createElement('div');
-  savedEventsDataTypes.className = 'allINtopBar';
-  savedEventsDataTypes.innerHTML = `
+
+function createMiddleDiv() {
+    const middleDiv = document.createElement('div');
+    middleDiv.className = 'middleDiv';
+
+    const savedEventsDataTypes = document.createElement('div');
+    savedEventsDataTypes.className = 'allINtopBar';
+    savedEventsDataTypes.innerHTML = `
        <!--  <div id="Events-saved-via-Terminal" data-target="terminalEventsContent">Events saved via Terminal</div> -->
         <div id="Events-saved-via-Browser" data-target="browserEventsContent">View saved Events</div>
         <input type="file" id="fileInput" style="display: none;">
     `;
 
-  middleDiv.appendChild(savedEventsDataTypes);
-  middleDiv.innerHTML += createContentDivs();
+    middleDiv.appendChild(savedEventsDataTypes);
+    middleDiv.innerHTML += createContentDivs();
 
-  return middleDiv;
-} 
+    return middleDiv;
+}
+
+
+
 
 
 
 
 
 function createContentDivs() {
-  return `
+    return `
         ${createSettingsContent()}
         ${createUpcomingContent()}
         ${createAddEventContent()}
@@ -148,20 +165,29 @@ function createContentDivs() {
         ${createBrowserEventsContent()}
         ${createTodoContent()}
     `;
-} function createSettingsContent() {return `
+}
+
+function createSettingsContent() {
+    return `
         <div id="settingsContent" class="contentDiv" style="display: none;">
             <h1>Settings</h1>
             <!-- Settings content here -->
         </div>
     `;
-} function createUpcomingContent() {return `
+}
+
+function createUpcomingContent() {
+    return `
         <div id="upcomingContent" class="contentDiv" style="display: none;">
             <h1>Upcoming</h1>
             <!-- Upcoming content here -->
         </div>
     `;
-} function createAddEventContent() {
-  return `
+}
+
+
+function createAddEventContent() {
+    return `
         <div id="addEventContent" class="contentDiv" style="display: none;">
             <h1>Add Event</h1>
             <div id="addEventSection">
@@ -185,30 +211,42 @@ function createContentDivs() {
             </div>
         </div>
     `;
-} 
+}
+
+
+
 
 function createCalendarContent() {
-  return `
+    return `
         <div id="calendarContent" class="contentDiv" style="display: none;">
             <h1>Calendar</h1>
             <!-- Calendar content here -->
         </div>
     `;
-} function createStatisticsContent() {return `
+}
+
+function createStatisticsContent() {
+    return `
         <div id="statisticsContent" class="contentDiv" style="display: none;">
             <h1>Statistics</h1>
             <!-- Statistics content here -->
         </div>
     `;
-} function createRemindersContent() {
-  return `
+}
+
+
+function createRemindersContent() {
+    return `
         <div id="remindersContent" class="contentDiv" style="display: none;">
             <h1>Reminders</h1>
             <!-- Reminders content here -->
         </div>
     `;
-} function createHelpSupportContent() {
-  return `
+}
+
+
+function createHelpSupportContent() {
+    return `
         <div id="helpSupportContent" class="contentDiv" style="display: none;">
             <h1>Help & Support</h1>
             <div id="helpSupportContentDiv">
@@ -234,10 +272,13 @@ function createCalendarContent() {
             </div>
         </div>
     `;
-} 
+}
+
+
+
 
 function createTerminalEventsContent() {
-  return `
+    return `
         <div id="terminalEventsContent" class="contentDiv" style="display: none;">
             <h4>To-Do List 🕰️ (Terminal)</h4>
             <table class="todo-table">
@@ -250,7 +291,10 @@ function createTerminalEventsContent() {
             </table>
         </div>
     `;
-} function createBrowserEventsContent() {return `
+}
+
+function createBrowserEventsContent() {
+    return `
         <div id="browserEventsContent" class="contentDiv" style="display: none;">
             <h4>To-Do List 🕰️ (Browser)</h4>
             <table class="todo-table">
@@ -263,9 +307,12 @@ function createTerminalEventsContent() {
             </table>
         </div>
     `;
-} function createTodoContent() {return `
+}
+
+function createTodoContent() {
+    return `
         <div id="todoContent" class="contentDiv">
-            
+            // <h1>To-Do List 🕰️</h1>
             <table class="todo-table">
                 <thead>
                     <tr><th>Event Date</th><th>Event Time</th><th>Event</th><th>Time Created</th></tr>
@@ -276,19 +323,31 @@ function createTerminalEventsContent() {
             </table>
         </div>
     `;
-} 
+}
+
+
+
 function createRightSidebar() {
-  const rightSidebarDiv = document.createElement('div');
-  rightSidebarDiv.className = 'rightSidebarDiv';
-  rightSidebarDiv.innerHTML = '<div id="calendar"></div>';
-  return rightSidebarDiv;
-} 
+    const rightSidebarDiv = document.createElement('div');
+    rightSidebarDiv.className = 'rightSidebarDiv';
+    rightSidebarDiv.innerHTML = '<div id="calendar"></div>';
+    return rightSidebarDiv;
+}
+
+
 
 
 function appendTerminalEventsContent() {
-  const terminalEventsContentDiv = document.querySelector('#terminalEventsContent tbody');
-  const tableRowsHTML = `
+    const terminalEventsContentDiv = document.querySelector('#terminalEventsContent tbody');
+    const tableRowsHTML = `
        
     `;
-  terminalEventsContentDiv.innerHTML += tableRowsHTML;
+    terminalEventsContentDiv.innerHTML += tableRowsHTML;
 }
+
+
+
+
+
+
+

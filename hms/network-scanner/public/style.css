@@ -1,21 +1,6 @@
-/*
-   Code developed by Isaac Muliro - UI/UX Designer, Web and Mobile app developer and Developer
-  
-  Usage Guidelines:
-  - Maintain the CSS variable structure for theming
-  - Mobile-first approach for all responsive styling
-  - Class names follow BEM methodology
-  - For questions or contributions, contact isaac.muliro@purchase.edu
-  - Last updated: 2025-05-06
-*/
-
-
-
-
-
-
+/* Theme Variables */
 :root {
-    
+    /* Light theme variables (default) */
     --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
     --text-color: #333;
     --topbar-gradient: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
@@ -46,7 +31,7 @@
     --gradient-overlay-blend: overlay;
 }
 
-
+/* Dark theme variables */
 :root.dark {
     --bg-gradient: linear-gradient(135deg, #121e27 0%, #11242b 100%);
     --text-color: #f8f9fa;
@@ -70,12 +55,12 @@
     --icon-gradient: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
     --icon-color: #8f94fb;
     
-    
+    /* Button specific gradients for dark mode */
     --scan-btn-bg: linear-gradient(145deg, #4e54c8 0%, #3a3e99 100%);
     --export-btn-bg: linear-gradient(145deg, #0575E6 0%, #033a72 100%);
     --history-btn-bg: linear-gradient(145deg, #1d976c 0%, #125445 100%);
     
-    
+    /* Gradient overlay for dark mode */
     --gradient-overlay-bg: radial-gradient(circle at top right, rgba(20, 30, 60, 0.8), rgba(10, 15, 30, 0.5)),
                            radial-gradient(circle at bottom left, rgba(40, 10, 60, 0.5), rgba(10, 15, 30, 0.3));
     --gradient-overlay-blend: soft-light;
@@ -116,7 +101,7 @@ body {
 }
 
 
-
+/* Gradient overlay */
 .gradient-overlay {
     position: absolute;
     top: 0;
@@ -130,7 +115,7 @@ body {
 }
 
 
-
+/* Holy Grail Layout */
 .holy-grail {
     display: flex;
     flex-direction: column;
@@ -187,7 +172,7 @@ body {
     overflow: hidden;
 }
 
-
+/* Navigation sidebar */
 .nav-sidebar {
     width: 240px;
     padding: 1.5rem 1rem;
@@ -208,7 +193,7 @@ body {
     gap: 1rem;
 }
 
-
+/* Buttons with specific classes instead of nth-child */
 .btn {
     padding: 10px 15px;
     background: var(--btn-gradient);
@@ -361,7 +346,7 @@ body {
     color: var(--icon-color);
 }
 
-
+/* Right sidebar */
 .right-sidebar {
     width: 280px;
     padding: 1.5rem 1rem;
@@ -419,7 +404,7 @@ body {
     color: var(--icon-color);
 }
 
-
+/* Footer */
 .footer {
     background: var(--footer-bg);
     color: var(--topbar-text);
@@ -454,7 +439,7 @@ body {
     opacity: 0.8;
 }
 
-
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -512,7 +497,7 @@ body {
     opacity: 1;
 }
 
-
+/* Responsive design */
 @media (max-width: 1024px) {
     .holy-grail-body {
         flex-direction: column;
