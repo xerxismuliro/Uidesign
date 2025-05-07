@@ -1,0 +1,629 @@
+/* Voice demo section */
+.voice-demo {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.voice-demo ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.voice-demo li {
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+#quick-start {
+    background-color: var(--accent);
+    color: var(--text-on-accent);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#quick-start i {
+    margin-right: 8px;
+}
+
+#quick-start:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Commands section */
+.commands-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.command-item {
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.command-item h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 8px;
+}
+
+.command-item ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+}
+
+.command-item ul li:before {
+    content: "»";
+    color: var(--primary);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Bookmarks section */
+.bookmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.bookmark-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--bg);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bookmark-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary);
+    color: var(--text-on-accent);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bookmark-item i {
+    font-size: 28px;
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.bookmark-item:hover i {
+    transform: scale(1.2);
+}
+
+.add-bookmark {
+    border: 2px dashed var(--text);
+    background-color: transparent;
+}
+
+.add-bookmark:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* History section */
+.history-list {
+    margin-top: 15px;
+}
+
+.history-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid var(--secondary);
+    transition: background-color 0.2s;
+}
+
+.history-list li:hover {
+    background-color: var(--secondary);
+}
+
+.history-list li i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.clear-history {
+    margin-top: 20px;
+    background-color: var(--accent);
+    color: var(--text-on-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-history i {
+    margin-right: 8px;
+}
+
+/* Settings section */
+.settings-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.settings-section h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 8px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+/* Help section */
+.help-section {
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-item h4 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.help-button {
+    background-color: var(--primary);
+    color: var(--text-on-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.help-button i {
+    margin-right: 8px;
+}
+
+/* Accessibility section */
+.accessibility-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature {
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature i {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* Improve iframe display */
+#website-frame {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    border: none;
+    background-color: var(--bg-primary);
+    transition: opacity 0.3s ease;
+}
+
+/* Better loading animation */
+.loading-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+}
+
+.loading-message i {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.7; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.loading-message p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Improved fallback message */
+#fallback-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--bg);
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#fallback-message i {
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+#fallback-message h3 {
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+.external-link-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--text-on-accent);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 20px 0 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.external-link-button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.external-link-button i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Browser simulation styles */
+.browser-simulation {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    background-color: var(--bg);
+}
+
+.browser-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.browser-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.browser-actions i {
+    font-size: 14px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.browser-actions i:hover {
+    background-color: var(--bg-hover);
+    color: var(--primary);
+}
+
+.browser-address-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 15px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.browser-address-bar i {
+    color: var(--accent);
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+.browser-content {
+    min-height: 300px;
+    background-color: var(--bg-primary);
+}
+
+/* Direct link container and confirmation container styles */
+.direct-link-container, .confirmation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: var(--bg);
+    text-align: center;
+    padding: 20px;
+}
+
+.direct-link-message, .opened-confirmation {
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: var(--bg-secondary);
+}
+
+.direct-link-message i, .opened-confirmation i {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.opened-confirmation i {
+    color: var(--accent); /* Success color */
+}
+
+.direct-link-message h3, .opened-confirmation h3 {
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+.direct-link-message p, .opened-confirmation p {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+.direct-link-message .primary-button {
+    margin: 20px 0 15px;
+}
+
+.small-note {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin-top: 15px;
+}
+
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Button styles */
+.primary-button, .secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: var(--primary);
+    color: var(--text-on-accent);
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.secondary-button:hover {
+    background-color: var(--bg-hover);
+    transform: translateY(-2px);
+}
+
+.primary-button i, .secondary-button i {
+    font-size: 16px;
+    margin-right: 8px;
+    color: inherit;
+}
+
+/* Fallback and quick site styles */
+.fallback-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.sites-that-work {
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.sites-that-work h4 {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.quick-sites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quick-site-button {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quick-site-button:hover {
+    background-color: var(--bg-hover);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Add styles for circle image */
+.circle-image {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 2px solid var(--accent);
+    background-color: var(--bg-secondary);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* NEW SIDEBAR ICON STYLES - Added to fix circular icons */
+/* These styles override the existing ones and ensure proper circular icons */
+
+/* Perfect circular icon containers with proper centering */
+.left-sidebar .icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+    position: relative; /* For precise icon positioning */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden; /* Ensures perfect circle clipping */
+}
+
+/* Center and style the icon inside the container */
+/* Perfect circular icon containers with proper centering */
+.left-sidebar .icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+    position: relative; /* For precise icon positioning */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden; /* Ensures perfect circle clipping */
+}
+
+/* Center and style the icon inside the container */
+.left-sidebar .icon-container i {
+    font-size: 18px;
+    color: white; /* White icons on colored backgrounds */
+    /* Center perfectly */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Individual colors for each sidebar icon using specific classes */
+.icon-purchase {
+    background-color: #4a6da7; /* Purchase College - blue */
+}
+
+.icon-voice {
+    background-color: #d32f2f; /* Voice Commands - red */
+}
+
+.icon-bookmarks {
+    background-color: #388e3c; /* Bookmarks - green */
+}
+
+.icon-history {
+    background-color: #7b1fa2; /* History - purple */
+}
+
+.icon-settings {
+    background-color: #f57c00; /* Settings - orange */
+}
+
+.icon-help {
+    background-color: #0288d1; /* Help - blue */
+}
+
+.icon-accessibility {
+    background-color: #5d4037; /* Accessibility - brown */
+}

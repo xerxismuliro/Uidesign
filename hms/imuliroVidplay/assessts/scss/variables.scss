@@ -1,0 +1,83 @@
+/* CSS Variable Mapping for Theme Compatibility */
+:root {
+    /* Light theme variables */
+    --light-bg: #f5f5f5;
+    --light-text: #333;
+    --light-primary: #4a6fa5;
+    --light-secondary: #e0e0e0;
+    --light-accent: #3f7be5;  /* Changed from #ff6b6b to blue */
+    --light-sidebar: #e8eef7;
+    --light-header: #dae4f2;
+
+    /* Dark theme variables - grayscale version */
+    --dark-bg: #1a1a1a;
+    --dark-text: #f0f0f0;
+    --dark-primary: #707070;
+    --dark-secondary: #363636;
+    --dark-accent: #5d8fe6;  /* Changed from #ff8585 to blue */
+    --dark-sidebar: #252525;
+    --dark-header: #202020;
+    
+    /* Purchase component variable mapping - light theme default */
+    --bg-primary: var(--light-bg);
+    --bg-secondary: var(--light-secondary);
+    --bg-hover: #f0f0f0;
+    --text-primary: var(--light-text);
+    --text-secondary: #666666;
+    --text-on-accent: #ffffff;
+    --accent-color: var(--light-accent);
+    --accent-color-rgb: 63, 123, 229; /* RGB values of blue accent */
+    --border-color: #dddddd;
+    
+    /* Dark theme equivalents - will be applied when dark-theme class is added */
+    --bg-primary-dark: var(--dark-bg);
+    --bg-secondary-dark: var(--dark-secondary);
+    --bg-hover-dark: #2c2c2c;
+    --text-primary-dark: var(--dark-text);
+    --text-secondary-dark: #aaaaaa;
+    --text-on-accent-dark: #ffffff;
+    --accent-color-dark: var(--dark-accent);
+    --accent-color-rgb-dark: 93, 143, 230; /* RGB values of dark blue accent */
+    --border-color-dark: #444444;
+}
+
+/* For dark theme, apply the mapped dark variables */
+.dark-theme {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --bg-hover: var(--bg-hover-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --text-on-accent: var(--text-on-accent-dark);
+    --accent-color: var(--accent-color-dark);
+    --accent-color-rgb: var(--accent-color-rgb-dark);
+    --border-color: var(--border-color-dark);
+}
+
+
+
+/* Theme styles */
+.light-theme {
+    --bg: var(--light-bg);
+    --text: var(--light-text);
+    --primary: var(--light-primary);
+    --secondary: var(--light-secondary);
+    --accent: var(--light-accent);
+    --sidebar: var(--light-sidebar);
+    --header: var(--light-header);
+}
+
+.dark-theme {
+    --bg: var(--dark-bg);
+    --text: var(--dark-text);
+    --primary: var(--dark-primary);
+    --secondary: var(--dark-secondary);
+    --accent: var(--dark-accent);
+    --sidebar: var(--dark-sidebar);
+    --header: var(--dark-header);
+}
+
+
+
+
+
