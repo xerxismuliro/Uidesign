@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Muliro - Professional Portfolio</title>
+    <meta name="description" content="Isaac Muliro - UI/UX Designer & Full-Stack Developer. Creating beautiful, functional digital experiences.">
+    <meta name="keywords" content="UI/UX Designer, Web Developer, Mobile Apps, Portfolio, Isaac Muliro">
+    <meta name="author" content="Isaac Muliro">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Isaac Muliro - Professional Portfolio">
+    <meta property="og:description" content="UI/UX Designer & Full-Stack Developer creating beautiful digital experiences">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isaacmuliro.com">
+    <meta property="og:image" content="assessts/images/ime.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Isaac Muliro - Professional Portfolio">
+    <meta name="twitter:description" content="UI/UX Designer & Full-Stack Developer">
+    <meta name="twitter:image" content="assessts/images/ime.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assessts/enhanced-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assessts/images/ime.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#10b981">
+    <meta name="msapplication-navbutton-color" content="#10b981">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="gradient-overlay" aria-hidden="true"></div>
+
+    <!-- Header/Navigation -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Isaac Muliro</span>
+                    <span class="logo-tagline">UI/UX Designer & Developer</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#blog" class="nav-link">
+                    <i class="fas fa-blog"></i>
+                    <span>Blog</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+            
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Status Indicator -->
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span class="status-text">Available for work</span>
+                </div>
+                
+                <!-- Quick Action Links -->
+                <div class="quick-links">
+                    <a href="#projects" class="quick-link-btn" title="View My Work">
+                        <i class="fas fa-rocket"></i>
+                        <span>View Work</span>
+                    </a>
+                    <a href="#contact" class="quick-link-btn" title="Get In Touch">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Get In Touch</span>
+                    </a>
+                    <button class="quick-link-btn" onclick="downloadResume()" title="Download Resume">
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </button>
+                    <a href="#skills" class="quick-link-btn" title="My Skills">
+                        <i class="fas fa-star"></i>
+                        <span>Skills</span>
+                    </a>
+                </div>
+                
+                <!-- Utility Actions -->
+                <div class="utility-actions">
+                    <button class="utility-btn" onclick="toggleSearch()" title="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="utility-btn" onclick="toggleBookmarks()" title="Quick Access">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search projects, skills, or content..." />
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" onclick="toggleSearch()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Quick Access Panel (Hidden by default) -->
+        <div class="quick-access-panel">
+            <div class="quick-access-container">
+                <h3>Quick Access</h3>
+                <div class="quick-access-grid">
+                    <a href="#projects" class="quick-access-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Latest Projects</span>
+                    </a>
+                    <a href="assessts/pdfs/imuliro_Ranest_Version2_Project.pdf" class="quick-access-item" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Resume PDF</span>
+                    </a>
+                    <a href="#skills" class="quick-access-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Skills & Tech</span>
+                    </a>
+                    <a href="#experience" class="quick-access-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Experience</span>
+                    </a>
+                    <a href="#contact" class="quick-access-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Form</span>
+                    </a>
+                    <a href="#blog" class="quick-access-item">
+                        <i class="fas fa-blog"></i>
+                        <span>Blog Posts</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link active" onclick="closeMobileMenu()">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-tools"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#blog" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-blog"></i>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Quick Links -->
+            <div class="mobile-quick-links">
+                <a href="#projects" class="mobile-quick-link" onclick="closeMobileMenu()">
+                    <i class="fas fa-rocket"></i>
+                    <span>View My Work</span>
+                </a>
+                <a href="#contact" class="mobile-quick-link" onclick="closeMobileMenu()">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Get In Touch</span>
+                </a>
+                <button class="mobile-quick-link" onclick="downloadResume(); closeMobileMenu()">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </button>
+                <a href="#skills" class="mobile-quick-link" onclick="closeMobileMenu()">
+                    <i class="fas fa-star"></i>
+                    <span>My Skills</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Isaac Muliro</h1>
+                <p class="hero-subtitle">UI/UX Designer & Full-Stack Developer</p>
+                <p class="hero-description">
+                    I create beautiful, functional digital experiences that solve real problems. 
+                    Specializing in modern web technologies, user-centered design, and scalable applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-dark" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="about-title" class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        Passionate about creating digital experiences that make a difference
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assessts/images/ime.jpg" alt="Isaac Muliro - Professional portrait" loading="lazy">
+                    </div>
+                    
+                    <div>
+                        <p class="about-text">
+                            I'm a passionate UI/UX designer and full-stack developer with a deep commitment to creating 
+                            intuitive, engaging digital experiences. With expertise spanning design thinking, user research, 
+                            and technical implementation, I bridge the gap between creative vision and functional reality.
+                        </p>
+                        
+                        <p class="about-text">
+                            My approach combines human-centered design principles with cutting-edge technology to deliver 
+                            solutions that are not only visually stunning but also highly functional and accessible. 
+                            I believe in the power of thoughtful design to solve complex problems and create meaningful 
+                            connections between users and technology.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Satisfaction Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">
+                        A showcase of my recent work in web development, mobile apps, and UI/UX design
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/todoui/')">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Todo Application</h3>
+                            <p class="project-description">
+                                A modern task management application with intuitive UI, real-time updates, 
+                                and seamless user experience.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/Uidesign/hms/todoui/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/metroCad/')">
+                        <div class="project-image">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Metro Card Interface</h3>
+                            <p class="project-description">
+                                Clean and modern metro card interface design with focus on usability 
+                                and accessibility for public transportation.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">UI Design</span>
+                                <span class="project-tag">Prototyping</span>
+                                <span class="project-tag">UX Research</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/Uidesign/hms/metroCad/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/imuliro/')">
+                        <div class="project-image">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">LaTeX Editor</h3>
+                            <p class="project-description">
+                                Online LaTeX document editor and compiler with real-time preview, 
+                                syntax highlighting, and collaborative features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">LaTeX</span>
+                                <span class="project-tag">Web App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/imuliro/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/weather%20app/weather.html')">
+                        <div class="project-image">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Application</h3>
+                            <p class="project-description">
+                                Real-time weather application with location services, detailed forecasts, 
+                                and beautiful weather animations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">API Integration</span>
+                                <span class="project-tag">Geolocation</span>
+                                <span class="project-tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/Scripting-for-the-web-/weather%20app/weather.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/Scripting-for-the-web-/clcok/clock.html')">
+                        <div class="project-image">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Word Clock</h3>
+                            <p class="project-description">
+                                Unique word-based time display application with customizable themes 
+                                and smooth animations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Creative Coding</span>
+                                <span class="project-tag">Animation</span>
+                                <span class="project-tag">Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/Scripting-for-the-web-/clcok/clock.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" onclick="navigateTo('https://xerxismuliro.github.io/Uidesign/hms/network-scanner/public/')">
+                        <div class="project-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Network Scanner</h3>
+                            <p class="project-description">
+                                Advanced network analysis and scanning utility with comprehensive 
+                                reporting and security features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Network Tools</span>
+                                <span class="project-tag">Security</span>
+                                <span class="project-tag">Analytics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://xerxismuliro.github.io/Uidesign/hms/network-scanner/public/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-dark" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="skills-title" class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">
+                        Technologies and tools I use to bring ideas to life
+                    </p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="skill-title">UI/UX Design</h3>
+                        <p class="skill-description">
+                            Creating intuitive and visually appealing user interfaces with focus on 
+                            user experience and accessibility.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Frontend Development</h3>
+                        <p class="skill-description">
+                            Building responsive web applications using React, Vue.js, TypeScript, 
+                            and modern CSS frameworks.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-title">Backend Development</h3>
+                        <p class="skill-description">
+                            Developing scalable server-side applications with Node.js, Python, 
+                            and database management.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="skill-title">Mobile Development</h3>
+                        <p class="skill-description">
+                            Creating cross-platform mobile applications with React Native and 
+                            native development approaches.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="skill-title">UX Research</h3>
+                        <p class="skill-description">
+                            Conducting user research, usability testing, and data analysis to 
+                            inform design decisions.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="skill-title">Performance Optimization</h3>
+                        <p class="skill-description">
+                            Optimizing applications for speed, SEO, and accessibility to deliver 
+                            exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="experience-title" class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">
+                        My professional journey and educational background
+                    </p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Master's in Interactive Media Design</h3>
+                            <h4>New York University (NYU)</h4>
+                            <span class="timeline-date">2022 - Present</span>
+                            <p>Focusing on advanced interaction design, user experience research, and emerging technologies in digital media.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior UI/UX Designer</h3>
+                            <h4>Digital Creatives Agency</h4>
+                            <span class="timeline-date">2022 - Present</span>
+                            <p>Leading design projects for Fortune 500 clients, conducting user research, and mentoring junior designers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Full-Stack Developer</h3>
+                            <h4>TechStart Solutions</h4>
+                            <span class="timeline-date">2021 - 2022</span>
+                            <p>Developed scalable web applications, implemented CI/CD pipelines, and collaborated with cross-functional teams.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor's in Computer Science</h3>
+                            <h4>University of Technology</h4>
+                            <span class="timeline-date">2018 - 2022</span>
+                            <p>Specialized in software engineering, human-computer interaction, and web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section section-dark" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="blog-title" class="section-title">Latest Blog Posts</h2>
+                    <p class="section-subtitle">
+                        Thoughts on design, development, and technology
+                    </p>
+                </div>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Design</span>
+                            <h3 class="blog-title">The Future of UI Design: Trends for 2024</h3>
+                            <p class="blog-excerpt">
+                                Exploring the latest trends in user interface design and how they're shaping 
+                                the digital experiences of tomorrow.
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">Dec 15, 2023</span>
+                                <span class="blog-read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Development</span>
+                            <h3 class="blog-title">Building Scalable React Applications</h3>
+                            <p class="blog-excerpt">
+                                Best practices and architectural patterns for creating maintainable 
+                                and scalable React applications.
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">Nov 28, 2023</span>
+                                <span class="blog-read-time">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">UX Research</span>
+                            <h3 class="blog-title">User Research Methods That Actually Work</h3>
+                            <p class="blog-excerpt">
+                                A comprehensive guide to conducting effective user research that leads 
+                                to actionable insights and better products.
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">Nov 10, 2023</span>
+                                <span class="blog-read-time">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Let's discuss your next project and bring your ideas to life
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>isaac.muliro@purchase.edu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (914) 320-6158</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Availability</h4>
+                                <p>Available for freelance projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Isaac Muliro</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        UI/UX Designer & Full-Stack Developer creating beautiful digital experiences.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/XerxisMuliro" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/isaacmuliro" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:isaac.muliro@purchase.edu" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://twitter.com/isaacmuliro" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#projects" class="footer-link">Projects</a>
+                        <a href="#skills" class="footer-link">Skills</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">UI/UX Design</a>
+                        <a href="#" class="footer-link">Web Development</a>
+                        <a href="#" class="footer-link">Mobile Apps</a>
+                        <a href="#" class="footer-link">Consulting</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="assessts/pdfs/imuliro_Ranest_Version2_Project.pdf" class="footer-link" target="_blank">Resume</a>
+                        <a href="https://github.com/XerxisMuliro" class="footer-link" target="_blank">GitHub</a>
+                        <a href="#blog" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Isaac Muliro. All rights reserved. Crafted with passion and precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="main/canva.js" defer></script>
+    <script src="main/enhanced-script.js" defer></script>
+</body>
+</html>
